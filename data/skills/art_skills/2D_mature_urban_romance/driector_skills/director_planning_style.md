@@ -1,90 +1,90 @@
 ---
 name: director_planning_style
-description: 都市言情约束 — 定义成熟都市言情二次元动画在色调体系、光影方案、质感方向、场景空间元素、配乐选择与环境音上的全局约束。适用于任何叙事类型。
+description: đều tình  — nối nghĩa Anime Ngôn Tình Đô Thị Hiện Đại (2D)ở vật gọi thể dòng 、Ánh sángphương 、phương 、Bối cảnhrỗng gian 、nối chọn lựa âm trên  của toàn cục 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 都市言情约束 · 成熟都市言情二次元动画 · 技法参考
+# đều tình  · Anime Ngôn Tình Đô Thị Hiện Đại (2D) · thức tham chiếu
 
 ---
 
-## 一、色调体系与画面基调
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
 
-- **色调基底** — 全片以冷白肤（C1）、浅蓝（C3）、青灰（C6）为基底色，整体色温偏冷（5800-7000K），饱和度中低（30-50%），呈现清冷克制的高级灰调
-- **冷暖叙事对比** — 暖色（琥珀暖 C7、烟霞粉 C5）作为叙事转折的视觉信号，用于情感回暖与暧昧升温段落的局部点缀。冷暖切换应与故事弧线同步，而非随意混用
-- **冷暖分配策略** — 分离/压抑/冷漠段落严格维持冷色调基底（青灰 C6 + 浅蓝 C3），禁用琥珀暖、烟霞粉等暖色调；暖色仅在情感回暖后释放，用冷暖对比做叙事转折
-- **色盘先行原则** — 段落规划需先绑定情绪场景（初见心动/暧昧升温/守护承诺/分离误会/重逢释怀/夜宴灯会等），再确定主色+辅色与光影方案，避免"剧情对了但情绪不对色"
-- **禁用色域** — 高饱和荧光色、霓虹色、现代数码色彩体系均与本风格不兼容
+- **vật gọi cơ sở ** — toàn （C1）、（C3）、（C6）cơ sở vật ，chỉnh thể vật （5800-7000K）， và độ giữa thấp （30-50%），sạch chép  của cao cấp gọi 
+- **việc đúng tỷ ** — vật （ C7、 C5）tác vụ việc chuyển  của trực quantin số ，hàm với tình trả đoạn  của cục bộ điểm tố 。đổi hồi việc đường cùng bước ，phi ý hàm 
+- **phútnối ** — phút/nén /đoạn khung giữ vật gọi cơ sở （ C6 +  C3），hàm 、vật gọi ；vật chỉ ở tình trả sau mở ，hàm đúng tỷ việc chuyển 
+- **vật đĩa trước thi gốc ** — đoạn lập kế hoạchcần trước ghép nốitình xúc Bối cảnh（thấy động ///phútsẽ /trùng /sẽ ），nối chính vật +vật Ánh sángphương ，"kịch tình đúng nhưng tình xúc không đúng vật "
+- **hàm vật vực ** — cao  và ánh vật 、vật 、số mã vật thể dòng sách Phong cáchkhông dung 
 
 ---
 
-## 二、光影方案体系
+## 2、Ánh sángphương thể dòng 
 
-- **光影即叙事** — 7 套光影方案对应不同情绪段落，导演规划阶段应在段落层面确定光影基调方向，而非逐镜指定
-- **赛璐璐光影特征** — 清晰的明暗分界线、戏剧化低调光影为核心手段；光影必须服务于情绪叙事，保持二次元动画的赛璐璐上色风格
+- **Ánh sángviệc ** — 7 Ánh sángphương đúng hồi không cùng tình xúc đoạn ，Kế hoạch đạo diễnđoạn hồi ở đoạn tầng mặt nối Ánh sángcơ sở gọi phương ，phi quay nối 
+- **Ánh sáng** — sạch  của dẫn phútgiới đường 、kịch hóa thấp gọi Ánh sángtay đoạn ；Ánh sángBắt buộcphục vụ với tình xúc việc ，lưu giữ 2lần động vẽ  của trên vật Phong cách
 
-| 光影方案 | 方案名 | 色调倾向 | 适用情绪 |
+| Ánh sángphương  | phương tên  | vật gọi  | hàm tình xúc  |
 |---|---|---|---|
-| A | 柔光侧逆 | 冷白底 + 局部暖光轮廓勾勒 | 心动悸动、温柔深情、日常温馨 |
-| B | 硬侧高反差 | 墨黑 C4 + 银灰 C8 硬光分割 | 对峙压迫、愤怒冷峻、紧张对抗 |
-| C | 漫射冷光 | 青灰 C6 + 浅蓝 C3 低调打光 | 压抑悲伤、分离误会、孤独寂寥 |
-| D | 散射暖光 | 琥珀暖 C7 + 烟霞粉 C5 局部 | 暧昧升温、重逢释怀、亲密甜蜜 |
-| E | 窗光自然 | 素白 C10 + 浅蓝 C3 侧光斑驳 | 室内日间、日常起居、职场通勤 |
-| F | 夜景灯火 | 琥珀暖 C7 点缀 + 青灰 C6 暗部 | 夜宴灯会、城市夜景、浪漫流光 |
-| G | 月光冷蓝 | 浅蓝 C3 + 银灰 C8 冷光 | 夜间孤寂、思念独处、冷漠疏离 |
+| A | ánh  |  + cục bộ ánh  | động động 、tình 、ngày thường  |
+| B | cao phụ  |  C4 +  C8 ánh phútrời  | đúng nén 、、bức đúng  |
+| C | ánh  |  C6 +  C3 thấp gọi mở ánh  | nén 、phútsẽ 、 |
+| D | ánh  |  C7 +  C5 cục bộ  | 、trùng 、mật  |
+| E | ánh tự  |  C10 +  C3 ánh  | trong ngày gian 、ngày thường 、trường thông  |
+| F | bối  |  C7 điểm tố  +  C6 bộ  | sẽ 、bối 、ánh  |
+| G | thángánh  |  C3 +  C8 ánh  | gian 、xử 、 |
 
-- **冷暖光分配** — 暖色光（琥珀暖 C7）适用于情感回暖、暧昧亲密段落；冷色光（青灰 C6 + 浅蓝 C3）适用于分离、压抑、冷漠段落。导演可根据叙事需要调整冷暖切换点
-- **氛围方向映射** — 每场戏的氛围方向应能映射到上述光影方案（A-G）的某一方向，确保视觉一致性
-
----
-
-## 三、质感方向
-
-- **赛璐璐为锚** — 成熟都市言情二次元动画的核心：清晰线条、赛璐璐上色、戏剧化低调光影，呈现电影级二次元动画画面
-- **面容与皮肤** — 面容细腻渲染、皮肤细腻、五官精致；女性冷白肤（C1）通透不惨白，男性暖白肤（C2）清爽自然。肌肤保持赛璐璐质感的平滑细腻
-- **服饰材质** — 衣物布料质感清晰、纹理细节超清晰、布料折痕真实、衣物随动态飘逸。现代都市服饰（西装/衬衫/连衣裙/大衣）的面料质感须可信
-- **场景材质** — 场景材质纹理清晰、空气透视、现代使用痕迹、生活气息。玻璃反光、金属光泽、木质纹理、布艺垂感均需在赛璐璐风格下清晰呈现
-- **赛璐璐不等于扁平** — 成熟都市言情二次元动画强调在赛璐璐上色基础上叠加电影级光影与景深虚化，通过构图与情绪设计放大感染力，而非依赖写实堆砌
+- **ánh phútnối ** — vật ánh （ C7）hàm với tình trả 、mật đoạn ；vật ánh （ C6 +  C3）hàm với phút、nén 、đoạn 。đạo diễndựa theoviệc cần cần gọi chỉnh đổi điểm 
+- **Không khíphương ** — trường  của Không khíphương hồi thể đến trên tả Ánh sángphương （A-G） của 1 phương ，lưu trực quan1 
 
 ---
 
-## 四、都市场景空间元素
+## 3、phương 
 
-现代都市世界观特有的场景元素及其视觉叙事功能：
-
-- **落地窗/玻璃隔断/门框** — 天然的框架式构图道具，制造"看不透"的层次感与空间纵深。玻璃的反光与透射是画面亮点
-- **城市天际线/街道/公园** — 留白构图的天然载体，景即情：繁华街景 = 孤独中的喧嚣、雨中独坐长椅 = 孤寂、落叶飘过街道 = 离愁
-- **灯光/窗光/屏幕光** — 现代都市的光源载体，室内暖灯 = 暖/私密（方案D）、城市夜景 = 冷暖交织（方案F）、自然窗光 = 日常/静谧（方案E）
-- **段落间用场景空镜过渡** — 本风格有丰富的场景资产（不同时段/天候变体），段落衔接建议用场景空镜做情绪缓冲，不要硬切。城市天际线、窗外雨景、空荡的咖啡厅均可作为过渡空镜
-- **转折点用视觉而非台词** — 优先使用画面手段（光影突变、景别跳切、空镜隐喻）而非依赖对白解释
+- **** — Anime Ngôn Tình Đô Thị Hiện Đại (2D) của ：sạch đường mục 、trên vật 、kịch hóa thấp gọi Ánh sáng，sáng cấp 2lần động vẽ vẽ mặt 
+- **mặt dung ** — mặt dung 、、5；nữ （C1）thông không ，nam （C2）sạch tự 。lưu giữ  của 
+- **phục ** — sạch 、lý tiết vượt sạch 、thật 、động thái 。Đô Thị Hiện Đạiphục （///lớn ） của mặt buộc tin 
+- **Bối cảnh** — Bối cảnhlý sạch 、rỗng video 、hàm 、sinh hoạt 。phụ ánh 、biệt ánh 、lý 、cần ở Phong cáchdưới sạch 
+- **không với ** — Anime Ngôn Tình Đô Thị Hiện Đại (2D)gọi ở trên vật cơ sở trên cộng sáng cấp Ánh sángbối hóa ，thông quacấu ảnh tình xúc thiết tính mở lớn lực ，phi phụ thuộc 
 
 ---
 
-## 五、都市配乐与环境音
+## 4、đều Bối cảnhrỗng gian 
 
-现代都市言情世界观下的声音元素约束：
+Đô Thị Hiện Đạigiới có  của Bối cảnhtrực quanviệc công thể ：
 
-### 配乐乐器选择
+- **địa /cách /cổng ** — ngày của thức cấu ảnh Đạo cụ，chép tạo "xem không " của tầng lần rỗng gian 。 của phụ ánh là vẽ mặt điểm 
+- **ngàyđường /đạo /** — lưu cấu ảnh  của ngàyxuống thể ，bối tình ：bối  = giữa  của 、giữa dài  = 、đạo  = 
+- **ánh /ánh /ánh ** — Đô Thị Hiện Đại của ánh nguồn xuống thể ，trong  = /mật （phương D）、bối  = tác vụ （phương F）、tự ánh  = ngày thường /（phương E）
+- **đoạn gian hàm Bối cảnhrỗng quay ** — sách Phong cáchcó  của Bối cảnhTài nguyên（không cùng đoạn /ngàythể ），đoạn tiếp Khuyến nghịhàm Bối cảnhrỗng quay tình xúc ，không cần 。ngàyđường 、ngoài bối 、rỗng  của tác vụ rỗng quay 
+- **Điểm bước ngoặthàm trực quanphi Lời thoại** — ưu tiên sử dụng vẽ mặt tay đoạn （Ánh sáng、Cỡ cảnh、rỗng quay ）phi phụ thuộc đúng giải 
 
-- **钢琴** — 核心乐器，适用范围最广：独奏用于孤寂/思念/回忆段落，轻快触键用于日常/心动段落
-- **弦乐（小提琴/大提琴/弦乐组）** — 情感铺底与升华，大提琴低沉适合压抑/隐忍，小提琴高音适合心动/悸动，弦乐组适合情绪高潮
-- **吉他（原声/电吉他）** — 原声吉他用于日常温馨/轻松休闲段落，电吉他清音用于都市夜景/微醺氛围
-- **电子氛围音** — 低频电子pad用于城市空镜/孤独段落的氛围铺底，增加现代都市的空间感
-- **长笛/单簧管** — 轻柔段落的点缀，不作主导，用于清晨/公园/日常的氛围衬托
+---
 
-### 配乐组合策略
+## 5、đều nối âm 
 
-| 情绪阶段 | 乐器组合 |
+Đô Thị Hiện Đạitình giới dưới  của thanh âm ：
+
+### nối thiết bị chọn lựa 
+
+- **** — thiết bị ，hàm khí nhất ：hàm với //trả đoạn ，nhanh hàm với ngày thường /động đoạn 
+- **（nhỏ nhắc /lớn nhắc /nhóm ）** — tình ，lớn nhắc thấp hợp nén /，nhỏ nhắc cao âm hợp động /động ，nhóm hợp tình xúc cao 
+- **anh ấy（gốc thanh /anh ấy）** — gốc thanh anh ấyhàm với ngày thường /đoạn ，anh ấysạch âm hàm với đều bối /Không khí
+- **Không khíâm ** — thấp tần padhàm với rỗng quay /đoạn  của Không khí，cộng Đô Thị Hiện Đại của rỗng gian 
+- **dài /đơn ** — đoạn  của điểm tố ，không tác vụ chính dẫn ，hàm với Sáng sớm//ngày thường  của Không khí
+
+### nối nhóm hợp 
+
+| tình xúc đoạn  | thiết bị nhóm hợp  |
 |---|---|
-| 平稳/开场/收尾 | 钢琴独奏 或 钢琴 + 轻弦乐 |
-| 心动/悸动 | 钢琴 + 小提琴 |
-| 暧昧升温/亲密 | 原声吉他 + 轻钢琴 + 弦乐铺底 |
-| 压抑/悲伤/分离 | 大提琴独奏 或 大提琴 + 钢琴 |
-| 情绪爆发/重逢/高潮 | 弦乐组全奏 + 钢琴 |
-| 都市夜景/孤独 | 电子氛围音 + 钢琴 |
-| 日常温馨/休闲 | 原声吉他 + 长笛 + 轻打击乐 |
+| /mở trường /nhận đuôi  |  hoặc   +  |
+| động /động  |  + nhỏ nhắc  |
+| /mật  | gốc thanh anh ấy +  +  |
+| nén //phút | lớn nhắc  hoặc  lớn nhắc  +  |
+| tình xúc phát /trùng /cao  | nhóm toàn  +  |
+| đều bối / | Không khíâm  +  |
+| ngày thường / | gốc thanh anh ấy + dài  + mở  |
 
-### 都市环境音
+### đều âm 
 
-- **典型环境音层次** — 车流远声 / 雨打玻璃窗 / 咖啡机运转声 / 键盘敲击声 / 高跟鞋踏地声 / 电梯提示音 / 城市夜风 / 远处汽车鸣笛 / 公园鸟鸣 / 餐厅轻微嘈杂声
-- **每场戏标注 1-2 个核心环境音**，帮助后续音效设计。环境音层次越丰富，都市场景越有沉浸感
+- **kiểu âm tầng lần ** — thanh  / mở  / máy vận chuyển thanh  / đĩa thanh  / cao địa thanh  / nhắc nhở âm  / phong  / xử  /  / thanh 
+- **trường biểu tâm  1-2 mục âm **，trợ giúp sau Âm hiệuthiết tính 。âm tầng lần ，đều Bối cảnhcó 

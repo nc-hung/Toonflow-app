@@ -47,29 +47,29 @@ async function resolveModelName(value: AiType | `${string}:${string}`): Promise<
   if (AiTypeValues.includes(value as AiType)) {
     const agentUseModeVal = await u.db("o_setting").where("key", "agentUseMode").first();
 
-    //正常流程
-    //高级配置
+    // Quy trình bình thường
+    // Cấu hình nâng cao
     if (agentUseModeVal?.value == "1") {
       const agentDeployData = await u.db("o_agentDeploy").where("key", value).first();
-      if (!agentDeployData?.modelName) throw new Error(`高级配置模式下，未找到对应的模型配置 ${value}`);
+      if (!agentDeployData?.modelName) throw new Error(`Trong chế độ cấu hình nâng cao, không tìm thấy cấu hình mô hình tương ứng ${value}`);
       return agentDeployData?.modelName as `${number}:${string}`;
     }
-    //简易配置
+    // Cấu hình cơ bản 
     if (agentUseModeVal?.value == "0") {
       const [mainly] = value!.split(/:(.+)/);
       const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`简易配置模式下，未找到部署配置 ${value}`);
+      if (!mainlyData?.modelName) throw new Error(`Trong chế độ cấu hình cơ bản , không tìm thấy cấu hình triển khai ${value}`);
       return mainlyData?.modelName as `${number}:${string}`;
     }
 
-    //未查到agentUseModeVal 维持原判断
+    //chưa tra đến agentUseModeVal giữ gốc Kiểm tra
     const agentDeployData = await u.db("o_agentDeploy").where("key", value).first();
     let modelName = null;
 
     if (!agentDeployData?.modelName) {
       const [mainly] = agentDeployData!.key!.split(/:(.+)/);
       const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`未找到部署配置 ${value}`);
+      if (!mainlyData?.modelName) throw new Error(`Không tìm thấy cấu hình triển khai ${value}`);
       modelName = mainlyData.modelName;
     }
     modelName = agentDeployData?.modelName || modelName;
@@ -81,28 +81,28 @@ async function resolveModelName(value: AiType | `${string}:${string}`): Promise<
 async function getModelConfig(value: AiType | `${string}:${string}`) {
   if (AiTypeValues.includes(value as AiType)) {
     const agentUseModeVal = await u.db("o_setting").where("key", "agentUseMode").first();
-    //正常流程
-    //高级配置
+    // Quy trình bình thường
+    // Cấu hình nâng cao
     if (agentUseModeVal?.value == "1") {
       const agentDeployData = await u.db("o_agentDeploy").where("key", value).first();
-      if (!agentDeployData?.modelName) throw new Error(`高级配置模式下，未找到对应的模型配置 ${value}`);
+      if (!agentDeployData?.modelName) throw new Error(`Trong chế độ cấu hình nâng cao, không tìm thấy cấu hình mô hình tương ứng ${value}`);
       return agentDeployData;
     }
-    //简易配置
+    // Cấu hình cơ bản 
     if (agentUseModeVal?.value == "0") {
       const [mainly] = value!.split(/:(.+)/);
       const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`简易配置模式下，未找到部署配置 ${value}`);
+      if (!mainlyData?.modelName) throw new Error(`Trong chế độ cấu hình cơ bản , không tìm thấy cấu hình triển khai ${value}`);
       return mainlyData;
     }
 
-    //未查到 agentUseModelVal 维持原流程
+    // Không tìm thấy agentUseModelVal, duy trì quy trình gốc
     const agentDeployData = await u.db("o_agentDeploy").where("key", value).first();
 
     if (!agentDeployData?.modelName) {
       const [mainly] = agentDeployData!.key!.split(/:(.+)/);
       const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`未找到部署配置 ${value}`);
+      if (!mainlyData?.modelName) throw new Error(`Không tìm thấy cấu hình triển khai ${value}`);
       return mainlyData;
     }
     return agentDeployData;
@@ -118,10 +118,10 @@ async function getVendorTemplateFn(fnName: Exclude<FnName, "textRequest">, model
 async function getVendorTemplateFn(fnName: FnName, modelName: `${string}:${string}`): Promise<any> {
   const [id, name] = modelName.split(/:(.+)/);
   const vendorConfigData = await u.db("o_vendorConfig").where("id", id).first();
-  if (!vendorConfigData) throw new Error(`未找到供应商配置 id=${id}`);
+  if (!vendorConfigData) throw new Error(`Không tìm thấy cấu hình nhà cung cấp id=${id}`);
   const modelList = await u.vendor.getModelList(id);
   const selectedModel = modelList.find((i: any) => i.modelName == name);
-  if (!selectedModel) throw new Error(`未找到模型 ${name} id=${id}`);
+  if (!selectedModel) throw new Error(`Không tìm thấy mô hình ${name} id=${id}`);
   const code = u.vendor.getCode(id);
   const jsCode = transform(code, { transforms: ["typescript"] }).code;
   const running = u.vm(jsCode);
@@ -130,7 +130,7 @@ async function getVendorTemplateFn(fnName: FnName, modelName: `${string}:${strin
     running.vendor.models = modelList;
   }
   const fn = running[fnName];
-  if (!fn) throw new Error(`未找到供应商配置中的函数 ${fnName} id=${id}`);
+  if (!fn) throw new Error(`Không tìm thấy hàm trong cấu hình nhà cung cấp ${fnName} id=${id}`);
   if (fnName == "textRequest")
     return (think?: boolean, thinkLevel: 0 | 1 | 2 | 3 = 0) => {
       const effectiveThink = think ?? !!selectedModel.think;
@@ -237,10 +237,10 @@ interface ImageConfig {
 }
 
 interface TaskRecord {
-  taskClass: string; // 任务分类
-  describe: string; // 任务描述
-  relatedObjects: string; // 相关对象信息，便于后续分析和追踪
-  projectId: number; // 项目ID
+  taskClass: string; // Phân loại tác vụ
+  describe: string; // Mô tả tác vụ
+  relatedObjects: string; // Thông tin đối tượng liên quan, thuận tiện cho phân tích và theo dõi sau  này
+  projectId: number; // ID Dự án
 }
 
 class AiImage {
@@ -272,12 +272,12 @@ class AiImage {
 }
 
 type VideoMode =
-  | "singleImage" //单图参考
-  | "startEndRequired" //首尾帧（两张都得有）
-  | "endFrameOptional" //首尾帧（尾帧可选）
-  | "startFrameOptional" //首尾帧（首帧可选）
-  | "text" //文本
-  | (`videoReference:${number}` | `imageReference:${number}` | `audioReference:${number}`)[]; //多参考（数字代表限制数量）
+  | "singleImage" // Tham chiếu đơn ảnh
+  | "startEndRequired" // Khung đầu/cuối (bắt buộc cả hai)
+  | "endFrameOptional" // Khung đầu/cuối (khung cuối tùy chọn)
+  | "startFrameOptional" // Khung đầu/cuối (khung đầu tùy chọn)
+  | "text" // Văn bản 
+  | (`videoReference:${number}` | `imageReference:${number}` | `audioReference:${number}`)[]; // Đa tham chiếu (chữ số đại diện cho số lượng giới hạn)
 
 interface VideoConfig {
   duration: number;

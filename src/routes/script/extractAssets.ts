@@ -9,38 +9,38 @@ import { o_script } from "@/types/database";
 
 const router = express.Router();
 
-/** 新资产：AI 首次识别到的资产，需要完整信息 */
+/** Tài nguyên mới : AI lần đầu nhận diện tài nguyên, cần  thông tin đầy đủ */
 const NewAssetSchema = z.object({
-  name: z.string().describe("资产名称,仅为名称不做其他任何表述"),
-  desc: z.string().describe("资产描述"),
-  type: z.enum(["role", "tool", "scene"]).describe("资产类型"),
-  scriptIds: z.array(z.number()).describe("使用该资产的剧本id数组"),
+  name: z.string().describe("Tên tài nguyên, chỉ gồm tên không kèm theo bất kỳ mô tả nào khác"),
+  desc: z.string().describe("Mô tả tài nguyên"),
+  type: z.enum(["role", "tool", "scene"]).describe("Loại tài nguyên: role (nhân vật), tool (đạo cụ), scene (bối cảnh)"),
+  scriptIds: z.array(z.number()).describe("Mảng ID kịch bản  sử dụng tài nguyên này"),
 });
 
-/** 已有资产：数据库中已存在的资产，只需给出名称和关联的剧本 */
+/** Tài nguyên đã có: Tài nguyên đã tồn tại trong CSDL, chỉ cần  tên và kịch bản  liên kết */
 const ExistingAssetRefSchema = z.object({
-  name: z.string().describe("已有资产的名称,必须与已有资产列表中的名称完全一致"),
-  scriptIds: z.array(z.number()).describe("使用该资产的剧本id数组"),
+  name: z.string().describe("Tên tài nguyên đã có, phải trùng khớp hoàn toàn với tên trong danh sách tài nguyên hiện tại"),
+  scriptIds: z.array(z.number()).describe("Mảng ID kịch bản  sử dụng tài nguyên này"),
 });
 
 export const AssetSchema = z.object({
-  name: z.string().describe("资产名称,仅为名称不做其他任何表述"),
-  desc: z.string().describe("资产描述"),
-  type: z.enum(["role", "tool", "scene"]).describe("资产类型"),
+  name: z.string().describe("Tên tài nguyên, chỉ gồm tên không kèm theo bất kỳ mô tả nào khác"),
+  desc: z.string().describe("Mô tả tài nguyên"),
+  type: z.enum(["role", "tool", "scene"]).describe("Loại tài nguyên: role (nhân vật), tool (đạo cụ), scene (bối cảnh)"),
 });
 
 type NewAsset = z.infer<typeof NewAssetSchema>;
 type ExistingAssetRef = z.infer<typeof ExistingAssetRefSchema>;
 type Asset = z.infer<typeof AssetSchema>;
 
-/** 每批 AI 调用的结果 */
+/** Kết quả mỗi đợt gọi AI */
 type GroupResult = {
   batchScriptIds: number[];
   newAssets: NewAsset[];
   existingRefs: ExistingAssetRef[];
 } | null;
 
-/** 将 scriptIds 数组按 groupSize 分组 */
+/** Chia mảng scriptIds thành các nhóm theo groupSize */
 function chunkArray(arr: number[], groupSize: number): number[][][] {
   const chunks: number[][] = [];
   for (let i = 0; i < arr.length; i += 5) {
@@ -63,10 +63,10 @@ export default router.post(
   async (req, res) => {
     const { scriptIds, projectId, groupSize = 5 } = req.body;
 
-    if (!scriptIds.length) return res.status(400).send(error("请先选择剧本"));
+    if (!scriptIds.length) return res.status(400).send(error("Vui lòng chọn kịch bản  trước "));
     const scripts = await u.db("o_script").whereIn("id", scriptIds);
 
-    // 构建 scriptId -> script 内容的映射
+    // Xây dựng ánh xạ scriptId -> nội dung kịch bản 
     const scriptMap = new Map(scripts.map((s: o_script) => [s.id, s]));
 
     await u.db("o_script").whereIn("id", scriptIds).update({
@@ -76,20 +76,20 @@ export default router.post(
     const errors: { scriptId: number; error: string }[] = [];
     let successCount = 0;
 
-    // 将 scriptIds 按 groupSize（默认5）分组，每组一起发给 AI
+    // Phân nhóm scriptIds theo groupSize (mặc định 5), mỗi nhóm gửi cho AI xử lý cùng lúc
     const scriptGroups = chunkArray(scriptIds as number[], groupSize);
 
-    /** 一组剧本提取完成后统一入库并建立关联 */
+    /** Sau khi trích xuất xong một nhóm kịch bản , lưu thống nhất vào CSDL và thiết lập liên kết */
     async function persistGroupResult(result: GroupResult) {
       if (!result) return;
       const { batchScriptIds, newAssets, existingRefs } = result;
       if (!newAssets.length && !existingRefs.length) return;
 
-      // 查询已有资产
+      // Truy vấn tài nguyên đã tồn tại
       const existingAssets = await u.db("o_assets").where("projectId", projectId).select("id", "name");
       const existingMap = new Map(existingAssets.map((a) => [a.name!, a.id!]));
 
-      // 插入新资产（不在已有列表中的）
+      // Chèn tài nguyên mới  (không có trong danh sách đã tồn tại)
       const toInsert = newAssets.filter((asset) => !existingMap.has(asset.name));
       if (toInsert.length) {
         await u.db("o_assets").insert(
@@ -103,14 +103,14 @@ export default router.post(
         );
       }
 
-      // 重新查询获取完整的 name -> id 映射
+      // Truy vấn lại để lấy ánh xạ hoàn chỉnh name -> id
       const allAssets = await u.db("o_assets").where("projectId", projectId).select("id", "name");
       const nameToId = new Map(allAssets.map((a) => [a.name, a.id]));
 
-      // 收集所有资产与剧本的关联关系
+      // Thu thập toàn bộ quan hệ liên kết giữa tài nguyên và kịch bản 
       const scriptAssetRows: { scriptId: number; assetId: number }[] = [];
 
-      // 新资产的关联
+      // Liên kết tài nguyên mới 
       for (const asset of newAssets) {
         const assetId = nameToId.get(asset.name);
         if (assetId) {
@@ -120,7 +120,7 @@ export default router.post(
         }
       }
 
-      // 已有资产的关联
+      // Liên kết tài nguyên đã có
       for (const ref of existingRefs) {
         const assetId = nameToId.get(ref.name);
         if (assetId) {
@@ -130,22 +130,22 @@ export default router.post(
         }
       }
 
-      // 去重：相同 scriptId + assetId 只保留一条
+      // Loại bỏ trùng lặp: scriptId + assetId giống nhau chỉ giữ lại một dòng
       const uniqueRows = [...new Map(scriptAssetRows.map((r) => [`${r.scriptId}_${r.assetId}`, r])).values()];
 
-      // 先删除本批 scriptId 的旧关联，再插入新的
+      // Xóa liên kết cũ  của đợt scriptId này trước , sau  đó chèn liên kết mới 
       await u.db("o_scriptAssets").whereIn("scriptId", batchScriptIds).delete();
       if (uniqueRows.length) {
         await u.db("o_scriptAssets").insert(uniqueRows);
       }
 
-      // 本批成功的剧本状态更新为 1（成功）
+      // Cập nhật trạng thái thành công cho kịch bản  của đợt này (1 = thành công)
       await u.db("o_script").whereIn("id", batchScriptIds).where("projectId", projectId).update({
         extractState: 1,
         errorReason: null,
       });
     }
-    res.send(success("开始提取资产"));
+    res.send(success("Bắt đầu trích xuất tài nguyên"));
 
     function processGroup(group: number[][][]) {
       group.map(async (itemIds) => {
@@ -154,10 +154,10 @@ export default router.post(
           for (const scriptId of scriptIds) {
             const script = scriptMap.get(scriptId);
             if (!script) {
-              errors.push({ scriptId, error: "未找到对应剧本" });
-              await u.db("o_script").where("id", scriptId).where("projectId", projectId).update({ extractState: -1, errorReason: "未找到对应剧本" });
+              errors.push({ scriptId, error: "Không tìm thấy kịch bản  tương ứng" });
+              await u.db("o_script").where("id", scriptId).where("projectId", projectId).update({ extractState: -1, errorReason: "Không tìm thấy kịch bản  tương ứng" });
             } else {
-              // 查看状态是否为等待提取，仅对等待提取进行生成
+              // Kiểm tra xem trạng thái có phải đang chờ trích xuất không
               const item = await u.db("o_script").where("projectId", projectId).where("id", scriptId).select("extractState").first();
               if (item?.extractState == 2) {
                 validScripts.push({ id: scriptId, script });
@@ -167,40 +167,40 @@ export default router.post(
         }
         if (!validScripts.length) return;
         const validScriptIds = validScripts.map((v) => v.id);
-        // 修改状态为正在提取中
+        // Cập nhật trạng thái thành đang trích xuất
         await u.db("o_script").where("projectId", projectId).whereIn("id", validScriptIds).update({
-          extractState: 0, // 正在提取
+          extractState: 0, // Đang trích xuất
         });
-        // 查询当前项目已有的资产列表，提供给 AI 参考
+        // Truy vấn danh sách tài nguyên đã có trong dự án hiện tại để cung cấp cho AI tham khảo
         const existingAssets = await u.db("o_assets").where("projectId", projectId).select("name", "type");
-        const existingAssetsList = existingAssets.map((a) => `${a.name}(${a.type})`).join("、");
+        const existingAssetsList = existingAssets.map((a) => `${a.name}(${a.type})`).join(", ");
 
-        // 拼接多集剧本内容，每集用分隔标记
+        // Ghép nội dung nhiều tập kịch bản , mỗi tập phân cách bằng thẻ đánh dấu
         const scriptsContent = validScripts
-          .map(({ id, script }) => `===== 【剧本ID: ${id}】${script.name || ""} =====\n${script.content}`)
+          .map(({ id, script }) => `===== 【ID Kịch bản : ${id}】${script.name || ""} =====\n${script.content}`)
           .join("\n\n");
 
         let collectedNew: NewAsset[] = [];
         let collectedExisting: ExistingAssetRef[] = [];
         try {
           const resultTool = tool({
-            description: "返回结果时必须调用这个工具",
+            description: "Bắt buộc gọi công cụ này khi trả về kết quả",
             inputSchema: jsonSchema<{ newAssets: NewAsset[]; existingAssetRefs: ExistingAssetRef[] }>(
               z
                 .object({
                   newAssets: z
                     .array(NewAssetSchema)
-                    .describe("新发现的资产列表（不在已有资产列表中的），需要完整的 prompt、name、desc、type 和使用该资产的 scriptIds"),
+                    .describe("Danh sách tài nguyên mới  phát hiện (không có trong danh sách tài nguyên đã có), cần  đầy đủ prompt, name, desc, type và mảng scriptIds sử dụng tài nguyên này"),
                   existingAssetRefs: z
                     .array(ExistingAssetRefSchema)
-                    .describe("已有资产的引用列表（在已有资产列表中已存在的），只需给出资产名称和使用该资产的 scriptIds"),
+                    .describe("Danh sách tham chiếu tài nguyên đã có (đã tồn tại trong danh sách tài nguyên), chỉ cần  cung cấp tên tài nguyên và mảng scriptIds sử dụng tài nguyên này"),
                 })
                 .toJSONSchema(),
             ),
             execute: async ({ newAssets, existingAssetRefs }) => {
               if (newAssets?.length) collectedNew = newAssets;
               if (existingAssetRefs?.length) collectedExisting = existingAssetRefs;
-              return "无需回复用户任何内容";
+              return "Không cần  phản hồi thêm nội dung nào cho người dùng";
             },
           });
           const promptData = await u.db("o_prompt").where("type", "scriptAssetExtraction").first();
@@ -211,7 +211,7 @@ export default router.post(
             scriptAssetExtraction = promptData?.data ?? undefined;
           }
           const existingHint = existingAssetsList
-            ? `\n\n【已有资产列表】：${existingAssetsList}\n对于已有资产，如果在剧本中出现，只需在 existingAssetRefs 中给出资产名称和对应的 scriptIds 数组即可，无需重复生成 desc/type。对于新发现的资产（不在已有列表中），请在 newAssets 中给出完整信息。`
+            ? `\n\n【Danh sách tài nguyên đã có】：${existingAssetsList}\nĐối với tài nguyên đã có, nếu xuất hiện trong kịch bản , chỉ cần  cung cấp tên tài nguyên và mảng scriptIds tương ứng trong existingAssetRefs, không cần  tạo lại desc/type. Đối với tài nguyên mới  phát hiện (không có trong danh sách đã có), vui lòng cung cấp thông tin đầy đủ trong newAssets.`
             : "";
           const output = await u.Ai.Text("universalAi").invoke({
             messages: [
@@ -219,12 +219,12 @@ export default router.post(
                 role: "system",
                 content:
                   scriptAssetExtraction +
-                  "\n\n提取剧本中涉及的资产（角色、场景、道具），参考技能 script_assets_extract 规范，结果必须通过 resultTool 工具返回。" +
-                  "\n\n注意：本次会同时提供多集剧本，每集剧本以 ===== 【剧本ID: xxx】 ===== 分隔。你需要分析每集剧本使用了哪些资产，并在输出中用 scriptIds 数组标明每个资产在哪些剧本中出现。",
+                  "\n\nTrích xuất các tài nguyên (Nhân vật, Bối cảnh, Đạo cụ) xuất hiện trong kịch bản  theo chuẩn quy cách trích xuất tài nguyên, kết quả bắt buộc phải trả về thông qua công cụ resultTool." +
+                  "\n\nLưu ý: Lần này sẽ cung cấp đồng thời nhiều tập kịch bản , mỗi tập kịch bản  phân cách bởi ===== 【ID Kịch bản : xxx】 =====. Bạn cần  phân tích từng tập kịch bản  sử dụng những tài nguyên nào, và đánh dấu mảng scriptIds trong kết quả đầu ra để chỉ rõ tài nguyên đó xuất hiện trong những tập nào.",
               },
               {
                 role: "user",
-                content: `当前已有资产列表：${existingHint}\n\n请根据以下${validScripts.length}集剧本提取对应的剧本资产（角色、场景、道具）:\n\n${scriptsContent}`,
+                content: `Danh sách tài nguyên hiện có：${existingHint}\n\nVui lòng dựa theo ${validScripts.length} tập kịch bản  sau  đây để trích xuất các tài nguyên tương ứng (Nhân vật, Bối cảnh, Đạo cụ):\n\n${scriptsContent}`,
               },
             ],
             tools: { resultTool },
@@ -235,7 +235,7 @@ export default router.post(
             existingRefs: collectedExisting,
           });
         } catch (e) {
-          console.error(`[extractAssets] group=[${validScriptIds.join(",")}] 提取失败:`, e);
+          console.error(`[extractAssets] group=[${validScriptIds.join(",")}] trích xuất thất bại:`, e);
           for (const { id, script } of validScripts) {
             errors.push({ scriptId: id, error: (script.name || "") + ":" + u.error(e).message });
             await u
@@ -248,8 +248,8 @@ export default router.post(
         }
         if (!collectedNew.length && !collectedExisting.length) {
           for (const { id } of validScripts) {
-            errors.push({ scriptId: id, error: "AI 未返回任何资产" });
-            await u.db("o_script").where("id", id).where("projectId", projectId).update({ extractState: -1, errorReason: "AI 未返回任何资产" });
+            errors.push({ scriptId: id, error: "AI chưa trả về bất kỳ tài nguyên nào" });
+            await u.db("o_script").where("id", id).where("projectId", projectId).update({ extractState: -1, errorReason: "AI chưa trả về bất kỳ tài nguyên nào" });
           }
           return;
         }

@@ -1,85 +1,85 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 古风仙侠 — 定义古风仙侠在分镜表中的景别策略、运镜节奏、时长把控、仙术战斗设计、人物关系叙事与转场手法。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · phong  — nối nghĩa phong ở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaytiết 、Thời lượngđem sát 、thiết tính 、ngườiliên dòng việc chuyển trường tay thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 古风仙侠 · 技法参考
+# Bảng phân cảnhviệc tay thức  · phong  · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供古风仙侠叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **远景是仙侠的基础景别** — 仙侠叙事中远景的使用频率远高于其他类型。天地辽阔中的渺小人影本身就在传递仙侠哲学，不要吝啬远景
-- **写意中景** — 仙侠中景不追求信息密度，而是追求"画中人"的意境。人物与环境融为一体，山水花木都是画面的一部分
-- **灵韵特写** — 特写在仙侠中聚焦的不是纯粹的表情，而是"灵韵"：眼中星辰流转、指尖灵力明灭、剑身光华流淌。特写要有超凡脱俗的质感
-- **大特写极其克制** — 大特写在仙侠中每段落最多 1 次，留给"见微知著"的瞬间：一滴泪、一片花瓣、一缕断发
-- **定场镜头要有诗意** — 仙侠定场不只交代地点，要传递意境：云海中的仙山、月下的孤亭、雪覆的古刹。1-2 个远景镜头完成定场+意境建立
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà phong việc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **以静为主** — 70% 以上镜头静止或极缓运动，让画面本身的美感和意境说话
-- **御风跟拍** — 飞行/腾跃段落用流畅跟拍，保持画面稳定，营造从容御风感而非狼狈追逐感
-- **缓摇 = 展卷** — 水平缓摇展示山水全貌，速度极慢，如画卷展开。适合定场和意境段落
-- **缓推 = 入境** — 从远景缓推至人物，观众"走入"画面世界。适合段落开篇和悟道段落
-- **缓拉 = 出世** — 从人物缓拉至远景，角色融入天地。适合离别、超脱、飞升段落
-- **升降 = 升华/坠落** — 镜头上升 = 飞升/领悟/超脱；镜头下降 = 入世/坠落/重返凡尘。仙侠中升降运镜是核心叙事工具
-
----
-
-## 四、时长把控
-
-- **意境镜头从容** — 山水空镜、修行静态镜头给 5-6s 足够时长，让观众"品味"意境，不急着切走
-- **人物互动正常节奏** — 对话、交互等叙事镜头保持 3-4s 正常节奏
-- **战斗一招一镜** — 仙侠战斗讲究一招一式的仪式感，每一招一个完整镜头（3-5s），不碎切
-- **悟道镜头可超长** — 角色入定/领悟的镜头可突破 6s 上限到 8s，因为"悟"本身就是需要时间的过程。配合缓推或静止机位
-- **黄金 6 秒规则灵活适用** — 仙侠叙事中纯意境镜头可放宽至 6-8s，但前提是画面有自然动态（风、云、水、光影变化）维持视觉兴趣
-- **"一念之间"的时间操控** — 关键抉择瞬间可用升格拉伸到 4-6s（实际动作可能只有 1s），将角色的一念之间放大成观众可感知的思考过程
+- **Viễn cảnh (extreme wide shot)là  của cơ sở Cỡ cảnh** — việc giữa Viễn cảnh (extreme wide shot) của hàm tần tỷ lệ cao với anh ấyLoại。ngàyđịa giữa  của nhỏ ngườisáng sách thì ở truyền ，không cần Viễn cảnh (extreme wide shot)
+- **ý Trung cảnh (medium shot)** — Trung cảnh (medium shot)không cầu Mật độ thông tin，là cầu "vẽ giữa người" của ý 。người1 thể ，đều là vẽ mặt  của 1 bộ phút
+- **Đặc tả (close-up)** — Đặc tả (close-up)ở giữa  của không là thuần  của bảng tình ，là ""：giữa chuyển 、lực dẫn 、ánh 。Đặc tả (close-up)cần có vượt  của 
+- **lớn Đặc tả (close-up)chép ** — lớn Đặc tả (close-up)ở giữa đoạn nhất nhiều  1 lần ，lưu cho "thấy báo " của gian ：1 、1 、1 phát 
+- **nối trường Ống kínhcần có ý ** — nối trường không chỉ tác vụ địa điểm ，cần truyền ý ：giữa  của 、thángdưới  của 、 của 。1-2 mục Viễn cảnh (extreme wide shot)Ống kínhtạo nối trường +ý tạo lập 
 
 ---
 
-## 五、仙术战斗设计
+## 3、Góc quaytiết 
 
-- **写意优先于写实** — 仙侠战斗的镜头不追求"看清每一拳"，而是传递招式的"意"：一剑划过，花瓣纷飞；一掌推出，山河震动。画面描述侧重意境而非动作细节
-- **天象呼应战斗** — 战斗升级时天象同步变化：出招→风起；对招→云涌；终极一击→天地变色。在分镜描述中同步标注天象变化
-- **一招定胜负** — 仙侠的终极对决最好收束在"一招"：双方蓄力→对视→同时出手→一瞬间画面静止→结果揭晓。简洁即是力量
-- **战斗间的对视** — 高手过招之间穿插 1-2 个对视镜头（近景对切），用眼神传递"你我都知道下一招见生死"的默契
-- **能一镜拍完的法术不拆碎** — 一个完整的法术施展（起手→蓄力→释放）优先用一个带运镜的长镜头完成，不要拆成碎片
-
----
-
-## 六、人物关系叙事
-
-- **师徒传承** — 师父传功/赠剑/临终嘱托是仙侠最经典的传承镜头。用近景对切完成情感交流，信物交接用特写聚焦
-- **道侣羁绊** — 仙侠中的感情表达极度克制：并肩看月不说话、擦肩而过留余香、千年后再见只一句"你来了"。分镜用距离感和留白传递深情
-- **宿敌对镜** — 宿敌之间用对称构图对峙，景别从全景递进到近景对切，最后特写对视。对称中的对抗是仙侠对决的仪式感
-- **独行者叙事** — 仙侠主角常有大量独行段落。独行用远景+背影构图，不给正脸，让孤独感通过空间关系自行传递
+- **chính ** — 70% trên Ống kínhTĩnh (static)hoặc vận động ，để vẽ mặt sách  của đẹp  và ý hướng lời 
+- **phong ** — thi /đoạn hàm ，lưu giữ vẽ mặt nối ，tạo từ dung phong phi 
+- ** = ** — nhở toàn ，độ chậm ，như vẽ mở 。hợp nối trường  và ý đoạn 
+- **khuyến  = vào ** — từ Viễn cảnh (extreme wide shot)khuyến đến người，"chạy vào "vẽ mặt giới 。hợp đoạn mở bài  và đạo đoạn 
+- ** = ra ** — từ ngườiđến Viễn cảnh (extreme wide shot)，Nhân vậtvào ngàyđịa 。hợp khác 、vượt 、đoạn 
+- **Nâng / Hạ máy (crane up/down) = /** — Ống kínhtrên  = //vượt ；Ống kínhdưới  = vào //trùng trả 。giữa Nâng / Hạ máy (crane up/down)Góc quaylà việc cụ 
 
 ---
 
-## 七、台词与留白
+## 4、Thời lượngđem sát 
 
-- **言简意深** — 仙侠台词应精炼如诗，一句顶十句。"此去经年，山高水远"比"我要走了你保重身体记得吃饭"更有力量
-- **大段沉默是修行** — 修行/悟道/独行段落可以完全无台词，持续 3-5 个镜头纯沉默。沉默本身就是仙侠的叙事语言
-- **诗化台词配空镜** — 内心独白或旁白如果是诗化语言，配远景或山水空镜比配人物近景更合适
-- **一句一镜** — 重要台词独占一个镜头，不与其他台词共享。给这句话足够的空间和留白
-- **临终遗言极短** — 仙侠中角色临终的最后一句话应极短（3-5个字），配合特写+渐弱。越短越有千钧之重
+- **ý Ống kínhtừ dung ** — rỗng quay 、thi thái Ống kínhcho  5-6s Thời lượng，để ""ý ，không đang chạy 
+- **ngườiđộng chính thường tiết ** — đúng lời 、tác vụ việc Ống kínhlưu giữ  3-4s chính thường tiết 
+- **1 1 quay ** — 1 1 thức  của thức ，1 một chỉnh Ống kính（3-5s），không 
+- **đạo Ống kínhvượt dài ** — Nhân vậtvào nối / của Ống kính 6s trên hạn đến  8s，""sách thì là cần cần thời gian của trình 。nối hợp khuyến hoặc Tĩnh (static)máy vị trí 
+- ** 6 giâyhoạt hàm ** — việc giữa thuần ý Ống kínhmở rộng đến  6-8s，nhưng trước nhắc là vẽ mặt có tự động thái （phong 、、、Ánh sánghóa ）giữ trực quan
+- **"1  của gian " của thời gianthao sát ** — liên lựa gian hàm khung đến  4-6s（động tác vụ thể chỉ có  1s），Nhân vật của 1  của gian mở lớn tạo báo  của trình 
 
 ---
 
-## 八、转场设计
+## 5、thiết tính 
 
-- **云雾转场** — 最经典的仙侠转场：画面被云雾覆盖→散去后是新场景。自然、写意、零出戏
-- **四季流转** — 用快速的季节变化（花开→叶落→雪覆→春回）表达时间流逝，适合修行段落间的大跨度转场
-- **水面倒影** — 从水面倒影切入，涟漪散去后进入新场景或回忆。适合过渡到前世/回忆段落
-- **同场景内用硬切** — 同一场景内镜头间保持硬切，干净利落
-- **段落间用空镜呼吸** — 大段落之间插入 1-2 个山水/天象空镜（4-6s）做情绪过渡
-- **梦境/前世用叠化** — 进入梦境或前世回忆用慢叠化，画面重叠的瞬间暗示两个时空的交织
+- **ý trước với ** —  của Ống kínhkhông cầu "xem sạch 1 "，là truyền thức  của "ý "：1 ，；1 khuyến ra ，động 。Mô tả hình ảnhtrùng ý phi động tác vụ tiết 
+- **ngàytượng hồi ** — cấp ngàytượng cùng bước hóa ：ra →phong ；đúng →；1 →ngàyđịa vật 。ở Phân cảnhMô tảgiữa cùng bước biểu tâm ngàytượng hóa 
+- **1 nối ** —  của đúng nhất tốt nhận ở "1 "：đôi phương lực →đúng video →cùng ra tay →1 gian vẽ mặt Tĩnh (static)→kết quả。là lực lượng 
+- **gian  của đúng video ** — cao tay  của gian  1-2 mục đúng video Ống kính（Cận cảnh (close-up)đúng ），hàm truyền "bạntôiđều báo đạo dưới 1 thấy sinh " của 
+- **thể 1 quay  của thức không ** — một chỉnh  của thức （tay →lực →mở ）trước hàm một kèm Góc quay của dài Ống kínhtạo ，không cần tạo 
+
+---
+
+## 6、ngườiliên dòng việc 
+
+- **truyền ** — truyền công //là nhất đã  của truyền Ống kính。hàm Cận cảnh (close-up)đúng tạo tình tác vụ ，tin tác vụ tiếp hàm Đặc tả (close-up)
+- **đạo ** — giữa  của tình bảng độ chép ：nhất xem thángkhông hướng lời 、lưu 、nghìnnămsau thấy chỉ 1 câu "bạn"。Phân cảnhhàm  và lưu truyền tình 
+- **đúng quay ** —  của gian hàm đúng cấu ảnh đúng ，Cỡ cảnhtừ Toàn cảnh (wide shot)tiến đến Cận cảnh (close-up)đúng ，nhất sau Đặc tả (close-up)đúng video 。đúng giữa  của đúng là đúng  của thức 
+- **thi giả việc ** — chính nhân thường có lớn lượng thi đoạn 。thi hàm Viễn cảnh (extreme wide shot)+sáng cấu ảnh ，không cho chính ，để thông quarỗng gian liên dòng tự thi truyền 
+
+---
+
+## 7、Lời thoạilưu 
+
+- **ý ** — Lời thoạihồi như ，1 câu 10câu 。"đi đã năm，cao "tỷ "tôicần chạy bạnlưu trùng thể được "đổi có lực lượng 
+- **lớn đoạn là thi ** — thi /đạo /thi đoạn toàn Không có lời thoại，giữ  3-5 mục Ống kínhthuần 。sách thì là  của việc ngữ 
+- **hóa Lời thoạinối rỗng quay ** — Độc thoại nội tâm (inner monologue, OS)hoặc như quả là hóa ngữ ，nối Viễn cảnh (extreme wide shot)hoặc rỗng quay tỷ nối ngườiCận cảnh (close-up)đổi hợp 
+- **1 câu 1 quay ** — trùng cần Lời thoạimột Ống kính，không anh ấyLời thoại。cho nàycâu lời  của rỗng gian  và lưu 
+- **ngắn ** — giữa Nhân vật của nhất sau 1 câu lời hồi ngắn （3-5mục chữ ），nối hợp Đặc tả (close-up)+。ngắn có nghìn của trùng 
+
+---
+
+## 8、chuyển trường thiết tính 
+
+- **chuyển trường ** — nhất đã  của chuyển trường ：vẽ mặt →đi sau là mới Bối cảnh。tự 、ý 、0ra 
+- **4chuyển ** — hàm nhanh  của tiết hóa （mở →→→trả ）bảng thời gian，hợp thi đoạn gian  của lớn độ chuyển trường 
+- **mặt sáng ** — từ mặt sáng vào ，đi sau tiến vào mới Bối cảnhhoặc trả 。hợp đến trước /trả đoạn 
+- **cùng Bối cảnhtrong hàm ** — cùng 1 Bối cảnhtrong Ống kínhgian lưu giữ ，
+- **đoạn gian hàm rỗng quay ** — lớn đoạn  của gian vào  1-2 mục /ngàytượng rỗng quay （4-6s）tình xúc 
+- **/trước hàm hóa ** — tiến vào hoặc trước trả hàm chậm hóa ，vẽ mặt trùng  của gian nhở 2mục rỗng  của tác vụ 

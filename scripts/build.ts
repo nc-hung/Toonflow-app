@@ -2,7 +2,7 @@ import esbuild from "esbuild";
 import fs from "fs";
 import path from "path";
 
-// 打包默认使用 prod 环境变量
+// Đóng gói mặc định sử dụng biến môi trường prod
 if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = "prod";
 }
@@ -26,7 +26,7 @@ const external = [
   "mssql",
 ];
 
-// 后端服务打包配置
+// Cấu hình đóng gói dịch vụ Backend
 const appBuildConfig: esbuild.BuildOptions = {
   entryPoints: ["src/app.ts"],
   bundle: true,
@@ -47,7 +47,7 @@ const appBuildConfig: esbuild.BuildOptions = {
   },
 };
 
-// Electron 主进程打包配置
+// Cấu hình đóng gói Electron Main Process
 const mainBuildConfig: esbuild.BuildOptions = {
   entryPoints: ["scripts/main.ts"],
   bundle: true,
@@ -70,16 +70,16 @@ const mainBuildConfig: esbuild.BuildOptions = {
 
 (async () => {
   try {
-    console.log("🔨 开始构建...\n");
+    console.log("🔨 Bắt đầu build hệ thống...\n");
 
-    // 并行构建
+    // Parallel build
     await Promise.all([esbuild.build(appBuildConfig), esbuild.build(mainBuildConfig)]);
 
-    console.log("✅ 后端服务构建完成: build/app.js");
-    console.log("✅ Electron主进程构建完成: build/main.js");
-    console.log("\n🎉 所有构建任务完成!\n");
+    console.log("✅ Dịch vụ Backend đã build thành công: data/serve/app.js");
+    console.log("✅ Electron Main Process đã build thành công: build/main.js");
+    console.log("\n🎉 Toàn bộ tác vụ build đã hoàn tất thành công!\n");
   } catch (err) {
-    console.error("❌ 构建失败:", err);
+    console.error("❌ Build thất bại:", err);
     process.exit(1);
   }
 })();

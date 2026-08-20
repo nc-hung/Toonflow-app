@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 获取资产
+// Lấy danh sách tài nguyên
 export default router.post(
   "/",
   validateFields({
@@ -27,10 +27,10 @@ export default router.post(
     if (name) {
       query = query.andWhere("name", "like", `%${name}%`);
     }
-    // 分页查询
+    // Truy vấn phân trang
     const parentAssets = await query.where("o_assets.assetsId", null).offset(offset).limit(limit);
 
-    // 获取所有子资产供关联使用
+    // Lấy tất cả tài nguyên con để liên kết
     let childQuery = u
       .db("o_assets")
       .leftJoin("o_image", "o_assets.imageId", "o_image.id")
@@ -43,7 +43,7 @@ export default router.post(
     }
     const childAssets = await childQuery;
 
-    // 为每个子资产添加图片地址
+    // Thêm đường dẫn hình ảnh cho từng tài nguyên con
     const childAssetsWithSrc = await Promise.all(
       childAssets.map(async (child) => ({
         ...child,
@@ -51,7 +51,7 @@ export default router.post(
       })),
     );
 
-    // 为每个父资产添加子资产
+    // Thêm tài nguyên con vào từng tài nguyên cha
     const result = await Promise.all(
       parentAssets.map(async (parent) => ({
         ...parent,
@@ -61,7 +61,7 @@ export default router.post(
       })),
     );
 
-    // 统计总数
+    // Thống kê tổng số
     const totalQuery = (await u
       .db("o_assets")
       .where("projectId", projectId)

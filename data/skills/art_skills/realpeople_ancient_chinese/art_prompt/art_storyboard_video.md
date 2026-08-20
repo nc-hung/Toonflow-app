@@ -1,11 +1,11 @@
-# 视频提示词 · 视觉风格约束
+# videoPrompt · trực quanPhong cách
 
-生成视频提示词时，必须注入以下视觉风格标签：
+tạovideoPrompt，Bắt buộctâm vào dưới trực quanPhong cáchbiểu ký ：
 
-| 模式 | 风格标签 |
+| mô thức  | Phong cáchbiểu ký  |
 |------|----------|
-| **通用多参模式（英文）** | `Chinese period drama, photorealistic, cinematic, high contrast, ultra-fine detail` |
-| **通用首尾帧模式（英文）** | `Chinese period drama, photorealistic, cinematic, high contrast, ultra-fine detail, shallow depth of field` |
-| **Seedance 2.0（中文）** | `古风写实摄影，电影风格，强对比度，极致细节` |
+| **thông hàm nhiều tham mô thức （tài ）** | `Chinese period drama, photorealistic, cinematic, high contrast, ultra-fine detail` |
+| **thông hàm Khung đầu/cuốimô thức （tài ）** | `Chinese period drama, photorealistic, cinematic, high contrast, ultra-fine detail, shallow depth of field` |
+| **Seedance 2.0（giữa tài ）** | `phong sáng ，sáng Phong cách，đúng tỷ độ ，tiết ` |
 
 

@@ -1,300 +1,300 @@
-# 人物衍生资产生成 · 扁平风约束手册
+# ngườisinh Tài nguyêntạo · phong sổ tay
 
 ---
 
-## 一、叠加原则
+## 1 、cộng gốc 
 
-1. **轮廓不变** — 叠加后线条轮廓必须与底模完全一致，禁止轮廓偏移
-2. **姿态不变** — 保持底模自然站立姿态，禁止任何姿态/动作/体态变化
-3. **逐层可控** — 每层独立描述，便于按层替换（换装不换妆）
-4. **风格统一** — 所有服化元素服从同一扁平美学体系
-5. **色块不降** — 叠加后色块标准不低于底模
-6. **纯服化范畴** — 仅叠加妆容/发型/服饰/配饰，禁止引入道具、场景、环境、动作
-
----
-
-## 二、叠加层级
-
-| 层级 | 内容 | 说明 |
-|---|---|---|
-| L0 | 底模 | 基础形象底模，不修改 |
-| L1 | 妆容（决策层） | 先分析用户线索，再决策「基础妆 / 轻妆 / 正式妆」强度 |
-| L2 | 发型造型 | 发髻/束发/编发 + 发饰 |
-| L3 | 中衣/内搭 | 替换白色基础中衣 |
-| L4 | 外衣/主服 | 大袖衫/直裾/大氅等 |
-| L5 | 配饰 | 头饰/耳饰/项饰/腰饰/手饰 |
+1. **không ** — cộng sau đường mục Bắt buộcmô toàn 1 ，Nghiêm cấm
+2. **thái không ** — lưu giữ mô tự trạm lập thái ，Nghiêm cấmthái /động tác vụ /thể thái hóa 
+3. **tầng sát ** — tầng lập Mô tả，với theo tầng đổi （đổi không đổi ）
+4. **Phong cáchthống 1 ** — tất cảphục hóa phục từ cùng 1 đẹp thể dòng 
+5. **vật không ** — cộng sau vật biểu không thấp với mô 
+6. **thuần phục hóa ** — chỉ cộng dung /phát kiểu /phục /nối ，Nghiêm cấmvào Đạo cụ、Bối cảnh、、động tác vụ 
 
 ---
 
-## 三、妆容约束（L1）
+## 2、cộng tầng cấp 
 
-### 底模到衍生妆造策略（关键）
-
-> 角色底模虽为素颜，但衍生资产默认进入妆造流程。系统应根据用户提供的线索分析妆造需求，并在基础妆、轻妆、正式妆之间决策强度，而不是保持素颜。
-
-### L1 线索分析与妆容决策
-
-| 步骤 | 处理内容 | 决策结果 |
+| tầng cấp  | nội dung | Giải thích |
 |---|---|---|
-| S1 | 提取用户线索：面部状态词、情绪词、强度词 | 形成妆容需求摘要 |
-| S2 | 过滤非妆容线索：道具/场景/动作/姿态词不作为上妆依据 | 防止误判 |
-| S3 | 匹配妆容风格矩阵并给出强度档 | 基础妆 / 轻妆 / 正式妆 |
-| S4 | 生成最终 L1 提示词 | 只输出结论，不输出分析过程 |
-
-### 线索到妆容映射（执行口径）
-
-| 线索类型 | 典型线索 | L1 决策 |
-|---|---|---|
-| 无明显面部强调线索 | 仅服饰/发型变化，未强调情绪与状态 | 基础妆 |
-| 轻微面部线索 | 轻柔、含笑、气色微提 | 轻妆（极淡） |
-| 明确病弱线索 | 面色苍白、唇色极淡 | 病弱梨妆（轻妆） |
-| 明确正式仪式线索 | 盛装、典礼、华贵亮相 | 正式妆（受控） |
-
-### 女性妆容风格矩阵
-
-| 风格 | 适用场景 | 核心提示词 |
-|---|---|---|
-| 清雅素妆 | 日常、初遇、闺中 | 扁平妆容、淡雅色块、简约化妆 |
-| 冷艳霜妆 | 正式、对峙、权力 | 扁平冷妆、简洁线条、色块妆容 |
-| 柔媚桃妆 | 甜宠、暧昧、心动 | 扁平桃妆、粉色调色、色块表达 |
-| 病弱梨妆 | 受伤、虚弱 | 扁平病妆、苍白肤色、淡色唇 |
-| 华贵凤妆 | 大婚、盛装 | 扁平浓妆、色块浓郁、精致线条 |
-
-### 通用底肤（所有妆容共享）
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 质感 | 单色填充、无渐变 | 单色皮肤、扁平肌肤、solid skin |
-| 白度 | 浅色单色、均匀 | 浅肤色、单色肤色 |
-| 内透光 | 无内透光、纯平面 | 无光泽、无透光 |
-| 禁止 | 渐变/阴影/立体感 | — |
-
-### 基础妆细化（默认档）
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 眉部 | 线条勾勒、单色填充 | 线条眉、扁平眉形 |
-| 眼部 | 简化色块、无瞳孔细节 | 扁平眼、色块眼部 |
-| 面颊 | 极淡色块、不可明显堆色 | 极淡腮红、色块提气 |
-| 唇部 | 单色润色、保持克制 | 单色唇、扁平唇 |
-| 整体 | 看得出有妆造，但色块非常轻 | 基础扁平妆、伪素颜扁平 |
+| L0 | mô  | cơ sở dạng tượng mô ，không sửa  |
+| L1 | dung （Tầng quyết định） | trước phúttích hàm dùng đường kiếm ，quyết định「cơ sở  /  / chính thức 」độ  |
+| L2 | phát kiểu tạo kiểu  | phát /phát /chỉnh phát  + phát  |
+| L3 | giữa /trong  | đổi vật cơ sở giữa  |
+| L4 | ngoài /chính phục  | lớn /trực /lớn  |
+| L5 | nối  | đầu ////tay  |
 
 ---
 
-## 四、发型造型约束（L2）
+## 3、dung （L1）
 
-### 女性造型类型
+### mô đến sinh tạo （liên ）
 
-| 造型 | 描述 | 适用 | 提示词 |
+> Nhân vậtmô ，nhưng sinh Tài nguyênMặc địnhtiến vào tạo trình 。dòng thống hồi dựa theohàm dùng nhắc nhà  của đường kiếm phúttích tạo cần cầu ，nhất ở cơ sở 、、chính thức  của gian quyết địnhđộ ，không là lưu giữ 。
+
+### L1 đường kiếm phúttích dung quyết định
+
+| bước  | xử lý nội dung | quyết địnhkết quả |
+|---|---|---|
+| S1 | trích xuấthàm dùng đường kiếm ：mặt bộ trạng tháitừ 、tình xúc từ 、độ từ  | dạng tạo dung cần cầu cần  |
+| S2 | lọc phi dung đường kiếm ：Đạo cụ/Bối cảnh/động tác vụ /thái từ không tác vụ trên phụ liệu  |  |
+| S3 | khớpdung Phong cáchnhất cho ra độ liệu  | cơ sở  /  / chính thức  |
+| S4 | tạonhất  L1 Prompt | chỉ tải ra kết ，không tải ra phúttích trình  |
+
+### đường kiếm đến dung （thực thicổng kính ）
+
+| đường kiếm Loại | kiểu đường kiếm  | L1 quyết định |
+|---|---|---|
+| không dẫn mặt bộ gọi đường kiếm  | chỉ phục /phát kiểu hóa ，chưa gọi tình xúc trạng thái | cơ sở  |
+| mặt bộ đường kiếm  | 、、vật nhắc  | （） |
+| dẫn đường kiếm  | mặt vật 、vật  | （） |
+| dẫn chính thức thức đường kiếm  | 、、 | chính thức （sát ） |
+
+### nữ dung Phong cách
+
+| Phong cách | hàm Bối cảnh | Prompt |
+|---|---|---|
+| sạch  | ngày thường 、、giữa  | dung 、vật 、hóa  |
+|  | chính thức 、đúng 、thực lực  | 、đường mục 、vật dung  |
+|  | 、、động  | 、vật gọi vật 、vật bảng  |
+|  | 、 | 、vật 、vật  |
+|  | lớn 、 | 、vật 、đường mục  |
+
+### thông hàm （tất cảdung ）
+
+| dự án |  | Prompt |
+|---|---|---|
+|  | đơn vật sung 、không  | đơn vật 、、solid skin |
+| độ  | vật đơn vật 、 | vật 、đơn vật vật  |
+| trong ánh  | không trong ánh 、thuần mặt  | không ánh 、không ánh  |
+| Nghiêm cấm | /sáng /lập thể  | — |
+
+### cơ sở hóa （Mặc địnhliệu ）
+
+| dự án |  | Prompt |
+|---|---|---|
+| bộ  | đường mục 、đơn vật sung  | đường mục 、dạng  |
+| bộ  | hóa vật 、không tiết  | 、vật bộ  |
+| mặt  | vật 、không dẫn vật  | 、vật nhắc  |
+| bộ  | đơn vật trau chuốt、lưu giữ chép  | đơn vật 、 |
+| chỉnh thể  | xem được ra có tạo ，nhưng vật phi thường  | cơ sở 、 |
+
+---
+
+## 4、phát kiểu tạo kiểu （L2）
+
+### nữ tạo kiểu Loại
+
+| tạo kiểu  | Mô tả | hàm  | Prompt |
 |---|---|---|---|
-| 半挽云髻 | 发顶挽髻+后方垂发 | 日常、出行 | 扁平云髻、简约发髻 |
-| 飞仙髻 | 高髻飞挑、简洁线条 | 仙境、亮相 | 扁平飞髻、线条高髻 |
-| 堕马髻 | 侧偏低髻、慵懒线条 | 私密、暧昧 | 扁平堕髻、线条侧髻 |
-| 双环髻 | 双髻对称、少女线条 | 年轻角色 | 扁平双髻、简单双环 |
-| 全散发 | 长发全散、配简单发饰 | 受伤、落魄 | 扁平散发、线条长发 |
-| 束发马尾 | 高束干练、简洁线条 | 习武、行动 | 扁平马尾、线条束发 |
+| nửa  | phát +sau phương phát  | ngày thường 、ra thi  | 、phát  |
+|  | cao 、đường mục  | 、 | 、đường mục cao  |
+|  | thấp 、đường mục  | mật 、 | 、đường mục  |
+| đôi  | đôi đúng 、ít nữ đường mục  | nămNhân vật | đôi 、đơn đôi  |
+| toàn phát  | dài phát toàn 、nối đơn phát  | 、 | phát 、đường mục dài phát  |
+| phát đuôi  | cao 、đường mục  | 、thi động  | đuôi 、đường mục phát  |
 
-### 女性发饰
+### nữ phát 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 风格 | 扁平化装饰、几何形 | 扁平发饰、几何装饰 |
-| 材质 | 线条勾勒、单色填充 | 线条饰品、色块发饰 |
-| 工艺 | 简洁线条、极简工艺 | 简洁线条、扁平工艺 |
+| Phong cách | hóa 、mấy dạng  | phát 、mấy  |
+|  | đường mục 、đơn vật sung  | đường mục 、vật phát  |
+|  | đường mục 、 | đường mục 、 |
 
-### 男性造型类型
+### nam tạo kiểu Loại
 
-| 造型 | 适用 | 提示词 |
+| tạo kiểu  | hàm  | Prompt |
 |---|---|---|
-| 束发半冠 | 日常、文人 | 扁平束发、线条冠 |
-| 全冠高束 | 正式、朝堂 | 扁平全冠、线条束发 |
-| 散发披肩 | 私密、受伤 | 扁平散发、线条长发 |
-| 战束马尾 | 战斗、习武 | 扁平战发、线条马尾 |
+| phát nửa  | ngày thường 、tài người | phát 、đường mục  |
+| toàn cao  | chính thức 、 | toàn 、đường mục phát  |
+| phát  | mật 、 | phát 、đường mục dài phát  |
+| đuôi  | 、 | phát 、đường mục đuôi  |
 
 ---
 
-## 五、服饰约束（L3+L4）
+## 5、phục （L3+L4）
 
-### 女性服饰矩阵
+### nữ phục 
 
-| 风格 | 款式 | 适用 | 提示词 |
+| Phong cách | thức  | hàm  | Prompt |
 |---|---|---|---|
-| 简约飘逸装 | 多层大袖衫、扁平线条 | 日常、仙境 | 扁平大袖、线条衣衫 |
-| 端庄礼服 | 曲裾深衣/襦裙、几何线条 | 朝堂、宴会 | 扁平曲裾、简约深衣 |
-| 轻便常服 | 窄袖襦裙/短衫、简洁线条 | 行动、习武 | 扁平窄袖、简洁短衫 |
-| 寝衣 | 薄纱内衫、素色扁平 | 室内、夜间 | 扁平寝衣、素色衣物 |
-| 大婚嫁衣 | 凤冠霞帔、层叠色块 | 婚礼 | 扁平嫁衣、多层色块 |
+|  | nhiều tầng lớn 、đường mục  | ngày thường 、 | lớn 、đường mục  |
+| đầu phục  | /、mấy đường mục  | 、sẽ  | 、 |
+| thường phục  | hẹp /ngắn 、đường mục  | thi động 、 | hẹp 、ngắn  |
+|  | mỏng trong 、vật  | trong 、gian  | 、vật  |
+| lớn  | 、tầng vật  |  | 、nhiều tầng vật  |
 
-### 女性服饰通用约束
+### nữ phục thông hàm 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 主色 | 白色/月白/银灰为默认 | 白色扁平衣服、简约衣物 |
-| 材质 | 纯色色块、无纹理 | 纯色衣物、无纹理 |
-| 质感 | 线条必须清晰 | 线条清晰、色块分明 |
-| 肩部 | 肩饰/披帛/云肩线条 | 线条肩饰、扁平云肩 |
-| 层次 | 多层叠穿、色块分明 | 多层叠穿、扁平层次 |
+| chính vật  | vật /tháng/Mặc định | vật phục 、 |
+|  | thuần vật vật 、không lý  | thuần vật 、không lý  |
+|  | đường mục Bắt buộcsạch  | đường mục sạch 、vật phútdẫn  |
+| bộ  | //đường mục  | đường mục 、 |
+| tầng lần  | nhiều tầng 、vật phútdẫn  | nhiều tầng 、tầng lần  |
 
-### 男性服饰矩阵
+### nam phục 
 
-| 风格 | 适用 | 提示词 |
+| Phong cách | hàm  | Prompt |
 |---|---|---|
-| 文人雅装 | 日常、书房 | 扁平长衫、简约衣衫 |
-| 武将劲装 | 战斗、练武 | 扁平劲装、简洁战服 |
-| 玄衣大氅 | 出场、夜行 | 扁平大氅、线条披风 |
-| 常服便装 | 休闲、私密 | 扁平常服、简约便装 |
-| 礼服朝服 | 朝堂、典礼 | 扁平朝服、简约礼袍 |
+| tài người | ngày thường 、 | dài 、 |
+|  | 、 | 、phục  |
+| lớn  | ra trường 、thi  | lớn 、đường mục phong  |
+| thường phục  | 、mật  | thường phục 、 |
+| phục phục  | 、 | phục 、 |
 
 ---
 
-## 六、配饰约束（L5）
+## 6、nối （L5）
 
-### 女性配饰
+### nữ nối 
 
-| 类型 | 约束 | 提示词 |
+| Loại |  | Prompt |
 |---|---|---|
-| 头饰 | 扁平化、几何形 | 扁平头饰、几何发饰 |
-| 耳饰 | 线条流苏/玉珰 | 线条耳环、扁平珰 |
-| 项饰 | 线条璎珞/项圈 | 线条璎珞、扁平项圈 |
-| 腰饰 | 线条宫绦/玉佩 | 线条宫绦、扁平玉佩 |
-| 手饰 | 线条玉镯/臂钏 | 线条手镯、扁平钏 |
+| đầu  | hóa 、mấy dạng  | đầu 、mấy phát  |
+|  | đường mục / | đường mục 、 |
+|  | đường mục / | đường mục 、 |
+|  | đường mục / | đường mục 、 |
+| tay  | đường mục / | đường mục tay 、 |
 
-### 男性配饰
+### nam nối 
 
-| 类型 | 约束 | 提示词 |
+| Loại |  | Prompt |
 |---|---|---|
-| 发冠 | 扁平冠、简洁线条 | 扁平冠、线条冠 |
-| 腰封 | 线条腰封、扁平色块 | 线条腰封、扁平带 |
-| 玉佩 | 扁平玉佩、简洁造型 | 扁平玉佩、线条佩 |
-| 兵器 | 佩剑/扇/笛（可选） | 扁平剑、线条扇 |
+| phát  | 、đường mục  | 、đường mục  |
+|  | đường mục 、vật  | đường mục 、kèm  |
+|  | 、tạo kiểu  | 、đường mục  |
+| thiết bị  | //（Tùy chọn） | 、đường mục  |
 
 ---
 
-## 七、服化组合速查
+## 7、phục hóa nhóm hợp tra 
 
-| 场景 | 妆容 | 发型 | 服饰 | 配饰 |
+| Bối cảnh | dung  | phát kiểu  | phục  | nối  |
 |---|---|---|---|---|
-| 日常闺中 | 清雅素妆 | 半挽云髻 | 简约飘逸装 | 扁平中等 |
-| 初次相遇 | 清雅素妆 | 半挽/飞仙 | 简约飘逸装 | 扁平中偏多 |
-| 甜宠互动 | 柔媚桃妆 | 半挽/堕马 | 简约/轻便 | 扁平中等 |
-| 正式亮相 | 冷艳霜妆 | 飞仙髻 | 端庄礼服 | 扁平极繁 |
-| 夜间密谈 | 清雅/桃妆 | 全散/堕马 | 寝衣 | 扁平极简 |
-| 受伤落魄 | 病弱梨妆 | 全散（乱） | 破损常服 | 扁平极简/无 |
-| 大婚典礼 | 华贵凤妆 | 飞仙髻 | 嫁衣 | 扁平极繁 |
-| 习武行动 | 素妆（极淡） | 束发马尾 | 轻便常服 | 扁平简 |
+| ngày thường giữa  | sạch  | nửa  |  | giữa  |
+| lần  | sạch  | nửa / |  | giữa nhiều  |
+| động  |  | nửa / | / | giữa  |
+| chính thức  |  |  | đầu phục  |  |
+| gian mật  | sạch / | toàn / |  |  |
+|  |  | toàn （） | thường phục  | /không  |
+| lớn  |  |  |  |  |
+| thi động  | （） | phát đuôi  | thường phục  |  |
 
 ---
 
-> **🔍 未覆盖场景推断规则**
+> **🔍 chưa Bối cảnhkhuyến **
 >
-> 当用户描述的场景/情境不在上表时，根据本风格核心基因自行推断：
+> khi hàm dùng Mô tả của Bối cảnh/tình không ở trên bảng ，dựa theosách Phong cáchcơ sở tự thi khuyến ：
 >
-> | 推断维度 | 扁平古风基因 |
+> | khuyến độ  | phong cơ sở  |
 > |---|---|
-> | 妆容强度 | 默认清雅素妆（色块极简）；正式/亮相→冷艳霜妆；甜宠/约会→柔媚桃妆；弱化/虚弱→病弱梨妆 |
-> | 发型 | 日常→半挽云髻或堕马髻；正式→飞仙髻；私密/夜晚→全散发；行动→束发马尾 |
-> | 服饰 | 所有服饰必须转化为扁平色块表达；纹样极度简化；多层叠穿保留轮廓感即可 |
-> | 配饰繁度 | 扁平化处理优先；正式→扁平极繁（简化为色块头饰+腰饰轮廓）；日常→扁平中等 |
-> | 色调倾向 | 低饱和古风色系（茶白/竹青/藕粉/砖红）；无渐变；明确边界线 |
+> | dung độ  | Mặc địnhsạch （vật ）；chính thức /→；/sẽ →；hóa /→ |
+> | phát kiểu  | ngày thường →nửa hoặc ；chính thức →；mật /Ban đêm→toàn phát ；thi động →phát đuôi  |
+> | phục  | tất cảphục Bắt buộcchuyển hóa vật bảng ；kiểu độ hóa ；nhiều tầng lưu lưu  |
+> | nối độ  | hóa xử lý trước ；chính thức →（hóa vật đầu +）；ngày thường →giữa  |
+> | vật gọi  | thấp  và phong vật dòng （///）；không ；dẫn giới đường  |
 
-## 八、四视图设定图规范
+## 8、4video ảnh thiết nối ảnh 
 
-### 视图定义
+### video ảnh nối nghĩa 
 
-| 位置 | 视图 | 角度 | 景别 | 要求 | 提示词 |
+| vị trí trí  | video ảnh  | nhân độ  | Cỡ cảnh | Yêu cầu | Prompt |
 |---|---|---|---|---|---|
-| 左一 | 人像特写 | 正面平视 | 面部至锁骨 | 面部占60%+，五官/妆容清晰 | portrait closeup、face detail、makeup detail |
-| 左二 | 正视图 | 正面 0° | 全身立像 | 面对镜头、服饰正面全貌 | front view、height mark |
-| 右二 | 侧视图 | 右侧 90° | 全身立像 | 纯侧面轮廓、服饰侧面层次 | side view、profile、height mark |
-| 右一 | 后视图 | 后方 180° | 全身立像 | 后脑发饰/背部服饰/发尾清晰 | back view、rear view、height mark |
+| trái 1  | ngườiĐặc tả (close-up) | chính mặt video  | mặt bộ đến  | mặt bộ 60%+，5/dung sạch  | portrait closeup、face detail、makeup detail |
+| trái 2 | chính video ảnh  | chính mặt  0° | toàn lập  | mặt đúng Ống kính、phục chính mặt toàn  | front view、height mark |
+| phải 2 | video ảnh  | phải  90° | toàn lập  | thuần mặt 、phục mặt tầng lần  | side view、profile、height mark |
+| phải 1  | sau video ảnh  | sau phương  180° | toàn lập  | sau phát /bộ phục /phát đuôi sạch  | back view、rear view、height mark |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面从左至右并排四视图 |
-| 背景 | 纯净中性灰 #E8E8E8 |
-| 站姿 | 自然站立、双脚平行微分、双臂自然下垂或微展（**禁止任何姿态变化**） |
-| 表情 | 符合妆容风格的微表情（如清雅素妆→淡然、桃妆→含笑），仅限面部微表情，不涉及肢体动作 |
-| 光线 | 无光影，纯平涂色块 |
-| 一致性 | 四视图的面容/妆容/发型/发饰/服饰/配饰完全一致 |
-| 画面比例 | 建议 4:1 或 3:1 |
+| cục  | cùng 1 vẽ mặt từ trái đến phải nhất sắp 4video ảnh  |
+| bối  | thuần giữa  #E8E8E8 |
+| trạm  | tự trạm lập 、đôi thi phút、đôi tự dưới hoặc （**Nghiêm cấmthái hóa **） |
+| bảng tình  | hợp dung Phong cách của bảng tình （như sạch →、→），chỉ hạn mặt bộ bảng tình ，không thể động tác vụ  |
+| ánh đường  | không Ánh sáng，thuần vật  |
+| 1  | 4video ảnh  của mặt dung /dung /phát kiểu /phát /phục /nối toàn 1  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 4:1 hoặc  3:1 |
 
 ---
 
-## 九、提示词模板
+## 9、Promptmô 
 
-### 输出格式约束
+### Định Dạng Đầu Ra
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 输出内容 | **仅输出提示词文本**，不输出任何其他内容 |
-| 禁止输出 | 速查表、分层构建方案、视觉约束表、禁止事项表、衍生方案、输出建议、核心要素表等一切非提示词内容 |
-| 禁止场景 | 人物衍生资产**不包含场景/环境描述**，不输出任何场景/环境/天气/背景叙事内容（场景属于场景资产范畴） |
-| 禁止道具 | **不包含任何道具交互**，不输出伞/剑/扇/书/灯笼/酒杯等手持物或交互物（道具属于道具资产范畴） |
-| 禁止姿态变化 | **不改变底模姿态**，不输出行走/回眸/举手/侧身/奔跑等任何动作或体态变化，保持自然站立 |
-| 格式 | 直接输出可用的提示词代码块，无需标题、表格、解释、方案对比 |
+| tải ra nội dung | **chỉ tải ra Prompttài sách **，không tải ra anh ấynội dung |
+| Nghiêm cấmtải ra  | tra bảng 、phúttầng cấu tạo phương 、trực quanbảng 、Nghiêm cấmviệc bảng 、sinh phương 、tải ra Khuyến nghị、cần bảng 1 phi Promptnội dung |
+| Nghiêm cấmBối cảnh | ngườisinh Tài nguyên**không gói Bối cảnh/Mô tả**，không tải ra Bối cảnh//ngày/bối việc nội dung（Bối cảnhbiệt với Bối cảnhTài nguyên） |
+| Nghiêm cấmĐạo cụ | **không gói Đạo cụtác vụ **，không tải ra /////tay giữ hoặc tác vụ （Đạo cụbiệt với Đạo cụTài nguyên） |
+| Nghiêm cấmthái hóa  | **không sửa mô thái **，không tải ra thi chạy /trả /tay //động tác vụ hoặc thể thái hóa ，lưu giữ tự trạm lập  |
+| khung thức  | trực tiếp tải ra hàm  của Promptmã ，không cần biểu đề 、bảng khung 、giải 、phương đúng tỷ  |
 
-### 完整服化叠加（四视图）
+### chỉnh phục hóa cộng （4video ảnh ）
 
 
 ```
-以角色基础形象图为底图，img2img叠加服化妆造，
-扁平古风{性别}角色四视图设定图，
+Nhân vậtcơ sở dạng tượng ảnh ảnh ，img2imgcộng phục hóa tạo ，
+phong {khác }Nhân vật4video ảnh thiết nối ảnh ，
 2d flat design，vector art，flat illustration，
 minimalist，clean lines，solid colors，
-保持基础形象轮廓不变，{整体气质}，
-【L1·妆容】根据用户线索决策：{基础妆/轻妆/正式妆}；使用 {妆容风格}，单色皮肤，扁平肤色，{眉妆}，{眼妆}，{唇妆}，
-【L2·发型】{造型类型}，线条发型，{发饰描述}，
-【L3+L4·服饰】{主色}{款式}，{材质}，{装饰工艺}，线条清晰，色块分明，
-【L5·配饰】{头饰}，{耳饰}，{项饰}，{腰饰}，
-同一画面左至右并排：人像特写+正视图+侧视图+后视图，
-自然站立，纯净中性灰背景，无光影，无渐变，
-四视图一致性，线条简洁，色块填充，
-图中不要有任何文字
+lưu giữ cơ sở dạng tượng không ，{chỉnh thể }，
+【L1·dung 】dựa theohàm dùng đường kiếm quyết định：{cơ sở //chính thức }；hàm  {dung Phong cách}，đơn vật ，vật ，{}，{}，{}，
+【L2·phát kiểu 】{tạo kiểu Loại}，đường mục phát kiểu ，{phát Mô tả}，
+【L3+L4·phục 】{chính vật }{thức }，{}，{}，đường mục sạch ，vật phútdẫn ，
+【L5·nối 】{đầu }，{}，{}，{}，
+cùng 1 vẽ mặt trái đến phải nhất sắp ：ngườiĐặc tả (close-up)+chính video ảnh +video ảnh +sau video ảnh ，
+tự trạm lập ，thuần giữa bối ，không Ánh sáng，không ，
+4video ảnh 1 ，đường mục ，vật sung ，
+ảnh giữa không cần có tài chữ 
 ```
 
 
 ---
 
-## 十、约束规则
+## 10、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 叠加后轮廓必须与底模一致 |
-| R2 | 服饰必须用「线条清晰 + 色块分明」 |
-| R3 | 女性配饰必须「扁平化 + 几何形」 |
-| R4 | 妆容/发型/服饰/配饰风格统一 |
-| R5 | 必须输出四视图设定图（人像特写+正视图+侧视图+后视图） |
-| R6 | 必须指定「纯净中性灰背景」 |
-| R7 | 必须指定「四视图一致性」 |
-| R8 | **仅输出提示词**——禁止输出速查表/分层方案/视觉约束/禁止事项/衍生方案/输出建议等任何非提示词内容 |
-| R9 | **禁止包含场景描述**——人物衍生资产不涉及场景/环境/天气/背景叙事，场景属于独立资产类型 |
-| R10 | **禁止道具交互**——不包含任何手持物/交互物（伞/剑/扇/书等），道具属于独立资产类型 |
-| R11 | **姿态保持不变**——必须保持底模自然站立姿态，禁止任何动作/体态/姿势变化 |
-| R12 | **L1 必须先分析再决策**——先解析用户面部线索，再确定基础妆/轻妆/正式妆 |
-| R13 | **所有衍生资产均需妆造**——正常情况不保持素颜，至少使用基础妆 |
-| R14 | **上妆强度受控**——即使上妆也需克制，不得出现现代扁平浓妆/夸张彩妆效果 |
-| R15 | **道具/场景/动作不作强度升级依据**——仅凭道具，环境，动作等信息不得把基础妆抬高为更强妆容 |
+| R1 | cộng sau Bắt buộcmô 1  |
+| R2 | phục Bắt buộchàm 「đường mục sạch  + vật phútdẫn 」 |
+| R3 | nữ nối Bắt buộc「hóa  + mấy dạng 」 |
+| R4 | dung /phát kiểu /phục /nối Phong cáchthống 1  |
+| R5 | Bắt buộctải ra 4video ảnh thiết nối ảnh （ngườiĐặc tả (close-up)+chính video ảnh +video ảnh +sau video ảnh ） |
+| R6 | Bắt buộcnối 「thuần giữa bối 」 |
+| R7 | Bắt buộcnối 「4video ảnh 1 」 |
+| R8 | **chỉ tải ra Prompt**——Nghiêm cấmtải ra tra bảng /phúttầng phương /trực quan/Nghiêm cấmviệc /sinh phương /tải ra Khuyến nghịphi Promptnội dung |
+| R9 | **Nghiêm cấmgói Bối cảnhMô tả**——ngườisinh Tài nguyênkhông Bối cảnh//ngày/bối việc ，Bối cảnhbiệt với lập Tài nguyênLoại |
+| R10 | **Nghiêm cấmĐạo cụtác vụ **——không gói tay giữ /tác vụ （///），Đạo cụbiệt với lập Tài nguyênLoại |
+| R11 | **thái lưu giữ không **——Bắt buộclưu giữ mô tự trạm lập thái ，Nghiêm cấmđộng tác vụ /thể thái /hóa  |
+| R12 | **L1 Bắt buộctrước phúttích quyết định**——trước giải tích hàm dùng mặt bộ đường kiếm ，nối cơ sở //chính thức  |
+| R13 | **tất cảsinh Tài nguyêncần tạo **——chính thường tình huống không lưu giữ ，đến ít hàm cơ sở  |
+| R14 | **trên độ sát **——trên cũng cần chép ，không được ra /bức hiệu quả  |
+| R15 | **Đạo cụ/Bối cảnh/động tác vụ không tác vụ độ cấp phụ liệu **——chỉ Đạo cụ，，động tác vụ thông tinkhông được đem cơ sở cao đổi dung  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 叠加后轮廓偏移 |
-| X2 | 配饰过于简单/现代化（女性） |
-| X3 | 妆容/服饰风格互相冲突 |
-| X4 | 复杂场景背景（必须纯灰底） |
-| X5 | 四视图间服化妆造不一致 |
-| X6 | 输出提示词以外的任何内容（表格/方案/建议/解释/变体等） |
-| X7 | 在人物衍生资产中加入场景描述（山道/雨景/室内/街道/天气等环境元素） |
-| X8 | 输出「核心要素速查」「分层构建方案」「视觉约束」「禁止事项」「衍生方案」等章节 |
-| X9 | 加入任何道具交互（手持伞/剑/扇/书/灯笼/酒杯等物品） |
-| X10 | 改变底模姿态（行走/回眸/举手/侧身/奔跑/低头/仰望等动作描述） |
-| X11 | 加入表情与姿态联动描述（如「侧身45°行走嘴角浅弯」等叙事性描写） |
-| X12 | 未分析用户线索就直接套用固定妆容 |
-| X13 | 错误保持素颜，导致衍生资产缺少应有妆造 |
-| X14 | 仅因道具/场景/动作词而误把妆容升级，导致妆造强度决策错误 |
-| X15 | 添加渐变/阴影/高光/立体感效果 |
+| X1 | cộng sau  |
+| X2 | nối với đơn /hóa （nữ ） |
+| X3 | dung /phục Phong cách |
+| X4 | lời Bối cảnhbối （Bắt buộcthuần ） |
+| X5 | 4video ảnh gian phục hóa tạo không 1  |
+| X6 | tải ra Promptngoài  của nội dung（bảng khung /phương /Khuyến nghị/giải /thể ） |
+| X7 | ở ngườisinh Tài nguyêngiữa cộng vào Bối cảnhMô tả（đạo /bối /trong /đạo /ngày） |
+| X8 | tải ra 「cần tra 」「phúttầng cấu tạo phương 」「trực quan」「Nghiêm cấmviệc 」「sinh phương 」Chương |
+| X9 | cộng vào Đạo cụtác vụ （tay giữ /////） |
+| X10 | sửa mô thái （thi chạy /trả /tay ///thấp đầu /động tác vụ Mô tả） |
+| X11 | cộng vào bảng tình thái kết động Mô tả（như 「45°thi chạy nhân 」việc mô ） |
+| X12 | chưa phúttích hàm dùng đường kiếm thì trực tiếp hàm nối dung  |
+| X13 | lỗilưu giữ ，dẫn sinh Tài nguyênít hồi có tạo  |
+| X14 | chỉ Đạo cụ/Bối cảnh/động tác vụ từ đem dung cấp ，dẫn tạo độ quyết địnhlỗi |
+| X15 | thêm/sáng /cao ánh /lập thể hiệu quả  |

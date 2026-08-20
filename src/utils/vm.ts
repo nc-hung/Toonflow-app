@@ -15,8 +15,8 @@ import jsonwebtoken from "jsonwebtoken";
 import u from "@/utils";
 import crypto from "node:crypto";
 export default function runCode(code: string, vendor?: Record<string, any>) {
-  code = code.replace(/export\s*\{\s*\};?/g, ""); // 去掉 export {} 以免沙盒环境报错
-  // 创建一个沙盒
+  code = code.replace(/export\s*\{\s*\};?/g, ""); // đi bỏ  export {} sai 
+  // sáng tạo một 
   const exports = {};
   const sandbox: Record<string, any> = {
     createOpenAI,
@@ -60,7 +60,7 @@ export function logger(logstring: any) {
   console.log("【VM】" + JSON.stringify(logstring));
 }
 /**
- * 压缩图片，目标字节数不高于 size
+ * nén nhỏ Hình ảnh，mục biểu chữ tiết số không cao với  size
  */
 export async function zipImage(completeBase64: string, size: number): Promise<string> {
   let quality = 80;
@@ -79,7 +79,7 @@ export async function zipImageResolution(completeBase64: string, width: number, 
   return `data:image/jpeg;base64,${out.toString("base64")}`;
 }
 
-//url转Base64
+//urlchuyển Base64
 export async function urlToBase64(url: string): Promise<string> {
   const res = await axios.get(url, { responseType: "arraybuffer" });
   const mime = res.headers["content-type"] || "image/jpeg";
@@ -107,14 +107,14 @@ export async function pollTask(
 }
 
 /**
- * 将多张图片横向拼接为一张，并确保输出大小不超过指定限制
- * @param imageBase64List - base64编码的图片数组
- * @param maxSize - 最大输出大小，支持格式如 "10mb", "5MB", "1024kb" 等
- * @returns 拼接后的图片base64字符串
+ * nhiều ảnh  Hình ảnhghép tiếp 1 ảnh  ，nhất lưu xuất ra kích thướckhông vượt nối giới hạn
+ * @param imageBase64List - base64chỉnh mã  của Hình ảnhsố nhóm 
+ * @param maxSize - nhất lớn xuất ra kích thước，hỗ trợđịnh dạngnhư  "10mb", "5MB", "1024kb" 
+ * @returns ghép tiếp sau   của Hình ảnhbase64chuỗi ký tự
  */
 export async function mergeImages(imageBase64List: string[], maxSize = "10mb"): Promise<string> {
   if (imageBase64List.length === 0) {
-    throw new Error("图片列表不能为空");
+    throw new Error("Hình ảnhdanh sáchkhông thể rỗng ");
   }
 
   const maxBytes = parseSize(maxSize);
@@ -122,14 +122,14 @@ export async function mergeImages(imageBase64List: string[], maxSize = "10mb"): 
   const imageMetadatas = await Promise.all(imageBuffers.map((buffer) => sharp(buffer).metadata()));
   const maxHeight = Math.max(...imageMetadatas.map((m) => m.height || 0));
 
-  // 计算各图片调整后的宽度
+  // tính toáncác Hình ảnhgọi chỉnh sau   của chiều rộng
   const imageWidths = imageMetadatas.map((metadata) => {
     const aspectRatio = (metadata.width || 1) / (metadata.height || 1);
     return Math.round(maxHeight * aspectRatio);
   });
   const totalWidth = imageWidths.reduce((sum, w) => sum + w, 0);
 
-  // 拼接图片
+  // ghép tiếp Hình ảnh
   const resizedImages = await Promise.all(
     imageBuffers.map(async (buffer, index) => {
       return sharp(buffer).resize(imageWidths[index], maxHeight, { fit: "cover" }).toBuffer();
@@ -155,18 +155,18 @@ export async function mergeImages(imageBase64List: string[], maxSize = "10mb"): 
     .jpeg({ quality: 90 })
     .toBuffer();
 
-  // 复用压缩逻辑
+  // lời hàm nén nhỏ logic
   const resultBuffer = await compressToSize(mergedBuffer, maxBytes, totalWidth, maxHeight);
   return resultBuffer.toString("base64");
 }
 
 /**
- * 解析大小字符串为字节数
+ * giải tích kích thướcchuỗi ký tựchữ tiết số 
  */
 function parseSize(size: string): number {
   const match = size.toLowerCase().match(/^(\d+(?:\.\d+)?)\s*(kb|mb|gb|b)?$/);
   if (!match) {
-    throw new Error(`无效的大小格式: ${size}`);
+    throw new Error(`vô hiệu của kích thướcđịnh dạng: ${size}`);
   }
   const value = parseFloat(match[1]);
   const unit = match[2] || "b";
@@ -180,7 +180,7 @@ function parseSize(size: string): number {
 }
 
 /**
- * 将base64字符串转换为Buffer
+ * base64chuỗi ký tựchuyển đổi Buffer
  */
 function base64ToBuffer(base64: string): Buffer {
   const base64Data = base64.replace(/^data:image\/\w+;base64,/, "");
@@ -188,7 +188,7 @@ function base64ToBuffer(base64: string): Buffer {
 }
 
 /**
- * 压缩Buffer到指定大小以内
+ * nén nhỏ Bufferđến nối kích thướctrong 
  */
 async function compressToSize(imageBuffer: Buffer, maxBytes: number, originalWidth: number, originalHeight: number): Promise<Buffer> {
   let quality = 90;

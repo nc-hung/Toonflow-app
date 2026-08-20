@@ -1,152 +1,152 @@
 ---
 name: liveaction_urban_prop_derivative
-description: 真人都市道具衍生状态生成 · 约束手册
+description: thật ngườiđều Đạo cụsinh trạng tháitạo · sổ tay
 metaData: liveaction_urban_art_skills
 ---
 
-# 真人都市道具衍生状态生成 · 约束手册
+# thật ngườiđều Đạo cụsinh trạng tháitạo · sổ tay
 
 ---
 
-## 一、衍生原则
+## 1 、sinh gốc 
 
-> 真人都市的道具衍生不是"材质切换"，而是"同一件物品在不同时间被摄影机再次拍到时，它变成了什么样"。磨损是时间在物品上写的日记，污渍是生活留下的签名。
+> thật ngườiđều  của Đạo cụsinh không là "đổi "，là "cùng 1 tệp ở không cùng thời giansáng máy lần đến ，nó tạo saokiểu "。là thời gianở trên  của ngày ，là sinh hoạt lưu dưới  của ký tên 。
 
-1. **造型锚定** — 道具核心造型、轮廓在所有状态中必须可识别。一个用了两年的手机，虽然屏幕有划痕、边框有磕碰，但一看就知道是原来那个型号
-2. **状态可读** — 新旧、完整/破损、干/湿——一眼就能区分。状态差异来自真实生活的物理逻辑
-3. **叙事服务** — 道具的状态就是一场未拍出的前戏。摔坏的手机暗示一场争吵、泡水的信件暗示一场暴雨、泛黄的照片暗示封存的时间
-4. **渐进合理** — 损伤和老化遵循真实材料的物理规律：纸先黄后脆再裂、金属先氧化后锈蚀、布料先褪色后磨损再撕裂
-5. **单视图静物摄影** — 衍生状态仅需一张静物照。与原道具设定图同机位、同光线、同背景——仅有道具的状态发生了变化
-
----
-
-## 二、状态类型
-
-### 2.1 使用-时间状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 崭新 | 刚拆封/刚购入，完好无损，光泽饱满，无任何使用痕迹 | 所有道具 | 全新拆封状态、完好无损、光泽饱满、无划痕无磨损、出厂品相 |
-| 日常使用 | 使用了一段时间——均匀微磨损、自然包浆、触感区有光泽（按键、握持处）、边角微磕碰。都市人正常使用后的真实状态 | 手机/钱包/钥匙/杯子/手表/背包等日常随身物品 | 正常使用痕迹、握持处自然包浆、边角轻微磕碰、按键区光泽、日常使用的真实状态 |
-| 重度使用 | 用了很久——明显磨损、色泽暗淡、表面密集划痕、触感区包浆厚重、边角多处磕碰、但不影响功能 | 老手机/旧钱包/长期使用的工具/老杯子 | 重度使用痕迹、密集表面划痕、边角多处磕碰、包浆厚重、但仍能正常使用 |
-| 陈旧 | 年代感强烈——褪色、氧化、包浆厚重、材质老化、可能存在轻微形变 | 老照片/旧书/祖传物品/旧票据 | 强烈年代感、自然褪色氧化、包浆厚重、材质老化、时光留下的印记 |
-
-### 2.2 损伤状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 微损 | 小裂纹/小缺口/表面划痕/局部磨损——不影响主体识别的轻微损伤 | 陶瓷杯/手机屏幕/眼镜/木制品 | 细微裂纹、表面浅划痕、边角轻微缺口、局部轻度磨损、主体完整 |
-| 破损 | 明显裂缝/碎裂/局部断裂——结构受损但整体仍可辨认 | 手机碎屏/摔裂的杯子/撕裂的书页/断裂的笔 | 屏幕碎裂、贯穿裂缝、局部断裂、结构受损、但主体造型仍可识别 |
-| 残片 | 仅剩碎片/核心部分——大面积缺失，仅保留可锚定原物的识别特征 | 瓷器碎片/撕裂的半张照片/碎玻璃 | 残片状态、仅存核心部分、大面积缺失、碎片、可识别原物的轮廓 |
-
-### 2.3 环境痕迹状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 淋雨/浸水 | 被雨淋过/掉进水里——表面水珠/水膜/纸张浸湿起皱/墨迹微洇/金属表面水渍 | 手机/书本/信件/钱包/雨伞 | 表面水珠凝结、纸张浸湿微皱、墨迹轻微晕染、金属表面水渍残留、刚淋过雨的真实状态 |
-| 沾染污渍 | 日常污渍——咖啡渍/茶渍/食物油渍/墨渍/泥点/灰尘，符合都市生活逻辑 | 杯子/衣物/书本/桌面物品 | 咖啡渍圈痕、茶渍浸染、食物油渍、日常泥点灰尘、生活留下的真实痕迹 |
-| 蒙灰/积尘 | 放了一段时间没动——表面薄灰、角落积尘、光泽被灰层覆盖 | 书架上的书/窗台的相框/储物间的盒子 | 表面薄灰覆盖、边角自然积尘、物品光泽被灰层柔化、被搁置的痕迹 |
-| 日晒褪色 | 长期暴露在阳光下——颜色变浅、纸张发黄、塑料发脆变色、织物褪色 | 窗边的书/户外用品/阳台物品 | 阳光日晒褪色、颜色不均匀变浅、纸张边缘发黄、塑料材质变色发脆 |
-
-### 2.4 情感-叙事状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 被翻阅/翻旧 | 书页边缘翻毛、封面有折痕、书脊有裂纹、便利贴残胶——被认真读过 | 书/日记本/相册/笔记本 | 书页边缘翻旧起毛、封面自然折痕、书脊使用裂纹、翻阅千百次的真实痕迹 |
-| 被珍藏/封存 | 用布/盒子/信封包裹，包装有岁月痕迹但被精心对待 | 信物/照片/首饰/日记本 | 精心包裹封存、包装纸有轻微岁月痕迹、打开过又被仔细包好、被珍藏的证据 |
-| 被遗弃/遗忘 | 孤零零的状态——落满灰、被压在角落、无人问津的质感 | 旧手机/旧玩具/旧照片/旧信件 | 落满灰尘的被遗弃感、被压在杂物下的痕迹、无人问津的孤寂状态 |
-| 被握持/贴身心爱 | 触感区被反复接触打磨出的特殊光泽——钱包最常摸的角、手机按键周围、笔握处 | 钱包/手机/钢笔/钥匙扣/戒指 | 触感区被反复接触打磨出的特殊包浆、贴身心爱之物的光泽、某人的体温留下的痕迹 |
+1. **tạo kiểu nối ** — Đạo cụtạo kiểu 、ở tất cảtrạng tháigiữa Bắt buộctrưng khác 。một hàm 2năm của tay máy ，có 、có ，nhưng 1 xem thì báo đạo là gốc mục kiểu số 
+2. **trạng thái** — mới cũ 、chỉnh /、/——1 thì thể khu phút。trạng tháibất tự thật sinh hoạt  của lý logic
+3. **việc phục vụ ** — Đạo cụ của trạng tháithì là 1 trường chưa ra  của trước 。xấu  của tay máy nhở 1 trường 、 của tin tệp nhở 1 trường 、 của nhở lưu  của thời gian
+4. **tiến hợp lý ** —  và hóa thật  của lý ：trước sau 、biệt trước hóa sau 、trước vật sau 
+5. **đơn video ảnh sáng ** — sinh trạng tháichỉ cần 1 bức 。gốc Đạo cụthiết nối ảnh cùng máy vị trí 、cùng ánh đường 、cùng bối ——chỉ có Đạo cụ của trạng tháiphát sinh hóa 
 
 ---
 
-## 三、单视图摄影规范
+## 2、trạng tháiLoại
 
-> 真人都市道具衍生仅需**单张**静物摄影。同一机位、同一光线、同一背景——仅有道具状态发生了变化。不是四宫格、不是多角度、不是turnaround。
+### 2.1 hàm -thời giantrạng thái
 
-### 全部状态变体共用此规范
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+| mới  | /vào ，tốt không ，ánh đầy ，không hàm  | tất cảĐạo cụ | toàn mới trạng thái、tốt không 、ánh đầy 、không không 、ra  |
+| ngày thường hàm  | hàm 1 đoạn thời gian——、tự gói 、khu có ánh （theo 、giữ xử ）、nhân 。đều ngườichính thường hàm sau  của thật trạng thái | tay máy /gói ///tay bảng /gói ngày thường  | chính thường hàm 、giữ xử tự gói 、nhân 、theo khu ánh 、ngày thường hàm  của thật trạng thái |
+| trùng độ hàm  | hàm rất ——dẫn 、vật 、bảng mặt mật tập 、khu gói dày trùng 、nhân nhiều xử 、nhưng không sáng phản công thể  | tay máy /cũ gói /dài kỳ hàm  của cụ / | trùng độ hàm 、mật tập bảng mặt 、nhân nhiều xử 、gói dày trùng 、nhưng thể chính thường hàm  |
+| cũ  | năm——vật 、hóa 、gói dày trùng 、hóa 、thể lưu ở dạng  | /cũ /truyền /cũ liệu  | năm、tự vật hóa 、gói dày trùng 、hóa 、ánh lưu dưới  của  |
 
-| 项目 | 摄影要求 |
+### 2.2 trạng thái
+
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+|  | nhỏ /nhỏ cổng /bảng mặt /cục bộ ——không sáng phản chính thể trưng khác  của  | /tay máy /quay /chép  | 、bảng mặt 、nhân cổng 、cục bộ độ 、chính thể chỉnh  |
+|  | dẫn //cục bộ ——kết cấu nhưng chỉnh thể  | tay máy / của / của / của  | 、、cục bộ 、kết cấu 、nhưng chính thể tạo kiểu trưng khác  |
+|  | chỉ /bộ phút——lớn mặt thất ，chỉ lưu lưu nối gốc  của trưng khác  | thiết bị / của nửa bức / | trạng thái、chỉ lưu bộ phút、lớn mặt thất 、、trưng khác gốc  của  |
+
+### 2.3 trạng thái
+
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+| / | /bỏ tiến ——bảng mặt //bức //biệt bảng mặt  | tay máy /sách /tin tệp /gói / | bảng mặt kết 、bức 、、biệt bảng mặt lưu 、 của thật trạng thái |
+|  | ngày thường ——////điểm /，hợp đều sinh hoạt logic | //sách /mặt  | 、、、ngày thường điểm 、sinh hoạt lưu dưới  của thật  |
+| / | mở 1 đoạn thời gianchưa động ——bảng mặt mỏng 、nhân 、ánh tầng  | trên  của /đài  của /trữ gian  của  | bảng mặt mỏng 、nhân tự 、ánh tầng hóa 、trí  của  |
+| ngày vật  | dài kỳ ở ánh dưới ——vật 、bức phát 、phát vật 、vật  |  của /dùng ngoài hàm /đài  | ánh ngày vật 、vật không 、bức phát 、vật phát  |
+
+### 2.4 tình -việc trạng thái
+
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+| /cũ  | 、mặt có 、có 、——thật  | /ngày sách /quyển /sách  | cũ 、mặt tự 、hàm 、nghìntrăm lần  của thật  |
+| /lưu  | hàm //tin gói ，gói có thángnhưng đúng  | tin ///ngày sách  | gói lưu 、gói có tháng、mở mở lại gói tốt 、 của chứng liệu  |
+| / | 00 của trạng thái——đầy 、nén ở nhân 、không ngườihỏi  của  | cũ tay máy /cũ cụ /cũ /cũ tin tệp  | đầy  của 、nén ở dưới  của 、không ngườihỏi  của trạng thái |
+| giữ / | khu phụ lời tiếp mở ra  của ánh ——gói nhất thường  của nhân 、tay máy theo khí 、xử  | gói /tay máy /// | khu phụ lời tiếp mở ra  của gói 、 của  của ánh 、người của thể lưu dưới  của  |
+
+---
+
+## 3、đơn video ảnh sáng 
+
+> thật ngườiđều Đạo cụsinh chỉ cần **đơn bức **sáng 。cùng 1 máy vị trí 、cùng 1 ánh đường 、cùng 1 bối ——chỉ có Đạo cụtrạng tháiphát sinh hóa 。không là 4khung 、không là nhiều nhân độ 、không là turnaround。
+
+### toàn bộtrạng tháithể hàm 
+
+| dự án | sáng Yêu cầu |
 |---|---|
-| 背景 | 素灰无缝背景纸 #B0B0B0（哑光），或浅木纹桌面/米白台面——与原道具设定图**完全一致** |
-| 光线 | 与原道具设定图**完全一致**的窗光或柔光箱设置。光位、光比、色温不变 |
-| 角度 | 与原道具设定图**完全一致**的机位和角度。确保是"同一件物品在不同时间的同一位置被拍" |
-| 景深 | 浅景深 f/2.8-f/5.6，与原图一致 |
-| 构图 | 道具居中独立陈列，占画面主体 70%+，完整入画无裁切 |
-| 投影 | 道具底部与承载面之间的自然接触阴影，方向与主光源一致 |
-| 画面比例 | 1:1 正方形或 4:3，与原图一致 |
+| bối  | không bối  #B0B0B0（ánh ），hoặc mặt /đài mặt ——gốc Đạo cụthiết nối ảnh **toàn 1 ** |
+| ánh đường  | gốc Đạo cụthiết nối ảnh **toàn 1 ** của ánh hoặc ánh cài đặt。ánh vị trí 、ánh tỷ 、vật không  |
+| nhân độ  | gốc Đạo cụthiết nối ảnh **toàn 1 ** của máy vị trí  và nhân độ 。lưu là "cùng 1 tệp ở không cùng thời gian của cùng 1 vị trí trí " |
+| bối  | bối  f/2.8-f/5.6，gốc ảnh 1  |
+| cấu ảnh  | Đạo cụgiữa lập hàng ，vẽ mặt chính thể  70%+，chỉnh vào vẽ không  |
+| sáng  | Đạo cụbộ xuống mặt  của gian  của tự tiếp sáng ，phương chính ánh nguồn 1  |
+| vẽ mặt Tỷ lệ | 1:1 chính phương dạng hoặc  4:3，gốc ảnh 1  |
 
 ---
 
-## 四、材质状态变化——时间在真实物品上留下的痕迹
+## 4、trạng tháihóa ——thời gianở thật trên lưu dưới  của 
 
-> 以下描述的是真实材料在都市日常生活中自然老化的方式，不是渲染参数。
+> dưới Mô tả của là thật ở đều ngày thường sinh hoạt giữa tự hóa  của cách thức，không là tham số。
 
-| 材质 | 崭新 → 日常使用 | 日常 → 重度使用 | 损伤表现 |
+|  | mới  → ngày thường hàm  | ngày thường  → trùng độ hàm  | bảng  |
 |---|---|---|---|
-| 金属（不锈钢/铝合金） | 镜面/拉丝光泽饱满 → 表面细微划痕、指纹区微包浆、边角微磕碰 | 划痕密集、光泽内敛、局部氧化变色、边缘磨损圆润 | 凹痕、变形、断裂、锈蚀斑点 |
-| 玻璃 | 通透无划痕、边缘光滑 → 表面浅划痕、指纹残留、边缘微磕碰 | 划痕遍布、通透度下降、边缘磨损粗糙 | 碎裂、裂纹、崩角、缺片 |
-| 陶瓷 | 釉面饱满亮泽 → 表面微划痕、杯口杯底使用磨损、釉面柔光 | 釉面暗淡、划痕密集、底部磨损露胎、可能有细微开片 | 裂纹、缺口、碎裂、釉面剥落 |
-| 塑料 | 表面光滑、色泽均匀 → 轻微磨痕、光泽下降、边角磨损 | 密集划痕、发黄老化、触感区油光、轻微形变 | 断裂、缺口、崩边、表面严重刮花 |
-| 纸质 | 崭新平整、印刷清晰 → 边缘微毛、自然微皱、翻阅痕迹 | 发黄变脆、折痕密集、边缘磨损起毛、可能局部破损 | 撕裂、缺角、浸湿起皱、焦损、字迹模糊 |
-| 皮革 | 纹理清晰、光泽均匀 → 使用包浆、弯折处纹理加深、五金件轻微氧化 | 包浆厚重、弯折处开裂风险、色泽暗沉、边缘磨损 | 开裂、断裂、皮面剥落、五金件锈蚀 |
-| 织物（棉/麻/帆布） | 纤维整齐、色泽鲜亮 → 轻微起毛、色泽微褪、正常使用褶皱 | 起毛起球明显、褪色明显、肘/膝/臀等受力区磨损变薄 | 撕裂、破洞、磨穿、脱线 |
-| 木质 | 纹理清晰、漆面光滑 → 细微划痕、包浆温润、局部漆面微磨损 | 划痕密集、漆面剥落、木材色泽暗沉、边角磨损圆润 | 开裂、断裂、缺口、虫蛀痕迹 |
-| 电子屏幕/面板 | 亮屏清晰、触控灵敏、无划痕 → 细微划痕、疏油层磨损、屏幕轻微烧屏 | 划痕密集、屏幕局部老化偏色、边框磨损 | 碎裂、漏液、显示异常、花屏、触控失灵状态 |
+| biệt （không /hợp ） | quay mặt /ánh đầy  → bảng mặt 、khu gói 、nhân  | mật tập 、ánh trong 、cục bộ hóa vật 、 | 、dạng 、、điểm  |
+|  | thông không 、ánh  → bảng mặt 、lưu 、 | 、thông độ dưới 、 | 、、nhân 、 |
+|  | mặt đầy  → bảng mặt 、cổng hàm 、mặt ánh  | mặt 、mật tập 、bộ 、thể có mở  | 、cổng 、、mặt  |
+|  | bảng mặt ánh 、vật  → 、ánh dưới 、nhân  | mật tập 、phát hóa 、khu ánh 、dạng  | 、cổng 、、bảng mặt trùng  |
+|  | mới chỉnh 、làm sạch  → 、tự 、 | phát 、mật tập 、、thể cục bộ  | 、nhân 、、、chữ mô  |
+|  | lý sạch 、ánh  → hàm gói 、xử lý cộng 、5tệp hóa  | gói dày trùng 、xử mở phong 、vật 、 | mở 、、mặt 、5tệp  |
+| （//） | chỉnh 、vật  → 、vật 、chính thường hàm  | dẫn 、vật dẫn 、//lực khu mỏng  | 、、、đường  |
+|  | lý sạch 、mặt ánh  → 、gói 、cục bộ mặt  | mật tập 、mặt 、vật 、nhân  | mở 、、cổng 、 |
+| /mặt  | sạch 、sát 、không  → 、tầng 、 | mật tập 、cục bộ hóa vật 、 | 、、nhở bất thường 、、sát thất trạng thái |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 
-真人都市道具状态摄影，单张静物产品摄影，非3D渲染非CG非建模，
-基于原道具设定图的同一机位和光线条件，{道具类型}，{材质描述}，
-当前状态：{状态名}，
-{状态视觉核心描述}，{表面/材质变化细节描述}，
-道具独立静物陈列，{背景：素灰背景纸 #B0B0B0 / 浅木纹桌面 / 米白台面}，
-{光源：与原图一致的窗光/柔光箱}，浅景深 f/2.8-f/5.6，柔和自然阴影，
-日常真实使用/损伤/时间痕迹、中国当代都市物品、单张静物摄影，
-画面干净无文字无水印无签名无边框，
-真人写实摄影画质、35mm全画幅摄影质感
+thật ngườiđều Đạo cụtrạng tháisáng ，đơn bức nguyên sáng ，phi 3Dphi CGphi tạo mô ，
+cơ sở với gốc Đạo cụthiết nối ảnh  của cùng 1 máy vị trí  và ánh đường mục tệp ，{Đạo cụLoại}，{Mô tả}，
+hiện tạitrạng thái：{trạng tháitên }，
+{trạng tháitrực quanMô tả}，{bảng mặt /hóa tiết Mô tả}，
+Đạo cụlập hàng ，{bối ：bối  #B0B0B0 / mặt  / đài mặt }，
+{ánh nguồn ：gốc ảnh 1  của ánh /ánh }，bối  f/2.8-f/5.6， và tự sáng ，
+ngày thường thật hàm //thời gian、giữa khi đều 、đơn bức sáng ，
+vẽ mặt không tài chữ không không ký tên không ，
+thật ngườisáng vẽ 、35mmtoàn vẽ sáng 
 
-### 负面规避提示词
+### mặt Prompt
 
 3D render, 3D modeling, CGI, Unreal Engine, Blender, PBR material, game engine, cartoon, anime, 2D, illustration, hand drawn,
 multiple views, four views, grid layout, 2x2, turnaround, orthographic view, blueprint,
 brand new, unboxed, pristine, showroom, sample product, unused,
 unrealistic damage, illogical wear, magic transformation, glowing, energy effect, sci-fi effect,
-古风, 古代, 仙侠, 武侠, 民国, 赛博朋克, 科幻, 西方奇幻, 中世纪, 非中国物品,
+phong , , , , dân , , , phương , giữa , phi giữa ,
 person, hand, finger, holding, wearing, using, interacting,
 floating, shadowless, cut out, white background isolation, clipping path,
 text on image, watermark, signature, logo, border, frame
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 道具核心造型/轮廓在所有状态中必须可识别，不得因状态变化导致无法辨认 |
-| R2 | 状态变化必须符合真实材料的物理逻辑——纸先黄后脆、金属先氧化后锈蚀，无违和跳跃 |
-| R3 | 必须是**单张**静物摄影——单视图、非2×2四宫格、非多角度、非turnaround |
-| R4 | 必须与原道具设定图保持同一机位、同一光线、同一背景——仅道具状态不同 |
-| R5 | 必须指定非全新非样板的状态痕迹，除非状态本身就是"崭新" |
-| R6 | 损伤/老化程度应有叙事合理性——不做为做旧而做旧，伤痕要有"发生过什么"的暗示 |
-| R7 | 必须声明"实物产品摄影 + 非3D渲染非CG"核心锚定 |
+| R1 | Đạo cụtạo kiểu /ở tất cảtrạng tháigiữa Bắt buộctrưng khác ，không được trạng tháihóa dẫn không thức  |
+| R2 | trạng tháihóa Bắt buộchợp thật  của lý logic——trước sau 、biệt trước hóa sau ，không  và  |
+| R3 | Bắt buộclà **đơn bức **sáng ——đơn video ảnh 、phi 2×24khung 、phi nhiều nhân độ 、phi turnaround |
+| R4 | Bắt buộcgốc Đạo cụthiết nối ảnh lưu giữ cùng 1 máy vị trí 、cùng 1 ánh đường 、cùng 1 bối ——chỉ Đạo cụtrạng tháikhông cùng  |
+| R5 | Bắt buộcnối phi toàn mới phi kiểu  của trạng thái，bỏ phi trạng tháisách thì là "mới " |
+| R6 | /hóa trình độ hồi có việc hợp lý ——không cũ cũ ，cần có "phát sinh sao" của nhở  |
+| R7 | Bắt buộcthanh dẫn "nguyên sáng  + phi 3Dphi CG"nối  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 严禁状态变化后道具不可识别，严禁擅自修改道具核心造型 |
-| X2 | 严禁违反物理逻辑的状态变化（陶瓷生锈、塑料包浆、玻璃腐蚀等反物理表现） |
-| X3 | 严禁「3D渲染 / 3D建模 / CG / PBR材质 / UE引擎 / Blender」等一切CG术语 |
-| X4 | 严禁「2D手绘 / 插画 / 动画 / 二次元」等非摄影媒介 |
-| X5 | 严禁「多角度 / 四视图 / 2×2网格 / 正交视图 / turnaround / blueprint」——仅单张 |
-| X6 | 严禁「古风/古代/仙侠/武侠/民国/赛博朋克/科幻/西方奇幻」等非当代都市物品 |
-| X7 | 严禁「发光/激活/能量光效/魔法/异能/科幻特效」——真实物品不会发光 |
-| X8 | 严禁「出现人物/手部/手指/肢体」 |
-| X9 | 严禁「道具被持有/握持/佩戴/使用中」的状态 |
-| X10 | 严禁「悬浮/抠图白底/无投影/无承载面」 |
-| X11 | 严禁「过度血腥/恐怖/令人不适的损伤描绘」 |
-| X12 | 严禁「水印 / 文字 / LOGO / 签名 / 边框 / AI生成痕迹」 |
+| X1 | trạng tháihóa sau Đạo cụkhông trưng khác ，tự sửa Đạo cụtạo kiểu  |
+| X2 | phụ lý logic của trạng tháihóa （sinh 、gói 、phụ lý bảng ） |
+| X3 | 「3D / 3Dtạo mô  / CG / PBR / UE / Blender」1 CGngữ  |
+| X4 | 「2Dtay  / vẽ  / động vẽ  / 2lần 」phi sáng  |
+| X5 | 「nhiều nhân độ  / 4video ảnh  / 2×2mạng khung  / chính tác vụ video ảnh  / turnaround / blueprint」——chỉ đơn bức  |
+| X6 | 「phong ////dân ///phương 」phi khi đều  |
+| X7 | 「phát ánh /kích hoạt /thể lượng ánh hiệu /thức /bất thể /hiệu 」——thật không sẽ phát ánh  |
+| X8 | 「ra người/tay bộ /tay /thể 」 |
+| X9 | 「Đạo cụgiữ có /giữ //hàm giữa 」 của trạng thái |
+| X10 | 「/ảnh /không sáng /không xuống mặt 」 |
+| X11 | 「độ //ngườikhông  của mô 」 |
+| X12 | 「 / tài chữ  / LOGO / ký tên  /  / AItạo」 |

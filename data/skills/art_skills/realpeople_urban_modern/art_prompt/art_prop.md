@@ -1,130 +1,130 @@
-# 道具图像生成 · 都市写实约束手册
+# Đạo cụhình ảnhtạo · đều sổ tay
 
 ---
 
-## 一、道具设计原则
+## 1 、Đạo cụthiết tính gốc 
 
-1. **功能可读** — 道具用途一目了然，造型服务于功能
-2. **质感极致** — 材质纹理必须清晰可辨（金属/玻璃/塑料/皮革/布料）
-3. **年代一致** — 所有道具必须符合现代都市世界观，禁止古代元素
-4. **尺度明确** — 通过参照物或标注暗示道具真实尺寸
-5. **纯道具独立展示** — 画面中只能出现道具本身，严禁出现任何人物、手部、肢体，道具不可处于被持有/佩戴/握持状态，必须以静物陈列方式独立呈现
-
----
-
-## 二、道具分类与美学约束
-
-### 2.1 电子产品类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 手机/笔记本/平板/耳机 | {电子产品类型}，现代电子产品 |
-| 材质 | 金属/玻璃/塑料 + 品牌标识 | 金属质感、玻璃面板 |
-| 装饰 | 接口/屏幕/按钮细节清晰 | 接口清晰、屏幕反光 |
-| 光泽 | 现代工业光泽、金属反光 | 现代光泽、金属质感 |
-| 提示词 | 现代{电子产品}，{材质}，工业设计，细节清晰 | — |
-
-### 2.2 个人饰品类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 手表/眼镜/首饰/皮带 | {饰品类型}，现代配饰 |
-| 材质 | 金属/皮革/玻璃/橡胶 | 金属质感、皮质纹理 |
-| 工艺 | 现代工艺、品牌标识清晰 | 现代工艺、品牌精致 |
-| 光泽 | 金属光泽/玻璃反光/皮质光泽 | 金属光泽、玻璃反光 |
-| 提示词 | 现代{饰品}，{材质}，现代工艺，细节清晰 | — |
-
-### 2.3 生活用品类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 水杯/咖啡杯/灯具/收纳 | {器物类型}，现代生活 |
-| 材质 | 玻璃/金属/塑料/陶瓷 | 玻璃通透、金属质感 |
-| 质感 | 现代设计、表面工艺清晰 | 表面工艺、设计细节 |
-| 风格 | 现代简约/北欧/工业风 | 现代简约、北欧风格 |
-| 提示词 | 现代{器物}，{材质}质感，设计细节 | — |
-
-### 2.4 办公文具类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 笔/笔记本/文件夹/书签 | {文具类型}，办公文具 |
-| 材质 | 金属/塑料/皮革/纸张 | 金属质感、皮革纹理 |
-| 质感 | 品牌标识/文字清晰可辨 | 文字清晰、品牌标识 |
-| 状态 | 可按剧情需要添加使用痕迹 | 使用痕迹 / 崭新 |
-| 提示词 | 现代{文具}，{材质}，{状态}，品牌标识清晰 | — |
+1. **công thể ** — Đạo cụhàm 1 mục ，tạo kiểu phục vụ với công thể 
+2. **** — lý Bắt buộcsạch （biệt ////）
+3. **năm1 ** — tất cảĐạo cụBắt buộchợp Đô Thị Hiện Đạigiới ，Nghiêm cấm
+4. **độ dẫn ** — thông quatham hoặc biểu tâm nhở Đạo cụthật kích thước
+5. **thuần Đạo cụlập nhở ** — vẽ mặt giữa chỉ thể ra Đạo cụsách ，ra người、tay bộ 、thể ，Đạo cụkhông xử với giữ có //giữ trạng thái，Bắt buộchàng cách thứclập 
 
 ---
 
-## 三、多角度设定图规范
+## 2、Đạo cụphútloại đẹp 
 
-### 视图定义
+### 2.1 nguyên loại 
 
-| 位置 | 视图 | 角度 | 要求 | 提示词 |
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | tay máy /sách //máy  | {nguyên Loại}，nguyên  |
+|  | biệt // + biểu trưng  | biệt 、mặt  |
+|  | tiếp cổng //theo tiết sạch  | tiếp cổng sạch 、phụ ánh  |
+| ánh  | ánh 、biệt phụ ánh  | ánh 、biệt  |
+| Prompt | {nguyên }，{}，thiết tính ，tiết sạch  | — |
+
+### 2.2 mục ngườiloại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | tay bảng /quay //kèm  | {Loại}，nối  |
+|  | biệt /// | biệt 、lý  |
+|  | 、biểu trưng sạch  | 、 |
+| ánh  | biệt ánh /phụ ánh /ánh  | biệt ánh 、phụ ánh  |
+| Prompt | {}，{}，，tiết sạch  | — |
+
+### 2.3 sinh hoạt hàm loại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | //cụ /nhận  | {thiết bị Loại}，sinh hoạt  |
+|  | /biệt // | thông 、biệt  |
+|  | thiết tính 、bảng mặt sạch  | bảng mặt 、thiết tính tiết  |
+| Phong cách | //phong  | 、Phong cách |
+| Prompt | {thiết bị }，{}，thiết tính tiết  | — |
+
+### 2.4 tài cụ loại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | /sách /tệpthư mục /ký  | {tài cụ Loại}，tài cụ  |
+|  | biệt ///bức  | biệt 、lý  |
+|  | biểu trưng /tài chữ sạch  | tài chữ sạch 、biểu trưng  |
+| trạng thái | theo kịch tình cần cần thêmhàm  | hàm  / mới  |
+| Prompt | {tài cụ }，{}，{trạng thái}，biểu trưng sạch  | — |
+
+---
+
+## 3、nhiều nhân độ thiết nối ảnh 
+
+### video ảnh nối nghĩa 
+
+| vị trí trí  | video ảnh  | nhân độ  | Yêu cầu | Prompt |
 |---|---|---|---|---|
-| 左上 | 正面图 | 正面 0° | 道具完整正面形态 | front view |
-| 右上 | 侧面图 | 侧面 90° | 厚度/轮廓/结构清晰 | side view |
-| 左下 | 背面图 | 背面 180° | 道具背部结构/装饰 | back view |
-| 右下 | 细节特写 | 局部放大 | 材质纹理/工艺细节 | detail closeup |
+| trái trên  | chính mặt ảnh  | chính mặt  0° | Đạo cụchỉnh chính mặt dạng thái  | front view |
+| phải trên  | mặt ảnh  | mặt  90° | dày độ //kết cấu sạch  | side view |
+| trái dưới  | mặt ảnh  | mặt  180° | Đạo cụbộ kết cấu / | back view |
+| phải dưới  | tiết Đặc tả (close-up) | cục bộ mở lớn  | lý /tiết  | detail closeup |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面四宫格（2×2），上下左右四视角 |
-| 背景 | 纯净中性灰 #E8E8E8 |
-| 光线 | 均匀柔光，无硬阴影 |
-| 比例 | 每格道具占格内主体 70%+ |
-| 投影 | 允许自然地面微投影 |
-| 画面比例 | 建议 1:1 |
+| cục  | cùng 1 vẽ mặt 4khung （2×2），trên dưới trái phải 4video nhân  |
+| bối  | thuần giữa  #E8E8E8 |
+| ánh đường  | ánh ，không sáng  |
+| Tỷ lệ | khung Đạo cụkhung trong chính thể  70%+ |
+| sáng  | tự địa mặt sáng  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 1:1 |
 
 ---
 
-## 四、材质渲染约束
+## 4、
 
-| 材质 | 渲染要求 | 提示词 |
+|  | Yêu cầu | Prompt |
 |---|---|---|
-| 金属 | 反光/高光/冷光泽、划痕微可见 | 金属质感、冷光泽、反光清晰 |
-| 玻璃 | 透光/反光/折射清晰 | 玻璃通透、反光清晰 |
-| 塑料 | 质感细腻、表面均匀 | 塑料质感、表面细腻 |
-| 皮革 | 纹理清晰、光泽自然 | 皮革纹理、质感细腻 |
-| 陶瓷 | 釉面光泽、色泽均匀 | 釉面光泽、瓷质温润 |
-| 布料 | 纤维质感、边缘自然 | 布料纹理、质感自然 |
-| 木材 | 木纹清晰、表面光滑 | 木纹清晰、质感温润 |
+| biệt  | phụ ánh /cao ánh /ánh 、thấy  | biệt 、ánh 、phụ ánh sạch  |
+|  | ánh /phụ ánh /sạch  | thông 、phụ ánh sạch  |
+|  | 、bảng mặt  | 、bảng mặt  |
+|  | lý sạch 、ánh tự  | lý 、 |
+|  | mặt ánh 、vật  | mặt ánh 、 |
+|  | 、tự  | lý 、tự  |
+|  | sạch 、bảng mặt ánh  | sạch 、 |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 
 ```
-现代都市道具设定图，真实摄影风格，都市写实纪实，强对比度，极致细节，
-{道具类型}，{材质描述}，{工艺/装饰描述}，{状态描述}，
-纯道具静物展示，道具独立陈列，无人持有，无人佩戴，
-同一画面四宫格（2×2）：左上正面图+右上侧面图+左下背面图+右下细节特写，
-纯净中性灰背景，均匀柔光，无硬阴影，
-材质纹理超清晰，质感写实，{材质光泽描述}
-图中不要有任何文字，
-画面中不能出现任何人物、手部、手指、肢体，道具不可处于被握持或佩戴状态
+Đô Thị Hiện ĐạiĐạo cụthiết nối ảnh ，thật sáng Phong cách，đều ，đúng tỷ độ ，tiết ，
+{Đạo cụLoại}，{Mô tả}，{/Mô tả}，{trạng tháiMô tả}，
+thuần Đạo cụnhở ，Đạo cụlập hàng ，không ngườigiữ có ，không người，
+cùng 1 vẽ mặt 4khung （2×2）：trái trên chính mặt ảnh +phải trên mặt ảnh +trái dưới mặt ảnh +phải dưới tiết Đặc tả (close-up)，
+thuần giữa bối ，ánh ，không sáng ，
+lý vượt sạch ，，{ánh Mô tả}
+ảnh giữa không cần có tài chữ ，
+vẽ mặt giữa không thể ra người、tay bộ 、tay 、thể ，Đạo cụkhông xử với giữ hoặc trạng thái
 ```
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须指定「纯净中性灰背景」 |
-| R2 | 必须明确道具材质与工艺 |
-| R3 | 道具造型必须符合现代都市世界观 |
+| R1 | Bắt buộcnối 「thuần giữa bối 」 |
+| R2 | Bắt buộcdẫn Đạo cụ |
+| R3 | Đạo cụtạo kiểu Bắt buộchợp Đô Thị Hiện Đạigiới  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 复杂场景背景 |
-| X2 | 道具与人物同画面（本环节为纯道具图） |
-| X3 | 出现任何人物形象，包括全身、半身、局部（手、手指、手臂等肢体） |
-| X4 | 道具处于被持有、握持、佩戴、使用中的状态 |
-| X5 | 出现暗示人物存在的元素（如手持痕迹、佩戴视角、使用姿态） |
+| X1 | lời Bối cảnhbối  |
+| X2 | Đạo cụngườicùng vẽ mặt （sách tiết thuần Đạo cụảnh ） |
+| X3 | ra ngườidạng tượng ，gói quát toàn 、nửa 、cục bộ （tay 、tay 、tay thể ） |
+| X4 | Đạo cụxử với giữ có 、giữ 、、hàm giữa  của trạng thái |
+| X5 | ra nhở ngườilưu ở  của （như tay giữ 、video nhân 、hàm thái ） |

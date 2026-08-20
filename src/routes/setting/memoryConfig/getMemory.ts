@@ -17,7 +17,7 @@ export default router.get("/", async (req, res) => {
       "modelDtype",
     ]);
 
-  if (!settingData) return res.status(400).send(error(`获取记忆配置失败`));
+  if (!settingData) return res.status(400).send(error(`Lấy cấu hình bộ nhớ thất bại`));
   const memoryObj: Record<string, number | string | string[]> = {};
 
   settingData.forEach((i) => {

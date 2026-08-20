@@ -1,130 +1,130 @@
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
-# 国风赛博3D风格 说明
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
+# phong 3DPhong cách Giải thích
 
 
 
-######抖音号  anyexiaoshu27提供开发
-本方案基于国风3D核心规范深度定制，将中国传统东方美学内核与赛博朋克科幻元素做本土化深度融合，保留原版高精度3D渲染、传统色盘、东方意境、电影级光影的核心优势，同时完成赛博元素的国风适配，杜绝生硬拼接，适配全品类AI美术生成工具。
-
----
-
-## 一、风格核心定义（生成底层逻辑）
-本风格所有美术提示词、规范和生成内容均严格限定于：
-- **国风赛博3D渲染**：以三维建模渲染技术为核心，深度融合中国传统东方美学与赛博朋克科幻内核，将中式榫卯、水墨意境、传统纹样、古风形制与全息光影、机械结构、霓虹光效、未来科技元素做本土化融合，拒绝无内核的元素堆砌
-- **3D超精细质感**：8K高精度模型、4K超清PBR物理材质渲染、次世代游戏级别拓扑、金属/织物/玉石/全息材质质感拉满，细节纤毫毕现，纹理清晰可辨
-- **国风赛博专属色盘**：以青绿、朱红、靛蓝、鎏金、墨黑为基底，搭配低饱和中式霓虹色（朱砂红霓虹、石青蓝全息、鎏金辉光），杜绝荧光溢色，色彩典雅与未来感兼具
-- **东方赛博美学氛围**：虚实相生的水墨意境+赛博光影层次，留白构图，中式对称美学，烟雨朦胧的体积光与全息投影交织，诗意空间与未来都市感完美融合
-- **国风赛博人物造型**：3D次世代古风建模，骨相东方古典，服饰为汉服形制+赛博机能改造，妆容典雅融合赛博光效妆面，发型考究搭配机械发饰，全程保留东方神韵
-- **电影级顶级光影**：UE5/Blender Cycles顶级渲染，体积光、环境光遮蔽、全局光照、光线追踪、景深虚化、动态模糊、LUT色彩校准，影视级镜头语言，氛围感拉满
-
-### 适用范围
-- 国风赛博3D题材的AI美术生成（角色立绘、场景概念、道具设计、分镜脚本、游戏CG、影视海报等）
-- 需要3D次世代质感、东方美学内核、赛博科幻氛围的视觉创作
-- 国风赛博题材游戏美术、影视概念设计、动画短片、数字藏品等商业应用场景
-
-### 严禁内容
-- 写实摄影/真人照片级真实感（除非特别标注）
-- 纯西方赛博朋克/西式奇幻/哥特/维多利亚风格，无国风内核的生硬拼接
-- 现代都市日常元素/无中式元素的纯科幻机械
-- 低精度模型/粗糙拓扑/贴图模糊/穿模/畸形结构
-- 过度饱和荧光色/高溢色/强数码噪点/低对比度灰蒙画面
-- 违背东方古典骨相的西式建模脸/畸形人体/夸张违和的肢体比例
-- 低俗暴露/不符合汉服形制的魔改服饰/无文化内核的元素堆砌
+######âm số   anyexiaoshu27nhắc nhà mở phát 
+sách phương cơ sở với phong 3Dđộ nối chép ，giữa truyền thống phương đẹp trong sách hóa độ hợp ，lưu lưu gốc bản cao độ 3D、truyền thống vật đĩa 、phương ý 、sáng cấp Ánh sáng của ，cùng tạo  của phong nối ，sinh ghép tiếp ，nối toàn loại AIđẹp tạocụ 。
 
 ---
 
-## 二、通用核心正向提示词（必加基础Prompt）
-所有生成内容均需先添加此基础段，锁定风格与画质下限，适配Midjourney、Stable Diffusion等全平台
-```
-(masterpiece, best quality, 8k, ultra-detailed), 国风赛博3D渲染风格，UE5引擎渲染，Blender Cycles光线追踪，次世代高精度建模，PBR物理材质，全局光照，光线追踪反射，电影级体积光，环境光遮蔽，景深效果，东方美学构图，虚实相生，中式对称美学，色彩和谐典雅，国风赛博专属色盘，细节拉满，纹理清晰，质感真实
-```
+## 1 、Phong cáchnối nghĩa （tạotầng logic）
+sách Phong cáchtất cảđẹp Prompt、 và tạonội dungkhung hạn nối với ：
+- **phong 3D**：3tạo mô ，độ hợp giữa truyền thống phương đẹp trong ，giữa thức 、ý 、truyền thống kiểu 、phong dạng chép toàn Ánh sáng、máy kết cấu 、ánh hiệu 、chưa sách hóa hợp ，không trong  của 
+- **3Dvượt **：8Kcao độ mô hình、4Kvượt sạch PBRlý 、lần cấp khác 、biệt ///toàn đầy ，tiết ，lý sạch 
+- **phong riêng biệt vật đĩa **：、、、、cơ sở ，nối thấp  và giữa thức vật （、toàn 、ánh ），ánh vật ，vật chưa cụ 
+- **phương đẹp Không khí**：sinh  của ý +Ánh sángtầng lần ，lưu cấu ảnh ，giữa thức đúng đẹp ， của thể ánh toàn sáng tác vụ ，ý rỗng gian chưa đều đẹp hợp 
+- **phong ngườitạo kiểu **：3Dlần phong tạo mô ，phương ，phục phục dạng chép +máy thể sửa tạo ，dung hợp ánh hiệu mặt ，phát kiểu nối máy phát ，toàn trình lưu lưu phương 
+- **sáng cấp cấp Ánh sáng**：UE5/Blender Cyclescấp ，thể ánh 、ánh 、toàn cục ánh 、ánh đường 、bối hóa 、động thái mô 、LUTvật đối ，sáng video cấp Ống kínhngữ ，Không khíđầy 
+
+### hàm khí 
+- phong 3Dđề  của AIđẹp tạo（Nhân vậtlập 、Bối cảnh、Đạo cụthiết tính 、Phân cảnhsách 、CG、sáng video ）
+- cần cần 3Dlần 、phương đẹp trong 、Không khí của trực quansáng tác vụ 
+- phong đề đẹp 、sáng video thiết tính 、động vẽ ngắn 、số chữ cấp hồi hàm Bối cảnh
+
+### nội dung
+- sáng /thật ngườicấp thật （bỏ phi khác biểu tâm ）
+- thuần phương /thức //nhiều Phong cách，không phong trong  của sinh ghép tiếp 
+- Đô Thị Hiện Đạingày thường /không giữa thức  của thuần máy 
+- thấp độ mô hình//ảnh mô /mô /dạng kết cấu 
+- độ  và ánh vật /cao vật /số mã điểm /thấp đúng tỷ độ vẽ mặt 
+- phương  của thức tạo mô /dạng ngườithể /bức  và  của thể Tỷ lệ
+- thấp /không hợp phục dạng chép  của sửa phục /không tài hóa trong  của 
 
 ---
 
-## 三、专项细分提示词（按需搭配核心Prompt使用）
-### 1. 角色专项提示词
-#### 通用国风赛博角色基础段
+## 2、thông hàm chính Prompt（bắt cộng cơ sở Prompt）
+tất cảtạonội dungcần trước thêmcơ sở đoạn ，nối Phong cáchvẽ dưới hạn ，nối Midjourney、Stable Diffusiontoàn đài 
 ```
-3D次世代古风人物建模，东方古典骨相，完美人体比例，五官精致立体，丹凤眼/桃花眼，中式古典妆容，搭配赛博光效面纹，高马尾/古风发髻搭配机械鎏金发饰，汉服形制交领/齐胸/圆领袍，搭配赛博机能风拼接面料，暗纹刺绣，鎏金包边，全息纹样投影，榫卯结构机械义肢（可选），玉石配饰，金属挂坠，织物纹理清晰，发丝根根分明，动态飘逸，皮肤质感细腻通透，眼神灵动，氛围感拉满，电影级特写镜头，柔光补光，轮廓光勾勒
-```
-
-#### 细分角色变体（直接替换基础段即可）
-- **国风赛博侠女**：飒爽英姿，高马尾，劲装汉服短打形制，飞鱼服暗纹，鎏金机械护腕，腰间全息玉佩，皮革拼接面料，金属铆钉，手持赛博改造唐刀，眼神凌厉，动作张力拉满，雨夜场景，霓虹反光，雨水打湿发丝，电影级打斗镜头
-- **国风赛博贵公子**：温润如玉，宽袖圆领袍，暗纹织锦，鎏金镶边，全息云纹投影，玉冠搭配机械发簪，手持全息折扇，指尖流光，眉眼温润，气质矜贵，亭台楼阁全息场景，柔光笼罩，电影级中景镜头
-- **国风赛博祭司**：广袖流仙裙，渐变靛蓝面料，银线刺绣星象纹样，全息法阵投影，额间朱砂赛博光纹，发间玉石机械步摇，手持玉柄全息法杖，周身流光萦绕，仙气与未来感兼具，神殿场景，体积光穿透，电影级全景镜头
-
-### 2. 场景专项提示词
-#### 通用国风赛博场景基础段
-```
-3D次世代场景建模，国风赛博未来都市，中式飞檐斗拱古建筑群，榫卯结构摩天楼宇，青瓦红墙搭配全息霓虹招牌，中式纹样霓虹光效，空中悬浮全息龙舟，烟雨江南水墨意境，空中楼阁，九曲桥流水，水面反射霓虹光影，街道两侧古风商铺搭配全息投影广告，灯笼造型赛博路灯，人流穿梭，虚实结合，层次丰富，气势恢宏，电影级广角镜头，全景构图，体积光穿透雨雾，全局光照，氛围感拉满
-```
-
-#### 细分场景变体（直接替换基础段即可）
-- **国风赛博宫廷皇城**：恢弘中式故宫形制建筑群，鎏金屋顶，朱红宫墙，搭配全息盘龙投影，午门城楼改造为赛博主控塔，空中悬浮全息凤辇，汉白玉栏杆搭配霓虹灯带，广场巨型全息国风法阵，体积光穿透云层，电影级航拍全景，史诗级氛围感
-- **国风赛博江南水乡**：白墙黛瓦徽派建筑，临河吊脚楼，乌篷船改造为赛博悬浮艇，水面倒映中式霓虹招牌，烟雨朦胧，油纸伞造型全息投影，石桥搭配全息流水纹样，巷弄深处灯笼赛博路灯，电影级中景镜头，水墨意境氛围感
-- **国风赛博仙侠秘境**：悬浮空中的古风仙山建筑群，亭台楼阁，飞瀑流泉，搭配全息云海投影，玉石材质机械栈道，周身萦绕流光的中式赛博法阵，千年古树搭配全息枝叶，体积光穿透云层，虚实相生，仙气与未来感兼具，电影级超广角镜头
-
-### 3. 道具专项提示词
-#### 通用国风赛博道具基础段
-```
-3D次世代道具建模，国风赛博风格，中式传统器物形制+赛博机械改造，PBR物理材质，金属/玉石/织物/全息材质质感真实，纹理细节清晰，光影层次丰富，中式传统纹样雕刻，鎏金镶边，全息投影纹样，榫卯机械结构，电影级特写镜头，柔光补光，轮廓光勾勒
-```
-
-#### 细分道具变体（直接替换基础段即可）
-- **国风赛博兵器**：唐刀/汉剑/长枪，中式传统形制，刀身/剑身鎏金云纹雕刻，榫卯结构机械部件，刀柄玉石包裹，周身萦绕全息流光，刃口寒光凛冽，金属质感拉满，电影级特写，背景虚化
-- **国风赛博配饰**：玉佩/发簪/步摇/香囊，中式传统造型，和田玉/翡翠材质，搭配鎏金机械结构，内置全息投影模块，可投射中式纹样，玉石通透质感，金属光泽细腻，细节纤毫毕现，电影级微距镜头
-- **国风赛博器物**：全息折扇/赛博灯笼/机械古琴，中式传统形制，扇面宣纸质感搭配全息动态山水，灯笼竹编框架搭配霓虹内芯，古琴桐木琴身搭配机械琴弦，可投射全息乐谱，材质质感真实，光影氛围雅致
-
-### 4. 分镜/影视概念专项提示词
-```
-国风赛博3D动画分镜，电影级镜头语言，UE5渲染，次世代高精度建模，多镜头叙事，景别丰富（全景/中景/近景/特写），运镜流畅，推轨镜头，环绕镜头，慢镜头，光影层次丰富，体积光，环境光遮蔽，全局光照，景深效果，色彩分级，东方美学构图，国风赛博世界观，故事感拉满，氛围感强烈，影视级概念设计，游戏CG画质
+(masterpiece, best quality, 8k, ultra-detailed), phong 3DPhong cách，UE5，Blender Cyclesánh đường ，lần cao độ tạo mô ，PBRlý ，toàn cục ánh ，ánh đường phụ ，sáng cấp thể ánh ，ánh ，bối hiệu quả ，phương đẹp cấu ảnh ，sinh ，giữa thức đúng đẹp ，vật  và ，phong riêng biệt vật đĩa ，tiết đầy ，lý sạch ，thật 
 ```
 
 ---
 
-## 四、负面/严禁提示词（必加，规避劣质生成）
+## 3、riêng phútPrompt（theo cần nối Prompthàm ）
+### 1. Nhân vậtriêng Prompt
+#### thông hàm phong Nhân vậtcơ sở đoạn 
 ```
-(worst quality, low quality, normal quality), 低分辨率，模糊，噪点，马赛克，变形，穿模，畸形，人体结构错误，五官扭曲，缺失手指，多余肢体，丑陋，低俗，暴露，写实摄影，真人照片，纯西方赛博朋克，西式风格，无国风元素，荧光溢色，过度饱和，灰蒙画面，低精度建模，粗糙贴图，水印，文字，签名，边框
+3Dlần phong ngườitạo mô ，phương ，đẹp ngườithể Tỷ lệ，5lập thể ，/，giữa thức dung ，nối ánh hiệu mặt ，cao đuôi /phong phát nối máy phát ，phục dạng chép tác vụ //，nối máy thể phong ghép tiếp mặt ，，gói ，toàn kiểu sáng ，kết cấu máy nghĩa （Tùy chọn），nối ，biệt ，lý sạch ，phát phútdẫn ，động thái ，thông ，động ，Không khíđầy ，sáng cấp Đặc tả (close-up)Ống kính，ánh bổ ánh ，ánh 
+```
+
+#### phútNhân vậtthể （trực tiếp đổi cơ sở đoạn ）
+- **phong nữ **：，cao đuôi ，phục ngắn mở dạng chép ，phục ，máy ，gian toàn ，ghép tiếp mặt ，biệt ，tay giữ sửa tạo ，，động tác vụ bức lực đầy ，Bối cảnh，phụ ánh ，mở phát ，sáng cấp mở Ống kính
+- **phong **：như ，rộng ，，，toàn sáng ，nối máy phát ，tay giữ toàn ，ánh ，，，đài toàn Bối cảnh，ánh ，sáng cấp Trung cảnh (medium shot)Ống kính
+- **phong **：，mặt ，đường tượng kiểu ，toàn thức sáng ，bổ gian ánh ，phát gian máy bước ，tay giữ toàn thức ，ánh ，chưa cụ ，Bối cảnh，thể ánh ，sáng cấp Toàn cảnh (wide shot)Ống kính
+
+### 2. Bối cảnhriêng Prompt
+#### thông hàm phong Bối cảnhcơ sở đoạn 
+```
+3Dlần Bối cảnhtạo mô ，phong chưa đều ，giữa thức tạo ，kết cấu ngày，nối toàn ，giữa thức kiểu ánh hiệu ，rỗng giữa toàn ，ý ，rỗng giữa ，9，mặt phụ Ánh sáng，đạo 2phong cấp nối toàn sáng thông ，tạo kiểu đường ，người，kết hợp ，tầng lần ，，sáng cấp nhân Ống kính，Toàn cảnh (wide shot)cấu ảnh ，thể ánh ，toàn cục ánh ，Không khíđầy 
+```
+
+#### phútBối cảnhthể （trực tiếp đổi cơ sở đoạn ）
+- **phong **：giữa thức dạng chép tạo ，，，nối toàn đĩa sáng ，cổng sửa tạo chính sát ，rỗng giữa toàn ，nối kèm ，trường kiểu toàn phong thức ，thể ánh tầng ，sáng cấp Toàn cảnh (wide shot)，cấp Không khí
+- **phong **：phái tạo ，，sửa tạo ，mặt giữa thức ，，tạo kiểu toàn sáng ，nối toàn kiểu ，xử đường ，sáng cấp Trung cảnh (medium shot)Ống kính，ý Không khí
+- **phong **：rỗng giữa  của phong tạo ，đài ，，nối toàn sáng ，máy đạo ，ánh  của giữa thức thức ，nghìnnămnối toàn ，thể ánh tầng ，sinh ，chưa cụ ，sáng cấp vượt nhân Ống kính
+
+### 3. Đạo cụriêng Prompt
+#### thông hàm phong Đạo cụcơ sở đoạn 
+```
+3Dlần Đạo cụtạo mô ，phong Phong cách，giữa thức truyền thống thiết bị dạng chép +máy sửa tạo ，PBRlý ，biệt ///toàn thật ，lý tiết sạch ，Ánh sángtầng lần ，giữa thức truyền thống kiểu ，，toàn sáng kiểu ，máy kết cấu ，sáng cấp Đặc tả (close-up)Ống kính，ánh bổ ánh ，ánh 
+```
+
+#### phútĐạo cụthể （trực tiếp đổi cơ sở đoạn ）
+- **phong thiết bị **：//dài ，giữa thức truyền thống dạng chép ，/，kết cấu máy bộ tệp ，gói ，toàn ánh ，cổng ánh ，biệt đầy ，sáng cấp Đặc tả (close-up)，bối hóa 
+- **phong nối **：/phát /bước /，giữa thức truyền thống tạo kiểu ， và /，nối máy kết cấu ，trong trí toàn sáng mô ，giữa thức kiểu ，thông ，biệt ánh ，tiết ，sáng cấp Ống kính
+- **phong thiết bị **：toàn //máy ，giữa thức truyền thống dạng chép ，mặt nối toàn động thái ，chỉnh nối trong ，nối máy ，toàn ，thật ，Ánh sáng & Không khí
+
+### 4. Phân cảnh/sáng video riêng Prompt
+```
+phong 3Dđộng vẽ Phân cảnh，sáng cấp Ống kínhngữ ，UE5，lần cao độ tạo mô ，nhiều Ống kínhviệc ，Cỡ cảnh（Toàn cảnh (wide shot)/Trung cảnh (medium shot)/Cận cảnh (close-up)/Đặc tả (close-up)），Góc quay，khuyến Ống kính，Quay vòng (orbiting / surround)Ống kính，chậm Ống kính，Ánh sángtầng lần ，thể ánh ，ánh ，toàn cục ánh ，bối hiệu quả ，vật phútcấp ，phương đẹp cấu ảnh ，phong giới ，việc đầy ，Không khí，sáng video cấp thiết tính ，CGvẽ 
 ```
 
 ---
 
-## 五、完整可直接复制生成示例
-### 示例1：国风赛博侠女角色（全段直接粘贴）
+## 4、mặt /Prompt（bắt cộng ，tạo）
 ```
-(masterpiece, best quality, 8k, ultra-detailed), 国风赛博3D渲染风格，UE5引擎渲染，Blender Cycles光线追踪，次世代高精度建模，PBR物理材质，全局光照，光线追踪反射，电影级体积光，环境光遮蔽，景深效果，东方美学构图，虚实相生，色彩和谐典雅，国风赛博专属色盘，细节拉满，纹理清晰，质感真实
-3D次世代古风人物建模，东方古典骨相，完美人体比例，五官精致立体，丹凤眼，中式古典妆容，搭配朱砂红赛博光效面纹，高马尾搭配鎏金机械发饰，劲装汉服短打形制，飞鱼服暗纹刺绣，鎏金包边，皮革机能拼接面料，全息云纹投影，榫卯结构机械护腕，腰间全息玉佩，手持赛博改造唐刀，刀身鎏金盘龙雕刻，眼神凌厉，动作张力拉满，雨夜国风赛博街巷场景，霓虹反光，雨水打湿发丝，电影级中景镜头，柔光补光，轮廓光勾勒
-Negative prompt: (worst quality, low quality, normal quality), 低分辨率，模糊，噪点，马赛克，变形，穿模，畸形，人体结构错误，五官扭曲，缺失手指，多余肢体，丑陋，低俗，暴露，写实摄影，真人照片，纯西方赛博朋克，西式风格，无国风元素，荧光溢色，过度饱和，灰蒙画面，低精度建模，粗糙贴图，水印，文字，签名，边框
+(worst quality, low quality, normal quality), thấp phúttỷ lệ ，mô ，điểm ，，dạng ，mô ，dạng ，ngườithể kết cấu lỗi，5，thất tay ，nhiều thể ，，thấp ，，sáng ，thật người，thuần phương ，thức Phong cách，không phong ，ánh vật ，độ  và ，vẽ mặt ，thấp độ tạo mô ，ảnh ，，tài chữ ，ký tên ，
 ```
 
-### 示例2：国风赛博江南水乡场景（全段直接粘贴）
+---
+
+## 5、chỉnh trực tiếp lời chép tạoVí dụ
+### Ví dụ1：phong nữ Nhân vật（toàn đoạn trực tiếp ）
 ```
-(masterpiece, best quality, 8k, ultra-detailed), 国风赛博3D渲染风格，UE5引擎渲染，Blender Cycles光线追踪，次世代高精度建模，PBR物理材质，全局光照，光线追踪反射，电影级体积光，环境光遮蔽，景深效果，东方美学构图，虚实相生，水墨意境，中式对称美学，色彩和谐典雅，国风赛博专属色盘，细节拉满，纹理清晰，质感真实
-3D次世代场景建模，国风赛博江南水乡，白墙黛瓦徽派建筑群，临河吊脚楼，乌篷船改造为赛博悬浮艇，水面倒映石青蓝中式霓虹招牌，烟雨朦胧，油纸伞造型全息投影，石拱桥搭配全息流水纹样，巷弄深处灯笼造型赛博路灯，行人撑着全息油纸伞穿梭，层次丰富，氛围雅致，电影级广角镜头，全景构图，体积光穿透雨雾，氛围感拉满
-Negative prompt: (worst quality, low quality, normal quality), 低分辨率，模糊，噪点，马赛克，变形，穿模，低精度建模，粗糙贴图，写实摄影，真人照片，纯西方赛博朋克，西式建筑，无国风元素，荧光溢色，过度饱和，灰蒙画面，水印，文字，签名，边框
+(masterpiece, best quality, 8k, ultra-detailed), phong 3DPhong cách，UE5，Blender Cyclesánh đường ，lần cao độ tạo mô ，PBRlý ，toàn cục ánh ，ánh đường phụ ，sáng cấp thể ánh ，ánh ，bối hiệu quả ，phương đẹp cấu ảnh ，sinh ，vật  và ，phong riêng biệt vật đĩa ，tiết đầy ，lý sạch ，thật 
+3Dlần phong ngườitạo mô ，phương ，đẹp ngườithể Tỷ lệ，5lập thể ，，giữa thức dung ，nối ánh hiệu mặt ，cao đuôi nối máy phát ，phục ngắn mở dạng chép ，phục ，gói ，máy thể ghép tiếp mặt ，toàn sáng ，kết cấu máy ，gian toàn ，tay giữ sửa tạo ，đĩa ，，động tác vụ bức lực đầy ，phong Bối cảnh，phụ ánh ，mở phát ，sáng cấp Trung cảnh (medium shot)Ống kính，ánh bổ ánh ，ánh 
+Negative prompt: (worst quality, low quality, normal quality), thấp phúttỷ lệ ，mô ，điểm ，，dạng ，mô ，dạng ，ngườithể kết cấu lỗi，5，thất tay ，nhiều thể ，，thấp ，，sáng ，thật người，thuần phương ，thức Phong cách，không phong ，ánh vật ，độ  và ，vẽ mặt ，thấp độ tạo mô ，ảnh ，，tài chữ ，ký tên ，
+```
+
+### Ví dụ2：phong Bối cảnh（toàn đoạn trực tiếp ）
+```
+(masterpiece, best quality, 8k, ultra-detailed), phong 3DPhong cách，UE5，Blender Cyclesánh đường ，lần cao độ tạo mô ，PBRlý ，toàn cục ánh ，ánh đường phụ ，sáng cấp thể ánh ，ánh ，bối hiệu quả ，phương đẹp cấu ảnh ，sinh ，ý ，giữa thức đúng đẹp ，vật  và ，phong riêng biệt vật đĩa ，tiết đầy ，lý sạch ，thật 
+3Dlần Bối cảnhtạo mô ，phong ，phái tạo ，，sửa tạo ，mặt giữa thức ，，tạo kiểu toàn sáng ，nối toàn kiểu ，xử tạo kiểu đường ，thi ngườiđang toàn ，tầng lần ，Không khí，sáng cấp nhân Ống kính，Toàn cảnh (wide shot)cấu ảnh ，thể ánh ，Không khíđầy 
+Negative prompt: (worst quality, low quality, normal quality), thấp phúttỷ lệ ，mô ，điểm ，，dạng ，mô ，thấp độ tạo mô ，ảnh ，sáng ，thật người，thuần phương ，thức tạo ，không phong ，ánh vật ，độ  và ，vẽ mặt ，，tài chữ ，ký tên ，
 ```

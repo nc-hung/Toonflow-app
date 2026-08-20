@@ -1,196 +1,196 @@
 ---
 name: art_character
-description: 人物基础形象生成 · 约束手册
+description: ngườicơ sở dạng tượng tạo · sổ tay
 metaData: art_skills
 ---
 
-# 人物基础形象生成 · 约束手册
+# ngườicơ sở dạng tượng tạo · sổ tay
 
 ---
 
-## 一、基础形象原则
+## 1 、cơ sở dạng tượng gốc 
 
-1. **造型即灵魂** — 角色造型是核心锚点，国风二次元造型，线条流畅
-2. **底模即基础** — 基础打底服装 + 素颜，后续服化均为叠加层
-3. **四视图一致** — 面容/体型/发型/基础服装跨视图高度统一
-4. **古典气质** — 无妆状态仍需体现角色气质（典雅/温婉/英气）
+1. **tạo kiểu ** — Nhân vậttạo kiểu là điểm ，phong 2lần tạo kiểu ，đường mục 
+2. **mô cơ sở ** — cơ sở mở phục  + ，sau phục hóa cộng tầng 
+3. **4video ảnh 1 ** — mặt dung /thể kiểu /phát kiểu /cơ sở phục video ảnh cao độ thống 1 
+4. **** — không trạng tháicần thể Nhân vật（//）
 
 ---
 
-## 二、面容约束
+## 2、mặt dung 
 
-> 不再固定五官特征参数，由角色描述（性别/年龄/性格/气质）驱动 AI 自由生成五官，保证人物间外观差异化。
+> không nối 5tham số，do Nhân vậtMô tả（khác /năm/khung /）động  AI tự do tạo5，lưu chứng ngườigian ngoài bất hóa 。
 
-### 通用要求
+### thông hàm Yêu cầu
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 五官 | 由角色描述自然推导，不预设脸型/眼型/眉型/鼻型/唇型 |
-| 风格底色 | 国风二次元、新国潮美学、日式动画渲染、赛璐璐平涂、细腻笔触 |
-| 气质 | 必须从角色描述提炼整体气质关键词（如典雅温婉/儒雅英气/侠骨柔情），并写入提示词 |
-| 表情 | 中性微表情，符合角色气质 |
+| 5 | do Nhân vậtMô tảtự khuyến dẫn ，không thiết kiểu /kiểu /kiểu /kiểu /kiểu  |
+| Phong cáchvật  | phong 2lần 、mới đẹp 、ngày thức động vẽ 、、 |
+|  | Bắt buộctừ Nhân vậtMô tảnhắc chỉnh thể liên từ （như //tình ），nhất vào Prompt |
+| bảng tình  | giữa bảng tình ，hợp Nhân vật |
 
 ---
 
-## 三、肤感约束
+## 3、
 
-### 女性
+### nữ 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 肤色 | 粉白基调、全身均匀、白皙透亮 | 粉白基调、白皙透亮、二次元肤色 |
-| 光泽 | 赛璐璐平涂、自然光泽、非哑光 | 赛璐璐平涂、自然光泽、柔和质感 |
-| 质感 | 细腻线条、色彩均匀、边缘柔和 | 细腻线条、色彩均匀、边缘柔和 |
-| 露肤 | 面部/颈部/手部 | 手部细腻、颈部线条柔和 |
+| vật  | cơ sở gọi 、toàn 、 | cơ sở gọi 、、2lần vật  |
+| ánh  | 、tự ánh 、phi ánh  | 、tự ánh 、 và  |
+|  | đường mục 、vật 、 và  | đường mục 、vật 、 và  |
+|  | mặt bộ /bộ /tay bộ  | tay bộ 、bộ đường mục  và  |
 
-### 男性
+### nam 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 肤色 | 白皙基调、全身均匀、健康质感 | 白皙基调、健康质感、二次元肤色 |
-| 光泽 | 赛璐璐平涂、自然光泽 | 赛璐璐平涂、自然光泽、柔和质感 |
-| 质感 | 细腻线条、干净利落 | 细腻线条、赛璐璐平涂、柔和 |
+| vật  | cơ sở gọi 、toàn 、 | cơ sở gọi 、、2lần vật  |
+| ánh  | 、tự ánh  | 、tự ánh 、 và  |
+|  | đường mục 、 | đường mục 、、 và  |
 
 ---
 
-## 四、体型约束
+## 4、thể kiểu 
 
-### 女性
+### nữ 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 身高 | 由角色设定指定，默认范围 160-170cm | {身高}cm tall、{身高描述如：tall elegant woman} |
-| 头身比 | 六头身至七头身，二次元古典比例 | 6-7 heads tall proportion、二次元古典比例 |
-| 肩颈 | 天鹅颈、肩颈线优美 | 天鹅颈、肩颈优美 |
-| 手部 | 纤长白皙、手指自然 | 纤长白皙、自然手指 |
-| 体态 | 古典气质、优雅挺拔 | 体态优雅、身姿挺拔 |
+| cao  | do Nhân vậtthiết nối nối ，Mặc địnhkhí  160-170cm | {cao }cm tall、{cao Mô tảnhư ：tall elegant woman} |
+| đầu tỷ  | 6đầu đến 7đầu ，2lần Tỷ lệ | 6-7 heads tall proportion、2lần Tỷ lệ |
+|  | ngày、đường đẹp  | ngày、đẹp  |
+| tay bộ  | dài 、tay tự  | dài 、tự tay  |
+| thể thái  | 、 | thể thái 、 |
 
-### 男性
+### nam 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 身高 | 由角色设定指定，默认范围 175-185cm | {身高}cm tall、{身高描述如：tall imposing man} |
-| 头身比 | 六头身至七头身，二次元古典比例 | 6-7 heads tall proportion、二次元古典比例 |
-| 肩颈 | 宽阔肩部、颈部有力 | 宽阔肩部、颈部有力 |
-| 手部 | 骨节分明、手指自然 | 骨节分明、自然手指 |
-| 体态 | 儒雅英气、挺拔端正 | 体态英气、身姿挺拔 |
+| cao  | do Nhân vậtthiết nối nối ，Mặc địnhkhí  175-185cm | {cao }cm tall、{cao Mô tảnhư ：tall imposing man} |
+| đầu tỷ  | 6đầu đến 7đầu ，2lần Tỷ lệ | 6-7 heads tall proportion、2lần Tỷ lệ |
+|  | rộng bộ 、bộ có lực  | rộng bộ 、bộ có lực  |
+| tay bộ  | tiết phútdẫn 、tay tự  | tiết phútdẫn 、tự tay  |
+| thể thái  | 、đầu chính  | thể thái 、 |
 
 ---
 
-## 五、基础发型约束
+## 5、cơ sở phát kiểu 
 
-> 仅定义自然发型，发饰在服化衍生环节叠加。
+> chỉ nối nghĩa tự phát kiểu ，phát ở phục hóa sinh tiết cộng 。
 
-### 女性
+### nữ 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 发色 | 墨黑、禁其他颜色 | 墨黑长发、青丝如瀑 |
-| 发长 | 长发及腰 | 长发及腰、长发 |
-| 发质 | 细腻线条、发丝清晰 | 细腻线条、清晰发丝 |
-| 造型 | 自然散发、无发饰 | 长发自然散落、无发饰 |
+| phát vật  | 、anh ấyvật  | dài phát 、như  |
+| phát dài  | dài phát  | dài phát 、dài phát  |
+| phát  | đường mục 、phát sạch  | đường mục 、sạch phát  |
+| tạo kiểu  | tự phát 、không phát  | dài phát tự 、không phát  |
 
-### 男性
+### nam 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 发色 | 墨黑、禁其他颜色 | 墨黑长发、青丝如墨 |
-| 发长 | 长发及肩或束发 | 长发及肩、束发 |
-| 发质 | 细腻线条、发丝清晰 | 细腻线条、清晰发丝 |
-| 造型 | 自然散发或半束、无发冠 | 长发自然散落、半束长发 |
+| phát vật  | 、anh ấyvật  | dài phát 、như  |
+| phát dài  | dài phát hoặc phát  | dài phát 、phát  |
+| phát  | đường mục 、phát sạch  | đường mục 、sạch phát  |
+| tạo kiểu  | tự phát hoặc nửa 、không phát  | dài phát tự 、nửa dài phát  |
 
 ---
 
-## 六、基础服装约束
+## 6、cơ sở phục 
 
-> 基础服装无特殊约束，女性为素色古装长裙，男性为素色古装长衫。正式服饰在服化衍生环节叠加。
+> cơ sở phục không ，nữ vật dài ，nam vật dài 。chính thức phục ở phục hóa sinh tiết cộng 。
 
-### 女性基础服装
+### nữ cơ sở phục 
 
-素色古装长裙，颜色以基础色为主，无花纹装饰。
+vật dài ，vật cơ sở vật chính ，không 。
 
-### 男性基础服装
+### nam cơ sở phục 
 
-素色古装长衫，颜色以基础色为主，无花纹装饰。
+vật dài ，vật cơ sở vật chính ，không 。
 
-### 着装统一规则
+### đang thống 1 
 
-- 服装风格统一，确保后续服饰叠加无色彩干扰
-- 除面部/手部/颈部外基本覆盖
-- 四视图服装款式完全一致
-- 基础服装仅为安全打底，焦点在面容与体态
+- phục Phong cáchthống 1 ，lưu sau phục cộng không vật 
+- bỏ mặt bộ /tay bộ /bộ ngoài cơ sở sách 
+- 4video ảnh phục thức toàn 1 
+- cơ sở phục chỉ an toàn mở ，điểm ở mặt dung thể thái 
 
 ---
 
-## 七、四视图设定图规范
+## 7、4video ảnh thiết nối ảnh 
 
-### 视图定义
+### video ảnh nối nghĩa 
 
-| 位置 | 视图 | 角度 | 景别 | 要求 | 提示词 |
+| vị trí trí  | video ảnh  | nhân độ  | Cỡ cảnh | Yêu cầu | Prompt |
 |---|---|---|---|---|---|
-| 左一 | 人像特写 | 正面平视 | 头顶至锁骨 | 从头顶到锁骨完整展示，面部占60%+，五官清晰 | portrait closeup、face detail |
-| 左二 | 正视图 | 正面 0° | 全身立像 | 面对镜头、双臂自然、从头顶到脚底完整展示 | front view、full body |
-| 右二 | 侧视图 | 右侧 90° | 全身立像 | 纯侧面轮廓清晰、从头顶到脚底完整展示 | side view、profile、full body |
-| 右一 | 后视图 | 后方 180° | 全身立像 | 后脑/背部/发尾/脚部清晰、从头顶到脚底完整展示 | back view、rear view、full body |
+| trái 1  | ngườiĐặc tả (close-up) | chính mặt video  | đầu đến  | từ đầu đến chỉnh nhở ，mặt bộ 60%+，5sạch  | portrait closeup、face detail |
+| trái 2 | chính video ảnh  | chính mặt  0° | toàn lập  | mặt đúng Ống kính、đôi tự 、từ đầu đến chỉnh nhở  | front view、full body |
+| phải 2 | video ảnh  | phải  90° | toàn lập  | thuần mặt sạch 、từ đầu đến chỉnh nhở  | side view、profile、full body |
+| phải 1  | sau video ảnh  | sau phương  180° | toàn lập  | sau /bộ /phát đuôi /bộ sạch 、từ đầu đến chỉnh nhở  | back view、rear view、full body |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面从左至右并排四视图 |
-| 背景 | 月白纯色 #E8EAF5 |
-| 站姿 | 自然站立、双脚平行微分、双臂自然下垂 |
-| 全身展示 | 全身立像必须从头顶到脚底完整入画，严禁裁切 |
-| 特写展示 | 人像特写必须从头顶到锁骨完整入画，严禁裁切 |
-| 表情 | 中性微表情，符合角色气质 |
-| 光线 | 均匀柔光，前方主光 + 双侧补光，无硬阴影 |
-| 一致性 | 四视图的肤色/体型/发型/面容/基础服装完全一致 |
-| 画面比例 | 建议 4:1 或 3:1 |
+| cục  | cùng 1 vẽ mặt từ trái đến phải nhất sắp 4video ảnh  |
+| bối  | thángthuần vật  #E8EAF5 |
+| trạm  | tự trạm lập 、đôi thi phút、đôi tự dưới  |
+| toàn nhở  | toàn lập Bắt buộctừ đầu đến chỉnh vào vẽ ， |
+| Đặc tả (close-up)nhở  | ngườiĐặc tả (close-up)Bắt buộctừ đầu đến chỉnh vào vẽ ， |
+| bảng tình  | giữa bảng tình ，hợp Nhân vật |
+| ánh đường  | ánh ，trước phương chính ánh  + đôi bổ ánh ，không sáng  |
+| 1  | 4video ảnh  của vật /thể kiểu /phát kiểu /mặt dung /cơ sở phục toàn 1  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 4:1 hoặc  3:1 |
 
 ---
 
-## 八、提示词模板
+## 8、Promptmô 
 
-{性别}角色四视图设定图，国风二次元，新国潮美学，日式动画渲染，赛璐璐平涂，细腻笔触，
+{khác }Nhân vật4video ảnh thiết nối ảnh ，phong 2lần ，mới đẹp ，ngày thức động vẽ ，，，
 character design sheet, character turnaround,
-{角色描述对应的五官特征 - 由角色描述自然推导}, {整体气质}, 素颜状态,
-{肤色}, 赛璐璐平涂, 皮肤通透发光, 细腻线条, 光影层次丰富,
-{身高描述, 如:165cm tall, tall elegant woman}, {头身比, 如:6.5 heads tall proportion}, {身材描述}, {体态描述},
-{发色}{发长}, 细腻发丝清晰, {基础造型}, 无发饰,
-（女性: 素色古装长裙 / 男性: 素色古装长衫）, 基础色, 无花纹装饰,
-同一画面左至右并排：人像特写+正视图+侧视图+后视图,
-人像特写从头顶到锁骨完整展示, 不裁切头顶, head to collarbone complete,
-全身立像从头顶到脚底完整展示, full body head to toe, 不裁切头顶和脚部,
-自然站立, 月白纯色背景, 均匀柔光, 无硬阴影,
-四视图一致性, 国风二次元造型清晰, 细腻线条清晰,
-图中不要有任何文字
+{Nhân vậtMô tảđúng hồi  của 5 - do Nhân vậtMô tảtự khuyến dẫn }, {chỉnh thể }, trạng thái,
+{vật }, , thông phát ánh , đường mục , Ánh sángtầng lần ,
+{cao Mô tả, như :165cm tall, tall elegant woman}, {đầu tỷ , như :6.5 heads tall proportion}, {Mô tả}, {thể thái Mô tả},
+{phát vật }{phát dài }, phát sạch , {cơ sở tạo kiểu }, không phát ,
+（nữ : vật dài  / nam : vật dài ）, cơ sở vật , không ,
+cùng 1 vẽ mặt trái đến phải nhất sắp ：ngườiĐặc tả (close-up)+chính video ảnh +video ảnh +sau video ảnh ,
+ngườiĐặc tả (close-up)từ đầu đến chỉnh nhở , không đầu , head to collarbone complete,
+toàn lập từ đầu đến chỉnh nhở , full body head to toe, không đầu  và bộ ,
+tự trạm lập , thángthuần vật bối , ánh , không sáng ,
+4video ảnh 1 , phong 2lần tạo kiểu sạch , đường mục sạch ,
+ảnh giữa không cần có tài chữ 
 
 ---
 
-## 九、约束规则
+## 9、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须为「素颜状态」 |
-| R2 | 必须声明基础服装（女性：素色古装长裙；男性：素色古装长衫） |
-| R3 | 必须声明「无发饰、无配饰」 |
-| R4 | 必须指定「月白纯色背景」 |
-| R5 | 必须指定「四视图一致性」 |
-| R6 | 全身立像必须从头顶到脚底完整展示，严禁裁切 |
-| R7 | 必须声明角色身高并通过头身比换算约束全身比例（女性默认 160-170cm/6-7头身，男性默认 175-185cm/6-7头身） |
-| R8 | 人像特写必须从头顶到锁骨完整展示，严禁裁切头顶 |
+| R1 | Bắt buộc「trạng thái」 |
+| R2 | Bắt buộcthanh dẫn cơ sở phục （nữ ：vật dài ；nam ：vật dài ） |
+| R3 | Bắt buộcthanh dẫn 「không phát 、không nối 」 |
+| R4 | Bắt buộcnối 「thángthuần vật bối 」 |
+| R5 | Bắt buộcnối 「4video ảnh 1 」 |
+| R6 | toàn lập Bắt buộctừ đầu đến chỉnh nhở ， |
+| R7 | Bắt buộcthanh dẫn Nhân vậtcao nhất thông quađầu tỷ đổi toán toàn Tỷ lệ（nữ Mặc định 160-170cm/6-7đầu ，nam Mặc định 175-185cm/6-7đầu ） |
+| R8 | ngườiĐặc tả (close-up)Bắt buộctừ đầu đến chỉnh nhở ，đầu  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 基础服装以外的任何服装/配饰/妆容 |
-| X2 | 正顶硬光/正底光/冷色光 |
-| X3 | 过度美白至无血色 / 肤色发灰 |
-| X4 | 复杂场景背景（必须纯色） |
-| X5 | 夸张表情/动态姿势 |
-| X6 | 全身立像裁切头顶或脚底，必须从头到脚完整入画 |
-| X7 | 人像特写裁切头顶，必须从头顶到锁骨完整入画 |
-| X8 | 忽略身高和头身比约束，身高必须明确声明并通过头身比换算体现全身比例 |
+| X1 | cơ sở phục ngoài  của phục /nối /dung  |
+| X2 | chính ánh /chính ánh /vật ánh  |
+| X3 | độ đẹp đến không vật  / vật phát  |
+| X4 | lời Bối cảnhbối （Bắt buộcthuần vật ） |
+| X5 | bức bảng tình /động thái  |
+| X6 | toàn lập đầu hoặc ，Bắt buộctừ đầu đến chỉnh vào vẽ  |
+| X7 | ngườiĐặc tả (close-up)đầu ，Bắt buộctừ đầu đến chỉnh vào vẽ  |
+| X8 | cao  và đầu tỷ ，cao Bắt buộcdẫn thanh dẫn nhất thông quađầu tỷ đổi toán thể toàn Tỷ lệ |

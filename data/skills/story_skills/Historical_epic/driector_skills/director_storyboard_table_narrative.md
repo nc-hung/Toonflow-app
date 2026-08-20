@@ -1,88 +1,88 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 历史史诗 — 定义历史史诗在分镜表中的景别权力叙事、运镜庄重感、时长把控、镜头合并与转场逻辑。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · Sử Thi Lịch Sử — nối nghĩa Sử Thi Lịch Sửở Bảng phân cảnhgiữa  của Cỡ cảnhthực lực việc 、Góc quaytrùng 、Thời lượngđem sát 、Ống kínhhợp nhất chuyển trường logic。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 历史史诗 · 技法参考
+# Bảng phân cảnhviệc tay thức  · Sử Thi Lịch Sử · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供历史史诗叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **远景是史诗的呼吸** — 史诗叙事中远景/大远景的使用频率应高于其他类型。远景传递"时代的广阔与个体的渺小"，是史诗感的核心来源
-- **特写是人性锚点** — 每个宏大远景段落之后，至少安排一个人物特写作为情感锚点。"从天地到眼神"的景别跳跃是史诗叙事的标志性手法
-- **中景承载群戏** — 史诗中大量的多人对话、朝堂对峙、军帐议事需要中景来交代人物关系和空间位置
-- **大特写留给命运时刻** — 大特写（眼/手/信物）只用于"命运转折"的瞬间：接过圣旨的手、做出决定前的眼神、被折断的信物
-- **定场镜头要有史诗感** — 定场不只交代空间，要传递"这是一个什么样的时代"——一个荒凉的关隘比一个标注"xx城"的字幕更有叙事力
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà Sử Thi Lịch Sửviệc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **默认缓慢** — 史诗叙事中运镜速度应全面放慢，70% 以上镜头为静止或极缓运动。急促运镜与史诗的沉稳气质不兼容
-- **缓推 = 命运聚焦** — "历史的目光聚焦在这个人/这件事上"，适合关键决策、英雄时刻
-- **缓拉 = 揭示全貌** — 从个体缓慢拉开揭示宏大全景（战场/废墟/人潮），是"从个人命运到时代洪流"的经典史诗运镜
-- **俯瞰平移 = 时代画卷** — 高角度缓慢平移展示大场面，像展开一幅历史画卷
-- **凝视不动 = 历史见证** — 关键历史瞬间的镜头应绝对静止，像一个见证者在凝望。静止本身就是最庄严的"运镜"
-
----
-
-## 四、时长把控
-
-- **远景/大远景 5-7s** — 史诗远景需要足够时长让观众感受空间的广阔与历史的重量，不要急于切走
-- **对峙/对话近景 4-5s** — 史诗中的对话节奏比日常类型慢。每句话之间留出沉默的空间，让语言有"落地"的重量
-- **仪式段落拉长** — 仪式性场景（跪拜/盟誓/祭祀）的每个动作都应给足时长（3-5s/动作），仪式的庄重来自"不急"
-- **特写 3-4s** — 史诗中的特写承载"命运时刻"，需要比日常更长的停留让观众感受情感重量
-- **战斗段落不缩短** — 战斗场景虽然节奏加快，但单镜头时长不应大幅压缩。用景别切换而非缩短时长来制造紧张感
-- **黄金法则：庄重来自不急** — 史诗叙事的一切节奏都应比日常"慢半拍"。匆忙 = 轻浮，从容 = 庄重
+- **Viễn cảnh (extreme wide shot)là  của ** — việc giữa Viễn cảnh (extreme wide shot)/lớn Viễn cảnh (extreme wide shot) của hàm tần tỷ lệ hồi cao với anh ấyLoại。Viễn cảnh (extreme wide shot)truyền " của mục thể  của nhỏ "，là  của nguồn 
+- **Đặc tả (close-up)là ngườiđiểm ** — mục lớn Viễn cảnh (extreme wide shot)đoạn  của sau ，đến ít an sắp một ngườiĐặc tả (close-up)tác vụ tình điểm 。"từ ngàyđịa đến " của Cỡ cảnhlà việc  của biểu tay thức 
+- **Trung cảnh (medium shot)xuống ** — giữa lớn lượng  của nhiều ngườiđúng lời 、đúng 、thức việc cần cần Trung cảnh (medium shot)tác vụ ngườiliên dòng  và rỗng gian vị trí trí 
+- **lớn Đặc tả (close-up)lưu cho vận ** — lớn Đặc tả (close-up)（/tay /tin ）chỉ hàm với "vận chuyển " của gian ：tiếp  của tay 、ra nối trước  của 、 của tin 
+- **nối trường Ống kínhcần có ** — nối trường không chỉ tác vụ rỗng gian ，cần truyền "nàylà một saokiểu  của "——một  của liên tỷ một biểu tâm "xx" của chữ đổi có việc lực 
 
 ---
 
-## 五、镜头合并策略（去 AI 感）
+## 3、Góc quaytiết 
 
-- **群像场景一镜涵盖** — 朝堂/军帐/宴会等多人场景，能用一个带运镜的镜头（缓移扫过群像）交代的，不拆成逐个人物的碎切
-- **行军/迁徙合并** — 行军队列、百姓迁徙等移动场景应合并为一个连续运镜镜头，碎切会破坏"洪流感"
-- **叙事密度优先** — 每个镜头必须推进叙事或传递史诗情绪，纯展示性的环境镜头应合并到有叙事功能的镜头中
-- **导演思维检验** — 写完分镜后自检：如果一个史诗片导演会用一个缓慢的长镜头完成的段落，不要拆成碎片
-
----
-
-## 六、一镜到底（长镜头合并）
-
-- **适用条件** — 战场穿越、仪式全程、角色穿越空间从一个状态到另一个状态。史诗叙事中长镜头的价值是"让观众与历史同在"
-- **典型场景** — 角色走过战后的废墟、大军开拔的全过程、从宫门到大殿的仪式行进、战场上从一端到另一端的穿越
-- **标注方式** — 在运镜字段写明完整路径（如"一镜到底：俯瞰大军出发→缓推下降到主角身侧→跟移与主角并行→落幅主角回望城门"），画面描述中交代起幅和落幅
-- **时长放宽** — 史诗长镜头因信息量持续更新且需要沉浸感，可突破单镜 6s 上限，但不超过 15s
-- **庄重优先** — 长镜头的运动速度应始终保持庄重缓慢，即使在战斗场景中也不应急促
+- **Mặc địnhchậm ** — việc giữa Góc quayđộ hồi toàn mặt mở chậm ，70% trên Ống kínhTĩnh (static)hoặc vận động 。Góc quay của không dung 
+- **khuyến  = vận ** — " của mục ánh ở nàymục người/nàytệp việc trên "，hợp liên quyết định、
+- ** = nhở toàn ** — từ mục thể chậm mở nhở lớn Toàn cảnh (wide shot)（trường //người），là "từ mục ngườivận đến " của đã Góc quay
+- ** = vẽ ** — cao nhân độ chậm nhở lớn trường mặt ，mở 1 vẽ 
+- **video không động  = thấy chứng ** — liên gian  của Ống kínhhồi đúng Tĩnh (static)，một thấy chứng giả ở 。Tĩnh (static)sách thì là nhất  của "Góc quay"
 
 ---
 
-## 七、人物互动设计
+## 4、Thời lượngđem sát 
 
-- **对峙是史诗主场** — 史诗叙事中最有张力的互动不是打斗，而是对峙：两人对视的沉默、谈判桌上的暗涌、君臣之间的试探
-- **群像中的个体** — 群戏互动中应有一个"焦点人物"的情绪线贯穿。群像是背景，个体的反应才是叙事锚点
-- **肢体语言即权力** — 史诗中的人物互动高度依赖肢体语言传递权力关系：站与跪、前与后、高与低、面对与背对
-
----
-
-## 八、台词与留白
-
-- **史诗台词宜短** — 一句掷地有声的话比一段演说更有力。关键对白控制在一句话以内，让语言有"刻在石头上"的分量
-- **沉默是史诗的标点** — 关键台词前后必须留足沉默。沉默让观众"听到"台词的重量
-- **旁白慎用** — 史诗叙事尽量不用旁白解说历史背景。用画面、空间、角色反应来传递信息，比旁白更有说服力
+- **Viễn cảnh (extreme wide shot)/lớn Viễn cảnh (extreme wide shot) 5-7s** — Viễn cảnh (extreme wide shot)cần cần Thời lượngđể rỗng gian  của  của trùng lượng ，không cần với chạy 
+- **đúng /đúng lời Cận cảnh (close-up) 4-5s** — giữa  của đúng lời tiết tỷ ngày thường Loạichậm 。câu lời  của gian lưu ra  của rỗng gian ，để ngữ có "địa " của trùng lượng 
+- **thức đoạn dài ** — thức Bối cảnh（//） của mục động tác vụ đều hồi cho Thời lượng（3-5s/động tác vụ ），thức  của trùng tự "không "
+- **Đặc tả (close-up) 3-4s** — giữa  của Đặc tả (close-up)xuống "vận "，cần cần tỷ ngày thường đổi dài  của lưu để tình trùng lượng 
+- **đoạn không nhỏ ngắn ** — Bối cảnhtiết cộng nhanh ，nhưng đơn Ống kínhThời lượngkhông hồi lớn nén nhỏ 。hàm Cỡ cảnhđổi phi nhỏ ngắn Thời lượngchép tạo bức 
+- **thức ：trùng tự không ** — việc  của 1 tiết đều hồi tỷ ngày thường "chậm nửa "。 = ，từ dung  = trùng 
 
 ---
 
-## 九、转场设计
+## 5、Ống kínhhợp nhất （đi  AI ）
 
-- **场景切换用空镜过渡** — 不同场景间插入一个史诗空镜（旗帜、城墙、天空、荒原）做情绪缓冲，同时传递时代质感
-- **时间跨度用意象转场** — 表达时间流逝不用日期字幕，用意象叠化：新雪覆盖旧战场、幼苗长成大树、新人坐上旧人的位置
-- **段落间用渐黑/渐亮** — 大段落之间用缓慢的渐黑→渐亮转场，模拟"历史翻页"的仪式感
-- **默认硬切** — 同场戏内镜头间用硬切，保持叙事的干净与庄重
+- **Bối cảnh1 quay ** — //sẽ nhiều ngườiBối cảnh，thể hàm một kèm Góc quay của Ống kính（）tác vụ  của ，không tạo mục người của 
+- **thi /hợp nhất ** — thi hàng 、trăm động Bối cảnhhồi hợp nhất một Góc quayỐng kính，sẽ xấu ""
+- **việc mật độ trước ** — mục Ống kínhBắt buộcĐẩy tới (push in / dolly in)việc hoặc truyền tình xúc ，thuần nhở  của Ống kínhhồi hợp nhất đến có việc công thể  của Ống kínhgiữa 
+- **đạo diễnkiểm chiếu ** — Phân cảnhsau tự kiểm ：như quả một đạo diễnsẽ hàm một chậm  của dài Ống kínhtạo  của đoạn ，không cần tạo 
+
+---
+
+## 6、1 quay đến （dài Ống kínhhợp nhất ）
+
+- **hàm mục tệp ** — trường 、thức toàn trình 、Nhân vậtrỗng gian từ một trạng tháiđến một trạng thái。việc giữa dài Ống kính của giá trị là "để cùng ở "
+- **kiểu Bối cảnh** — Nhân vậtchạy sau  của 、lớn mở  của toàn trình 、từ cổng đến lớn  của thức thi tiến 、trường trên từ 1 đầu đến 1 đầu  của 
+- **biểu tâm cách thức** — ở Góc quaychữ đoạn dẫn chỉnh đường dẫn（như "1 quay đến ：lớn ra phát →khuyến dưới đến chính nhân →chính nhân nhất thi →chính nhân trả cổng "），Mô tả hình ảnhgiữa tác vụ  và 
+- **Thời lượngmở rộng ** — dài Ống kínhthông tinlượng giữ cập nhậtvà cần cần ，đơn quay  6s trên hạn ，nhưng không vượt  15s
+- **trùng trước ** — dài Ống kính của vận động độ hồi ban đầu lưu giữ trùng chậm ，ở Bối cảnhgiữa cũng không hồi 
+
+---
+
+## 7、ngườiđộng thiết tính 
+
+- **đúng là chính trường ** — việc giữa nhất có bức lực  của động không là mở ，là đúng ：2ngườiđúng video  của 、trên  của 、 của gian  của tra 
+- **giữa  của mục thể ** — động giữa hồi có một "điểm người" của tình xúc đường 。là bối ，mục thể  của phụ hồi là việc điểm 
+- **thể ngữ thực lực ** — giữa  của ngườiđộng cao độ phụ thuộc thể ngữ truyền thực lực liên dòng ：trạm 、trước sau 、cao thấp 、mặt đúng đúng 
+
+---
+
+## 8、Lời thoạilưu 
+
+- **Lời thoạingắn ** — 1 câu địa có thanh  của lời tỷ 1 đoạn hướng đổi có lực 。liên đúng sát chép ở 1 câu lời trong ，để ngữ có "ở đầu trên " của phútlượng 
+- **là  của biểu điểm ** — liên Lời thoạitrước sau Bắt buộclưu 。để "đến "Lời thoại của trùng lượng 
+- **hàm ** — việc lượng không hàm giải hướng bối 。hàm vẽ mặt 、rỗng gian 、Nhân vậtphụ hồi truyền thông tin，tỷ đổi có hướng phục lực 
+
+---
+
+## 9、chuyển trường thiết tính 
+
+- **Bối cảnhđổi hàm rỗng quay ** — không cùng Bối cảnhgian vào một rỗng quay （、、ngàyrỗng 、gốc ）tình xúc ，cùng truyền 
+- **thời gianđộ hàm ý tượng chuyển trường ** — bảng thời giankhông hàm ngày kỳ chữ ，hàm ý tượng hóa ：mới cũ trường 、dài tạo lớn 、mới ngườitrên cũ người của vị trí trí 
+- **đoạn gian hàm /** — lớn đoạn  của gian hàm chậm  của →chuyển trường ，mô "" của thức 
+- **Mặc định** — cùng trường trong Ống kínhgian hàm ，lưu giữ việc  của trùng 

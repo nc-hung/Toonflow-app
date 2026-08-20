@@ -16,6 +16,6 @@ export default router.post(
     await u.db("o_event").where("id", id).del();
     await u.db("o_eventChapter").where("eventId", id).del();
 
-    res.status(200).send(success({ message: "删除事件成功" }));
+    res.status(200).send(success({ message: "Xóa sự kiệnthành công" }));
   },
 );

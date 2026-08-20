@@ -1,50 +1,50 @@
-# 心理博弈 · 导演叙事手法技能包
+# lý  · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **心理博弈** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **lý ** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **表面平静暗流涌动** — 心理博弈的核心魅力在于"说出来的和想的不一样"，每句话都有弦外之音，每个微笑都可能是陷阱
-- **信息就是武器** — 谁掌握信息谁就掌握主动权，叙事张力来自信息的不对称、隐瞒与揭露
-- **多层博弈** — 最高级的心理博弈不是A骗B，而是"A知道B在骗，B知道A知道，A知道B知道A知道"的认知套娃
-- **人性的灰度** — 心理博弈叙事中没有绝对的好人和坏人，每个角色都有自己的逻辑和苦衷
+- **bảng mặt động ** — lý  của lực ở với "hướng ra  của  và nghĩ  của không 1 kiểu "，câu lời đều có ngoài  của âm ，mục đều thể là 
+- **thông tinthì là thiết bị ** — thông tinthì chính động thực ，việc bức lực tự thông tin của không đúng 、
+- **nhiều tầng ** — tối đa cấp  của lý không là AB，là "Abáo đạo Bở ，Bbáo đạo Abáo đạo ，Abáo đạo Bbáo đạo Abáo đạo " của báo 
+- **người của độ ** — lý việc giữa chưa có đúng  của tốt người và xấu người，mục Nhân vậtđều có tự mình  của logic và 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Psychological_drama/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义心理博弈在主题立意、情感节奏、场景情绪设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa lý ở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与情感内核 | 表里不一、信息武器、多层认知、人性灰度 |
-| 叙事结构与节奏规划 | 信息操控、视角切换、反转设计、张力累积释放 |
-| 分场景情绪设计 | 六大典型博弈段落设计、对话即战场、沉默攻防 |
-| 声音与音乐方向 | 压迫式配乐、沉默的杀伤力、心理暗示音效 |
-| 构图与景别叙事 | 对峙构图、权力景别、微表情捕捉、空间博弈 |
-| 镜头运动与节奏 | 对峙静止、压迫缓推、失衡暗示、节奏即心理 |
+| chính đề lập ý tình trong  | bảng không 1 、thông tinthiết bị 、nhiều tầng báo 、ngườiđộ  |
+| việc kết cấu tiết lập kế hoạch | thông tinthao sát 、video nhân đổi 、phụ chuyển thiết tính 、bức lực mở  |
+| phútBối cảnhtình xúc thiết tính  | 6lớn kiểu đoạn thiết tính 、đúng lời trường 、 |
+| thanh âm âm phương  | nén thức nối 、 của lực 、lý nhở Âm hiệu |
+| cấu ảnh Cỡ cảnhviệc  | đúng cấu ảnh 、thực lực Cỡ cảnh、bảng tình 、rỗng gian  |
+| Ống kínhvận động tiết  | đúng Tĩnh (static)、nén khuyến 、thất nhở 、tiết lý  |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义心理博弈在分镜表中的景别博弈控制、运镜心理映射、时长张力、镜头合并与转场逻辑。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa lý ở Bảng phân cảnhgiữa  của Cỡ cảnhsát chép 、Góc quaylý 、Thời lượngbức lực 、Ống kínhhợp nhất chuyển trường logic。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为心理博弈节奏控制核心工具的定位说明 |
-| 景别选择 | 微表情景别、对峙景别、信息控制景别 |
-| 运镜节奏 | 对峙静止、压迫缓推、失衡偏移、心理节奏 |
-| 时长把控 | 对话张力时长、沉默攻防、反转节奏 |
-| 镜头合并策略 | 对话连续性、博弈段整合、叙事密度 |
-| 一镜到底 | 对峙长镜头、空间权力转移、心理攻防 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ lý tiết sát chép cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | bảng tình Cỡ cảnh、đúng Cỡ cảnh、thông tinsát chép Cỡ cảnh |
+| Góc quaytiết  | đúng Tĩnh (static)、nén khuyến 、thất 、lý tiết  |
+| Thời lượngđem sát  | đúng lời bức lực Thời lượng、、phụ chuyển tiết  |
+| Ống kínhhợp nhất  | đúng lời 、đoạn chỉnh hợp 、việc mật độ  |
+| 1 quay đến  | đúng dài Ống kính、rỗng gian thực lực chuyển 、lý  |

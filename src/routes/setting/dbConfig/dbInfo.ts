@@ -21,6 +21,6 @@ export default router.get("/", async (req, res) => {
 
     res.status(200).send(success(tableInfo));
   } catch (err: any) {
-    res.status(500).send(error(err?.message || "获取数据库信息失败"));
+    res.status(500).send(error(err?.message || "Lấy thông tin cơ sở dữ liệu thất bại"));
   }
 });

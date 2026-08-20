@@ -52,15 +52,15 @@ export default router.post(
       } catch (e) {}
     }
 
-    // 获取生成视频比例
+    // LấyTạo videotỷ lệ
     const ratio = await u.db("o_project").select("videoRatio").where("id", projectId).first();
 
-    // 为每个 track 预处理数据并插入数据库，返回任务列表
+    // mục  track Xử lýDữ liệunhất ChènCơ sở dữ liệu，Trả vềtác vụ danh sách
     const tasks = await Promise.all(
       (trackData as { uploadData: { id: number; sources: string }[]; trackId: number; prompt: string; duration: number }[]).map(async (track) => {
         const { uploadData, trackId, prompt, duration } = track;
 
-        // 查询出图片数据
+        // Truy vấnra Hình ảnhDữ liệu
         const images = await Promise.all(
           uploadData.map(async (item) => {
             if (item.sources === "storyboard") {
@@ -83,7 +83,7 @@ export default router.post(
         const [videoId] = await u.db("o_video").insert({
           filePath: videoPath,
           time: Date.now(),
-          state: "生成中",
+          state: "Đang tạo",
           scriptId,
           projectId,
           videoTrackId: trackId,
@@ -95,14 +95,14 @@ export default router.post(
 
     res.status(200).send(success(tasks.map((t) => ({ videoId: t.videoId, trackId: t.trackId }))));
     for (const { videoId, videoPath, prompt, duration, images } of tasks) {
-      // 所有任务全部并发后台执行，完全不阻塞任何进程
+      // tất cảtác vụ toàn bộnhất phát sau  đài thực thi，toàn không tiến trình 
       const base64 = await Promise.all(
         images.map(async (item) => {
           if (!item) return null;
           return { base64: await u.oss.getImageBase64(item.path), type: item.sources == "audio" ? "audio" : "image" };
         }),
       );
-      const relatedObjects = { projectId, videoId, scriptId, type: "视频" };
+      const relatedObjects = { projectId, videoId, scriptId, type: "Video" };
       const aiVideo = u.Ai.Video(model);
       aiVideo
         .run(
@@ -117,19 +117,19 @@ export default router.post(
           },
           {
             projectId,
-            taskClass: "视频生成",
-            describe: "根据提示词生成视频",
+            taskClass: "Videotạo",
+            describe: "Dựa theoPromptTạo video",
             relatedObjects: JSON.stringify(relatedObjects),
           },
         )
         .then(async () => await aiVideo.save(videoPath))
-        .then(async () => await u.db("o_video").where("id", videoId).update({ state: "生成成功" }))
+        .then(async () => await u.db("o_video").where("id", videoId).update({ state: "Tạo thành công" }))
         .catch(async (error: any) => {
           await u
             .db("o_video")
             .where("id", videoId)
             .update({
-              state: "生成失败",
+              state: "Tạo thất bại",
               errorReason: u.error(error).message,
             });
         });

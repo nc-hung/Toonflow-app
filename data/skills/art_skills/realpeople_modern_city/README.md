@@ -1,322 +1,322 @@
-# 真人都市影像风格
-# 真人都市影像风格
+# thật ngườiđều sáng Phong cách
+# thật ngườiđều sáng Phong cách
 
-# 真人都市题材视觉手册 · 风格说明
+# thật ngườiđều đề trực quansổ tay · Phong cáchGiải thích
 
-本手册专为"真人都市"题材视觉创作打造，所有美术提示词、视觉规范和生成内容严格限定于真人实拍级都市影视美学体系。
-
----
-
-## 一、风格核心定义
-
-**真人都市**是以**真人影视摄影美学**为基准、以**当代中国都市**为核心的视觉风格体系。其核心特征为：
-
-- **真人写实摄影质感**：以真人影视级摄影为锚点，画面呈现真实人物的皮肤纹理、毛发细节、微表情与肢体语言，杜绝3D建模感、CG渲染感、手绘感
-- **当代都市世界观**：所有场景严格限定于当代中国都市空间——写字楼、居民区、街巷、商圈、地铁、公园、校园、医院等真实都市生活场景
-- **电影级摄影语言**：以院线级真人电影摄影为基准，强调自然光与人工光的有机调度、构图叙事的专业性、景深与焦点的情绪表达、色彩分级的电影感
-- **都市人文温度感**：在保持专业影像品质的前提下，强调都市生活的烟火气、人与人之间的真实情感连接、日常瞬间的审美提炼
-
-### 创作理念与核心价值
-
-本手册的核心创作理念为 **"真实即力量"**：
-
-1. **真实感的审美回归**：在AI生成影像日趋泛滥的当下，真人写实质感以其不可替代的真实力量，成为最具情感穿透力的视觉语言。肌肤的纹理、眼神的温度、衣物的褶皱、阳光穿过发丝的碎影——这些真实细节构成了一种生命质感，是3D渲染无法复刻的审美深度。
-
-2. **都市的叙事容器**：当代都市是中国人最熟悉的叙事空间。写字楼的格子间承载着职场梦想，老小区的楼道回荡着市井烟火，地铁车厢里的陌生人对视、深夜便利店的一盏灯——都市空间本身就是一个巨大的叙事容器，等待被挖掘。
-
-3. **人本主义的视觉立场**：本手册坚持以"人"为核心。无论场景多么宏大、光影多么绚丽，最终回归到人物的情感状态与内心世界。每一帧画面都是一次对人性的注视。
-
-4. **电影与日常的临界点**：寻求"电影的精致"与"日常的真实"之间的微妙平衡——画面足够美、足够专业、有电影感，但不过度精致而失去生活感；人物足够真实、足够生动，但不过度随意而失去审美品质。
-
-**核心价值：**
-
-- 为AI视觉创作者提供一套系统化、可复用的真人都市题材提示词方法论
-- 建立从概念到成品的标准化视觉创作管线
-- 降低真人都市题材AI视觉创作的技术门槛与试错成本
-- 填补当前AI视觉创作领域"真人都市题材系统化方法论"的空白
+sách sổ tayriêng "thật ngườiđều "đề trực quansáng tác vụ mở tạo ，tất cảđẹp Prompt、trực quan và tạonội dungkhung hạn nối với Người Thật Thực Tếcấp đều sáng video đẹp thể dòng 。
 
 ---
 
-## 二、目标受众与应用场景
+## 1 、Phong cáchnối nghĩa 
 
-### 目标受众
+**thật ngườiđều **là **thật ngườisáng video sáng đẹp **cơ sở 、**khi giữa đều ** của trực quanPhong cáchthể dòng 。：
 
-| 受众群体 | 核心需求 | 使用场景 |
+- **thật ngườisáng **：thật ngườisáng video cấp sáng điểm ，vẽ mặt thật người của lý 、phát tiết 、bảng tình thể ngữ ，3Dtạo mô 、CG、tay 
+- **khi đều giới **：tất cảBối cảnhkhung hạn nối với khi giữa đều rỗng gian ——chữ 、dân khu 、、cấp 、địa 、、đối 、thật đều sinh hoạt Bối cảnh
+- **sáng cấp sáng ngữ **：đường cấp thật ngườisáng sáng cơ sở ，gọi tự ánh ngườiánh  của có máy điều phối、cấu ảnh việc  của riêng 、bối điểm  của tình xúc bảng 、vật phútcấp  của sáng 
+- **đều ngườitài độ **：ở lưu giữ riêng sáng  của trước nhắc dưới ，gọi đều sinh hoạt  của 、ngườingười của gian  của thật tình tiếp 、ngày thường gian  của đẹp nhắc 
+
+### sáng tác vụ lý giá trị 
+
+sách sổ tay của sáng tác vụ lý  **"thật lực lượng "**：
+
+1. **thật  của đẹp trả **：ở AItạosáng ngày  của khi dưới ，thật ngườikhông  của thật lực lượng ，tạo nhất cụ tình lực  của trực quanngữ 。 của lý 、 của độ 、 của 、ánh phát  của sáng ——nàynhững thật tiết cấu tạo 1 loại sinh ，là 3Dkhông thức lời  của đẹp độ 。
+
+2. **đều  của việc dung thiết bị **：khi đều là giữa ngườinhất  của việc rỗng gian 。chữ  của khung gian xuống đang trường nghĩ ，nhỏ khu  của đạo trả đang ，địa  của sinh ngườiđúng video 、 của 1 ——đều rỗng gian sách thì là một lớn  của việc dung thiết bị ，。
+
+3. **ngườisách chính nghĩa  của trực quanlập trường **：sách sổ taygiữ "người"。không Bối cảnhnhiều saolớn 、Ánh sángnhiều sao，nhất trả đến người của tình trạng tháitrong giới 。1 vẽ mặt đều là 1 lần đúng người của tâm video 。
+
+4. **sáng ngày thường  của giới điểm **：cầu "sáng  của ""ngày thường  của thật " của gian  của ——vẽ mặt đẹp 、riêng 、có sáng ，nhưng không độ thất đi sinh hoạt ；ngườithật 、sinh động ，nhưng không độ ý thất đi đẹp 。
+
+**giá trị ：**
+
+- AItrực quansáng Tác giảnhắc nhà 1 dòng thống hóa 、lời hàm  của thật ngườiđều đề Promptphương thức 
+- tạo lập từ đến tạo  của biểu hóa trực quansáng tác vụ đường 
+- thấp thật ngườiđều đề AItrực quansáng tác vụ  của cổng tra sai tạo sách 
+- bổ hiện tạiAItrực quansáng tác vụ vực "thật ngườiđều đề dòng thống hóa phương thức " của rỗng 
+
+---
+
+## 2、mục biểu hồi hàm Bối cảnh
+
+### mục biểu 
+
+| thể  | cần cầu  | hàm Bối cảnh |
 |---|---|---|
-| **影视从业者** | 快速产出都市题材的概念设计图、氛围参考图、人物造型方案 | 都市剧/都市电影的前期视觉开发，分镜概念图，美术方案比选 |
-| **广告/品牌创意人员** | 产出具有真人质感的都市生活方式视觉素材 | 品牌视觉方案提案，社交媒体内容创作，电商场景搭建 |
-| **摄影师/导演** | 获取都市题材的创意灵感与视觉参考 | 个人创作项目的视觉研究，拍摄前的调性确定与参考板制作 |
-| **AI视觉创作者** | 系统化学习真人都市题材的提示词创作方法 | AI影像创作练习，风格探索，个人作品集构建 |
-| **游戏/互动叙事开发者** | 获取真人影视质感的参考标准用于写实类作品 | 真人互动影游概念设计，写实题材游戏的视觉参考 |
-| **内容创作者/自媒体** | 快速产出高品质真人都市视觉内容 | 短视频封面，图文内容配图，账号视觉风格统一 |
+| **sáng video từ giả ** | nhanh nguyên ra đều đề  của thiết tính ảnh 、Không khítham chiếuảnh 、ngườitạo kiểu phương  | đều kịch /đều sáng  của trước kỳ trực quanmở phát ，Phân cảnhảnh ，đẹp phương tỷ chọn  |
+| **thông /sáng ý người** | nguyên ra cụ có thật người của đều sinh hoạt cách thứctrực quan | trực quanphương nhắc ，tác vụ thể nội dungsáng tác vụ ，cấp Bối cảnhtạo  |
+| **sáng /đạo diễn** | lấyđều đề  của sáng ý trực quantham chiếu | mục ngườisáng tác vụ dự án của trực quan，trước  của gọi nối tham chiếuchép tác vụ  |
+| **AItrực quansáng Tác giả** | dòng thống hóa thật ngườiđều đề  của Promptsáng tác vụ phương thức  | AIsáng sáng tác vụ ，Phong cáchkiếm ，mục ngườitác vụ tập cấu tạo  |
+| **/động việc mở phát giả ** | lấythật ngườisáng video  của tham chiếubiểu hàm với loại tác vụ  | thật ngườiđộng sáng thiết tính ，đề  của trực quantham chiếu |
+| **nội dungsáng Tác giả/tự thể ** | nhanh nguyên ra Chất lượng caothật ngườiđều trực quannội dung | ngắn videomặt ，ảnh tài nội dungnối ảnh ，tài số trực quanPhong cáchthống 1  |
 
-### 应用场景
+### hồi hàm Bối cảnh
 
-- **AI图像生成**：覆盖角色肖像、场景空间、道具细节、氛围光影、电影级剧照等全品类真人都市视觉内容
-- **AI视频生成**：适配Doubao-Seedance等AI视频生成平台，产出真人质感都市短片
-- **前期视觉开发**：为影视、广告项目提供快速的概念视觉方案，节省实拍试错成本
-- **分镜与叙事可视化**：以真人实拍感画面呈现分镜脚本，直观传达镜头语言与叙事节奏
-- **个人/品牌视觉体系构建**：为创作者或品牌建立统一的真人都市视觉风格库
+- **AIhình ảnhtạo**：Nhân vật、Bối cảnhrỗng gian 、Đạo cụtiết 、Không khíÁnh sáng、sáng cấp kịch toàn loại thật ngườiđều trực quannội dung
+- **AIvideotạo**：nối Doubao-SeedanceAIvideotạođài ，nguyên ra thật ngườiđều ngắn 
+- **trước kỳ trực quanmở phát **：sáng video 、thông dự ánnhắc nhà nhanh  của trực quanphương ，tiết tra sai tạo sách 
+- **Phân cảnhviệc video hóa **：Người Thật Thực Tếvẽ mặt Phân cảnhsách ，trực truyền Ống kínhngữ Nhịp điệu tự sự
+- **mục người/trực quanthể dòng cấu tạo **：sáng Tác giảhoặc tạo lập thống 1  của thật ngườiđều trực quanPhong cáchkho 
 
 ---
 
-## 三、视觉风格定位
+## 3、trực quanPhong cáchnối vị trí 
 
-### 3.1 整体风格定位
+### 3.1 chỉnh thể Phong cáchnối vị trí 
 
-**"电影级真人写实都市美学"**
+**"sáng cấp thật ngườiđều đẹp "**
 
-以当代中国都市为叙事舞台，以真人影视摄影为技术锚点，追求院线级都市电影的画面品质与审美高度。整体风格在"电影感"与"生活感"之间寻找黄金平衡——画面精致但不空洞，真实但不随意，审美在线但不炫技。
+khi giữa đều việc đài ，thật ngườisáng video sáng điểm ，cầu đường cấp đều sáng  của vẽ mặt đẹp cao độ 。chỉnh thể Phong cáchở "sáng ""sinh hoạt " của gian ——vẽ mặt nhưng không rỗng ，thật nhưng không ý ，đẹp ở đường nhưng không 。
 
-### 3.2 影像质感层级
+### 3.2 sáng tầng cấp 
 
-| 质感维度 | 定位标准 |
+| độ  | nối vị trí biểu  |
 |---|---|
-| **皮肤质感** | 真人摄影级，可见自然的皮肤纹理、毛孔、细纹、痣斑，杜绝过度磨皮与塑料感 |
-| **毛发质感** | 发丝根根分明，自然蓬松或垂落，受光面与背光面层次清晰，杜绝僵硬发块 |
-| **衣物质感** | 面料纹理可辨（棉麻的肌理、羊毛的绒感、丝绸的光泽、皮革的纹路），褶皱符合身体动态与重力 |
-| **环境质感** | 墙面有使用痕迹、地面有自然磨损、玻璃有反射与折射、金属有氧化与划痕，杜绝"全新道具感" |
-| **光影质感** | 自然光与人工光有机调度，杜绝生硬的反差与不自然的噪点，追求电影级色彩科学 |
+| **** | thật ngườisáng cấp ，thấy tự  của lý 、、、，độ  |
+| **phát ** | phát phútdẫn ，tự hoặc ，ánh mặt ánh mặt tầng lần sạch ，phát  |
+| **** | mặt lý （ của lý 、 của 、 của ánh 、 của đường ），hợp thể động thái trùng lực  |
+| **** | mặt có hàm 、địa mặt có tự 、có phụ 、biệt có hóa ，"toàn mới Đạo cụ" |
+| **Ánh sáng** | tự ánh ngườiánh có máy điều phối，sinh  của phụ không tự  của điểm ，cầu sáng cấp vật  |
 
-### 3.3 色彩体系
+### 3.3 vật thể dòng 
 
-**基底色盘（都市色盘）**
+**cơ sở vật đĩa （đều vật đĩa ）**
 
-| 色号 | 色名 | 色值参考 | 功能定位 |
+| vật số  | vật tên  | vật giá trị tham chiếu | công thể nối vị trí  |
 |---|---|---|---|
-| C0 | 都市白 | 微暖米白 | 晨光基底、室内墙面、纯洁/新生感 |
-| C1 | 雾灰 | 中性低调灰 | 城市建筑基色、冷静克制感 |
-| C2 | 炭黑 | 深邃不沉闷黑 | 都市夜景基底、剪影、神秘感 |
-| C3 | 暖橙 | 低饱和日落橙 | 情感升温、温馨居家、金色时刻 |
-| C4 | 冷蓝 | 清透天光蓝 | 日间室外、清冷独处、理性克制 |
-| C5 | 暖金 | 温润金调 | 高光时刻、精英质感、温暖回忆 |
-| C6 | 藏青 | 深沉蓝调 | 夜雨孤寂、悬疑氛围、都市夜色 |
-| C7 | 砖红 | 低调暖红 | 市井烟火、老城肌理、怀旧情绪 |
-| C8 | 深绿 | 都市植被绿 | 生活治愈、自然触感、松弛氛围 |
+| C0 | đều  |  | ánh cơ sở 、trong mặt 、thuần /mới sinh  |
+| C1 |  | giữa thấp gọi  | tạo cơ sở vật 、chép  |
+| C2 |  | không  | đều bối cơ sở 、sáng 、 |
+| C3 |  | thấp  và ngày  | tình 、、vật  |
+| C4 |  | sạch ngàyánh  | ngày gian ngoài 、sạch xử 、lý chép  |
+| C5 |  | gọi  | cao ánh 、、trả  |
+| C6 |  | gọi  | 、Không khí、đều vật  |
+| C7 |  | thấp gọi  | 、lý 、cũ tình xúc  |
+| C8 |  | đều  | sinh hoạt 、tự 、Không khí |
 
-**情绪色盘矩阵**
+**tình xúc vật đĩa **
 
-| 情绪类型 | 主色 | 辅色 | 色调倾向 |
+| tình xúc Loại | chính vật  | vật  | vật gọi  |
 |---|---|---|---|
-| 都市日常 | C1雾灰 + C4冷蓝 | C0都市白 | 中性偏冷，清澈通透 |
-| 职场精英 | C2炭黑 + C5暖金 | C1雾灰 | 冷暖对冲，利落高级 |
-| 温馨居家 | C3暖橙 + C0都市白 | C7砖红 | 暖调柔和，松弛治愈 |
-| 市井烟火 | C7砖红 + C3暖橙 | C8深绿 | 暖调浓郁，生活气息 |
-| 雨夜悬疑 | C6藏青 + C2炭黑 | C4冷蓝 | 冷调压抑，氛围浓重 |
-| 青春治愈 | C0都市白 + C8深绿 | C3暖橙 | 明快清新，生命力感 |
-| 深夜独处 | C2炭黑 + C6藏青 | C5暖金（点缀） | 极暗调，孤独诗意 |
+| đều ngày thường  | C1 + C4 | C0đều  | giữa ，sạch thông  |
+| trường  | C2 + C5 | C1 | đúng ，cao cấp  |
+|  | C3 + C0đều  | C7 | gọi  và ， |
+|  | C7 + C3 | C8 | gọi ，sinh hoạt  |
+|  | C6 + C2 | C4 | gọi nén ，Không khítrùng  |
+|  | C0đều  + C8 | C3 | dẫn nhanh sạch mới ，sinh lực  |
+| xử  | C2 + C6 | C5（điểm tố ） | gọi ，ý  |
 
-### 3.4 光影体系
+### 3.4 Ánh sángthể dòng 
 
-真人都市题材的光影以**"自然主义为基础、电影级调度为追求"**为核心原则：
+thật ngườiđều đề  của Ánh sáng**"tự chính nghĩa cơ sở 、sáng cấp điều phốicầu "**Nguyên tắc cốt lõi：
 
-| 光影方案 | 方案名 | 光影特征 | 适用情绪 |
+| Ánh sángphương  | phương tên  | Ánh sáng | hàm tình xúc  |
 |---|---|---|---|
-| A | 金色时刻 | 低角度暖调日光，长阴影，空气透亮 | 希望、新生、温情回忆、都市晨昏 |
-| B | 日间漫射 | 大面积柔光照明，窗光/天光为主，阴影柔和不锐利 | 日常叙事、室内办公、松弛治愈 |
-| C | 霓虹都市夜 | 城市霓虹灯光为主光源，冷暖光对冲，多层光源叠加 | 都市夜生活、孤独行走、浪漫邂逅 |
-| D | 雨夜清辉 | 湿地面反射街灯，冷蓝主调+暖橙点缀，体积感雨雾 | 悬疑铺垫、孤独思念、文艺感伤 |
-| E | 室内暖光 | 台灯/顶灯暖调主光，暗部丰富有细节，窗帘透光 | 居家日常、亲密对话、深夜独白 |
-| F | 硬光叙事 | 强主光+深阴影，高对比度，轮廓锐利，戏剧化 | 冲突对峙、命运转折、高燃时刻 |
-| G | 蓝调时刻 | 日落后/日出前的天空漫射光，整体偏蓝紫调，静谧 | 内心独白、诗意留白、尾声收束 |
+| A | vật  | thấp nhân độ gọi ngày ánh ，dài sáng ，rỗng  | 、mới sinh 、tình trả 、đều  |
+| B | ngày gian  | lớn mặt ánh dẫn ，ánh /ngàyánh chính ，sáng  và không  | ngày thường việc 、trong 、 |
+| C | đều  | ánh chính ánh nguồn ，ánh đúng ，nhiều tầng ánh nguồn cộng  | đều sinh hoạt 、thi chạy 、 |
+| D | sạch  | địa mặt phụ ，chính gọi +điểm tố ，thể  | 、、tài  |
+| E | trong ánh  | đài /gọi chính ánh ，bộ có tiết ，ánh  | ngày thường 、mật đúng lời 、 |
+| F | ánh việc  | chính ánh +sáng ，cao đúng tỷ độ ，，kịch hóa  | đúng 、vận chuyển 、cao  |
+| G | gọi  | ngày sau /ngày ra trước  của ngàyrỗng ánh ，chỉnh thể gọi ， | Độc thoại nội tâm (inner monologue, OS)、ý lưu 、đuôi thanh nhận  |
 
 ---
 
-## 四、关键视觉元素
+## 4、liên trực quan
 
-### 4.1 人物视觉元素
+### 4.1 ngườitrực quan
 
-真人都市题材的人物视觉以**"真实个体、都市气质"**为核心：
+thật ngườiđều đề  của ngườitrực quan**"thật mục thể 、đều "**：
 
-- **面容标准**：真人肌肤质感，五官自然立体，妆容符合都市审美且不过度修饰。支持多元面容类型——清冷知性、阳光元气、成熟稳重、酷飒干练、温柔治愈等
-- **发型标准**：当代都市潮流发型，发丝自然质感，杜绝假发感与僵硬造型。支持披肩直发、锁骨发、利落短发、慵懒卷发、通勤低马尾等多种都市发型
-- **服饰标准**：当代都市日常着装体系——通勤正装（西装、衬衫、风衣）、休闲日常（卫衣、针织衫、牛仔裤）、都市潮流（设计感单品、叠穿搭配）、生活居家（舒适针织家居服）等。面料纹理清晰，褶皱自然
-- **表情与体态**：微表情真实细腻（眼神、嘴角、眉宇），肢体语言自然不做作，杜绝僵硬摆拍感与过度戏剧化表情
-- **人物气质维度**：精英干练 / 温柔治愈 / 青春元气 / 成熟内敛 / 酷飒独立 / 市井质朴 / 文艺忧郁
+- **mặt dung biểu **：thật người，5tự lập thể ，dung hợp đều đẹp và không độ 。hỗ trợnhiều mặt dung Loại——sạch báo 、ánh 、tạo trùng 、、
+- **phát kiểu biểu **：khi đều phát kiểu ，phát tự ，giả phát tạo kiểu 。hỗ trợtrực phát 、phát 、ngắn phát 、phát 、thông thấp đuôi nhiều loại đều phát kiểu 
+- **phục biểu **：khi đều ngày thường đang thể dòng ——thông chính （、、phong ）、ngày thường （、、）、đều （thiết tính đơn 、nối ）、sinh hoạt （phục ）。mặt lý sạch ，tự 
+- **bảng tình thể thái **：bảng tình thật （、nhân 、），thể ngữ tự không tác vụ ，độ kịch hóa bảng tình 
+- **ngườiđộ **： /  /  / tạo trong  / lập  /  / tài 
 
-### 4.2 场景视觉元素
+### 4.2 Bối cảnhtrực quan
 
-- **写字楼/办公室**：玻璃幕墙、开放式工位、独立办公室、会议室、茶水间——玻璃隔断的透与隔、屏幕光的冷调漫射、午后阳光穿过百叶窗的条纹光影
-- **城市街头**：老街巷弄、繁华商圈、天桥地道、公交站台、地铁通勤——行道树的光影、车流的动态模糊、陌生人流动的人群感、街牌与橱窗的城市质感
-- **居家空间**：老小区楼道、高层公寓阳台、客厅厨房卧室——窗光洒入的温暖感、居家杂物的生活痕迹、窗帘飘动的空气感
-- **餐饮空间**：社区面馆、网红咖啡厅、深夜便利店、夜市排档、公司食堂——食物的烟火气、玻璃上的水雾、暖调灯光的包裹感
-- **城市公共空间**：公园长椅、医院走廊、校园操场、书店角落、天台屋顶——空间与人物情绪的呼应关系
+- **chữ /**：、mở mở thức vị trí 、lập 、sẽ thức 、gian ——cách  của cách 、ánh  của gọi 、sau ánh trăm  của mục Ánh sáng
+- **đầu **：、cấp 、ngàyđịa đạo 、tác vụ trạm đài 、địa thông ——thi đạo  của Ánh sáng、 của động thái mô 、sinh ngườiđộng  của người、 của 
+- **rỗng gian **：nhỏ khu đạo 、cao tầng đài 、——ánh vào  của 、 của sinh hoạt 、động  của rỗng 
+- **rỗng gian **：khu mặt 、mạng 、、sắp liệu 、—— của 、trên  của 、gọi ánh  của gói 
+- **rỗng gian **：dài 、chạy 、đối thao trường 、nhân 、ngàyđài ——rỗng gian ngườitình xúc  của hồi liên dòng 
 
-### 4.3 道具与细节元素
+### 4.3 Đạo cụtiết 
 
-- **都市生活道具**：手机（消息弹窗、屏幕反光）、笔记本电脑（键盘光映脸）、咖啡杯（水汽氤氲）、耳机（独处符号）、雨伞（雨景核心道具）、工牌、外卖包装
-- **光影道具**：台灯、路灯、车灯、霓虹招牌、屏幕光源、蜡烛——均为都市叙事中的氛围制造者
-- **情感符号道具**：旧照片、信件、戒指、车票、便当盒、绿植——承载叙事功能的小物件
-- **季节与天气元素**：春日樱花/柳絮、夏日暴雨/蝉鸣、秋日落叶/风衣、冬日呵气/雪花——季节感增强都市叙事的时间维度
+- **đều sinh hoạt Đạo cụ**：tay máy （hủy 、phụ ánh ）、sách （đĩa ánh ）、（）、máy （xử số ）、（bối Đạo cụ）、、ngoài gói 
+- **Ánh sángĐạo cụ**：đài 、đường 、、、ánh nguồn 、——đều việc giữa  của Không khíchép tạo giả 
+- **tình số Đạo cụ**：cũ 、tin tệp 、、、khi 、——xuống việc công thể  của nhỏ tệp 
+- **tiết ngày**：ngày /、ngày /、ngày /phong 、ngày /——tiết đều việc  của thời gianđộ 
 
-### 4.4 镜头语言元素
+### 4.4 Ống kínhngữ 
 
-| 景别 | 叙事功能 | 真人都市特征 |
+| Cỡ cảnh | việc công thể  | thật ngườiđều  |
 |---|---|---|
-| 大特写 | 情绪爆发点、关键细节 | 眼神、手指微动、泪珠、信息屏幕 |
-| 近景 | 人物情感、对话反应 | 面部微表情、肩部以上，强调情绪传递 |
-| 中近景 | 人物互动、动作叙事 | 腰部以上，兼顾表情与手势 |
-| 中景 | 人物关系、空间交代 | 全身入画，人物与环境的关系 |
-| 全景 | 环境氛围、人物孤寂/融入 | 人物占比较小，空间叙事为主 |
-| 空镜 | 情绪缓冲、隐喻留白 | 无人物，纯环境镜头，城市景观 |
+| lớn Đặc tả (close-up) | tình xúc phát điểm 、liên tiết  | 、tay động 、、thông tin |
+| Cận cảnh (close-up) | ngườitình 、đúng lời phụ hồi  | mặt bộ bảng tình 、bộ trên ，gọi tình xúc truyền  |
+| giữa Cận cảnh (close-up) | ngườiđộng 、động tác vụ việc  | bộ trên ，bảng tình tay  |
+| Trung cảnh (medium shot) | ngườiliên dòng 、rỗng gian tác vụ  | toàn vào vẽ ，người của liên dòng  |
+| Toàn cảnh (wide shot) | Không khí、người/vào  | ngườitỷ nhỏ ，rỗng gian việc chính  |
+| rỗng quay  | tình xúc 、lưu  | không người，thuần Ống kính，bối  |
 
 ---
 
-## 五、严禁内容（优先级最高）
+## 5、nội dung（trước cấp tối đa ）
 
-本风格严格排除以下内容类型，确保视觉体系纯净统一：
+sách Phong cáchkhung sắp bỏ dưới nội dungLoại，lưu trực quanthể dòng thuần thống 1 ：
 
-1. **非真人质感**：3D渲染/CG建模/次世代游戏引擎/动画风格/手绘插画/水彩油画/二次元/Voxel/低多边形等一切非真人实拍影像质感
-2. **非都市世界观**：古风/古装/传统中式古建/仙侠/玄幻/武侠/民国/西方奇幻/中世纪/赛博朋克/科幻未来/星际太空等非当代都市背景
-3. **非当代中国语境**：明显非中国都市特征的建筑、街道、标识、人物造型（如和服、韩屋、欧式小镇等）
-4. **技术质量缺陷**：低分辨率/模糊/噪点/变形/畸形肢体/五官扭曲/比例失调/抠图感/塑料感/过度磨皮/假面感
-5. **审美倾向违规**：过度高饱和/死亡荧光色/廉价滤镜感/过度HDR/脏乱差画面/刻意阴间色调
-6. **内容合规红线**：暴露/低俗/暗示性/暴力血腥/违法内容/歧视性表达/政治敏感元素
-
----
-
-## 六、项目阶段规划与预期成果
-
-本视觉手册创作项目采用分阶段推进策略，确保从宏观框架到微观细则的完整覆盖。
-
-### 第一阶段：框架搭建与风格锚定（本期完成）
-
-**目标：** 建立项目整体框架，明确核心定义、创作理念、风格定位。
-
-**交付物：**
-- ✅ README 文档（本文档）—— 项目纲领性文件
-- ⬜ 前缀提示词文档 —— 全局风格锚定、通用核心正向提示词与负面提示词
-- ⬜ 风格基准参考图 —— 真人都市题材的关键视觉参考板
-
-**预期成果：** 为后续所有细分创作提供不可动摇的风格底线与创作方向。
+1. **phi thật người**：3D/CGtạo mô /lần /động vẽ Phong cách/tay vẽ /vẽ /2lần /Voxel/thấp nhiều dạng 1 phi Người Thật Thực Tếsáng 
+2. **phi đều giới **：phong //truyền thống giữa thức tạo ////dân /phương /giữa //chưa /rỗng phi khi đều bối 
+3. **phi khi giữa ngữ **：dẫn phi giữa đều  của tạo 、đạo 、biểu trưng 、ngườitạo kiểu （như  và phục 、、thức nhỏ ）
+4. **lượng **：thấp phúttỷ lệ /mô /điểm /dạng /dạng thể /5/Tỷ lệthất gọi /ảnh //độ /giả mặt 
+5. **đẹp **：độ cao  và /ánh vật /lọc quay /độ HDR/vẽ mặt /ý gian vật gọi 
+6. **nội dunghợp đường **：/thấp /nhở /lực /thức nội dung/video bảng /chính 
 
 ---
 
-### 第二阶段：角色视觉体系搭建
+## 6、dự ánđoạn lập kế hoạchkỳ tạo quả 
 
-**目标：** 建立完整的真人都市人物视觉创作体系。
+sách trực quansổ taysáng tác vụ dự ánhàm phútđoạn Đẩy tới (push in / dolly in)，lưu từ đến  của chỉnh 。
 
-**交付物：**
-- ⬜ 角色提示词文档 —— 通用角色基底提示词 + 细分角色类型变体
-- ⬜ 角色衍生文档 —— 面向不同性别、年龄层、职业类型、气质类型的角色变体
-- ⬜ 角色造型参考 —— 服饰、妆容、发型视觉参考体系
+### Thứ 1 đoạn ：tạo Phong cáchnối （sách kỳ tạo ）
 
-**核心任务清单：**
-- 都市男性角色类型体系（职场精英型、文艺忧郁型、阳光运动型、成熟稳重型、市井生活型等）
-- 都市女性角色类型体系（知性精英型、元气治愈型、酷飒独立型、温柔细腻型、烟火市井型等）
-- 双人/多人互动关系视觉规范
-- 年龄跨度视觉处理方案（青年 / 中年 / 老年）
+**mục biểu ：** tạo lập dự ánchỉnh thể ，dẫn nối nghĩa 、sáng tác vụ lý 、Phong cáchnối vị trí 。
 
-**预期成果：** 覆盖都市题材全人物类型的标准化提示词库，支持快速迭代与变体生成。
+**tác vụ ：**
+- ✅ README tài liệu （sách tài liệu ）—— dự ántệp
+- ⬜ trước tố Prompttài liệu  —— toàn cục Phong cáchnối 、thông hàm chính Promptmặt Prompt
+- ⬜ Phong cáchcơ sở tham chiếuảnh  —— thật ngườiđều đề  của liên trực quantham chiếu
+
+**kỳ tạo quả ：** sau tất cảphútsáng tác vụ nhắc nhà không động  của Phong cáchđường sáng tác vụ phương 。
 
 ---
 
-### 第三阶段：场景与空间视觉体系搭建
+### Thứ 2đoạn ：Nhân vậttrực quanthể dòng tạo 
 
-**目标：** 建立完整的真人都市场景空间视觉创作体系。
+**mục biểu ：** tạo lập chỉnh  của thật ngườiđều ngườitrực quansáng tác vụ thể dòng 。
 
-**交付物：**
-- ⬜ 场景提示词文档 —— 通用场景基底提示词 + 细分场景类型变体
-- ⬜ 场景衍生文档 —— 不同时段（晨/午/暮/夜）、不同天气（晴/阴/雨/雪）、不同季节的变体
+**tác vụ ：**
+- ⬜ Nhân vậtPrompttài liệu  —— thông hàm Nhân vậtcơ sở Prompt + phútNhân vậtLoạithể 
+- ⬜ Nhân vậtsinh tài liệu  —— mặt không cùng khác 、nămtầng 、Loại、Loại của Nhân vậtthể 
+- ⬜ Nhân vậttạo kiểu tham chiếu —— phục 、dung 、phát kiểu trực quantham chiếuthể dòng 
 
-**核心任务清单：**
-- 写字楼/办公空间全场景体系（开放式办公区、独立办公室、会议室、茶水间、走廊、大堂）
-- 居家空间全场景体系（老小区/高层公寓、客厅/卧室/厨房/阳台、日夜变体）
-- 城市公共空间全场景体系（街头巷弄、商圈、地铁/公交、公园、天台、校园）
-- 餐饮消费空间全场景体系（面馆/餐厅、咖啡厅/奶茶店、便利店、夜市/排档）
-- 关键场景元素的视觉规范（玻璃幕墙、街灯、行道树、电子屏幕、雨幕、人群）
+**tác vụ sạch đơn ：**
+- đều nam Nhân vậtLoạithể dòng （trường kiểu 、tài kiểu 、ánh vận động kiểu 、tạo trùng kiểu 、sinh hoạt kiểu ）
+- đều nữ Nhân vậtLoạithể dòng （báo kiểu 、kiểu 、lập kiểu 、kiểu 、kiểu ）
+- đôi người/nhiều ngườiđộng liên dòng trực quan
+- nămđộ trực quanxử lý phương （Thanh niên / Trung niên / Người già）
 
-**预期成果：** 覆盖当代都市全场景空间的标准化提示词库，支持不同情绪、时段、天气的灵活切换。
-
----
-
-### 第四阶段：道具与细节视觉体系搭建
-
-**目标：** 建立完整的真人都市道具与细节视觉创作体系。
-
-**交付物：**
-- ⬜ 道具提示词文档 —— 通用道具基底提示词 + 细分道具类型变体
-- ⬜ 道具衍生文档 —— 道具的情绪化变体与叙事功能变体
-
-**核心任务清单：**
-- 通讯与电子产品（手机、笔记本、平板、耳机、智能手表）
-- 餐饮道具（咖啡杯、外卖包装、便当盒、餐具、水杯/保温杯）
-- 办公/学习道具（工牌、文具、文件/档案袋、台灯、书架）
-- 出行道具（雨伞、背包/通勤包、车钥匙、地铁卡、共享单车）
-- 情绪符号道具（旧照片、信件/明信片、戒指/首饰、植物盆栽、书籍）
-
-**预期成果：** 覆盖都市日常全道具类型的标准化提示词库，确保道具的"叙事参与感"而非"背景摆设感"。
+**kỳ tạo quả ：** đều đề toàn ngườiLoại của biểu hóa Promptkho ，hỗ trợnhanh thể tạo。
 
 ---
 
-### 第五阶段：分镜与叙事视觉体系搭建
+### Thứ 3đoạn ：Bối cảnhrỗng gian trực quanthể dòng tạo 
 
-**目标：** 建立真人都市题材的分镜视觉创作体系与叙事规范。
+**mục biểu ：** tạo lập chỉnh  của thật ngườiđều Bối cảnhrỗng gian trực quansáng tác vụ thể dòng 。
 
-**交付物：**
-- ⬜ 分镜提示词文档 —— 通用分镜基底提示词 + 细分情绪类型分镜变体
-- ⬜ 分镜表文档 —— 标准化分镜表模板 + 填充示例
-- ⬜ 分镜视频文档 —— 面向AI视频生成的分镜动态化规范
-- ⬜ 导演规划文档 —— 真人都市题材的全局导演约束（色调体系、光影方案、氛围方向、叙事节奏）
+**tác vụ ：**
+- ⬜ Bối cảnhPrompttài liệu  —— thông hàm Bối cảnhcơ sở Prompt + phútBối cảnhLoạithể 
+- ⬜ Bối cảnhsinh tài liệu  —— không cùng đoạn （///）、không cùng ngày（///）、không cùng tiết  của thể 
 
-**核心任务清单：**
-- 景别体系（大特写→全景）的提示词规范
-- 运镜体系（固定/推拉/摇移/跟/升降/手持）的提示词规范
-- 叙事情绪类型的分镜风格变体（日常治愈/职场成长/青春励志/都市悬疑/温情生活）
-- 空镜与转场视觉规范
-- 多镜头叙事序列的提示词编排方法
+**tác vụ sạch đơn ：**
+- chữ /rỗng gian toàn Bối cảnhthể dòng （mở mở thức khu 、lập 、sẽ thức 、gian 、chạy 、lớn ）
+- rỗng gian toàn Bối cảnhthể dòng （nhỏ khu /cao tầng 、///đài 、ngày thể ）
+- rỗng gian toàn Bối cảnhthể dòng （đầu 、cấp 、địa /tác vụ 、、ngàyđài 、đối ）
+- hủy rỗng gian toàn Bối cảnhthể dòng （mặt /、/、、/sắp liệu ）
+- liên Bối cảnh của trực quan（、、thi đạo 、、、người）
 
-**预期成果：** 从单帧到多镜头序列的完整叙事视觉创作体系，支持从概念到分镜的全流程AI辅助。
+**kỳ tạo quả ：** khi đều toàn Bối cảnhrỗng gian  của biểu hóa Promptkho ，hỗ trợkhông cùng tình xúc 、đoạn 、ngày của hoạt đổi 。
 
 ---
 
-### 第六阶段：整合验证与迭代优化
+### Thứ 4đoạn ：Đạo cụtiết trực quanthể dòng tạo 
 
-**目标：** 对前五阶段成果进行全面整合、实测验证与迭代优化。
+**mục biểu ：** tạo lập chỉnh  của thật ngườiđều Đạo cụtiết trực quansáng tác vụ thể dòng 。
 
-**交付物：**
-- ⬜ 完整可直接复制的提示词合集（各专项文档的最终整合版）
-- ⬜ 实测样本图集（覆盖角色/场景/道具/分镜全品类）
-- ⬜ 迭代修正记录与经验总结
-- ⬜ 最终版视觉手册（整合所有阶段的终版文档）
+**tác vụ ：**
+- ⬜ Đạo cụPrompttài liệu  —— thông hàm Đạo cụcơ sở Prompt + phútĐạo cụLoạithể 
+- ⬜ Đạo cụsinh tài liệu  —— Đạo cụ của tình xúc hóa thể việc công thể thể 
 
-**预期成果：** 一套经过充分验证、可直接用于生产实践的真人都市题材AI视觉创作完整方法论体系。
+**tác vụ sạch đơn ：**
+- thông nguyên （tay máy 、sách 、、máy 、thể tay bảng ）
+- Đạo cụ（、ngoài gói 、khi 、cụ 、/lưu ）
+- /Đạo cụ（、tài cụ 、tệp/liệu 、đài 、）
+- ra thi Đạo cụ（、gói /thông gói 、、địa 、đơn ）
+- tình xúc số Đạo cụ（cũ 、tin tệp /dẫn tin 、/、、）
+
+**kỳ tạo quả ：** đều ngày thường toàn Đạo cụLoại của biểu hóa Promptkho ，lưu Đạo cụ của "việc tham "phi "bối thiết "。
 
 ---
 
-## 七、使用说明
+### Thứ 5đoạn ：Phân cảnhviệc trực quanthể dòng tạo 
 
-### 提示词使用原则
+**mục biểu ：** tạo lập thật ngườiđều đề  của Phân cảnhtrực quansáng tác vụ thể dòng việc 。
 
-1. **前缀先行**：所有生成内容必须首先加载"前缀提示词"中的全局风格锚定段，锁定真人都市写实质感基线
-2. **专项叠加**：在全局前缀基础上，按需叠加角色/场景/道具/分镜专项提示词
-3. **负面必加**：每次生成必须附带"负面提示词"，规避伪影与风格偏差
-4. **迭代优化**：建议首轮生成后根据效果对专项提示词做微调，而非修改全局前缀
-5. **平台适配**：本手册提示词优先适配Doubao-Seedream（生图）与Doubao-Seedance（视频生成），部分提示词可能需根据平台特性微调
+**tác vụ ：**
+- ⬜ Phân cảnhPrompttài liệu  —— thông hàm Phân cảnhcơ sở Prompt + phúttình xúc LoạiPhân cảnhthể 
+- ⬜ Bảng phân cảnhtài liệu  —— biểu hóa Bảng phân cảnhmô  + sung Ví dụ
+- ⬜ Phân cảnhvideotài liệu  —— mặt AIvideotạo của Phân cảnhđộng thái hóa 
+- ⬜ Kế hoạch đạo diễntài liệu  —— thật ngườiđều đề  của toàn cục đạo diễn（vật gọi thể dòng 、Ánh sángphương 、Không khíphương 、Nhịp điệu tự sự）
 
-### 文件结构约定
-真人都市/
-├── README.md                  # 本文档 - 项目纲领
-├── 前缀.txt                   # 全局风格锚定 + 通用正负提示词
-├── 角色.txt                   # 角色专项提示词
-├── 角色衍生.txt               # 角色类型变体扩展
-├── 场景.txt                   # 场景专项提示词
-├── 场景衍生.txt               # 场景时段/天气/季节变体
-├── 道具.txt                   # 道具专项提示词
-├── 道具衍生.txt               # 道具情绪化与叙事变体
-├── 分镜.txt                   # 分镜专项提示词
-├── 分镜表.txt                 # 标准化分镜表模板
-├── 分镜视频.txt               # AI视频生成分镜规范
-├── 导演规划.txt               # 全局导演约束（色调/光影/氛围/叙事）
-└── reference/                 # 视觉参考图目录（可选）
+**tác vụ sạch đơn ：**
+- Cỡ cảnhthể dòng （lớn Đặc tả (close-up)→Toàn cảnh (wide shot)） của Prompt
+- Góc quaythể dòng （nối /khuyến ///Nâng / Hạ máy (crane up/down)/tay giữ ） của Prompt
+- việc tình xúc Loại của Phân cảnhPhong cáchthể （ngày thường /trường tạo dài //đều /tình sinh hoạt ）
+- rỗng quay chuyển trường trực quan
+- nhiều Ống kínhviệc xếp hàng  của Promptchỉnh sắp phương thức 
+
+**kỳ tạo quả ：** từ đơn đến nhiều Ống kínhxếp hàng  của chỉnh việc trực quansáng tác vụ thể dòng ，hỗ trợtừ đến Phân cảnh của toàn trình AIgiúp 。
+
 ---
 
-## 八、版本记录
+### Thứ 6đoạn ：chỉnh hợp chiếu chứng tối ưu
 
-| 版本 | 日期 | 阶段 | 更新内容 |
+**mục biểu ：** đúng trước 5đoạn tạo quả tiến thi toàn mặt chỉnh hợp 、kiểm chiếu chứng tối ưu。
+
+**tác vụ ：**
+- ⬜ chỉnh trực tiếp lời chép  của Prompthợp tập （các riêng tài liệu  của nhất chỉnh hợp bản ）
+- ⬜ kiểm kiểu sách ảnh tập （Nhân vật/Bối cảnh/Đạo cụ/Phân cảnhtoàn loại ）
+- ⬜ chính lục đã chiếu tổng kết 
+- ⬜ nhất bản trực quansổ tay（chỉnh hợp tất cảđoạn  của bản tài liệu ）
+
+**kỳ tạo quả ：** 1 đã sung phútchiếu chứng 、trực tiếp hàm với sinh nguyên  của thật ngườiđều đề AItrực quansáng tác vụ chỉnh phương thức thể dòng 。
+
+---
+
+## 7、hàm Giải thích
+
+### Prompthàm gốc 
+
+1. **trước tố trước thi **：tất cảtạonội dungBắt buộctrước cộng xuống "trước tố Prompt"giữa  của toàn cục Phong cáchnối đoạn ，nối thật ngườiđều cơ sở đường 
+2. **riêng cộng **：ở toàn cục trước tố cơ sở trên ，theo cần cộng Nhân vật/Bối cảnh/Đạo cụ/Phân cảnhriêng Prompt
+3. **mặt bắt cộng **：lần tạoBắt buộckèm "mặt Prompt"，sáng Phong cách
+4. **tối ưu**：Khuyến nghịtạosau dựa theohiệu quả đúng riêng Promptgọi ，phi sửa toàn cục trước tố 
+5. **đài nối **：sách sổ tayPrompttrước nối Doubao-Seedream（sinh ảnh ）Doubao-Seedance（videotạo），bộ phútPromptthể cần dựa theođài gọi 
+
+### tệpkết cấu nối 
+thật ngườiđều /
+├── README.md                  # sách tài liệu  - dự án
+├── trước tố .txt                   # toàn cục Phong cáchnối  + thông hàm chính Prompt
+├── Nhân vật.txt                   # Nhân vậtriêng Prompt
+├── Nhân vậtsinh .txt               # Nhân vậtLoạithể 
+├── Bối cảnh.txt                   # Bối cảnhriêng Prompt
+├── Bối cảnhsinh .txt               # Bối cảnhđoạn /ngày/tiết thể 
+├── Đạo cụ.txt                   # Đạo cụriêng Prompt
+├── Đạo cụsinh .txt               # Đạo cụtình xúc hóa việc thể 
+├── Phân cảnh.txt                   # Phân cảnhriêng Prompt
+├── Bảng phân cảnh.txt                 # biểu hóa Bảng phân cảnhmô 
+├── Phân cảnhvideo.txt               # AIvideotạoPhân cảnh
+├── Kế hoạch đạo diễn.txt               # toàn cục đạo diễn（vật gọi /Ánh sáng/Không khí/việc ）
+└── reference/                 # trực quantham chiếuảnh thư mục（Tùy chọn）
+---
+
+## 8、bản sách lục 
+
+| bản sách  | ngày kỳ  | đoạn  | cập nhậtnội dung |
 |---|---|---|---|
-| v0.1 | 2026-04-30 | 第一阶段 | 初始框架搭建，README纲领文档创建 |
+| v0.1 | 2026-04-30 | Thứ 1 đoạn  | ban đầu tạo ，READMEtài liệu sáng tạo  |
 
 ---
 
-> **"真实即力量"** —— 在AI生成影像的时代，真人写实质感以其不可替代的生命力，成为最具情感穿透力的视觉语言。本手册致力于为创作者提供一套系统化的方法论，让每一次AI视觉创作都能捕捉到都市生活中那些真实而动人的瞬间。
+> **"thật lực lượng "** —— ở AItạosáng  của ，thật ngườikhông  của sinh lực ，tạo nhất cụ tình lực  của trực quanngữ 。sách sổ taylực với sáng Tác giảnhắc nhà 1 dòng thống hóa  của phương thức ，để 1 lần AItrực quansáng tác vụ đều thể đến đều sinh hoạt giữa những thật động người của gian 。

@@ -22,18 +22,18 @@ export default (nsp: Namespace) => {
   nsp.on("connection", async (socket: Socket) => {
     const token = socket.handshake.auth.token;
     if (!token || !(await verifyToken(token))) {
-      console.log("[productionAgent] 连接失败，token无效");
+      console.log("[productionAgent] Kết nối thất bại, token không hợp lệ");
       socket.disconnect();
       return;
     }
     let isolationKey = socket.handshake.auth.isolationKey;
     if (!isolationKey) {
-      console.log("[productionAgent] 连接失败，缺少 isolationKey");
+      console.log("[productionAgent] Kết nối thất bại, thiếu  isolationKey");
       socket.disconnect();
       return;
     }
 
-    console.log("[productionAgent] 已连接:", socket.id);
+    console.log("[productionAgent] Đã kết nối:", socket.id);
 
     let resTool = new ResTool(socket, {
       projectId: socket.handshake.auth.projectId,
@@ -52,7 +52,7 @@ export default (nsp: Namespace) => {
         projectId: data.projectId,
         scriptId: data.scriptId,
       });
-      console.log("[productionAgent] 上下文已更新:", isolationKey);
+      console.log("[productionAgent] Ngữ cảnh đã cập nhật:", isolationKey);
       callback?.({ success: true });
     });
 
@@ -62,7 +62,7 @@ export default (nsp: Namespace) => {
       abortController = new AbortController();
       const currentController = abortController;
 
-      const msg = resTool.newMessage("assistant", "视频策划");
+      const msg = resTool.newMessage("assistant", "Kế hoạch Video");
       const ctx: agent.AgentContext = {
         socket,
         isolationKey,
@@ -90,7 +90,7 @@ export default (nsp: Namespace) => {
     socket.on("updateThinkConfig", (data: { think: boolean; thinlLevel: 0 | 1 | 2 | 3 }) => {
       thinkConfig.think = data.think;
       thinkConfig.thinlLevel = data.thinlLevel;
-      console.log("[productionAgent] 更新思考配置:", thinkConfig);
+      console.log("[productionAgent] Cập nhật cấu hình suy nghĩ:", thinkConfig);
     });
 
     socket.on("stop", () => {
@@ -99,6 +99,6 @@ export default (nsp: Namespace) => {
     });
   });
   nsp.on("disconnect", (socket: Socket) => {
-    console.log("[productionAgent] 已断开连接:", socket.id);
+    console.log("[productionAgent] Đã ngắt kết nối:", socket.id);
   });
 };

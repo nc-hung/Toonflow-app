@@ -1,198 +1,198 @@
 ---
 name: liveaction_urban_scene
-description: 真人都市场景图像生成 · 约束手册
+description: thật ngườiđều Bối cảnhhình ảnhtạo · sổ tay
 metaData: liveaction_urban_art_skills
 ---
 
-# 真人都市场景图像生成 · 约束手册
+# thật ngườiđều Bối cảnhhình ảnhtạo · sổ tay
 
 ---
 
-## 一、场景美学原则
+## 1 、Bối cảnhđẹp gốc 
 
-> 真人都市的场景不是"被建模的空间"，而是"被摄影机选中的真实场所"。没有渲染引擎、没有贴图、没有体积光参数——只有实际存在的光、真实的材料、以及中国城市的日常。
+> thật ngườiđều  của Bối cảnhkhông là "tạo mô  của rỗng gian "，là "sáng máy chọn giữa  của thật trường nơi "。chưa có 、chưa có ảnh 、chưa có thể ánh tham số——chỉ có lưu ở  của ánh 、thật  của 、giữa  của ngày thường 。
 
-1. **空间即叙事** — 一个空无一人的办公室不是"空的"，是刚下班。一把歪放的椅子、一杯半凉的咖啡、屏幕上还没关的文档——空间自己会讲故事
-2. **真实的光，不是渲染的光** — 场景的光只有一个来源：实际的日光（通过窗户、门洞）、实际的灯光（日光灯管、台灯、街灯、霓虹招牌）。光的色温和方向必须在物理上说得通
-3. **被使用过的空间** — 真实的场景不整洁。桌上有杂物、墙角有灰尘、玻璃上有手印、地面有磨损。一个完全没有生活痕迹的空间是售楼处的样板间，不是真人都市
-4. **中国当代都市的真实场所** — 场景必须有中文标识、中国城市特征（店招、路牌、建筑风格、绿化树种）。这不是"generic urban"，这是"当代中国都市的一个具体角落"
-5. **单视图全景全貌** — 一张照片装下整个场地的完整信息。广角或标准焦段，全景深，正面展示空间的全貌与纵深——不是四视图分割，不是多角度拼贴
+1. **rỗng gian việc ** — một rỗng không 1 người của không là "rỗng  của "，là dưới 。1 đem mở  của 、1 nửa  của 、trên còn chưa liên  của tài liệu ——rỗng gian tự mình sẽ việc 
+2. **thật  của ánh ，không là  của ánh ** — Bối cảnh của ánh chỉ có một nguồn ： của ngày ánh （thông quadùng 、cổng ）、 của ánh （ngày ánh 、đài 、、）。ánh  của vật  và phương Bắt buộcở lý trên hướng được thông 
+3. **hàm  của rỗng gian ** — thật  của Bối cảnhkhông chỉnh 。trên có 、nhân có 、trên có tay 、địa mặt có 。một toàn chưa có sinh hoạt  của rỗng gian là xử  của kiểu gian ，không là thật ngườiđều 
+4. **giữa khi đều  của thật trường nơi ** — Bối cảnhBắt buộccó giữa tài biểu trưng 、giữa （、đường 、tạo Phong cách、hóa loại ）。nàykhông là "generic urban"，nàylà "khi giữa đều  của một cụ thể nhân "
+5. **đơn video ảnh Toàn cảnh (wide shot)toàn ** — 1 bức dưới chỉnh mục trường địa  của chỉnh thông tin。nhân hoặc biểu đoạn ，Toàn cảnh (wide shot)，chính mặt nhở rỗng gian  của toàn ——không là 4video ảnh phútrời ，không là nhiều nhân độ ghép 
 
 ---
 
-## 二、季节与时刻——自然光的导演
+## 2、tiết ——tự ánh  của đạo diễn
 
-> 真人都市场景的光，首先由季节和时刻决定。以下是真实光源在四个季节、五个时段的摄影行为。
+> thật ngườiđều Bối cảnh của ánh ，trước do tiết  và nối 。dưới là thật ánh nguồn ở 4mục tiết 、5mục đoạn  của sáng thi 。
 
-| 季节 | 时段 | 光的行为 | 场景氛围词 |
+| tiết  | đoạn  | ánh  của thi  | Bối cảnhKhông khítừ  |
 |---|---|---|---|
-| 春 | 清晨 6:00-8:00 | 低角度暖白日光、空气中有薄雾的漫射、建筑物表面柔和 | 通透清冽、新绿初绽、晨雾未散 |
-| 春 | 正午 11:00-13:00 | 日光近乎垂直、阴影短、建筑表面材质清晰、光线偏冷白 | 明亮清爽、春暖花开、街区明媚 |
-| 春 | 午后 14:00-16:00 | 日光偏西、暖调逐渐增强、长阴影开始形成 | 慵懒温暖、午后光影、春日融融 |
-| 春 | 金色时刻 17:00-18:30 | 暖金低角度光、长阴影、一切表面镀金边、最珍贵的自然光 | 金色春光、温暖治愈、时光缓慢 |
-| 春 | 夜晚 19:00-次日 | 路灯为主、商铺橱窗光为辅、冷暖光并存 | 春夜微凉、街灯初上、夜色温柔 |
-| 夏 | 清晨 5:00-7:00 | 极早的暖光、空气清澈、长阴影、城市尚未完全醒来 | 夏日晨光、空气清澈、城市苏醒前 |
-| 夏 | 正午 11:00-14:00 | 顶光强、阴影浓重短促、建筑表面反光强烈、路面热浪隐约 | 盛夏烈日、浓荫蔽日、蝉鸣午后的寂静 |
-| 夏 | 午后 15:00-17:00 | 日光偏西、热度稍减、斜光穿过行道树形成光斑 | 午后光影斑驳、暑气渐消、长日将尽 |
-| 夏 | 金色时刻 18:00-19:30 | 极暖调低角度光、长阴影、城市镀上暖橙金 | 夏日黄昏、金色漫溢、一天中最温柔的时刻 |
-| 夏 | 夜晚 20:00-次日 | 霓虹/街灯/车灯为主、路面可能反射雨后光影、暖光与冷光并存 | 夏夜迷离、霓虹倒影、暖风中的城市 |
-| 秋 | 清晨 6:30-8:00 | 清冷暖白日光、空气干燥通透、可能薄雾、行道树变色 | 秋高气爽、晨光清冽、金黄枝叶衬蓝天 |
-| 秋 | 正午 11:00-13:00 | 日光高度适中、光线干净通透、天空深蓝 | 秋日明净、天高云淡、光影清澈 |
-| 秋 | 午后 14:00-16:00 | 偏暖日光、树影斑驳、落叶在地面被光照亮 | 秋日午后、落叶被光打亮、静谧温暖 |
-| 秋 | 金色时刻 16:30-18:00 | 极暖金橙光、落叶与建筑同色系、一年中最浓郁的金色 | 熔金秋色、满城尽带黄金甲、诗意浓郁 |
-| 秋 | 夜晚 18:30-次日 | 入夜早、街灯+车灯为主、冷风中的暖光点 | 秋夜微寒、万家灯火、冷暖交织 |
-| 冬 | 清晨 7:00-8:30 | 低角度冷白日光、可能带薄雾、建筑表面冷硬、呵气可见 | 冬日晨光、清冷晨雾、城市裹着寒意 |
-| 冬 | 正午 11:00-13:00 | 日光偏南低角度、全天最暖的时刻、光量偏弱、阴影偏长 | 冬日暖阳、难得的温暖、长阴影 |
-| 冬 | 午后 14:00-16:00 | 日光衰减快、阴影迅速拉长、光偏冷 | 冬日午后、日影西斜、天色渐沉 |
-| 冬 | 金色时刻 16:00-17:00 | 短暂的暖调、低角度斜光、长到极致的阴影 | 冬日残阳、最后一抹暖、时光珍贵 |
-| 冬 | 夜晚 17:00-次日 | 入夜极早、街灯/橱窗光/车灯为主、可能有积雪反光 | 冬夜漫长、暖光在寒夜中格外珍贵、雪花飘落 |
+|  | Sáng sớm 6:00-8:00 | thấp nhân độ ngày ánh 、rỗng giữa có mỏng  của 、tạo bảng mặt  và  | thông sạch 、mới 、chưa  |
+|  | chính  11:00-13:00 | ngày ánh trực 、sáng ngắn 、tạo bảng mặt sạch 、ánh đường  | dẫn sạch 、mở 、khu dẫn  |
+|  | sau  14:00-16:00 | ngày ánh 、gọi 、dài sáng mở ban đầu dạng tạo  | 、sau Ánh sáng、ngày  |
+|  | vật  17:00-18:30 | thấp nhân độ ánh 、dài sáng 、1 bảng mặt 、nhất  của tự ánh  | vật ánh 、、ánh chậm  |
+|  | Ban đêm 19:00-lần ngày  | đường chính 、cấp ánh 、ánh nhất lưu  | 、trên 、vật  |
+|  | Sáng sớm 5:00-7:00 | sớm  của ánh 、rỗng sạch 、dài sáng 、chưa toàn  | ngày ánh 、rỗng sạch 、trước  |
+|  | chính  11:00-14:00 | ánh 、sáng trùng ngắn 、tạo bảng mặt phụ ánh 、đường mặt  | ngày 、ngày 、sau  của  |
+|  | sau  15:00-17:00 | ngày ánh 、độ 、ánh thi đạo dạng tạo ánh  | sau Ánh sáng、hủy 、dài ngày  |
+|  | vật  18:00-19:30 | gọi thấp nhân độ ánh 、dài sáng 、trên  | ngày Hoàng hôn、vật 、1 ngàygiữa nhất  của  |
+|  | Ban đêm 20:00-lần ngày  | //chính 、đường mặt thể phụ sau Ánh sáng、ánh ánh nhất lưu  | 、sáng 、phong giữa  của  |
+|  | Sáng sớm 6:30-8:00 | sạch ngày ánh 、rỗng thông 、thể mỏng 、thi đạo vật  | cao 、ánh sạch 、ngày |
+|  | chính  11:00-13:00 | ngày ánh cao độ giữa 、ánh đường thông 、ngàyrỗng  | ngày dẫn 、ngàycao 、Ánh sángsạch  |
+|  | sau  14:00-16:00 | ngày ánh 、sáng 、ở địa mặt ánh  | ngày sau 、ánh mở 、 |
+|  | vật  16:30-18:00 | ánh 、tạo cùng vật dòng 、1 nămgiữa nhất  của vật  | vật 、đầy kèm 、ý  |
+|  | Ban đêm 18:30-lần ngày  | vào sớm 、+chính 、phong giữa  của ánh điểm  | 、vạn、tác vụ  |
+|  | Sáng sớm 7:00-8:30 | thấp nhân độ ngày ánh 、thể kèm mỏng 、tạo bảng mặt 、thấy  | ngày ánh 、sạch 、đang ý  |
+|  | chính  11:00-13:00 | ngày ánh thấp nhân độ 、toàn ngàynhất  của 、ánh lượng 、sáng dài  | ngày 、được  của 、dài sáng  |
+|  | sau  14:00-16:00 | ngày ánh nhanh 、sáng dài 、ánh  | ngày sau 、ngày sáng 、ngàyvật  |
+|  | vật  16:00-17:00 | ngắn tạm  của gọi 、thấp nhân độ ánh 、dài đến  của sáng  | ngày 、nhất sau 1 、ánh  |
+|  | Ban đêm 17:00-lần ngày  | vào sớm 、/ánh /chính 、thể có phụ ánh  | dài 、ánh ở giữa khung ngoài 、 |
 
 ---
 
-## 三、室内场景
+## 3、trong Bối cảnh
 
-### 空间摄影规范
+### rỗng gian sáng 
 
-| 维度 | 摄影要求 | 提示词 |
+| độ  | sáng Yêu cầu | Prompt |
 |---|---|---|
-| 风格 | 真实的中国当代都市室内空间——不是效果图、不是样板间、不是渲染。是有生活痕迹的真实室内 | 真实的中国当代都市{空间类型}、真人实拍摄影、非效果图非样板间 |
-| 光源逻辑 | 必须有明确的光源来源——窗光是哪个方向的窗、人工光是哪盏灯。光的方向和色温必须自洽 | {窗光方向}自然光为主、{人工光源}为辅、光的方向明确可追溯 |
-| 空间层次 | 单张全景照片必须呈现前/中/后景——前景（门框/家具边缘/窗帘）形成画框感、中景是空间主体、后景是空间延伸（另一个房间/窗外/走廊尽头） | 前景{画框元素}、中景{空间主体}、后景{空间延伸}、广角镜头捕捉完整空间纵深 |
-| 材质与表面 | 墙面有居住痕迹（污渍/贴纸残留/钉子孔）、地面有正常磨损、家具表面有使用包浆——一切材质呈现在摄影机下，非渲染 | 真实墙面使用痕迹、地面正常磨损、家具表面使用包浆、非全新非样板间 |
-| 镜头选择 | 24-28mm广角——装下整个空间的广度、前景到后景的纵深全部清晰（全景深 f/8-f/11）、轻微桶形畸变增加空间感 | 广角24-28mm、全景深f/8-f/11、空间纵深完整、轻微透视增加空间感 |
+| Phong cách | thật  của giữa khi đều trong rỗng gian ——không là hiệu quả ảnh 、không là kiểu gian 、không là 。là có sinh hoạt  của thật trong  | thật  của giữa khi đều {rỗng gian Loại}、Người Thật Thực Tếsáng 、phi hiệu quả ảnh phi kiểu gian  |
+| ánh nguồn logic | Bắt buộccó dẫn  của ánh nguồn nguồn ——ánh là mục phương  của 、ngườiánh là 。ánh  của phương  và vật Bắt buộctự  | {ánh phương }tự ánh chính 、{ngườiánh nguồn }、ánh  của phương dẫn  |
+| rỗng gian tầng lần  | đơn bức Toàn cảnh (wide shot)Bắt buộctrước /giữa /sau bối ——trước bối （cổng /cụ /）dạng tạo vẽ 、Trung cảnh (medium shot)là rỗng gian chính thể 、sau bối là rỗng gian trì （một gian /ngoài /chạy đầu ） | trước bối {vẽ }、Trung cảnh (medium shot){rỗng gian chính thể }、sau bối {rỗng gian trì }、nhân Ống kínhchỉnh rỗng gian  |
+| bảng mặt  | mặt có （/lưu /）、địa mặt có chính thường 、cụ bảng mặt có hàm gói ——1 ở sáng máy dưới ，phi  | thật mặt hàm 、địa mặt chính thường 、cụ bảng mặt hàm gói 、phi toàn mới phi kiểu gian  |
+| Ống kínhchọn lựa  | 24-28mmnhân ——dưới chỉnh mục rỗng gian  của độ 、trước bối đến sau bối  của toàn bộsạch （Toàn cảnh (wide shot) f/8-f/11）、dạng cộng rỗng gian  | nhân 24-28mm、Toàn cảnh (wide shot)f/8-f/11、rỗng gian chỉnh 、video cộng rỗng gian  |
 
-### 室内类型速查
+### trong Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 出租屋/单身公寓 | 单人床+床品、小书桌+椅子、简易衣柜/挂衣架、落地窗/小阳台、床头柜+台灯、杂物自然散落 | 温馨私密、独居的真实、空间虽小但有自己的秩序 |
-| 老小区客厅 | 沙发+茶几、电视柜+电视、餐桌+餐椅、窗帘+窗台杂物、地面拖鞋、墙上挂历/照片 | 市井日常、几代人的生活痕迹、真实不矫饰 |
-| 高层公寓客厅 | 大面积落地窗+城市窗景、沙发组+茶几、电视背景墙、开放式厨房吧台、绿植 | 开阔通透、都市中产日常、窗外的城市是另一个角色 |
-| 写字楼办公室 | 玻璃隔断、开放式工位+电脑、文件柜+打印机、会议桌+白板、百叶窗+窗外楼景 | 秩序井然、冷调专业、加班后的凌乱工位 |
-| 会议室 | 长会议桌+椅子、投影幕布/大屏、白板+马克笔、玻璃墙+百叶帘、水杯+文件散落 | 严肃高效、刚散会或即将开会的状态 |
-| 茶水间 | 饮水机+咖啡机、微波炉+冰箱、吧台+高脚凳、杯具+茶包散落 | 公司里的喘息之地、短暂的松弛 |
-| 咖啡厅/奶茶店 | 吧台+咖啡机、卡座/散座、落地窗+街景、暖调灯光、杯具+菜单 | 都市第三空间、松弛氛围、窗边座位的光 |
-| 便利店 | 货架+商品、收银台+店员区域、冰柜+冷饮、落地玻璃+街景、深夜的孤岛式照明 | 深夜便利店——城市里的安全屋 |
-| 面馆/小餐馆 | 餐桌+调味瓶、开放式厨房+蒸汽、墙上的菜单牌、地面的使用痕迹、暖调灯光 | 市井烟火、热腾腾的真实、人情味 |
-| 校园教室 | 课桌椅排列、黑板+板书痕迹、讲台+粉笔、窗户+走廊、墙上的通知栏 | 青春记忆、午后的教室、阳光洒在桌面上 |
-| 图书馆/书店 | 书架排列、阅读区+台灯、窗边座位、安静的氛围、翻旧的书籍 | 静谧安宁、翻书的声音、时间变慢 |
-| 医院走廊/病房 | 长走廊+日光灯、护士站、病房门、座椅、白墙+扶手、消毒感 | 清冷肃穆、漫长的等待、生命的中转站 |
-| 地下车库 | 环氧地坪+车位线、承重柱、消防设施、昏暗+日光灯冷光、空旷 | 冷硬、孤寂、脚步声有回音、犯罪悬疑感 |
+| ra /đơn  | đơn người+、nhỏ +、/、địa /nhỏ đài 、đầu +đài 、tự  | mật 、 của thật 、rỗng gian nhỏ nhưng có tự mình  của xếp  |
+| nhỏ khu  | phát +mấy 、video +video 、+、+đài 、địa mặt 、trên / | ngày thường 、mấy người của sinh hoạt 、thật không  |
+| cao tầng  | lớn mặt địa +bối 、phát nhóm +mấy 、video bối 、mở mở thức đài 、 | mở thông 、đều giữa nguyên ngày thường 、ngoài  của là một Nhân vật |
+| chữ  | cách 、mở mở thức vị trí +、tệp+mở máy 、sẽ thức +、trăm +ngoài bối  | xếp 、gọi riêng 、cộng sau  của vị trí  |
+| sẽ thức  | dài sẽ thức +、sáng /lớn 、+、+trăm 、+tệp | cao hiệu 、sẽ hoặc mở sẽ  của trạng thái |
+| gian  | máy +máy 、+、đài +cao 、cụ +gói  |  của  của địa 、ngắn tạm  của  |
+| / | đài +máy 、/、địa +bối 、gọi ánh 、cụ +đơn  | đều Thứ 3rỗng gian 、Không khí、vị trí  của ánh  |
+|  | +cấp 、nhận đài +khu vực 、+、địa +bối 、 của thức dẫn  | —— của an toàn  |
+| mặt /nhỏ  | +gọi 、mở mở thức +、trên  của đơn 、địa mặt  của hàm 、gọi ánh  | 、 của thật 、ngườitình  |
+| đối  | sắp hàng 、+、đài +、dùng +chạy 、trên  của thông báo  | 、sau  của 、ánh ở mặt trên  |
+| ảnh / | sắp hàng 、khu +đài 、vị trí 、an  của Không khí、cũ  của  | an 、 của thanh âm 、thời gianchậm  |
+| chạy / | dài chạy +ngày ánh 、trạm 、cổng 、、+tay 、hủy  | sạch 、dài  của 、sinh  của giữa chuyển trạm  |
+| địa dưới kho  | địa +vị trí đường 、trùng 、hủy thiết 、+ngày ánh ánh 、rỗng  | 、、bước thanh có trả âm 、 |
 
 ---
 
-## 四、室外场景
+## 4、ngoài Bối cảnh
 
-### 空间摄影规范
+### rỗng gian sáng 
 
-| 维度 | 摄影要求 | 提示词 |
+| độ  | sáng Yêu cầu | Prompt |
 |---|---|---|
-| 类型 | 中国当代都市真实室外空间。不是概念图、不是鸟瞰效果图、是站在地面用摄影机拍到的真实场所 | {场景类型}，{季节+时刻+天气}，中国当代都市实拍摄影 |
-| 天气 | 晴/多云/阴/薄雾/细雨/雨后/小雪。极端天气仅剧情需要时使用 | {天气}，真实天气质感，非特效非后期合 |
-| 植被 | 中国城市真实行道树/绿化——悬铃木、香樟、银杏、樱花、玉兰、梧桐、榕树、柳树。树种与季节严格匹配 | 沿街{树种}、季节性状态（新绿/浓荫/金黄/枯枝）、真实植被 |
-| 建筑 | 真实的中国城市建筑——玻璃幕墙写字楼、小高层居民楼、老式六层楼、骑楼商铺、钢结构天桥、地铁口。建筑结构符合真实物理 | {建筑类型}、真实的中国城市建筑、非架空风格 |
-| 空气感 | 真实的大气透视——远景自然虚化、近景清晰、空气中有湿度/尘埃/薄雾的微弱散射 | 远景自然虚化、大气透视、真实空气质感 |
-| 光源逻辑 | 光源必须可追溯——日光/月光的方向与时刻匹配、街灯/霓虹/车灯的位置和色温合理 | {自然光源} + {城市人工光源}、光的方向和色温可追溯 |
-| 镜头选择 | 24-28mm广角（空间感强）或35mm（人眼感），全景深 f/8-f/11，画面包含完整的空间纵深，前景到后景全部清晰 | 广角24-35mm、全景深f/8-f/11、完整空间纵深、单张全景 |
-| 都市瑕疵 | 路面磨损、墙面斑驳、路牌掉漆、井盖、涂鸦、落叶、积水——真实城市的皮肤 | 真实路面磨损、墙面岁月痕迹、城市皮肤的瑕疵、非效果图 |
+| Loại | giữa khi đều thật ngoài rỗng gian 。không là ảnh 、không là hiệu quả ảnh 、là trạm ở địa mặt hàm sáng máy đến  của thật trường nơi  | {Bối cảnhLoại}，{tiết ++ngày}，giữa khi đều sáng  |
+| ngày | /nhiều //mỏng //sau /nhỏ 。đầu ngàychỉ kịch tình cần cần hàm  | {ngày}，thật ngày，phi hiệu phi sau kỳ hợp  |
+|  | giữa thật thi đạo /hóa ——、、、、、、、。loại tiết khung khớp | {loại }、tiết trạng thái（mới ///）、thật  |
+| tạo  | thật  của giữa tạo ——chữ 、nhỏ cao tầng dân 、thức 6tầng 、cấp 、kết cấu ngày、địa cổng 。tạo kết cấu hợp thật lý  | {tạo Loại}、thật  của giữa tạo 、phi rỗng Phong cách |
+| rỗng  | thật  của lớn video ——Viễn cảnh (extreme wide shot)tự hóa 、Cận cảnh (close-up)sạch 、rỗng giữa có độ //mỏng  của  | Viễn cảnh (extreme wide shot)tự hóa 、lớn video 、thật rỗng  |
+| ánh nguồn logic | ánh nguồn Bắt buộc——ngày ánh /thángánh  của phương khớp、// của vị trí trí  và vật hợp lý  | {tự ánh nguồn } + {ngườiánh nguồn }、ánh  của phương  và vật  |
+| Ống kínhchọn lựa  | 24-28mmnhân （rỗng gian ）hoặc 35mm（người），Toàn cảnh (wide shot) f/8-f/11，vẽ mặt gói chỉnh  của rỗng gian ，trước bối đến sau bối toàn bộsạch  | nhân 24-35mm、Toàn cảnh (wide shot)f/8-f/11、chỉnh rỗng gian 、đơn bức Toàn cảnh (wide shot) |
+| đều  | đường mặt 、mặt 、đường bỏ 、、、、——thật  của  | thật đường mặt 、mặt tháng、 của 、phi hiệu quả ảnh  |
 
-### 室外类型速查
+### ngoài Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 城市商圈/步行街 | 玻璃幕墙建筑+商铺店面、霓虹招牌+LED大屏、步行街地砖、路灯+行道树、人流导视牌 | 繁华热闹、都市活力、霓虹璀璨、现代商业 |
-| 老城区/巷弄 | 骑楼商铺、斑驳墙面、电线杆+架空线、老式路灯、晾晒衣物、沿街摊贩、石阶 | 市井烟火、岁月质感、人间日常、怀旧温暖 |
-| 居民小区 | 居民楼+阳台、健身器材+长椅、行道树+绿化、路灯+单元门、停放的电动车/自行车 | 日常静谧、邻里生活、最真实的都市底色 |
-| 校园/大学园区 | 教学楼+林荫道、操场+跑道、图书馆+台阶、自行车停放、宣传栏、学生穿梭的日常感 | 青春、书卷气、午后的校园、记忆里的场景 |
-| 城市公园 | 草坪+长椅、景观湖+步道、树木+花境、凉亭+健身区、城市天际线远景 | 松弛治愈、都市绿洲、阳光穿过树叶 |
-| 天台/屋顶 | 楼顶设备+通风管道、护栏+城市天际线、地面防水层、杂物、晾衣绳 | 开阔孤寂、俯瞰全城、风吹过的感觉、一个人的高处 |
-| 地铁站/车厢 | 闸机+安检、站台+屏蔽门、广告灯箱、自动扶梯、车厢座椅+扶手、隧道 | 都市通勤、地下流动的城市血液、冷光+人潮 |
-| 城市街道/十字路口 | 斑马线+红绿灯、行道树+路灯、沿街建筑+店铺、路面标线、可能的路面积水反光 | 都市日常的十字路口、人潮车流、城市的心跳 |
-| 高架桥/立交桥 | 桥体结构+车道、隔音屏、承重墩、城市天际线背景、桥下空间+阴影 | 都市立体交通、巨大结构下的渺小感 |
-| 江/河边步道 | 水面+倒影、步道+栏杆、路灯+长椅、对岸城市天际线、垂柳/芦苇 | 开阔宁静、水面的反光、城市的另一面 |
-| 公交站台 | 候车亭+座椅、公交线路牌、广告灯箱、行道树+路灯、等车的人日常状态 | 等待的瞬间、城市的停顿、日常的驿站 |
-| 深夜街道 | 空荡的街道+街灯、打烊的店铺+卷帘门、便利店灯光、湿路面反光（如雨后）、安静 | 深夜城市的另一面、孤独但不危险、安静的力量 |
+| cấp /bước thi  | tạo +cấp mặt 、+LEDlớn 、bước thi địa 、đường +thi đạo 、ngườidẫn video  | 、đều hoạt lực 、、cấp  |
+| khu / | cấp 、mặt 、đường +rỗng đường 、thức đường 、、、 | 、tháng、ngườigian ngày thường 、cũ  |
+| dân nhỏ khu  | dân +đài 、thiết bị +dài 、thi đạo +hóa 、đường +đơn cổng 、mở  của động /tự thi  | ngày thường 、sinh hoạt 、nhất thật  của đều vật  |
+| đối /lớn khu  | +đạo 、thao trường +đạo 、ảnh +đài 、tự thi mở 、truyền 、sinh  của ngày thường  | 、、sau  của đối 、 của Bối cảnh |
+|  | +dài 、bối +bước đạo 、+、+khu 、ngàyđường Viễn cảnh (extreme wide shot) | 、đều 、ánh  |
+| ngàyđài / | thiết +thông phong đạo 、+ngàyđường 、địa mặt tầng 、、 | mở 、toàn 、phong  của 、một người của cao xử  |
+| địa trạm / | máy +an kiểm 、trạm đài +cổng 、thông 、tự động 、+tay 、đạo  | đều thông 、địa dưới động  của 、ánh +người |
+| đạo /10chữ đường cổng  | đường +、thi đạo +đường 、tạo +、đường mặt biểu đường 、thể  của đường mặt phụ ánh  | đều ngày thường  của 10chữ đường cổng 、người、 của  |
+| cao /lập tác vụ  | thể kết cấu +đạo 、cách âm 、trùng 、ngàyđường bối 、dưới rỗng gian +sáng  | đều lập thể tác vụ thông 、lớn kết cấu dưới  của nhỏ  |
+| /bước đạo  | mặt +sáng 、bước đạo +、đường +dài 、đúng ngàyđường 、/ | mở 、mặt  của phụ ánh 、 của 1 mặt  |
+| tác vụ trạm đài  | +、tác vụ đường đường 、thông 、thi đạo +đường 、 của ngườingày thường trạng thái |  của gian 、 của 、ngày thường  của trạm  |
+| đạo  | rỗng  của đạo +、mở  của +cổng 、ánh 、đường mặt phụ ánh （như sau ）、an  |  của 1 mặt 、nhưng không 、an  của lực lượng  |
 
 ---
 
-## 五、单视图全景摄影规范
+## 5、đơn video ảnh Toàn cảnh (wide shot)sáng 
 
-> 真人都市场景仅需**单张**全景摄影——一张照片装下整个空间的完整信息。不是2×2四视图，不是多角度拼接。
+> thật ngườiđều Bối cảnhchỉ cần **đơn bức **Toàn cảnh (wide shot)sáng ——1 bức dưới chỉnh mục rỗng gian  của chỉnh thông tin。không là 2×24video ảnh ，không là nhiều nhân độ ghép tiếp 。
 
-### 画面构成
+### vẽ mặt cấu tạo 
 
-| 项目 | 摄影要求 |
+| dự án | sáng Yêu cầu |
 |---|---|
-| 空间呈现 | 单张照片完整呈现场景的空间全貌。使用24-28mm广角或35mm，全场地的纵深、宽度、高度在一张画面中全部可见 |
-| 构图 | 全景深大景别——前景（门框/家具/护栏/树木/窗框）形成天然画框→中景是场地主体→后景向空间纵深或窗外/天际线延伸 |
-| 景深 | 全景深 f/8-f/11，从前到后全部清晰。这不是人像摄影——场景的每一个角落都应该能被看见 |
-| 人物 | **严禁出现任何人物、人影、人体轮廓。** 场景是空的——但这种"空"有叙事：刚下班/即将开场/人去楼空/日常的静止瞬间 |
-| 比例 | 建议 16:9 或 3:2 宽幅——匹配全景空间展示的横向视觉习惯 |
-| 色彩 | 由实际光源的色温驱动，不套滤镜。色彩科学参考ARRI Alexa/Sony Venice电影色调 |
+| rỗng gian  | đơn bức chỉnh Bối cảnh của rỗng gian toàn 。hàm 24-28mmnhân hoặc 35mm，toàn trường địa  của 、rộng độ 、cao độ ở 1 bức vẽ mặt giữa toàn bộthấy  |
+| cấu ảnh  | Toàn cảnh (wide shot)lớn Cỡ cảnh——trước bối （cổng /cụ ///）dạng tạo ngàyvẽ →Trung cảnh (medium shot)là trường địa chính thể →sau bối rỗng gian hoặc ngoài /ngàyđường trì  |
+| bối  | Toàn cảnh (wide shot) f/8-f/11，từ trước đến sau toàn bộsạch 。nàykhông là ngườisáng ——Bối cảnh của một nhân đều hồi thể xem thấy  |
+| người | **ra người、ngườisáng 、ngườithể 。** Bối cảnhlà rỗng  của ——nhưng nàyloại "rỗng "có việc ：dưới /mở trường /ngườiđi rỗng /ngày thường  của Tĩnh (static)gian  |
+| Tỷ lệ | Khuyến nghị 16:9 hoặc  3:2 rộng ——khớpToàn cảnh (wide shot)rỗng gian nhở  của trực quan |
+| vật  | do ánh nguồn  của vật động ，không lọc quay 。vật tham chiếuARRI Alexa/Sony Venicesáng vật gọi  |
 
-### 空的场景如何叙事
+### rỗng  của Bối cảnhnhư việc 
 
-| "空"的类型 | 画面线索 | 叙事暗示 |
+| "rỗng " của Loại | vẽ mặt đường kiếm  | việc nhở  |
 |---|---|---|
-| 刚下班 | 电脑屏幕暗了但电源灯亮、椅子没有推回原位、桌上一杯没喝完的水 | 刚才有人在这里，现在走了 |
-| 即将开场 | 椅子摆好、桌面整洁、投影仪已开、窗帘拉好、矿泉水已摆好 | 有人马上要来，现在是开始前的静止 |
-| 人去楼空 | 搬家后的空房间、墙上挂钩和钉子留下的痕迹、地面积尘的轮廓 | 曾经有人住过，现在已经搬走了 |
-| 日常的静止 | 沙发上的毛毯随意搭着、茶几上的遥控器和半杯茶、窗外的光打在地板上 | 生活的常态、只是此刻没有人入镜 |
-| 深夜的场所 | 空荡的走廊只有日光灯亮着、便利店货架间的安静、地铁末班车后的站台 | 城市睡着了、但空间还醒着 |
+| dưới  | nhưng nguồn 、chưa có khuyến trả gốc vị trí 、trên 1 chưa  của  | có ngườiở này，ở chạy  |
+| mở trường  | tốt 、mặt chỉnh 、sáng đã mở 、tốt 、đã tốt  | có ngườitrên cần ，ở là mở ban đầu trước  của Tĩnh (static) |
+| ngườiđi rỗng  | sau  của rỗng gian 、trên hook  và lưu dưới  của 、địa mặt  của  | đã có người，ở đã đã chạy  |
+| ngày thường  của Tĩnh (static) | phát trên  của ý đang 、mấy trên  của sát thiết bị  và nửa 、ngoài  của ánh mở ở địa trên  | sinh hoạt  của thường thái 、chỉ là chưa có ngườivào quay  |
+|  của trường nơi  | rỗng  của chạy chỉ có ngày ánh đang 、gian  của an 、địa sau  của trạm đài  | đang 、nhưng rỗng gian còn đang  |
 
 ---
 
-## 六、提示词模板
+## 6、Promptmô 
 
-真人都市场景全景摄影，单张广角全景，非3D渲染非CG非建模，
-{室内/室外}场景，中国当代都市真实{场景类型}，
-{季节}，{时段}，{天气}，
-{光源逻辑：窗光方向+人工光源/日光方向+城市光源}、光的方向和色温可追溯、非全局均匀光，
-广角24-28mm镜头、全景深f/8-f/11、空间纵深完整、前景到后景全部清晰，
-前景{画框元素}、中景{空间主体结构}、后景{空间延伸/窗外/远景}，
-{材质与表面：墙面/地面/家具的真实使用痕迹}，
-{都市瑕疵：磨损/斑驳/灰尘/落叶/积水——被使用过的痕迹}，
-场景无人——{空场叙事线索}、严禁出现任何人物人影人体轮廓，
-真实摄影画质、35mm全画幅摄影质感、单张全景空间摄影，
-画面干净无文字无水印无签名无边框
+thật ngườiđều Bối cảnhToàn cảnh (wide shot)sáng ，đơn bức nhân Toàn cảnh (wide shot)，phi 3Dphi CGphi tạo mô ，
+{trong /ngoài }Bối cảnh，giữa khi đều thật {Bối cảnhLoại}，
+{tiết }，{đoạn }，{ngày}，
+{ánh nguồn logic：ánh phương +ngườiánh nguồn /ngày ánh phương +ánh nguồn }、ánh  của phương  và vật 、phi toàn cục ánh ，
+nhân 24-28mmỐng kính、Toàn cảnh (wide shot)f/8-f/11、rỗng gian chỉnh 、trước bối đến sau bối toàn bộsạch ，
+trước bối {vẽ }、Trung cảnh (medium shot){rỗng gian chính thể kết cấu }、sau bối {rỗng gian trì /ngoài /Viễn cảnh (extreme wide shot)}，
+{bảng mặt ：mặt /địa mặt /cụ  của thật hàm }，
+{đều ：////——hàm  của }，
+Bối cảnhkhông người——{rỗng trường việc đường kiếm }、ra ngườingườisáng ngườithể ，
+thật sáng vẽ 、35mmtoàn vẽ sáng 、đơn bức Toàn cảnh (wide shot)rỗng gian sáng ，
+vẽ mặt không tài chữ không không ký tên không 
 
-### 负面规避提示词
+### mặt Prompt
 
 3D render, 3D modeling, CGI, Unreal Engine, Blender, PBR material, volumetric lighting, ambient occlusion, ray tracing, game engine, cartoon, anime, 2D, illustration, hand drawn, painting,
 four views, grid layout, 2x2, turnaround, orthographic view, blueprint, multiple angles,
 showroom, brand new, pristine, perfect, unrealistically clean, sterile, empty without story,
 people, person, human figure, silhouette, shadow figure, body, crowd,
-古风, 古代, 仙侠, 武侠, 民国, 赛博朋克, 科幻, 西方奇幻, 中世纪, 异世界, 非中国城市,
+phong , , , , dân , , , phương , giữa , bất giới , phi giữa ,
 text, watermark, signature, logo, border, frame, UI element, HUD
 
 ---
 
-## 七、约束规则
+## 7、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须是**单张**全景摄影——单视图、非2×2四视图、非多角度、非turnaround |
-| R2 | 必须使用广角镜头（24-28mm）或标准焦段（35mm），全景深 f/8-f/11，完整空间纵深 |
-| R3 | 光源必须可追溯——自然光的方向与时刻匹配、人工光源的位置和色温合理 |
-| R4 | 场景必须有前/中/后景空间层次，前景画框→中景主体→后景延伸 |
-| R5 | 必须有中国当代都市辨识度——中文标识/中国建筑风格/中国城市特征 |
-| R6 | 必须有使用痕迹——墙面/地面/家具的自然磨损、非样板间非全新非效果图 |
-| R7 | **严禁出现任何人物、人影、人体轮廓、剪影** |
-| R8 | 必须声明"真人实拍摄影 + 非3D渲染非CG"核心锚定 |
+| R1 | Bắt buộclà **đơn bức **Toàn cảnh (wide shot)sáng ——đơn video ảnh 、phi 2×24video ảnh 、phi nhiều nhân độ 、phi turnaround |
+| R2 | Bắt buộchàm nhân Ống kính（24-28mm）hoặc biểu đoạn （35mm），Toàn cảnh (wide shot) f/8-f/11，chỉnh rỗng gian  |
+| R3 | ánh nguồn Bắt buộc——tự ánh  của phương khớp、ngườiánh nguồn  của vị trí trí  và vật hợp lý  |
+| R4 | Bối cảnhBắt buộccó trước /giữa /sau bối rỗng gian tầng lần ，trước bối vẽ →Trung cảnh (medium shot)chính thể →sau bối trì  |
+| R5 | Bắt buộccó giữa khi đều trưng độ ——giữa tài biểu trưng /giữa tạo Phong cách/giữa  |
+| R6 | Bắt buộccó hàm ——mặt /địa mặt /cụ  của tự 、phi kiểu gian phi toàn mới phi hiệu quả ảnh  |
+| R7 | **ra người、ngườisáng 、ngườithể 、sáng ** |
+| R8 | Bắt buộcthanh dẫn "Người Thật Thực Tếsáng  + phi 3Dphi CG"nối  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 严禁「3D渲染 / 3D建模 / CG / UE引擎 / Blender / PBR材质 / 体积光 / AO」等一切CG术语 |
-| X2 | 严禁「2D手绘 / 插画 / 动画 / 二次元」等非摄影媒介 |
-| X3 | 严禁「四视图 / 2×2网格 / 多角度 / turnaround / orthographic view / blueprint」——仅单张 |
-| X4 | 严禁「古风/古代/仙侠/武侠/民国/赛博朋克/科幻/西方奇幻/异世界」等非当代都市场景 |
-| X5 | 严禁「无中国辨识度的架空城市 / 全英文标识」 |
-| X6 | 严禁「出现任何人物/人影/人体轮廓/剪影/肢体」 |
-| X7 | 严禁「样板间/售楼处效果图/全新无痕/完美品相/无生活痕迹」的场景 |
-| X8 | 严禁「光源来源不明/全局均匀照明/无方向的光」 |
-| X9 | 严禁「过曝死白/暗部死黑/无景深/画面扁平」 |
-| X10 | 严禁「水印 / 文字 / LOGO / 签名 / 边框 / AI生成痕迹」 |
+| X1 | 「3D / 3Dtạo mô  / CG / UE / Blender / PBR / thể ánh  / AO」1 CGngữ  |
+| X2 | 「2Dtay  / vẽ  / động vẽ  / 2lần 」phi sáng  |
+| X3 | 「4video ảnh  / 2×2mạng khung  / nhiều nhân độ  / turnaround / orthographic view / blueprint」——chỉ đơn bức  |
+| X4 | 「phong ////dân ///phương /bất giới 」phi khi đều Bối cảnh |
+| X5 | 「không giữa trưng độ  của rỗng  / toàn tài biểu trưng 」 |
+| X6 | 「ra người/ngườisáng /ngườithể /sáng /thể 」 |
+| X7 | 「kiểu gian /xử hiệu quả ảnh /toàn mới không /đẹp /không sinh hoạt 」 của Bối cảnh |
+| X8 | 「ánh nguồn nguồn không dẫn /toàn cục dẫn /không phương  của ánh 」 |
+| X9 | 「/bộ /không bối /vẽ mặt 」 |
+| X10 | 「 / tài chữ  / LOGO / ký tên  /  / AItạo」 |

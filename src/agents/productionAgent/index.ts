@@ -27,17 +27,17 @@ export interface AgentContext {
 function buildMemPrompt(mem: Awaited<ReturnType<Memory["get"]>>): string {
   let memoryContext = "";
   if (mem.rag.length) {
-    memoryContext += `[相关记忆]\n${mem.rag.map((r) => r.content).join("\n")}`;
+    memoryContext += `[Ký ức liên quan]\n${mem.rag.map((r) => r.content).join("\n")}`;
   }
   if (mem.summaries.length) {
     if (memoryContext) memoryContext += "\n\n";
-    memoryContext += `[历史摘要]\n${mem.summaries.map((s, i) => `${i + 1}. ${s.content}`).join("\n")}`;
+    memoryContext += `[Tóm tắt lịch sử]\n${mem.summaries.map((s, i) => `${i + 1}. ${s.content}`).join("\n")}`;
   }
   if (mem.shortTerm.length) {
     if (memoryContext) memoryContext += "\n\n";
-    memoryContext += `[近期对话]\n${mem.shortTerm.map((m) => `${m.role}: ${m.content}`).join("\n")}`;
+    memoryContext += `[Hội thoại gần đây]\n${mem.shortTerm.map((m) => `${m.role}: ${m.content}`).join("\n")}`;
   }
-  return `## Memory\n以下是你对用户的记忆，可作为参考但不要主动提及：\n${memoryContext}`;
+  return `## Memory\nDưới đây là ký ức của bạn về người dùng，Có thể dùng tham khảo nhưng không cần  chủ động nhắc lại：\n${memoryContext}`;
 }
 
 export async function runDecisionAI(ctx: AgentContext) {
@@ -49,11 +49,11 @@ export async function runDecisionAI(ctx: AgentContext) {
   const prompt = await fs.promises.readFile(skill, "utf-8");
 
   const projectInfo = await u.db("o_project").where("id", ctx.resTool.data.projectId).first();
-  if (!projectInfo) throw new Error(`项目不存在，ID: ${ctx.resTool.data.projectId}`);
+  if (!projectInfo) throw new Error(`Dự án không tồn tại，ID: ${ctx.resTool.data.projectId}`);
   const [_, imageModelName] = projectInfo.imageModel!.split(/:(.+)/);
   const [id, videoModelName] = projectInfo.videoModel!.split(/:(.+)/);
   const models = await u.vendor.getModelList(id);
-  if (!models.length) throw new Error(`项目使用的模型不存在，ID: ${projectInfo.videoModel}`);
+  if (!models.length) throw new Error(`Mô hình dự án sử dụng không tồn tại，ID: ${projectInfo.videoModel}`);
   let videoMode = "";
   try {
     videoMode = JSON.parse(projectInfo.mode ?? "");
@@ -64,7 +64,7 @@ export async function runDecisionAI(ctx: AgentContext) {
   // const findData = models.find((i: any) => i.modelName == videoModelName);
   // const isRef = findData.mode.every((i: any) => Array.isArray(i));
 
-  const modelInfo = `项目使用的模型如下：\n图像模型：${imageModelName}\n视频模型：${videoModelName}\n多参：${isRef ? "是" : "否"}`;
+  const modelInfo = `Các mô hình dự án đang sử dụng như sau ：\nMô hình hình ảnh：${imageModelName}\nMô hình video：${videoModelName}\nnhiều tham ：${isRef ? "là " : "không "}`;
 
   const mem = buildMemPrompt(await memory.get(text));
 
@@ -133,24 +133,24 @@ async function createSubAgent(parentCtx: AgentContext) {
       });
     }
 
-    parentCtx.msg = resTool.newMessage("assistant", "视频策划");
+    parentCtx.msg = resTool.newMessage("assistant", "Kế hoạch Video");
     return fullResponse;
   }
 
   const promptInput = z
     .object({
-      prompt: z.string().describe("交给子Agent的任务简约描述，100字以内"),
+      prompt: z.string().describe("tác vụ cho Agent của tác vụ mô tả，100chữ trong "),
     })
     .toJSONSchema();
 
   const projectInfo = await u.db("o_project").where("id", resTool.data.projectId).first();
-  if (!projectInfo) throw new Error(`项目不存在，ID: ${resTool.data.projectId}`);
+  if (!projectInfo) throw new Error(`Dự án không tồn tại，ID: ${resTool.data.projectId}`);
   const artSkills = await createArtSkills(projectInfo?.artStyle!, projectInfo?.directorManual!);
 
   const [_, imageModelName] = projectInfo.imageModel!.split(/:(.+)/);
   const [id, videoModelName] = projectInfo.videoModel!.split(/:(.+)/);
   const models = await u.vendor.getModelList(id);
-  if (!models.length) throw new Error(`项目使用的模型不存在，ID: ${projectInfo.videoModel}`);
+  if (!models.length) throw new Error(`Mô hình dự án sử dụng không tồn tại，ID: ${projectInfo.videoModel}`);
   // const findData = models.find((i: any) => i.modelName == videoModelName);
   //
   let videoMode = "";
@@ -161,10 +161,10 @@ async function createSubAgent(parentCtx: AgentContext) {
   }
   const isRef = Array.isArray(videoMode) ? true : false;
 
-  const modelInfo = `项目使用的模型如下：\n图像模型：${imageModelName}\n视频模型：${videoModelName}\n多参：${isRef ? "是" : "否"}`;
+  const modelInfo = `Các mô hình dự án đang sử dụng như sau ：\nMô hình hình ảnh：${imageModelName}\nMô hình video：${videoModelName}\nnhiều tham ：${isRef ? "là " : "không "}`;
 
   // const run_sub_agent_execution = tool({
-  //   description: "执行层子Agent，负责衍生资产、",
+  //   description: "thực thitầng Agent，Biến thể tài nguyên、",
   //   inputSchema: promptInput,
   //   execute: async ({ prompt }) => {
   //     const skill = path.join(u.getPath("skills"), "production_agent_execution.md");
@@ -172,17 +172,17 @@ async function createSubAgent(parentCtx: AgentContext) {
   //     const addPrompt =
   //       "\n" +
   //       [
-  //         "你必须使用如下XML格式写入工作区：\n```",
-  //         "拍摄计划：<scriptPlan>内容</scriptPlan>",
-  //         "分镜表：<storyboardTable>内容</storyboardTable>",
-  //         "分镜面板：<storyboardItem videoDesc='视频描述' prompt=提示词内容 track='分组' duration='视频推荐时间' associateAssetsIds='[该分镜所需的资产ID列表]'></storyboardItem>",
+  //         "bạnbắt buộc sử dụng như dưới XMLđịnh dạngvào công việc khu ：\n```",
+  //         "tính ：<scriptPlan>nội dung</scriptPlan>",
+  //         "Phân cảnhbản g：<storyboardTable>nội dung</storyboardTable>",
+  //         "bản g phân cảnh：<storyboardItem videoDesc='Videomô tả' prompt=Promptnội dung track='phân nhóm' duration='Videokhuyến nghị thời gian' associateAssetsIds='[Phân cảnhnơi cần  của Tài nguyênIDdanh sách]'></storyboardItem>",
   //         "```",
   //       ].join("\n");
 
   //     return runAgent({
   //       prompt,
   //       system: systemPrompt + addPrompt,
-  //       name: "执行导演",
+  //       name: "thực thiđạo diễn",
   //       memoryKey: "assistant:execution",
   //       messages: [
   //         { role: "assistant", content: artSkills.prompt + `\n${modelInfo}` },
@@ -193,9 +193,9 @@ async function createSubAgent(parentCtx: AgentContext) {
   //   },
   // });
 
-  //衍生资产分析与信息写入
+  //Biến thể tài nguyênphần tích thông tinvào 
   const run_sub_agent_derive_assets = tool({
-    description: "运行执行subAgent来完成衍生资产分析与信息写入相关任务",
+    description: "chạy thực thisubAgenthoàn thànhBiến thể tài nguyênphần tích thông tinvào liên tác vụ ",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "production_execution_derive_assets.md");
@@ -204,7 +204,7 @@ async function createSubAgent(parentCtx: AgentContext) {
         key: "productionAgent:deriveAssetsAgent",
         prompt,
         system: systemPrompt,
-        name: "执行导演",
+        name: "thực thiđạo diễn",
         memoryKey: "assistant:execution",
         messages: [
           { role: "assistant", content: artSkills.prompt + `\n${modelInfo}` },
@@ -215,9 +215,9 @@ async function createSubAgent(parentCtx: AgentContext) {
     },
   });
 
-  //衍生资产图片生成
+  //Biến thể tài nguyênHình ảnhtạo
   const run_sub_agent_generate_assets = tool({
-    description: "运行执行subAgent来完成衍生资产图片生成相关任务",
+    description: "chạy thực thisubAgenthoàn thànhBiến thể tài nguyênHình ảnhtạoliên tác vụ ",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "production_execution_generate_assets.md");
@@ -226,7 +226,7 @@ async function createSubAgent(parentCtx: AgentContext) {
         key: "productionAgent:generateAssetsAgent",
         prompt,
         system: systemPrompt,
-        name: "执行导演",
+        name: "thực thiđạo diễn",
         memoryKey: "assistant:execution",
         messages: [
           { role: "assistant", content: artSkills.prompt + `\n${modelInfo}` },
@@ -237,21 +237,21 @@ async function createSubAgent(parentCtx: AgentContext) {
     },
   });
 
-  //拍摄计划
+  //tính 
   const run_sub_agent_director_plan = tool({
-    description: "运行执行subAgent来完成导演规划相关任务",
+    description: "chạy thực thisubAgenthoàn thànhKế hoạch đạo diễnliên tác vụ ",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "production_execution_director_plan.md");
       const systemPrompt = await fs.promises.readFile(skill, "utf-8");
 
-      const addPrompt = "\n你必须使用如下XML格式写入工作区：\n```\n<scriptPlan>内容</scriptPlan>\n```";
+      const addPrompt = "\nbạnbắt buộc sử dụng như dưới XMLđịnh dạngvào công việc khu ：\n```\n<scriptPlan>nội dung</scriptPlan>\n```";
 
       return runAgent({
         key: "productionAgent:directorPlanAgent",
         prompt,
         system: systemPrompt + addPrompt,
-        name: "执行导演",
+        name: "thực thiđạo diễn",
         memoryKey: "assistant:execution",
         messages: [
           { role: "assistant", content: artSkills.prompt + `\n${modelInfo}` },
@@ -262,9 +262,9 @@ async function createSubAgent(parentCtx: AgentContext) {
     },
   });
 
-  //分镜图生成
+  //Hình ảnh phân cảnhtạo
   const run_sub_agent_storyboard_gen = tool({
-    description: "运行执行subAgent来完成分镜图生成相关任务",
+    description: "chạy thực thisubAgenthoàn thànhHình ảnh phân cảnhtạoliên tác vụ ",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "production_execution_storyboard_gen.md");
@@ -273,7 +273,7 @@ async function createSubAgent(parentCtx: AgentContext) {
         key: "productionAgent:storyboardGenAgent",
         prompt,
         system: systemPrompt,
-        name: "执行导演",
+        name: "thực thiđạo diễn",
         memoryKey: "assistant:execution",
         messages: [
           { role: "assistant", content: artSkills.prompt + `\n${modelInfo}` },
@@ -287,8 +287,8 @@ async function createSubAgent(parentCtx: AgentContext) {
   // const mainSkills: { path: string; name: string; description: string }[] = [];
   // for (const skill of mainSkill) {
   //   const skillPath = path.join(rootDir, skill + ".md");
-  //   if (!fs.existsSync(skillPath)) throw new Error(`主技能文件不存在: ${skillPath}`);
-  //   if (!isPathInside(skillPath, normalizedRootDir)) throw new Error(`技能名称无效：检测到路径穿越。${skillPath}`);
+  //   if (!fs.existsSync(skillPath)) throw new Error(`chính thể Tệp không tồn tại: ${skillPath}`);
+  //   if (!isPathInside(skillPath, normalizedRootDir)) throw new Error(`thể tênvô hiệu：kiểm kiểm đến đường dẫn。${skillPath}`);
   //   const content = await fs.promises.readFile(skillPath, "utf-8");
   //   const parsed = parseFrontmatter(content);
   //   mainSkills.push({ path: skillPath, ...parsed });
@@ -296,22 +296,22 @@ async function createSubAgent(parentCtx: AgentContext) {
 
   const productionSkills = await useProductionSkills(projectInfo?.artStyle!, projectInfo?.directorManual!);
 
-  //分镜面板写入
+  //bản g phân cảnhvào 
   const run_sub_agent_storyboard_panel = tool({
-    description: "运行执行subAgent来完成分镜面板写入相关任务",
+    description: "chạy thực thisubAgenthoàn thànhbản g phân cảnhvào liên tác vụ ",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "production_execution_storyboard_panel.md");
       const systemPrompt = await fs.promises.readFile(skill, "utf-8");
 
       const addPrompt =
-        "\n你必须使用如下XML格式写入工作区：\n```\n<storyboardItem videoDesc='视频描述' prompt=提示词内容 track='分组' shouldGenerateImage='true/false' duration='视频推荐时间' associateAssetsIds='[该分镜所需的资产ID列表]'></storyboardItem>\n```";
+        "\nbạnbắt buộc sử dụng như dưới XMLđịnh dạngvào công việc khu ：\n```\n<storyboardItem videoDesc='Videomô tả' prompt=Promptnội dung track='phân nhóm' shouldGenerateImage='true/false' duration='Videokhuyến nghị thời gian' associateAssetsIds='[Phân cảnhnơi cần  của Tài nguyênIDdanh sách]'></storyboardItem>\n```";
 
       return runAgent({
         key: "productionAgent:storyboardPanelAgent",
         prompt,
         system: systemPrompt + addPrompt,
-        name: "执行导演",
+        name: "thực thiđạo diễn",
         memoryKey: "assistant:execution",
         messages: [
           { role: "assistant", content: productionSkills.prompt + `\n${modelInfo}` },
@@ -322,21 +322,21 @@ async function createSubAgent(parentCtx: AgentContext) {
     },
   });
 
-  //分镜表写入
+  //Phân cảnhbản gvào 
   const run_sub_agent_storyboard_table = tool({
-    description: "运行执行subAgent来完成分镜表构建相关任务",
+    description: "chạy thực thisubAgenthoàn thànhPhân cảnhbản gcấu tạo liên tác vụ ",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "production_execution_storyboard_table.md");
       const systemPrompt = await fs.promises.readFile(skill, "utf-8");
 
-      const addPrompt = "\n你必须使用如下XML格式写入工作区：\n```\n<storyboardTable>内容</storyboardTable>\n```";
+      const addPrompt = "\nbạnbắt buộc sử dụng như dưới XMLđịnh dạngvào công việc khu ：\n```\n<storyboardTable>nội dung</storyboardTable>\n```";
 
       return runAgent({
         key: "productionAgent:storyboardTableAgent",
         prompt,
         system: systemPrompt + addPrompt,
-        name: "执行导演",
+        name: "thực thiđạo diễn",
         memoryKey: "assistant:execution",
         messages: [
           { role: "assistant", content: productionSkills.prompt + `\n${modelInfo}` },
@@ -348,7 +348,7 @@ async function createSubAgent(parentCtx: AgentContext) {
   });
 
   const run_sub_agent_supervision = tool({
-    description: "运行监督层subAgent执行独立任务，完成后返回结果",
+    description: "chạy Tầng giám sát & kiểm duyệtsubAgentthực thilập tác vụ ，hoàn thànhsau  Trả vềkết quả",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "production_agent_supervision.md");
@@ -357,7 +357,7 @@ async function createSubAgent(parentCtx: AgentContext) {
         key: "productionAgent:supervisionAgent",
         prompt,
         system: systemPrompt,
-        name: "监制",
+        name: "giám chép ",
         memoryKey: "assistant:supervision",
       });
     },
@@ -380,15 +380,15 @@ async function createArtSkills(artName: string, storyName: string) {
   const skillList = [...(await scanSkills(artWorkerPath + "/*.md")), ...(await scanSkills(storyWorkerPath + "/*.md"))];
   const mainSkills: { path: string; name: string; description: string }[] = [];
   for (const skillPath of skillList) {
-    if (!fs.existsSync(skillPath)) throw new Error(`主技能文件不存在: ${skillPath}`);
+    if (!fs.existsSync(skillPath)) throw new Error(`chính thể Tệp không tồn tại: ${skillPath}`);
     const content = await fs.promises.readFile(skillPath, "utf-8");
     const parsed = parseFrontmatter(content);
     mainSkills.push({ path: skillPath, ...parsed });
   }
   const res = {
     prompt: `## Skills
-以下技能提供了专业任务的专用指令。
-当任务与某个技能的描述匹配时，调用 activate_skill 工具并传入技能名称来加载完整指令。
+dưới thể nhắc nhà riêng tác vụ  của riêng hàm 。
+khi tác vụ mục thể  của mô tảkhớp，gọi hàm  activate_skill cụ nhất truyền vào thể têntảichỉnh 。
 ${buildSkillPrompt(mainSkills)}`,
     tools: createSkillTools(mainSkills, { mainSkill: mainSkills, secondarySkills: [], tertiarySkills: [] }),
   };
@@ -416,12 +416,12 @@ async function consumeFullStream(
       }
       if (chunk.type === "reasoning-start") {
         thinkTime = Date.now();
-        thinking = msg.thinking("思考中...");
+        thinking = msg.thinking("Đang suy nghĩ...");
       } else if (chunk.type === "reasoning-delta") {
         thinking?.append(chunk.text);
       } else if (chunk.type === "reasoning-end") {
         thinkTime = Date.now() - thinkTime;
-        thinking?.updateTitle(`思考完毕（${(thinkTime / 1000).toFixed(1)} 秒）`);
+        thinking?.updateTitle(`Hoàn thành suy nghĩ (${(thinkTime / 1000).toFixed(1)}  giây)`);
         thinking?.complete();
         thinking = null;
       } else if (chunk.type === "text-delta") {
@@ -474,15 +474,15 @@ async function useProductionSkills(artName: string, storyName: string) {
   ];
   const mainSkills: { path: string; name: string; description: string }[] = [];
   for (const skillPath of skillList) {
-    if (!fs.existsSync(skillPath)) throw new Error(`主技能文件不存在: ${skillPath}`);
+    if (!fs.existsSync(skillPath)) throw new Error(`chính thể Tệp không tồn tại: ${skillPath}`);
     const content = await fs.promises.readFile(skillPath, "utf-8");
     const parsed = parseFrontmatter(content);
     mainSkills.push({ path: skillPath, ...parsed });
   }
   const res = {
     prompt: `## Skills
-以下技能提供了专业任务的专用指令。
-当任务与某个技能的描述匹配时，调用 activate_skill 工具并传入技能名称来加载完整指令。
+dưới thể nhắc nhà riêng tác vụ  của riêng hàm 。
+khi tác vụ mục thể  của mô tảkhớp，gọi hàm  activate_skill cụ nhất truyền vào thể têntảichỉnh 。
 ${buildSkillPrompt(mainSkills)}`,
     tools: createSkillTools(mainSkills, { mainSkill: mainSkills, secondarySkills: [], tertiarySkills: [] }),
   };

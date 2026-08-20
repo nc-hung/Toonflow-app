@@ -3,7 +3,7 @@ import path from "path";
 import fs from "fs";
 import Module from "module";
 
-// 加速 Electron 启动：跳过 GPU 信息收集，减少初始化耗时
+// Tăng tốc khởi động Electron: bỏ qua thu thập thông tin GPU, giảm thời gian khởi tạo
 app.commandLine.appendSwitch("disable-gpu-shader-disk-cache");
 app.commandLine.appendSwitch("disable-features", "CalculateNativeWinOcclusion");
 
@@ -73,16 +73,16 @@ function initializeData(): void {
   }
 }
 
-//获取全部依赖路径，优先从 unpacked 加载原生模块，其他模块从 asar 加载
+//Lấy toàn bộ đường dẫn phụ thuộc, ưu tiên tải native modules từ unpacked, các module khác tải từ asar
 function getNodeModulesPaths(): string[] {
   const paths: string[] = [];
   if (app.isPackaged) {
-    // external 依赖（原生模块）在 unpacked 目录
+    // Phụ thuộc external (native modules) nằm trong thư mục unpacked
     const unpackedNodeModules = path.join(process.resourcesPath, "app.asar.unpacked", "node_modules");
     if (fs.existsSync(unpackedNodeModules)) {
       paths.push(unpackedNodeModules);
     }
-    // 普通依赖在 asar 内
+    // Phụ thuộc thông thường nằm trong asar
     const asarNodeModules = path.join(process.resourcesPath, "app.asar", "node_modules");
     paths.push(asarNodeModules);
   } else {
@@ -91,15 +91,15 @@ function getNodeModulesPaths(): string[] {
   return paths;
 }
 
-//动态加载
+//Tải động (Dynamic load)
 function requireWithCustomPaths(modulePath: string): any {
   const appNodeModulesPaths = getNodeModulesPaths();
-  // 保存原始方法
+  // Lưu phương thức gốc
   const originalNodeModulePaths = (Module as any)._nodeModulePaths;
-  // 临时修改模块路径解析
+  // Tạm thời sửa đường dẫn phân giải module
   (Module as any)._nodeModulePaths = function (from: string): string[] {
     const paths = originalNodeModulePaths.call(this, from);
-    // 将主程序的 node_modules 添加到前面
+    // Thêm node_modules của chương trình chính lên đầu
     for (let i = appNodeModulesPaths.length - 1; i >= 0; i--) {
       const p = appNodeModulesPaths[i];
       if (!paths.includes(p)) {
@@ -109,11 +109,11 @@ function requireWithCustomPaths(modulePath: string): any {
     return paths;
   };
   try {
-    // 清除缓存确保加载最新
+    // Xóa bộ nhớ cache để đảm bảo tải bản  mới  nhất
     delete require.cache[require.resolve(modulePath)];
     return require(modulePath);
   } finally {
-    // 恢复原始方法
+    // Khôi phục phương thức gốc
     (Module as any)._nodeModulePaths = originalNodeModulePaths;
   }
 }
@@ -175,15 +175,15 @@ app.whenReady().then(async () => {
   try {
     let servePath: string;
     if (app.isPackaged) {
-      // 生产环境：让出主线程一次，确保 loading 窗口渲染后再做耗时文件拷贝
+      // Môi trường production：để ra tiến trình chính 1 lần ，lưu  loading cửa sổ sau  Tệp
       await new Promise((r) => setTimeout(r, 0));
       initializeData();
       servePath = path.join(app.getPath("userData"), "data", "serve", "app.js");
     } else {
-      // 开发环境：直接加载源码（tsx 通过 -r tsx 注册了 require 钩子）
+      // Môi trường development：trực tiếp tảimã nguồn （tsx thông qua -r tsx đăng ký  require hook ）
       servePath = path.join(process.cwd(), "src", "app.ts");
     }
-    // 使用自定义路径加载模块
+    // sử dụng tùy chỉnh đường dẫntảimô 
     const mod = requireWithCustomPaths(servePath);
     closeServeFn = mod.closeServe;
     const port = await mod.default(true);
@@ -193,7 +193,7 @@ app.whenReady().then(async () => {
         resolve();
       }, 2000);
     });
-    // 注册协议处理器
+    // đăng ký giao thức Xử lýthiết bị 
     protocol.handle("toonflow", (request) => {
       const url = new URL(request.url);
       const pathname = url.hostname.toLowerCase();
@@ -216,12 +216,12 @@ app.whenReady().then(async () => {
           return { ok: true };
         },
         apprestart: () => {
-          // 延迟执行，让响应先返回给前端
+          // trì hoãn thực thi，để phản hồi trước  Trả vềcho giao diện frontend 
           setTimeout(() => {
             app.relaunch();
             app.exit(0);
           }, 500);
-          return { ok: true, message: "应用即将重启" };
+          return { ok: true, message: "hồi hàm trùng động " };
         },
         windowismaximized: () => ({
           maximized: mainWindow?.isMaximized() ?? false,
@@ -238,13 +238,13 @@ app.whenReady().then(async () => {
             shell.openExternal(targetUrl);
             return { ok: true };
           } else {
-            return { ok: false, error: "缺少url参数" };
+            return { ok: false, error: "Thiếu urltham số" };
           }
         },
         getlocallanguage: () => {
-          // 获取应用区域设置
+          // Lấyhồi hàm khu vực Thiết lập
 
-          // macOS系统特定方法
+          // macOSdòng thống nối phương thức 
           if (process.platform === "darwin") {
             const systemLocale = systemPreferences.getUserDefault("AppleLocale", "string");
             return { ok: true, local: systemLocale };
@@ -256,7 +256,7 @@ app.whenReady().then(async () => {
 
       const handler = handlers[pathname];
 
-      const responseData = handler ? handler() : { error: "未知接口" };
+      const responseData = handler ? handler() : { error: "chưa báo cổng kết nối (endpoint) " };
       return new Response(JSON.stringify(responseData), {
         headers: {
           "Content-Type": "application/json",
@@ -265,10 +265,10 @@ app.whenReady().then(async () => {
       });
     });
 
-    // 服务启动成功，创建主窗口（主窗口 ready-to-show 时自动关闭loading）
+    // phục vụ động động thành công，sáng tạo chính cửa sổ （chính cửa sổ  ready-to-show tự động liên loading）
     await createMainWindow();
   } catch (err) {
-    console.error("[服务启动失败]:", err);
+    console.error("[phục vụ động động thất bại]:", err);
     await createMainWindow();
   }
 });

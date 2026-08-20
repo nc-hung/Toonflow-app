@@ -1,10 +1,10 @@
 /**
- * Toonflow AI供应商模板 - 火山引擎(豆包)
+ * Toonflow AINhà cung cấpTemplate - Volcengine(Doubao)
  * @version 2.0
  */
 
 // ============================================================
-// 类型定义
+// Định nghĩa kiểu dữ liệu
 // ============================================================
 
 type VideoMode =
@@ -97,7 +97,7 @@ interface PollResult {
 }
 
 // ============================================================
-// 全局声明
+// Khai báo toàn cục
 // ============================================================
 
 declare const axios: any;
@@ -128,32 +128,32 @@ declare const exports: {
 };
 
 // ============================================================
-// 供应商配置
+// Nhà cung cấpCấu hình
 // ============================================================
 
 const vendor: VendorConfig = {
   id: "volcengine",
   version: "2.4",
   author: "leeqi",
-  name: "火山引擎(豆包)",
-  description: "火山引擎豆包大模型，支持文本、图片生成、视频生成等能力。\n\n需要在[火山引擎控制台](https://console.volcengine.com/ark)获取API密钥。",
+  name: "Volcengine (Doubao)",
+  description: "Mô hình lớn Doubao của Volcengine (Bytedance), hỗ trợ khả năng tạo văn bản , hình ảnh, video.\n\nCần lấy Khóa API tại [Bảng điều khiển Volcengine](https://console.volcengine.com/ark)。",
   icon: "",
   inputs: [
-    { key: "apiKey", label: "API密钥", type: "password", required: true, placeholder: "火山引擎API Key" },
-    { key: "baseUrl", label: "请求地址", type: "url", required: true, placeholder: "以v3结束，示例：https://ark.cn-beijing.volces.com/api/v3" },
+    { key: "apiKey", label: "Khóa API (API Key)", type: "password", required: true, placeholder: "API Key của Volcengine" },
+    { key: "baseUrl", label: "Địa chỉ yêu cầu", type: "url", required: true, placeholder: "Kết thúc bằng v3, ví dụ: https://ark.cn-beijing.volces.com/api/v3" },
   ],
   inputValues: {
     apiKey: "",
     baseUrl: "https://ark.cn-beijing.volces.com/api/v3",
   },
   models: [
-    // ===================== 文本模型 - 推荐 =====================
+    // ===================== Mô hình văn bản  - Khuyến nghị =====================
     { name: "Doubao-Seed-2.0-Pro", modelName: "doubao-seed-2-0-pro-260215", type: "text", think: true },
     { name: "Doubao-Seed-2.0-Lite", modelName: "doubao-seed-2-0-lite-260215", type: "text", think: true },
     { name: "Doubao-Seed-2.0-Mini", modelName: "doubao-seed-2-0-mini-260215", type: "text", think: true },
     { name: "Doubao-Seed-2.0-Code-Preview", modelName: "doubao-seed-2-0-code-preview-260215", type: "text", think: true },
     { name: "Doubao-Seed-Character", modelName: "doubao-seed-character-251128", type: "text", think: false },
-    // ===================== 文本模型 - 往期 =====================
+    // ===================== Mô hình văn bản  - Phiên bản  cũ  =====================
     { name: "Doubao-Seed-1.8", modelName: "doubao-seed-1-8-251228", type: "text", think: true },
     { name: "Doubao-Seed-Code-Preview", modelName: "doubao-seed-code-preview-251028", type: "text", think: true },
     { name: "Doubao-Seed-1.6-Lite", modelName: "doubao-seed-1-6-lite-251015", type: "text", think: true },
@@ -168,7 +168,7 @@ const vendor: VendorConfig = {
     { name: "Doubao-1.5-Pro-32K-Character(0228)", modelName: "doubao-1-5-pro-32k-character-250228", type: "text", think: false },
     { name: "Doubao-1.5-Lite-32K", modelName: "doubao-1-5-lite-32k-250115", type: "text", think: false },
     { name: "Doubao-1.5-Vision-Pro-32K", modelName: "doubao-1-5-vision-pro-32k-250115", type: "text", think: false },
-    // ===================== 文本模型 - 第三方(火山引擎托管) =====================
+    // ===================== Mô hình văn bản  - Bên thứ ba (Volcengine Ark) =====================
     { name: "GLM-4-7", modelName: "glm-4-7-251222", type: "text", think: true },
     { name: "DeepSeek-V3-2", modelName: "deepseek-v3-2-251201", type: "text", think: true },
     { name: "DeepSeek-V3-1-Terminus", modelName: "deepseek-v3-1-terminus", type: "text", think: true },
@@ -180,7 +180,7 @@ const vendor: VendorConfig = {
     { name: "Qwen3-0.6B", modelName: "qwen3-0-6b-20250429", type: "text", think: false },
     { name: "Qwen2.5-72B", modelName: "qwen2-5-72b-20240919", type: "text", think: false },
     { name: "GLM-4.5-Air", modelName: "glm-4-5-air", type: "text", think: false },
-    // ===================== 图片生成模型 =====================
+    // ===================== Hình ảnhtạoMô hình =====================
     {
       name: "Seedream-5.0",
       modelName: "doubao-seedream-5-0-260128",
@@ -211,9 +211,9 @@ const vendor: VendorConfig = {
       type: "image",
       mode: ["text"],
     },
-    // ===================== 视频生成模型 =====================
+    // ===================== VideotạoMô hình =====================
     {
-      name: "Seedance-2.0(音画同生)",
+      name: "Seedance-2.0(Đồng bộ Âm thanh & Hình ảnh)",
       modelName: "doubao-seedance-2-0-260128",
       type: "video",
       mode: ["text", "startFrameOptional", ["imageReference:9", "videoReference:3", "audioReference:3"]],
@@ -221,7 +221,7 @@ const vendor: VendorConfig = {
       durationResolutionMap: [{ duration: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], resolution: ["480p", "720p"] }],
     },
     {
-      name: "Seedance-2.0-Fast(音画同生)",
+      name: "Seedance-2.0-Fast(Đồng bộ Âm thanh & Hình ảnh)",
       modelName: "doubao-seedance-2-0-fast-260128",
       type: "video",
       mode: ["text", "startFrameOptional", ["imageReference:9", "videoReference:3", "audioReference:3"]],
@@ -229,7 +229,7 @@ const vendor: VendorConfig = {
       durationResolutionMap: [{ duration: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], resolution: ["480p", "720p"] }],
     },
     {
-      name: "Seedance-1.5-Pro(音画同生)",
+      name: "Seedance-1.5-Pro(Đồng bộ Âm thanh & Hình ảnh)",
       modelName: "doubao-seedance-1-5-pro-251215",
       type: "video",
       mode: ["text", "startFrameOptional"],
@@ -272,11 +272,11 @@ const vendor: VendorConfig = {
 };
 
 // ============================================================
-// 辅助工具
+// Công cụ bổ trợ
 // ============================================================
 
 const getHeaders = () => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu API Key");
   return {
     "Content-Type": "application/json",
     Authorization: `Bearer ${vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "")}`,
@@ -286,11 +286,11 @@ const getHeaders = () => {
 const getBaseUrl = () => vendor.inputValues.baseUrl.replace(/\/+$/, "");
 
 // ============================================================
-// 适配器函数
+// Hàm Adapter
 // ============================================================
 
 const textRequest = (model: TextModel, think: boolean, thinkLevel: 0 | 1 | 2 | 3) => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu API Key");
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
 
   const effortMap: Record<number, string> = {
@@ -335,18 +335,18 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
   const isOldModel = model.modelName.includes("seedream-3-0");
   const is5Lite = model.modelName.includes("seedream-5-0-lite");
 
-  // sequential_image_generation 仅 seedream 5.0-lite/4.5/4.0 支持
+  // sequential_image_generation chỉ  seedream 5.0-lite/4.5/4.0 hỗ trợ
   if (!isOldModel) {
     body.sequential_image_generation = "disabled";
   }
 
-  // 参考图片：单图为 string，多图为 array（seedream-3.0-t2i 不支持 image 参数）
+  // tham chiếuHình ảnh：Đơn ảnh string，nhiều ảnh là  array（seedream-3.0-t2i không hỗ trợ image tham số）
   if (!isOldModel && config.referenceList && config.referenceList.length > 0) {
     const images = config.referenceList.map((ref) => ref.base64);
     body.image = images.length === 1 ? images[0] : images;
   }
 
-  // 尺寸处理：优先使用推荐像素值，未匹配则直接传分辨率字符串让模型自行决定
+  // kích thướcXử lý：ưu tiên sử dụng khuyến nghị giá trị pixel，chưa khớpsẽ truyền trực tiếp độ phân giải để Mô hìnhtự động quyết định
   const [w, h] = config.aspectRatio.split(":").map(Number);
   const sizeTable: Record<string, Record<string, string>> = {
     "1K": {
@@ -386,30 +386,30 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
   const table = sizeTable[sizeKey];
 
   if (table && table[ratioKey]) {
-    // 推荐像素值匹配到了，但需要检查是否满足模型最低像素要求
+    // khuyến nghị giá trị pixelkhớpđược , nhưng cần  kiểm tra xem có thỏa mãn Mô hìnhyêu cầu pixel tối thiểu
     const [pw, ph] = table[ratioKey].split("x").map(Number);
     const totalPixels = pw * ph;
     if (isOldModel) {
-      // seedream-3.0-t2i: 像素范围 [512x512, 2048x2048]
+      // seedream-3.0-t2i: phạm vi pixel [512x512, 2048x2048]
       body.size = table[ratioKey];
     } else if (totalPixels < 3686400) {
-      // 1K 像素值不满足新模型最低要求，直接传 "2K" 让模型自行决定
+      // 1K giá trị pixelkhông thỏa mãn Mô hìnhyêu cầu tối thiểu, truyền trực tiếp  "2K" để Mô hìnhtự động quyết định
       body.size = "2K";
     } else if (is5Lite && totalPixels > 10404496) {
-      // seedream-5.0-lite 最高 10404496，4K 超限，回退传 "2K"
+      // seedream-5.0-lite tối đa  10404496，4K vượt giới hạn, chuyển sang truyền  "2K"
       body.size = "2K";
     } else {
       body.size = table[ratioKey];
     }
   } else if (isOldModel) {
-    // seedream-3.0-t2i: 像素范围 [512x512, 2048x2048]，直接按比例计算
+    // seedream-3.0-t2i: phạm vi pixel [512x512, 2048x2048]，tính trực tiếp theo tỷ lệtính toán
     const base = sizeKey === "1K" ? 1024 : 2048;
     const calcW = Math.min(2048, Math.round(base * Math.sqrt(w / h)));
     const calcH = Math.min(2048, Math.round(base * Math.sqrt(h / w)));
     body.size = `${Math.max(512, calcW)}x${Math.max(512, calcH)}`;
   } else {
-    // 新模型未匹配推荐值时，直接传分辨率字符串（方式1），由模型根据 prompt 自行决定尺寸
-    // seedream 5.0-lite 支持 "2K"/"3K"，seedream 4.5 支持 "2K"/"4K"，seedream 4.0 支持 "1K"/"2K"/"4K"
+    // mới  Mô hìnhchưa khớpgiá trị khuyến nghị, truyền trực tiếp phần tỷ lệ chuỗi ký tự（cách thức1），do Mô hìnhDựa theo prompt tự động quyết địnhkích thước
+    // seedream 5.0-lite hỗ trợ "2K"/"3K"，seedream 4.5 hỗ trợ "2K"/"4K"，seedream 4.0 hỗ trợ "1K"/"2K"/"4K"
     if (is5Lite) {
       body.size = sizeKey === "4K" ? "3K" : sizeKey === "1K" ? "2K" : sizeKey;
     } else {
@@ -417,7 +417,7 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
     }
   }
 
-  logger(`[图片生成] 请求模型: ${model.modelName}, 尺寸: ${body.size}`);
+  logger(`[Hình ảnhtạo] vui lòng cầu Mô hình: ${model.modelName}, kích thước: ${body.size}`);
   const res = await fetch(`${baseUrl}/images/generations`, {
     method: "POST",
     headers,
@@ -425,16 +425,16 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
   });
   if (!res.ok) {
     const errorText = await res.text();
-    throw new Error(`图片生成请求失败: ${errorText}`);
+    throw new Error(`Hình ảnhtạoYêu cầu thất bại: ${errorText}`);
   }
   const response = await res.json();
   logger(response);
 
   if (response?.error) {
-    throw new Error(`图片生成失败：${response.error.message || response.error.code}`);
+    throw new Error(`Hình ảnhtạothất bại：${response.error.message || response.error.code}`);
   }
 
-  // 从 data 数组中提取第一张成功的图片
+  // từ  data số nhóm giữa trích xuấtảnh đầu tiên thành công của Hình ảnh
   if (response?.data && response.data.length > 0) {
     for (const item of response.data) {
       if (item.url) {
@@ -444,12 +444,12 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
         return item.b64_json;
       }
       if (item.error) {
-        throw new Error(`图片生成失败：${item.error.message || item.error.code}`);
+        throw new Error(`Hình ảnhtạothất bại：${item.error.message || item.error.code}`);
       }
     }
   }
 
-  throw new Error("图片生成失败：未返回有效结果");
+  throw new Error("Hình ảnhtạothất bại：chưa Trả vềhợp lệkết quả");
 };
 
 const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<string> => {
@@ -532,7 +532,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
         break;
     }
   } else if (Array.isArray(config.mode)) {
-    // 多模态参考模式：按类型分别提取并添加
+    // Chế độ đa phương thức: theo loạiphần khác trích xuấtnhất thêm
     const imageRefs = config.referenceList?.filter((r) => r.type === "image") ?? [];
     const videoRefs = config.referenceList?.filter((r) => r.type === "video") ?? [];
     const audioRefs = config.referenceList?.filter((r) => r.type === "audio") ?? [];
@@ -588,7 +588,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
     body.generate_audio = false;
   }
 
-  logger(`[视频生成] 提交任务, 模型: ${model.modelName}, 时长: ${config.duration}s, 分辨率: ${config.resolution}`);
+  logger(`[Videotạo] Gửi tác vụ, Mô hình: ${model.modelName}, thời lượng: ${config.duration}s, phần tỷ lệ : ${config.resolution}`);
   const res = await fetch(`${baseUrl}/contents/generations/tasks`, {
     method: "POST",
     headers,
@@ -597,17 +597,17 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
 
   if (!res.ok) {
     const errorText = await res.text();
-    throw new Error(`视频生成任务创建失败: ${errorText}`);
+    throw new Error(`Videotạotác vụ sáng tạo thất bại: ${errorText}`);
   }
   const createResponse = await res.json();
   logger(createResponse);
   const taskId = createResponse?.id;
 
   if (!taskId) {
-    throw new Error("视频生成任务创建失败：未返回任务ID");
+    throw new Error("Videotạotác vụ sáng tạo thất bại：chưa Trả vềID tác vụ");
   }
 
-  logger(`[视频生成] 任务已创建, ID: ${taskId}`);
+  logger(`[Videotạo] tác vụ đã sáng tạo , ID: ${taskId}`);
 
   const result = await pollTask(
     async (): Promise<PollResult> => {
@@ -617,24 +617,24 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       });
       if (!queryRes.ok) {
         const errorText = await queryRes.text();
-        throw new Error(`查询视频生成任务状态失败: ${errorText}`);
+        throw new Error(`Truy vấnVideotạotác vụ trạng tháithất bại: ${errorText}`);
       }
       const task = await queryRes.json();
 
-      logger(`[视频生成] 任务状态: ${JSON.stringify(task)}`);
+      logger(`[Videotạo] tác vụ trạng thái: ${JSON.stringify(task)}`);
 
       switch (task.status) {
         case "succeeded":
           if (task.content?.video_url) {
             return { completed: true, data: task.content.video_url };
           }
-          return { completed: true, error: "任务成功但未返回视频URL" };
+          return { completed: true, error: "tác vụ thành côngnhưng chưa Trả vềVideoURL" };
         case "failed":
-          return { completed: true, error: task.error?.message || "视频生成失败" };
+          return { completed: true, error: task.error?.message || "Videotạothất bại" };
         case "expired":
-          return { completed: true, error: "视频生成任务超时" };
+          return { completed: true, error: "Videotạotác vụ Hết thời gian chờ" };
         case "cancelled":
-          return { completed: true, error: "视频生成任务已取消" };
+          return { completed: true, error: "Videotạotác vụ đã xuất hủy " };
         default:
           return { completed: false };
       }
@@ -663,7 +663,7 @@ const updateVendor = async (): Promise<string> => {
 };
 
 // ============================================================
-// 导出
+// Export
 // ============================================================
 
 exports.vendor = vendor;

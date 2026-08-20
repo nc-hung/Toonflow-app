@@ -1,33 +1,33 @@
-# 真人古风写实风格说明
+# thật ngườiphong Phong cáchGiải thích
 
-本风格专为“真人古风写实”题材打造，所有美术提示词、规范和生成内容均严格限定于：
+sách Phong cáchriêng “thật ngườiphong ”đề mở tạo ，tất cảđẹp Prompt、 và tạonội dungkhung hạn nối với ：
 
-- **古风世界观**：以中国古代为背景，涵盖宅邸、宫殿、器物、服饰、兵器等，杜绝现代元素。
-- **真人写实**：所有角色、场景、道具均以真人写实摄影为标准，强调五官、皮肤、发丝、材质等极致细节与真实质感。
-- **古风写实纪实**：在写实基础上追求影视级氛围感，画面明暗对比强烈，细节丰富，整体氛围冷中带暖、疏中见密。
-- **甜宠氛围**：适合展现温柔、治愈、浪漫的古风恋爱故事，强调东方美学下的情感表达。
+- **phong giới **：giữa bối ，、、thiết bị 、phục 、thiết bị ，。
+- **thật người**：tất cảNhân vật、Bối cảnh、Đạo cụthật ngườisáng biểu ，gọi 5、、phát 、tiết thật 。
+- **phong **：ở cơ sở trên cầu sáng video cấp Không khí，vẽ mặt dẫn đúng tỷ ，tiết ，chỉnh thể Không khígiữa kèm 、giữa thấy mật 。
+- **Không khí**：hợp 、、 của phong việc ，gọi phương đẹp dưới  của tình bảng 。
 
-## 适用范围
+## hàm khí 
 
-- 真人古风题材的AI美术生成（角色、场景、道具、分镜等）
-- 需要极致写实、细腻质感、东方古典氛围的视觉创作
+- thật ngườiphong đề  của AIđẹp tạo（Nhân vật、Bối cảnh、Đạo cụ、Phân cảnh）
+- cần cần 、、phương Không khí của trực quansáng tác vụ 
 
-## 严禁内容
+## nội dung
 
-- 卡通、动漫、插画、二次元风格
-- 现代元素、现代服饰、现代场景
-- 高饱和荧光色、霓虹色
-- 暗示性、暴露、透视等不适宜内容
+- thông 、động 、vẽ 、2lần Phong cách
+- 、phục 、Bối cảnh
+- cao  và ánh vật 、vật 
+- nhở 、、video không nội dung
 
-## 风格体验
+## Phong cáchthể chiếu 
 
-在本风格下，您将体验到：
+ở sách Phong cáchdưới ，thể chiếu đến ：
 
-- 角色面容精致、气质清冷或温润，服饰、妆容、发型均为古风写实
-- 场景空间层次丰富，材质纹理超清晰，氛围真实且富有诗意
-- 道具、兵器、饰品等均为古风造型，工艺精细，质感极致
-- 分镜与视频均以真人写实为基础，强调叙事与情感表达
+- Nhân vậtmặt dung 、sạch hoặc ，phục 、dung 、phát kiểu phong 
+- Bối cảnhrỗng gian tầng lần ，lý vượt sạch ，Không khíthật và có ý 
+- Đạo cụ、thiết bị 、phong tạo kiểu ，，
+- Phân cảnhvideothật ngườicơ sở ，gọi việc tình bảng 
 
 ---
 
-本风格仅适用于“真人古风写实”相关项目。如需其他风格（如插画、动漫、现代等），请勿使用本套提示词。
+sách Phong cáchchỉ hàm với “thật ngườiphong ”liên dự án。như cần anh ấyPhong cách（như vẽ 、động 、），vui lòng hàm sách Prompt。

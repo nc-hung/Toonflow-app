@@ -13,7 +13,7 @@ export default router.post(
   async (req, res) => {
     const { ids } = req.body;
     if (!ids.length) {
-      return res.status(400).send(error("请先选择需要删除的内容"));
+      return res.status(400).send(error("Vui lòng chọn nội dung cần  xóa trước "));
     }
     const chapterData = await u.db("o_eventChapter").whereIn("novelId", ids);
     await u.db("o_eventChapter").whereIn("novelId", ids).delete();
@@ -22,6 +22,6 @@ export default router.post(
 
     await u.db("o_novel").whereIn("id", ids).del();
 
-    res.status(200).send(success({ message: "删除原文成功" }));
+    res.status(200).send(success({ message: "Xóa nguyên tác thành công" }));
   },
 );

@@ -15,7 +15,7 @@ export default router.post(
     try {
       const resText = await u.Ai.Text("universalAi").invoke({
         system:
-          '请根据以下图片数据，提取出图片的画风提示词，用于生成图片时指定风格，要求简洁且具有艺术性,只需要画风提示词，不需要其他内容："比如：`(画风：2D动漫风格,2d animation style)`,`(画风：照片级真人超写实,photorealistic, lifelike, ultra detailed)`，`(画风：3D国创,Chinese 3D animation style)`等,如果图片风格无法描述，可以返回`无法描述`,多张图片时，只输出一个综合的画风提示词，要求包含所有图片的共同风格特征，输出格式必须严格按照示例中的格式，必须包含`画风`二字，且必须使用括号括起来，括号内必须包含中文和英文的画风描述，并用逗号分隔，英文部分需要翻译成地道的英文提示词',
+          'vui lòng Dựa theodưới Hình ảnhDữ liệu，trích xuấtra Hình ảnh của vẽ phong Prompt，hàm với Tạo hình ảnhnối phong cách，cần  cầu và cụ có ,chỉ Cần vẽ phong Prompt，không Cần anh ấynội dung："tỷ như ：`(vẽ phong ：2Dđộng phong cách,2d animation style)`,`(vẽ phong ：cấp thật ngườivượt ,photorealistic, lifelike, ultra detailed)`，`(vẽ phong ：3Dsáng ,Chinese 3D animation style)`,NếuHình ảnhphong cáchkhông thức mô tả，Trả về`không thức mô tả`,nhiều ảnh  Hình ảnh，chỉ xuất ra một hợp  của vẽ phong Prompt，cần  cầu gói tất cảHình ảnh của cùng phong cách，xuất ra định dạngbắt buộc khung theo nhở lệ giữa  của định dạng，bắt buộc gói `vẽ phong `2chữ ，và bắt buộc sử dụng quát số quát ，quát số trong bắt buộc gói giữa tài  và tài  của vẽ phong mô tả，nhất hàm số ngăn cách，tài bộ phần Cần tạo địa đạo  của tài Prompt',
         messages: [
           {
             role: "user",

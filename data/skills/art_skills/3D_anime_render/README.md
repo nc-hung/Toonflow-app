@@ -1,33 +1,33 @@
-# 3D 动画渲染风格说明
+# 3D động vẽ Phong cáchGiải thích
 
-本风格专为"3D 动画渲染"题材打造，所有美术提示词、规范和生成内容均严格限定于：
+sách Phong cáchriêng "3D động vẽ "đề mở tạo ，tất cảđẹp Prompt、 và tạonội dungkhung hạn nối với ：
 
-- **3D 动画世界观**：以现代都市为背景，涵盖街道、咖啡厅、居家、办公室、商场等，体现现代都市生活气息。
-- **赛璐珞质感**：所有角色、场景、道具均以 3D 动画渲染为标准，强调轮廓线清晰度、材质细腻度、光影层次感。
-- **治愈治愈美学**：在 3D 渲染基础上追求电影感氛围，画面色调温暖明亮，细节丰富，整体氛围温暖治愈、明快动人。
-- **情感表达**：适合展现温柔、治愈、浪漫的都市恋爱故事，强调现代都市美学下的情感表达。
+- **3D động vẽ giới **：Đô Thị Hiện Đạibối ，đạo 、、、、cấp trường ，thể Đô Thị Hiện Đạisinh hoạt 。
+- ****：tất cảNhân vật、Bối cảnh、Đạo cụ 3D động vẽ biểu ，gọi đường sạch độ 、độ 、Ánh sángtầng lần 。
+- **đẹp **：ở  3D cơ sở trên cầu sáng Không khí，vẽ mặt vật gọi dẫn ，tiết ，chỉnh thể Không khí、dẫn nhanh động người。
+- **tình bảng **：hợp 、、 của đều việc ，gọi Đô Thị Hiện Đạiđẹp dưới  của tình bảng 。
 
-## 适用范围
+## hàm khí 
 
-- 3D 动画渲染题材的 AI 美术生成（角色、场景、道具、分镜等）
-- 需要极致 3D 渲染质感、细腻材质、温馨治愈氛围的视觉创作
+- 3D động vẽ đề  của  AI đẹp tạo（Nhân vật、Bối cảnh、Đạo cụ、Phân cảnh）
+- cần cần  3D 、、Không khí của trực quansáng tác vụ 
 
-## 严禁内容
+## nội dung
 
-- 写实渲染、照片级真实感
-- 暗调、重阴影、过度对比
-- 高饱和荧光色、霓虹色
-- 现代元素缺失、黑暗暴力、成人向内容
+- 、cấp thật 
+- gọi 、trùng sáng 、độ đúng tỷ 
+- cao  và ánh vật 、vật 
+- thất 、lực 、tạo ngườinội dung
 
-## 风格体验
+## Phong cáchthể chiếu 
 
-在本风格下，您将体验到：
+ở sách Phong cáchdưới ，thể chiếu đến ：
 
-- 角色面容精致、气质温柔或清亮，服饰、妆容、发型均为 3D 动画渲染风格
-- 场景空间层次丰富，轮廓线清晰流畅，氛围真实且富有诗意
-- 道具、日常物品、环境细节均为现代造型，工艺精细，质感细腻
-- 分镜与画面均以 3D 渲染为基础，强调叙事与情感表达
+- Nhân vậtmặt dung 、hoặc sạch ，phục 、dung 、phát kiểu  3D động vẽ Phong cách
+- Bối cảnhrỗng gian tầng lần ，đường sạch ，Không khíthật và có ý 
+- Đạo cụ、ngày thường 、tiết tạo kiểu ，，
+- Phân cảnhvẽ mặt  3D cơ sở ，gọi việc tình bảng 
 
 ---
 
-本风格仅适用于"3D 动画渲染"相关项目。如需其他风格（如写实 3D、CG、插画、现代等），请勿使用本套提示词。
+sách Phong cáchchỉ hàm với "3D động vẽ "liên dự án。như cần anh ấyPhong cách（như  3D、CG、vẽ 、），vui lòng hàm sách Prompt。

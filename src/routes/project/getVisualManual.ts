@@ -5,23 +5,23 @@ import fs from "fs";
 import path from "path";
 const router = express.Router();
 
-// 字段映射表
+// chữ đoạn bản g
 const DATA_MAP: { label: string; value: string; subDir?: string }[] = [
   { label: "README", value: "README" },
-  { label: "前缀", value: "prefix" },
-  { label: "角色", value: "art_character", subDir: "art_prompt" },
-  { label: "角色衍生", value: "art_character_derivative", subDir: "art_prompt" },
-  { label: "道具", value: "art_prop", subDir: "art_prompt" },
-  { label: "道具衍生", value: "art_prop_derivative", subDir: "art_prompt" },
-  { label: "场景", value: "art_scene", subDir: "art_prompt" },
-  { label: "场景衍生", value: "art_scene_derivative", subDir: "art_prompt" },
-  { label: "分镜", value: "director_storyboard", subDir: "driector_skills" },
-  { label: "分镜视频", value: "art_storyboard_video", subDir: "art_prompt" },
-  { label: "技法-导演规划", value: "director_planning_style", subDir: "driector_skills" },
-  { label: "技法-分镜表设计", value: "director_storyboard_table_style", subDir: "driector_skills" },
+  { label: "trước  tố ", value: "prefix" },
+  { label: "Nhân vật", value: "art_character", subDir: "art_prompt" },
+  { label: "Nhân vậtsinh ", value: "art_character_derivative", subDir: "art_prompt" },
+  { label: "Đạo cụ", value: "art_prop", subDir: "art_prompt" },
+  { label: "Đạo cụsinh ", value: "art_prop_derivative", subDir: "art_prompt" },
+  { label: "Bối cảnh", value: "art_scene", subDir: "art_prompt" },
+  { label: "Bối cảnhsinh ", value: "art_scene_derivative", subDir: "art_prompt" },
+  { label: "Phân cảnh", value: "director_storyboard", subDir: "driector_skills" },
+  { label: "Phân cảnhVideo", value: "art_storyboard_video", subDir: "art_prompt" },
+  { label: "thức -Kế hoạch đạo diễn", value: "director_planning_style", subDir: "driector_skills" },
+  { label: "thức -Phân cảnhbản gthiết tính ", value: "director_storyboard_table_style", subDir: "driector_skills" },
 ];
 
-// 读取 md 文件内容，文件不存在时返回空字符串
+// xuất  md Tệpnội dung，Tệp không tồn tạiTrả vềrỗng chuỗi ký tự
 function readMd(filePath: string): string {
   try {
     return fs.readFileSync(filePath, "utf-8");
@@ -30,7 +30,7 @@ function readMd(filePath: string): string {
   }
 }
 
-// 获取 images 文件夹下所有图片文件路径列表
+// Lấy images thư mục tệp dưới tất cảHình ảnhTệpđường dẫndanh sách
 async function readAllImages(imagesDir: string) {
   try {
     const ossPath = u.getPath(path.join("skills", "art_skills", imagesDir, "images"));
@@ -46,12 +46,12 @@ async function readAllImages(imagesDir: string) {
   }
 }
 
-// 获取视觉手册
+// Lấytrực quansổ tay
 export default router.post("/", async (req, res) => {
   try {
     const artPromptsDir = u.getPath(["skills", "art_skills"]);
 
-    // 读取所有风格文件夹
+    // xuất tất cảphong cáchthư mục tệp 
     const styleDirs = fs
       .readdirSync(artPromptsDir, { withFileTypes: true })
       .filter((d) => d.isDirectory())

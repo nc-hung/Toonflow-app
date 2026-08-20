@@ -6,7 +6,7 @@ import { validateFields } from "@/middleware/middleware";
 import { id } from "zod/locales";
 const router = express.Router();
 
-// 更新资产
+// Cập nhật tài nguyên
 export default router.post(
   "/",
   validateFields({
@@ -24,6 +24,6 @@ export default router.post(
       remark,
       prompt,
     });
-    res.status(200).send(success({ message: "更新资产成功" }));
+    res.status(200).send(success({ message: "Cập nhật tài nguyên thành công" }));
   },
 );

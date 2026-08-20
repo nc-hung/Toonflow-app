@@ -7,13 +7,13 @@ import * as fs from "fs";
 import fg from "fast-glob";
 
 type SkillAttribution =
-  //剧本Agent
-  | "script_agent_decision" //决策
-  | "script_execution_skeleton" //故事骨架
-  | "script_execution_adaptation" //改变策略
-  | "script_execution_script" //剧本生成
-  | "script_agent_supervision" //审核
-  //生产Agent
+  //Agent Kịch bản 
+  | "script_agent_decision" //quyết định
+  | "script_execution_skeleton" //Khung cốt truyện
+  | "script_execution_adaptation" //sửa 
+  | "script_execution_script" //Soạn kịch bản 
+  | "script_agent_supervision" //
+  //Agent Sản xuất
   | "production_agent_decision"
   | "production_agent_execution"
   | "production_agent_supervision";
@@ -39,12 +39,12 @@ function ensureNonEmptyBody(body: string, fallback: string): string {
   return trimmed.length > 0 ? trimmed : fallback;
 }
 
-// ==================== 解析 SKILL.md ====================
+// ==================== giải tích  SKILL.md ====================
 
 export function parseFrontmatter(content: string): { name: string; description: string } {
   const match = content.match(/^\uFEFF?---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)/);
   if (!match?.[1]) {
-    throw new Error(`技能文件缺少有效的 frontmatter，确保以 --- 包裹并包含 name 和 description 字段。${content}`);
+    throw new Error(`thể TệpThiếu hợp lệ của  frontmatter，lưu  --- gói nhất gói  name  và  description chữ đoạn 。${content}`);
   }
 
   const result: Record<string, string> = {};
@@ -112,7 +112,7 @@ export function parseFrontmatter(content: string): { name: string; description: 
   }
 
   if (!result.name || !result.description) {
-    throw new Error(`技能文件缺少必要字段: name 或 description，确保 frontmatter 包含这两个字段。${content}`);
+    throw new Error(`thể TệpThiếu bắt cần  chữ đoạn : name hoặc  description，lưu  frontmatter gói này2mục chữ đoạn 。${content}`);
   }
 
   return { name: result.name, description: result.description };
@@ -126,8 +126,8 @@ export async function useSkill(input: SkillInput) {
   const mainSkills: { path: string; name: string; description: string }[] = [];
   for (const skill of mainSkill) {
     const skillPath = path.join(rootDir, skill + ".md");
-    if (!fs.existsSync(skillPath)) throw new Error(`主技能文件不存在: ${skillPath}`);
-    if (!isPathInside(skillPath, normalizedRootDir)) throw new Error(`技能名称无效：检测到路径穿越。${skillPath}`);
+    if (!fs.existsSync(skillPath)) throw new Error(`chính thể Tệp không tồn tại: ${skillPath}`);
+    if (!isPathInside(skillPath, normalizedRootDir)) throw new Error(`thể tênvô hiệu：kiểm kiểm đến đường dẫn。${skillPath}`);
     const content = await fs.promises.readFile(skillPath, "utf-8");
     const parsed = parseFrontmatter(content);
     mainSkills.push({ path: skillPath, ...parsed });
@@ -168,9 +168,9 @@ export function buildSkillPrompt(skills: { name: string; description: string }[]
     .map((s) => `  <skill>\n    <name>${s.name}</name>\n    <description>${s.description}</description>\n  </skill>`)
     .join("\n");
   return `## Skills
-以下技能提供了专业任务的专用指令。
-当任务与某个技能的描述匹配时，调用 activate_skill 工具并传入技能名称来加载完整指令。
-加载后遵循技能指令执行任务，需要时调用 read_skill_file 读取资源文件内容。
+dưới thể nhắc nhà riêng tác vụ  của riêng hàm 。
+khi tác vụ mục thể  của mô tảkhớp，gọi hàm  activate_skill cụ nhất truyền vào thể têntảichỉnh 。
+tảisau  thể thực thitác vụ ，Cần gọi hàm  read_skill_file xuất tài nguồn Tệpnội dung。
 
 <available_skills>
 ${skillEntries}
@@ -178,41 +178,41 @@ ${skillEntries}
 }
 
 export function createSkillTools(skills: { name: string; description: string }[], skillPaths: SkillPaths, rootDir: string = getPath("skills")) {
-  const activated = new Set<string>(); // 已激活技能集合，防止重复加载
+  const activated = new Set<string>(); // đã kích hoạt thể tập hợp ，trùng lời tải
   const skillsRootDir = path.resolve(rootDir);
   const skillNames = skills.map((s) => s.name);
   const skillMap = new Map(skillPaths.mainSkill.map((s) => [s.name, s]));
   return {
     activate_skill: tool({
-      description: `激活一个技能，加载其完整指令和捆绑资源列表到上下文。可用技能：${skillNames.join(", ")}`,
+      description: `kích hoạt một thể ，tảichỉnh  và ghép tài nguồn danh sáchđến trên dưới tài 。hàm thể ：${skillNames.join(", ")}`,
       inputSchema: jsonSchema<{ name: string }>(
         z
           .object({
-            name: z.enum(skillNames as [string, ...string[]]).describe("要激活的技能名称"),
+            name: z.enum(skillNames as [string, ...string[]]).describe("cần  kích hoạt  của thể tên"),
           })
           .toJSONSchema(),
       ),
       execute: async ({ name }) => {
         if (activated.has(name)) {
-          console.log(`⚡[主技能] ℹ️ 技能 "${name}" 已激活，跳过重复注入`);
-          return { alreadyActive: true, message: `技能 "${name}" 已激活，无需重复加载` };
+          console.log(`⚡[chính thể ] ℹ️ thể  "${name}" đã kích hoạt ，trùng lời tâm vào `);
+          return { alreadyActive: true, message: `thể  "${name}" đã kích hoạt ，không cần trùng lời tải` };
         }
         const matched = skillMap.get(name);
-        if (!matched) return { error: `未找到技能 "${name}"` };
+        if (!matched) return { error: `không tìm thấythể  "${name}"` };
         let raw = "";
         try {
           raw = await fs.promises.readFile(matched.path, "utf-8");
-          console.log(`⚡[主技能] ✓ 已读取主技能文件： ${matched.path}（${raw.length} 字符）`);
+          console.log(`⚡[chính thể ] ✓ đã xuất chính thể Tệp： ${matched.path}（${raw.length} chữ ）`);
         } catch (error) {
-          console.log(`⚡[主技能] ✗ 读取失败：未找到文件 "${matched.path}"`);
+          console.log(`⚡[chính thể ] ✗ xuất thất bại：không tìm thấyTệp "${matched.path}"`);
         }
         activated.add(name);
-        console.log(`⚡[主技能] ✓ 技能 "${name}" 已激活`);
-        const body = ensureNonEmptyBody(raw.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, ""), "该技能文件无正文内容。");
+        console.log(`⚡[chính thể ] ✓ thể  "${name}" đã kích hoạt `);
+        const body = ensureNonEmptyBody(raw.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, ""), "thể Tệpkhông chính tài nội dung。");
         let content = "";
         content = `<skill_content name="${name}">\n`;
         content += body + "\n\n";
-        content += "使用 read_skill_file 工具读取资源文件。\n";
+        content += "sử dụng  read_skill_file cụ xuất tài nguồn Tệp。\n";
         if (skillPaths.secondarySkills.length > 0) {
           content += "\n<skill_resources>\n";
           for (const path of skillPaths.secondarySkills) {
@@ -225,39 +225,39 @@ export function createSkillTools(skills: { name: string; description: string }[]
       },
     }),
     read_skill_file: tool({
-      description: "读取已激活技能目录下的资源文件。传入 activate_skill 返回的 skill_resources 中的文件路径。",
+      description: "xuất đã kích hoạt thể thư mụcdưới  của tài nguồn Tệp。truyền vào  activate_skill Trả về của  skill_resources giữa  của Tệpđường dẫn。",
       inputSchema: jsonSchema<{ filePath: string }>(
         z
           .object({
-            filePath: z.string().describe("资源文件的相对路径，来自 activate_skill 返回的 skill_resources"),
+            filePath: z.string().describe("tài nguồn Tệp của đúng đường dẫn，tự  activate_skill Trả về của  skill_resources"),
           })
           .toJSONSchema(),
       ),
       execute: async ({ filePath }) => {
         const normalizedInputPath = toUnixPath(filePath).trim();
         if (!normalizedInputPath) {
-          console.log(`📖[技法文件] ✗ filePath 不能为空`);
-          return { error: "filePath 不能为空" };
+          console.log(`📖[thức Tệp] ✗ filePath không thể rỗng `);
+          return { error: "filePath không thể rỗng " };
         }
 
         const fullPath = path.resolve(path.join(skillsRootDir, normalizedInputPath));
         if (!(fullPath === skillsRootDir || isPathInside(fullPath, skillsRootDir))) {
-          console.log(`📖[技法文件] ✗ 路径越界已拦截："${filePath}" 超出技能目录范围`);
+          console.log(`📖[thức Tệp] ✗ đường dẫngiới đã cắt ："${filePath}" vượt ra thể thư mụckhí `);
           return { error: "Access denied: path is outside skill directory" };
         }
         let body = "";
         try {
           body = await fs.promises.readFile(fullPath, "utf-8");
-          console.log(`📖[技法文件] ✓ 已读取文件： ${filePath}（${body.length} 字符）`);
+          console.log(`📖[thức Tệp] ✓ đã xuất Tệp： ${filePath}（${body.length} chữ ）`);
         } catch {
-          console.log(`📖[技法文件] ✗ 读取失败：未找到文件 "${filePath}"`);
+          console.log(`📖[thức Tệp] ✗ xuất thất bại：không tìm thấyTệp "${filePath}"`);
           return { error: `File not found: ${filePath}` };
         }
-        const safeBody = ensureNonEmptyBody(body, "该资源文件为空。");
+        const safeBody = ensureNonEmptyBody(body, "tài nguồn Tệprỗng 。");
         let content = "";
         content = `<skill_content>\n`;
         content += safeBody + "\n\n";
-        content += "可以使用 read_skill_file 工具读取资源文件。\n";
+        content += "sử dụng  read_skill_file cụ xuất tài nguồn Tệp。\n";
         if (skillPaths.tertiarySkills.length > 0) {
           content += "\n<skill_resources>\n";
           for (const path of skillPaths.tertiarySkills) {

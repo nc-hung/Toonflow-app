@@ -1,193 +1,193 @@
 ---
 name: storyboard_table_techniques
 description: >-
-  通用分镜表技法参考。
-  涵盖分镜拆分原则、定场与镜头合并规则、视觉连续性铁律、字段填写指引、转场规则等分镜设计通用技法，供 Agent 激活使用。
+  thông hàm Bảng phân cảnhthức tham chiếu。
+  Phân cảnhphútgốc 、nối trường Ống kínhhợp nhất 、trực quan、chữ đoạn 、chuyển trường Phân cảnhthiết tính thông hàm thức ，nhà  Agent kích hoạt hàm 。
 ---
-# 分镜表通用技法
+# Bảng phân cảnhthông hàm thức 
 
-本文档为分镜表设计的通用技法参考，适用于所有需要构建分镜表的 Agent 场景。
-
----
-
-## 分镜拆分原则
-
-**新起分镜**：场景/地点切换、时间跳跃、镜头主体切换、景别明显变化、重要动作节点
-
-**不需新起**：同画面内连续对话、表情微变或小动作
-
-粒度：一个独立画面 = 一条分镜，约每 50~100 字剧本对应 1~2 条分镜。过渡/转场如有明确描写也单独拆分。
+sách tài liệu Bảng phân cảnhthiết tính  của thông hàm thức tham chiếu，hàm với tất cảcần cần cấu tạo Bảng phân cảnh của  Agent Bối cảnh。
 
 ---
 
-## 定场与镜头合并规则（防冗余）
+## Phân cảnhphútgốc 
 
-**定场镜头**：每个新场景/段落的定场最多 1~2 个镜头完成，禁止拆成 3 个以上碎片。
-- 推荐做法：1 个带缓推的远景（定场+主体引入一镜完成），或 1 个大远景定场 + 1 个全景引入主体
-- 禁止做法：先拍环境空镜→再拍局部细节→再拍人物到达的冗余三段式
+**mới Phân cảnh**：Bối cảnh/địa điểm đổi 、thời gian、Ống kínhchính thể đổi 、Cỡ cảnhdẫn hóa 、trùng cần động tác vụ tiết điểm 
 
-**镜头合并自检**：
-- 能一镜交代的不拆两镜——如果一个带运镜的镜头能同时完成定场+引入，不要拆成两个
-- 连续描述同一空间不同局部的镜头（院门→藤蔓→厢房）应合并为一个镜头，用画面描述涵盖多层空间
-- 纯装饰性镜头（只展示环境细节无叙事推进）应合并到有叙事功能的镜头中
-- **导演思维检验**：写完后自检——如果一个真人导演会把相邻 2~3 个镜头合成 1 个拍，说明拆得过细，应合并
+**không cần mới **：cùng vẽ mặt trong đúng lời 、bảng tình hoặc nhỏ động tác vụ 
 
-**一镜到底策略**：当相邻镜头之间存在**动作连续变化、场景轻度变化（同场景内位移）、或拍摄角度渐变**时，可在 `cameraMove` 或 `description` 中标注「一镜到底」，将多个碎片镜头合为一个连续运镜长镜头。
-- **适用场景**：角色行走穿越空间、跟随动作从A点到B点、环绕角色展示环境、定场缓推到主体特写等
-- **标注方式**：在 `cameraMove` 中写明运镜路径（如"一镜到底：缓推远景→跟移至院内→落幅全景"），在 `description` 中描述起幅和落幅的画面内容
-- **时长放宽**：一镜到底镜头因信息量持续更新，可突破单镜 6s 上限，但不超过 12s
-- **风险提示**：一镜到底会提高画面生成的抽卡难度（连续性要求高），仅在叙事流畅性收益明显大于碎切时使用，不滥用
-
-**黄金 6 秒规则**：无台词镜头累计超过 6s 未出现新信息（台词/动作/主体变化），观众注意力断裂。定场+过渡类镜头尤其注意，宁可合并压缩也不要拖沓
+độ ：một lập vẽ mặt  = 1 mục Phân cảnh， 50~100 chữ Kịch bảnđúng hồi  1~2 mục Phân cảnh。/chuyển trường như có dẫn mô cũng đơn phút。
 
 ---
 
-## 视觉连续性铁律（分镜设计时全程遵守）
+## nối trường Ống kínhhợp nhất （）
 
-**① 动作连续性**：相邻镜头间角色的位置、动作进度、朝向必须物理逻辑一致。上一镜手伸到半空→下一镜必须从半空状态接续，不能突然收回。
+**nối trường Ống kính**：mục mới Bối cảnh/đoạn  của nối trường nhất nhiều  1~2 mục Ống kínhtạo ，Nghiêm cấmtạo  3 mục trên 。
+- khuyến nghị thức ：1 mục kèm khuyến  của Viễn cảnh (extreme wide shot)（nối trường +chính thể vào 1 quay tạo ），hoặc  1 mục lớn Viễn cảnh (extreme wide shot)nối trường  + 1 mục Toàn cảnh (wide shot)vào chính thể 
+- Nghiêm cấmthức ：trước rỗng quay →cục bộ tiết →ngườiđến  của 3đoạn thức 
 
-**② 景别递进法则**：景别切换遵循渐进聚焦或渐进释放——
-- 渐进聚焦：远景→全景→中景→近景→特写（情绪收紧）
-- 渐进释放：特写→近景→中景→远景（情绪释放）
-- 禁止无叙事理由的连续同景别（连续 3 镜以上同景别 = 视觉疲劳）
+**Ống kínhhợp nhất tự kiểm **：
+- thể 1 quay tác vụ  của không 2quay ——như quả một kèm Góc quay của Ống kínhthể cùng tạo nối trường +vào ，không cần tạo 2mục 
+- Mô tảcùng 1 rỗng gian không cùng cục bộ  của Ống kính（cổng →→）hồi hợp nhất một Ống kính，hàm Mô tả hình ảnhnhiều tầng rỗng gian 
+- thuần Ống kính（chỉ nhở tiết không việc Đẩy tới (push in / dolly in)）hồi hợp nhất đến có việc công thể  của Ống kínhgiữa 
+- **đạo diễnkiểm chiếu **：sau tự kiểm ——như quả một thật ngườiđạo diễnsẽ đem  2~3 mục Ống kínhhợp tạo  1 mục ，Giải thíchđược ，hồi hợp nhất 
 
-**③ 视轴守恒**：180度线原则——对话/对峙场景中角色画面位置全片固定同侧，不得跳轴
+**1 quay đến **：khi Ống kính của gian lưu ở **động tác vụ hóa 、Bối cảnhđộ hóa （cùng Bối cảnhtrong vị trí ）、hoặc nhân độ **，ở  `cameraMove` hoặc  `description` giữa biểu tâm 「1 quay đến 」，nhiều mục Ống kínhhợp một Góc quaydài Ống kính。
+- **hàm Bối cảnh**：Nhân vậtthi chạy rỗng gian 、động tác vụ từ Ađiểm đến Bđiểm 、Quay vòng (orbiting / surround)Nhân vậtnhở 、nối trường khuyến đến chính thể Đặc tả (close-up)
+- **biểu tâm cách thức**：ở  `cameraMove` giữa dẫn Góc quayđường dẫn（như "1 quay đến ：khuyến Viễn cảnh (extreme wide shot)→đến trong →Toàn cảnh (wide shot)"），ở  `description` giữa Mô tả và  của vẽ mặt nội dung
+- **Thời lượngmở rộng **：1 quay đến Ống kínhthông tinlượng giữ cập nhật，đơn quay  6s trên hạn ，nhưng không vượt  12s
+- **phong nhắc nhở **：1 quay đến sẽ nhắc cao vẽ mặt tạo của độ （Yêu cầucao ），chỉ ở việc nhận dẫn lớn với hàm ，không hàm 
 
-**④ 朝向空间逻辑**：对话双方面朝彼此，操作物品面朝物品，注视远方面朝远方。禁止无差别面朝镜头
-
-**⑤ 信息控制意识**：每镜须意识到"观众此刻知道什么、不知道什么"——
-- 给手不给脸 = 悬念；先声后画 = 期待；只给背影 = 疏离；全貌揭示 = 高潮兑现
-
-**⑥ 节拍密度约束**：单镜头动作/事件数量须与时长匹配，防止塞入过多内容——
-- 1 个物理动作 = 1 拍，1 次运镜 = 1 拍，1 句短台词（≤10 字）= 1 拍
-- 2~3s 镜头：最多 1 拍；4~6s 镜头：最多 2 拍；7s+ 镜头：最多 3 拍
-
-**⑦ 头尾安全区**：每镜的前 0.5s 和后 0.5s 为安全过渡区，不放关键动作或台词起始点。前 0.5s 用于环境建立或主体静态亮相，后 0.5s 用于动作自然收住。
+** 6 giây**：Không có lời thoạiỐng kínhtính vượt  6s chưa ra mới thông tin（Lời thoại/động tác vụ /chính thể hóa ），tâm ý lực 。nối trường +loại Ống kínhtâm ý ，hợp nhất nén nhỏ cũng không cần 
 
 ---
 
-## 字段填写指引
+## trực quan（Phân cảnhthiết tính toàn trình ）
 
-**description**（画面描述）：一句话描述画面核心内容（15~50 字），包含可见的**主体 + 动作/状态 + 环境空间**，不写心理活动。需体现空间层次（前景/中景/背景至少涉及两层）。如"前景纱帘微拂，中景侯府马车抵达落雁山废院""成姆妈跳下马车，打量破败院落，远处群山隐入暮色"
+**① động tác vụ **：Ống kínhgian Nhân vật của vị trí trí 、động tác vụ Tiến độ、Bắt buộclý logic1 。trên 1 quay tay đến nửa rỗng →dưới 1 quay Bắt buộctừ nửa rỗng trạng tháitiếp ，không thể nhận trả 。
 
-> **🚫 禁止光影/色调描述**：description 及所有字段都**不得**出现 `光`/`影`/`色温`/`色调`/`暖色`/`冷色`/`逆光`/`明暗`/`高对比` 等光影类词汇。光影完全由该镜头所引用的场景资产图自动承担——夜景/雨天/火光等特殊光照需求请通过引用对应**场景衍生**（夜景版/雨天版/火光版）表达。如示例中原文"余晖下"亦属违规，应删去。
+**② Cỡ cảnhtiến thức **：Cỡ cảnhđổi tiến hoặc tiến mở ——
+- tiến ：Viễn cảnh (extreme wide shot)→Toàn cảnh (wide shot)→Trung cảnh (medium shot)→Cận cảnh (close-up)→Đặc tả (close-up)（tình xúc nhận ）
+- tiến mở ：Đặc tả (close-up)→Cận cảnh (close-up)→Trung cảnh (medium shot)→Viễn cảnh (extreme wide shot)（tình xúc mở ）
+- Nghiêm cấmkhông việc lý do  của cùng Cỡ cảnh（ 3 quay trên cùng Cỡ cảnh = trực quan）
 
-**shotSize**（景别）：
+**③ video **：180độ đường gốc ——đúng lời /đúng Bối cảnhgiữa Nhân vậtvẽ mặt vị trí trí toàn nối cùng ，không được 
 
-| 景别 | 说明 | 叙事语义 |
+**④ rỗng gian logic**：đúng lời đôi phương mặt ，thao tác vụ mặt ，tâm video phương mặt phương 。Nghiêm cấmkhông khác mặt Ống kính
+
+**⑤ thông tinsát chép ý trưng **：quay buộc ý trưng đến "báo đạo sao、không báo đạo sao"——
+- cho tay không cho  = ；trước thanh sau vẽ  = kỳ ；chỉ cho sáng  = ；toàn nhở  = cao 
+
+**⑥ tiết mật độ **：đơn Ống kínhđộng tác vụ /sự kiệnsố lượng buộc Thời lượngkhớp，vào nhiều nội dung——
+- 1 mục lý động tác vụ  = 1 ，1 lần Góc quay = 1 ，1 câu ngắn Lời thoại（≤10 chữ ）= 1 
+- 2~3s Ống kính：nhất nhiều  1 ；4~6s Ống kính：nhất nhiều  2 ；7s+ Ống kính：nhất nhiều  3 
+
+**⑦ đầu đuôi an toàn khu **：quay  của trước  0.5s  và sau  0.5s an toàn khu ，không mở liên động tác vụ hoặc Lời thoạiban đầu điểm 。trước  0.5s hàm với tạo lập hoặc chính thể thái ，sau  0.5s hàm với động tác vụ tự nhận 。
+
+---
+
+## chữ đoạn 
+
+**description**（Mô tả hình ảnh）：1 câu lời Mô tảvẽ mặt nội dung（15~50 chữ ），gói thấy  của **chính thể  + động tác vụ /trạng thái + rỗng gian **，không lý hoạt động 。cần thể rỗng gian tầng lần （trước bối /Trung cảnh (medium shot)/bối đến ít 2tầng ）。như "trước bối ，Trung cảnh (medium shot)""tạo dưới ，mở lượng bại ，xử vào vật "
+
+> **🚫 Nghiêm cấmÁnh sáng/vật gọi Mô tả**：description tất cảchữ đoạn đều **không được **ra  `ánh `/`sáng `/`vật `/`vật gọi `/`vật `/`vật `/`ánh `/`dẫn `/`cao đúng tỷ ` Ánh sángloại từ 。Ánh sángtoàn do Ống kínhnơi hàm  của Bối cảnhTài nguyênảnh tự động ——bối /ngày/ánh ánh cần cầu vui lòng thông quahàm đúng hồi **Bối cảnhsinh **（bối bản /ngàybản /ánh bản ）bảng 。như Ví dụgiữa Nguyên tác"dưới "biệt ，hồi xóa đi 。
+
+**shotSize**（Cỡ cảnh）：
+
+| Cỡ cảnh | Giải thích | việc ngữ nghĩa  |
 |------|------|---------|
-| 大远景 | 环境全貌 | 定场 / 孤独 / 渺小 |
-| 远景 | 场景与人物关系 | 空间关系 / 氛围渲染 |
-| 全景 | 人物全身与环境 | 角色登场 / 全身亮相 |
-| 中景 | 膝盖以上 | 日常叙事 / 对话 |
-| 近景 | 胸部以上 | 情感传达 / 对话重点 |
-| 特写 | 面部或物件局部 | 情绪强化 / 关键道具 |
-| 大特写 | 极致局部 | 情绪核弹 / 决定性瞬间（慎用，全片 2~3 次） |
+| lớn Viễn cảnh (extreme wide shot) | toàn  | nối trường  /  / nhỏ  |
+| Viễn cảnh (extreme wide shot) | Bối cảnhngườiliên dòng  | rỗng gian liên dòng  / Không khí |
+| Toàn cảnh (wide shot) | ngườitoàn  | Nhân vậtđăng trường  / toàn  |
+| Trung cảnh (medium shot) | trên  | ngày thường việc  / đúng lời  |
+| Cận cảnh (close-up) | bộ trên  | tình truyền  / đúng lời trùng điểm  |
+| Đặc tả (close-up) | mặt bộ hoặc tệp cục bộ  | tình xúc hóa  / liên Đạo cụ |
+| lớn Đặc tả (close-up) | cục bộ  | tình xúc  / nối gian （hàm ，toàn  2~3 lần ） |
 
-**cameraMove**（运镜）：无运镜时填 `静止`。运镜须标注起终点方向。
+**cameraMove**（Góc quay）：không Góc quay `Tĩnh (static)`。Góc quaybuộc biểu tâm điểm phương 。
 
-| 运镜 | 说明 | 叙事语义 |
+| Góc quay | Giải thích | việc ngữ nghĩa  |
 |------|------|---------|
-| 推 | 从远到近，强调主体 | 情绪递进 / 发现 / 窥视 |
-| 拉 | 从近到远，展示环境 | 情绪抽离 / 揭示全貌 / 离别 |
-| 摇 | 固定位置旋转扫视 | 环境交代 / 搜索 |
-| 移 | 跟随主体移动 | 陪伴 / 追踪 |
-| 俯拍 | 从上往下 | 旁观 / 渺小 / 全局 |
-| 仰拍 | 从下往上 | 英雄化 / 威压 |
+| khuyến  | từ đến ，gọi chính thể  | tình xúc tiến  / phát  / video  |
+|  | từ đến ，nhở  | tình xúc  / nhở toàn  / khác  |
+|  | nối vị trí trí chuyển video  | tác vụ  / tìm kiếm  |
+|  | chính thể động  |  /  |
+|  | từ trên dưới  |  / nhỏ  / toàn cục  |
+|  | từ dưới trên  | hóa  / nén  |
 
-**action**（角色动作）：画面中角色/主体的具体动作描述（5~40 字），无角色动作时填 `空镜`。格式为 `(衔接说明)动作描述`。要求：
-- **衔接说明置于开头**：用半角括号包裹，置于动作描述最前面。首镜写 `(开篇)`；其他镜头写 `(承接上镜:衔接动作)`，如 `(承接上镜:缓推落幅~群像定格)`、`(承接上镜:手臂半抬状态→继续上扬)`
-- **动作链写法**：写连续物理动作链 + 速度节奏（"缓缓抬起右手→指尖微颤→猛然握拳"），禁止只写静态终态。多角色时各自动作用 `;` 分隔，按关联资产名称顺序排列，如 `黎雾右手摩挲袖口→左臂将兔子玩偶往怀里拢;聂薇视线紧锁兔子方向`
-- **本列不再写朝向/空间关系**：朝向与空间关系已拆为独立列（`orientation` / `spatialRelation`），不在 action 内重复标注，避免 `|` 与 markdown 表格列分隔符冲突
+**action**（Hành động nhân vật）：vẽ mặt giữa Nhân vật/chính thể  của cụ thể động tác vụ Mô tả（5~40 chữ ），không Hành động nhân vật `rỗng quay `。khung thức  `(tiếp Giải thích)động tác vụ Mô tả`。Yêu cầu：
+- **tiếp Giải thíchtrí với mở đầu **：hàm nửa nhân quát số gói ，trí với động tác vụ Mô tảnhất trước mặt 。quay  `(mở bài )`；anh ấyỐng kính `(tiếp trên quay :tiếp động tác vụ )`，như  `(tiếp trên quay :khuyến ~nối khung )`、`(tiếp trên quay :tay nửa trạng thái→trên )`
+- **động tác vụ thức **：lý động tác vụ  + độ tiết （"phải tay →→"），Nghiêm cấmchỉ thái thái 。nhiều Nhân vậtcác tự động tác vụ hàm  `;` phútcách ，theo Tên tài nguyên liên kếtxếp sắp hàng ，như  `phải tay cổng →trái ;video đường phương `
+- **sách hàng không /rỗng gian liên dòng **：rỗng gian liên dòng đã lập hàng （`orientation` / `spatialRelation`），không ở  action trong trùng lời biểu tâm ， `|`  markdown bảng khung hàng phútcách 
 
-**orientation**（朝向）：独立列，画面中角色面部朝向标注。格式：
-- 多角色按 `associateAssetsNames` 顺序列出，用 `;` 分隔：`角色A-3/4正面朝右;角色B-3/4正面朝左`
-- 单角色可省略角色名：`面朝右`
-- 空镜与纯物件特写填 `—`
-- 朝向须符合 180° 视轴线规则（同场景内锁定，变化须在 `action` 中给出转身/转头衔接动作并同步更新本列），具体取值见下方朝向参考表
+**orientation**（）：lập hàng ，vẽ mặt giữa Nhân vậtmặt bộ biểu tâm 。khung thức ：
+- nhiều Nhân vậttheo  `associateAssetsNames` xếp hàng ra ，hàm  `;` phútcách ：`Nhân vậtA-3/4chính mặt phải ;Nhân vậtB-3/4chính mặt trái `
+- đơn Nhân vậtNhân vậttên ：`mặt phải `
+- rỗng quay thuần tệp Đặc tả (close-up) `—`
+- buộc hợp  180° video đường （cùng Bối cảnhtrong nối ，hóa buộc ở  `action` giữa cho ra chuyển /chuyển đầu tiếp động tác vụ nhất cùng bước cập nhậtsách hàng ），cụ thể xuất giá trị thấy dưới phương tham chiếubảng 
 
-**spatialRelation**（空间关系）：独立列，多角色画面中各角色相对站位。格式：
-- 按 `associateAssetsNames` 顺序列出，用 `、` 分隔：`角色A(位置)、角色B(位置)`
-- 位置取值见下方空间关系参考表（9 站位）
-- 单角色镜头可只填一项 `角色(位置)` 或填 `—`；纯物件特写、空镜填 `—`
-- 须与朝向、景别、运镜自洽（朝右的角色其注视/互动目标应位于其右侧站位）；同场同组角色站位须稳定，走位须在 `action` 中给出衔接动作并同步更新本列
+**spatialRelation**（rỗng gian liên dòng ）：lập hàng ，nhiều Nhân vậtvẽ mặt giữa các Nhân vậtđúng trạm vị trí 。khung thức ：
+- theo  `associateAssetsNames` xếp hàng ra ，hàm  `、` phútcách ：`Nhân vậtA(vị trí trí )、Nhân vậtB(vị trí trí )`
+- vị trí trí xuất giá trị thấy dưới phương rỗng gian liên dòng tham chiếubảng （9 trạm vị trí ）
+- đơn Nhân vậtỐng kínhchỉ 1  `Nhân vật(vị trí trí )` hoặc  `—`；thuần tệp Đặc tả (close-up)、rỗng quay  `—`
+- buộc 、Cỡ cảnh、Góc quaytự （phải  của Nhân vậttâm video /động mục biểu hồi vị trí với phải trạm vị trí ）；cùng trường cùng nhóm Nhân vậttrạm vị trí buộc nối ，chạy vị trí buộc ở  `action` giữa cho ra tiếp động tác vụ nhất cùng bước cập nhậtsách hàng 
 
-**完整字段示例**（5 人群像）：
-- `action`：`(开篇)远景缓缓推向人群，五人站位松散——黎雾略偏左、左臂弯抱兔子玩偶;聂薇视线被那团白色吸引`
-- `orientation`：`黎雾-3/4正面朝右;聂薇-3/4正面朝左;何存羽-3/4正面朝左;秋瞳-3/4正面朝左;安娜-正面`
-- `spatialRelation`：`黎雾(左前)、安娜(右前)、聂薇(左后)、何存羽(中后)、秋瞳(右后)`
+**chỉnh chữ đoạn Ví dụ**（5 người）：
+- `action`：`(mở bài )Viễn cảnh (extreme wide shot)khuyến người，5ngườitrạm vị trí ——trái 、trái ;video đường vật `
+- `orientation`：`-3/4chính mặt phải ;-3/4chính mặt trái ;lưu -3/4chính mặt trái ;-3/4chính mặt trái ;an -chính mặt `
+- `spatialRelation`：`(trái trước )、an (phải trước )、(trái sau )、lưu (giữa sau )、(phải sau )`
 
-**朝向参考表**（orientation 列填写用）：
+**tham chiếubảng **（orientation hàng hàm ）：
 
-| 朝向取值 | 含义 | 典型场景 |
+| xuất giá trị  | nghĩa  | kiểu Bối cảnh |
 |---------|------|---------|
-| 面朝右 | 水平面朝画面右侧 | 180°线左侧角色、朝右侧目标 |
-| 面朝左 | 水平面朝画面左侧 | 180°线右侧角色、朝左侧目标 |
-| 正面 | 正对镜头 | 自白、宣言、直视观众 |
-| 3/4正面朝右 | 3/4侧面偏右朝镜头 | 对话主体（画面偏左角色） |
-| 3/4正面朝左 | 3/4侧面偏左朝镜头 | 对话主体（画面偏右角色） |
-| 正侧面朝右 | 正侧面轮廓朝右 | 独白、沉思 |
-| 正侧面朝左 | 正侧面轮廓朝左 | 独白、沉思 |
-| 3/4背面朝右 | 3/4侧背面偏右 | 疏离、离去 |
-| 3/4背面朝左 | 3/4侧背面偏左 | 疏离、离去 |
-| 背面 | 背对镜头 | 神秘登场、离别、遥望 |
+| mặt phải  | mặt vẽ mặt phải  | 180°đường trái Nhân vật、phải mục biểu  |
+| mặt trái  | mặt vẽ mặt trái  | 180°đường phải Nhân vật、trái mục biểu  |
+| chính mặt  | chính đúng Ống kính | tự 、、trực video  |
+| 3/4chính mặt phải  | 3/4mặt phải Ống kính | đúng lời chính thể （vẽ mặt trái Nhân vật） |
+| 3/4chính mặt trái  | 3/4mặt trái Ống kính | đúng lời chính thể （vẽ mặt phải Nhân vật） |
+| chính mặt phải  | chính mặt phải  | 、 |
+| chính mặt trái  | chính mặt trái  | 、 |
+| 3/4mặt phải  | 3/4mặt phải  | 、đi  |
+| 3/4mặt trái  | 3/4mặt trái  | 、đi  |
+| mặt  | đúng Ống kính | đăng trường 、khác 、 |
 
-> 可叠加俯仰修饰：`面朝右微仰头`、`3/4正面朝左微低头`。
+> cộng ：`mặt phải đầu `、`3/4chính mặt trái thấp đầu `。
 
-**空间关系参考表**（spatialRelation 列填写用，多角色场景必标）：
+**rỗng gian liên dòng tham chiếubảng **（spatialRelation hàng hàm ，nhiều Nhân vậtBối cảnhbắt biểu ）：
 
-画面被划分为「左/中/右」三列 ×「前/中/后」三层的 3×3 站位网格，前=靠近镜头/前景层，后=远离镜头/背景层；前/后亦可表达高低差（如俯视下跪者占「中前」、站立施压者占「中后」）。
+vẽ mặt phút「trái /giữa /phải 」3hàng  ×「trước /giữa /sau 」3tầng  của  3×3 trạm vị trí mạng khung ，trước =Ống kính/trước bối tầng ，sau =Ống kính/bối tầng ；trước /sau bảng cao thấp （như video dưới giả 「giữa trước 」、trạm lập nén giả 「giữa sau 」）。
 
-| 位置取值 | 含义 | 典型用法 |
+| vị trí trí xuất giá trị  | nghĩa  | kiểu hàm thức  |
 |---------|------|---------|
-| 左前 | 画面左侧、靠近镜头 | 主体偏左前景，常作主导发声方 |
-| 中前 | 画面中央、靠近镜头 | 单主体居中、被前景半身遮挡的角色 |
-| 右前 | 画面右侧、靠近镜头 | 主体偏右前景 |
-| 左中 | 画面左侧、中景层 | 群像中段左位 |
-| 中中 | 画面正中、中景层 | 核心主体居中、对话主导者 |
-| 右中 | 画面右侧、中景层 | 群像中段右位 |
-| 左后 | 画面左侧、靠后（背景） | 后排左位、伴随者 |
-| 中后 | 画面中央、靠后 | 后排居中、被前景遮挡或居高位 |
-| 右后 | 画面右侧、靠后 | 后排右位、旁观者 |
+| trái trước  | vẽ mặt trái 、Ống kính | chính thể trái trước bối ，thường tác vụ chính dẫn phát thanh phương  |
+| giữa trước  | vẽ mặt giữa 、Ống kính | đơn chính thể giữa 、trước bối nửa  của Nhân vật |
+| phải trước  | vẽ mặt phải 、Ống kính | chính thể phải trước bối  |
+| trái giữa  | vẽ mặt trái 、Trung cảnh (medium shot)tầng  | giữa đoạn trái vị trí  |
+| giữa giữa  | vẽ mặt chính giữa 、Trung cảnh (medium shot)tầng  | chính thể giữa 、đúng lời chính dẫn giả  |
+| phải giữa  | vẽ mặt phải 、Trung cảnh (medium shot)tầng  | giữa đoạn phải vị trí  |
+| trái sau  | vẽ mặt trái 、sau （bối ） | sau sắp trái vị trí 、giả  |
+| giữa sau  | vẽ mặt giữa 、sau  | sau sắp giữa 、trước bối hoặc cao vị trí  |
+| phải sau  | vẽ mặt phải 、sau  | sau sắp phải vị trí 、giả  |
 
-**emotion**（情绪）：画面传达的情绪基调（2~10 字），用具象可感描述。如"冷傲轻蔑""痛苦绝望""紧张压迫"。禁止"开心""难过"等空泛词。
+**emotion**（tình xúc ）：vẽ mặt truyền  của tình xúc cơ sở gọi （2~10 chữ ），hàm cụ tượng Mô tả。như """""bức nén "。Nghiêm cấm"mở """rỗng từ 。
 
-**scene**：该分镜所处的场景名称，与剧本中的场景对应
+**scene**：Phân cảnhnơi xử  của Bối cảnhTên，Kịch bảngiữa  của Bối cảnhđúng hồi 
 
-**associateAssetsNames**：画面中**可见的**资产名称列表（包括仅局部出现的角色/物件），便于直观确认关联内容
+**associateAssetsNames**：vẽ mặt giữa **thấy  của **Tài nguyênTêndanh sách（gói quát chỉ cục bộ ra  của Nhân vật/tệp ），với trực liên kết nội dung
 
-**duration**：基础参考——特写/表情 2~3s · 对话近景 3~5s · 全身亮相 3~5s · 动作 2~4s · 远景/空镜/过渡 3~5s · 复杂场景 5~8s。**单镜不超过 8s**，超过须拆分。
+**duration**：cơ sở tham chiếu——Đặc tả (close-up)/bảng tình  2~3s · đúng lời Cận cảnh (close-up) 3~5s · toàn  3~5s · động tác vụ  2~4s · Viễn cảnh (extreme wide shot)/rỗng quay / 3~5s · lời Bối cảnh 5~8s。**đơn quay không vượt  8s**，vượt buộc phút。
 
-**含台词时，时长必须足够念完全部台词且匹配情绪语速**：
+**Lời thoại，Thời lượngBắt buộctoàn bộLời thoạivà khớptình xúc ngữ **：
 
-| 情绪状态 | 语速参考 | 示例场景 |
+| tình xúc trạng thái | ngữ tham chiếu | Ví dụBối cảnh |
 |---------|---------|----------|
-| 愤怒、急促、争吵 | ~4 字/秒 | 怒斥、催促、惊慌 |
-| 正常对话、叙述 | ~3 字/秒 | 日常交谈、冷静陈述 |
-| 悲伤、深情、沉思 | ~2 字/秒 | 告白、哀悼、回忆 |
-| 低语、虚弱、临终 | ~2 字/秒 | 气若游丝、耳边呢喃 |
+| 、、 | ~4 chữ /giây | 、、 |
+| chính thường đúng lời 、tả  | ~3 chữ /giây | ngày thường tác vụ 、tả  |
+| 、tình 、 | ~2 chữ /giây | thông 、、trả  |
+| thấp ngữ 、、 | ~2 chữ /giây | 、 |
 
-计算方式：台词字数 ÷ 对应语速（向上取整）= 基础秒数，再叠加停顿余量：
-- 台词中每个标点停顿（逗号、句号、省略号、破折号等）+0.3~0.5s
-- 情绪转折/语气变化处 +0.5s
-- 最终 `duration` = 基础秒数 + 停顿累计 + 1s 安全余量（向上取整）
+tính toáncách thức：Lời thoạichữ số  ÷ đúng hồi ngữ （trên xuất chỉnh ）= cơ sở giâysố ，cộng lượng ：
+- Lời thoạigiữa mục biểu điểm （số 、câu số 、số 、số ）+0.3~0.5s
+- tình xúc chuyển /ngữ hóa xử  +0.5s
+- nhất  `duration` = cơ sở giâysố  + tính  + 1s an toàn lượng （trên xuất chỉnh ）
 
-**lines**：角色台词原文，**必须一字不改从剧本中照搬**。多角色按 `角色名：台词` 格式排列。无台词填 `无台词`。一句台词对应一个镜头，避免单镜头内塞多角色多轮对白。
+**lines**：Nhân vậtLời thoạiNguyên tác，**Bắt buộc1 chữ không sửa từ Kịch bảngiữa **。nhiều Nhân vậttheo  `Nhân vậttên ：Lời thoại` khung thức sắp hàng 。Không có lời thoại `Không có lời thoại`。1 câu Lời thoạiđúng hồi một Ống kính，đơn Ống kínhtrong nhiều Nhân vậtnhiều đúng 。
 
-**sound**（音效）：纯音效描述，按「环境音层 + 动作音层」分层。如"远处风声呼啸 + 剑鸣声"。无音效填 `无音效`。
+**sound**（Âm hiệu）：thuần Âm hiệuMô tả，theo 「âm tầng  + động tác vụ âm tầng 」phúttầng 。như "xử phong thanh  + thanh "。không Âm hiệu `không Âm hiệu`。
 
-> **🚫 严禁音乐/配乐**：本流水线最终产物**完全不含背景音乐**。`音效` 列只承载真实声源（环境音 + 动作音 + 拟音），任何"BGM""配乐""旋律""管弦/钢琴/竖琴/笛声等乐器作为氛围烘托"等字样**一律违规**，审核会判严重问题。如剧本中出现乐器演奏作为剧情动作（如角色弹琴），仅可写"指尖拨弦的金属振动声 + 共鸣箱嗡鸣"等具体物理音源。
+> **🚫 âm /nối **：sách đường nhất nguyên **toàn không bối âm **。`Âm hiệu` hàng chỉ xuống thật thanh nguồn （âm  + động tác vụ âm  + âm ），"BGM""nối """"///thanh thiết bị tác vụ Không khí"chữ kiểu **1 **，sẽ trùng hỏi đề 。như Kịch bảngiữa ra thiết bị tác vụ kịch tình động tác vụ （như Nhân vật），chỉ " của biệt động thanh  + "cụ thể lý âm nguồn 。
 
-**associateAssetsIds**：画面中**可见的**资产的 ID（从 assets 数据中获取的实际 `id` 字段值），不编造不存在的 ID。
-- **角色出现即引用**：画面中出现的所有角色，无论是主体还是仅局部可见（如背影、手部、虚化剪影等），只要在画面内可被辨识，都必须引用其对应的资产 ID
-- **场景资产必选**：每条分镜必须引用其所处场景对应的场景资产 ID（type 为 scene 的资产）；若该场景存在匹配当前画面状态的衍生场景资产，则选用衍生场景资产 ID，否则选用主场景资产 ID。缺少场景资产 ID 视为字段不完整
-- 父子资产选择规则：按剧情画面所需状态选择资产 ID——若该镜头需要某主资产的衍生状态，**只选衍生资产 ID**；仅当不存在匹配的衍生状态时，才选择主资产 ID；同一父资产在同一分镜中禁止主/衍生同时出现
+**associateAssetsIds**：vẽ mặt giữa **thấy  của **Tài nguyên của  ID（từ  assets dữ liệugiữa lấy của  `id` chữ đoạn giá trị ），không chỉnh tạo không lưu ở  của  ID。
+- **Nhân vậtra hàm **：vẽ mặt giữa ra  của tất cảNhân vật，không là chính thể còn là chỉ cục bộ thấy （như sáng 、tay bộ 、hóa sáng ），chỉ cần ở vẽ mặt trong trưng ，đều Bắt buộchàm đúng hồi  của Tài nguyên ID
+- **Bối cảnhTài nguyênbắt chọn **：mục Phân cảnhBắt buộchàm nơi xử Bối cảnhđúng hồi  của Bối cảnhTài nguyên ID（type  scene  của Tài nguyên）；Bối cảnhlưu ở khớphiện tạivẽ mặt trạng thái của sinh Bối cảnhTài nguyên，chọn hàm sinh Bối cảnhTài nguyên ID，không chọn hàm chính Bối cảnhTài nguyên ID。ít Bối cảnhTài nguyên ID video chữ đoạn không chỉnh 
+- Tài nguyênchọn lựa ：theo kịch tình vẽ mặt nơi cần trạng tháichọn lựa Tài nguyên ID——Ống kínhcần cần chính Tài nguyên của sinh trạng thái，**chỉ chọn sinh Tài nguyên ID**；chỉ khi không lưu ở khớp của sinh trạng thái，chọn lựa chính Tài nguyên ID；cùng 1 Tài nguyênở cùng 1 Phân cảnhgiữa Nghiêm cấmchính /sinh cùng ra 
 
 ---
 
-## 转场规则
+## chuyển trường 
 
-- **同场戏内**：镜头间默认硬切
-- **跨场景**：插入 1 个空镜分镜（2~3s）做情绪缓冲，空镜内容与前后场景氛围相关
-- **跨段落**：可在 description 中标注"叠化过渡"或"淡入淡出"
-- 禁用花式转场（划屏、旋转、百叶窗等）
+- **cùng trường trong **：Ống kínhgian Mặc định
+- **Bối cảnh**：vào  1 mục rỗng quay Phân cảnh（2~3s）tình xúc ，rỗng quay nội dungtrước sau Bối cảnhKhông khíliên 
+- **đoạn **：ở  description giữa biểu tâm "hóa "hoặc "vào ra "
+- hàm thức chuyển trường （、chuyển 、trăm ）

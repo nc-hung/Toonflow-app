@@ -1,61 +1,61 @@
-# 都市职场 · 导演叙事手法技能包
+# Đô Thị & Công Sở · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **都市职场** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **Đô Thị & Công Sở** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **真实即力量** — 职场叙事的杀手锏是"真实感"，让观众在角色身上看到自己
-- **博弈暗涌** — 表面客气、暗地交锋，职场的冲突不在拳头上而在话语权与利益链上
-- **成长的代价** — 每一次升级都有代价（妥协/失去/自我怀疑），成长弧线不是直线上升而是螺旋
-- **小人物的光** — 最动人的不是大boss的权谋，而是普通人在体制中坚持自我的微光
+- **thật lực lượng ** — trường việc  của tay là "thật "，để ở Nhân vậttrên xem đến tự mình 
+- **** — bảng mặt 、địa tác vụ ，trường  của không ở đầu trên ở lời ngữ thực trên 
+- **tạo dài  của ** — 1 lần cấp đều có （giao /thất đi /tự tôi），tạo dài đường không là trực đường trên là 
+- **nhỏ người của ánh ** — nhất động người của không là lớn boss của thực ，là thông ngườiở thể chép giữa giữ tự tôi của ánh 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Urban_workplace_drama/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义都市职场在主题立意、博弈节奏、场景张力设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa Đô Thị & Công Sởở chính đề lập ý 、tiết 、Bối cảnhbức lực thiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与职场内核 | 真实感基石、权力博弈、成长代价、小人物光芒 |
-| 叙事结构与博弈节奏 | 利益链驱动、攻守转换、信息不对称、阶段性胜负 |
-| 分场景张力设计 | 六大典型职场段落设计、空间权力隐喻、社交距离叙事 |
-| 声音与音乐方向 | 都市白噪音、沉默博弈、节奏性配乐、环境音叙事 |
-| 构图与景别叙事 | 权力构图/对峙构图/孤立构图、景别的权力表达 |
-| 镜头运动与节奏 | 纪实手持、冷静固定、压迫推移、呼吸感运镜 |
+| chính đề lập ý trường trong  | thật cơ sở 、thực lực 、tạo dài 、nhỏ ngườiánh  |
+| việc kết cấu tiết  | động 、chuyển đổi 、thông tinkhông đúng 、đoạn  |
+| phútBối cảnhbức lực thiết tính  | 6lớn kiểu trường đoạn thiết tính 、rỗng gian thực lực 、tác vụ việc  |
+| thanh âm âm phương  | đều âm 、、tiết nối 、âm việc  |
+| cấu ảnh Cỡ cảnhviệc  | thực lực cấu ảnh /đúng cấu ảnh /lập cấu ảnh 、Cỡ cảnh của thực lực bảng  |
+| Ống kínhvận động tiết  | tay giữ 、nối 、nén khuyến 、Góc quay |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义都市职场在分镜表中的景别策略、运镜节奏、时长把控、对话分镜与转场手法。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa Đô Thị & Công Sởở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaytiết 、Thời lượngđem sát 、đúng lời Phân cảnhchuyển trường tay thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为人物关系与权力张力核心工具的定位说明 |
-| 景别选择 | 权力景别、社交距离景别、孤立感景别 |
-| 运镜节奏 | 冷静固定为主、纪实手持、压迫缓推 |
-| 时长把控 | 对话节奏、沉默博弈时长、快节奏蒙太奇 |
-| 对话分镜设计 | 权力位对切、三角关系构图、潜台词镜头语言 |
-| 独处段落 | 下班后的真实、独自崩溃、深夜反思 |
-| 台词与潜台词 | 话中有话、沉默的攻防、职场黑话的镜头处理 |
-| 转场设计 | 时间蒙太奇/空间对比/硬切节奏/日常流转 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ ngườiliên dòng thực lực bức lực cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | thực lực Cỡ cảnh、tác vụ Cỡ cảnh、lập Cỡ cảnh |
+| Góc quaytiết  | nối chính 、tay giữ 、nén khuyến  |
+| Thời lượngđem sát  | đúng lời tiết 、Thời lượng、nhanh tiết  |
+| đúng lời Phân cảnhthiết tính  | thực lực vị trí đúng 、3nhân liên dòng cấu ảnh 、Lời thoạiỐng kínhngữ  |
+| xử đoạn  | dưới sau  của thật 、tự 、phụ  |
+| Lời thoạiLời thoại | lời giữa có lời 、 của 、trường lời  của Ống kínhxử lý  |
+| chuyển trường thiết tính  | thời gian/rỗng gian đúng tỷ /tiết /ngày thường chuyển  |
 
-## 使用方式
+## hàm cách thức
 
-本技能包作为 ToonFlow 导演 AI 的叙事手法参考，在故事创作流程中自动加载，指导：
+sách thể gói tác vụ  ToonFlow đạo diễn AI  của việc tay thức tham chiếu，ở việc sáng tác vụ trình giữa tự động cộng xuống ，dẫn ：
 
-1. **叙事规划** — 确定职场内核、博弈节奏曲线、场景权力关系与音效方向
-2. **分镜表生成** — 根据叙事规划输出具体的景别、运镜、时长与转场方案
+1. **việc lập kế hoạch** — nối trường trong 、tiết đường 、Bối cảnhthực lực liên dòng Âm hiệuphương 
+2. **Bảng phân cảnhtạo** — dựa theoviệc lập kế hoạchtải ra cụ thể  của Cỡ cảnh、Góc quay、Thời lượngchuyển trường phương 
 
-两个文件分工明确、逐层递进，从"为什么这样拍"到"具体怎么拍"形成完整闭环。
+2mục tệpphútdẫn 、tầng tiến ，từ "saonàykiểu "đến "cụ thể sao"dạng tạo chỉnh 。

@@ -1,108 +1,108 @@
 ---
 name: director_planning_narrative
-description: 叙事手法技法 · 历史史诗 — 定义历史史诗类型在主题立意、情感节奏、场景情绪设计与声音方向上的叙事规划方法。适用于任何视觉风格。
+description: việc tay thức thức  · Sử Thi Lịch Sử — nối nghĩa Sử Thi Lịch SửLoạiở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của việc lập kế hoạchphương thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 叙事手法 · 历史史诗 · 技法参考
+# việc tay thức  · Sử Thi Lịch Sử · thức tham chiếu
 
 ---
 
-## 一、主题立意与情感内核
+## 1 、chính đề lập ý tình trong 
 
-### 历史史诗叙事要点
+### Sử Thi Lịch Sửviệc cần điểm 
 
-- **大时代小人物** — 史诗叙事的核心不是再现历史事件，而是展现时代洪流中个体的命运。主题立意应聚焦于"一个人的选择如何折射一个时代"
-- **命运的不可抗力** — 历史叙事的张力来自"个人意志与时代洪流的碰撞"。角色越努力抗争，越显出命运的残酷与人性的伟大
-- **仪式感即重量** — 关键历史节点（登基、盟誓、决战、诀别、殉道）必须赋予仪式感。仪式感不是场面大，而是每个动作、每句话都有"不可逆转"的庄重
-- **离场感受建议方向** — 苍凉 / 壮美 / 唏嘘 / 敬畏。避免"爽""解气"等轻浮方向
-- **历史的回响** — 好的史诗叙事让观众感受到"这件事不只发生在那个时代"。用古今相通的人性困境（忠与义的矛盾、个人与集体的冲突）制造跨时代的共鸣
-
----
-
-## 二、叙事结构与节奏规划
-
-### 历史史诗叙事要点
-
-- **宏微交织是基本功** — 史诗叙事需要在"宏观全景"与"微观个体"之间不断切换。纯宏观会空洞，纯微观会失去史诗感。每个宏大段落都要有个体的情感锚点
-- **史诗节奏弧** — 史诗的节奏不是匀速前进，而是"积蓄→爆发→沉淀"的大波浪。长时间的铺垫与积蓄，换来一次震撼人心的爆发，然后用沉默消化余震
-- **群像叙事** — 史诗通常涉及多条人物线。每条线应有独立的情感弧线，在关键节点交汇。交汇点就是史诗高潮
-- **时间跨度处理** — 历史叙事常跨越数年甚至数十年。用"时间标记事件"而非"日期字幕"来传达时间流逝：白发、废墟上的新草、孩子长大
-- **转折点用沉默而非演说** — 历史转折的处理应优先考虑沉默手段（对视、独坐、凝望远方），而非慷慨陈词。真正的历史抉择往往在沉默中做出
-- **"最后一次"模型** — 史诗叙事的催泪点往往是"最后一次"：最后一次回望故城、最后一次举杯、最后一次并肩作战。在叙事规划中标注每个角色的"最后一次"节点
+- **lớn nhỏ người** — việc  của không là sự kiện，là giữa mục thể  của vận 。chính đề lập ý hồi với "một người của chọn lựa như một "
+- **vận  của không lực ** — việc  của bức lực tự "mục ngườiý  của "。Nhân vậtlực ，ra vận  của người của lớn 
+- **thức trùng lượng ** — liên tiết điểm （đăng cơ sở 、、、khác 、đạo ）Bắt buộcthức 。thức không là trường mặt lớn ，là mục động tác vụ 、câu lời đều có "không chuyển " của trùng 
+- **trường Khuyến nghịphương ** —  / đẹp  /  / 。"""giải "phương 
+- ** của trả phản ** — tốt  của việc để đến "nàytệp việc không chỉ phát sinh ở mục "。hàm thông  của người（nghĩa  của 、mục ngườitập thể  của ）chép tạo  của 
 
 ---
 
-## 三、分场景情绪设计
+## 2、việc kết cấu tiết lập kế hoạch
 
-### 历史史诗叙事要点
+### Sử Thi Lịch Sửviệc cần điểm 
 
-- **情绪目标用史诗性词汇** — 不说"悲伤"，说"目送一个时代落幕的苍凉"。史诗的情绪需要跳出个人层面，具有时代感与命运感
-- **典型情绪段落与设计** —
+- **tác vụ là cơ sở sách công ** — việc cần cần ở "Toàn cảnh (wide shot)""mục thể " của gian không đổi 。thuần sẽ rỗng ，thuần sẽ thất đi 。mục lớn đoạn đều cần có mục thể  của tình điểm 
+- **tiết ** —  của tiết không là trước tiến ，là "→phát →" của lớn 。dài thời gian của ，đổi 1 lần người của phát ，sau hàm hủy hóa 
+- **việc ** — thông thường nhiều mục ngườiđường 。mục đường hồi có lập  của tình đường ，ở liên tiết điểm tác vụ 。tác vụ điểm thì là cao 
+- **thời gianđộ xử lý ** — việc thường số nămđến số 10năm。hàm "thời gianbiểu sự kiện"phi "ngày kỳ chữ "truyền thời gian：phát 、trên  của mới 、dài lớn 
+- **Điểm bước ngoặthàm phi hướng ** — chuyển  của xử lý hồi trước tay đoạn （đúng video 、、phương ），phi từ 。thật chính  của lựa ở giữa ra 
+- **"nhất sau 1 lần "mô hình** — việc  của điểm là "nhất sau 1 lần "：nhất sau 1 lần trả 、nhất sau 1 lần 、nhất sau 1 lần nhất tác vụ 。ở việc lập kế hoạchgiữa biểu tâm mục Nhân vật của "nhất sau 1 lần "tiết điểm 
 
-| 段落类型 | 情绪方向 | 叙事手法 | 音乐建议 |
+---
+
+## 3、phútBối cảnhtình xúc thiết tính 
+
+### Sử Thi Lịch Sửviệc cần điểm 
+
+- **tình xúc mục biểu hàm từ ** — không hướng ""，hướng "mục gửi một  của "。 của tình xúc cần cần ra mục ngườitầng mặt ，cụ có vận 
+- **kiểu tình xúc đoạn thiết tính ** —
+
+| đoạn Loại | tình xúc phương  | việc tay thức  | âm Khuyến nghị |
 |---|---|---|---|
-| 太平盛世 | 繁荣 + 暗流 | 展示秩序与繁华，同时埋入将要崩塌的伏笔 | 庄重器乐，底层暗流涌动 |
-| 风云突变 | 震惊 + 无力 | 秩序崩塌的连锁反应，个体被裹挟 | 突然静默后低频压迫 |
-| 困境抉择 | 煎熬 + 坚定 | 角色在忠与义、生与死之间挣扎，最终做出选择 | 单一乐器独奏，极简 |
-| 决战/对峙 | 壮烈 + 悲怆 | 明知不可为而为之，用行动而非台词表达决心 | 从沉默到器乐渐满 |
-| 代价/牺牲 | 痛 + 敬畏 | 胜利的代价、牺牲者的最后时刻 | 人声合唱或纯环境音 |
-| 尘埃落定 | 苍凉 + 释然 | 一切结束后的沉默，幸存者的回望 | 极简器乐或风声 |
+|  |  +  | nhở xếp ，cùng vào cần  của  | trùng thiết bị ，tầng động  |
+| phong  |  + không lực  | xếp  của phụ hồi ，mục thể  | sau thấp tần nén  |
+| lựa  |  + nối  | Nhân vậtở nghĩa 、sinh  của gian ，nhất ra chọn lựa  | đơn 1 thiết bị ， |
+| /đúng  |  +  | dẫn báo không  của ，hàm thi động phi Lời thoạibảng  | từ đến thiết bị đầy  |
+| / |  +  |  của 、giả  của nhất sau  | ngườithanh hợp hoặc thuần âm  |
+| nối  |  +  | 1 kết sau  của ，lưu giả  của trả  | thiết bị hoặc phong thanh  |
 
-- **"权力空间"是叙事核心工具** — 用空间关系映射权力关系和命运处境：
-  - **高处**：俯视 = 掌权/审判，适合帝王、决策者
-  - **低处**：仰视 = 臣服/渺小，适合受命运摆布的个体
-  - **平视**：对等/对峙，适合势均力敌的关键对话
-- **空间即时代** — 用空间的变化传递时代变迁：曾经繁华的大殿变成废墟、曾经的战场长满野草、空荡的王座。空间自身就是最有力的时代叙事
-- **仪式场景的叙事要求** — 仪式段落（加冕/盟誓/诀别）每个动作都必须有叙事意义：跪下 = 臣服与牺牲；举杯 = 生死之约；转身 = 不可回头。不要流于形式的排场
+- **"thực lực rỗng gian "là việc cụ ** — hàm rỗng gian liên dòng thực lực liên dòng  và vận xử ：
+  - **cao xử **：video  = thực /，hợp 、quyết địnhgiả 
+  - **thấp xử **：video  = phục /nhỏ ，hợp vận  của mục thể 
+  - **video **：đúng /đúng ，hợp lực  của liên đúng lời 
+- **rỗng gian ** — hàm rỗng gian  của hóa truyền ：đã  của lớn tạo 、đã  của trường dài đầy 、rỗng  của 。rỗng gian tự thì là nhất có lực  của việc 
+- **thức Bối cảnh của việc Yêu cầu** — thức đoạn （cộng //khác ）mục động tác vụ đều Bắt buộccó việc ý nghĩa ：dưới  = phục ； = sinh  của ；chuyển  = không trả đầu 。không cần với dạng thức  của sắp trường 
 
 ---
 
-## 四、声音与音乐方向
+## 4、thanh âm âm phương 
 
-### 历史史诗叙事要点
+### Sử Thi Lịch Sửviệc cần điểm 
 
-- **厚重低音是史诗底色** — 史诗配乐的基底是低音区的厚重感（大提琴、定音鼓、低音号角）。高音区留给关键情感爆发点，日常段落靠低音撑住"历史的重量"
-- **人声的力量** — 史诗叙事中人声（合唱、吟唱、号子）有特殊的叙事功能：军队出征的战歌、送别的挽歌、胜利后的沉默合唱。人声比器乐更能传递"群体的命运"
-- **沉默的庄严** — 关键历史瞬间（王座上的最后决定、行刑前的对视、战场上枪声停止后）应去掉所有配乐，只留环境音或纯静默。沉默赋予这些瞬间"历史正在发生"的重量
-- **环境音承载时代质感** — 每场戏应标注核心环境音来传递时代氛围：铁蹄声、旗帜的猎猎声、远处的号角、市井的喧嚣、废墟中的风声
-- **音乐情绪递进模型** —
+- **dày trùng thấp âm là vật ** — nối  của cơ sở là thấp âm khu  của dày trùng （lớn nhắc 、nối âm 、thấp âm số nhân ）。cao âm khu lưu cho liên tình phát điểm ，ngày thường đoạn thấp âm " của trùng lượng "
+- **ngườithanh  của lực lượng ** — việc giữa ngườithanh （hợp 、、số ）có  của việc công thể ：ra  của 、gửi khác  của 、sau  của hợp 。ngườithanh tỷ thiết bị đổi thể truyền "thể  của vận "
+- ** của ** — liên gian （trên  của nhất sau nối 、thi trước  của đúng video 、trường trên thanh sau ）hồi đi bỏ tất cảnối ，chỉ lưu âm hoặc thuần 。nàynhững gian "đang phát sinh " của trùng lượng 
+- **âm xuống ** — trường hồi biểu tâm âm truyền Không khí：thanh 、 của thanh 、xử  của số nhân 、 của 、giữa  của phong thanh 
+- **âm tình xúc tiến mô hình** —
 
-| 情绪阶段 | 音乐策略 | 覆盖率 |
+| tình xúc đoạn  | âm  | tỷ lệ  |
 |---|---|---|
-| 铺垫/日常 | 低音器乐衬底，庄重但克制 | 中低 |
-| 暗涌/积蓄 | 鼓点渐入，节奏暗示命运逼近 | 中 |
-| 爆发/决战 | 器乐全奏或突然全场静默 | 极端 |
-| 牺牲/代价 | 人声合唱或单一乐器哀鸣 | 中高 |
-| 尘埃落定 | 极简器乐或纯环境音（风声） | 低 |
+| /ngày thường  | thấp âm thiết bị ，trùng nhưng chép  | giữa thấp  |
+| / | điểm vào ，tiết nhở vận  | giữa  |
+| phát / | thiết bị toàn hoặc toàn trường  | đầu  |
+| / | ngườithanh hợp hoặc đơn 1 thiết bị  | giữa cao  |
+| nối  | thiết bị hoặc thuần âm （phong thanh ） | thấp  |
 
-- **战场不是噪音** — 战斗段落的音效设计不应是嘈杂的混战噪音，而是有层次的音景：近处的呼吸与兵器碰撞、中景的喊杀、远处的号角与马蹄。层次即叙事
-
----
-
-## 五、构图与景别叙事
-
-### 历史史诗叙事要点
-
-- **三大核心构图的叙事功能** —
-  - **对称构图** — 庄重/权力/仪式/不可违抗的秩序，适合朝堂、殿堂、对峙场景
-  - **三分法** — 日常/行军/对话，稳定均衡，适合叙事推进段落
-  - **大面积留白** — 苍凉/渺小/命运的空旷感，个体在天地间的孤独
-- **宏观远景的史诗价值** — 远景和大远景是史诗叙事的主力景别。远景不是过场，而是"让观众感受到时代的广阔与个体的渺小"。给远景充足的时长
-- **特写是人性锚点** — 在宏大的远景之后切入一个人的眼神特写，是"从时代回到个人"的核心手法。远景 → 特写的反差越大，情感冲击越强
-- **空间纵深即权力** — 画面纵深中的位置关系暗示权力关系：站在最远处的人是最有权力的（背对镜头更强）；跪在近景的人是最卑微的
-- **群像构图** — 史诗常需要在一个画面中容纳多个角色。群像构图的核心是"在群体中凸显个体"——通过位置、姿态、动静对比让主要角色在人群中被辨识
-- **孤独个体与宏大空间** — 一个人站在空旷的战场/废墟/大殿中，人物在画面中的比例越小，孤独感与历史重量越大
+- **trường không là âm ** — đoạn  của Âm hiệuthiết tính không hồi là  của âm ，là có tầng lần  của âm bối ：xử  của thiết bị 、Trung cảnh (medium shot) của 、xử  của số nhân 。tầng lần việc 
 
 ---
 
-## 六、镜头运动与节奏
+## 5、cấu ảnh Cỡ cảnhviệc 
 
-### 历史史诗叙事要点
+### Sử Thi Lịch Sửviệc cần điểm 
 
-- **庄重缓移为主** — 史诗叙事的镜头运动应以极缓的速度进行，传达"历史的沉重脚步"。急推、快切等急促手法与史诗气质不兼容
-- **俯瞰 = 命运视角** — 高角度俯瞰是史诗的标志性运镜，暗示"命运/历史在俯视众生"。适合战场全景、城池陷落、人潮迁徙
-- **仰拍 = 崇敬/压迫** — 低角度仰拍适合英雄的最后一站、纪念碑、城墙。仰拍角度越大，庄重感或压迫感越强
-- **凝视不动** — 关键历史瞬间（诀别/登基/最后一战前），镜头应绝对静止，像一个历史的见证者在凝视。任何运镜都会破坏这种"时间凝固"的庄严
-- **缓摇 = 展示全貌/时代画卷** — 慢速横摇适合展示大场面：军队集结、城池全貌、战后废墟。缓摇的速度应让观众有时间"阅读"画面中的每个细节
-- **运镜即叙事视角** — 俯瞰 = 命运视角（冷静、全知）；平移跟随 = 与角色同行（共情）；缓推 = 聚焦关键（强调）；缓拉 = 揭示全局（震撼）
+- **3lớn cấu ảnh  của việc công thể ** —
+  - **đúng cấu ảnh ** — trùng /thực lực /thức /không  của xếp ，hợp 、、đúng Bối cảnh
+  - **3phútthức ** — ngày thường /thi /đúng lời ，nối ，hợp việc Đẩy tới (push in / dolly in)đoạn 
+  - **lớn mặt lưu ** — /nhỏ /vận  của rỗng ，mục thể ở ngàyđịa gian  của 
+- **Viễn cảnh (extreme wide shot) của giá trị ** — Viễn cảnh (extreme wide shot) và lớn Viễn cảnh (extreme wide shot)là việc  của chính lực Cỡ cảnh。Viễn cảnh (extreme wide shot)không là trường ，là "để đến  của mục thể  của nhỏ "。cho Viễn cảnh (extreme wide shot)sung  của Thời lượng
+- **Đặc tả (close-up)là ngườiđiểm ** — ở lớn  của Viễn cảnh (extreme wide shot) của sau vào một người của Đặc tả (close-up)，là "từ trả đến mục người" của tay thức 。Viễn cảnh (extreme wide shot) → Đặc tả (close-up) của phụ lớn ，tình 
+- **rỗng gian thực lực ** — vẽ mặt giữa  của vị trí trí liên dòng nhở thực lực liên dòng ：trạm ở nhất xử  của ngườilà nhất có thực lực  của （đúng Ống kínhđổi ）；ở Cận cảnh (close-up) của ngườilà nhất  của 
+- **cấu ảnh ** — thường cần cần ở một vẽ mặt giữa dung nhiều mục Nhân vật。cấu ảnh  của là "ở thể giữa mục thể "——thông quavị trí trí 、thái 、động đúng tỷ để chính cần Nhân vậtở ngườigiữa trưng 
+- **mục thể lớn rỗng gian ** — một ngườitrạm ở rỗng  của trường //lớn giữa ，ngườiở vẽ mặt giữa  của Tỷ lệnhỏ ，trùng lượng lớn 
+
+---
+
+## 6、Ống kínhvận động tiết 
+
+### Sử Thi Lịch Sửviệc cần điểm 
+
+- **trùng chính ** — việc  của Ống kínhvận động hồi  của độ tiến thi ，truyền " của trùng bước "。khuyến 、nhanh tay thức không dung 
+- ** = vận video nhân ** — cao nhân độ là  của biểu Góc quay，nhở "vận /ở video sinh "。hợp trường Toàn cảnh (wide shot)、、người
+- ** = /nén ** — thấp nhân độ hợp  của nhất sau 1 trạm 、、。nhân độ lớn ，trùng hoặc nén 
+- **video không động ** — liên gian （khác /đăng cơ sở /nhất sau 1 trước ），Ống kínhhồi đúng Tĩnh (static)，một  của thấy chứng giả ở video 。Góc quayđều sẽ xấu nàyloại "thời gian" của 
+- ** = nhở toàn /vẽ ** — chậm hợp nhở lớn trường mặt ：tập kết 、toàn 、sau 。 của độ hồi để có thời gian""vẽ mặt giữa  của mục tiết 
+- **Góc quayviệc video nhân ** —  = vận video nhân （、toàn báo ）； = Nhân vậtcùng thi （tình ）；khuyến  = liên （gọi ）； = nhở toàn cục （）

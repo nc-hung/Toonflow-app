@@ -1,387 +1,387 @@
 ---
 name: art_character_derivative
-description: 3D国风赛博人物衍生资产生成 · 约束手册
+description: 3Dphong ngườisinh Tài nguyêntạo · sổ tay
 metaData: art_skills
 ---
 
-# 3D国风赛博人物衍生资产生成 · 约束手册
-## （古风传统场景+现代都市赛博场景 双适配版）
+# 3Dphong ngườisinh Tài nguyêntạo · sổ tay
+## （phong truyền thống Bối cảnh+Đô Thị Hiện ĐạiBối cảnh đôi nối bản ）
 
 ---
 
-## 一、叠加原则（双场景通用核心规则）
+## 1 、cộng gốc （đôi Bối cảnhthông hàm ）
 
-1. **面容不变** — 叠加后五官必须与底模完全一致，禁止面容偏移、变形、风格化篡改
-2. **姿态不变** — 保持底模自然站立姿态，禁止任何姿态/动作/体态变化
-3. **逐层可控** — 每层独立描述，古风/赛博元素分层独立，便于按层替换（换装不换妆、换赛博元素不换国风基底）
-4. **风格统一** — 所有服化元素服从同一美学体系，**古风场景以东方传统美学为核心，赛博元素为轻量可选融合；都市场景以国风形制为基底，赛博机能为核心表达**，全程禁止国风与赛博元素割裂对立
-5. **质感不降** — 叠加后质感标准不低于底模，3D PBR材质、电影级光影为全场景通用底线
-6. **纯服化范畴** — 仅叠加妆容/发型/服饰/配饰，禁止引入道具、场景、环境、动作
-7. **双场景一键适配** — 无明确赛博/都市线索时，默认兼容纯古风生成；有明确赛博/都市线索时，自动匹配国风赛博都市体系，无需重构底层逻辑
+1. **mặt dung không ** — cộng sau 5Bắt buộcmô toàn 1 ，Nghiêm cấmmặt dung 、dạng 、Phong cáchhóa sửa 
+2. **thái không ** — lưu giữ mô tự trạm lập thái ，Nghiêm cấmthái /động tác vụ /thể thái hóa 
+3. **tầng sát ** — tầng lập Mô tả，phong /phúttầng lập ，với theo tầng đổi （đổi không đổi 、đổi không đổi phong cơ sở ）
+4. **Phong cáchthống 1 ** — tất cảphục hóa phục từ cùng 1 đẹp thể dòng ，**phong Bối cảnhphương truyền thống đẹp ，lượng Tùy chọnhợp ；đều Bối cảnhphong dạng chép cơ sở ，máy thể bảng **，toàn trình Nghiêm cấmphong rời đúng lập 
+5. **không ** — cộng sau biểu không thấp với mô ，3D PBR、sáng cấp Ánh sángtoàn Bối cảnhthông hàm đường 
+6. **thuần phục hóa ** — chỉ cộng dung /phát kiểu /phục /nối ，Nghiêm cấmvào Đạo cụ、Bối cảnh、、động tác vụ 
+7. **đôi Bối cảnh1 nối ** — không dẫn /đều đường kiếm ，Mặc địnhdung thuần phong tạo；có dẫn /đều đường kiếm ，tự động khớpphong đều thể dòng ，không cần trùng cấu tầng logic
 
 ---
 
-## 二、叠加层级（双场景全兼容分层结构）
+## 2、cộng tầng cấp （đôi Bối cảnhtoàn dung phúttầng kết cấu ）
 
-| 层级 | 内容 | 双场景适配说明 |
+| tầng cấp  | nội dung | đôi Bối cảnhnối Giải thích |
 |---|---|---|
-| L0 | 底模 | 基础形象底模，面容、体态、站立姿态完全锁定，古风/都市场景通用，不做任何修改 |
-| L1 | 妆容（决策层） | 先分析用户线索，再决策「基础妆 / 轻妆 / 正式妆 / 赛博机能妆 / 都市通勤妆」强度与风格，含古风专属传统妆造、都市赛博专属光效妆造两套体系 |
-| L2 | 发型造型 | 国风发髻/束发/编发 + 传统发饰/赛博机能发件，含古风传统造型、都市赛博轻量化造型两套体系，高精度发丝标准全场景通用 |
-| L3 | 中衣/内搭 | 替换白色基础中衣，古风场景用传统丝绸中衣，都市场景用国风机能面料内搭，可融入可控电路暗纹、微霓虹光带 |
-| L4 | 外衣/主服 | 核心双适配层：古风场景用中式传统华服/礼服/常服；都市场景用**国风形制为核心的赛博机能服**（必须保留立领/斜襟/盘扣/襦裙等中式核心结构），禁止无国风内核的纯西式机能服 |
-| L5 | 配饰 | 传统头饰/耳饰/项饰/腰饰/手饰 + 国风赛博机能配饰/光感组件，古风场景用传统配饰为主、轻量赛博点缀；都市场景用国风+赛博融合配饰，全程禁止纯西式赛博配饰 |
+| L0 | mô  | cơ sở dạng tượng mô ，mặt dung 、thể thái 、trạm lập thái toàn nối ，phong /đều Bối cảnhthông hàm ，không sửa  |
+| L1 | dung （Tầng quyết định） | trước phúttích hàm dùng đường kiếm ，quyết định「cơ sở  /  / chính thức  / máy thể  / đều thông 」độ Phong cách，phong riêng biệt truyền thống tạo 、đều riêng biệt ánh hiệu tạo 2thể dòng  |
+| L2 | phát kiểu tạo kiểu  | phong phát /phát /chỉnh phát  + truyền thống phát /máy thể phát tệp ，phong truyền thống tạo kiểu 、đều lượng hóa tạo kiểu 2thể dòng ，cao độ phát biểu toàn Bối cảnhthông hàm  |
+| L3 | giữa /trong  | đổi vật cơ sở giữa ，phong Bối cảnhhàm truyền thống giữa ，đều Bối cảnhhàm phong máy thể mặt trong ，vào sát đường 、ánh kèm  |
+| L4 | ngoài /chính phục  | đôi nối tầng ：phong Bối cảnhhàm giữa thức truyền thống phục /phục /thường phục ；đều Bối cảnhhàm **phong dạng chép  của máy thể phục **（Bắt buộclưu lưu lập //đĩa /giữa thức kết cấu ），Nghiêm cấmkhông phong trong  của thuần thức máy thể phục  |
+| L5 | nối  | truyền thống đầu ////tay  + phong máy thể nối /ánh nhóm tệp ，phong Bối cảnhhàm truyền thống nối chính 、lượng điểm tố ；đều Bối cảnhhàm phong +hợp nối ，toàn trình Nghiêm cấmthuần thức nối  |
 
-> **范畴边界**：人物衍生资产仅包含 L0–L5 层级（服化妆造），不包含道具（伞/剑/扇/书/灯笼等手持物）、场景环境（室内/室外/天气等）、姿态动作（行走/回眸/举手等）。这些属于其他资产类型的范畴；赛博机能元素仅限L1-L5服化妆造范畴，不得超出边界修改底模身体结构。
+> **giới **：ngườisinh Tài nguyênchỉ gói  L0–L5 tầng cấp （phục hóa tạo ），không gói Đạo cụ（////tay giữ ）、Bối cảnh（trong /ngoài /ngày）、thái động tác vụ （thi chạy /trả /tay ）。nàynhững biệt với anh ấyTài nguyênLoại của ；máy thể chỉ hạn L1-L5phục hóa tạo ，không được vượt ra giới sửa mô thể kết cấu 。
 
 ---
 
-## 三、妆容约束（L1·古风+都市双体系）
+## 3、dung （L1·phong +đều đôi thể dòng ）
 
-### 底模到衍生妆造策略（关键）
+### mô đến sinh tạo （liên ）
 
-> 角色底模虽为素颜，但衍生资产默认进入妆造流程。系统应根据用户提供的线索分析妆造需求，优先匹配古风/都市场景属性，再在对应妆造体系内决策强度，无明确场景线索时默认古风体系，不得擅自切换。
+> Nhân vậtmô ，nhưng sinh Tài nguyênMặc địnhtiến vào tạo trình 。dòng thống hồi dựa theohàm dùng nhắc nhà  của đường kiếm phúttích tạo cần cầu ，trước khớpphong /đều Bối cảnhbiệt ，ở đúng hồi tạo thể dòng trong quyết địnhđộ ，không dẫn Bối cảnhđường kiếm Mặc địnhphong thể dòng ，không được tự đổi 。
 
-### L1 线索分析与妆容决策
+### L1 đường kiếm phúttích dung quyết định
 
-| 步骤 | 处理内容 | 决策结果 |
+| bước  | xử lý nội dung | quyết địnhkết quả |
 |---|---|---|
-| S1 | 提取用户线索：面部状态词、情绪词、强度词、风格词、场景词（古风/都市） | 形成「场景+妆容」双维度需求摘要 |
-| S2 | 过滤非妆容线索：道具/场景/动作/姿态词不作为上妆依据 | 防止误判 |
-| S3 | 先匹配古风/都市场景体系，再匹配妆容风格矩阵并给出强度档 | 古风体系：基础妆 / 轻妆 / 正式妆；都市体系：通勤妆 / 商务妆 / 赛博机能妆 |
-| S4 | 生成最终 L1 提示词 | 只输出结论，不输出分析过程 |
+| S1 | trích xuấthàm dùng đường kiếm ：mặt bộ trạng tháitừ 、tình xúc từ 、độ từ 、Phong cáchtừ 、Bối cảnhtừ （phong /đều ） | dạng tạo 「Bối cảnh+dung 」đôi độ cần cầu cần  |
+| S2 | lọc phi dung đường kiếm ：Đạo cụ/Bối cảnh/động tác vụ /thái từ không tác vụ trên phụ liệu  |  |
+| S3 | trước khớpphong /đều Bối cảnhthể dòng ，khớpdung Phong cáchnhất cho ra độ liệu  | phong thể dòng ：cơ sở  /  / chính thức ；đều thể dòng ：thông  / cấp vụ  / máy thể  |
+| S4 | tạonhất  L1 Prompt | chỉ tải ra kết ，không tải ra phúttích trình  |
 
-### 线索到妆容映射（执行口径·双场景适配）
+### đường kiếm đến dung （thực thicổng kính ·đôi Bối cảnhnối ）
 
-| 线索类型 | 典型线索 | 场景匹配 | L1 决策 |
+| đường kiếm Loại | kiểu đường kiếm  | Bối cảnhkhớp | L1 quyết định |
 |---|---|---|---|
-| 无明显场景/面部强调线索 | 仅服饰/发型变化，未强调情绪与状态 | 古风默认 | 基础妆 |
-| 轻微面部线索 | 轻柔、含笑、睫毛轻颤、气色微提 | 古风/都市通用 | 轻妆（极淡） |
-| 明确古风日常线索 | 日常、闺中、外出、休闲、文人雅集 | 古风场景 | 基础妆（自然清透） |
-| 明确古风正式仪式线索 | 大婚、典礼、朝堂、重要场合 | 古风场景 | 正式妆（精致华贵） |
-| 明确都市日常线索 | 通勤、都市日常、休闲出行 | 都市赛博场景 | 都市通勤妆（清透自然+极淡肌理） |
-| 明确都市正式线索 | 商务、全息会议、都市盛典 | 都市赛博场景 | 都市商务妆（精致哑光+冷调质感） |
-| 明确赛博机能线索 | 赛博、机能、夜行、任务、霓虹、未来感 | 都市赛博场景 | 赛博机能妆（可控光效，与国风融合） |
+| không dẫn Bối cảnh/mặt bộ gọi đường kiếm  | chỉ phục /phát kiểu hóa ，chưa gọi tình xúc trạng thái | phong Mặc định | cơ sở  |
+| mặt bộ đường kiếm  | 、、、vật nhắc  | phong /đều thông hàm  | （） |
+| dẫn phong ngày thường đường kiếm  | ngày thường 、giữa 、ngoài ra 、、tài ngườitập  | phong Bối cảnh | cơ sở （tự sạch ） |
+| dẫn phong chính thức thức đường kiếm  | lớn 、、、trùng cần trường hợp  | phong Bối cảnh | chính thức （） |
+| dẫn đều ngày thường đường kiếm  | thông 、đều ngày thường 、ra thi  | đều Bối cảnh | đều thông （sạch tự +lý ） |
+| dẫn đều chính thức đường kiếm  | cấp vụ 、toàn sẽ thức 、đều  | đều Bối cảnh | đều cấp vụ （ánh +gọi ） |
+| dẫn máy thể đường kiếm  | 、máy thể 、thi 、tác vụ 、、chưa  | đều Bối cảnh | máy thể （sát ánh hiệu ，phong hợp ） |
 
-> 判定原则：
-> 1. 所有衍生资产都要有妆造；先看场景线索匹配体系，再看面部线索决定强度与风格，道具、场景、姿态变化不得单独抬高妆容强度
-> 2. 赛博机能线索仅可触发都市赛博体系妆容，无对应线索不得擅自添加赛博光效妆容
-> 3. 古风场景无明确赛博线索时，禁止添加任何赛博光效/机能妆容，确保纯古风场景完全适配
+> nối gốc ：
+> 1. tất cảsinh Tài nguyênđều cần có tạo ；trước xem Bối cảnhđường kiếm khớpthể dòng ，xem mặt bộ đường kiếm nối độ Phong cách，Đạo cụ、Bối cảnh、thái hóa không được đơn cao dung độ 
+> 2. máy thể đường kiếm chỉ phát đều thể dòng dung ，không đúng hồi đường kiếm không được tự thêmánh hiệu dung 
+> 3. phong Bối cảnhkhông dẫn đường kiếm ，Nghiêm cấmthêmánh hiệu /máy thể dung ，lưu thuần phong Bối cảnhtoàn nối 
 
-### 女性妆容风格矩阵（双场景全覆盖）
+### nữ dung Phong cách（đôi Bối cảnhtoàn ）
 
-| 体系 | 风格 | 适用场景 | 核心提示词 |
+| thể dòng  | Phong cách | hàm Bối cảnh | Prompt |
 |---|---|---|---|
-| 古风体系 | 清雅素妆 | 古风日常、初遇、闺中、文人雅集 | 妆容清雅、淡扫蛾眉、素妆清颜 |
-| 古风体系 | 宫廷贵气妆 | 古风宫廷、正式、权力、盛典 | 妆容精致、眉形锋利、唇色红润 |
-| 古风体系 | 浪漫桃花妆 | 古风约会、心动、甜蜜场景 | 桃花妆、眼尾微红、唇色水润 |
-| 古风体系 | 大婚盛妆 | 古风大婚、典礼 | 浓妆华美、朱唇凤眼 |
-| 古风体系 | 节日庆典妆 | 古风节日、聚会 | 色彩明亮、粉彩妆容 |
-| 都市赛博体系 | 都市通勤妆 | 都市日常、通勤、休闲出行 | 清透伪素颜、自然眉形、均匀底妆、无夸张色彩 |
-| 都市赛博体系 | 都市商务妆 | 都市商务、全息会议、正式场合 | 哑光冷调底妆、眉形利落、眼妆深邃、唇色低饱和质感 |
-| 都市赛博体系 | 赛博流光妆 | 都市夜行、赛博场景、机能休闲 | 眼尾微霓虹光效、贴肤电路暗纹、唇色带细闪流光、妆面清透不厚重 |
-| 都市赛博体系 | 机能冷调妆 | 都市任务、行动、强气场场景 | 哑光冷调底妆、眉形利落、眼妆深邃、局部哑光机能肌理、无夸张光效 |
+| phong thể dòng  | sạch  | phong ngày thường 、、giữa 、tài ngườitập  | dung sạch 、、sạch  |
+| phong thể dòng  |  | phong 、chính thức 、thực lực 、 | dung 、dạng 、vật  |
+| phong thể dòng  |  | phong sẽ 、động 、Bối cảnh | 、đuôi 、vật  |
+| phong thể dòng  | lớn  | phong lớn 、 | đẹp 、 |
+| phong thể dòng  | tiết ngày  | phong tiết ngày 、sẽ  | vật dẫn 、dung  |
+| đều thể dòng  | đều thông  | đều ngày thường 、thông 、ra thi  | sạch 、tự dạng 、、không bức vật  |
+| đều thể dòng  | đều cấp vụ  | đều cấp vụ 、toàn sẽ thức 、chính thức trường hợp  | ánh gọi 、dạng 、、vật thấp  và  |
+| đều thể dòng  | ánh  | đều thi 、Bối cảnh、máy thể  | đuôi ánh hiệu 、đường 、vật kèm ánh 、mặt sạch không dày trùng  |
+| đều thể dòng  | máy thể gọi  | đều tác vụ 、thi động 、trường Bối cảnh | ánh gọi 、dạng 、、cục bộ ánh máy thể lý 、không bức ánh hiệu  |
 
-### 通用底肤（所有妆容·双场景共享）
+### thông hàm （tất cảdung ·đôi Bối cảnh）
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 质感 | PBR材质渲染、自然透亮、可控肌理，3D质感全场景统一 | PBR材质、自然光泽、柔和质感、细腻皮肤纹理 |
-| 白度 | 粉白基调、通透不惨白 | 粉白基调、白皙透亮 |
-| 内透光 | 从内向外柔光感 | 内透光感、皮肤通透发光 |
-| 赛博适配 | 仅都市赛博体系可添加贴肤级电路暗纹、微霓虹光效，不得覆盖底模皮肤质感；古风体系禁用 | 贴肤电路暗纹、可控微霓虹光效、与皮肤自然融合 |
-| 禁止 | 哑光/死白/蜡感/油光/过曝、大面积覆盖底模的赛博涂装、刺眼强光、古风场景擅自添加赛博元素 | — |
+|  | PBR、tự 、sát lý ，3Dtoàn Bối cảnhthống 1  | PBR、tự ánh 、 và 、lý  |
+| độ  | cơ sở gọi 、thông không  | cơ sở gọi 、 |
+| trong ánh  | từ trong ngoài ánh  | trong ánh 、thông phát ánh  |
+| nối  | chỉ đều thể dòng thêmcấp đường 、ánh hiệu ，không được mô ；phong thể dòng hàm  | đường 、sát ánh hiệu 、tự hợp  |
+| Nghiêm cấm | ánh ///ánh /、lớn mặt mô  của 、ánh 、phong Bối cảnhtự thêm | — |
 
-### 基础妆细化（古风默认档·双场景通用）
+### cơ sở hóa （phong Mặc địnhliệu ·đôi Bối cảnhthông hàm ）
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 眉部 | 顺着底模眉形轻修，不改变眉型 | 自然修眉、眉形干净 |
-| 眼部 | 极淡眼部修饰，强调清透与有神 | 眼部清透、极淡眼影 |
-| 面颊 | 极淡气色提亮，粉彩腮红 | 面颊气色自然、粉彩腮红 |
-| 唇部 | 浅粉或朱红润色，保持克制 | 唇色自然润泽、浅粉唇色 |
-| 整体 | 看得出有妆造，但妆感非常轻 | 基础妆、自然妆感、柔和质感 |
+| bộ  | đang mô dạng ，không sửa kiểu  | tự 、dạng  |
+| bộ  | bộ ，gọi sạch có  | bộ sạch 、sáng  |
+| mặt  | vật nhắc ， | mặt vật tự 、 |
+| bộ  | hoặc trau chuốt，lưu giữ chép  | vật tự 、vật  |
+| chỉnh thể  | xem được ra có tạo ，nhưng phi thường  | cơ sở 、tự 、 và  |
 
-### 男性妆容（双场景适配）
+### nam dung （đôi Bối cảnhnối ）
 
-| 体系 | 项目 | 约束 | 提示词 |
+| thể dòng  | dự án |  | Prompt |
 |---|---|---|---|
-| 古风通用 | 底肤 | PBR材质渲染、白皙透亮、清爽自然 | PBR材质、白皙透亮、自然光泽 |
-| 古风通用 | 核心原则 | 伪素颜——看着没化妆但皮肤极好 | 伪素颜、天生好皮 |
-| 古风通用 | 眉毛 | 自然浓眉、不改变底模眉形 | 剑眉自然、眉形英挺 |
-| 古风通用 | 唇色 | 自然血色、微润 | 唇色自然、血色感 |
-| 都市赛博体系 | 赛博适配 | 仅可添加局部哑光机能肌理、极淡电路暗纹，无夸张光效，无明确线索禁用 | 极淡贴肤电路暗纹、哑光机能肌理、无强光 |
-| 都市赛博体系 | 都市商务妆 | 哑光清透底妆、眉形利落、无多余妆感 | 清透哑光底妆、利落眉形、伪素颜质感 |
+| phong thông hàm  |  | PBR、、sạch tự  | PBR、、tự ánh  |
+| phong thông hàm  | Nguyên tắc cốt lõi | ——xem đang chưa hóa nhưng tốt  | 、ngàysinh tốt  |
+| phong thông hàm  |  | tự 、không sửa mô dạng  | tự 、dạng  |
+| phong thông hàm  | vật  | tự vật 、 | vật tự 、vật  |
+| đều thể dòng  | nối  | chỉ thêmcục bộ ánh máy thể lý 、đường ，không bức ánh hiệu ，không dẫn đường kiếm hàm  | đường 、ánh máy thể lý 、không ánh  |
+| đều thể dòng  | đều cấp vụ  | ánh sạch 、dạng 、không nhiều  | sạch ánh 、dạng 、 |
 
 ---
 
-## 四、发型造型约束（L2·古风+都市双体系）
+## 4、phát kiểu tạo kiểu （L2·phong +đều đôi thể dòng ）
 
-### 女性造型类型（双场景全覆盖）
+### nữ tạo kiểu Loại（đôi Bối cảnhtoàn ）
 
-| 体系 | 造型 | 描述 | 适用场景 | 提示词 |
+| thể dòng  | tạo kiểu  | Mô tả | hàm Bối cảnh | Prompt |
 |---|---|---|---|---|
-| 古风体系 | 高髻云鬓 | 高髻盘发 + 传统发饰 | 古风宫廷、正式、盛典 | 高髻云鬓、精致盘发、传统中式形制 |
-| 古风体系 | 双环髻 | 双环对称、少女感 | 古风年轻角色、日常 | 双环髻、少女风格、中式传统造型 |
-| 古风体系 | 堕马髻 | 侧偏低髻、慵懒感 | 古风日常、休闲、闺中 | 堕马髻、慵懒侧髻、中式传统造型 |
-| 古风体系 | 披发 | 长发全散、自然垂落 | 古风闺中、私密、夜间 | 长发散落、自然垂落、中式传统质感 |
-| 古风体系 | 束发高马尾 | 高束干练、利落 | 古风习武、行动场景 | 高束马尾、干练利落、中式传统束发 |
-| 古风体系 | 半扎发 | 发顶半扎 + 后方垂发 | 古风日常、出行 | 半扎云髻、自然垂发、中式传统造型 |
-| 都市赛博体系 | 国风半扎低马尾 | 中式半扎发+低马尾、利落不拖沓 | 都市通勤、日常出行 | 国风半扎低马尾、中式编发点缀、干练日常、高精度发丝 |
-| 都市赛博体系 | 国风高束机能髻 | 中式高髻+机能结构固定、可内嵌微霓虹光带 | 都市正式、全息盛典、机能场景 | 国风高束机能髻、钛合金发件固定、内嵌可控微霓虹光带 |
-| 都市赛博体系 | 国风半机械编发 | 中式三股编+机能编绳、微光流苏点缀 | 都市休闲、夜行、赛博场景 | 国风半机械编发、中式编发基底、机能编绳、光感流苏点缀 |
-| 都市赛博体系 | 国风高马尾 | 中式束发+高马尾、机能发扣固定 | 都市机能、行动、任务场景 | 国风高马尾、中式束发基底、机能发扣固定、利落干练 |
+| phong thể dòng  | cao  | cao đĩa phát  + truyền thống phát  | phong 、chính thức 、 | cao 、đĩa phát 、truyền thống giữa thức dạng chép  |
+| phong thể dòng  | đôi  | đôi đúng 、ít nữ  | phong nămNhân vật、ngày thường  | đôi 、ít nữ Phong cách、giữa thức truyền thống tạo kiểu  |
+| phong thể dòng  |  | thấp 、 | phong ngày thường 、、giữa  | 、、giữa thức truyền thống tạo kiểu  |
+| phong thể dòng  | phát  | dài phát toàn 、tự  | phong giữa 、mật 、gian  | dài phát 、tự 、giữa thức truyền thống  |
+| phong thể dòng  | phát cao đuôi  | cao 、 | phong 、thi động Bối cảnh | cao đuôi 、、giữa thức truyền thống phát  |
+| phong thể dòng  | nửa phát  | phát nửa  + sau phương phát  | phong ngày thường 、ra thi  | nửa 、tự phát 、giữa thức truyền thống tạo kiểu  |
+| đều thể dòng  | phong nửa thấp đuôi  | giữa thức nửa phát +thấp đuôi 、không  | đều thông 、ngày thường ra thi  | phong nửa thấp đuôi 、giữa thức chỉnh phát điểm tố 、ngày thường 、cao độ phát  |
+| đều thể dòng  | phong cao máy thể  | giữa thức cao +máy thể kết cấu nối 、trong ánh kèm  | đều chính thức 、toàn 、máy thể Bối cảnh | phong cao máy thể 、hợp phát tệp nối 、trong sát ánh kèm  |
+| đều thể dòng  | phong nửa máy chỉnh phát  | giữa thức 3chỉnh +máy thể chỉnh 、ánh điểm tố  | đều 、thi 、Bối cảnh | phong nửa máy chỉnh phát 、giữa thức chỉnh phát cơ sở 、máy thể chỉnh 、ánh điểm tố  |
+| đều thể dòng  | phong cao đuôi  | giữa thức phát +cao đuôi 、máy thể phát nối  | đều máy thể 、thi động 、tác vụ Bối cảnh | phong cao đuôi 、giữa thức phát cơ sở 、máy thể phát nối 、 |
 
-### 女性发饰（双场景适配）
+### nữ phát （đôi Bối cảnhnối ）
 
-| 体系 | 约束 | 提示词 |
+| thể dòng  |  | Prompt |
 |---|---|---|
-| 古风体系 | 华丽精致、与服饰配套、纯传统中式材质工艺，无赛博元素（无明确线索禁用） | 华丽发饰、精致工艺、金银发簪、珠翠满头、精细雕刻 |
-| 都市赛博体系 | 国风形制为核心、与服饰配套、传统材质+赛博机能材质融合，光效可控 | 国风赛博发饰、精致工艺、金银玉饰+钛合金机能件、可控微霓虹光带、全息投影点缀 |
+| phong thể dòng  | 、phục nối 、thuần truyền thống giữa thức ，không （không dẫn đường kiếm hàm ） | phát 、、phát 、đầy đầu 、 |
+| đều thể dòng  | phong dạng chép 、phục nối 、truyền thống +máy thể hợp ，ánh hiệu sát  | phong phát 、、+hợp máy thể tệp 、sát ánh kèm 、toàn sáng điểm tố  |
 
-### 男性造型类型（双场景全覆盖）
+### nam tạo kiểu Loại（đôi Bối cảnhtoàn ）
 
-| 体系 | 造型 | 适用场景 | 提示词 |
+| thể dòng  | tạo kiểu  | hàm Bối cảnh | Prompt |
 |---|---|---|---|
-| 古风体系 | 束发半冠 | 古风日常、文人、雅集 | 束发半冠、玉簪束发、中式传统造型 |
-| 古风体系 | 全冠高束 | 古风正式、朝堂、盛典 | 全冠高束、玉冠束发、中式传统形制 |
-| 古风体系 | 散发披肩 | 古风私密、夜间场景 | 散发披肩、长发如墨、中式传统质感 |
-| 古风体系 | 束发高马尾 | 古风战斗、习武场景 | 高束战发、马尾利落、中式传统束发 |
-| 都市赛博体系 | 国风机能半冠束发 | 都市日常、通勤、商务场景 | 国风机能半冠束发、中式束发基底、哑光钛合金发件、利落干练 |
-| 都市赛博体系 | 国风低马尾束发 | 都市休闲、日常出行 | 国风低马尾束发、中式束发基底、极简机能发扣、自然质感 |
-| 都市赛博体系 | 国风高束机能发 | 都市机能、任务、夜行场景 | 国风高束机能发、中式束发基底、全包式机能发冠、哑光工艺 |
+| phong thể dòng  | phát nửa  | phong ngày thường 、tài người、tập  | phát nửa 、phát 、giữa thức truyền thống tạo kiểu  |
+| phong thể dòng  | toàn cao  | phong chính thức 、、 | toàn cao 、phát 、giữa thức truyền thống dạng chép  |
+| phong thể dòng  | phát  | phong mật 、gian Bối cảnh | phát 、dài phát như 、giữa thức truyền thống  |
+| phong thể dòng  | phát cao đuôi  | phong 、Bối cảnh | cao phát 、đuôi 、giữa thức truyền thống phát  |
+| đều thể dòng  | phong máy thể nửa phát  | đều ngày thường 、thông 、cấp vụ Bối cảnh | phong máy thể nửa phát 、giữa thức phát cơ sở 、ánh hợp phát tệp 、 |
+| đều thể dòng  | phong thấp đuôi phát  | đều 、ngày thường ra thi  | phong thấp đuôi phát 、giữa thức phát cơ sở 、máy thể phát 、tự  |
+| đều thể dòng  | phong cao máy thể phát  | đều máy thể 、tác vụ 、thi Bối cảnh | phong cao máy thể phát 、giữa thức phát cơ sở 、toàn gói thức máy thể phát 、ánh  |
 
 ---
 
-## 五、服饰约束（L3+L4·双场景核心适配层）
+## 5、phục （L3+L4·đôi Bối cảnhnối tầng ）
 
-### 核心红线（双场景通用·不可突破）
-**所有服饰必须以中式传统形制为绝对核心**，古风场景严格遵循中式服饰剪裁逻辑；都市赛博场景必须保留立领/斜襟/盘扣/襦裙/对襟/大袖等至少1项中式核心结构，禁止出现无国风内核的纯西式西装、纯机能冲锋衣、纯西式赛博朋克服饰，确保古风+都市场景国风基底不丢失。
+### đường （đôi Bối cảnhthông hàm ·không ）
+**tất cảphục Bắt buộcgiữa thức truyền thống dạng chép đúng **，phong Bối cảnhkhung giữa thức phục logic；đều Bối cảnhBắt buộclưu lưu lập //đĩa //đúng /lớn đến ít 1giữa thức kết cấu ，Nghiêm cấmra không phong trong  của thuần thức 、thuần máy thể 、thuần thức phục ，lưu phong +đều Bối cảnhphong cơ sở không thất 。
 
-### 女性服饰矩阵（双场景全覆盖）
+### nữ phục （đôi Bối cảnhtoàn ）
 
-| 体系 | 风格 | 款式核心 | 适用场景 | 提示词 |
+| thể dòng  | Phong cách | thức  | hàm Bối cảnh | Prompt |
 |---|---|---|---|---|
-| 古风体系 | 古风日常长裙 | 中式襦裙形制、飘逸裙摆、传统刺绣 | 古风日常、闺中、雅集、出行 | 古风襦裙长裙、飘逸衣裙、丝绸质感、传统苏绣纹样、多层叠穿 |
-| 古风体系 | 宫廷礼服 | 中式礼服形制、大袖衫、层叠裙摆、华贵刺绣 | 古风宫廷、正式、盛典、权力场景 | 古风宫廷礼服、华贵裙装、中式大袖衫、金线刺绣、层叠裙摆 |
-| 古风体系 | 轻便常服 | 中式短衫、立领斜襟、收腰剪裁、利落不拖沓 | 古风行动、习武、出行场景 | 古风轻便常服、短衫剪裁、立领斜襟、棉麻丝绸质感、利落干练 |
-| 古风体系 | 寝衣 | 薄纱中衣、素色丝绸、宽松舒适 | 古风室内、夜间、私密场景 | 古风寝衣、宽松舒适、薄纱丝绸材质、素色简约 |
-| 古风体系 | 大婚嫁衣 | 凤冠霞帔形制、层叠红装、传统婚服纹样 | 古风婚礼、大婚典礼 | 古风大婚嫁衣、凤冠霞帔、层叠红裳、金线刺绣、中式婚服形制 |
-| 都市赛博体系 | 国风通勤常服 | 中式立领/斜襟衬衫、改良短款襦裙、机能面料拼接、日常不夸张 | 都市日常、通勤、休闲出行 | 国风赛博通勤常服、中式立领斜襟、改良襦裙剪裁、丝绸与哑光机能面料拼接、极简刺绣、利落日常 |
-| 都市赛博体系 | 国风商务礼服 | 中式对襟西装形制、改良唐装结构、高级哑光面料、极简华贵 | 都市商务、全息会议、正式场合 | 国风赛博商务礼服、中式对襟唐装基底、高级哑光面料、立体剪裁、极简中式纹样、华贵低调 |
-| 都市赛博体系 | 轻机能国风常服 | 中式短衫+机能马甲、斜襟盘扣+磁吸卡扣、收腰剪裁、轻便利落 | 都市行动、夜行、机能休闲场景 | 轻机能国风常服、中式斜襟短衫、机能马甲拼接、磁吸盘扣、哑光机能面料、利落干练 |
-| 都市赛博体系 | 国风赛博大婚/盛典礼服 | 中式凤冠霞帔/礼服形制、钛合金立体结构、层叠裙摆、可控微霓虹光带 | 都市大婚、全息盛典、重要场合 | 国风赛博盛典礼服、中式礼服核心形制、丝绸与3D打印结构拼接、金线刺绣与电路暗纹融合、可控微霓虹光带 |
-| 都市赛博体系 | 国风机能寝衣 | 中式斜襟中衣、薄纱与机能里衬拼接、宽松舒适、微光泽肌理 | 都市室内、夜间、私密场景 | 国风机能寝衣、中式斜襟形制、宽松舒适、薄纱与机能面料拼接、微光泽肌理 |
+| phong thể dòng  | phong ngày thường dài  | giữa thức dạng chép 、、truyền thống  | phong ngày thường 、giữa 、tập 、ra thi  | phong dài 、、、truyền thống kiểu 、nhiều tầng  |
+| phong thể dòng  | phục  | giữa thức phục dạng chép 、lớn 、tầng 、 | phong 、chính thức 、、thực lực Bối cảnh | phong phục 、、giữa thức lớn 、đường 、tầng  |
+| phong thể dòng  | thường phục  | giữa thức ngắn 、lập 、nhận 、không  | phong thi động 、、ra thi Bối cảnh | phong thường phục 、ngắn 、lập 、、 |
+| phong thể dòng  |  | mỏng giữa 、vật 、rộng  | phong trong 、gian 、mật Bối cảnh | phong 、rộng 、mỏng 、vật  |
+| phong thể dòng  | lớn  | dạng chép 、tầng 、truyền thống phục kiểu  | phong 、lớn  | phong lớn 、、tầng 、đường 、giữa thức phục dạng chép  |
+| đều thể dòng  | phong thông thường phục  | giữa thức lập /、sửa ngắn 、máy thể mặt ghép tiếp 、ngày thường không bức  | đều ngày thường 、thông 、ra thi  | phong thông thường phục 、giữa thức lập 、sửa 、ánh máy thể mặt ghép tiếp 、、ngày thường  |
+| đều thể dòng  | phong cấp vụ phục  | giữa thức đúng dạng chép 、sửa kết cấu 、cao cấp ánh mặt 、 | đều cấp vụ 、toàn sẽ thức 、chính thức trường hợp  | phong cấp vụ phục 、giữa thức đúng cơ sở 、cao cấp ánh mặt 、lập thể 、giữa thức kiểu 、thấp gọi  |
+| đều thể dòng  | máy thể phong thường phục  | giữa thức ngắn +máy thể 、đĩa +、nhận 、 | đều thi động 、thi 、máy thể Bối cảnh | máy thể phong thường phục 、giữa thức ngắn 、máy thể ghép tiếp 、đĩa 、ánh máy thể mặt 、 |
+| đều thể dòng  | phong lớn /phục  | giữa thức /phục dạng chép 、hợp lập thể kết cấu 、tầng 、sát ánh kèm  | đều lớn 、toàn 、trùng cần trường hợp  | phong phục 、giữa thức phục dạng chép 、3Dmở kết cấu ghép tiếp 、đường đường hợp 、sát ánh kèm  |
+| đều thể dòng  | phong máy thể  | giữa thức giữa 、mỏng máy thể ghép tiếp 、rộng 、ánh lý  | đều trong 、gian 、mật Bối cảnh | phong máy thể 、giữa thức dạng chép 、rộng 、mỏng máy thể mặt ghép tiếp 、ánh lý  |
 
-### 女性服饰通用约束（双场景适配）
+### nữ phục thông hàm （đôi Bối cảnhnối ）
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 主色 | 古风场景默认中国传统色调；都市场景可搭配低饱和赛博冷调撞色、可控霓虹色点缀，禁止高饱和刺眼配色 | 中国传统色调、国风赛博配色、低饱和撞色、可控霓虹色点缀 |
-| 材质 | 古风场景默认丝绸+刺绣+珠光面料；都市场景可拼接哑光机能面料、高亮反光条、3D打印结构件，必须保留国风核心面料基底 | 丝绸质感、刺绣细节、古风场景纯传统面料；都市场景传统面料与机能面料拼接、3D打印立体结构 |
-| 纹理 | 古风场景默认中式传统纹样；都市场景可融合传统纹样与电路纹理、赛博暗纹，纹理超清晰，禁止无国风内核的纯赛博纹理 | 衣服质感清晰、纹理超清晰、古风场景纯中式传统纹样；都市场景传统纹样与电路纹理深度融合 |
-| 肩部 | 古风场景默认国风云肩/披帛；都市场景可搭配机能肩甲/结构装饰，必须与中式形制统一 | 古风场景云肩华美、披帛飘逸；都市场景国风肩甲点缀、与整体形制统一 |
-| 层次 | 多层叠穿、层次分明、国风内搭与外衣逻辑统一，都市场景机能结构不得破坏叠穿逻辑 | 多层叠穿、层次分明、中式形制逻辑统一 |
-| 光效 | 仅都市赛博场景可添加内嵌式微霓虹光带，光效可控不刺眼、不破坏服饰质感，无过曝；古风场景无明确线索禁用 | 都市场景内嵌微霓虹光带、可控光效、无过曝、与服饰自然融合 |
+| chính vật  | phong Bối cảnhMặc địnhgiữa truyền thống vật gọi ；đều Bối cảnhnối thấp  và gọi vật 、sát vật điểm tố ，Nghiêm cấmcao  và nối vật  | giữa truyền thống vật gọi 、phong nối vật 、thấp  và vật 、sát vật điểm tố  |
+|  | phong Bối cảnhMặc định++ánh mặt ；đều Bối cảnhghép tiếp ánh máy thể mặt 、cao phụ ánh mục 、3Dmở kết cấu tệp ，Bắt buộclưu lưu phong mặt cơ sở  | 、tiết 、phong Bối cảnhthuần truyền thống mặt ；đều Bối cảnhtruyền thống mặt máy thể mặt ghép tiếp 、3Dmở lập thể kết cấu  |
+| lý  | phong Bối cảnhMặc địnhgiữa thức truyền thống kiểu ；đều Bối cảnhhợp truyền thống kiểu đường lý 、，lý vượt sạch ，Nghiêm cấmkhông phong trong  của thuần lý  | phục sạch 、lý vượt sạch 、phong Bối cảnhthuần giữa thức truyền thống kiểu ；đều Bối cảnhtruyền thống kiểu đường lý độ hợp  |
+| bộ  | phong Bối cảnhMặc địnhphong /；đều Bối cảnhnối máy thể /kết cấu ，Bắt buộcgiữa thức dạng chép thống 1  | phong Bối cảnhđẹp 、；đều Bối cảnhphong điểm tố 、chỉnh thể dạng chép thống 1  |
+| tầng lần  | nhiều tầng 、tầng lần phútdẫn 、phong trong ngoài logicthống 1 ，đều Bối cảnhmáy thể kết cấu không được xấu logic | nhiều tầng 、tầng lần phútdẫn 、giữa thức dạng chép logicthống 1  |
+| ánh hiệu  | chỉ đều Bối cảnhthêmtrong thức ánh kèm ，ánh hiệu sát không 、không xấu phục ，không ；phong Bối cảnhkhông dẫn đường kiếm hàm  | đều Bối cảnhtrong ánh kèm 、sát ánh hiệu 、không 、phục tự hợp  |
 
-### 男性服饰矩阵（双场景全覆盖）
+### nam phục （đôi Bối cảnhtoàn ）
 
-| 体系 | 风格 | 适用场景 | 提示词 |
+| thể dòng  | Phong cách | hàm Bối cảnh | Prompt |
 |---|---|---|---|
-| 古风体系 | 文人士子装 | 古风日常、书房、雅集、出行 | 古风文人士子装、长衫形制、立领斜襟、丝绸棉麻质感、传统纹样刺绣 |
-| 古风体系 | 武将劲装 | 古风战斗、练武、行动场景 | 古风武将劲装、战袍形制、立领收腰、耐磨面料、利落干练 |
-| 古风体系 | 朝服礼服 | 古风朝堂、典礼、盛典 | 古风朝服、正式礼服形制、大袖宽袍、华贵面料、传统纹样 |
-| 古风体系 | 常服便装 | 古风休闲、私密、日常出行 | 古风常服便装、简约风格、舒适面料、中式立领、宽松得体 |
-| 古风体系 | 大典礼服 | 古风正式、庆典、重要场合 | 古风大典礼服、华贵精致、中式礼服形制、高级面料、金线刺绣 |
-| 都市赛博体系 | 国风商务通勤装 | 都市日常、通勤、商务会议 | 国风商务通勤装、中式立领唐装基底、改良西装剪裁、高级哑光面料、极简中式纹样、利落得体 |
-| 都市赛博体系 | 国风机能休闲装 | 都市日常、休闲出行、轻机能场景 | 国风机能休闲装、中式斜襟短衫、机能面料拼接、磁吸盘扣、宽松舒适、日常百搭 |
-| 都市赛博体系 | 武将机能劲装 | 都市行动、任务、夜行场景 | 国风武将机能劲装、中式战袍基底、哑光机能面料、立体防护结构、立领收腰、利落干练 |
-| 都市赛博体系 | 国风盛典礼服 | 都市全息盛典、正式场合、大婚 | 国风盛典礼服、中式礼服核心形制、华贵面料、钛合金结构点缀、传统纹样与电路暗纹融合 |
+| phong thể dòng  | tài người | phong ngày thường 、、tập 、ra thi  | phong tài người、dài dạng chép 、lập 、、truyền thống kiểu  |
+| phong thể dòng  |  | phong 、、thi động Bối cảnh | phong 、dạng chép 、lập nhận 、mặt 、 |
+| phong thể dòng  | phục phục  | phong 、、 | phong phục 、chính thức phục dạng chép 、lớn rộng 、mặt 、truyền thống kiểu  |
+| phong thể dòng  | thường phục  | phong 、mật 、ngày thường ra thi  | phong thường phục 、Phong cách、mặt 、giữa thức lập 、rộng được thể  |
+| phong thể dòng  | lớn phục  | phong chính thức 、、trùng cần trường hợp  | phong lớn phục 、、giữa thức phục dạng chép 、cao cấp mặt 、đường  |
+| đều thể dòng  | phong cấp vụ thông  | đều ngày thường 、thông 、cấp vụ sẽ thức  | phong cấp vụ thông 、giữa thức lập cơ sở 、sửa 、cao cấp ánh mặt 、giữa thức kiểu 、được thể  |
+| đều thể dòng  | phong máy thể  | đều ngày thường 、ra thi 、máy thể Bối cảnh | phong máy thể 、giữa thức ngắn 、máy thể mặt ghép tiếp 、đĩa 、rộng 、ngày thường trăm  |
+| đều thể dòng  | máy thể  | đều thi động 、tác vụ 、thi Bối cảnh | phong máy thể 、giữa thức cơ sở 、ánh máy thể mặt 、lập thể kết cấu 、lập nhận 、 |
+| đều thể dòng  | phong phục  | đều toàn 、chính thức trường hợp 、lớn  | phong phục 、giữa thức phục dạng chép 、mặt 、hợp kết cấu điểm tố 、truyền thống kiểu đường hợp  |
 
 ---
 
-## 六、配饰约束（L5·双场景适配）
+## 6、nối （L5·đôi Bối cảnhnối ）
 
-### 女性配饰（双场景分体系）
+### nữ nối （đôi Bối cảnhphútthể dòng ）
 
-| 体系 | 类型 | 约束 | 提示词 |
+| thể dòng  | Loại |  | Prompt |
 |---|---|---|---|
-| 古风体系 | 头饰 | 华丽精致、不单薄、纯中式传统材质，与发型服饰配套 | 华丽头饰、珠翠满头、金银发簪、玉石步摇、精细雕刻 |
-| 古风体系 | 耳饰 | 传统垂坠流苏/玉珰，与整体风格统一 | 流苏耳环、玉珰垂坠、玉石耳饰、金银镶嵌 |
-| 古风体系 | 项饰 | 传统璎珞/项圈，中式传统形制 | 璎珞华美、精致项圈、金银玉石镶嵌 |
-| 古风体系 | 腰饰 | 传统宫绦/玉佩，中式传统工艺 | 宫绦飘逸、腰间玉佩、玉石禁步、精致编织 |
-| 古风体系 | 手饰 | 传统玉镯/臂钏，中式传统形制 | 玉镯通透、臂钏精致、金银玉石材质 |
-| 都市赛博体系 | 头饰 | 国风形制为核心、传统材质+赛博机能材质融合，与发型服饰配套，光效可控 | 国风赛博头饰、珠翠玉石+钛合金机能件、可控微霓虹光带、全息投影点缀、精致工艺 |
-| 都市赛博体系 | 耳饰 | 传统玉珰+赛博机能耳坠融合，光感流苏可控不夸张 | 国风机能耳坠、玉石镶嵌+钛合金材质、可控微霓虹光感流苏、精致小巧 |
-| 都市赛博体系 | 项饰 | 传统璎珞+机能项圈融合，中式形制为核心 | 国风机能项圈、璎珞结构+钛合金材质、内嵌可控微光、精致贴合 |
-| 都市赛博体系 | 腰饰 | 传统宫绦/玉佩+机能腰封融合，磁吸卡扣、立体结构 | 国风机能腰封、宽腰封+宫绦拼接、腰间玉佩、钛合金磁吸卡扣、质感分明 |
-| 都市赛博体系 | 手饰 | 传统玉镯+机能手环融合，中式形制为核心，无夸张设计 | 国风机能手环、通透玉镯+钛合金材质、可控微光、精致贴合 |
+| phong thể dòng  | đầu  | 、không đơn mỏng 、thuần giữa thức truyền thống ，phát kiểu phục nối  | đầu 、đầy đầu 、phát 、bước 、 |
+| phong thể dòng  |  | truyền thống /，chỉnh thể Phong cáchthống 1  | 、、、 |
+| phong thể dòng  |  | truyền thống /，giữa thức truyền thống dạng chép  | đẹp 、、 |
+| phong thể dòng  |  | truyền thống /，giữa thức truyền thống  | 、gian 、bước 、chỉnh  |
+| phong thể dòng  | tay  | truyền thống /，giữa thức truyền thống dạng chép  | thông 、、 |
+| đều thể dòng  | đầu  | phong dạng chép 、truyền thống +máy thể hợp ，phát kiểu phục nối ，ánh hiệu sát  | phong đầu 、+hợp máy thể tệp 、sát ánh kèm 、toàn sáng điểm tố 、 |
+| đều thể dòng  |  | truyền thống +máy thể hợp ，ánh sát không bức  | phong máy thể 、+hợp 、sát ánh 、nhỏ  |
+| đều thể dòng  |  | truyền thống +máy thể hợp ，giữa thức dạng chép  | phong máy thể 、kết cấu +hợp 、trong sát ánh 、hợp  |
+| đều thể dòng  |  | truyền thống /+máy thể hợp ，、lập thể kết cấu  | phong máy thể 、rộng +ghép tiếp 、gian 、hợp 、phútdẫn  |
+| đều thể dòng  | tay  | truyền thống +máy thể tay hợp ，giữa thức dạng chép ，không bức thiết tính  | phong máy thể tay 、thông +hợp 、sát ánh 、hợp  |
 
-### 男性配饰（双场景分体系）
+### nam nối （đôi Bối cảnhphútthể dòng ）
 
-| 体系 | 类型 | 约束 | 提示词 |
+| thể dòng  | Loại |  | Prompt |
 |---|---|---|---|
-| 古风体系 | 发冠 | 传统玉冠/金冠、精致工艺、中式传统形制，与发型服饰配套 | 玉冠束发、金冠束发、玉石雕刻、精致工艺 |
-| 古风体系 | 腰封 | 传统宽腰封/革带、中式传统形制、质感分明 | 宽腰封、皮质革带、玉石带钩、质感分明 |
-| 古风体系 | 玉佩 | 传统通透温润玉佩、中式传统工艺，腰间佩戴 | 腰间玉佩、通透温润、和田玉质、精致雕刻 |
-| 古风体系 | 腰间配饰 | 佩剑/扇/笛仅限腰间固定配饰，**禁止手持道具**，中式传统形制 | 腰间佩剑固定配饰、折扇腰挂、竹笛腰饰、无手持交互 |
-| 都市赛博体系 | 发冠 | 传统玉冠形制+钛合金机能材质、哑光工艺、精致建模，与发型服饰配套 | 国风机能发冠、中式冠饰基底、哑光钛合金材质、玉石镶嵌、精致工艺 |
-| 都市赛博体系 | 腰封 | 传统宽腰封形制+机能结构、磁吸卡扣、立体剪裁、质感分明 | 国风机能腰封、中式腰封基底、哑光机能面料、钛合金磁吸卡扣、立体结构 |
-| 都市赛博体系 | 玉佩 | 传统玉石形制+亚克力光感材质、通透温润、可控微光，腰间佩戴 | 国风光感玉佩、传统形制、亚克力+玉石材质、通透温润、可控微光 |
-| 都市赛博体系 | 腰间配饰 | 传统形制+机能材质，仅限腰间固定配饰，**禁止手持道具** | 腰间机能佩剑固定配饰、钛合金折扇腰挂、无手持交互 |
+| phong thể dòng  | phát  | truyền thống /、、giữa thức truyền thống dạng chép ，phát kiểu phục nối  | phát 、phát 、、 |
+| phong thể dòng  |  | truyền thống rộng /kèm 、giữa thức truyền thống dạng chép 、phútdẫn  | rộng 、kèm 、kèm hook 、phútdẫn  |
+| phong thể dòng  |  | truyền thống thông 、giữa thức truyền thống ，gian  | gian 、thông 、 và 、 |
+| phong thể dòng  | gian nối  | //chỉ hạn gian nối nối ，**Nghiêm cấmtay giữ Đạo cụ**，giữa thức truyền thống dạng chép  | gian nối nối 、、、không tay giữ tác vụ  |
+| đều thể dòng  | phát  | truyền thống dạng chép +hợp máy thể 、ánh 、tạo mô ，phát kiểu phục nối  | phong máy thể phát 、giữa thức cơ sở 、ánh hợp 、、 |
+| đều thể dòng  |  | truyền thống rộng dạng chép +máy thể kết cấu 、、lập thể 、phútdẫn  | phong máy thể 、giữa thức cơ sở 、ánh máy thể mặt 、hợp 、lập thể kết cấu  |
+| đều thể dòng  |  | truyền thống dạng chép +lực ánh 、thông 、sát ánh ，gian  | phong ánh 、truyền thống dạng chép 、lực +、thông 、sát ánh  |
+| đều thể dòng  | gian nối  | truyền thống dạng chép +máy thể ，chỉ hạn gian nối nối ，**Nghiêm cấmtay giữ Đạo cụ** | gian máy thể nối nối 、hợp 、không tay giữ tác vụ  |
 
 ---
 
-## 七、服化组合速查（双场景全场景覆盖）
+## 7、phục hóa nhóm hợp tra （đôi Bối cảnhtoàn Bối cảnh）
 
-| 体系 | 场景 | 妆容 | 发型 | 服饰 | 配饰 |
+| thể dòng  | Bối cảnh | dung  | phát kiểu  | phục  | nối  |
 |---|---|---|---|---|---|
-| 古风体系 | 闺中日常 | 清雅素妆 | 披发/半扎发 | 古风日常长裙 | 中等（传统简约配饰） |
-| 古风体系 | 初次相遇/雅集 | 清雅素妆 | 半扎发/堕马髻 | 古风日常长裙 | 中偏多（精致传统配饰） |
-| 古风体系 | 浪漫互动 | 浪漫桃花妆 | 半扎发/堕马髻 | 古风日常长裙/轻便常服 | 中等 |
-| 古风体系 | 宫廷盛典正式亮相 | 宫廷贵气妆 | 高髻云鬓 | 古风宫廷礼服 | 极繁（传统华贵配饰） |
-| 古风体系 | 夜间私密 | 清雅/桃花妆 | 披发/堕马髻 | 古风寝衣 | 极简（无多余配饰） |
-| 古风体系 | 大婚典礼 | 大婚盛妆 | 高髻云鬓 | 古风大婚嫁衣 | 极繁（凤冠霞帔全套配饰） |
-| 古风体系 | 习武/行动 | 素妆（极淡） | 束发高马尾 | 古风轻便常服/武将劲装 | 简（仅基础固定配饰） |
-| 都市赛博体系 | 都市通勤日常 | 都市通勤妆 | 国风半扎低马尾 | 国风通勤常服 | 中低（极简国风机能配饰） |
-| 都市赛博体系 | 都市商务正式场合 | 都市商务妆 | 国风机能半冠束发 | 国风商务礼服 | 中等（低调华贵国风机能配饰） |
-| 都市赛博体系 | 都市全息盛典亮相 | 宫廷贵气妆/赛博流光妆 | 国风高束机能髻 | 国风赛博盛典礼服 | 极繁（国风+赛博融合华贵配饰） |
-| 都市赛博体系 | 都市夜行/机能任务 | 机能冷调妆 | 国风高马尾 | 轻机能国风常服/武将机能劲装 | 简（仅机能固定配饰） |
-| 都市赛博体系 | 都市休闲约会 | 浪漫桃花妆/赛博流光妆 | 国风半机械编发 | 国风通勤常服/轻机能常服 | 中等（微光感国风配饰） |
-| 都市赛博体系 | 夜间私密场景 | 清雅素妆 | 披发/低马尾 | 国风机能寝衣 | 极简（无多余配饰） |
-| 都市赛博体系 | 都市大婚典礼 | 大婚盛妆 | 国风高束机能髻 | 国风赛博大婚礼服 | 极繁（国风+赛博融合全套配饰） |
+| phong thể dòng  | giữa ngày thường  | sạch  | phát /nửa phát  | phong ngày thường dài  | giữa （truyền thống nối ） |
+| phong thể dòng  | lần /tập  | sạch  | nửa phát / | phong ngày thường dài  | giữa nhiều （truyền thống nối ） |
+| phong thể dòng  | động  |  | nửa phát / | phong ngày thường dài /thường phục  | giữa  |
+| phong thể dòng  | chính thức  |  | cao  | phong phục  | （truyền thống nối ） |
+| phong thể dòng  | gian mật  | sạch / | phát / | phong  | （không nhiều nối ） |
+| phong thể dòng  | lớn  | lớn  | cao  | phong lớn  | （toàn nối ） |
+| phong thể dòng  | /thi động  | （） | phát cao đuôi  | phong thường phục / | （chỉ cơ sở nối nối ） |
+| đều thể dòng  | đều thông ngày thường  | đều thông  | phong nửa thấp đuôi  | phong thông thường phục  | giữa thấp （phong máy thể nối ） |
+| đều thể dòng  | đều cấp vụ chính thức trường hợp  | đều cấp vụ  | phong máy thể nửa phát  | phong cấp vụ phục  | giữa （thấp gọi phong máy thể nối ） |
+| đều thể dòng  | đều toàn  | /ánh  | phong cao máy thể  | phong phục  | （phong +hợp nối ） |
+| đều thể dòng  | đều thi /máy thể tác vụ  | máy thể gọi  | phong cao đuôi  | máy thể phong thường phục /máy thể  | （chỉ máy thể nối nối ） |
+| đều thể dòng  | đều sẽ  | /ánh  | phong nửa máy chỉnh phát  | phong thông thường phục /máy thể thường phục  | giữa （ánh phong nối ） |
+| đều thể dòng  | gian mật Bối cảnh | sạch  | phát /thấp đuôi  | phong máy thể  | （không nhiều nối ） |
+| đều thể dòng  | đều lớn  | lớn  | phong cao máy thể  | phong lớn phục  | （phong +hợp toàn nối ） |
 
 ---
 
-> **🔍 未覆盖场景推断规则（双场景通用）**
+> **🔍 chưa Bối cảnhkhuyến （đôi Bối cảnhthông hàm ）**
 >
-> 当用户描述的场景/情境不在上表时，根据本风格核心基因自行推断，**先锁定古风/都市场景体系，再匹配对应维度规则**：
+> khi hàm dùng Mô tả của Bối cảnh/tình không ở trên bảng ，dựa theosách Phong cáchcơ sở tự thi khuyến ，**trước nối phong /đều Bối cảnhthể dòng ，khớpđúng hồi độ **：
 >
-> | 推断维度 | 古风体系核心基因 | 都市赛博体系核心基因 |
+> | khuyến độ  | phong thể dòng cơ sở  | đều thể dòng cơ sở  |
 > |---|---|---|
-> | 妆容强度 | 默认清雅素妆；宫廷/权力/正式→宫廷贵气妆；心动/甜宠→浪漫桃花妆；大婚/典礼→大婚盛妆；节日聚会→节日庆典妆 | 默认都市通勤妆；商务/正式→都市商务妆；心动/甜宠→浪漫桃花妆；盛典/大婚→宫廷贵气妆；赛博/机能/夜行→赛博流光妆/机能冷调妆 |
-> | 发型 | 日常/闺中→半扎发或堕马髻；宫廷/正式/盛典→高髻云鬓；私密/夜晚→披发；习武/行动→束发高马尾 | 日常/通勤→半扎低马尾；商务/正式→机能半冠束发；盛典/大婚→高束机能髻；私密/夜晚→披发/低马尾；机能/行动→高马尾 |
-> | 服饰 | 中式传统形制为绝对核心；情感场景→飘逸襦裙长裙；权力/正式→宫廷礼服；行动→轻便常服；PBR材质始终锁定；纯中式传统纹样为默认 | 中式核心形制为绝对基底；日常/通勤→国风通勤常服；商务/正式→国风商务礼服；行动/机能→轻机能常服；PBR材质始终锁定；传统纹样与电路纹理融合为默认 |
-> | 配饰繁度 | 日常→中等；正式/宫廷→极繁；私密→极简；行动→简；纯传统中式配饰为核心 | 日常→中低；商务/盛典→极繁；私密→极简；行动→简；国风+赛博融合配饰为核心，光效可控 |
-> | 质感基准 | PBR材质+电影级柔光始终锁定；体积感与光泽感优先于平面装饰感；无赛博光效（无明确线索禁用） | PBR材质+电影级光影始终锁定；体积感与光泽感优先于平面装饰感；赛博光效为内嵌可控微霓虹，禁止过曝；国风与赛博元素深度融合，无割裂感 |
+> | dung độ  | Mặc địnhsạch ；/thực lực /chính thức →；động /→；lớn /→lớn ；tiết ngày sẽ →tiết ngày  | Mặc địnhđều thông ；cấp vụ /chính thức →đều cấp vụ ；động /→；/lớn →；/máy thể /thi →ánh /máy thể gọi  |
+> | phát kiểu  | ngày thường /giữa →nửa phát hoặc ；/chính thức /→cao ；mật /Ban đêm→phát ；/thi động →phát cao đuôi  | ngày thường /thông →nửa thấp đuôi ；cấp vụ /chính thức →máy thể nửa phát ；/lớn →cao máy thể ；mật /Ban đêm→phát /thấp đuôi ；máy thể /thi động →cao đuôi  |
+> | phục  | giữa thức truyền thống dạng chép đúng ；tình Bối cảnh→dài ；thực lực /chính thức →phục ；thi động →thường phục ；PBRban đầu nối ；thuần giữa thức truyền thống kiểu Mặc định | giữa thức dạng chép đúng cơ sở ；ngày thường /thông →phong thông thường phục ；cấp vụ /chính thức →phong cấp vụ phục ；thi động /máy thể →máy thể thường phục ；PBRban đầu nối ；truyền thống kiểu đường lý hợp Mặc định |
+> | nối độ  | ngày thường →giữa ；chính thức /→；mật →；thi động →；thuần truyền thống giữa thức nối  | ngày thường →giữa thấp ；cấp vụ /→；mật →；thi động →；phong +hợp nối ，ánh hiệu sát  |
+> | cơ sở  | PBR+sáng cấp ánh ban đầu nối ；thể ánh trước với mặt ；không ánh hiệu （không dẫn đường kiếm hàm ） | PBR+sáng cấp Ánh sángban đầu nối ；thể ánh trước với mặt ；ánh hiệu trong sát ，Nghiêm cấm；phong độ hợp ，không rời  |
 
-## 八、四视图设定图规范（双场景通用·3D渲染标准统一）
+## 8、4video ảnh thiết nối ảnh （đôi Bối cảnhthông hàm ·3Dbiểu thống 1 ）
 
-> 衍生服化叠加后仍需输出四视图设定图，确保服化妆造、纹样、赛博光效、结构件在各角度的完全一致性，古风/都市场景通用。
+> sinh phục hóa cộng sau cần tải ra 4video ảnh thiết nối ảnh ，lưu phục hóa tạo 、kiểu 、ánh hiệu 、kết cấu tệp ở các nhân độ  của toàn 1 ，phong /đều Bối cảnhthông hàm 。
 
-### 视图定义
+### video ảnh nối nghĩa 
 
-| 位置 | 视图 | 角度 | 景别 | 要求 | 提示词 |
+| vị trí trí  | video ảnh  | nhân độ  | Cỡ cảnh | Yêu cầu | Prompt |
 |---|---|---|---|---|---|
-| 左一 | 人像特写 | 正面平视 | 面部至锁骨 | 面部占60%+，五官/妆容/妆效细节100%清晰 | portrait closeup、face detail、makeup detail |
-| 左二 | 正视图 | 正面 0° | 全身立像 | 面对镜头、服饰正面全貌、结构/纹样/光带位置清晰 | front view、height mark、costume detail |
-| 右二 | 侧视图 | 右侧 90° | 全身立像 | 纯侧面轮廓、服饰侧面层次、结构侧面形态清晰 | side view、profile、height mark、costume profile detail |
-| 右一 | 后视图 | 后方 180° | 全身立像 | 后脑发饰/背部服饰/发尾/背部结构清晰 | back view、rear view、height mark、rear costume detail |
+| trái 1  | ngườiĐặc tả (close-up) | chính mặt video  | mặt bộ đến  | mặt bộ 60%+，5/dung /hiệu tiết 100%sạch  | portrait closeup、face detail、makeup detail |
+| trái 2 | chính video ảnh  | chính mặt  0° | toàn lập  | mặt đúng Ống kính、phục chính mặt toàn 、kết cấu /kiểu /ánh kèm vị trí trí sạch  | front view、height mark、costume detail |
+| phải 2 | video ảnh  | phải  90° | toàn lập  | thuần mặt 、phục mặt tầng lần 、kết cấu mặt dạng thái sạch  | side view、profile、height mark、costume profile detail |
+| phải 1  | sau video ảnh  | sau phương  180° | toàn lập  | sau phát /bộ phục /phát đuôi /bộ kết cấu sạch  | back view、rear view、height mark、rear costume detail |
 
-### 画面规范（双场景通用·不可突破）
+### vẽ mặt （đôi Bối cảnhthông hàm ·không ）
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面从左至右并排四视图，古风/都市场景通用布局 |
-| 背景 | 素灰纯色 #B8B8B8，**禁止添加任何场景/环境/天气元素**，古风/都市场景通用 |
-| 站姿 | 自然站立、双脚平行微分、双臂自然下垂或微展（**禁止任何姿态变化**），古风/都市场景通用 |
-| 表情 | 符合妆容风格的微表情，仅限面部微表情，不涉及肢体动作，古风/都市场景通用 |
-| 光线 | 通用标准：均匀柔光，前方主光 + 双侧补光，无硬阴影；都市赛博场景可加可控自发光反射，不破坏整体光影统一，无过曝 |
-| 一致性 | 四视图的面容/妆容/发型/发饰/服饰/配饰/纹样/光效/结构件完全一致，无任何偏差 |
-| 画面比例 | 建议 4:1 或 3:1，古风/都市场景通用 |
-| 3D标准 | 全场景统一高精度建模、PBR材质、8K超高清、电影级渲染，古风/都市场景无质感差异 |
+| cục  | cùng 1 vẽ mặt từ trái đến phải nhất sắp 4video ảnh ，phong /đều Bối cảnhthông hàm cục  |
+| bối  | thuần vật  #B8B8B8，**Nghiêm cấmthêmBối cảnh//ngày**，phong /đều Bối cảnhthông hàm  |
+| trạm  | tự trạm lập 、đôi thi phút、đôi tự dưới hoặc （**Nghiêm cấmthái hóa **），phong /đều Bối cảnhthông hàm  |
+| bảng tình  | hợp dung Phong cách của bảng tình ，chỉ hạn mặt bộ bảng tình ，không thể động tác vụ ，phong /đều Bối cảnhthông hàm  |
+| ánh đường  | thông hàm biểu ：ánh ，trước phương chính ánh  + đôi bổ ánh ，không sáng ；đều Bối cảnhcộng sát tự phát ánh phụ ，không xấu chỉnh thể Ánh sángthống 1 ，không  |
+| 1  | 4video ảnh  của mặt dung /dung /phát kiểu /phát /phục /nối /kiểu /ánh hiệu /kết cấu tệp toàn 1 ，không  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 4:1 hoặc  3:1，phong /đều Bối cảnhthông hàm  |
+| 3Dbiểu  | toàn Bối cảnhthống 1 cao độ tạo mô 、PBR、8Kvượt cao sạch 、sáng cấp ，phong /đều Bối cảnhkhông bất  |
 
 ---
 
-## 九、提示词模板（双场景一键适配·3D国风赛博专用）
+## 9、Promptmô （đôi Bối cảnh1 nối ·3Dphong riêng hàm ）
 
-### 输出格式约束（双场景通用·铁则）
+### Định Dạng Đầu Ra（đôi Bối cảnhthông hàm ·）
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 输出内容 | **仅输出提示词文本**，不输出任何其他内容 |
-| 禁止输出 | 速查表、分层构建方案、视觉约束表、禁止事项表、衍生方案、输出建议、核心要素表等一切非提示词内容 |
-| 禁止场景 | 人物衍生资产**不包含场景/环境描述**，不输出任何场景/环境/天气/背景叙事内容（场景属于场景资产范畴） |
-| 禁止道具 | **不包含任何道具交互**，不输出伞/剑/扇/书/灯笼/酒杯等手持物或交互物（道具属于道具资产范畴） |
-| 禁止姿态变化 | **不改变底模姿态**，不输出行走/回眸/举手/侧身/奔跑等任何动作或体态变化，保持自然站立 |
-| 格式 | 直接输出可用的提示词代码块，无需标题、表格、解释、方案对比 |
+| tải ra nội dung | **chỉ tải ra Prompttài sách **，không tải ra anh ấynội dung |
+| Nghiêm cấmtải ra  | tra bảng 、phúttầng cấu tạo phương 、trực quanbảng 、Nghiêm cấmviệc bảng 、sinh phương 、tải ra Khuyến nghị、cần bảng 1 phi Promptnội dung |
+| Nghiêm cấmBối cảnh | ngườisinh Tài nguyên**không gói Bối cảnh/Mô tả**，không tải ra Bối cảnh//ngày/bối việc nội dung（Bối cảnhbiệt với Bối cảnhTài nguyên） |
+| Nghiêm cấmĐạo cụ | **không gói Đạo cụtác vụ **，không tải ra /////tay giữ hoặc tác vụ （Đạo cụbiệt với Đạo cụTài nguyên） |
+| Nghiêm cấmthái hóa  | **không sửa mô thái **，không tải ra thi chạy /trả /tay //động tác vụ hoặc thể thái hóa ，lưu giữ tự trạm lập  |
+| khung thức  | trực tiếp tải ra hàm  của Promptmã ，không cần biểu đề 、bảng khung 、giải 、phương đúng tỷ  |
 
-### 完整服化叠加（四视图·双场景一键适配）
+### chỉnh phục hóa cộng （4video ảnh ·đôi Bối cảnh1 nối ）
 
 ```
-以角色基础形象图为底图，img2img叠加服化妆造，
-3D国风赛博风格，{场景体系：古风/都市赛博}，高精度建模，PBR材质，中式美学核心，{古风轻量融合/都市机能融合}，电影级光影，
-国风赛博{性别}角色四视图设定图，3D渲染，高精建模，8K，超保真
+Nhân vậtcơ sở dạng tượng ảnh ảnh ，img2imgcộng phục hóa tạo ，
+3Dphong Phong cách，{Bối cảnhthể dòng ：phong /đều }，cao độ tạo mô ，PBR，giữa thức đẹp ，{phong lượng hợp /đều máy thể hợp }，sáng cấp Ánh sáng，
+phong {khác }Nhân vật4video ảnh thiết nối ảnh ，3D，cao tạo mô ，8K，vượt lưu thật 
 character design sheet, character turnaround,
-保持基础形象面容完全一致、自然站立姿态不变，{整体气质},
-【L1·妆容】根据用户线索决策：{基础妆/轻妆/正式妆/都市通勤妆/商务妆/赛博机能妆}；使用 {妆容风格}, PBR材质渲染, {眉妆}, {眼妆}, {唇妆}, {可控微霓虹光效/贴肤电路暗纹（按需添加）},
-【L2·发型】{造型类型}, 高精度发丝清晰, {发饰描述}, 国风形制核心,
-【L3+L4·服饰】{主色}{款式}, {材质}, {装饰工艺}, {传统纹样/传统纹样与电路纹理融合}, 衣服质感清晰, PBR材质渲染, {内嵌可控微霓虹光带（按需添加）},
-【L5·配饰】{头饰}, {耳饰}, {项饰}, {腰饰}, {手饰}, 国风形制核心, 与服化风格统一,
-同一画面左至右并排：人像特写+正视图+侧视图+后视图,
-自然站立, 素灰纯色背景, 均匀柔光, 无硬阴影, {赛博光效可控不刺眼（按需添加）},
-四视图面容/妆容/发型/服饰/配饰/纹样/光效完全一致, 3D国风赛博建模清晰, 高精度建模清晰,
-图中不要有任何文字
+lưu giữ cơ sở dạng tượng mặt dung toàn 1 、tự trạm lập thái không ，{chỉnh thể },
+【L1·dung 】dựa theohàm dùng đường kiếm quyết định：{cơ sở //chính thức /đều thông /cấp vụ /máy thể }；hàm  {dung Phong cách}, PBR, {}, {}, {}, {sát ánh hiệu /đường （theo cần thêm）},
+【L2·phát kiểu 】{tạo kiểu Loại}, cao độ phát sạch , {phát Mô tả}, phong dạng chép ,
+【L3+L4·phục 】{chính vật }{thức }, {}, {}, {truyền thống kiểu /truyền thống kiểu đường lý hợp }, phục sạch , PBR, {trong sát ánh kèm （theo cần thêm）},
+【L5·nối 】{đầu }, {}, {}, {}, {tay }, phong dạng chép , phục hóa Phong cáchthống 1 ,
+cùng 1 vẽ mặt trái đến phải nhất sắp ：ngườiĐặc tả (close-up)+chính video ảnh +video ảnh +sau video ảnh ,
+tự trạm lập , thuần vật bối , ánh , không sáng , {ánh hiệu sát không （theo cần thêm）},
+4video ảnh mặt dung /dung /phát kiểu /phục /nối /kiểu /ánh hiệu toàn 1 , 3Dphong tạo mô sạch , cao độ tạo mô sạch ,
+ảnh giữa không cần có tài chữ 
 ```
 
 ---
 
-## 十、约束规则（双场景通用·必守+严禁铁则）
+## 10、（đôi Bối cảnhthông hàm ·bắt +）
 
-### 必守规则（100%执行，无例外）
+### bắt （100%thực thi，không lệ ngoài ）
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 叠加后面容必须与底模完全一致，禁止任何五官偏移、变形、风格化篡改 |
-| R2 | 服饰必须用「衣服质感清晰 + PBR材质渲染」，赛博元素不得破坏服饰基础质感与国风核心形制 |
-| R3 | 全场景必须以中式国风形制为绝对核心，古风场景纯传统国风，都市场景国风基底不可丢失，禁止无国风内核的纯西式设计 |
-| R4 | 妆容/发型/服饰/配饰/赛博元素风格完全统一，禁止国风与赛博元素割裂对立 |
-| R5 | 必须输出四视图设定图（人像特写+正视图+侧视图+后视图），古风/都市场景通用 |
-| R6 | 必须指定「素灰纯色背景」，禁止添加任何场景/环境/天气元素，古风/都市场景通用 |
-| R7 | 必须指定「四视图一致性」，所有服化、纹样、赛博光效、结构件在四视图中完全统一 |
-| R8 | **仅输出提示词**——禁止输出速查表/分层方案/视觉约束/禁止事项/衍生方案/输出建议等任何非提示词内容 |
-| R9 | **禁止包含场景描述**——人物衍生资产不涉及场景/环境/天气/背景叙事，场景属于独立资产类型 |
-| R10 | **禁止道具交互**——不包含任何手持物/交互物（伞/剑/扇/书等），道具属于独立资产类型，腰间固定配饰除外 |
-| R11 | **姿态保持不变**——必须保持底模自然站立姿态，禁止任何动作/体态/姿势变化 |
-| R12 | **L1 必须先分析再决策**——先解析用户场景线索、面部线索、风格线索，再匹配对应体系，确定妆容档位 |
-| R13 | **所有衍生资产均需妆造**——正常情况不保持素颜，至少使用基础妆 |
-| R14 | **上妆强度受控**——即使上妆也需克制，不得出现现代浓妆/夸张彩妆/过曝赛博光效 |
-| R15 | **道具/场景/动作不作强度升级依据**——仅凭道具，环境，动作等信息不得把基础妆抬高为更强妆容 |
-| R16 | **双场景适配规则**——无明确赛博/都市线索时，默认兼容纯古风生成；有明确线索时，匹配都市赛博体系，不得擅自切换 |
-| R17 | **赛博元素严格受控**——仅都市赛博体系可使用赛博光效/机能元素，古风场景无明确线索禁用；所有赛博元素必须与国风深度融合，禁止割裂 |
-| R18 | **赛博元素仅限服化范畴**——机能结构件、光效元素仅限服化配饰层级，不得改变底模的五官、肢体结构与基础体态 |
-| R19 | **3D质感全场景统一**——古风/都市场景必须保持统一的高精度建模、PBR材质、电影级光影标准，不得出现质感降级 |
+| R1 | cộng sau mặt dung Bắt buộcmô toàn 1 ，Nghiêm cấm5、dạng 、Phong cáchhóa sửa  |
+| R2 | phục Bắt buộchàm 「phục sạch  + PBR」，không được xấu phục cơ sở phong dạng chép  |
+| R3 | toàn Bối cảnhBắt buộcgiữa thức phong dạng chép đúng ，phong Bối cảnhthuần truyền thống phong ，đều Bối cảnhphong cơ sở không thất ，Nghiêm cấmkhông phong trong  của thuần thức thiết tính  |
+| R4 | dung /phát kiểu /phục /nối /Phong cáchtoàn thống 1 ，Nghiêm cấmphong rời đúng lập  |
+| R5 | Bắt buộctải ra 4video ảnh thiết nối ảnh （ngườiĐặc tả (close-up)+chính video ảnh +video ảnh +sau video ảnh ），phong /đều Bối cảnhthông hàm  |
+| R6 | Bắt buộcnối 「thuần vật bối 」，Nghiêm cấmthêmBối cảnh//ngày，phong /đều Bối cảnhthông hàm  |
+| R7 | Bắt buộcnối 「4video ảnh 1 」，tất cảphục hóa 、kiểu 、ánh hiệu 、kết cấu tệp ở 4video ảnh giữa toàn thống 1  |
+| R8 | **chỉ tải ra Prompt**——Nghiêm cấmtải ra tra bảng /phúttầng phương /trực quan/Nghiêm cấmviệc /sinh phương /tải ra Khuyến nghịphi Promptnội dung |
+| R9 | **Nghiêm cấmgói Bối cảnhMô tả**——ngườisinh Tài nguyênkhông Bối cảnh//ngày/bối việc ，Bối cảnhbiệt với lập Tài nguyênLoại |
+| R10 | **Nghiêm cấmĐạo cụtác vụ **——không gói tay giữ /tác vụ （///），Đạo cụbiệt với lập Tài nguyênLoại，gian nối nối bỏ ngoài  |
+| R11 | **thái lưu giữ không **——Bắt buộclưu giữ mô tự trạm lập thái ，Nghiêm cấmđộng tác vụ /thể thái /hóa  |
+| R12 | **L1 Bắt buộctrước phúttích quyết định**——trước giải tích hàm dùng Bối cảnhđường kiếm 、mặt bộ đường kiếm 、Phong cáchđường kiếm ，khớpđúng hồi thể dòng ，nối dung liệu vị trí  |
+| R13 | **tất cảsinh Tài nguyêncần tạo **——chính thường tình huống không lưu giữ ，đến ít hàm cơ sở  |
+| R14 | **trên độ sát **——trên cũng cần chép ，không được ra /bức /ánh hiệu  |
+| R15 | **Đạo cụ/Bối cảnh/động tác vụ không tác vụ độ cấp phụ liệu **——chỉ Đạo cụ，，động tác vụ thông tinkhông được đem cơ sở cao đổi dung  |
+| R16 | **đôi Bối cảnhnối **——không dẫn /đều đường kiếm ，Mặc địnhdung thuần phong tạo；có dẫn đường kiếm ，khớpđều thể dòng ，không được tự đổi  |
+| R17 | **khung sát **——chỉ đều thể dòng hàm ánh hiệu /máy thể ，phong Bối cảnhkhông dẫn đường kiếm hàm ；tất cảBắt buộcphong độ hợp ，Nghiêm cấmrời  |
+| R18 | **chỉ hạn phục hóa **——máy thể kết cấu tệp 、ánh hiệu chỉ hạn phục hóa nối tầng cấp ，không được sửa mô  của 5、thể kết cấu cơ sở thể thái  |
+| R19 | **3Dtoàn Bối cảnhthống 1 **——phong /đều Bối cảnhBắt buộclưu giữ thống 1  của cao độ tạo mô 、PBR、sáng cấp Ánh sángbiểu ，không được ra cấp  |
 
-### 严禁规则（100%禁止，无例外）
+### （100%Nghiêm cấm，không lệ ngoài ）
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 叠加后面容偏移、五官变形、与底模不一致 |
-| X2 | 服饰丢失国风核心形制，出现无中式内核的纯西式西装、纯机能服、纯西式赛博朋克设计 |
-| X3 | 妆容/服饰/赛博元素风格互相冲突、出现割裂感，国风与赛博元素对立 |
-| X4 | 复杂场景背景（必须纯色），禁止添加任何环境/场景/天气元素 |
-| X5 | 四视图间服化妆造、纹样、赛博光效、结构件不一致 |
-| X6 | 输出提示词以外的任何内容（表格/方案/建议/解释/变体等） |
-| X7 | 在人物衍生资产中加入场景描述（街景/雨景/室内/街道/天气等环境元素） |
-| X8 | 输出「核心要素速查」「分层构建方案」「视觉约束」「禁止事项」「衍生方案」等章节 |
-| X9 | 加入任何道具交互（手持伞/剑/扇/书/灯笼/酒杯等物品） |
-| X10 | 改变底模姿态（行走/回眸/举手/侧身/奔跑/低头/仰望等动作描述） |
-| X11 | 加入表情与姿态联动描述（如「侧身45°行走嘴角浅弯」等叙事性描写） |
-| X12 | 未分析用户线索就直接套用固定妆容/赛博元素，擅自切换古风/都市体系 |
-| X13 | 错误保持素颜，导致衍生资产缺少应有妆造 |
-| X14 | 仅因道具/场景/动作词而误把妆容升级，导致妆造强度决策错误 |
-| X15 | 古风场景无明确线索时，擅自添加赛博光效/机能元素，破坏古风氛围 |
-| X16 | 霓虹光效过曝、刺眼、大面积覆盖，破坏画面质感与人物面容、服化细节 |
-| X17 | 擅自修改底模肢体结构、五官形态，添加非服化范畴的义体改造、身体涂装 |
-| X18 | 都市场景丢失国风基底，出现纯西式赛博朋克风格，脱离中式形制核心 |
-| X19 | 出现低俗、夸张、不符合东方审美的西式朋克设计，违背国风美学核心 |
+| X1 | cộng sau mặt dung 、5dạng 、mô không 1  |
+| X2 | phục thất phong dạng chép ，ra không giữa thức trong  của thuần thức 、thuần máy thể phục 、thuần thức thiết tính  |
+| X3 | dung /phục /Phong cách、ra rời ，phong đúng lập  |
+| X4 | lời Bối cảnhbối （Bắt buộcthuần vật ），Nghiêm cấmthêm/Bối cảnh/ngày |
+| X5 | 4video ảnh gian phục hóa tạo 、kiểu 、ánh hiệu 、kết cấu tệp không 1  |
+| X6 | tải ra Promptngoài  của nội dung（bảng khung /phương /Khuyến nghị/giải /thể ） |
+| X7 | ở ngườisinh Tài nguyêngiữa cộng vào Bối cảnhMô tả（bối /bối /trong /đạo /ngày） |
+| X8 | tải ra 「cần tra 」「phúttầng cấu tạo phương 」「trực quan」「Nghiêm cấmviệc 」「sinh phương 」Chương |
+| X9 | cộng vào Đạo cụtác vụ （tay giữ /////） |
+| X10 | sửa mô thái （thi chạy /trả /tay ///thấp đầu /động tác vụ Mô tả） |
+| X11 | cộng vào bảng tình thái kết động Mô tả（như 「45°thi chạy nhân 」việc mô ） |
+| X12 | chưa phúttích hàm dùng đường kiếm thì trực tiếp hàm nối dung /，tự đổi phong /đều thể dòng  |
+| X13 | lỗilưu giữ ，dẫn sinh Tài nguyênít hồi có tạo  |
+| X14 | chỉ Đạo cụ/Bối cảnh/động tác vụ từ đem dung cấp ，dẫn tạo độ quyết địnhlỗi |
+| X15 | phong Bối cảnhkhông dẫn đường kiếm ，tự thêmánh hiệu /máy thể ，xấu phong Không khí |
+| X16 | ánh hiệu 、、lớn mặt ，xấu vẽ mặt ngườimặt dung 、phục hóa tiết  |
+| X17 | tự sửa mô thể kết cấu 、5dạng thái ，thêmphi phục hóa  của nghĩa thể sửa tạo 、thể  |
+| X18 | đều Bối cảnhthất phong cơ sở ，ra thuần thức Phong cách，giữa thức dạng chép  |
+| X19 | ra thấp 、bức 、không hợp phương đẹp  của thức thiết tính ，phong đẹp  |
 
 ---
 
-## ✅ 校验完成说明
-1. **双场景100%适配**：完整搭建「古风传统体系」+「都市赛博体系」两套并行规则，无明确赛博线索时可完美生成纯古风内容，有都市线索时可精准生成国风赛博内容，互不冲突
-2. **国风基底零偏移**：全手册贯穿「中式形制为绝对核心」的红线，都市赛博场景所有服饰、发型、配饰均保留国风内核，杜绝纯西式赛博跑偏
-3. **赛博融合可控化**：赛博元素分为「可选轻量款」和「都市强化款」，边界清晰，不会出现古风场景过度赛博化、都市场景国风丢失的问题
-4. **3D标准全统一**：古风/都市场景共用一套高精度3D渲染标准，PBR材质、光影、建模精度无差异，确保生成效果稳定
-5. **核心约束无遗漏**：完整保留原手册的「面容不变、姿态不变、逐层可控、纯服化范畴」等核心规则，优化后不破坏原手册的底层逻辑
-6. **全场景无死角覆盖**：补全了古风+都市全细分场景的服化组合、推断规则、提示词模板，可直接落地使用，无需二次调整
+## ✅ đối chiếu tạo Giải thích
+1. **đôi Bối cảnh100%nối **：chỉnh tạo 「phong truyền thống thể dòng 」+「đều thể dòng 」2nhất thi ，không dẫn đường kiếm đẹp tạothuần phong nội dung，có đều đường kiếm tạophong nội dung，không 
+2. **phong cơ sở 0**：toàn sổ tay「giữa thức dạng chép đúng 」 của đường ，đều Bối cảnhtất cảphục 、phát kiểu 、nối lưu lưu phong trong ，thuần thức 
+3. **hợp sát hóa **：phút「Tùy chọnlượng 」 và 「đều hóa 」，giới sạch ，không sẽ ra phong Bối cảnhđộ hóa 、đều Bối cảnhphong thất  của hỏi đề 
+4. **3Dbiểu toàn thống 1 **：phong /đều Bối cảnhhàm 1 cao độ 3Dbiểu ，PBR、Ánh sáng、tạo mô độ không bất ，lưu tạohiệu quả nối 
+5. **không **：chỉnh lưu lưu gốc sổ tay của 「mặt dung không 、thái không 、tầng sát 、thuần phục hóa 」，tối ưusau không xấu gốc sổ tay của tầng logic
+6. **toàn Bối cảnhkhông nhân **：bổ toàn phong +đều toàn phútBối cảnh của phục hóa nhóm hợp 、khuyến 、Promptmô ，trực tiếp địa hàm ，không cần 2lần gọi chỉnh 

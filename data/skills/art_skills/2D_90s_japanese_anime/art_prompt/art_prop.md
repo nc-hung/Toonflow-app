@@ -1,127 +1,127 @@
-# 90年代复古日系动画风格 - 道具图像生成 · 约束手册
+# 90nămlời ngày dòng động vẽ Phong cách - Đạo cụhình ảnhtạo · sổ tay
 
 ---
 
-## 一、道具设计原则
+## 1 、Đạo cụthiết tính gốc 
 
-1. **功能可读** — 道具用途一目了然，造型服务于功能
-2. **质感极致** — 材质纹理必须清晰可辨（金属/玉石/木/布/纸）
-3. **年代风格** — 所有道具符合90年代世界观，风格统一
-4. **尺度明确** — 通过参照物或标注暗示道具真实尺寸
-5. **纯道具独立展示** — 画面中只能出现道具本身，严禁出现任何人物、手部、肢体，道具不可处于被持有/佩戴/握持状态，必须以静物陈列方式独立呈现
-
----
-
-## 二、道具分类与美学约束
-
-### 2.1 兵器类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 剑/刀/弓/长枪/镰刀 | {兵器类型}，90年代兵器 |
-| 材质 | 金属+宝石装饰+丝带 | 金属光泽、宝石装饰 |
-| 装饰 | 雕花、流苏、复古纹样 | 雕花精致、复古纹样 |
-| 光泽 | 金属光泽、宝石反光 | 金属光泽、宝石璀璨 |
-| 提示词 | 90年代{兵器}，金属锻造，宝石装饰 | — |
-
-### 2.2 饰品类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 发饰/项链/手镯/戒指 | {饰品类型}，90年代首饰 |
-| 材质 | 金属/宝石/丝带/珍珠 | 金属光泽、宝石透明 |
-| 工艺 | 手绘质感、复古风格 | 精细工艺、90年代风格 |
-| 光泽 | 宝石光泽/金属光泽 | 宝石璀璨、金属光泽 |
-| 提示词 | 90年代{饰品}，{材质}，精细工艺 | — |
-
-### 2.3 生活器物类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 茶具/书本/乐器/文具 | {器物类型}，90年代器物 |
-| 材质 | 金属/木/纸/陶瓷 | 材质质感清晰 |
-| 质感 | 线条流畅、色彩柔和 | 线条流畅、质感清晰 |
-| 风格 | 简约/华丽按场景切换 | 简约精致 / 华丽精致 |
-| 提示词 | 90年代{器物}，{材质}质感，线条流畅 | — |
-
-### 2.4 信物/关键道具类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 信物/令牌/卷轴/药瓶/魔法道具 | {道具类型}，90年代道具 |
-| 特殊性 | 需有辨识度、叙事象征意义 | 独特造型、象征意义 |
-| 状态 | 可按剧情需要添加使用感 | 古旧 / 崭新 |
-| 提示词 | 90年代{道具}，{材质}，{状态}，独特造型 | — |
+1. **công thể ** — Đạo cụhàm 1 mục ，tạo kiểu phục vụ với công thể 
+2. **** — lý Bắt buộcsạch （biệt ////）
+3. **nămPhong cách** — tất cảĐạo cụhợp 90nămgiới ，Phong cáchthống 1 
+4. **độ dẫn ** — thông quatham hoặc biểu tâm nhở Đạo cụthật kích thước
+5. **thuần Đạo cụlập nhở ** — vẽ mặt giữa chỉ thể ra Đạo cụsách ，ra người、tay bộ 、thể ，Đạo cụkhông xử với giữ có //giữ trạng thái，Bắt buộchàng cách thứclập 
 
 ---
 
-## 三、多角度设定图规范
+## 2、Đạo cụphútloại đẹp 
 
-### 视图定义
+### 2.1 thiết bị loại 
 
-| 位置 | 视图 | 角度 | 要求 | 提示词 |
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | ///dài / | {thiết bị Loại}，90nămthiết bị  |
+|  | biệt ++kèm  | biệt ánh 、 |
+|  | 、、lời kiểu  | 、lời kiểu  |
+| ánh  | biệt ánh 、phụ ánh  | biệt ánh 、 |
+| Prompt | 90năm{thiết bị }，biệt tạo ， | — |
+
+### 2.2 loại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | phát //tay / | {Loại}，90năm |
+|  | biệt //kèm / | biệt ánh 、dẫn  |
+|  | tay 、lời Phong cách | 、90nămPhong cách |
+| ánh  | ánh /biệt ánh  | 、biệt ánh  |
+| Prompt | 90năm{}，{}， | — |
+
+### 2.3 sinh hoạt thiết bị loại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | cụ /sách /thiết bị /tài cụ  | {thiết bị Loại}，90nămthiết bị  |
+|  | biệt /// | sạch  |
+|  | đường mục 、vật  và  | đường mục 、sạch  |
+| Phong cách | /theo Bối cảnhđổi  |  /  |
+| Prompt | 90năm{thiết bị }，{}，đường mục  | — |
+
+### 2.4 tin /liên Đạo cụloại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | tin ////thức Đạo cụ | {Đạo cụLoại}，90nămĐạo cụ |
+|  | cần có trưng độ 、việc tượng ý nghĩa  | tạo kiểu 、tượng ý nghĩa  |
+| trạng thái | theo kịch tình cần cần thêmhàm  | cũ  / mới  |
+| Prompt | 90năm{Đạo cụ}，{}，{trạng thái}，tạo kiểu  | — |
+
+---
+
+## 3、nhiều nhân độ thiết nối ảnh 
+
+### video ảnh nối nghĩa 
+
+| vị trí trí  | video ảnh  | nhân độ  | Yêu cầu | Prompt |
 |---|---|---|---|---|
-| 左上 | 正面图 | 正面 0° | 道具完整正面形态 | front view |
-| 右上 | 侧面图 | 侧面 90° | 厚度/轮廓/结构清晰 | side view |
-| 左下 | 背面图 | 背面 180° | 道具背部结构/装饰 | back view |
-| 右下 | 细节特写 | 局部放大 | 材质纹理/工艺细节 | detail closeup |
+| trái trên  | chính mặt ảnh  | chính mặt  0° | Đạo cụchỉnh chính mặt dạng thái  | front view |
+| phải trên  | mặt ảnh  | mặt  90° | dày độ //kết cấu sạch  | side view |
+| trái dưới  | mặt ảnh  | mặt  180° | Đạo cụbộ kết cấu / | back view |
+| phải dưới  | tiết Đặc tả (close-up) | cục bộ mở lớn  | lý /tiết  | detail closeup |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面四宫格（2×2），上下左右四视角 |
-| 背景 | 暖调米白 #F8F4E8 |
-| 光线 | 柔和电影光，均匀柔光，无硬阴影 |
-| 比例 | 每格道具占格内主体 70%+ |
-| 投影 | 允许自然地面微投影 |
-| 画面比例 | 建议 1:1 |
+| cục  | cùng 1 vẽ mặt 4khung （2×2），trên dưới trái phải 4video nhân  |
+| bối  | gọi  #F8F4E8 |
+| ánh đường  |  và sáng ánh ，ánh ，không sáng  |
+| Tỷ lệ | khung Đạo cụkhung trong chính thể  70%+ |
+| sáng  | tự địa mặt sáng  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 1:1 |
 
 ---
 
-## 四、材质渲染约束
+## 4、
 
-| 材质 | 渲染要求 | 提示词 |
+|  | Yêu cầu | Prompt |
 |---|---|---|
-| 金属 | 光泽清晰、线条分明 | 金属质感、光泽清晰 |
-| 玉石 | 透明感、温润感 | 玉质通透、温润 |
-| 木质 | 纹理清晰、线条分明 | 木纹清晰、质感自然 |
-| 陶瓷 | 光滑表面、光泽均匀 | 陶瓷光泽、表面光滑 |
-| 布/纸 | 纤维质感、边缘清晰 | 布料纹理、纸质清晰 |
-| 宝石 | 透明感、折射感 | 宝石透明、折射感 |
+| biệt  | ánh sạch 、đường mục phútdẫn  | biệt 、ánh sạch  |
+|  | dẫn 、 | thông 、 |
+|  | lý sạch 、đường mục phútdẫn  | sạch 、tự  |
+|  | ánh bảng mặt 、ánh  | ánh 、bảng mặt ánh  |
+| / | 、sạch  | lý 、sạch  |
+|  | dẫn 、 | dẫn 、 |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 ```
-90年代复古日系动画风格道具设定图，手绘平涂上色，柔和暖色调，精细流畅线条，电影感光影，
-{道具类型}，{材质描述}，{工艺/装饰描述}，{状态描述}，
-纯道具静物展示，道具独立陈列，无人持有，无人佩戴，
-同一画面四宫格（2×2）：左上正面图+右上侧面图+左下背面图+右下细节特写，
-暖调米白背景，柔和电影光，均匀柔光，无硬阴影，
-材质纹理超清晰，手绘质感，{材质光泽描述}
-图中不要有任何文字，
-画面中不能出现任何人物、手部、手指、肢体，道具不可处于被握持或佩戴状态
+90nămlời ngày dòng động vẽ Phong cáchĐạo cụthiết nối ảnh ，tay trên vật ， và vật gọi ，đường mục ，sáng Ánh sáng，
+{Đạo cụLoại}，{Mô tả}，{/Mô tả}，{trạng tháiMô tả}，
+thuần Đạo cụnhở ，Đạo cụlập hàng ，không ngườigiữ có ，không người，
+cùng 1 vẽ mặt 4khung （2×2）：trái trên chính mặt ảnh +phải trên mặt ảnh +trái dưới mặt ảnh +phải dưới tiết Đặc tả (close-up)，
+gọi bối ， và sáng ánh ，ánh ，không sáng ，
+lý vượt sạch ，tay ，{ánh Mô tả}
+ảnh giữa không cần có tài chữ ，
+vẽ mặt giữa không thể ra người、tay bộ 、tay 、thể ，Đạo cụkhông xử với giữ hoặc trạng thái
 ```
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须指定「暖调米白背景 #F8F4E8」 |
-| R2 | 必须明确道具材质与工艺 |
-| R3 | 道具造型必须符合90年代世界观风格 |
+| R1 | Bắt buộcnối 「gọi bối  #F8F4E8」 |
+| R2 | Bắt buộcdẫn Đạo cụ |
+| R3 | Đạo cụtạo kiểu Bắt buộchợp 90nămgiới Phong cách |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 复杂场景背景 |
-| X2 | 道具与人物同画面 |
-| X3 | 出现任何人物形象 |
-| X4 | 道具处于被持有、握持、佩戴、使用中的状态 |
-| X5 | 出现暗示人物存在的元素 |
+| X1 | lời Bối cảnhbối  |
+| X2 | Đạo cụngườicùng vẽ mặt  |
+| X3 | ra ngườidạng tượng  |
+| X4 | Đạo cụxử với giữ có 、giữ 、、hàm giữa  của trạng thái |
+| X5 | ra nhở ngườilưu ở  của  |

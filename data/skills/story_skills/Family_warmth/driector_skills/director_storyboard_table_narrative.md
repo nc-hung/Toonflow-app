@@ -1,88 +1,88 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 家庭温情 — 定义家庭温情在分镜表中的景别温度控制、运镜安稳感、时长把控、镜头合并与转场逻辑。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · Gia Đình Ấm Áp — nối nghĩa Gia Đình Ấm Ápở Bảng phân cảnhgiữa  của Cỡ cảnhđộ sát chép 、Góc quayan 、Thời lượngđem sát 、Ống kínhhợp nhất chuyển trường logic。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 家庭温情 · 技法参考
+# Bảng phân cảnhviệc tay thức  · Gia Đình Ấm Áp · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供家庭温情叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **中景是家庭叙事主力** — 家庭叙事大量场景是"家人在一个空间里"，中景/全景确保多人同框，传递"在一起"的归属感
-- **特写捕捉说不出口的爱** — 家庭中大量情感不通过语言表达。特写用于捕捉：颤抖的手、偷偷红了的眼眶、嘴角压下去的微笑、默默多夹的一筷子菜
-- **远景的守望功能** — 远景在家庭叙事中主要用于"目送/等待"：门口送别的身影、窗边等待的剪影。给远景足够时长（5-6s），让"守望"的情绪充分传递
-- **大特写留给情感溢出瞬间** — 大特写（泛泪的眼/攥紧的手/颤抖的嘴唇）只用于情感再也克制不住的瞬间，一集 2-3 次足够
-- **定场用生活细节** — 家庭叙事的定场不用空旷的建筑外观，用生活细节：冒着热气的厨房、鞋柜旁整齐的拖鞋、冰箱上贴着的便签
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà Gia Đình Ấm Ápviệc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **默认静止，安稳即温暖** — 70% 以上镜头应为静止机位。家庭叙事中静止传递"安稳/不变/可靠"的安心感
-- **缓推 = 注意到温暖细节** — 缓慢推近一个温暖的细节（桌上留的饭、门口放好的鞋、被子被重新盖好），让观众"发现"那份没说出口的爱
-- **缓拉 = 离开/目送** — 从角色缓慢退开，适合送别、离家、从温暖的家庭场景中渐渐退出
-- **缓慢跟移 = 日常陪伴** — 跟随角色在家中的日常动线，用运镜的平稳传递"这个家的日常节奏"
-- **旁观者视角** — 镜头像一个安静的家人，在一旁默默看着。不参与、不评判，只是带着温柔在场
-
----
-
-## 四、时长把控
-
-- **日常镜头 3-4s** — 吃饭/聊天/做家务等日常镜头保持舒缓但不拖沓的节奏
-- **沉默镜头 4-5s** — 家人间沉默的陪伴（一起坐着不说话、各做各的事）需要足够时长，让"沉默本身就是幸福"被观众感受到
-- **细节特写 2-3s** — 温暖的生活细节特写（一杯热茶/一件叠好的衣服）给足停留让观众"读到"背后的爱
-- **远景目送 5-6s** — 送别/等待的远景需要更长时间，让"守望"的情绪充分发酵
-- **对话近景 3-4s** — 家庭对话节奏舒缓，每句话之间可以有自然的沉默间隔
-- **黄金法则：不急不赶** — 家庭叙事的一切节奏都应有"家的从容"。匆忙 = 焦虑，从容 = 安心
+- **Trung cảnh (medium shot)là việc chính lực ** — việc lớn lượng Bối cảnhlà "ngườiở một rỗng gian "，Trung cảnh (medium shot)/Toàn cảnh (wide shot)lưu nhiều ngườicùng ，truyền "ở 1 " của biệt 
+- **Đặc tả (close-up)hướng không ra cổng  của ** — giữa lớn lượng tình không thông quangữ bảng 。Đặc tả (close-up)hàm với ： của tay 、 của 、nhân nén dưới đi  của 、nhiều thư mục  của 1 
+- **Viễn cảnh (extreme wide shot) của công thể ** — Viễn cảnh (extreme wide shot)ở việc giữa chính cần hàm với "mục gửi /"：cổng cổng gửi khác  của sáng 、 của sáng 。cho Viễn cảnh (extreme wide shot)Thời lượng（5-6s），để "" của tình xúc sung phúttruyền 
+- **lớn Đặc tả (close-up)lưu cho tình ra gian ** — lớn Đặc tả (close-up)（ của / của tay / của ）chỉ hàm với tình cũng chép không  của gian ，1 tập  2-3 lần 
+- **nối trường hàm sinh hoạt tiết ** — việc  của nối trường không hàm rỗng  của tạo ngoài ，hàm sinh hoạt tiết ：đang  của 、chỉnh  của 、trên đang  của ký 
 
 ---
 
-## 五、镜头合并策略（去 AI 感）
+## 3、Góc quaytiết 
 
-- **日常流一镜贯穿** — 家庭日常段落（做饭→端菜→上桌→开吃）应尽量用带运镜的长镜头一气呵成，碎切会破坏"日常的连贯感"
-- **餐桌戏一镜涵盖** — 全家吃饭的场景能用一个缓慢摇移扫过众人的镜头交代的，不拆成逐个人物的碎切
-- **叙事密度优先** — 每个镜头必须推进叙事或传递情感温度，纯装饰性的空间展示应合并到有叙事功能的镜头中
-- **导演思维检验** — 写完分镜后自检：日常段落是否有流畅的生活感？情感段落是否有足够的停留？碎切是否打断了家的安稳节奏？
-
----
-
-## 六、一镜到底（长镜头合并）
-
-- **适用条件** — 家庭日常动线、从门口到餐桌的归家、做饭到上桌的完整过程。家庭叙事中长镜头的价值是"让观众在这个家里待一会儿"
-- **典型场景** — 角色进门→换鞋→走到厨房→看到桌上留的饭；做饭的全过程（洗菜→切菜→下锅→出锅）；送孩子到门口→目送远去
-- **标注方式** — 在运镜字段写明完整路径（如"一镜到底：角色推门进入→跟移经过客厅→到厨房看到桌上的饭→落幅角色站住微笑"），画面描述中交代起幅和落幅
-- **时长放宽** — 家庭日常长镜头因信息持续更新且需要生活节奏感，可突破单镜 6s 上限，但不超过 12s
-- **生活节奏优先** — 长镜头的运动速度应与角色的生活节奏一致，不快不慢，传递"这个家的日常"
+- **Mặc địnhTĩnh (static)，an ** — 70% trên Ống kínhhồi Tĩnh (static)máy vị trí 。việc giữa Tĩnh (static)truyền "an /không /" của an 
+- **khuyến  = tâm ý đến tiết ** — chậm khuyến một  của tiết （trên lưu  của 、cổng cổng mở tốt  của 、trùng mới tốt ），để "phát "chưa hướng ra cổng  của 
+- ** = mở /mục gửi ** — từ Nhân vậtchậm đăng mở ，hợp gửi khác 、、từ  của Bối cảnhgiữa đăng ra 
+- **chậm  = ngày thường ** — Nhân vậtở giữa  của ngày thường động đường ，hàm Góc quay của truyền "nàymục  của ngày thường tiết "
+- **giả video nhân ** — Ống kínhmột an  của người，ở 1 xem đang 。không tham 、không ，chỉ là kèm đang ở trường 
 
 ---
 
-## 七、人物互动设计
+## 4、Thời lượngđem sát 
 
-- **家人互动用习惯动作** — 家庭中的互动不是即兴的，而是"习惯性"的：总是帮对方添饭、总是在固定的位置坐着、总是用同一种方式叫对方的名字
-- **不说的爱用行动写** — 分镜表中家庭情感传递优先用行动镜头：多夹一筷子菜、把好吃的推到对方面前、进门第一件事就是看一眼对方在不在
-- **肢体距离即安全感** — 家人间的亲密是"不需要理由的靠近"：自然地靠在肩上、无意识地牵手、擦肩而过时的轻轻拍一下
-
----
-
-## 八、台词与留白
-
-- **家常话最有力** — 家庭叙事中最动人的台词是家常话："吃了吗""早点睡""路上慢点""到了给我打个电话"。不需要深刻的台词，日常的关心就是最深的爱
-- **重要的话反而说不出** — 家庭叙事中关键情感表达应优先用沉默/行动替代。"我爱你"说不出口，但可以默默给对方添了一碗汤
-- **一句话对应一个镜头** — 家庭对话节奏偏慢，每句话之间留出自然沉默。不要在一个镜头中塞太多对白
+- **ngày thường Ống kính 3-4s** — /ngày/vụ ngày thường Ống kínhlưu giữ nhưng không  của tiết 
+- **Ống kính 4-5s** — ngườigian  của （1 đang không hướng lời 、các các  của việc ）cần cần Thời lượng，để "sách thì là "đến 
+- **tiết Đặc tả (close-up) 2-3s** —  của sinh hoạt tiết Đặc tả (close-up)（1 /1 tệp tốt  của phục ）cho lưu để "đến "sau  của 
+- **Viễn cảnh (extreme wide shot)mục gửi  5-6s** — gửi khác / của Viễn cảnh (extreme wide shot)cần cần đổi dài thời gian，để "" của tình xúc sung phútphát 
+- **đúng lời Cận cảnh (close-up) 3-4s** — đúng lời tiết ，câu lời  của gian có tự  của gian cách 
+- **thức ：không không ** — việc  của 1 tiết đều hồi có " của từ dung "。 = ，từ dung  = an 
 
 ---
 
-## 九、转场设计
+## 5、Ống kínhhợp nhất （đi  AI ）
 
-- **日常用时间节奏转场** — 表达家庭日常的重复性，用"早→中→晚""春→夏→秋→冬"的时间节奏自然转场
-- **场景切换用生活细节** — 不同场景间用一个生活细节空镜（热气腾腾的锅/晾在阳台的衣服/亮着灯的窗户）做过渡
-- **段落切换用缓叠化** — 大段落间（如从"日常"到"送别"）用缓慢叠化转场，传递时间的温柔流逝
-- **默认硬切** — 同场戏内镜头间用硬切，保持叙事的干净与自然
+- **ngày thường 1 quay ** — ngày thường đoạn （→đầu →trên →mở ）hồi lượng hàm kèm Góc quay của dài Ống kính1 tạo ，sẽ xấu "ngày thường  của "
+- **1 quay ** — toàn  của Bối cảnhthể hàm một chậm người của Ống kínhtác vụ  của ，không tạo mục người của 
+- **việc mật độ trước ** — mục Ống kínhBắt buộcĐẩy tới (push in / dolly in)việc hoặc truyền tình độ ，thuần  của rỗng gian nhở hồi hợp nhất đến có việc công thể  của Ống kínhgiữa 
+- **đạo diễnkiểm chiếu ** — Phân cảnhsau tự kiểm ：ngày thường đoạn có hay không  của sinh hoạt ？tình đoạn có hay không  của lưu ？là không mở  của an tiết ？
+
+---
+
+## 6、1 quay đến （dài Ống kínhhợp nhất ）
+
+- **hàm mục tệp ** — ngày thường động đường 、từ cổng cổng đến  của 、đến trên  của chỉnh trình 。việc giữa dài Ống kính của giá trị là "để ở nàymục 1 sẽ nhi "
+- **kiểu Bối cảnh** — Nhân vậttiến cổng →đổi →chạy đến →xem đến trên lưu  của ； của toàn trình （→→dưới →ra ）；gửi đến cổng cổng →mục gửi đi 
+- **biểu tâm cách thức** — ở Góc quaychữ đoạn dẫn chỉnh đường dẫn（như "1 quay đến ：Nhân vậtkhuyến cổng tiến vào →đã →đến xem đến trên  của →Nhân vậttrạm "），Mô tả hình ảnhgiữa tác vụ  và 
+- **Thời lượngmở rộng ** — ngày thường dài Ống kínhthông tingiữ cập nhậtvà cần cần sinh hoạt tiết ，đơn quay  6s trên hạn ，nhưng không vượt  12s
+- **sinh hoạt tiết trước ** — dài Ống kính của vận động độ hồi Nhân vật của sinh hoạt tiết 1 ，không nhanh không chậm ，truyền "nàymục  của ngày thường "
+
+---
+
+## 7、ngườiđộng thiết tính 
+
+- **ngườiđộng hàm động tác vụ ** — giữa  của động không là  của ，là "" của ：tổng là trợ đúng phương thêm 、tổng là ở nối  của vị trí trí đang 、tổng là hàm cùng 1 loại cách thứcđúng phương  của tên chữ 
+- **không hướng  của hàm thi động ** — Bảng phân cảnhgiữa tình truyền trước hàm thi động Ống kính：nhiều thư mục 1 、đem tốt  của khuyến đến đúng phương mặt trước 、tiến cổng Thứ 1 tệp việc thì là xem 1 đúng phương ở không ở 
+- **thể an toàn ** — ngườigian  của mật là "không cần cần lý do  của "：tự địa ở trên 、không ý trưng địa tay 、 của 1 dưới 
+
+---
+
+## 8、Lời thoạilưu 
+
+- **thường lời nhất có lực ** — việc giữa nhất động người của Lời thoạilà thường lời ："""sớm điểm ""đường trên chậm điểm ""đến cho tôimở mục lời "。không cần cần  của Lời thoại，ngày thường  của liên thì là nhất  của 
+- **trùng cần  của lời phụ hướng không ra ** — việc giữa liên tình bảng hồi trước hàm /thi động 。"tôibạn"hướng không ra cổng ，nhưng cho đúng phương thêm 1 
+- **1 câu lời đúng hồi một Ống kính** — đúng lời tiết chậm ，câu lời  của gian lưu ra tự 。không cần ở một Ống kínhgiữa nhiều đúng 
+
+---
+
+## 9、chuyển trường thiết tính 
+
+- **ngày thường hàm thời giantiết chuyển trường ** — bảng ngày thường  của trùng lời ，hàm "sớm →giữa →muộn ""→→→" của thời giantiết tự chuyển trường 
+- **Bối cảnhđổi hàm sinh hoạt tiết ** — không cùng Bối cảnhgian hàm một sinh hoạt tiết rỗng quay （ của /ở đài  của phục /đang  của dùng ）
+- **đoạn đổi hàm hóa ** — lớn đoạn gian （như từ "ngày thường "đến "gửi khác "）hàm chậm hóa chuyển trường ，truyền thời gian của 
+- **Mặc định** — cùng trường trong Ống kínhgian hàm ，lưu giữ việc  của tự 

@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 修改项目
+// sửa Dự án
 export default router.post(
   "/",
   validateFields({
@@ -27,6 +27,6 @@ export default router.post(
       projectType,
     });
 
-    res.status(200).send(success({ message: "修改成功" }));
+    res.status(200).send(success({ message: "Chỉnh sửa thành công" }));
   },
 );

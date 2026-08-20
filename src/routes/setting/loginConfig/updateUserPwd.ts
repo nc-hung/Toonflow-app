@@ -18,6 +18,6 @@ export default router.post(
       name,
       password,
     });
-    res.status(200).send(success("保存设置成功"));
+    res.status(200).send(success("Lưu cài đặt thành công"));
   },
 );

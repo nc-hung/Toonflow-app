@@ -29,6 +29,6 @@ export default router.post(
         prompt,
       })
       .where("id", id);
-    res.status(200).send(success("艺术风格编辑成功"));
+    res.status(200).send(success("Chỉnh sửa phong cách mỹ thuật thành công"));
   },
 );

@@ -18,7 +18,7 @@ export default router.post(
     if (models?.models) {
       const existingModels = JSON.parse(models.models);
       if (!existingModels.some((model: any) => model.modelName === modelName)) {
-        return res.status(400).send(error("基本模型不允许删除"));
+        return res.status(400).send(error("Không được  phép xóa mô hình cơ bản "));
       }
       const updatedModels = existingModels.filter((model: any) => model.modelName !== modelName);
       await u
@@ -28,6 +28,6 @@ export default router.post(
           models: JSON.stringify(updatedModels),
         });
     }
-    res.status(200).send(success("更新成功"));
+    res.status(200).send(success("Cập nhật thành công"));
   },
 );

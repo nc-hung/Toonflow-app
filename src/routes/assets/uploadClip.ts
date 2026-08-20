@@ -6,26 +6,26 @@ import { z } from "zod";
 import { v4 as uuid } from "uuid";
 const router = express.Router();
 
-// 根据 base64 头部获取文件扩展名
+// Lấy phần mở rộng tệp dựa trên header base64
 function getExtFromBase64(base64Data: string): string {
   const mime = base64Data.match(/^data:([^;]+);base64,/)?.[1] ?? "";
   const mimeMap: Record<string, string> = {
-    // 图片
+    // Hình ảnh
     "image/jpeg": "jpeg",
     "image/jpg": "jpg",
     "image/png": "png",
-    // 音频
+    // Âm thanh
     "audio/mpeg": "mp3",
     "audio/mp3": "mp3",
     "audio/wav": "wav",
-    // 视频
+    // Video
     "video/mp4": "mp4",
     "video/webm": "webm",
   };
   return mimeMap[mime] ?? "bin";
 }
 
-// 文件上传（支持图片、音频、视频）
+// Tải lên tệp (hỗ trợ hình ảnh, âm thanh, video)
 export default router.post(
   "/",
   validateFields({
@@ -50,11 +50,11 @@ export default router.post(
       filePath: savePath,
       type,
       assetsId: id,
-      state: "已完成",
+      state: "Đã hoàn thành",
     });
     await u.db("o_assets").where("id", id).update({
       imageId: imageId,
     });
-    res.status(200).send(success("上传成功"));
+    res.status(200).send(success("Tải lên thành công"));
   },
 );

@@ -17,10 +17,10 @@ export default router.post(
     const { id, url, flowId } = req.body;
     const [imageId] = await u.db("o_image").insert({
       filePath: u.replaceUrl(url),
-      state: "已完成",
+      state: "Đã hoàn thành",
       assetsId: id,
     });
     await u.db("o_assets").where({ id }).update({ flowId, imageId });
-    res.status(200).send(success({ message: "更新提示词成功" }));
+    res.status(200).send(success({ message: "Cập nhật prompt thành công" }));
   },
 );

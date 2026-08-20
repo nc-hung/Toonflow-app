@@ -1,33 +1,33 @@
-# 国风3D风格说明
+# phong 3DPhong cáchGiải thích
 
-本风格专为"国风3D"题材打造，所有美术提示词、规范和生成内容均严格限定于：
+sách Phong cáchriêng "phong 3D"đề mở tạo ，tất cảđẹp Prompt、 và tạonội dungkhung hạn nối với ：
 
-- **国风3D渲染**：以三维建模渲染技术呈现中国传统美学，涵盖古风建筑、山水园林、宫廷服饰等
-- **3D精细质感**：高精度模型、PBR材质渲染、光影层次丰富、细节清晰可辨
-- **中国传统色彩**：青绿、朱红、靛蓝、金黄等传统色盘，色彩和谐典雅
-- **东方美学氛围**：意境深远、虚实相生、留白构图、诗意空间
-- **古风人物造型**：3D古风建模、服饰华丽精致、妆容典雅、发型考究
-- **电影级光影**：体积光、环境光遮蔽、全局光照、景深虚化等电影渲染效果
+- **phong 3D**：3tạo mô giữa truyền thống đẹp ，phong tạo 、、phục 
+- **3D**：cao độ mô hình、PBR、Ánh sángtầng lần 、tiết sạch 
+- **giữa truyền thống vật **：、、、truyền thống vật đĩa ，vật  và 
+- **phương đẹp Không khí**：ý 、sinh 、lưu cấu ảnh 、ý rỗng gian 
+- **phong ngườitạo kiểu **：3Dphong tạo mô 、phục 、dung 、phát kiểu 
+- **sáng cấp Ánh sáng**：thể ánh 、ánh 、toàn cục ánh 、bối hóa sáng hiệu quả 
 
-## 适用范围
+## hàm khí 
 
-- 国风3D题材的AI美术生成（角色、场景、道具、分镜等）
-- 需要3D渲染质感、东方美学、古风意境的视觉创作
-- 游戏美术、影视概念设计、国风动画等应用场景
+- phong 3Dđề  của AIđẹp tạo（Nhân vật、Bối cảnh、Đạo cụ、Phân cảnh）
+- cần cần 3D、phương đẹp 、phong ý  của trực quansáng tác vụ 
+- đẹp 、sáng video thiết tính 、phong động vẽ hồi hàm Bối cảnh
 
-## 严禁内容
+## nội dung
 
-- 写实摄影/照片级真实感（除非特别说明）
-- 西方奇幻/哥特/维多利亚风格
-- 赛博朋克/科幻/现代都市元素
-- 低精度模型/粗糙建模/贴图模糊
-- 过度饱和/荧光色/数码感强
+- sáng /cấp thật （bỏ phi khác Giải thích）
+- phương //nhiều Phong cách
+- //Đô Thị Hiện Đại
+- thấp độ mô hình/tạo mô /ảnh mô 
+- độ  và /ánh vật /số mã 
 
-## 风格体验
+## Phong cáchthể chiếu 
 
-在本风格下，您将体验到：
+ở sách Phong cáchdưới ，thể chiếu đến ：
 
-- 角色造型典雅精致，3D建模细腻，服饰纹理清晰，发丝飘逸
-- 场景气势恢宏，建筑细节丰富，材质质感真实，光影氛围诗意
-- 道具器物考究，材质工艺精细，色彩和谐统一
-- 分镜与渲染均强调3D质感、东方意境、电影级光影
+- Nhân vậttạo kiểu ，3Dtạo mô ，phục lý sạch ，phát 
+- Bối cảnh，tạo tiết ，thật ，Ánh sáng & Không khíý 
+- Đạo cụthiết bị ，，vật  và thống 1 
+- Phân cảnhgọi 3D、phương ý 、sáng cấp Ánh sáng

@@ -1,117 +1,117 @@
 ---
 name: director_planning_style
-description: 3D国风赛博约束 · 国风赛博3D · 技法参考
+description: 3Dphong  · phong 3D · thức tham chiếu
 metaData: director_skills
 ---
 
-# 3D国风赛博约束 · 国风赛博3D · 技法参考
-（古风+都市双场景全适配）
+# 3Dphong  · phong 3D · thức tham chiếu
+（phong +đều đôi Bối cảnhtoàn nối ）
 
 ---
 
-## 一、色调体系与画面基调
-（双场景自检：古风场景/都市场景均有明确执行标准，无适配盲区）
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
+（đôi Bối cảnhtự kiểm ：phong Bối cảnh/đều Bối cảnhcó dẫn thực thibiểu ，không nối khu ）
 
-- **色调基底** — 全片以月白（C1）、青绿（C2）、靛蓝（C4）为东方传统基底色，叠加国风适配的赛博核心色（朱红霓虹、青绿荧光、靛蓝赛博光、鎏金全息色）；整体色温中性偏冷（4500-5800K），传统基底饱和度中高（55-75%），赛博叠加色饱和度可控拉高（70-90%）。【古风场景】以基底色为建筑、服化道核心色；【都市场景】以同色系为摩天楼外立面、城市景观、公共空间、服化道基底色，赛博叠加色统一锚定东方传统色体系，杜绝无国风锚点的杂乱都市霓虹。
-- **情绪色盘驱动** — 六套双场景通用情绪色盘对应不同叙事段落，每套色盘均设置「传统基底层+赛博叠加层」双轨体系，色盘切换应与故事弧线完全同步：
-  1. 宫廷华贵/都市权力中心
-  2. 山水意境/都市空中园林
-  3. 闺阁温婉/都市私密居所
-  4. 武侠肃杀/都市职场对抗/刑侦博弈
-  5. 节日喜庆/都市市井节庆/夜生活叙事
-  6. 月夜清幽/都市夜景独处/城市空镜
-- **冷暖叙事对比** — 传统暖色（朱红 C3、金黄 C5、胭脂 C7、藤黄 C9）+ 赛博暖光（霓虹朱红、全息鎏金）作为叙事转折的视觉信号，用于情感升温与喜庆段落；传统冷色（靛蓝 C4、墨黑 C6）+ 赛博冷光（荧光青绿、赛博靛蓝）用于肃杀、忧郁、清幽段落；赛博光的明暗/色彩切换可作为强叙事转折的视觉锚点，【古风场景】以传统色为主、赛博色为辅，【都市场景】可根据叙事需求平衡双轨色彩权重。
-- **色盘先行原则** — 段落规划需先绑定情绪场景，再确定「传统主色+辅色+赛博叠加色」与光影方案，避免"剧情对了但情绪不对色"，确保古风/都市场景的色彩逻辑完全统一。
-- **禁用色域** — 无国风适配的高饱和杂乱荧光色、违和现代数码色彩、低质廉价霓虹色、西方赛博朋克无逻辑撞色均与本风格不兼容；【都市场景】额外禁用：无国风锚点的街头广告跳色、杂乱市井霓虹、纯工业风冷灰色系。
+- **vật gọi cơ sở ** — toàn tháng（C1）、（C2）、（C4）phương truyền thống cơ sở vật ，cộng phong nối  của vật （、ánh 、ánh 、toàn vật ）；chỉnh thể vật giữa （4500-5800K），truyền thống cơ sở  và độ giữa cao （55-75%），cộng vật  và độ sát cao （70-90%）。【phong Bối cảnh】cơ sở vật tạo 、phục hóa đạo vật ；【đều Bối cảnh】cùng vật dòng ngàyngoài lập mặt 、bối 、rỗng gian 、phục hóa đạo cơ sở vật ，cộng vật thống 1 nối phương truyền thống vật thể dòng ，không phong điểm  của đều 。
+- **tình xúc vật đĩa động ** — 6đôi Bối cảnhthông hàm tình xúc vật đĩa đúng hồi không cùng việc đoạn ，vật đĩa cài đặt「truyền thống cơ sở tầng +cộng tầng 」đôi thể dòng ，vật đĩa đổi hồi việc đường toàn cùng bước ：
+  1. /đều thực lực giữa 
+  2. ý /đều rỗng giữa 
+  3. /đều mật nơi 
+  4. /Đô Thị & Công Sởđúng /
+  5. tiết ngày /đều tiết /sinh hoạt việc 
+  6. thángsạch /đều bối xử /rỗng quay 
+- **việc đúng tỷ ** — truyền thống vật （ C3、 C5、 C7、 C9）+ ánh （、toàn ）tác vụ việc chuyển  của trực quantin số ，hàm với tình đoạn ；truyền thống vật （ C4、 C6）+ ánh （ánh 、）hàm với 、、sạch đoạn ；ánh  của dẫn /vật đổi tác vụ việc chuyển  của trực quanđiểm ，【phong Bối cảnh】truyền thống vật chính 、vật ，【đều Bối cảnh】dựa theoviệc cần cầu đôi vật thực trùng 。
+- **vật đĩa trước thi gốc ** — đoạn lập kế hoạchcần trước ghép nốitình xúc Bối cảnh，nối 「truyền thống chính vật +vật +cộng vật 」Ánh sángphương ，"kịch tình đúng nhưng tình xúc không đúng vật "，lưu phong /đều Bối cảnh của vật logictoàn thống 1 。
+- **hàm vật vực ** — không phong nối  của cao  và ánh vật 、 và số mã vật 、thấp vật 、phương không logicvật sách Phong cáchkhông dung ；【đều Bối cảnh】bổ ngoài hàm ：không phong điểm  của đầu thông vật 、、thuần phong vật dòng 。
 
 ---
 
-## 二、光影方案体系
-（双场景自检：7套方案全适配古风+都市，每套均明确双场景用法，无执行盲区）
+## 2、Ánh sángphương thể dòng 
+（đôi Bối cảnhtự kiểm ：7phương toàn nối phong +đều ，dẫn đôi Bối cảnhhàm thức ，không thực thikhu ）
 
-- **光影即叙事** — 7套国风赛博双轨光影方案对应不同情绪段落，导演规划阶段应在段落层面确定「传统基底光+赛博叠加光」的基调方向，而非逐镜无逻辑指定，古风/都市场景可直接复用同一套方案框架。
-- **3D渲染光影核心特征** — 体积光、环境光遮蔽（AO）、景深虚化为国风基底的核心光影手段，新增全息光效、霓虹轮廓光、赛博屏面反光、能量体积光为赛博层核心光影手段；【都市场景】额外适配：楼体霓虹轮廓光、玻璃幕墙多层反光、都市峡谷街巷体积光、全息广告面光源、摩天楼天际线逆光、地下空间数控光源。所有光影方案均须体现PBR物理材质渲染质感，确保传统层与赛博层光影逻辑统一、物理可信。
+- **Ánh sángviệc ** — 7phong đôi Ánh sángphương đúng hồi không cùng tình xúc đoạn ，Kế hoạch đạo diễnđoạn hồi ở đoạn tầng mặt nối 「truyền thống cơ sở ánh +cộng ánh 」 của cơ sở gọi phương ，phi quay không logicnối ，phong /đều Bối cảnhtrực tiếp lời hàm cùng 1 phương 。
+- **3DÁnh sáng** — thể ánh 、ánh （AO）、bối hóa phong cơ sở  của Ánh sángtay đoạn ，thêm mớitoàn ánh hiệu 、ánh 、mặt phụ ánh 、thể lượng thể ánh tầng Ánh sángtay đoạn ；【đều Bối cảnh】bổ ngoài nối ：thể ánh 、nhiều tầng phụ ánh 、đều thể ánh 、toàn thông mặt ánh nguồn 、ngàyngàyđường ánh 、địa dưới rỗng gian số sát ánh nguồn 。tất cảÁnh sángphương buộc thể PBRlý ，lưu truyền thống tầng tầng Ánh sánglogicthống 1 、lý tin 。
 
-| 光影方案 | 方案名 | 色调倾向 | 双场景适用情绪与场景 |
+| Ánh sángphương  | phương tên  | vật gọi  | đôi Bối cảnhhàm tình xúc Bối cảnh |
 |---|---|---|---|
-| A | 赛博暖光华彩 | 朱红传统基底 + 金黄全息高光 + 月白底 + 朱红霓虹轮廓光 | 【古风场景】宫廷华贵、庄严气派、喜庆盛大、权力叙事<br>【都市场景】顶层权力空间、摩天楼企业总部、城市地标庆典、核心叙事高潮 |
-| B | 全息青绿意境 | 青绿传统基底 + 月白雾气体积光 + 青绿荧光漫射 + 全息山水光影 | 【古风场景】山水意境、诗意悠远、空灵飘逸、赛博禅意<br>【都市场景】空中国风园林、城市生态地标、全息山水景观、禅意办公空间 |
-| C | 数控柔光暖影 | 胭脂暖调基底 + 金黄点缀 + 柔和阴影 + 暖调全息氛围光 | 【古风场景】闺阁温婉、柔美细腻、日常温馨、私密叙事<br>【都市场景】高端私密居所、生活化居家场景、温柔情感段落、独处叙事 |
-| D | 义体冷调肃杀 | 墨黑传统基底 + 靛蓝硬光 + 高对比明暗切割 + 冷色赛博能量光 | 【古风场景】武侠肃杀、冷峻凌厉、氛围压抑、冲突对抗<br>【都市场景】职场博弈、刑侦对抗、地下空间叙事、高张力冲突段落 |
-| E | 数控窗纱漫射 | 月白底 + 自然侧光 + 环境光遮蔽 + 窗格全息投影光 | 【古风场景】室内日间、日常起居、幽静雅致、生活化叙事<br>【都市场景】日间办公空间、城市居所日间场景、茶室/书房等静谧空间 |
-| F | 赛博月夜清辉 | 靛蓝传统基底 + 月白冷光 + 金黄暖光点缀 + 人造月色全息光 | 【古风场景】月夜清幽、宁静唯美、思念独处、氛围感叙事<br>【都市场景】城市夜景、摩天楼夜景空镜、街巷夜拍、独处情感段落 |
-| G | 霓虹节庆暖光 | 朱红传统基底 + 藤黄暖光 + 高饱和国风霓虹光 + 全息节庆投影光 | 【古风场景】节日庆典、热闹欢快、市井烟火、群像叙事<br>【都市场景】都市节庆、国风市井夜市、城市夜生活、群像热闹段落 |
+| A | ánh  | truyền thống cơ sở  + toàn cao ánh  + tháng + ánh  | 【phong Bối cảnh】、phái 、lớn 、thực lực việc <br>【đều Bối cảnh】tầng thực lực rỗng gian 、ngàytổng bộ 、địa biểu 、việc cao  |
+| B | toàn ý  | truyền thống cơ sở  + thángthể ánh  + ánh  + toàn Ánh sáng | 【phong Bối cảnh】ý 、ý 、rỗng 、ý <br>【đều Bối cảnh】rỗng giữa phong 、sinh thái địa biểu 、toàn bối 、ý rỗng gian  |
+| C | số sát ánh sáng  | gọi cơ sở  + điểm tố  +  và sáng  + gọi toàn Không khíánh  | 【phong Bối cảnh】、đẹp 、ngày thường 、mật việc <br>【đều Bối cảnh】cao đầu mật nơi 、sinh hoạt hóa Bối cảnh、tình đoạn 、xử việc  |
+| D | nghĩa thể gọi  | truyền thống cơ sở  + ánh  + cao đúng tỷ dẫn rời  + vật thể lượng ánh  | 【phong Bối cảnh】、、Không khínén 、đúng <br>【đều Bối cảnh】trường 、đúng 、địa dưới rỗng gian việc 、cao bức lực đoạn  |
+| E | số sát  | tháng + tự ánh  + ánh  + khung toàn sáng ánh  | 【phong Bối cảnh】trong ngày gian 、ngày thường 、、sinh hoạt hóa việc <br>【đều Bối cảnh】ngày gian rỗng gian 、nơi ngày gian Bối cảnh、/rỗng gian  |
+| F | thángsạch  | truyền thống cơ sở  + thángánh  + ánh điểm tố  + ngườitạo thángvật toàn ánh  | 【phong Bối cảnh】thángsạch 、đẹp 、xử 、Không khíviệc <br>【đều Bối cảnh】bối 、ngàybối rỗng quay 、、xử tình đoạn  |
+| G | tiết ánh  | truyền thống cơ sở  + ánh  + cao  và phong ánh  + toàn tiết sáng ánh  | 【phong Bối cảnh】tiết ngày 、nhanh 、、việc <br>【đều Bối cảnh】đều tiết 、phong 、sinh hoạt 、đoạn  |
 
-- **冷暖光分配** — 传统暖色光（朱红/金黄/藤黄）+ 赛博暖光（霓虹朱红/全息鎏金）适用于华贵、温婉、喜庆段落；传统冷色光（靛蓝/墨黑）+ 赛博冷光（荧光青绿/赛博靛蓝）适用于肃杀、忧郁、清幽段落。导演可根据叙事需要调整冷暖切换点，赛博光的亮灭可作为强叙事节点的视觉信号，古风/都市场景遵循同一套冷暖逻辑。
-- **氛围方向映射** — 每场戏的氛围方向应能映射到上述光影方案（A-G）的某一方向，确保传统层与赛博层视觉逻辑完全一致，古风/都市场景全程风格统一。
-
----
-
-## 三、质感方向
-（双场景自检：古风/都市材质全覆盖，双场景岁月质感标准明确，杜绝塑料感/CG感）
-
-- **3D渲染为双轨锚点** — 国风赛博3D的核心：高精度双轨建模、PBR物理材质渲染、传统层体积光+赛博层全息光、环境光遮蔽、景深虚化，全程呈现电影级3D渲染画面。【古风场景】聚焦古建、传统服化道、自然景观的高精度建模；【都市场景】聚焦新中式摩天楼、城市公共空间、国风赛博载具、都市服化道的高精度双轨建模，两套场景均严格遵循同一套PBR渲染标准。
-- **PBR材质双轨融合** — 所有服化道、场景资产必须通过PBR物理渲染实现可信质感，核心为「传统材质+赛博材质的有机融合」，双场景全覆盖：
-  - 【古风核心材质】丝绸的光泽与垂感、木质的纹理与包浆、金属的反光与质感、玉石的通透与温润、瓷器的釉面光泽
-  - 【都市核心材质】玻璃幕墙的通透反射与中式格栅的光影切割、钢筋混凝土的肌理与传统石材的纹理融合、金属铝板的哑光质感与传统铜饰的做旧反光、沥青路面的磨损痕迹与青石板的风化纹理呼应、光纤面料的流光与传统丝绸的垂感统一
-  - 所有融合材质必须物理逻辑自洽，禁止无意义的赛博材质堆砌。
-- **体积光与景深双轨强化** — 体积光是国风赛博画面的灵魂：【古风场景】室外场景必须有空气透视与传统天光+赛博霓虹的双重体积光散射，室内场景通过窗光/烛光/全息投影制造多层体积光效果；【都市场景】室外必须有都市峡谷街巷的体积光、摩天楼群的天光漫射、霓虹灯光的体积散射，室内场景通过窗格投影/全息屏/数控光源制造多层体积光效果。景深虚化同步强化双场景的空间纵深，适配古风/都市的不同空间尺度。
-- **岁月质感双轨统一** — 材质不可过于干净完美，双场景均需体现生活痕迹与岁月感：
-  - 【古风场景】木面有使用痕迹、石面有风化纹与青苔、布料有自然褶皱、瓦片有苔痕残缺
-  - 【都市场景】沥青路面有车辙磨损、玻璃幕墙有水渍与风化痕迹、金属外立面有氧化与划痕、街头设施有使用痕迹、霓虹招牌有局部频闪瑕疵
-  - 全程禁止"塑料感"、全新无瑕的"廉价CG感"、无生活痕迹的"样板间式"都市画面。
-- **赛博不等于冰冷** — 国风赛博3D强调东方美学的温度感与赛博科幻的先锋感的平衡，通过双轨材质质感、分层光影层次、传统+赛博融合的色彩搭配传达情感，而非依赖无意义的奇观特效与暴力赛博元素堆砌，古风/都市场景均需坚守东方美学内核。
+- **ánh phútnối ** — truyền thống vật ánh （//）+ ánh （/toàn ）hàm với 、、đoạn ；truyền thống vật ánh （/）+ ánh （ánh /）hàm với 、、sạch đoạn 。đạo diễndựa theoviệc cần cần gọi chỉnh đổi điểm ，ánh  của tác vụ việc tiết điểm  của trực quantin số ，phong /đều Bối cảnhcùng 1 logic。
+- **Không khíphương ** — trường  của Không khíphương hồi thể đến trên tả Ánh sángphương （A-G） của 1 phương ，lưu truyền thống tầng tầng trực quanlogictoàn 1 ，phong /đều Bối cảnhtoàn trình Phong cáchthống 1 。
 
 ---
 
-## 四、国风赛博场景空间元素
-（双场景自检：全元素双场景适配，新增都市专属国风赛博元素，古风/都市叙事功能全覆盖）
+## 3、phương 
+（đôi Bối cảnhtự kiểm ：phong /đều toàn ，đôi Bối cảnhthángbiểu dẫn ，/CG）
 
-古风赛博世界观特有的双轨场景元素及其视觉叙事功能，核心为「传统东方空间逻辑+赛博科幻元素的有机融合」，**100%适配古风传统场景与国风赛博都市场景**，禁止无逻辑元素堆砌：
-
-- **框架式构图元素** — 【古风场景】纱帘/屏风/中式门框；【都市场景】全息纱帘隔断/数控中式屏风/AR中式门框/半透数控玻璃幕墙。天然的框架式构图道具，制造"虚实相生"的层次感与空间纵深。3D渲染中，半透明材质的光线穿透效果、全息投影的虚实切换、框架的叙事边界切割是画面核心亮点，可用于叙事中的虚实转换、记忆闪回、身份隐喻。
-- **留白意境元素** — 【古风场景】中式庭院/传统花树/自然雨幕/风过竹林；【都市场景】空中国风园林/屋顶全息花树/垂直绿化景观/数控雨幕/都市街巷雨景/摩天楼间云海。留白构图的天然载体，景即情：满庭花开 = 释然、独坐雨中 = 孤寂、落叶纷飞 = 离愁。3D场景中，植被的体积感与光影交互、雨幕的光线折射、虚实场景的叠加效果尤为重要。
-- **光源载体元素** — 【古风场景】烛火/自然月色/木格窗光/灯笼；【都市场景】全息中式烛火/人造赛博月色/数控中式窗格投影光/摩天楼窗格面光源/国风霓虹灯笼。国风赛博世界的双轨光源载体，传统光源与赛博光源一一对应：烛光/全息烛火 = 暖/私密（方案C）、月色/人造赛博月色 = 冷/清幽（方案F）、窗光/数控窗格光 = 日常/静谧（方案E）。3D渲染中，光源的双重体积光效果、PBR材质的传统+赛博双重反射是画面质感核心。
-- **建筑标志性元素** — 【古风场景】传统飞檐/木质斗拱/青瓦屋面/榫卯结构；【都市场景】新中式摩天楼飞檐/钢结构机械斗拱/中式元素外立面/青瓦肌理金属屋面/榫卯结构钢结构。国风赛博建筑的标志性元素，3D建模需同步体现传统雕梁画栋的精致细节与赛博机械结构的工业美感，材质需同步呈现传统层的岁月痕迹与赛博层的磨损氧化，禁止脱离古建形制的无逻辑机械改造。
-- **市井叙事核心元素** — 【古风场景】古街古巷/市井商铺/牌坊；【都市场景】国风赛博街巷/摩天楼峡谷/新中式市井商铺/国风霓虹招牌街巷/全息中式牌楼。双场景市井叙事的核心空间载体，3D渲染中需体现街巷的空间纵深、国风元素的统一、市井烟火的生活感，是群像叙事、日常段落的核心场景。
-- **段落过渡规则** — 本风格有丰富的双场景场景资产（不同时段/天候/季节/赛博化程度变体），段落衔接建议用场景空镜做情绪缓冲，不要硬切。【古风场景】适配庭院/山水/建筑空镜；【都市场景】适配摩天楼天际线/空中园林/城市地标/街巷空镜/地铁/空中连廊空镜。
-- **叙事优先级规则** — 转折点用视觉而非台词，优先使用画面手段（光影突变、景别跳切、虚实空镜隐喻、全息投影内容切换、赛博元素亮灭）而非依赖对白解释，古风/都市场景遵循同一套叙事逻辑。
+- **3Dđôi điểm ** — phong 3D của ：cao độ đôi tạo mô 、PBRlý 、truyền thống tầng thể ánh +tầng toàn ánh 、ánh 、bối hóa ，toàn trình sáng cấp 3Dvẽ mặt 。【phong Bối cảnh】tạo 、truyền thống phục hóa đạo 、tự bối  của cao độ tạo mô ；【đều Bối cảnh】mới giữa thức ngày、rỗng gian 、phong xuống cụ 、đều phục hóa đạo  của cao độ đôi tạo mô ，2Bối cảnhkhung cùng 1 PBRbiểu 。
+- **PBRđôi hợp ** — tất cảphục hóa đạo 、Bối cảnhTài nguyênBắt buộcthông quaPBRlý tin ，「truyền thống + của có máy hợp 」，đôi Bối cảnhtoàn ：
+  - 【phong 】 của ánh 、 của lý gói 、biệt  của phụ ánh 、 của thông 、thiết bị  của mặt ánh 
+  - 【đều 】 của thông phụ giữa thức khung  của Ánh sángrời 、 của lý truyền thống  của lý hợp 、biệt  của ánh truyền thống  của cũ phụ ánh 、đường mặt  của  của phong hóa lý hồi 、ánh mặt  của ánh truyền thống  của thống 1 
+  - tất cảhợp Bắt buộclý logictự ，Nghiêm cấmkhông ý nghĩa  của 。
+- **thể ánh bối đôi hóa ** — thể ánh là phong vẽ mặt  của ：【phong Bối cảnh】ngoài Bối cảnhBắt buộccó rỗng video truyền thống ngàyánh + của đôi trùng thể ánh ，trong Bối cảnhthông quaánh /ánh /toàn sáng chép tạo nhiều tầng thể ánh hiệu quả ；【đều Bối cảnh】ngoài Bắt buộccó đều  của thể ánh 、ngày của ngàyánh 、ánh  của thể ，trong Bối cảnhthông quakhung sáng /toàn /số sát ánh nguồn chép tạo nhiều tầng thể ánh hiệu quả 。bối hóa cùng bước hóa đôi Bối cảnh của rỗng gian ，nối phong /đều  của không cùng rỗng gian độ 。
+- **thángđôi thống 1 ** — không với đẹp ，đôi Bối cảnhcần thể sinh hoạt tháng：
+  - 【phong Bối cảnh】mặt có hàm 、mặt có phong hóa 、có tự 、có 
+  - 【đều Bối cảnh】đường mặt có 、có phong hóa 、biệt ngoài lập mặt có hóa 、đầu thiết có hàm 、có cục bộ tần 
+  - toàn trình Nghiêm cấm""、toàn mới không  của "CG"、không sinh hoạt  của "kiểu gian thức "đều vẽ mặt 。
+- **không với ** — phong 3Dgọi phương đẹp  của độ  của trước  của ，thông quađôi 、phúttầng Ánh sángtầng lần 、truyền thống +hợp  của vật nối truyền tình ，phi phụ thuộc không ý nghĩa  của hiệu lực ，phong /đều Bối cảnhcần phương đẹp trong 。
 
 ---
 
-## 五、国风赛博乐器与环境音
-（双场景自检：双场景声音体系全覆盖，古风/都市情绪均有明确适配方案，无违和感）
+## 4、phong Bối cảnhrỗng gian 
+（đôi Bối cảnhtự kiểm ：toàn đôi Bối cảnhnối ，thêm mớiđều riêng biệt phong ，phong /đều việc công thể toàn ）
 
-国风赛博世界观下的双轨声音元素约束，核心为「传统东方乐器内核+赛博电子乐的有机融合」，**同步适配古风场景与国风赛博都市场景**，禁止违和的电子乐堆砌：
+phong giới có  của đôi Bối cảnhtrực quanviệc công thể ，「truyền thống phương rỗng gian logic+ của có máy hợp 」，**100%nối phong truyền thống Bối cảnhphong đều Bối cảnh**，Nghiêm cấmkhông logic：
 
-### 乐器选择
-（双场景通用，古风/都市叙事均可直接复用）
-- **箫** — 凄凉、孤寂、悲戚段落的核心乐器，可搭配电音延迟效果器，强化清冷哀婉的赛博氛围感，最能表现冷清哀婉
-- **二胡** — 情感激荡、悲痛、思念段落，拉弦的哭腔感适合情绪爆发，可搭配失真效果器，强化命运感的赛博叙事张力
-- **唢呐** — 情感波动剧烈段落（大悲大喜、命运转折、高潮），慎用但一用即核弹，可搭配合成器底噪，强化赛博世界的极致情绪冲击
-- **古琴** — 开场定调 / 平稳段落，与箫搭配使用，体现山水意境，可搭配氛围电子垫音，强化赛博禅意的空灵感
-- **琵琶** — 紧张、急促段落的点缀，武侠肃杀/都市博弈场景适用，可搭配工业电子鼓点，强化凌厉节奏感
-- **古筝** — 宫廷华贵/都市节庆段落的氛围乐器，华丽优雅，可搭配电子合成器琶音，强化盛大氛围感
-- 弦乐铺底可增加电影感但不宜喧宾夺主，电子合成器垫音需锚定传统乐器的调性，禁止脱离国风内核的无逻辑电子音效
+- **thức cấu ảnh ** — 【phong Bối cảnh】/phong /giữa thức cổng ；【đều Bối cảnh】toàn cách /số sát giữa thức phong /ARgiữa thức cổng /nửa số sát 。ngày của thức cấu ảnh Đạo cụ，chép tạo "sinh " của tầng lần rỗng gian 。3Dgiữa ，nửa dẫn  của ánh đường hiệu quả 、toàn sáng  của đổi 、 của việc giới rời là vẽ mặt điểm ，hàm với việc giữa  của chuyển đổi 、trả 、。
+- **lưu ý ** — 【phong Bối cảnh】giữa thức /truyền thống /tự /phong ；【đều Bối cảnh】rỗng giữa phong /toàn /trực hóa bối /số sát /đều bối /ngàygian 。lưu cấu ảnh  của ngàyxuống thể ，bối tình ：đầy mở  = 、giữa  = 、 = 。3DBối cảnhgiữa ， của thể Ánh sángtác vụ 、 của ánh đường 、Bối cảnh của cộng hiệu quả trùng cần 。
+- **ánh nguồn xuống thể ** — 【phong Bối cảnh】/tự thángvật /khung ánh /；【đều Bối cảnh】toàn giữa thức /ngườitạo thángvật /số sát giữa thức khung sáng ánh /ngàykhung mặt ánh nguồn /phong 。phong giới  của đôi ánh nguồn xuống thể ，truyền thống ánh nguồn ánh nguồn 1 1 đúng hồi ：ánh /toàn  = /mật （phương C）、thángvật /ngườitạo thángvật  = /sạch （phương F）、ánh /số sát khung ánh  = ngày thường /（phương E）。3Dgiữa ，ánh nguồn  của đôi trùng thể ánh hiệu quả 、PBR của truyền thống +đôi trùng phụ là vẽ mặt 。
+- **tạo biểu ** — 【phong Bối cảnh】truyền thống //mặt /kết cấu ；【đều Bối cảnh】mới giữa thức ngày/kết cấu máy /giữa thức ngoài lập mặt /lý biệt mặt /kết cấu kết cấu 。phong tạo  của biểu ，3Dtạo mô cần cùng bước thể truyền thống vẽ  của tiết máy kết cấu  của đẹp ，cần cùng bước truyền thống tầng  của thángtầng  của hóa ，Nghiêm cấmtạo dạng chép  của không logicmáy sửa tạo 。
+- **việc ** — 【phong Bối cảnh】/cấp /；【đều Bối cảnh】phong /ngày/mới giữa thức cấp /phong /toàn giữa thức 。đôi Bối cảnhviệc  của rỗng gian xuống thể ，3Dgiữa cần thể  của rỗng gian 、phong  của thống 1 、 của sinh hoạt ，là việc 、ngày thường đoạn  của Bối cảnh。
+- **đoạn ** — sách Phong cáchcó  của đôi Bối cảnhBối cảnhTài nguyên（không cùng đoạn /ngày/tiết /hóa trình độ thể ），đoạn tiếp Khuyến nghịhàm Bối cảnhrỗng quay tình xúc ，không cần 。【phong Bối cảnh】nối //tạo rỗng quay ；【đều Bối cảnh】nối ngàyngàyđường /rỗng giữa /địa biểu /rỗng quay /địa /rỗng giữa rỗng quay 。
+- **việc trước cấp ** — Điểm bước ngoặthàm trực quanphi Lời thoại，ưu tiên sử dụng vẽ mặt tay đoạn （Ánh sáng、Cỡ cảnh、rỗng quay 、toàn sáng nội dungđổi 、）phi phụ thuộc đúng giải ，phong /đều Bối cảnhcùng 1 việc logic。
 
-### 乐器组合策略
-（双场景全适配，每套组合均明确古风/都市适用场景）
+---
 
-| 情绪阶段 | 乐器组合 | 双场景适配说明 |
+## 5、phong thiết bị âm 
+（đôi Bối cảnhtự kiểm ：đôi Bối cảnhthanh âm thể dòng toàn ，phong /đều tình xúc có dẫn nối phương ，không  và ）
+
+phong giới dưới  của đôi thanh âm ，「truyền thống phương thiết bị trong + của có máy hợp 」，**cùng bước nối phong Bối cảnhphong đều Bối cảnh**，Nghiêm cấm và  của ：
+
+### thiết bị chọn lựa 
+（đôi Bối cảnhthông hàm ，phong /đều việc trực tiếp lời hàm ）
+- **** — 、、đoạn  của thiết bị ，nối âm trì hoãn hiệu quả thiết bị ，hóa sạch  của Không khí，nhất thể bảng sạch 
+- **2** — tình kích 、、đoạn ， của hợp tình xúc phát ，nối thất thật hiệu quả thiết bị ，hóa vận  của việc bức lực 
+- **** — tình động kịch đoạn （lớn lớn 、vận chuyển 、cao ），hàm nhưng 1 hàm ，nối hợp tạo thiết bị ，hóa giới  của tình xúc 
+- **** — mở trường nối gọi  / đoạn ，nối hàm ，thể ý ，nối Không khíâm ，hóa ý  của rỗng 
+- **** — bức 、đoạn  của điểm tố ，/đều Bối cảnhhàm ，nối điểm ，hóa tiết 
+- **** — /đều tiết đoạn  của Không khíthiết bị ，，nối hợp tạo thiết bị âm ，hóa lớn Không khí
+- cộng sáng nhưng không chính ，hợp tạo thiết bị âm cần nối truyền thống thiết bị  của gọi ，Nghiêm cấmphong trong  của không logicÂm hiệu
+
+### thiết bị nhóm hợp 
+（đôi Bối cảnhtoàn nối ，nhóm hợp dẫn phong /đều hàm Bối cảnh）
+
+| tình xúc đoạn  | thiết bị nhóm hợp  | đôi Bối cảnhnối Giải thích |
 |---|---|---|
-| 平稳/开场/收尾 | 古琴独奏 或 古琴 + 箫 + 轻氛围电子垫音 | 【古风场景】山水/庭院开场、全片收尾<br>【都市场景】城市全景/天际线开场、通勤日常、全片收尾 |
-| 山水意境/空灵 | 箫 + 古琴 + 笛 + 合成器氛围音 | 【古风场景】山水游历、禅意段落、空镜叙事<br>【都市场景】空中园林、城市生态景观、禅意空间段落 |
-| 宫廷华贵/喜庆 | 古筝 + 编钟 + 弦乐 + 电子琶音点缀 | 【古风场景】宫廷叙事、节庆盛典、盛大仪式<br>【都市场景】顶层权力叙事、都市节庆、城市盛典、高光时刻 |
-| 悲戚渐浓 | 箫 + 二胡 + 延迟效果器 + 低饱和电子底噪 | 【古风场景】离别、思念、悲戚情绪递进段落<br>【都市场景】都市独处、失意段落、情绪下沉叙事 |
-| 情绪爆发/命运转折 | 唢呐独奏 或 唢呐 + 二胡 + 失真合成器 | 【古风场景】生死离别、命运转折、全片高潮<br>【都市场景】人生转折、极致冲突、全片核心高潮 |
-| 武侠肃杀/紧张 | 琵琶点缀 + 弦乐衬底 + 工业电子鼓点 | 【古风场景】武侠对抗、追杀博弈、紧张追击段落<br>【都市场景】职场博弈、刑侦对抗、高张力冲突段落 |
-| 温婉日常 | 古琴 + 笛 + 轻弦乐 + 极简电子白噪音 | 【古风场景】居家日常、闺阁叙事、温馨生活化段落<br>【都市场景】都市居家、办公室日常、温柔生活化叙事 |
+| /mở trường /nhận đuôi  |  hoặc   +  + Không khíâm  | 【phong Bối cảnh】/mở trường 、toàn nhận đuôi <br>【đều Bối cảnh】Toàn cảnh (wide shot)/ngàyđường mở trường 、thông ngày thường 、toàn nhận đuôi  |
+| ý /rỗng  |  +  +  + hợp tạo thiết bị Không khíâm  | 【phong Bối cảnh】、ý đoạn 、rỗng quay việc <br>【đều Bối cảnh】rỗng giữa 、sinh thái bối 、ý rỗng gian đoạn  |
+| / |  + chỉnh  +  + âm điểm tố  | 【phong Bối cảnh】việc 、tiết 、lớn thức <br>【đều Bối cảnh】tầng thực lực việc 、đều tiết 、、cao ánh  |
+|  |  + 2 + trì hoãn hiệu quả thiết bị  + thấp  và  | 【phong Bối cảnh】khác 、、tình xúc tiến đoạn <br>【đều Bối cảnh】đều xử 、thất ý đoạn 、tình xúc dưới việc  |
+| tình xúc phát /vận chuyển  |  hoặc   + 2 + thất thật hợp tạo thiết bị  | 【phong Bối cảnh】sinh khác 、vận chuyển 、toàn cao <br>【đều Bối cảnh】ngườisinh chuyển 、、toàn cao  |
+| /bức  | điểm tố  +  + điểm  | 【phong Bối cảnh】đúng 、、bức đoạn <br>【đều Bối cảnh】trường 、đúng 、cao bức lực đoạn  |
+| ngày thường  |  +  +  + âm  | 【phong Bối cảnh】ngày thường 、việc 、sinh hoạt hóa đoạn <br>【đều Bối cảnh】đều 、ngày thường 、sinh hoạt hóa việc  |
 
-### 国风赛博环境音
-（双场景分层设计，古风/都市场景均有明确执行标准）
+### phong âm 
+（đôi Bối cảnhphúttầng thiết tính ，phong /đều Bối cảnhcó dẫn thực thibiểu ）
 
-- **双场景通用环境音基础层** — 蝉鸣虫唱 / 溪水潺潺 / 风过竹林 / 国风市井叫卖 / 夜雨滴檐 / 衣料摩擦 / 中式风铃轻响 / 鸟鸣啁啾 / 落花簌簌
-- **国风赛博都市专属环境音分层** — 【传统层】街头民乐背景音、风过中式格栅、国风招牌风铃声、市井叫卖声；【赛博层】摩天楼风噪、车流低鸣、地铁运行低频声、霓虹招牌嗡鸣、全息广告轻人声、数控设备轻响、玻璃幕墙风噪
-- **执行标准** — 【古风场景】每场戏标注 1-2 个传统核心环境音；【都市场景】每场戏标注 1个传统核心环境音 + 1个都市赛博核心环境音，帮助后续音效设计。双轨环境音层次越匹配叙事，国风赛博场景的沉浸感越强。
+- **đôi Bối cảnhthông hàm âm cơ sở tầng ** —  /  / phong  / phong  /  /  / giữa thức phong phản  /  / 
+- **phong đều riêng biệt âm phúttầng ** — 【truyền thống tầng 】đầu dân bối âm 、phong giữa thức khung 、phong phong thanh 、thanh ；【tầng 】ngàyphong 、thấp 、địa vận thi thấp tần thanh 、、toàn thông ngườithanh 、số sát thiết phản 、phong 
+- **thực thibiểu ** — 【phong Bối cảnh】trường biểu tâm  1-2 mục truyền thống âm ；【đều Bối cảnh】trường biểu tâm  1mục truyền thống âm  + 1mục đều âm ，trợ giúp sau Âm hiệuthiết tính 。đôi âm tầng lần khớpviệc ，phong Bối cảnh của 。
 
 ---

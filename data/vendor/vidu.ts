@@ -1,55 +1,55 @@
-//如需遥测AI请使用在toonflow安装目录运行npx @ai-sdk/devtools （要求在其他设置中打开遥测功能，且toonflow有权限在安装目录创建.devtools文件夹）
-// ==================== 类型定义 ====================
-// 文本模型
+//Nếu cần  đo từ xa AIvui lòng sử dụng ở toonflowcài đặtthư mụcchạy npx @ai-sdk/devtools （yêu cầu bật tính năng đo từ xa trong Cài đặt khác，và toonflowcó quyền tạo thư mục trong thư mục cài đặt .devtoolsthư mục tệp ）
+// ==================== Định nghĩa kiểu dữ liệu ====================
+// Mô hình văn bản 
 interface TextModel {
-  name: string; // 显示名称
+  name: string; // Tên hiển thị
   modelName: string;
   type: "text";
-  think: boolean; // 前端显示用
+  think: boolean; // Dùng cho hiển thị giao diện
 }
 
-// 图像模型
+// Mô hình hình ảnh
 interface ImageModel {
-  name: string; // 显示名称
+  name: string; // Tên hiển thị
   modelName: string;
   type: "image";
   mode: ("text" | "singleImage" | "multiReference")[];
-  associationSkills?: string; // 关联技能，多个技能用逗号分隔
+  associationSkills?: string; // Kỹ năng liên kết, ngăn cách nhau bằng dấu phẩy
 }
-// 视频模型
+// Mô hình video
 interface VideoModel {
-  name: string; // 显示名称
-  modelName: string; //全局唯一
+  name: string; // Tên hiển thị
+  modelName: string; //Duy nhất toàn cục
   type: "video";
   mode: (
-    | "singleImage" // 单图
-    | "startEndRequired" // 首尾帧（两张都得有）
-    | "endFrameOptional" // 首尾帧（尾帧可选）
-    | "startFrameOptional" // 首尾帧（首帧可选）
-    | "text" // 文本生视频
-    | ("videoReference" | "imageReference" | "audioReference" | "textReference")[] // 混合参考
+    | "singleImage" // Đơn ảnh
+    | "startEndRequired" // Khung đầu/cuối (bắt buộc cả hai)
+    | "endFrameOptional" // Khung đầu/cuối (khung cuối tùy chọn)
+    | "startFrameOptional" // Khung đầu/cuối (khung đầu tùy chọn)
+    | "text" // văn bản  sinh Video
+    | ("videoReference" | "imageReference" | "audioReference" | "textReference")[] // Tham chiếu hỗn hợp
   )[];
-  associationSkills?: string; // 关联技能，多个技能用逗号分隔
-  audio: "optional" | false | true; // 音频配置
+  associationSkills?: string; // Kỹ năng liên kết, ngăn cách nhau bằng dấu phẩy
+  audio: "optional" | false | true; // Âm thanhCấu hình
   durationResolutionMap: { duration: number[]; resolution: string[] }[];
 }
 
 interface TTSModel {
-  name: string; // 显示名称
+  name: string; // Tên hiển thị
   modelName: string;
   type: "tts";
   voices: {
-    title: string; //显示名称
-    voice: string; //说话人
+    title: string; //Tên hiển thị
+    voice: string; //hướng lời người
   }[];
 }
-// 供应商配置
+// Nhà cung cấpCấu hình
 interface VendorConfig {
-  id: string; //供应商唯一标识，必须全局唯一
+  id: string; //Định danh duy nhất của nhà cung cấp，bắt buộc Duy nhất toàn cục
   author: string;
-  description?: string; //md5格式
+  description?: string; //md5định dạng
   name: string;
-  icon?: string; //仅支持base64格式
+  icon?: string; //chỉ hỗ trợbase64định dạng
   inputs: {
     key: string;
     label: string;
@@ -60,17 +60,17 @@ interface VendorConfig {
   inputValues: Record<string, string>;
   models: (TextModel | ImageModel | VideoModel)[];
 }
-// ==================== 全局工具函数 ====================
-//Axios实例
-//压缩图片大小(1MB = 1 * 1024 * 1024)
+// ==================== Hàm tiện ích toàn cục  ====================
+//Instance Axios
+//nén nhỏ Hình ảnhkích thước(1MB = 1 * 1024 * 1024)
 declare const zipImage: (completeBase64: string, size: number) => Promise<string>;
-//压缩图片分辨率
+//nén nhỏ Hình ảnhphần tỷ lệ 
 declare const zipImageResolution: (completeBase64: string, width: number, height: number) => Promise<string>;
-//多图拼接乘单图 maxSize  最大输出大小，默认为 10mb
+//nhiều ảnh ghép tiếp nhân Đơn ảnh maxSize  nhất lớn xuất ra kích thước，Mặc định 10mb
 declare const mergeImages: (completeBase64: string[], maxSize?: string) => Promise<string>;
-//Url转Base64
+//Urlchuyển Base64
 declare const urlToBase64: (url: string) => Promise<string>;
-//轮询函数
+//Hàm polling
 declare const pollTask: (
   fn: () => Promise<{ completed: boolean; data?: string; error?: string }>,
   interval?: number,
@@ -88,16 +88,16 @@ declare const createMinimax: any;
 declare const createGoogleGenerativeAI: any;
 declare const logger: (logstring: string) => void;
 declare const jsonwebtoken: any;
-// ==================== 供应商数据 ====================
+// ==================== Nhà cung cấpDữ liệu ====================
 const vendor: VendorConfig = {
   id: "vidu",
-  author: "搬砖的Coder",
+  author: " của Coder",
   description:
-    "Vidu 官方视频生成平台。 [前往平台](https://platform.vidu.cn/login/)",
-  name: "Vidu 开放平台",
+    "Nền tảng tạo video AI chính thức của Vidu.\n\n🔗 [Truy cập nền tảng Vidu](https://platform.vidu.cn/login/)",
+  name: "Nền tảng mở Vidu",
   inputs: [
-    { key: "apiKey", label: "API密钥", type: "password", required: true, placeholder: "请到Vidu官方申请" },
-    { key: "baseUrl", label: "接口路径", type: "url", required: true, placeholder: "https://api.vidu.cn/ent/v2" },
+    { key: "apiKey", label: "Khóa API (API Key)", type: "password", required: true, placeholder: "vui lòng đến Viduphương vui lòng " },
+    { key: "baseUrl", label: "cổng kết nối (endpoint) đường dẫn", type: "url", required: true, placeholder: "https://api.vidu.cn/ent/v2" },
   ],
   inputValues: {
     apiKey: "",
@@ -141,7 +141,7 @@ const vendor: VendorConfig = {
       type: "video",
       modelName: "ViduQ2-pro",
       durationResolutionMap: [{ duration: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], resolution: ["540p", "720p", "1080p"] }],
-      mode: ["singleImage", "startEndRequired"], //参考生视频无有效设置值
+      mode: ["singleImage", "startEndRequired"], //tham chiếusinh Videokhông hợp lệThiết lậpgiá trị 
       audio: true,
     },
     {
@@ -192,23 +192,23 @@ const vendor: VendorConfig = {
 };
 exports.vendor = vendor;
 
-// ==================== 适配器函数 ====================
+// ==================== Hàm Adapter ====================
 
-// 文本请求函数
+// văn bản  vui lòng cầu hàm 
 const textRequest: (textModel: TextModel) => { url: string; model: string } = (textModel) => {
-  throw new Error("当前供应商仅支持视频大模型，谢谢！");
+  throw new Error("hiện tạiNhà cung cấpchỉ hỗ trợVideolớn Mô hình，！");
 };
 exports.textRequest = textRequest;
 
-//图片请求函数
+//Hình ảnhvui lòng cầu hàm 
 interface ImageConfig {
-  prompt: string; //图片提示词
-  imageBase64: string[]; //输入的图片提示词
-  size: "1K" | "2K" | "4K"; // 图片尺寸
-  aspectRatio: `${number}:${number}`; // 长宽比
+  prompt: string; //Hình ảnhPrompt
+  imageBase64: string[]; //Prompt hình ảnh đầu vào
+  size: "1K" | "2K" | "4K"; // Kích thước hình ảnh
+  aspectRatio: `${number}:${number}`; // dài rộng tỷ 
 }
 const imageRequest = async (imageConfig: ImageConfig, imageModel: ImageModel) => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu API Key");
   const apiKey = vendor.inputValues.apiKey.replace("Token ", "");
 
   const size = imageConfig.size === "1K" ? "2K" : imageConfig.size;
@@ -241,14 +241,14 @@ const imageRequest = async (imageConfig: ImageConfig, imageModel: ImageModel) =>
     body: JSON.stringify(body),
   });
   if (!response.ok) {
-    const errorText = await response.text(); // 获取错误信息
-    console.error("请求失败，状态码:", response.status, ", 错误信息:", errorText);
-    throw new Error(`请求失败，状态码: ${response.status}, 错误信息: ${errorText}`);
+    const errorText = await response.text(); // Lấylỗithông tin
+    console.error("Yêu cầu thất bại，trạng tháimã :", response.status, ", lỗithông tin:", errorText);
+    throw new Error(`Yêu cầu thất bại，trạng tháimã : ${response.status}, lỗithông tin: ${errorText}`);
   }
   const data = await response.json();
   const res = await checkTaskResult(data.task_id);
   if (!res.data) {
-    throw new Error("图片未能生成");
+    throw new Error("Hình ảnhchưa thể tạo");
   }
   const list = JSON.parse(JSON.stringify(res.data));
   return list[0].url;
@@ -263,17 +263,17 @@ interface VideoConfig {
   imageBase64?: string[];
   audio?: boolean;
   mode:
-    | "singleImage" // 单图
-    | "multiImage" // 多图模式
-    | "gridImage" // 网格单图（传入一张图片，但该图片是网格图）
-    | "startEndRequired" // 首尾帧（两张都得有）
-    | "endFrameOptional" // 首尾帧（尾帧可选）
-    | "startFrameOptional" // 首尾帧（首帧可选）
-    | "text" // 文本生视频
-    | ("video" | "image" | "audio" | "text")[]; // 混合参考
+    | "singleImage" // Đơn ảnh
+    | "multiImage" // nhiều ảnh mô thức 
+    | "gridImage" // mạng khung Đơn ảnh（truyền vào 1 ảnh  Hình ảnh，nhưng Hình ảnhlà mạng khung ảnh ）
+    | "startEndRequired" // Khung đầu/cuối (bắt buộc cả hai)
+    | "endFrameOptional" // Khung đầu/cuối (khung cuối tùy chọn)
+    | "startFrameOptional" // Khung đầu/cuối (khung đầu tùy chọn)
+    | "text" // văn bản  sinh Video
+    | ("video" | "image" | "audio" | "text")[]; // Tham chiếu hỗn hợp
 }
 
-// 构建 各个平台的metadata参数
+// cấu tạo  các mục đài  của metadatatham số
 
 const buildViduMetadata = (videoConfig: VideoConfig) => ({
   aspect_ratio: videoConfig.aspectRatio,
@@ -288,7 +288,7 @@ const buildModelMetadata = (modelName: string, videoConfig: VideoConfig) => {
   const match = METADATA_BUILDERS.find(([key]) => lowerName.includes(key));
   return match ? match[1](videoConfig) : {};
 };
-// 检查生成物结果
+// kiểm tra tạokết quả
 const checkTaskResult = async (taskId: string) => {
   const queryUrl = vendor.inputValues.baseUrl + "/tasks/{id}/creations";
   const apiKey = vendor.inputValues.apiKey;
@@ -298,9 +298,9 @@ const checkTaskResult = async (taskId: string) => {
       headers: { Authorization: `Token ${apiKey}`, "Content-Type": "application/json" },
     });
     if (!queryResponse.ok) {
-      const errorText = await queryResponse.text(); // 获取错误信息
-      console.error("请求失败，状态码:", queryResponse.status, ", 错误信息:", errorText);
-      throw new Error(`请求失败，状态码: ${queryResponse.status}, 错误信息: ${errorText}`);
+      const errorText = await queryResponse.text(); // Lấylỗithông tin
+      console.error("Yêu cầu thất bại，trạng tháimã :", queryResponse.status, ", lỗithông tin:", errorText);
+      throw new Error(`Yêu cầu thất bại，trạng tháimã : ${queryResponse.status}, lỗithông tin: ${errorText}`);
     }
     const queryData = await queryResponse.json();
     const status = queryData?.state ?? queryData?.data?.state;
@@ -312,7 +312,7 @@ const checkTaskResult = async (taskId: string) => {
         return { completed: true, data: queryData.creations };
       case "FAILURE":
       case "failed":
-        return { completed: false, error: fail_reason || "生成失败" };
+        return { completed: false, error: fail_reason || "tạothất bại" };
       default:
         return { completed: false };
     }
@@ -322,13 +322,13 @@ const checkTaskResult = async (taskId: string) => {
 };
 
 const videoRequest = async (videoConfig: VideoConfig, videoModel: VideoModel) => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu API Key");
   const apiKey = vendor.inputValues.apiKey.replace("Token ", "");
 
-  // 构建每个模型对应的附加参数
+  // cấu tạo mục Mô hìnhđúng hồi  của cộng tham số
   const metadata = buildModelMetadata(videoModel.modelName, videoConfig);
 
-  //公共请求参数
+  //vui lòng cầu tham số
   const publicBody = {
     model: videoModel.modelName,
     ...(videoConfig.imageBase64 && videoConfig.imageBase64.length ? { images: videoConfig.imageBase64 } : {}),
@@ -345,9 +345,9 @@ const videoRequest = async (videoConfig: VideoConfig, videoModel: VideoModel) =>
     body: JSON.stringify(publicBody),
   });
   if (!response.ok) {
-    const errorText = await response.text(); // 获取错误信息
-    console.error("请求失败，状态码:", response.status, ", 错误信息:", errorText);
-    throw new Error(`请求失败，状态码: ${response.status}, 错误信息: ${errorText}`);
+    const errorText = await response.text(); // Lấylỗithông tin
+    console.error("Yêu cầu thất bại，trạng tháimã :", response.status, ", lỗithông tin:", errorText);
+    throw new Error(`Yêu cầu thất bại，trạng tháimã : ${response.status}, lỗithông tin: ${errorText}`);
   }
   const data = await response.json();
   const taskId = data.id;
@@ -364,5 +364,5 @@ interface TTSConfig {
   volume: number;
 }
 const ttsRequest = async (ttsConfig: TTSConfig, ttsModel: TTSModel) => {
-  throw new Error("Vidu 暂不支持语音合成（TTS）");
+  throw new Error("Vidu tạm không hỗ trợgiọng nói hợp tạo （TTS）");
 };

@@ -1,61 +1,61 @@
-# 科幻末世 · 导演叙事手法技能包
+# Khoa Học Viễn Tưởng / Tận Thế · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **科幻末世** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **Khoa Học Viễn Tưởng / Tận Thế** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **废墟美学** — 文明的残骸本身就是最有力的叙事，一栋坍塌的大楼比千言万语更能说明"发生了什么"
-- **生存即主题** — 末世叙事的底层驱动力是"活下去"，所有抉择、道德、人性都在生存压力下被放大
-- **人性实验室** — 末世是极端环境下的人性测试：谁会背叛、谁会牺牲、谁在绝望中仍保有善良
-- **希望的重量** — 越是黑暗的世界，一丝光亮越珍贵。废墟中的一朵花比花园中的百亩花田更有叙事力
+- **đẹp ** — tài dẫn  của sách thì là nhất có lực  của việc ，1  của lớn tỷ nghìnvạnngữ đổi thể Giải thích"phát sinh sao"
+- **sinh lưu chính đề ** — việc  của tầng động lực là "hoạt dưới đi "，tất cảlựa 、đạo 、ngườiđều ở sinh lưu nén lực dưới mở lớn 
+- **ngườichiếu ** — là đầu dưới  của ngườikiểm tra ：sẽ 、sẽ 、ở giữa lưu có 
+- ** của trùng lượng ** — là  của giới ，1 ánh 。giữa  của 1 tỷ giữa  của trăm đổi có việc lực 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Scifi_post_apocalypse/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义科幻末世在主题立意、生存节奏、场景废墟设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa Khoa Học Viễn Tưởng / Tận Thếở chính đề lập ý 、sinh lưu tiết 、Bối cảnhthiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与末世内核 | 生存压力、人性极限、文明遗迹叙事、希望与绝望的辩证 |
-| 叙事结构与生存节奏 | 危机驱动、资源博弈、信任考验、希望曲线 |
-| 分场景氛围设计 | 六大典型末世段落设计、空间衰败叙事、环境危机隐喻 |
-| 声音与音乐方向 | 工业废噪、寂静荒原、警报音叙事、电子余韵 |
-| 构图与景别叙事 | 废墟全景/生存特写/压迫空间、景别的生存表达 |
-| 镜头运动与节奏 | 求生手持、废墟漫游、危机快推、荒原缓拉 |
+| chính đề lập ý trong  | sinh lưu nén lực 、ngườihạn 、tài dẫn việc 、 của chứng  |
+| việc kết cấu sinh lưu tiết  | máy động 、tài nguồn 、tin chiếu 、đường  |
+| phútBối cảnhKhông khíthiết tính  | 6lớn kiểu đoạn thiết tính 、rỗng gian bại việc 、máy  |
+| thanh âm âm phương  | 、gốc 、báo âm việc 、 |
+| cấu ảnh Cỡ cảnhviệc  | Toàn cảnh (wide shot)/sinh lưu Đặc tả (close-up)/nén rỗng gian 、Cỡ cảnh của sinh lưu bảng  |
+| Ống kínhvận động tiết  | cầu sinh tay giữ 、、máy nhanh khuyến 、gốc  |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义科幻末世在分镜表中的景别策略、运镜节奏、时长把控、生存行动分镜与转场手法。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa Khoa Học Viễn Tưởng / Tận Thếở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaytiết 、Thời lượngđem sát 、sinh lưu thi động Phân cảnhchuyển trường tay thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为生存叙事核心工具的定位说明 |
-| 景别选择 | 废墟远景价值、生存特写、科技遗迹景别 |
-| 运镜节奏 | 手持求生感、荒原稳定、危机加速、探索缓移 |
-| 时长把控 | 废墟凝视时长、危机压缩、沉默荒原的留白 |
-| 生存行动设计 | 搜索/战斗/逃亡的分镜逻辑、资源争夺镜头语言 |
-| 人性抉择叙事 | 道德困境镜头、信任与背叛、牺牲的仪式感 |
-| 台词与留白 | 惜字如金、环境叙事替代对白、回忆碎片 |
-| 转场设计 | 废墟蒙太奇/信号干扰/时间衰变/闪回文明 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ sinh lưu việc cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | Viễn cảnh (extreme wide shot)giá trị 、sinh lưu Đặc tả (close-up)、Cỡ cảnh |
+| Góc quaytiết  | tay giữ cầu sinh 、gốc nối 、máy cộng 、kiếm  |
+| Thời lượngđem sát  | video Thời lượng、máy nén nhỏ 、gốc  của lưu  |
+| sinh lưu thi động thiết tính  | tìm kiếm // của Phân cảnhlogic、tài nguồn Ống kínhngữ  |
+| ngườilựa việc  | đạo Ống kính、tin 、 của thức  |
+| Lời thoạilưu  | chữ như 、việc đúng 、trả  |
+| chuyển trường thiết tính  | /tin số /thời gian/trả tài dẫn  |
 
-## 使用方式
+## hàm cách thức
 
-本技能包作为 ToonFlow 导演 AI 的叙事手法参考，在故事创作流程中自动加载，指导：
+sách thể gói tác vụ  ToonFlow đạo diễn AI  của việc tay thức tham chiếu，ở việc sáng tác vụ trình giữa tự động cộng xuống ，dẫn ：
 
-1. **叙事规划** — 确定末世内核、生存节奏曲线、场景废墟氛围与音效方向
-2. **分镜表生成** — 根据叙事规划输出具体的景别、运镜、时长与转场方案
+1. **việc lập kế hoạch** — nối trong 、sinh lưu tiết đường 、Bối cảnhKhông khíÂm hiệuphương 
+2. **Bảng phân cảnhtạo** — dựa theoviệc lập kế hoạchtải ra cụ thể  của Cỡ cảnh、Góc quay、Thời lượngchuyển trường phương 
 
-两个文件分工明确、逐层递进，从"为什么这样拍"到"具体怎么拍"形成完整闭环。
+2mục tệpphútdẫn 、tầng tiến ，từ "saonàykiểu "đến "cụ thể sao"dạng tạo chỉnh 。

@@ -1,156 +1,156 @@
 ---
 name: art_prop
-description: 道具图像生成 · 约束手册
+description: Đạo cụhình ảnhtạo · sổ tay
 metaData: art_skills
 ---
 
-# 道具图像生成 · 约束手册
+# Đạo cụhình ảnhtạo · sổ tay
 
 ---
 
-## 一、道具设计原则
+## 1 、Đạo cụthiết tính gốc 
 
-1. **功能可读** — 道具用途一目了然，造型服务于功能
-2. **质感极致** — 材质纹理必须清晰可辨（金属/玉石/木/布/纸/瓷）
-3. **年代一致** — 所有道具必须符合古风世界观，禁止现代元素
-4. **尺度明确** — 通过参照物或标注暗示道具真实尺寸
-5. **纯道具独立展示** — 画面中只能出现道具本身，严禁出现任何人物、手部、肢体，道具不可处于被持有/佩戴/握持状态，必须以静物陈列方式独立呈现
-
----
-
-## 二、道具分类与美学约束
-
-### 2.1 兵器类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 剑/刀/弓/枪/扇 | {兵器类型}，古风兵器 |
-| 材质 | 精钢/玄铁 + 宝石镶嵌 + 丝绸剑穗 | 精钢锻造、宝石镶嵌 |
-| 装饰 | 剑鞘/刀柄雕花、流苏、暗纹 | 雕花精致、流苏垂坠 |
-| 光泽 | 金属冷光泽、刃口反光 | 冷光泽、金属质感 |
-| 风格 | 国风二次元 | 新国潮风格、二次元渲染 |
-
-### 2.2 饰品类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 簪/钗/璎珞/玉佩/手镯/耳坠 | {饰品类型}，古风首饰 |
-| 材质 | 金/银/玉/珍珠/宝石 | 金丝编织、玉质通透 |
-| 工艺 | 极致精细、花丝/掐丝/镶嵌 | 工艺精细、精雕细琢 |
-| 光泽 | 珠光/玉润/金属光泽 | 珠光莹润、金属光泽 |
-| 风格 | 国风二次元 | 精致华丽、新国潮 |
-
-### 2.3 生活器物类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 茶具/酒具/香炉/棋盘/书卷/灯笼 | {器物类型}，古风器物 |
-| 材质 | 瓷/铜/竹/木/纸 | 青瓷温润、紫铜古朴 |
-| 质感 | 釉面/木纹/竹节清晰 | 釉面光泽、木纹清晰 |
-| 风格 | 新中式 | 素雅古朴 / 华贵精致 |
-| 渲染 | 赛璐璐平涂 | 二次元质感、细腻笔触 |
-
-### 2.4 信物/关键道具类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 信物/令牌/卷轴/药瓶/玉印 | {道具类型}，古风道具 |
-| 特殊性 | 需有辨识度、叙事象征意义 | 独特造型、寓意深远 |
-| 做旧感 | 可按剧情需要添加年代感 | 古旧斑驳 / 崭新精致 |
-| 风格 | 国风二次元 | 新国潮风格、动漫感 |
-
-### 2.5 文房四宝类（新增）
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 笔/墨/纸/砚 | {文房类型}，文房四宝 |
-| 材质 | 竹/木/玉/陶瓷 | 竹制笔杆、瓷质砚台 |
-| 质感 | 木纹/釉面/笔毫清晰 | 笔毫细腻、砚台温润 |
-| 风格 | 文人雅致 | 古风雅韵、细腻笔触 |
-
-### 2.6 节庆道具类（新增）
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 灯笼/烟花/春联/福字 | {节庆类型}，节庆道具 |
-| 材质 | 纸/布/竹/绸缎 | 丝绸灯笼、纸质春联 |
-| 质感 | 纸纹/布料纹理清晰 | 纹理清晰、质感细腻 |
-| 风格 | 喜庆热闹 | 色彩明亮、热闹氛围 |
+1. **công thể ** — Đạo cụhàm 1 mục ，tạo kiểu phục vụ với công thể 
+2. **** — lý Bắt buộcsạch （biệt /////）
+3. **năm1 ** — tất cảĐạo cụBắt buộchợp phong giới ，Nghiêm cấm
+4. **độ dẫn ** — thông quatham hoặc biểu tâm nhở Đạo cụthật kích thước
+5. **thuần Đạo cụlập nhở ** — vẽ mặt giữa chỉ thể ra Đạo cụsách ，ra người、tay bộ 、thể ，Đạo cụkhông xử với giữ có //giữ trạng thái，Bắt buộchàng cách thứclập 
 
 ---
 
-## 三、多角度设定图规范
+## 2、Đạo cụphútloại đẹp 
 
-### 视图定义
+### 2.1 thiết bị loại 
 
-| 位置 | 视图 | 角度 | 要求 | 提示词 |
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | //// | {thiết bị Loại}，phong thiết bị  |
+|  | / +  +  | tạo 、 |
+|  | /、、 | 、 |
+| ánh  | biệt ánh 、cổng phụ ánh  | ánh 、biệt  |
+| Phong cách | phong 2lần  | mới Phong cách、2lần  |
+
+### 2.2 loại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | ////tay / | {Loại}，phong  |
+|  | //// | chỉnh 、thông  |
+|  | 、// | 、 |
+| ánh  | ánh //biệt ánh  | ánh 、biệt ánh  |
+| Phong cách | phong 2lần  | 、mới  |
+
+### 2.3 sinh hoạt thiết bị loại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | cụ /cụ //đĩa // | {thiết bị Loại}，phong thiết bị  |
+|  | //// | 、 |
+|  | mặt //tiết sạch  | mặt ánh 、sạch  |
+| Phong cách | mới giữa thức  |  /  |
+|  |  | 2lần 、 |
+
+### 2.4 tin /liên Đạo cụloại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | tin //// | {Đạo cụLoại}，phong Đạo cụ |
+|  | cần có trưng độ 、việc tượng ý nghĩa  | tạo kiểu 、ý  |
+| cũ  | theo kịch tình cần cần thêmnăm | cũ  / mới  |
+| Phong cách | phong 2lần  | mới Phong cách、động  |
+
+### 2.5 tài 4loại （thêm mới）
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | /// | {tài Loại}，tài 4 |
+|  | /// | chép 、đài  |
+|  | /mặt /sạch  | 、đài  |
+| Phong cách | tài người | phong 、 |
+
+### 2.6 tiết Đạo cụloại （thêm mới）
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | //kết /chữ  | {tiết Loại}，tiết Đạo cụ |
+|  | /// | 、kết  |
+|  | /lý sạch  | lý sạch 、 |
+| Phong cách |  | vật dẫn 、Không khí |
+
+---
+
+## 3、nhiều nhân độ thiết nối ảnh 
+
+### video ảnh nối nghĩa 
+
+| vị trí trí  | video ảnh  | nhân độ  | Yêu cầu | Prompt |
 |---|---|---|---|---|
-| 左上 | 正面图 | 正面 0° | 道具完整正面形态 | front view |
-| 右上 | 侧面图 | 侧面 90° | 厚度/轮廓/结构清晰 | side view |
-| 左下 | 背面图 | 背面 180° | 道具背部结构/装饰 | back view |
-| 右下 | 细节特写 | 局部放大 | 材质纹理/工艺细节 | detail closeup |
+| trái trên  | chính mặt ảnh  | chính mặt  0° | Đạo cụchỉnh chính mặt dạng thái  | front view |
+| phải trên  | mặt ảnh  | mặt  90° | dày độ //kết cấu sạch  | side view |
+| trái dưới  | mặt ảnh  | mặt  180° | Đạo cụbộ kết cấu / | back view |
+| phải dưới  | tiết Đặc tả (close-up) | cục bộ mở lớn  | lý /tiết  | detail closeup |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面四宫格（2×2），上下左右四视角 |
-| 背景 | 月白纯色 #E8EAF5 |
-| 光线 | 均匀柔光，无硬阴影 |
-| 比例 | 每格道具占格内主体 70%+ |
-| 投影 | 允许自然地面微投影 |
-| 画面比例 | 建议 1:1 |
+| cục  | cùng 1 vẽ mặt 4khung （2×2），trên dưới trái phải 4video nhân  |
+| bối  | thángthuần vật  #E8EAF5 |
+| ánh đường  | ánh ，không sáng  |
+| Tỷ lệ | khung Đạo cụkhung trong chính thể  70%+ |
+| sáng  | tự địa mặt sáng  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 1:1 |
 
 ---
 
-## 四、材质渲染约束
+## 4、
 
-| 材质 | 渲染要求 | 提示词 |
+|  | Yêu cầu | Prompt |
 |---|---|---|
-| 金属 | 反光/高光/冷光泽、划痕微可见 | 金属质感、冷光泽、反光清晰 |
-| 玉石 | 内透光、温润、微通透 | 玉质通透、温润如脂 |
-| 木质 | 木纹清晰、年轮可见 | 木纹清晰、质感温润 |
-| 瓷器 | 釉面光泽、色泽均匀 | 釉面光泽、瓷质温润 |
-| 布/纸 | 纤维质感、边缘自然 | 布料纹理、纸质古朴 |
-| 宝石 | 折射/内部光线、切面清晰 | 宝石璀璨、光芒折射 |
-| 赛璐璐质感 | 平涂均匀、线条清晰 | 赛璐璐平涂、细腻笔触 |
+| biệt  | phụ ánh /cao ánh /ánh 、thấy  | biệt 、ánh 、phụ ánh sạch  |
+|  | trong ánh 、、thông  | thông 、như  |
+|  | sạch 、nămthấy  | sạch 、 |
+| thiết bị  | mặt ánh 、vật  | mặt ánh 、 |
+| / | 、tự  | lý 、 |
+|  | /trong bộ ánh đường 、mặt sạch  | 、ánh  |
+|  | 、đường mục sạch  | 、 |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 
-国风二次元道具设定图，
-国风二次元，新国潮美学，日式动画渲染，赛璐璐平涂，细腻笔触，电影质感，
-{道具类型}，{材质描述}，{工艺/装饰描述}，{状态描述}，
-纯道具静物展示，道具独立陈列，无人持有，无人佩戴，
-同一画面四宫格（2×2）：左上正面图+右上侧面图+左下背面图+右下细节特写，
-月白纯色背景，均匀柔光，无硬阴影，
-材质纹理超清晰，质感细腻，{材质光泽描述}
-国风二次元高清渲染，高细节，细腻线条，赛璐璐平涂感，
-画面无字幕、无水印、无标题叠字，
-画面中不能出现任何人物、手部、手指、肢体，道具不可处于被握持或佩戴状态
+phong 2lần Đạo cụthiết nối ảnh ，
+phong 2lần ，mới đẹp ，ngày thức động vẽ ，，，sáng ，
+{Đạo cụLoại}，{Mô tả}，{/Mô tả}，{trạng tháiMô tả}，
+thuần Đạo cụnhở ，Đạo cụlập hàng ，không ngườigiữ có ，không người，
+cùng 1 vẽ mặt 4khung （2×2）：trái trên chính mặt ảnh +phải trên mặt ảnh +trái dưới mặt ảnh +phải dưới tiết Đặc tả (close-up)，
+thángthuần vật bối ，ánh ，không sáng ，
+lý vượt sạch ，，{ánh Mô tả}
+phong 2lần cao sạch ，cao tiết ，đường mục ，，
+vẽ mặt không chữ 、không 、không biểu đề chữ ，
+vẽ mặt giữa không thể ra người、tay bộ 、tay 、thể ，Đạo cụkhông xử với giữ hoặc trạng thái
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须指定「月白纯色背景」 |
-| R2 | 必须明确道具材质与工艺 |
-| R3 | 道具造型必须符合古风世界观 |
-| R4 | 必须为「四宫格」布局：正面 + 侧面 + 背面 + 特写 |
-| R5 | 必须包含「国风二次元 + 赛璐璐平涂」关键词 |
+| R1 | Bắt buộcnối 「thángthuần vật bối 」 |
+| R2 | Bắt buộcdẫn Đạo cụ |
+| R3 | Đạo cụtạo kiểu Bắt buộchợp phong giới  |
+| R4 | Bắt buộc「4khung 」cục ：chính mặt  + mặt  + mặt  + Đặc tả (close-up) |
+| R5 | Bắt buộcgói 「phong 2lần  + 」liên từ  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 复杂场景背景 |
-| X2 | 道具与人物同画面（本环节为纯道具图） |
-| X3 | 出现任何人物形象，包括全身、半身、局部（手、手指、手臂等肢体） |
-| X4 | 道具处于被持有、握持、佩戴、使用中的状态 |
-| X5 | 出现暗示人物存在的元素（如手持痕迹、佩戴视角、使用姿态） |
-| X6 | 现代元素出现在古风道具中 |
+| X1 | lời Bối cảnhbối  |
+| X2 | Đạo cụngườicùng vẽ mặt （sách tiết thuần Đạo cụảnh ） |
+| X3 | ra ngườidạng tượng ，gói quát toàn 、nửa 、cục bộ （tay 、tay 、tay thể ） |
+| X4 | Đạo cụxử với giữ có 、giữ 、、hàm giữa  của trạng thái |
+| X5 | ra nhở ngườilưu ở  của （như tay giữ 、video nhân 、hàm thái ） |
+| X6 | ra ở phong Đạo cụgiữa  |

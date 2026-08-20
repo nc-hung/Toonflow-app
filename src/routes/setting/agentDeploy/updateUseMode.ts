@@ -15,6 +15,6 @@ export default router.post(
     await u.db("o_setting").where("key", "agentUseMode").update({
       value: agentUseMode,
     });
-    res.status(200).send(success("保存设置成功"));
+    res.status(200).send(success("Lưu cài đặt thành công"));
   },
 );

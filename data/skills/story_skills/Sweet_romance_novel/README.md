@@ -1,62 +1,62 @@
-# 甜宠言情 · 导演叙事手法技能包
+# Ngôn Tình Ngọt Ngào · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **甜宠言情** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **Ngôn Tình Ngọt Ngào** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **含蓄克制** — 情感表达靠留白与微妙反应，而非台词铺陈
-- **以小博大** — 用细节打动人：一个眼神、一次欲言又止、一个被风吹乱的衣角
-- **推拉节奏** — 靠近→退缩→再靠近→误会→分离→重逢，每一轮都更深入、更甜蜜
-- **沉默的力量** — 关键情感瞬间，沉默比配乐更有力
+- **chép ** — tình bảng lưu phụ hồi ，phi Lời thoại
+- **nhỏ lớn ** — hàm tiết mở động người：một 、1 lần lại 、một phong  của nhân 
+- **khuyến tiết ** — →đăng nhỏ →→sẽ →phút→trùng ，1 đều đổi vào 、đổi 
+- ** của lực lượng ** — liên tình gian ，tỷ nối đổi có lực 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Sweet_romance_novel/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义甜宠言情在主题立意、情感节奏、场景情绪设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa Ngôn Tình Ngọt Ngàoở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与情感内核 | 含蓄内敛、甜的克制、以小博大、冷中带暖 |
-| 叙事结构与节奏规划 | 慢节奏基本功、情绪缓坡递进、推拉节奏模型 |
-| 分场景情绪设计 | 六大典型情绪段落设计、距离感叙事、空间隐喻 |
-| 声音与音乐方向 | 沉默优先、段落式配乐、音乐情绪递进模型 |
-| 构图与景别叙事 | 留白 / 框架 / 三分法构图、景别递进策略 |
-| 镜头运动与节奏 | 以静制动、缓推缓拉情绪映射、心跳运镜 |
+| chính đề lập ý tình trong  | trong 、 của chép 、nhỏ lớn 、giữa kèm  |
+| việc kết cấu tiết lập kế hoạch | chậm tiết cơ sở sách công 、tình xúc tiến 、khuyến tiết mô hình |
+| phútBối cảnhtình xúc thiết tính  | 6lớn kiểu tình xúc đoạn thiết tính 、việc 、rỗng gian  |
+| thanh âm âm phương  | trước 、đoạn thức nối 、âm tình xúc tiến mô hình |
+| cấu ảnh Cỡ cảnhviệc  | lưu  /  / 3phútthức cấu ảnh 、Cỡ cảnhtiến  |
+| Ống kínhvận động tiết  | chép động 、khuyến tình xúc 、Góc quay |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义甜宠言情在分镜表中的景别递进、运镜节奏、时长把控、镜头合并与转场逻辑。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa Ngôn Tình Ngọt Ngàoở Bảng phân cảnhgiữa  của Cỡ cảnhtiến 、Góc quaytiết 、Thời lượngđem sát 、Ống kínhhợp nhất chuyển trường logic。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为镜头语言核心工具的定位说明 |
-| 景别选择 | 景别递进、远景价值、大特写限定、定场精简 |
-| 运镜节奏 | 默认静止、缓推缓拉情绪含义、心跳运镜 |
-| 时长把控 | 各类镜头时长参考、黄金 6 秒规则 |
-| 镜头合并策略 | 去 AI 感、叙事密度优先、导演思维自检 |
-| 一镜到底 | 长镜头适用条件、标注方式、时长与风险 |
-| 人物互动设计 | 单镜头动作限制、暗示性互动 |
-| 台词与留白 | 无台词长时长、一句一镜、旁白处理 |
-| 转场设计 | 硬切 / 空镜过渡 / 叠化淡入淡出 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ Ống kínhngữ cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | Cỡ cảnhtiến 、Viễn cảnh (extreme wide shot)giá trị 、lớn Đặc tả (close-up)hạn nối 、nối trường  |
+| Góc quaytiết  | Mặc địnhTĩnh (static)、khuyến tình xúc nghĩa 、Góc quay |
+| Thời lượngđem sát  | các loại Ống kínhThời lượngtham chiếu、 6 giây |
+| Ống kínhhợp nhất  | đi  AI 、việc mật độ trước 、đạo diễntự kiểm  |
+| 1 quay đến  | dài Ống kínhhàm mục tệp 、biểu tâm cách thức、Thời lượngphong  |
+| ngườiđộng thiết tính  | đơn Ống kínhđộng tác vụ hạn chép 、nhở động  |
+| Lời thoạilưu  | Không có lời thoạidài Thời lượng、1 câu 1 quay 、xử lý  |
+| chuyển trường thiết tính  |  / rỗng quay  / hóa vào ra  |
 
-## 使用方式
+## hàm cách thức
 
-本技能包作为 ToonFlow 导演 AI 的叙事手法参考，在故事创作流程中自动加载，指导：
+sách thể gói tác vụ  ToonFlow đạo diễn AI  của việc tay thức tham chiếu，ở việc sáng tác vụ trình giữa tự động cộng xuống ，dẫn ：
 
-1. **叙事规划** — 确定情感内核、节奏曲线、场景情绪与音乐方向
-2. **分镜表生成** — 根据叙事规划输出具体的景别、运镜、时长与转场方案
+1. **việc lập kế hoạch** — nối tình trong 、tiết đường 、Bối cảnhtình xúc âm phương 
+2. **Bảng phân cảnhtạo** — dựa theoviệc lập kế hoạchtải ra cụ thể  của Cỡ cảnh、Góc quay、Thời lượngchuyển trường phương 
 
-两个文件分工明确、逐层递进，从"为什么这样拍"到"具体怎么拍"形成完整闭环。
+2mục tệpphútdẫn 、tầng tiến ，từ "saonàykiểu "đến "cụ thể sao"dạng tạo chỉnh 。

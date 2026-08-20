@@ -8,7 +8,7 @@ import fs from "fs";
 import path from "path";
 const router = express.Router();
 
-// 视觉手册
+// trực quansổ tay
 export default router.post(
   "/",
   validateFields({
@@ -17,7 +17,7 @@ export default router.post(
   async (req, res) => {
     const { type } = req.body;
     const basePath = getPath(["skills", "art_skills", "chinese_sweet_romance"]);
-    // 递归查找 basePath 下名为 `${type}.md` 的文件
+    // tra  basePath dưới tên  `${type}.md`  của Tệp
     const findFile = (dir: string, target: string): string | null => {
       const entries = fs.readdirSync(dir, { withFileTypes: true });
       for (const entry of entries) {
@@ -33,7 +33,7 @@ export default router.post(
     };
     const filePath = findFile(basePath, `${type}.md`);
     if (!filePath) {
-      res.status(404).json({ error: `未找到对应的文件: ${type}.md` });
+      res.status(404).json({ error: `không tìm thấyđúng hồi  của Tệp: ${type}.md` });
       return;
     }
     const content = fs.readFileSync(filePath, "utf-8");

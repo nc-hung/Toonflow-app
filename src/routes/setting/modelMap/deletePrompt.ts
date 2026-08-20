@@ -18,21 +18,21 @@ export default router.post(
 
     const modelPromptRoot = u.getPath(["modelPrompt"]);
 
-    // 路径隧穿检测
+    // Kiểm tra bảo mật đường dẫn
     const resolvedRoot = path.resolve(modelPromptRoot);
     const resolvedFile = path.resolve(modelPromptRoot, filePath);
     if (!resolvedFile.startsWith(resolvedRoot + path.sep)) {
-      return res.status(400).send(error("非法路径"));
+      return res.status(400).send(error("Đường dẫn bất hợp pháp"));
     }
 
-    // 文件不存在则报错
+    // Báo lỗi nếu tệp không tồn tại
     try {
       await fs.access(resolvedFile);
     } catch {
-      return res.status(404).send(error("文件不存在"));
+      return res.status(404).send(error("Tệp không tồn tại"));
     }
 
     await fs.unlink(resolvedFile);
-    res.status(200).send(success("删除成功"));
+    res.status(200).send(success("Xóa thành công"));
   },
 );

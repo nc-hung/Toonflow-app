@@ -16,6 +16,6 @@ export default router.post(
     await u.db("o_videoTrack").where("videoId", id).update({
       videoId: null,
     });
-    res.status(200).send(success({ message: "视频删除成功" }));
+    res.status(200).send(success({ message: "Xóa video thành công" }));
   },
 );

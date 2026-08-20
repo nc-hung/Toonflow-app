@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 获取资产
+// Lấy danh sách tài nguyên
 export default router.post(
   "/",
   validateFields({
@@ -22,10 +22,10 @@ export default router.post(
     if (name) {
       query = query.andWhere("name", "like", `%${name}%`);
     }
-    // 分页查询
+    // Truy vấn phân trang
     const parentAssets = await query.offset(offset).limit(limit);
 
-    // 统计总数
+    // Thống kê tổng số
     const totalQuery = (await u
       .db("o_assets")
       .where("projectId", projectId)

@@ -22,18 +22,18 @@ export default (nsp: Namespace) => {
   nsp.on("connection", async (socket: Socket) => {
     const token = socket.handshake.auth.token;
     if (!token || !(await verifyToken(token))) {
-      console.log("[scriptAgent] 连接失败，token无效");
+      console.log("[scriptAgent] Kết nối thất bại, token không hợp lệ");
       socket.disconnect();
       return;
     }
     const isolationKey = socket.handshake.auth.isolationKey;
     if (!isolationKey) {
-      console.log("[scriptAgent] 连接失败，缺少 isolationKey");
+      console.log("[scriptAgent] Kết nối thất bại, thiếu  isolationKey");
       socket.disconnect();
       return;
     }
 
-    console.log("[scriptAgent] 已连接:", socket.id);
+    console.log("[scriptAgent] Đã kết nối:", socket.id);
 
     const resTool = new ResTool(socket, {
       projectId: socket.handshake.auth.projectId,
@@ -51,7 +51,7 @@ export default (nsp: Namespace) => {
       abortController = new AbortController();
       const currentController = abortController;
 
-      const msg = resTool.newMessage("assistant", "统筹");
+      const msg = resTool.newMessage("assistant", "Điều phối");
       const ctx: agent.AgentContext = {
         socket,
         isolationKey,
@@ -80,7 +80,7 @@ export default (nsp: Namespace) => {
     socket.on("updateThinkConfig", (data: { think: boolean; thinlLevel: 0 | 1 | 2 | 3 }) => {
       thinkConfig.think = data.think;
       thinkConfig.thinlLevel = data.thinlLevel;
-      console.log("[scriptAgent] 更新思考配置:", thinkConfig);
+      console.log("[scriptAgent] Cập nhật cấu hình suy nghĩ:", thinkConfig);
     });
 
     socket.on("stop", () => {
@@ -89,6 +89,6 @@ export default (nsp: Namespace) => {
     });
   });
   nsp.on("disconnect", (socket: Socket) => {
-    console.log("[scriptAgent] 已断开连接:", socket.id);
+    console.log("[scriptAgent] Đã ngắt kết nối:", socket.id);
   });
 };

@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 获取单个项目
+// Lấy thông tin dự án đơn lẻ
 export default router.post(
   "/",
   validateFields({

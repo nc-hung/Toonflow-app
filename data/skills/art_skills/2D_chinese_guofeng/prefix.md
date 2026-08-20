@@ -1,100 +1,100 @@
-# 全局美学基础 · 国风二次元新国潮
+# toàn cục đẹp cơ sở  · Anime Cổ Phong Tân Quốc Triều (2D)
 
 ---
-必须严格、完整遵循下方全部风格约束与全局规则，并严格按提示词模板格式生成提示词；仅输出提示词正文，不得附加任何解释、说明、注释、标题或其他额外文本。
+Bắt buộckhung 、chỉnh dưới phương toàn bộPhong cáchtoàn cục ，nhất khung theo Promptmô khung thức tạoPrompt；chỉ tải ra Promptchính tài ，không được cộng giải 、Giải thích、tâm 、biểu đề hoặc anh ấybổ ngoài tài sách 。
 
-## 一、风格基因
+## 1 、Phong cáchcơ sở 
 
-| 维度 | 定义 |
+| độ  | nối nghĩa  |
 |---|---|
-| **一级风格** | 国风二次元新国潮（Chinese Style Anime Neo-Chic） |
-| **二级风格** | 二次元动画 · 赛璐璐平涂 + 日式渲染 |
-| **情感基调** | 东方古韵、新国潮时尚、电影质感、意境深远 |
-| **质感锚词** | 赛璐璐上色、细腻笔触、现代渲染、电影构图 |
+| **1 cấp Phong cách** | Anime Cổ Phong Tân Quốc Triều (2D)（Chinese Style Anime Neo-Chic） |
+| **2cấp Phong cách** | 2lần động vẽ  ·  + ngày thức  |
+| **tình cơ sở gọi ** | phương 、mới 、sáng 、ý  |
+| **từ ** | trên vật 、、、sáng cấu ảnh  |
 
 ---
 
-## 二、全局色彩盘（风格基线）
+## 2、toàn cục vật đĩa （Phong cáchcơ sở đường ）
 
-### 色彩使用层级
+### vật hàm tầng cấp 
 
-| 层级 | 约束强度 | 说明 |
+| tầng cấp  | độ  | Giải thích |
 |---|---|---|
-| L1 硬约束 | 高 | 中国传统色基线、二次元配色、日式渲染 |
-| L2 软约束 | 中 | 场景色、服饰色、点缀色可按情绪微调 |
-| L3 例外机制 | 低 | 特殊场景/高光时刻可临时突破局部色彩 |
+| L1  | cao  | giữa truyền thống vật cơ sở đường 、2lần nối vật 、ngày thức  |
+| L2  | giữa  | Bối cảnhvật 、phục vật 、điểm tố vật theo tình xúc gọi  |
+| L3 lệ ngoài máy chép  | thấp  | Bối cảnh/cao ánh cục bộ vật  |
 
-### 核心色盘
+### vật đĩa 
 
-| 序号 | 色名 | 色值 | 用途 |
+| xếp số  | vật tên  | vật giá trị  | hàm  |
 |---|---|---|---|
-| C1 | 月白 | #E8EAF5 | 天空、云雾、衣物底色 |
-| C2 | 青绿 | #4A9B8A | 山水、植被、青绿山水 |
-| C3 | 朱红 | #C93752 | 建筑、服饰、喜庆场景 |
-| C4 | 靛蓝 | #2B4C7E | 夜空、冷色调、忧郁氛围 |
-| C5 | 金黄 | #D4AF37 | 装饰、纹样、高光点缀 |
-| C6 | 墨黑 | #1A1A2E | 线条、轮廓、暗部阴影 |
-| C7 | 胭脂 | #A94A5F | 人物肤色、腮红、唇色 |
-| C8 | 赭石 | #965E3E | 木质建筑、地面、暖调 |
-| C9 | 藤黄 | #F5E375 | 花饰、暖光、点缀色 |
-| C10 | 灰紫 | #7B6C85 | 阴影、过渡、氛围色 |
+| C1 | tháng | #E8EAF5 | ngàyrỗng 、、vật  |
+| C2 |  | #4A9B8A | 、、 |
+| C3 |  | #C93752 | tạo 、phục 、Bối cảnh |
+| C4 |  | #2B4C7E | rỗng 、vật gọi 、Không khí |
+| C5 |  | #D4AF37 | 、kiểu 、cao ánh điểm tố  |
+| C6 |  | #1A1A2E | đường mục 、、bộ sáng  |
+| C7 |  | #A94A5F | ngườivật 、、vật  |
+| C8 |  | #965E3E | tạo 、địa mặt 、gọi  |
+| C9 |  | #F5E375 | 、ánh 、điểm tố vật  |
+| C10 |  | #7B6C85 | sáng 、、Không khívật  |
 
-### 硬约束色（默认锁定）
+### vật （Mặc địnhnối ）
 
-| 色项 | 对应色 | 规则 |
+| vật  | đúng hồi vật  |  |
 |---|---|---|
-| 整体色调 | 中国传统色 + 动漫配色 | 禁止高饱和荧光色 |
-| 线条颜色 | 墨黑或深棕 | 禁止纯黑粗线条 |
-| 阴影 | 同色系加深 | 禁止黑色硬阴影 |
-| 赛璐璐色块 | 平滑渐变 | 禁止色块断层/色彩溢出 |
+| chỉnh thể vật gọi  | giữa truyền thống vật  + động nối vật  | Nghiêm cấmcao  và ánh vật  |
+| đường mục vật  | hoặc  | Nghiêm cấmthuần đường mục  |
+| sáng  | cùng vật dòng cộng  | Nghiêm cấmvật sáng  |
+| vật  |  | Nghiêm cấmvật tầng /vật ra  |
 
-### 情绪色盘
+### tình xúc vật đĩa 
 
-| 情绪场景 | 主色 | 辅色 | 光效与对比建议 | 画面关键词 |
+| tình xúc Bối cảnh | chính vật  | vật  | ánh hiệu đúng tỷ Khuyến nghị | vẽ mặt liên từ  |
 |---|---|---|---|---|
-| 仙侠飘逸 | C1 月白 + C2 青绿 | C5 金黄 + C7 胭脂 | 柔和光线，飘逸动态，赛璐璐质感 | 飘逸、仙气、空灵 |
-| 宫廷华贵 | C3 朱红 + C5 金黄 | C1 月白 + C6 墨黑 | 暖光照明，高光强调，景深层次 | 华丽、庄严、气派 |
-| 武侠对决 | C6 墨黑 + C4 靛蓝 | C2 青绿 + C8 赭石 | 冷调阴影，硬光对比，氛围紧张 | 冷峻、凌厉、肃杀 |
-| 少女日常 | C7 胭脂 + C1 月白 | C9 藤黄 + C10 灰紫 | 柔和暖光，近景特写，清新氛围 | 甜美、清新、治愈 |
-| 节日庆典 | C3 朱红 + C9 藤黄 | C5 金黄 + C7 胭脂 | 高饱和暖光，全局高亮，色彩丰富 | 热闹、欢快、盛大 |
-| 月夜诗意 | C4 靛蓝 + C1 月白 | C6 墨黑 + C5 金黄点缀 | 冷色调月光，局部暖光，明暗对比 | 宁静、清冷、唯美 |
+|  | C1 tháng + C2  | C5  + C7  |  và ánh đường ，động thái ， | 、、rỗng  |
+|  | C3  + C5  | C1 tháng + C6  | ánh dẫn ，cao ánh gọi ，bối tầng lần  | 、、phái  |
+| đúng  | C6  + C4  | C2  + C8  | gọi sáng ，ánh đúng tỷ ，Không khíbức  | 、、 |
+| ít nữ ngày thường  | C7  + C1 tháng | C9  + C10  |  và ánh ，Cận cảnh (close-up)Đặc tả (close-up)，sạch mới Không khí | đẹp 、sạch mới 、 |
+| tiết ngày  | C3  + C9  | C5  + C7  | cao  và ánh ，toàn cục cao ，vật  | 、nhanh 、lớn  |
+| thángý  | C4  + C1 tháng | C6  + C5 điểm tố  | vật gọi thángánh ，cục bộ ánh ，dẫn đúng tỷ  | 、sạch 、đẹp  |
 
-### 色温约束
+### vật 
 
-| 参数 | 值 | 说明 |
+| tham số | giá trị  | Giải thích |
 |---|---|---|
-| 整体色温 | 偏中性 5000-5600K（推荐） | 自然光主基调 |
-| 对比度 | 中 45-65%（建议区间） | 丰富层次感 |
-| 饱和度 | 中高 55-70%（建议区间） | 新国潮色盘饱满 |
+| chỉnh thể vật  | giữa  5000-5600K（khuyến nghị ） | tự ánh chính cơ sở gọi  |
+| đúng tỷ độ  | giữa  45-65%（Khuyến nghịkhu gian ） | tầng lần  |
+|  và độ  | giữa cao  55-70%（Khuyến nghịkhu gian ） | mới vật đĩa đầy  |
 
-### 容差与例外
+### dung lệ ngoài 
 
-| 项目 | 建议容差 |
+| dự án | Khuyến nghịdung  |
 |---|---|
-| 色相偏移 | ±8° |
-| 饱和度偏移 | ±10% |
-| 明度偏移 | ±12% |
+| vật  | ±8° |
+|  và độ  | ±10% |
+| dẫn độ  | ±12% |
 
 ---
 
-## 三、全局约束规则
+## 3、toàn cục 
 
-### 必守规则（所有技能继承）
+### bắt （tất cảthể ）
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须包含「国风二次元」风格锚定词 |
-| R2 | 必须声明「赛璐璐平涂 + 日式动画渲染」 |
-| R3 | 必须声明「新国潮美学 + 东方古韵」 |
-| R4 | 必须声明「细腻笔触 + 电影质感」 |
-| R5 | 必须声明「国风二次元电影风格」 |
+| R1 | Bắt buộcgói 「phong 2lần 」Phong cáchnối từ  |
+| R2 | Bắt buộcthanh dẫn 「 + ngày thức động vẽ 」 |
+| R3 | Bắt buộcthanh dẫn 「mới đẹp  + phương 」 |
+| R4 | Bắt buộcthanh dẫn 「 + sáng 」 |
+| R5 | Bắt buộcthanh dẫn 「phong 2lần sáng Phong cách」 |
 
-### 严禁项（所有技能继承）
+### （tất cảthể ）
 
-| 编号 | 严禁内容 |
+| chỉnh số  | nội dung |
 |---|---|
-| X1 | 严禁「写实摄影/3D写实渲染/照片级真实感」 |
-| X2 | 严禁「高饱和荧光色/霓虹色/数码感强」 |
-| X3 | 严禁「西方奇幻/赛博朋克/过度现代元素」 |
-| X4 | 严禁「粗劣线条/模糊画质/低精度」 |
-| X5 | 严禁「色彩混乱/风格不统一/审美崩坏」 |
+| X1 | 「sáng /3D/cấp thật 」 |
+| X2 | 「cao  và ánh vật /vật /số mã 」 |
+| X3 | 「phương //độ 」 |
+| X4 | 「đường mục /mô vẽ /thấp độ 」 |
+| X5 | 「vật /Phong cáchkhông thống 1 /đẹp xấu 」 |

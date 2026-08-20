@@ -1,5 +1,5 @@
-// @db-hash f5d050145d03a52b5b502043bc559ec0
-//该文件由脚本自动生成，请勿手动修改
+// @db-hash 1674c3fa6699c6c7fc88d5b3c83ec28e
+//Tệp này được  tạo tự động bởi tập lệnh，Vui lòng không sửa đổi thủ công
 
 export interface memories {
   'content': string;
@@ -97,7 +97,6 @@ export interface o_modelPrompt {
   'id'?: number;
   'model'?: string | null;
   'path'?: string | null;
-  'prompt'?: string | null;
   'vendorId'?: string | null;
 }
 export interface o_novel {

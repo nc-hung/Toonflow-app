@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 删除剧本
+// Xóa kịch bản 
 export default router.post(
   "/",
   validateFields({
@@ -34,6 +34,6 @@ export default router.post(
     await u.db("o_script").whereIn("id", ids).delete();
     await u.db("o_storyboard").whereIn("scriptId", ids).delete();
     await u.db("o_video").whereIn("scriptId", ids).delete();
-    res.status(200).send(success({ message: "删除剧本成功" }));
+    res.status(200).send(success({ message: "Xóa kịch bản  thành công" }));
   },
 );

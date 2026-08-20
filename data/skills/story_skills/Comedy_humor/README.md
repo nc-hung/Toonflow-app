@@ -1,61 +1,61 @@
-# 喜剧搞笑 · 导演叙事手法技能包
+# kịch  · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **喜剧搞笑** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **kịch ** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **预期违背** — 笑点的本质是"观众以为会这样，结果不是这样"，落差越大笑点越强
-- **节奏即喜感** — 同一个笑话，节奏对了是爆笑，节奏错了是尴尬。时机就是一切
-- **角色先于段子** — 最高级的喜剧不是抖机灵，而是角色性格碰撞自然产生的荒谬
-- **笑中带泪** — 纯搞笑容易疲劳，在荒诞中埋入真实情感，让笑着笑着突然被打动
+- **kỳ ** — điểm  của sách là "sẽ nàykiểu ，kết quảkhông là nàykiểu "，lớn điểm 
+- **tiết ** — cùng một lời ，tiết đúng là ，tiết sai là 。máy thì là 1 
+- **Nhân vậttrước với đoạn ** — tối đa cấp  của kịch không là máy ，là Nhân vậtkhung tự nguyên sinh  của 
+- **giữa kèm ** — thuần dung ，ở giữa vào thật tình ，để đang đang mở động 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Comedy_humor/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义喜剧搞笑在主题立意、笑点节奏、场景喜感设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa kịch ở chính đề lập ý 、điểm tiết 、Bối cảnhthiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与喜剧内核 | 预期违背、角色碰撞喜感、荒诞与真实、笑中带泪 |
-| 叙事结构与笑点节奏 | 铺垫→抖包袱循环、三遍法则、递进式荒谬、情绪节拍 |
-| 分场景喜感设计 | 六大典型喜剧段落设计、误会链叙事、尴尬升级 |
-| 声音与音乐方向 | 反差配乐、沉默喜感、音效辅助笑点、突然静默 |
-| 构图与景别叙事 | 反应镜头/全景喜感/错位构图、景别的喜剧时机 |
-| 镜头运动与节奏 | 急推反应、稳定vs混乱、冷静旁观、突然甩镜 |
+| chính đề lập ý kịch trong  | kỳ 、Nhân vật、thật 、giữa kèm  |
+| việc kết cấu điểm tiết  | →gói 、3thức 、tiến thức 、tình xúc tiết  |
+| phútBối cảnhthiết tính  | 6lớn kiểu kịch đoạn thiết tính 、sẽ việc 、cấp  |
+| thanh âm âm phương  | phụ nối 、、Âm hiệugiúp điểm 、 |
+| cấu ảnh Cỡ cảnhviệc  | phụ hồi Ống kính/Toàn cảnh (wide shot)/sai vị trí cấu ảnh 、Cỡ cảnh của kịch máy  |
+| Ống kínhvận động tiết  | khuyến phụ hồi 、nối vs、、Lia nhanh (whip pan) |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义喜剧搞笑在分镜表中的景别策略、运镜节奏、时长把控、笑点分镜设计与转场手法。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa kịch ở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaytiết 、Thời lượngđem sát 、điểm Phân cảnhthiết tính chuyển trường tay thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为喜剧节奏核心工具的定位说明 |
-| 景别选择 | 反应镜头景别、全景荒谬、错位特写 |
-| 运镜节奏 | 冷静固定vs急推反应、甩镜笑点、跟拍失控 |
-| 时长把控 | 铺垫时长、包袱节拍、留白笑点、冷场救急 |
-| 笑点分镜设计 | 铺垫→抖落镜头语言、视觉笑点、信息差笑点 |
-| 多人喜剧调度 | 群戏反应链、角色碰撞构图、旁观者视角 |
-| 台词与节奏 | 台词节拍、吐槽时机、沉默的喜感、重复的力量 |
-| 转场设计 | 荒谬对比切/硬切笑点/反差蒙太奇/假正经转场 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ kịch tiết cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | phụ hồi Ống kínhCỡ cảnh、Toàn cảnh (wide shot)、sai vị trí Đặc tả (close-up) |
+| Góc quaytiết  | nối vskhuyến phụ hồi 、Lia nhanh (whip pan)điểm 、thất sát  |
+| Thời lượngđem sát  | Thời lượng、gói tiết 、lưu điểm 、trường  |
+| điểm Phân cảnhthiết tính  | →Ống kínhngữ 、trực quanđiểm 、thông tinđiểm  |
+| nhiều ngườikịch điều phối | phụ hồi 、Nhân vậtcấu ảnh 、giả video nhân  |
+| Lời thoạitiết  | Lời thoạitiết 、máy 、 của 、trùng lời  của lực lượng  |
+| chuyển trường thiết tính  | đúng tỷ /điểm /phụ /giả chính đã chuyển trường  |
 
-## 使用方式
+## hàm cách thức
 
-本技能包作为 ToonFlow 导演 AI 的叙事手法参考，在故事创作流程中自动加载，指导：
+sách thể gói tác vụ  ToonFlow đạo diễn AI  của việc tay thức tham chiếu，ở việc sáng tác vụ trình giữa tự động cộng xuống ，dẫn ：
 
-1. **叙事规划** — 确定喜剧内核、笑点节奏曲线、场景喜感与音效时机
-2. **分镜表生成** — 根据叙事规划输出具体的景别、运镜、时长与转场方案
+1. **việc lập kế hoạch** — nối kịch trong 、điểm tiết đường 、Bối cảnhÂm hiệumáy 
+2. **Bảng phân cảnhtạo** — dựa theoviệc lập kế hoạchtải ra cụ thể  của Cỡ cảnh、Góc quay、Thời lượngchuyển trường phương 
 
-两个文件分工明确、逐层递进，从"为什么这样拍"到"具体怎么拍"形成完整闭环。
+2mục tệpphútdẫn 、tầng tiến ，từ "saonàykiểu "đến "cụ thể sao"dạng tạo chỉnh 。

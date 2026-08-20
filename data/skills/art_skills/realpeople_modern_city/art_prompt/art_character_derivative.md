@@ -1,311 +1,311 @@
 ---
 name: liveaction_urban_character_derivative
-description: 真人都市人物衍生资产生成 · 约束手册
+description: thật ngườiđều ngườisinh Tài nguyêntạo · sổ tay
 metaData: liveaction_urban_art_skills
 ---
 
-# 真人都市人物衍生资产生成 · 约束手册
+# thật ngườiđều ngườisinh Tài nguyêntạo · sổ tay
 
 ---
 
-## 一、造型逻辑——给一个真实的人做造型
+## 1 、tạo kiểu logic——cho một thật  của ngườitạo kiểu 
 
-> 真人都市不讨论"材质叠加"、"PBR渲染"、"建模精度"。这里讨论的是：化妆师在真人脸上工作、发型师用真实工具处理真实头发、造型师从衣架上取下一件被穿过的衣服——然后摄影机拍下这一切。
+> thật ngườiđều không "cộng "、"PBR"、"tạo mô độ "。này của là ：hóa ở thật ngườitrên tác vụ 、phát kiểu hàm thật cụ xử lý thật đầu phát 、tạo kiểu từ trên xuất dưới 1 tệp  của phục ——sau sáng máy dưới này1 。
 
-1. **妆容是"第二层皮肤"，不是"面部贴图"** — 粉底会与皮肤油脂融合、眼线会跟随眼型微偏移、口红会因唇纹呈现不均匀的质感——妆容必须有"刚画上去"的真实感
-2. **头发是活的** — 造型后的头发仍然会散落碎发、发根有自然的蓬度而非假发套、马尾扎紧处有头皮的自然牵拉痕迹
-3. **衣服是"穿在身上"的，不是"穿在模型上"的** — 肩线不一定完全对称（真人站姿不对称）、面料随身体动作产生自然褶皱、领口有穿脱导致的轻微变形
-4. **造型服务于面孔，而不是遮蔽面孔** — 最失败的造型是让人认不出底模是谁。衍生造型应强化而非掩盖角色的核心气质
+1. **dung là "Thứ 2tầng "，không là "mặt bộ ảnh "** — sẽ hợp 、đường sẽ kiểu 、cổng sẽ không  của ——dung Bắt buộccó "vẽ trên đi " của thật 
+2. **đầu phát là hoạt  của ** — tạo kiểu sau  của đầu phát sẽ phát 、phát có tự  của độ phi giả phát 、đuôi xử có data URI header  của tự 
+3. **phục là "ở trên " của ，không là "ở mô hìnhtrên " của ** — đường không 1 nối toàn đúng （thật ngườitrạm không đúng ）、mặt thể động tác vụ nguyên sinh tự 、cổng có dẫn  của dạng 
+4. **tạo kiểu phục vụ với mặt ，không là mặt ** — nhất thất bại của tạo kiểu là để ngườikhông ra mô là 。sinh tạo kiểu hồi hóa phi Nhân vật của 
 
 ---
 
-## 二、造型层级
+## 2、tạo kiểu tầng cấp 
 
-| 层级 | 内容 | 真人都市的理解 |
+| tầng cấp  | nội dung | thật ngườiđều  của lý giải  |
 |---|---|---|
-| L0 | 底模 | 基础形象底模——素颜、基础发型、基础日常服装。不修改 |
-| L1 | 妆容 | 化妆师在真人脸上的工作——底妆→眉眼→面颊→唇。按场景决策强度 |
-| L2 | 发型造型 | 发型师用真实工具做的发型——吹整/扎束/编发/烫卷 + 发饰 |
-| L3 | 内搭 | 贴身层——T恤/衬衫/针织/吊带/打底衫，替换基础款 |
-| L4 | 外套/主服 | 外层——西装/风衣/卫衣/连衣裙/大衣/工装，决定整体穿搭风格 |
-| L5 | 配饰 | 首饰/帽饰/眼镜/围巾/包袋/手表——日常穿搭的最后一步 |
+| L0 | mô  | cơ sở dạng tượng mô ——、cơ sở phát kiểu 、cơ sở ngày thường phục 。không sửa  |
+| L1 | dung  | hóa ở thật ngườitrên  của tác vụ ——→→mặt →。theo Bối cảnhquyết địnhđộ  |
+| L2 | phát kiểu tạo kiểu  | phát kiểu hàm thật cụ  của phát kiểu ——chỉnh //chỉnh phát / + phát  |
+| L3 | trong  | tầng ——T///kèm /mở ，đổi cơ sở  |
+| L4 | ngoài /chính phục  | ngoài tầng ——/phong ///lớn /，nối chỉnh thể Phong cách |
+| L5 | nối  | //quay /khí /gói /tay bảng ——ngày thường  của nhất sau 1 bước  |
 
-> **范畴边界**：仅造型层面（妆容+发型+着装+配饰）。不包含道具（手机/咖啡杯/雨伞/书本等手持物）、场景环境、姿态动作。
+> **giới **：chỉ tạo kiểu tầng mặt （dung +phát kiểu +đang +nối ）。không gói Đạo cụ（tay máy ///sách tay giữ ）、Bối cảnh、thái động tác vụ 。
 
 ---
 
-## 三、妆容——化妆师在真人脸上的工作（L1）
+## 3、dung ——hóa ở thật ngườitrên  của tác vụ （L1）
 
-### 核心原则
+### Nguyên Tắc Cốt Lõi
 
-> 妆容是"第二层皮肤"。摄影机必须能透过妆容看见底下的真实皮肤——毛孔没有被填平、细纹没有被磨掉、粉底没有像面具一样浮在表面。
+> dung là "Thứ 2tầng "。sáng máy Bắt buộcthể dung xem thấy dưới  của thật ——chưa có 、chưa có bỏ 、chưa có mặt cụ 1 kiểu ở bảng mặt 。
 
-### 线索分析与妆容决策
+### đường kiếm phúttích dung quyết định
 
-| 步骤 | 处理内容 |
+| bước  | xử lý nội dung |
 |---|---|
-| S1 | 提取用户线索：场景情境、情绪氛围、面部状态描述 |
-| S2 | 过滤非妆容线索：道具/场景/动作词不上妆 |
-| S3 | 匹配场景→妆容强度：素肌级 / 日常级 / 场合级 / 盛典级 |
-| S4 | 生成 L1 提示词——只输出结论 |
+| S1 | trích xuấthàm dùng đường kiếm ：Bối cảnhtình 、tình xúc Không khí、mặt bộ trạng tháiMô tả |
+| S2 | lọc phi dung đường kiếm ：Đạo cụ/Bối cảnh/động tác vụ từ không trên  |
+| S3 | khớpBối cảnh→dung độ ：cấp  / ngày thường cấp  / trường hợp cấp  / cấp  |
+| S4 | tạo L1 Prompt——chỉ tải ra kết  |
 
-### 场景→妆容强度映射
+### Bối cảnh→dung độ 
 
-| 场景 | 妆容强度 | 核心意图 |
+| Bối cảnh | dung độ  | ý ảnh  |
 |---|---|---|
-| 居家/晨起/素颜状态 | 素肌级——无妆容痕迹，仅皮肤本身 | 真实的皮肤质感，未经修饰的面孔 |
-| 日常通勤/超市/散步 | 日常级——轻妆，看起来像"没化妆但气色好" | 职场/生活中的得体，不引人注意的精致 |
-| 约会/聚会/逛街 | 场合级——看得出化了妆，但不过分 | 有存在感的妆容，但仍属于"日常生活"范畴 |
-| 晚宴/婚礼/盛典 | 盛典级——完整精致的妆容 | 为镜头和灯光设计的妆容，但底妆仍可见真实皮肤 |
+| //trạng thái | cấp ——không dung ，chỉ sách  | thật  của ，chưa đã  của mặt  |
+| ngày thường thông /vượt /bước  | ngày thường cấp ——，xem "chưa hóa nhưng vật tốt " | trường /sinh hoạt giữa  của được thể ，không ngườitâm ý  của  |
+| sẽ /sẽ / | trường hợp cấp ——xem được ra hóa ，nhưng không phút | có lưu ở  của dung ，nhưng biệt với "ngày thường sinh hoạt " |
+| muộn // | cấp ——chỉnh  của dung  | Ống kính và ánh thiết tính  của dung ，nhưng thấy thật  |
 
-### 女性妆容——按面孔类型适配
+### nữ dung ——theo mặt Loạinối 
 
-#### 清冷克制型
+#### sạch chép kiểu 
 
-| 强度 | 妆容意图 | 提示词 |
+| độ  | dung ý ảnh  | Prompt |
 |---|---|---|
-| 素肌级 | 不化妆——干净的冷白皮肤，眉毛自然未经修饰，唇色是自身血色 | 无妆容痕迹、自然冷白皮肤质感、未经修饰的原生眉、唇色即自身血色 |
-| 日常级 | "我可能涂了一点唇膏"——极淡裸色唇、眉毛轻扫、无眼妆痕迹 | 极淡裸色唇膏、自然眉形轻扫、无眼妆感、皮肤本身的光泽 |
-| 场合级 | 红唇是唯一重点——哑光砖红或棕调口红，眉眼保持克制，强调清冷疏离 | 哑光砖红唇妆（唯一重点）、极细眼线贴眼尾、眉形干净利落、其他部位近乎裸妆 |
-| 盛典级 | 冷调烟熏但不浓——灰棕小烟熏、轮廓修容、哑光暗红唇，保留骨感 | 灰棕小烟熏眼妆、颧骨下方轻修容、哑光暗红唇、保留面部骨感 |
+| cấp  | không hóa —— của ，tự chưa đã ，vật là tự vật  | không dung 、tự 、chưa đã  của gốc sinh 、vật tự vật  |
+| ngày thường cấp  | "tôithể 1 điểm "——vật 、、không  | vật 、tự dạng 、không 、sách  của ánh  |
+| trường hợp cấp  | là 1 trùng điểm ——ánh hoặc gọi cổng ，lưu giữ chép ，gọi sạch  | ánh （1 trùng điểm ）、đường đuôi 、dạng 、anh ấybộ vị trí  |
+| cấp  | gọi nhưng không ——nhỏ 、dung 、ánh ，lưu lưu  | nhỏ 、dưới phương dung 、ánh 、lưu lưu mặt bộ  |
 
-#### 温柔治愈型
+#### kiểu 
 
-| 强度 | 妆容意图 | 提示词 |
+| độ  | dung ý ảnh  | Prompt |
 |---|---|---|
-| 素肌级 | 暖白通透皮肤，面颊自带淡粉，眉毛柔和 | 暖白通透素颜皮肤、自然粉嫩面颊、柔和眉形、无妆感 |
-| 日常级 | 水润光泽感——光泽底妆、粉调腮红轻扫、润唇膏质感 | 光泽感底妆、粉调腮红自然晕染、透明感润唇、眼神柔和 |
-| 场合级 | 暖调柔和——杏色眼影、奶油腮红、镜面唇釉，整体温润 | 暖杏色眼影自然晕染、奶油质感腮红、镜面唇釉、温润柔和 |
-| 盛典级 | 暖调精妆——香槟色珠光眼妆、光泽底妆、玫瑰豆沙唇，精致不失温柔 | 香槟珠光眼妆、光泽高光、玫瑰豆沙唇色、精致温柔的完整妆面 |
+| cấp  | thông ，mặt tự kèm ， và  | thông 、tự mặt 、 và dạng 、không  |
+| ngày thường cấp  | ánh ——ánh 、gọi 、 | ánh 、gọi tự 、dẫn 、 và  |
+| trường hợp cấp  | gọi  và ——vật sáng 、、quay mặt ，chỉnh thể  | vật sáng tự 、、quay mặt 、 và  |
+| cấp  | gọi ——vật ánh 、ánh 、，không thất  | ánh 、ánh cao ánh 、vật 、 của chỉnh mặt  |
 
-#### 都市干练型
+#### đều kiểu 
 
-| 强度 | 妆容意图 | 提示词 |
+| độ  | dung ý ảnh  | Prompt |
 |---|---|---|
-| 素肌级 | 中性干净皮肤，眉毛利落但未画 | 中性干净素颜皮肤、利落眉形无修饰、自然唇色、不加修饰的面孔 |
-| 日常级 | "职场淡妆"——哑光底妆、利落眉形、MLBB唇色（my lips but better） | 哑光自然底妆、利落眉形轻描、MLBB唇色、不引人注意的得体 |
-| 场合级 | 锐利但不凶——清晰眼线、轮廓修容、低饱和玫瑰唇 | 锐利清晰眼线、面部轮廓修容、低饱和玫瑰色唇、干练而有力 |
-| 盛典级 | 完整精妆——雾面底妆、结构感修容、正红或梅子色唇，气场全开 | 雾面精致底妆、结构感轮廓修容、正红色/梅子色唇、完整但面部结构仍可辨 |
+| cấp  | giữa ，nhưng chưa vẽ  | giữa 、dạng không 、tự vật 、không cộng  của mặt  |
+| ngày thường cấp  | "trường "——ánh 、dạng 、MLBBvật （my lips but better） | ánh tự 、dạng mô 、MLBBvật 、không ngườitâm ý  của được thể  |
+| trường hợp cấp  | nhưng không ——sạch đường 、dung 、thấp  và  | sạch đường 、mặt bộ dung 、thấp  và vật 、có lực  |
+| cấp  | chỉnh ——mặt 、kết cấu dung 、chính hoặc vật ，trường toàn mở  | mặt 、kết cấu dung 、chính vật /vật 、chỉnh nhưng mặt bộ kết cấu  |
 
-#### 青春元气型
+#### kiểu 
 
-| 强度 | 妆容意图 | 提示词 |
+| độ  | dung ý ảnh  | Prompt |
 |---|---|---|
-| 素肌级 | 胶原蛋白即妆容——不需要化妆的皮肤本身就很亮 | 饱满胶原蛋白感素颜、自然红润面颊、明亮眼神、无需化妆 |
-| 日常级 | "只是提了一下气色"——有色润唇膏、透明眉胶、极淡膏状腮红 | 有色润唇膏、透明眉胶梳理、膏状腮红淡淡拍开、看不出化了妆 |
-| 场合级 | 明亮活泼——橘调/珊瑚色腮红、亮泽唇釉、轻微珠光眼影 | 橘调元气腮红、亮泽唇釉、轻微珠光眼影、明亮的少女感 |
-| 盛典级 | 精致但不老气——清透底妆、果汁唇釉、微闪眼影、保留幼态感 | 清透底妆保留皮肤质感、果汁唇釉、微闪珠光眼影、精致但不掩盖年轻感 |
+| cấp  | gốc dung ——không cần cần hóa  của sách thì rất  | đầy gốc 、tự mặt 、dẫn 、không cần hóa  |
+| ngày thường cấp  | "chỉ là nhắc 1 dưới vật "——có vật 、dẫn 、trạng  | có vật 、dẫn lý 、trạng mở 、xem không ra hóa  |
+| trường hợp cấp  | dẫn hoạt ——gọi /vật 、、ánh sáng  | gọi 、、ánh sáng 、dẫn  của ít nữ  |
+| cấp  | nhưng không ——sạch 、quả 、sáng 、lưu lưu thái  | sạch lưu lưu 、quả 、ánh sáng 、nhưng không năm |
 
-#### 市井烟火型
+#### kiểu 
 
-| 强度 | 妆容意图 | 提示词 |
+| độ  | dung ý ảnh  | Prompt |
 |---|---|---|
-| 素肌级 | 被太阳晒过的脸——日晒痕迹、自然的肤色不均、不化妆 | 日晒痕迹的自然面孔、真实的肤色不均、未经化妆的皮肤、生活本身的面孔 |
-| 日常级 | "抹了点面霜就出门"——极淡润色隔离、自身唇色 | 极淡润色、几乎看不见的底妆、自身唇色、刚洗完脸的自然状态 |
-| 场合级 | 简单体面——自然色唇膏、眉毛稍作整理、轻薄的底妆 | 自然色系唇膏、稍作整理的眉形、轻薄不打底的底妆、朴素的体面 |
-| 盛典级 | 盛装但不造作——偏暖大地色眼影、砖红/棕红唇、底妆可见皮肤质感 | 暖调大地色眼妆、砖红/棕红色唇、保留皮肤质感的底妆、盛装但不失真 |
+| cấp  |  của ——ngày 、tự  của vật không 、không hóa  | ngày  của tự mặt 、thật  của vật không 、chưa đã hóa  của 、sinh hoạt sách  của mặt  |
+| ngày thường cấp  | "điểm mặt thì ra cổng "——trau chuốtcách 、tự vật  | trau chuốt、mấy xem không thấy  của 、tự vật 、 của tự trạng thái |
+| trường hợp cấp  | đơn thể mặt ——tự vật 、tác vụ chỉnh lý 、mỏng  của  | tự vật dòng 、tác vụ chỉnh lý  của dạng 、mỏng không mở  của 、 của thể mặt  |
+| cấp  | nhưng không tạo tác vụ ——lớn địa vật sáng 、/、thấy  | gọi lớn địa vật 、/vật 、lưu lưu  của 、nhưng không thất thật  |
 
-### 男性妆容
+### nam dung 
 
-> 男性妆容的最高标准是"看不出来化了妆"。
+> nam dung  của tối đa biểu là "xem không ra hóa "。
 
-| 强度 | 适用场景 | 提示词 |
+| độ  | hàm Bối cảnh | Prompt |
 |---|---|---|
-| 素肌级 | 所有场景的默认状态 | 未经修饰的真实男性皮肤、自然油脂光泽、毛孔清晰可见、剃须后的下颌真实质感 |
-| 日常级 | 镜头特写/棚拍/重要对话 | 极淡均匀肤色（不可见粉感）、眉毛用透明眉胶轻梳、润唇膏质感的自然唇色——整体看不出化妆 |
-| 场合级 | 婚礼/盛典/镜头特写 | 均匀干净的皮肤（保留毛孔纹理）、眉形轻扫、唇色自然润泽——看得出被认真对待但看不出粉底 |
+| cấp  | tất cảBối cảnh của Mặc địnhtrạng thái | chưa đã  của thật nam 、tự ánh 、sạch thấy 、buộc sau  của dưới thật  |
+| ngày thường cấp  | Ống kínhĐặc tả (close-up)//trùng cần đúng lời  | vật （không thấy ）、hàm dẫn 、 của tự vật ——chỉnh thể xem không ra hóa  |
+| trường hợp cấp  | //Ống kínhĐặc tả (close-up) |  của （lưu lưu lý ）、dạng 、vật tự ——xem được ra thật đúng nhưng xem không ra  |
 
 ---
 
-## 四、发型造型——发型师手里的真实头发（L2）
+## 4、phát kiểu tạo kiểu ——phát kiểu tay  của thật đầu phát （L2）
 
-### 女性发型
+### nữ phát kiểu 
 
-#### 按造型方式分类
+#### theo tạo kiểu cách thứcphútloại 
 
-| 造型方式 | 类型 | 发型描述 | 适配面孔类型 |
+| tạo kiểu cách thức | Loại | phát kiểu Mô tả | nối mặt Loại |
 |---|---|---|---|
-| 自然垂落 | 黑长直 | 自然柔顺直发、发尾轻微内扣、中分发缝或侧分、碎发自然散落额前和颈后 | 清冷克制/温柔治愈/都市干练 |
-| 自然垂落 | 慵懒微卷 | 大弧度慵懒卷发、发根自然蓬松、卷度不均匀（非电卷棒一式一样）、碎发环绕面部 | 温柔治愈/青春元气 |
-| 自然垂落 | 锁骨层次短发 | 齐肩长度、发尾有层次碎剪、一侧拨到耳后露出耳饰、后颈碎发自然 | 都市干练/清冷克制 |
-| 自然垂落 | 羊毛小卷 | 全头中小卷、蓬松有空气感、发根自然站立、卷度有手工感而非机械均匀 | 青春元气/市井烟火 |
-| 扎束造型 | 高马尾 | 高颅顶位置扎起、发根自然蓬松、马尾有自然弧度而非直线垂落、额前和鬓角碎发自然散落 | 青春元气/都市干练/运动场景 |
-| 扎束造型 | 低马尾/低髻 | 后颈或耳后位置束起、松而不散、后颈碎发自然、有"随手扎起来"的松弛感 | 温柔治愈/市井烟火/居家场景 |
-| 扎束造型 | 丸子头 | 头顶或后脑位置盘起、松散不紧绷、碎发环绕面部和颈部 | 居家/日常/运动 |
-| 编发造型 | 单侧麻花辫 | 侧编麻花、松散有手工感、编入自然碎发、辫尾自然毛躁 | 温柔治愈/青春元气 |
-| 编发造型 | 双麻花/双辫 | 两侧对称编发、松紧适中、适合年轻感造型 | 青春元气 |
-| 短发造型 | 齐耳短发 | 耳上或耳下长度、发尾整齐或碎剪、一侧挽耳后、后颈清爽 | 都市干练/清冷克制 |
-| 短发造型 | 少年感碎短发 | 层次碎剪短发、后颈推短、额前碎发自然散落 | 清冷克制/都市干练/中性风 |
+| tự  | dài trực  | tự trực phát 、phát đuôi trong 、giữa phútphát hoặc phút、phát tự bổ trước  và sau  | sạch chép //đều  |
+| tự  |  | lớn độ phát 、phát tự 、độ không （phi 1 thức 1 kiểu ）、phát Quay vòng (orbiting / surround)mặt bộ  | / |
+| tự  | tầng lần ngắn phát  | dài độ 、phát đuôi có tầng lần 、1 đến sau ra 、sau phát tự  | đều /sạch chép  |
+| tự  | nhỏ  | toàn đầu giữa nhỏ 、có rỗng 、phát tự trạm lập 、độ có tay phi máy  | / |
+| tạo kiểu  | cao đuôi  | cao vị trí trí 、phát tự 、đuôi có tự độ phi trực đường 、bổ trước  và nhân phát tự  | /đều /vận động Bối cảnh |
+| tạo kiểu  | thấp đuôi /thấp  | sau hoặc sau vị trí trí 、không 、sau phát tự 、có "tay " của  | //Bối cảnh |
+| tạo kiểu  | đầu  | đầu hoặc sau vị trí trí đĩa 、không 、phát Quay vòng (orbiting / surround)mặt bộ  và bộ  | /ngày thường /vận động  |
+| chỉnh phát tạo kiểu  | đơn  | chỉnh 、có tay 、chỉnh vào tự phát 、đuôi tự  | / |
+| chỉnh phát tạo kiểu  | đôi /đôi  | 2đúng chỉnh phát 、giữa 、hợp nămtạo kiểu  |  |
+| ngắn phát tạo kiểu  | ngắn phát  | trên hoặc dưới dài độ 、phát đuôi chỉnh hoặc 、1 sau 、sau sạch  | đều /sạch chép  |
+| ngắn phát tạo kiểu  | Thiếu niênngắn phát  | tầng lần ngắn phát 、sau khuyến ngắn 、bổ trước phát tự  | sạch chép /đều /giữa phong  |
 
-#### 头发在摄影机前的真实状态（所有发型共享）
+#### đầu phát ở sáng máy trước  của thật trạng thái（tất cảphát kiểu ）
 
-| 状态 | 提示词 |
+| trạng thái | Prompt |
 |---|---|
-| 碎发 | 额前碎发自然散落、鬓角婴儿发、后颈碎发、发际线自然不整齐 |
-| 发根 | 发根自然蓬松而非紧贴头皮、分缝处自然可见头皮 |
-| 发尾 | 发尾自然毛躁/分叉、扎束后发尾有自然弧度 |
-| 光泽 | 健康发质的自然反光——非油光非哑光、逆光下头发半透明暖色轮廓 |
-| 严禁 | 假发套般整齐边界、CG发丝根根分明、无碎发、僵硬定型 |
+| phát  | bổ trước phát tự 、nhân nhi phát 、sau phát 、phát đường tự không chỉnh  |
+| phát  | phát tự phi đầu 、phútxử tự thấy đầu  |
+| phát đuôi  | phát đuôi tự /phút、sau phát đuôi có tự độ  |
+| ánh  | phát  của tự phụ ánh ——phi ánh phi ánh 、ánh dưới đầu phát nửa dẫn vật  |
+|  | giả phát chỉnh giới 、CGphát phútdẫn 、không phát 、nối kiểu  |
 
-### 男性发型
+### nam phát kiểu 
 
-| 造型 | 描述 | 适配面孔类型 |
+| tạo kiểu  | Mô tả | nối mặt Loại |
 |---|---|---|
-| 利落短发 | 两侧推短、顶部留长可造型、发丝有自然走向、额头可见 | 硬朗成熟/都市干练（对应男性面孔） |
-| 微分碎盖 | 额前碎发微盖眉毛、顶部蓬松有层次、两侧自然过渡 | 阳光少年/温润内敛 |
-| 侧分短发 | 侧分缝、一侧向后梳理、商务整洁但非油头硬壳 | 清冽克制/温润内敛 |
-| 寸头/板寸 | 极短发、头皮可见、发际线自然、头型轮廓清晰 | 硬朗成熟/市井江湖 |
-| 狼尾/鲻鱼头 | 前短后长、后颈发尾留长、层次利落、有"没认真剪"的随性感 | 阳光少年/清冽克制 |
-| 中长发 | 及肩长度、自然垂落或半扎、发质自然 | 清冽克制/艺术气质 |
-| 卷发/纹理 | 自然卷或微烫纹理、蓬松有空气感、不僵硬 | 阳光少年/温润内敛 |
+| ngắn phát  | 2khuyến ngắn 、bộ lưu dài tạo kiểu 、phát có tự chạy 、bổ đầu thấy  | tạo /đều （đúng hồi nam mặt ） |
+| phút | bổ trước phát 、bộ có tầng lần 、2tự  | ánh Thiếu niên/trong  |
+| phútngắn phát  | phút、1 sau lý 、cấp vụ chỉnh nhưng phi đầu  | sạch chép /trong  |
+| đầu / | ngắn phát 、đầu thấy 、phát đường tự 、đầu kiểu sạch  | tạo / |
+| đuôi /đầu  | trước ngắn sau dài 、sau phát đuôi lưu dài 、tầng lần 、có "chưa thật " của  | ánh Thiếu niên/sạch chép  |
+| giữa dài phát  | dài độ 、tự hoặc nửa 、phát tự  | sạch chép / |
+| phát /lý  | tự hoặc lý 、có rỗng 、không  | ánh Thiếu niên/trong  |
 
-#### 头发在摄影机前的真实状态（男性共享）
+#### đầu phát ở sáng máy trước  của thật trạng thái（nam ）
 
-| 状态 | 提示词 |
+| trạng thái | Prompt |
 |---|---|
-| 短发质感 | 短发状态下头皮可见、发丝走向自然、鬓角与胡茬自然过渡 |
-| 日常状态 | 没有发胶硬壳感、头发自然蓬松或微塌（符合日常）、风吹过的自然凌乱 |
-| 发际线 | 自然发际线（允许轻微后退）、额角可能有轻微稀疏、非假发式整齐 |
-| 严禁 | 发胶硬壳反光、假发套整齐边界、CG发丝、不自然的完美发型 |
+| ngắn phát  | ngắn phát trạng tháidưới đầu thấy 、phát chạy tự 、nhân tự  |
+| ngày thường trạng thái | chưa có phát 、đầu phát tự hoặc （hợp ngày thường ）、phong  của tự  |
+| phát đường  | tự phát đường （sau đăng ）、bổ nhân thể có 、phi giả phát thức chỉnh  |
+|  | phát phụ ánh 、giả phát chỉnh giới 、CGphát 、không tự  của đẹp phát kiểu  |
 
 ---
 
-## 五、服饰——真实的穿搭，非建模着装（L3+L4）
+## 5、phục ——thật  của ，phi tạo mô đang （L3+L4）
 
-### 真人都市的服饰逻辑
+### thật ngườiđều  của phục logic
 
-> 3D项目讨论的是"材质渲染"、"PBR物理属性"、"多层结构拼接"。真人都市讨论的是：这件衣服从哪里买的？穿过几次了？今天为什么选了它？
+> 3Ddự án của là ""、"PBRlý biệt "、"nhiều tầng kết cấu ghép tiếp "。thật ngườiđều  của là ：nàytệp phục từ  của ？mấy lần ？ngàysaochọn nó ？
 
-- **叠穿来自天气和场合，不是来自"设计层次"**：T恤外面套衬衫因为早晚温差大、风衣因为今天有风、针织开衫因为办公室空调太冷
-- **衣服有穿着痕迹**：领口微微变形、袖口有摩擦痕迹、牛仔裤膝盖有拉伸纹理、白T恤洗涤后微微泛旧
-- **合身而非紧身**：衣服贴合身体但不紧绷，肩线在自然位置（可因体态微偏），裤长刚好或微堆在鞋面
-- **中国当代都市的真实穿搭**——不是韩剧、不是日杂、不是欧美街拍
+- **tự ngày và trường hợp ，không là tự "thiết tính tầng lần "**：Tngoài mặt sớm muộn lớn 、phong ngàycó phong 、mở rỗng gọi 
+- **phục có đang **：cổng dạng 、cổng có 、có lý 、Tsau cũ 
+- **hợp phi **：phục hợp thể nhưng không ，đường ở tự vị trí trí （thể thái ），dài tốt hoặc ở mặt 
+- **giữa khi đều  của thật **——không là kịch 、không là ngày 、không là đẹp 
 
-### 女性服饰矩阵
+### nữ phục 
 
-| 穿搭风格 | 核心单品 | 适用场景 | 提示词 |
+| Phong cách | đơn  | hàm Bối cảnh | Prompt |
 |---|---|---|---|
-| 通勤职场 | 西装外套/衬衫/烟管裤/中长半裙/风衣 | 办公室、商务会议、日常通勤 | 通勤职场穿搭、西装外套+衬衫+直筒西裤、驼色/藏蓝/黑色系、面料自然垂坠、合身不紧绷 |
-| 休闲日常 | T恤/卫衣/牛仔裤/阔腿裤/针织开衫 | 周末出街、超市购物、咖啡厅、散步 | 休闲日常穿搭、宽松卫衣+直筒牛仔裤、米白/灰色/卡其色系、棉质自然质感 |
-| 温柔约会 | 针织连衣裙/碎花半裙/羊绒开衫/法式衬衫 | 约会、闺蜜聚会、下午茶 | 温柔约会穿搭、针织连衣裙+短款开衫、奶油/藕粉/浅杏色系、柔软面料质感 |
-| 街头潮范 | Oversize卫衣/工装裤/牛仔外套/棒球帽 | 逛街、潮玩、音乐节、夜生活 | 街头潮范穿搭、oversize连帽卫衣+工装阔腿裤、黑/灰/军绿色系、随性有态度 |
-| 运动户外 | 瑜伽裤/运动bra/速干T恤/冲锋衣/运动鞋 | 健身房、户外跑步、骑行、徒步 | 运动穿搭、瑜伽裤+运动bra+宽松速干T恤、深色系、功能性面料自然质感 |
-| 文艺学院 | 针织背心+衬衫/百褶裙/帆布鞋/毛呢短外套 | 校园、书店、图书馆、展览 | 文艺学院穿搭、针织背心叠穿衬衫+百褶裙、藏蓝/酒红/格纹、书卷气 |
-| 居家慵懒 | 宽松棉质家居服/针织睡袍/毛绒外套 | 家中日常、晨起、深夜 | 居家穿搭、宽松棉质长袖+家居长裤、米白/浅灰/浅蓝、柔软亲肤质感 |
+| thông trường  | ngoài ///giữa dài nửa /phong  | 、cấp vụ sẽ thức 、ngày thường thông  | thông trường 、ngoài ++trực 、vật //vật dòng 、mặt tự 、hợp không  |
+| ngày thường  | T////mở  | ra 、vượt 、、bước  | ngày thường 、rộng +trực 、/vật /vật dòng 、tự  |
+| sẽ  | /nửa /mở /thức thức  | sẽ 、sẽ 、dưới  | sẽ 、+ngắn mở 、//vật dòng 、mặt  |
+| đầu  | Oversize//ngoài / | 、、âm tiết 、sinh hoạt  | đầu 、oversize+、//vật dòng 、có thái độ  |
+| vận động dùng ngoài  | /vận động bra/T//vận động  | 、dùng ngoài bước 、thi 、bước  | vận động 、+vận động bra+rộng T、vật dòng 、công thể mặt tự  |
+| tài  | +/trăm //ngắn ngoài  | đối 、、ảnh 、 | tài 、+trăm 、//khung 、 |
+|  | rộng phục //ngoài  | giữa ngày thường 、、 | 、rộng dài +dài 、//、 |
 
-### 男性服饰矩阵
+### nam phục 
 
-| 穿搭风格 | 核心单品 | 适用场景 | 提示词 |
+| Phong cách | đơn  | hàm Bối cảnh | Prompt |
 |---|---|---|---|
-| 商务正装 | 西装套装/白衬衫/领带/正装皮鞋 | 商务会议、正式场合、重要会面 | 商务正装穿搭、深灰/藏蓝西装套装+白衬衫、合身剪裁、面料挺括有垂感 |
-| 商务休闲 | 休闲西装+圆领T恤/针织衫+休闲裤 | 日常通勤、轻商务场合 | 商务休闲穿搭、休闲西装+圆领白T+卡其休闲裤、不系领带、松弛有度 |
-| 日常休闲 | 纯色T恤/亨利领长袖/卫衣+直筒牛仔裤 | 周末、日常、所有非正式场合 | 日常休闲穿搭、纯色棉质T恤+直筒牛仔裤、黑/白/灰/藏蓝、面料自然舒适 |
-| 街头潮牌 | 印花卫衣/工装裤/牛仔夹克/帆布鞋 | 逛街、聚会、夜生活 | 街头潮牌穿搭、印花卫衣+工装束脚裤、黑/军绿/灰色系、松弛有态度 |
-| 运动机能 | 速干T恤/运动短裤/运动长裤/运动鞋 | 健身房、跑步、篮球场 | 运动穿搭、速干T恤+运动短裤、黑色/深灰、功能性面料质感 |
-| 文艺清冷 | 落肩衬衫/宽松针织/阔腿西裤/帆布鞋 | 书店、展览、咖啡厅 | 文艺穿搭、落肩棉质衬衫+宽松西裤、大地色/米白/藏蓝、不刻意的质感 |
+| cấp vụ chính  | //kèm /chính  | cấp vụ sẽ thức 、chính thức trường hợp 、trùng cần sẽ mặt  | cấp vụ chính 、/+、hợp 、mặt quát có  |
+| cấp vụ  | +T/+ | ngày thường thông 、cấp vụ trường hợp  | cấp vụ 、+T+、không dòng kèm 、có độ  |
+| ngày thường  | thuần vật T/dài /+trực  | 、ngày thường 、tất cảphi chính thức trường hợp  | ngày thường 、thuần vật T+trực 、///、mặt tự  |
+| đầu  | //thư mục / | 、sẽ 、sinh hoạt  | đầu 、+、//vật dòng 、có thái độ  |
+| vận động máy thể  | T/vận động ngắn /vận động dài /vận động  | 、bước 、trường  | vận động 、T+vận động ngắn 、vật /、công thể mặt  |
+| tài sạch  | /rộng // | 、、 | tài 、+rộng 、lớn địa vật //、không ý  của  |
 
 ---
 
-## 六、配饰——日常穿搭的最后一步（L5）
+## 6、nối ——ngày thường  của nhất sau 1 bước （L5）
 
-### 女性配饰
+### nữ nối 
 
-| 品类 | 真人都市的配饰逻辑 | 提示词 |
+| loại  | thật ngườiđều  của nối logic | Prompt |
 |---|---|---|
-| 耳饰 | 不是"金属耳坠"——而是"今天出门前随手拿起的那对"。小巧简约为主，与穿搭风格呼应 | 小巧银质耳钉/金属细圈耳环/珍珠耳钉/亚克力几何耳坠——搭配{穿搭风格} |
-| 项饰 | 锁骨链或中长项链，贴合颈部自然弧度，不悬浮、不嵌进皮肤 | 纤细锁骨链/金属细链吊坠/珍珠短链——自然贴合颈部 |
-| 手表/手饰 | 日常佩戴的表、细手链或戒指，有使用痕迹（表带自然弯折、金属微磨损） | 皮质表带腕表/金属细手链/简约戒指——日常佩戴质感、有使用痕迹 |
-| 帽饰 | 棒球帽/贝雷帽/针织冷帽——帽檐有自然弧度、帽身有佩戴痕迹 | 棒球帽（帽檐自然弧度）/贝雷帽（微微倾斜佩戴）/针织冷帽（松软质感） |
-| 眼镜 | 光学眼镜或墨镜，镜框材质自然，镜片有轻微反光但可看到眼睛 | 金属细框/板材框架眼镜、镜片微反光但仍可见眼神 |
-| 包袋 | 日常通勤/出行的真实包袋——皮质有使用褶皱、帆布有自然泛旧 | 皮质单肩包（自然使用褶皱）/帆布托特包（轻微泛旧）/斜挎小包 |
+|  | không là "biệt "——là "ngàyra cổng trước tay lấy  của đúng "。nhỏ chính ，Phong cáchhồi  | nhỏ /biệt //lực mấy ——nối {Phong cách} |
+|  | hoặc giữa dài ，hợp bộ tự độ ，không 、không tiến  | /biệt /ngắn ——tự hợp bộ  |
+| tay bảng /tay  | ngày thường  của bảng 、tay hoặc ，có hàm （bảng kèm tự 、biệt ） | bảng kèm bảng /biệt tay /——ngày thường 、có hàm  |
+|  | //——có tự độ 、có  | （tự độ ）/（）/（） |
+| quay  | ánh quay hoặc quay ，quay tự ，quay có phụ ánh nhưng xem đến  | biệt /quay 、quay phụ ánh nhưng thấy  |
+| gói  | ngày thường thông /ra thi  của thật gói ——có hàm 、có tự cũ  | đơn gói （tự hàm ）/gói （cũ ）/nhỏ gói  |
 
-### 男性配饰
+### nam nối 
 
-| 品类 | 提示词 |
+| loại  | Prompt |
 |---|---|
-| 手表 | 日常佩戴腕表——金属表带自然磨损/皮质表带弯折痕迹/简约表盘 |
-| 眼镜 | 金属细框/板材框架眼镜、镜片微反光、鼻托自然贴合 |
-| 帽饰 | 棒球帽/冷帽——自然佩戴状态、帽檐微曲、有日常使用感 |
-| 背包 | 双肩包/邮差包——帆布或皮革材质、有使用痕迹、肩带自然弯折 |
+| tay bảng  | ngày thường bảng ——biệt bảng kèm tự /bảng kèm /bảng đĩa  |
+| quay  | biệt /quay 、quay phụ ánh 、tự hợp  |
+|  | /——tự trạng thái、、có ngày thường hàm  |
+| gói  | đôi gói /gói ——hoặc 、có hàm 、kèm tự  |
 
 ---
 
-## 七、造型组合速查
+## 7、tạo kiểu nhóm hợp tra 
 
-| 场景 | 妆容强度 | 发型 | 穿搭风格 | 配饰 |
+| Bối cảnh | dung độ  | phát kiểu  | Phong cách | nối  |
 |---|---|---|---|---|
-| 居家晨起 | 素肌级 | 自然散落/随意扎起 | 居家慵懒 | 极简或无 |
-| 通勤上班 | 日常级 | 利落垂发/低马尾/侧分短发 | 通勤职场/商务休闲 | 手表+简约包袋 |
-| 周末出街 | 日常级 | 慵懒微卷/微分碎盖/狼尾 | 休闲日常/日常休闲 | 包袋+帽子+手表 |
-| 约会见面 | 场合级 | 温柔卷发/锁骨短发/侧分 | 温柔约会/文艺学院 | 耳饰+项饰+包袋 |
-| 咖啡厅/书店 | 日常级 | 自然垂落/层次短发/中长发 | 文艺学院/文艺清冷 | 眼镜+帆布包 |
-| 健身房/户外 | 素肌级 | 高马尾/丸子头/寸头 | 运动户外/运动机能 | 运动手表+发带 |
-| 晚宴/盛典 | 盛典级 | 精致卷发/盘发/侧分油头 | 正式着装（连衣裙/西装） | 耳饰+项饰+手饰+精致包袋 |
-| 深夜独处 | 素肌级 | 随意散落/微乱 | 居家慵懒 | 无 |
-| 街头夜市 | 场合级 | 羊毛卷/拳击辫/狼尾 | 街头潮范/街头潮牌 | 耳饰+棒球帽 |
-| 医院/正式场合 | 日常级 | 利落扎发/利落短发 | 简约素色穿搭 | 极简 |
+|  | cấp  | tự /ý  |  | hoặc không  |
+| thông trên  | ngày thường cấp  | phát /thấp đuôi /phútngắn phát  | thông trường /cấp vụ  | tay bảng +gói  |
+| ra  | ngày thường cấp  | /phút/đuôi  | ngày thường /ngày thường  | gói ++tay bảng  |
+| sẽ thấy mặt  | trường hợp cấp  | phát /ngắn phát /phút | sẽ /tài  | ++gói  |
+| / | ngày thường cấp  | tự /tầng lần ngắn phát /giữa dài phát  | tài /tài sạch  | quay +gói  |
+| /dùng ngoài  | cấp  | cao đuôi /đầu /đầu  | vận động dùng ngoài /vận động máy thể  | vận động tay bảng +phát kèm  |
+| muộn / | cấp  | phát /đĩa phát /phútđầu  | chính thức đang （/） | ++tay +gói  |
+| xử  | cấp  | ý / |  | không  |
+| đầu  | trường hợp cấp  | //đuôi  | đầu /đầu  | + |
+| /chính thức trường hợp  | ngày thường cấp  | phát /ngắn phát  | vật  |  |
 
-> **未覆盖场景推断规则**：先判断场景的私密/公共属性（私密→素肌级，公共→日常级起步）；再判断正式程度（正式场合→场合级/盛典级）；最后判断情调（浪漫/社交→场合级）。妆容适配面孔类型（见第三章），穿搭适配场景温度与氛围。
+> **chưa Bối cảnhkhuyến **：trước Bối cảnh của mật /biệt （mật →cấp ，→ngày thường cấp bước ）；chính thức trình độ （chính thức trường hợp →trường hợp cấp /cấp ）；nhất sau tình gọi （/tác vụ →trường hợp cấp ）。dung nối mặt Loại（thấy Thứ 3chương ），nối Bối cảnhđộ Không khí。
 
 ---
 
-## 八、人物肖像系列——四角度摄影规范
+## 8、ngườidòng hàng ——4nhân độ sáng 
 
-> 衍生造型叠加后仍需输出四角度棚拍系列，确保妆容、发型、穿搭在实拍各角度下的一致性与可辨认性。
+> sinh tạo kiểu cộng sau cần tải ra 4nhân độ dòng hàng ，lưu dung 、phát kiểu 、ở các nhân độ dưới  của 1 。
 
-### 四角度定义
+### 4nhân độ nối nghĩa 
 
-| 位置 | 角度 | 景别 | 摄影要求 |
+| vị trí trí  | nhân độ  | Cỡ cảnh | sáng Yêu cầu |
 |---|---|---|---|
-| 左一 | 正面近景 | 头顶至锁骨上缘 | 面部占60%+，妆容细节清晰可见（粉底与皮肤的融合、眼线精度、唇色质感）。焦段50-85mm |
-| 左二 | 正面0° | 全身 | 正面穿搭全貌，服装的垂坠、叠穿、配饰完整呈现。头顶到脚底完整 |
-| 右二 | 右侧90° | 全身 | 侧面轮廓+穿搭侧面层次、发型侧面状态。头顶到脚底完整 |
-| 右一 | 后方180° | 全身 | 后脑发型全貌、背部穿搭、包袋/帽饰后侧。头顶到脚底完整 |
+| trái 1  | chính mặt Cận cảnh (close-up) | đầu đến trên  | mặt bộ 60%+，dung tiết sạch thấy （ của hợp 、đường độ 、vật ）。đoạn 50-85mm |
+| trái 2 | chính mặt 0° | toàn  | chính mặt toàn ，phục  của 、、nối chỉnh 。đầu đến chỉnh  |
+| phải 2 | phải 90° | toàn  | mặt +mặt tầng lần 、phát kiểu mặt trạng thái。đầu đến chỉnh  |
+| phải 1  | sau phương 180° | toàn  | sau phát kiểu toàn 、bộ 、gói /sau 。đầu đến chỉnh  |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 摄影要求 |
+| dự án | sáng Yêu cầu |
 |---|---|
-| 布局 | 同一画面从左至右并排四个角度，间距均匀。呈现为"造型确认照"排版 |
-| 背景 | 中灰无缝背景纸 #B0B0B0，无光斑无渐变无投影 |
-| 站姿 | 保持底模站姿——重心偏移的自然日常站姿，不是立正不是pose。**禁止因换装而改变体态** |
-| 面部表情 | 符合妆容强度与场景氛围的微表情——素肌级中性自然、场合级微含笑意、盛典级从容自信。**仅限面部微表情，不涉及肢体动作** |
-| 光线 | 棚拍柔光——前方柔光箱主光+双侧补光板。光影柔和、方向明确、光比约1:2至1:3，保留面部立体感。服装配饰材质质感清晰可见 |
-| 一致性 | 四角度为同一人物、同一次造型拍摄的连续摄影记录。面容/妆容/发型/穿搭/配饰完全呈现为同一次拍摄 |
-| 画面比例 | 建议 4:1 或 16:4 宽幅 |
+| cục  | cùng 1 vẽ mặt từ trái đến phải nhất sắp 4mục nhân độ ，gian 。"tạo kiểu "sắp bản  |
+| bối  | giữa không bối  #B0B0B0，không ánh không không sáng  |
+| trạm  | lưu giữ mô trạm ——trùng  của tự ngày thường trạm ，không là lập chính không là pose。**Nghiêm cấmđổi sửa thể thái ** |
+| mặt bộ bảng tình  | hợp dung độ Bối cảnhKhông khí của bảng tình ——cấp giữa tự 、trường hợp cấp ý 、cấp từ dung tự tin 。**chỉ hạn mặt bộ bảng tình ，không thể động tác vụ ** |
+| ánh đường  | ánh ——trước phương ánh chính ánh +đôi bổ ánh 。Ánh sáng và 、phương dẫn 、ánh tỷ 1:2đến 1:3，lưu lưu mặt bộ lập thể 。phục nối sạch thấy  |
+| 1  | 4nhân độ cùng 1 người、cùng 1 lần tạo kiểu  của sáng lục 。mặt dung /dung /phát kiểu //nối toàn cùng 1 lần  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 4:1 hoặc  16:4 rộng  |
 
 ---
 
-## 九、提示词模板
+## 9、Promptmô 
 
-### 输出格式约束
+### Định Dạng Đầu Ra
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 输出内容 | **仅输出提示词文本**，不输出分析过程、方案对比、速查表、约束说明 |
-| 禁止场景 | 不包含任何场景/环境/天气/背景描述 |
-| 禁止道具 | 不包含任何手持物/交互物（道具属于独立资产） |
-| 禁止姿态变化 | 不改变底模站姿，不输出任何动作/体态变化 |
-| 格式 | 直接输出可用的完整提示词 |
+| tải ra nội dung | **chỉ tải ra Prompttài sách **，không tải ra phúttích trình 、phương đúng tỷ 、tra bảng 、Giải thích |
+| Nghiêm cấmBối cảnh | không gói Bối cảnh//ngày/bối Mô tả |
+| Nghiêm cấmĐạo cụ | không gói tay giữ /tác vụ （Đạo cụbiệt với lập Tài nguyên） |
+| Nghiêm cấmthái hóa  | không sửa mô trạm ，không tải ra động tác vụ /thể thái hóa  |
+| khung thức  | trực tiếp tải ra hàm  của chỉnh Prompt |
 
-### 完整造型叠加提示词模板
+### chỉnh tạo kiểu cộng Promptmô 
 
-以角色基础形象图为底图，img2img叠加造型，
-真人都市人物造型肖像系列，真人实拍摄影，棚拍柔光，中灰无缝背景纸，
-{性别}人物肖像系列，实拍风格，非3D非渲染非CG，
+Nhân vậtcơ sở dạng tượng ảnh ảnh ，img2imgcộng tạo kiểu ，
+thật ngườiđều ngườitạo kiểu dòng hàng ，Người Thật Thực Tếsáng ，ánh ，giữa không bối ，
+{khác }ngườidòng hàng ，Phong cách，phi 3Dphi phi CG，
 character portrait series, live-action photography, studio soft lighting,
-保持基础形象面容不变，{整体气质}，
-【L1·妆容】{妆容强度——素肌级/日常级/场合级/盛典级}，{妆容描述}，妆容与真实皮肤融合、粉底不假面、皮肤毛孔纹理仍可见，
-【L2·发型】{发型描述}，真实发质纹理，{碎发/发根/发尾真实状态描述}，非假发套非CG发丝，
-【L3+L4·穿搭】{穿搭风格}，{上装描述}+{下装描述}，{颜色}，{面料自然质感}，衣物自然垂坠、有真实穿着褶皱、非样板衣，
-【L5·配饰】{配饰描述}，日常佩戴质感、有使用痕迹、自然贴合身体，
-同一画面从左至右并排：近景特写+正面全身+侧面全身+背面全身，
-自然日常站姿（重心偏移），中灰无缝背景纸 #B0B0B0，棚拍均匀柔光，光比柔和，
-四角度为同一次造型拍摄的连续摄影记录，
-画面干净无文字无水印无签名无边框，
-真人写实摄影画质、35mm全画幅摄影质感
+lưu giữ cơ sở dạng tượng mặt dung không ，{chỉnh thể }，
+【L1·dung 】{dung độ ——cấp /ngày thường cấp /trường hợp cấp /cấp }，{dung Mô tả}，dung thật hợp 、không giả mặt 、lý thấy ，
+【L2·phát kiểu 】{phát kiểu Mô tả}，thật phát lý ，{phát /phát /phát đuôi thật trạng tháiMô tả}，phi giả phát phi CGphát ，
+【L3+L4·】{Phong cách}，{trên Mô tả}+{dưới Mô tả}，{vật }，{mặt tự }，tự 、có thật đang 、phi kiểu ，
+【L5·nối 】{nối Mô tả}，ngày thường 、có hàm 、tự hợp thể ，
+cùng 1 vẽ mặt từ trái đến phải nhất sắp ：Cận cảnh (close-up)Đặc tả (close-up)+chính mặt toàn +mặt toàn +mặt toàn ，
+tự ngày thường trạm （trùng ），giữa không bối  #B0B0B0，ánh ，ánh tỷ  và ，
+4nhân độ cùng 1 lần tạo kiểu  của sáng lục ，
+vẽ mặt không tài chữ không không ký tên không ，
+thật ngườisáng vẽ 、35mmtoàn vẽ sáng 
 
-### 负面规避提示词
+### mặt Prompt
 
 3D render, 3D modeling, CGI, Unreal Engine, Blender, PBR material, 8K modeling, game engine, cartoon, anime, 2D, illustration, hand drawn, painting,
 plastic skin, wax face, silicone skin, airbrushed skin, perfect smooth skin, poreless, doll-like, mannequin,
@@ -313,43 +313,43 @@ symmetrical pose, mannequin pose, runway pose, model stance, military stance, ex
 heavy makeup, dramatic makeup, makeup mask, foundation mask, fake lashes, colored contacts,
 wig, fake hair, helmet hair, stiff hair, perfect hairline, CG hair strands,
 brand new clothes, showroom clothes, stiff fabric, unrealistically clean, no wrinkles, mannequin clothes,
-古风, 古装, 汉服, 仙侠, 武侠, 民国, 赛博朋克, 科幻, 西方奇幻, 中世纪,
+phong , , phục , , , dân , , , phương , giữa ,
 text, watermark, signature, logo, border, frame
 
 ---
 
-## 十、约束规则
+## 10、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 叠加后面容必须与底模一致——造型服务于面孔，不遮蔽面孔 |
-| R2 | 妆容必须与真实皮肤融合——粉底不假面、毛孔纹理仍可见、非AI感平滑 |
-| R3 | 发型必须呈现真实发质——碎发、发根蓬度、发尾毛躁、非假发套非CG发丝 |
-| R4 | 服装必须有真实穿着痕迹——自然褶皱、面料垂坠、非样板衣非全新出厂 |
-| R5 | 配饰必须有日常佩戴感——贴合身体、有使用痕迹、非悬浮非嵌肤 |
-| R6 | 必须输出四角度棚拍系列（近景特写+正面+侧面+背面全身） |
-| R7 | 必须指定「中灰无缝背景纸 #B0B0B0」，禁止添加场景环境 |
-| R8 | 必须指定「四角度为同一次造型拍摄的连续摄影记录」 |
-| R9 | **仅输出提示词**——不输出分析过程、速查表、方案对比等一切非提示词内容 |
-| R10 | **禁止道具交互**——不包含手持物，道具属独立资产 |
-| R11 | **姿态保持不变**——保持底模站姿，不添加任何动作/体态描述 |
-| R12 | **禁止场景/环境描述**——场景属独立资产 |
-| R13 | L1 必须根据场景→妆容强度映射做决策：素肌级 / 日常级 / 场合级 / 盛典级 |
-| R14 | 所有衍生资产均需造型方案——正常情况不保持完全素颜素衣，至少进入日常级 |
+| R1 | cộng sau mặt dung Bắt buộcmô 1 ——tạo kiểu phục vụ với mặt ，không mặt  |
+| R2 | dung Bắt buộcthật hợp ——không giả mặt 、lý thấy 、phi AI |
+| R3 | phát kiểu Bắt buộcthật phát ——phát 、phát độ 、phát đuôi 、phi giả phát phi CGphát  |
+| R4 | phục Bắt buộccó thật đang ——tự 、mặt 、phi kiểu phi toàn mới ra  |
+| R5 | nối Bắt buộccó ngày thường ——hợp thể 、có hàm 、phi phi  |
+| R6 | Bắt buộctải ra 4nhân độ dòng hàng （Cận cảnh (close-up)Đặc tả (close-up)+chính mặt +mặt +mặt toàn ） |
+| R7 | Bắt buộcnối 「giữa không bối  #B0B0B0」，Nghiêm cấmthêmBối cảnh |
+| R8 | Bắt buộcnối 「4nhân độ cùng 1 lần tạo kiểu  của sáng lục 」 |
+| R9 | **chỉ tải ra Prompt**——không tải ra phúttích trình 、tra bảng 、phương đúng tỷ 1 phi Promptnội dung |
+| R10 | **Nghiêm cấmĐạo cụtác vụ **——không gói tay giữ ，Đạo cụbiệt lập Tài nguyên |
+| R11 | **thái lưu giữ không **——lưu giữ mô trạm ，không thêmđộng tác vụ /thể thái Mô tả |
+| R12 | **Nghiêm cấmBối cảnh/Mô tả**——Bối cảnhbiệt lập Tài nguyên |
+| R13 | L1 Bắt buộcdựa theoBối cảnh→dung độ quyết định：cấp  / ngày thường cấp  / trường hợp cấp  / cấp  |
+| R14 | tất cảsinh Tài nguyêncần tạo kiểu phương ——chính thường tình huống không lưu giữ toàn ，đến ít tiến vào ngày thường cấp  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 严禁「3D渲染 / 3D建模 / CG / PBR材质 / 8K建模 / UE引擎 / Blender」等一切CG术语 |
-| X2 | 严禁「2D手绘 / 插画 / 动画 / 二次元」等非摄影媒介 |
-| X3 | 严禁「过度磨皮 / 硅胶脸 / 蜡像假面 / 零毛孔 / AI感平滑皮肤」——妆容之下必须有真实皮肤 |
-| X4 | 严禁「假发套 / CG发丝根根分明 / 头发僵硬整齐 / 无碎发」 |
-| X5 | 严禁「样板衣 / 全新无褶服装 / 悬浮服饰 / 假人模特感着装」 |
-| X6 | 严禁「模特对称站姿 / 走秀pose / 军人立正 / 夸张动作」 |
-| X7 | 严禁「浓妆覆盖底模面容至不可辨认」 |
-| X8 | 严禁「古风 / 汉服 / 仙侠 / 武侠 / 民国 / 赛博朋克 / 科幻 / 西方奇幻」等非当代都市着装 |
-| X9 | 严禁「暴露 / 透视 / 低俗 / 擦边 / 暴力血腥」 |
-| X10 | 严禁「水印 / 文字 / LOGO / 签名 / 边框 / AI生成痕迹」 |
+| X1 | 「3D / 3Dtạo mô  / CG / PBR / 8Ktạo mô  / UE / Blender」1 CGngữ  |
+| X2 | 「2Dtay  / vẽ  / động vẽ  / 2lần 」phi sáng  |
+| X3 | 「độ  /  / giả mặt  / 0 / AI」——dung  của dưới Bắt buộccó thật  |
+| X4 | 「giả phát  / CGphát phútdẫn  / đầu phát chỉnh  / không phát 」 |
+| X5 | 「kiểu  / toàn mới không phục  / phục  / giả ngườimô đang 」 |
+| X6 | 「mô đúng trạm  / chạy pose / ngườilập chính  / bức động tác vụ 」 |
+| X7 | 「mô mặt dung đến không 」 |
+| X8 | 「phong  / phục  /  /  / dân  /  /  / phương 」phi khi đều đang  |
+| X9 | 「 / video  / thấp  /  / lực 」 |
+| X10 | 「 / tài chữ  / LOGO / ký tên  /  / AItạo」 |

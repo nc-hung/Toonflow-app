@@ -51,13 +51,13 @@ export default router.post(
         prompt: scenePrompt,
       },
     };
-    // 先批量为所有 assets 创建 image 记录并标记为"生成中"
+    // trước  lượng tất cả assets sáng tạo  image lục nhất biểu "Đang tạo"
     const imageIdMap: Record<number, number> = {};
     for (const item of assetsDataArr) {
       const [imageId] = await u.db("o_image").insert({
         assetsId: item.id,
         type: item.type,
-        state: "生成中",
+        state: "Đang tạo",
         resolution: projectSettingData?.imageQuality,
         model: projectSettingData?.imageModel,
       });
@@ -66,7 +66,7 @@ export default router.post(
     }
 
     const imageData: { id: number; state: string; src: string }[] = [];
-    res.status(200).send(success("开始生成资产图片"));
+    res.status(200).send(success("bắt đầuTạo tài nguyênHình ảnh"));
     const generateSingleAsset = async (item: any) => {
       const imageId = imageIdMap[item.id!];
       const typeConfig = promptRecord[item.type!] || promptRecord["role"];
@@ -77,8 +77,8 @@ export default router.post(
           {
             role: "user",
             content: `
-            父级资产描述: ${item.parentDescribe || "无详细描述"}
-            当前资产描述: ${item.describe || "无详细描述"}`,
+            cấp Mô tả tài nguyên: ${item.parentDescribe || "không chi mô tả"}
+            hiện tạiMô tả tài nguyên: ${item.describe || "không chi mô tả"}`,
           },
         ],
       });
@@ -97,34 +97,34 @@ export default router.post(
             ...repeloadObj,
           },
           {
-            taskClass: "生成图片",
-            describe: "资产图片生成",
+            taskClass: "Tạo hình ảnh",
+            describe: "Tài nguyênHình ảnhtạo",
             relatedObjects: JSON.stringify(repeloadObj),
             projectId: projectId,
           },
         );
         const savePath = `/${projectId}/assets/${scriptId}/${item.type}/${u.uuid()}.jpg`;
         await imageCls.save(savePath);
-        await u.db("o_image").where({ id: imageId }).update({ state: "已完成", filePath: savePath });
+        await u.db("o_image").where({ id: imageId }).update({ state: "Đã hoàn thành", filePath: savePath });
         return {
           id: item.id!,
-          state: "已完成",
+          state: "Đã hoàn thành",
           src: await u.oss.getSmallImageUrl(savePath),
         };
       } catch (e) {
         await u
           .db("o_image")
           .where({ id: imageId })
-          .update({ state: "生成失败", errorReason: u.error(e).message });
+          .update({ state: "Tạo thất bại", errorReason: u.error(e).message });
         return {
           id: item.id!,
-          state: "生成失败",
+          state: "Tạo thất bại",
           src: "",
         };
       }
     };
 
-    // 按 concurrentCount 分批并发执行
+    // theo  concurrentCount phần nhất phát thực thi
     for (let i = 0; i < assetsDataArr.length; i += concurrentCount) {
       const batch = assetsDataArr.slice(i, i + concurrentCount);
       const batchResults = await Promise.all(batch.map(generateSingleAsset));

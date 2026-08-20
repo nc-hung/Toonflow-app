@@ -25,7 +25,7 @@ class ResTool {
     this.data = data;
   }
 
-  // 创建新消息
+  // Tạo tin nhắn mới 
   newMessage(role: "assistant" | "user" | "system" = "assistant", name?: string) {
     const messageId = u.uuid();
     const datetime = new Date().toISOString();
@@ -42,7 +42,7 @@ class ResTool {
     return new MessageBuilder(this.socket, messageId, role, name, datetime);
   }
 
-  // 发送错误消息
+  // Gửi tin nhắn lỗi
   sendError(messageId: string, error: string) {
     this.socket.emit("message:update", {
       id: messageId,
@@ -51,7 +51,7 @@ class ResTool {
     });
   }
 
-  // 发送完成状态
+  // Gửi trạng thái hoàn thành
   sendComplete(messageId: string) {
     this.socket.emit("message:update", {
       id: messageId,
@@ -60,7 +60,7 @@ class ResTool {
   }
 }
 
-// 消息构建器
+// Bộ xây dựng tin nhắn
 class MessageBuilder {
   private socket: Socket;
   private messageId: string;
@@ -92,7 +92,7 @@ class MessageBuilder {
     return this.messageDatetime;
   }
 
-  // 更新消息状态
+  // Cập nhật trạng thái tin nhắn
   updateStatus(status: ChatMessageStatus) {
     this.socket.emit("message:update", {
       id: this.messageId,
@@ -101,7 +101,7 @@ class MessageBuilder {
     return this;
   }
 
-  // 添加文本内容
+  // Thêm nội dung văn bản 
   text(initialText = "") {
     const contentId = u.uuid();
     const content: TextContent = {
@@ -123,7 +123,7 @@ class MessageBuilder {
     return stream;
   }
 
-  // 添加 Markdown 内容
+  // Thêm nội dung Markdown
   markdown(initialText = "") {
     const contentId = u.uuid();
     const content: MarkdownContent = {
@@ -141,8 +141,8 @@ class MessageBuilder {
     return new ContentStream<string>(this.socket, this.messageId, contentId, "markdown");
   }
 
-  // 添加思考内容
-  thinking(title = "思考中...") {
+  // Thêm nội dung suy nghĩ
+  thinking(title = "Đang suy nghĩ...") {
     const contentId = u.uuid();
     const content: ThinkingContent = {
       type: "thinking",
@@ -159,8 +159,8 @@ class MessageBuilder {
     return new ThinkingStream(this.socket, this.messageId, contentId);
   }
 
-  // 添加搜索内容
-  search(title = "搜索中...") {
+  // Thêm nội dung tìm kiếm
+  search(title = "Đang tìm kiếm...") {
     const contentId = u.uuid();
     const content: SearchContent = {
       type: "search",
@@ -177,7 +177,7 @@ class MessageBuilder {
     return new SearchStream(this.socket, this.messageId, contentId);
   }
 
-  // 添加图片内容
+  // Thêm nội dung hình ảnh
   image(data: ImageContent["data"]) {
     const contentId = u.uuid();
     const content: ImageContent = {
@@ -195,7 +195,7 @@ class MessageBuilder {
     return this;
   }
 
-  // 添加建议内容
+  // Thêm nội dung gợi ý
   suggestion(suggestions: SuggestionContent["data"]) {
     const contentId = u.uuid();
     const content: SuggestionContent = {
@@ -213,7 +213,7 @@ class MessageBuilder {
     return this;
   }
 
-  // 添加工具调用内容
+  // Thêm nội dung gọi công cụ
   toolCall(data: ToolCallContent["data"]) {
     const contentId = u.uuid();
     const content: ToolCallContent = {
@@ -231,7 +231,7 @@ class MessageBuilder {
     return new ToolCallStream(this.socket, this.messageId, contentId, data.toolCallId);
   }
 
-  // 添加活动内容
+  // Thêm nội dung hoạt động
   activity<T = Record<string, any>>(activityType: string, content: T) {
     const contentId = u.uuid();
     const activityContent: ActivityContent<T> = {
@@ -253,7 +253,7 @@ class MessageBuilder {
     return this;
   }
 
-  // 添加推理内容
+  // Thêm nội dung suy luận
   reasoning() {
     const contentId = u.uuid();
     const content: ReasoningContent = {
@@ -271,7 +271,7 @@ class MessageBuilder {
     return new ReasoningBuilder(this.socket, this.messageId, contentId);
   }
 
-  // 完成消息
+  // Hoàn thành tin nhắn
   complete() {
     this.socket.emit("message:update", {
       id: this.messageId,
@@ -279,7 +279,7 @@ class MessageBuilder {
     });
   }
 
-  // 停止消息
+  // Dừng tin nhắn
   stop() {
     this.socket.emit("message:update", {
       id: this.messageId,
@@ -287,7 +287,7 @@ class MessageBuilder {
     });
   }
 
-  // 错误
+  // Lỗi
   error(errorMsg?: string) {
     this.socket.emit("message:update", {
       id: this.messageId,
@@ -297,7 +297,7 @@ class MessageBuilder {
   }
 }
 
-// 内容流基类
+// Lớp cơ sở luồng nội dung
 class ContentStream<T> {
   protected socket: Socket;
   protected messageId: string;
@@ -315,7 +315,7 @@ class ContentStream<T> {
     return this.contentId;
   }
 
-  // 流式追加数据
+  // Nối dữ liệu dạng luồng
   append(chunk: string) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -328,7 +328,7 @@ class ContentStream<T> {
     return this;
   }
 
-  // 合并/替换数据
+  // Hợp nhất / Thay thế dữ liệu
   merge(data: T) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -341,7 +341,7 @@ class ContentStream<T> {
     return this;
   }
 
-  // 完成内容
+  // Hoàn thành nội dung
   complete(finalData?: T) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -353,7 +353,7 @@ class ContentStream<T> {
     return this;
   }
 
-  // 错误
+  // Lỗi
   error() {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -364,13 +364,13 @@ class ContentStream<T> {
   }
 }
 
-// 思考内容流
+// Luồng nội dung suy nghĩ
 class ThinkingStream extends ContentStream<ThinkingContent["data"]> {
   constructor(socket: Socket, messageId: string, contentId: string) {
     super(socket, messageId, contentId, "thinking");
   }
 
-  // 追加思考文本
+  // Nối văn bản  suy nghĩ
   appendText(chunk: string) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -383,7 +383,7 @@ class ThinkingStream extends ContentStream<ThinkingContent["data"]> {
     return this;
   }
 
-  // 更新标题
+  // Cập nhật tiêu đề
   updateTitle(title: string) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -397,7 +397,7 @@ class ThinkingStream extends ContentStream<ThinkingContent["data"]> {
   }
 }
 
-// 文本内容流：自动把 <think>...</think> 转为 thinking 内容
+// Luồng nội dung văn bản : tự động chuyển <think>...</think> thành nội dung suy nghĩ
 class AutoThinkingTextStream extends ContentStream<string> {
   private static readonly OPEN_TAG = "<think>";
   private static readonly CLOSE_TAG = "</think>";
@@ -415,8 +415,8 @@ class AutoThinkingTextStream extends ContentStream<string> {
   }
 
   /**
-   * 检查 str 的尾部是否是 tag 的某个非空真前缀。
-   * 返回需要保留的尾部字符数（0 表示不需要缓冲）。
+   * Kiểm tra phần đuôi của str có phải là tiền tố thực không rỗng của tag.
+   * Trả về số ký tự đuôi cần  giữ lại (0 nghĩa là không cần  bộ đệm).
    */
   private static tailPrefixLen(str: string, tag: string): number {
     const maxCheck = Math.min(str.length, tag.length - 1);
@@ -436,7 +436,7 @@ class AutoThinkingTextStream extends ContentStream<string> {
 
     while (rest.length > 0) {
       if (!this.inThinking) {
-        // 寻找 <think> 开始标签
+        // Tìm thẻ mở <think>
         const openIndex = rest.indexOf(AutoThinkingTextStream.OPEN_TAG);
         if (openIndex >= 0) {
           this.flushText(rest.slice(0, openIndex));
@@ -448,7 +448,7 @@ class AutoThinkingTextStream extends ContentStream<string> {
           continue;
         }
 
-        // 检查尾部是否可能是标签的部分前缀
+        // Kiểm tra đuôi có thể là tiền tố một phần của thẻ
         const keep = AutoThinkingTextStream.tailPrefixLen(rest, AutoThinkingTextStream.OPEN_TAG);
         if (keep > 0) {
           this.flushText(rest.slice(0, rest.length - keep));
@@ -458,7 +458,7 @@ class AutoThinkingTextStream extends ContentStream<string> {
         }
         break;
       } else {
-        // 寻找 </think> 结束标签
+        // Tìm thẻ đóng </think>
         const closeIndex = rest.indexOf(AutoThinkingTextStream.CLOSE_TAG);
         if (closeIndex >= 0) {
           this.flushThinking(rest.slice(0, closeIndex));
@@ -467,7 +467,7 @@ class AutoThinkingTextStream extends ContentStream<string> {
           continue;
         }
 
-        // 检查尾部是否可能是标签的部分前缀
+        // Kiểm tra đuôi có thể là tiền tố một phần của thẻ
         const keep = AutoThinkingTextStream.tailPrefixLen(rest, AutoThinkingTextStream.CLOSE_TAG);
         if (keep > 0) {
           this.flushThinking(rest.slice(0, rest.length - keep));
@@ -512,23 +512,23 @@ class AutoThinkingTextStream extends ContentStream<string> {
     return super.error();
   }
 
-  /** 输出普通文本 */
+  /** Xuất văn bản  thông thường */
   private flushText(text: string) {
     if (!text) return;
     super.append(text);
   }
 
-  /** 输出思考文本：累积完整内容，用 merge 策略发送，避免前端 append 丢失 */
+  /** Xuất văn bản  suy nghĩ: tích lũy nội dung đầy đủ và gửi bằng cơ chế merge để tránh mất mát */
   private flushThinking(text: string) {
     if (!text) return;
     this.thinkingBuffer += text;
-    this.ensureThinkingStream().merge({ title: "思考中...", text: this.thinkingBuffer });
+    this.ensureThinkingStream().merge({ title: "Đang suy nghĩ...", text: this.thinkingBuffer });
   }
 
   private ensureThinkingStream() {
     if (!this.thinkingStream) {
       this.thinkingStartTime = Date.now();
-      this.thinkingStream = this.messageBuilder.thinking("思考中...");
+      this.thinkingStream = this.messageBuilder.thinking("Đang suy nghĩ...");
     }
     return this.thinkingStream;
   }
@@ -536,8 +536,8 @@ class AutoThinkingTextStream extends ContentStream<string> {
   private finishThinking() {
     if (this.thinkingStream) {
       const elapsed = ((Date.now() - this.thinkingStartTime) / 1000).toFixed(1);
-      this.thinkingStream.updateTitle(`思考完毕（${elapsed}秒）`);
-      this.thinkingStream.complete({ title: `思考完毕（${elapsed}秒）`, text: this.thinkingBuffer });
+      this.thinkingStream.updateTitle(`Hoàn thành suy nghĩ (${elapsed} giây)`);
+      this.thinkingStream.complete({ title: `Hoàn thành suy nghĩ (${elapsed} giây)`, text: this.thinkingBuffer });
       this.thinkingStream = null;
       this.thinkingBuffer = "";
     }
@@ -545,13 +545,13 @@ class AutoThinkingTextStream extends ContentStream<string> {
   }
 }
 
-// 搜索内容流
+// Luồng nội dung tìm kiếm
 class SearchStream extends ContentStream<SearchContent["data"]> {
   constructor(socket: Socket, messageId: string, contentId: string) {
     super(socket, messageId, contentId, "search");
   }
 
-  // 添加引用
+  // Thêm trích dẫn
   addReference(ref: Exclude<SearchContent["data"]["references"], undefined>[0]) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -564,7 +564,7 @@ class SearchStream extends ContentStream<SearchContent["data"]> {
     return this;
   }
 
-  // 批量添加引用
+  // Thêm hàng loạt trích dẫn
   addReferences(refs: SearchContent["data"]["references"]) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -577,7 +577,7 @@ class SearchStream extends ContentStream<SearchContent["data"]> {
     return this;
   }
 
-  // 更新标题
+  // Cập nhật tiêu đề
   updateTitle(title: string) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -591,7 +591,7 @@ class SearchStream extends ContentStream<SearchContent["data"]> {
   }
 }
 
-// 工具调用流
+// Luồng gọi công cụ
 class ToolCallStream extends ContentStream<ToolCallContent["data"]> {
   private toolCallId: string;
 
@@ -600,7 +600,7 @@ class ToolCallStream extends ContentStream<ToolCallContent["data"]> {
     this.toolCallId = toolCallId;
   }
 
-  // 追加参数块
+  // Nối khối tham số
   appendArgs(chunk: string) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -613,7 +613,7 @@ class ToolCallStream extends ContentStream<ToolCallContent["data"]> {
     return this;
   }
 
-  // 追加结果块
+  // Nối khối kết quả
   appendResult(chunk: string) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -626,7 +626,7 @@ class ToolCallStream extends ContentStream<ToolCallContent["data"]> {
     return this;
   }
 
-  // 设置完整结果
+  // Thiết lập kết quả đầy đủ
   setResult(result: string) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -639,7 +639,7 @@ class ToolCallStream extends ContentStream<ToolCallContent["data"]> {
     return this;
   }
 
-  // 更新事件类型
+  // Cập nhật loại sự kiện
   updateEventType(eventType: ToolCallContent["data"]["eventType"]) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -653,7 +653,7 @@ class ToolCallStream extends ContentStream<ToolCallContent["data"]> {
   }
 }
 
-// 推理构建器
+// Bộ xây dựng suy luận
 class ReasoningBuilder {
   private socket: Socket;
   private messageId: string;
@@ -665,7 +665,7 @@ class ReasoningBuilder {
     this.contentId = contentId;
   }
 
-  // 添加子内容
+  // Thêm nội dung con
   addContent(content: AIMessageContent) {
     this.socket.emit("content:update", {
       messageId: this.messageId,
@@ -678,7 +678,7 @@ class ReasoningBuilder {
     return this;
   }
 
-  // 完成推理
+  // Hoàn thành suy luận
   complete() {
     this.socket.emit("content:update", {
       messageId: this.messageId,

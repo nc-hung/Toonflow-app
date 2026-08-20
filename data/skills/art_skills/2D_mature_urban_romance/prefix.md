@@ -1,119 +1,119 @@
-# 全局美学基础 · 成熟都市言情二次元动画
+# toàn cục đẹp cơ sở  · Anime Ngôn Tình Đô Thị Hiện Đại (2D)
 
 ---
-必须严格、完整遵循下方全部风格约束与全局规则，并严格按提示词模板格式生成提示词；仅输出提示词正文，不得附加任何解释、说明、注释、标题或其他额外文本。
+Bắt buộckhung 、chỉnh dưới phương toàn bộPhong cáchtoàn cục ，nhất khung theo Promptmô khung thức tạoPrompt；chỉ tải ra Promptchính tài ，không được cộng giải 、Giải thích、tâm 、biểu đề hoặc anh ấybổ ngoài tài sách 。
 
-## 一、风格基因
+## 1 、Phong cáchcơ sở 
 
-| 维度 | 定义 |
+| độ  | nối nghĩa  |
 |---|---|
-| **一级风格** | 成熟都市言情二次元动画（Mature Urban Romance Anime） |
-| **二级风格** | 现代小说改编动画风格 · 电影级质感 |
-| **情感基调** | 甜宠向 — 冷中带暖、疏中见密 |
-| **质感锚词** | 赛璐璐上色、清晰线条、戏剧化低调光影 |
+| **1 cấp Phong cách** | Anime Ngôn Tình Đô Thị Hiện Đại (2D)（Mature Urban Romance Anime） |
+| **2cấp Phong cách** | Tiểu thuyếtsửa chỉnh động vẽ Phong cách · sáng cấp  |
+| **tình cơ sở gọi ** |  — giữa kèm 、giữa thấy mật  |
+| **từ ** | trên vật 、sạch đường mục 、kịch hóa thấp gọi Ánh sáng |
 
 ---
 
-## 二、全局色彩盘（风格基线，不是硬锁）
+## 2、toàn cục vật đĩa （Phong cáchcơ sở đường ，không là ）
 
-> 目标：统一审美而非限制创作。除「硬约束色」外，其余颜色默认优先使用，可在合理范围内偏移。
+> mục biểu ：thống 1 đẹp phi hạn chép sáng tác vụ 。bỏ 「vật 」ngoài ，vật Mặc địnhưu tiên sử dụng ，ở hợp lý khí trong 。
 
-### 色彩使用层级
+### vật hàm tầng cấp 
 
-| 层级 | 约束强度 | 说明 |
+| tầng cấp  | độ  | Giải thích |
 |---|---|---|
-| L1 硬约束 | 高 | 仅锁定角色识别核心：肤色、发色、主服底色的审美方向 |
-| L2 软约束 | 中 | 场景色、配饰色、点缀色优先参考色盘，可按镜头与剧情微调 |
-| L3 例外机制 | 低 | 节庆/回忆/高潮戏可临时突破局部色彩，但需保留整体冷暖逻辑 |
+| L1  | cao  | chỉ nối Nhân vậttrưng khác ：vật 、phát vật 、chính phục vật  của đẹp phương  |
+| L2  | giữa  | Bối cảnhvật 、nối vật 、điểm tố vật trước tham chiếuvật đĩa ，theo Ống kínhkịch tình gọi  |
+| L3 lệ ngoài máy chép  | thấp  | tiết /trả /cao cục bộ vật ，nhưng cần lưu lưu chỉnh thể logic |
 
-| 序号 | 色名 | 色值 | 用途 |
+| xếp số  | vật tên  | vật giá trị  | hàm  |
 |---|---|---|---|
-| C1 | 冷白肤 | `#F5EDE8` | 女性肤色基准 |
-| C2 | 暖白肤 | `#F5E6D8` | 男性肤色基准 |
-| C3 | 浅蓝 | `#B8D4E3` | 天空、冷调环境 |
-| C4 | 墨黑 | `#1A1A2E` | 发色、眼瞳、轮廓线 |
-| C5 | 烟霞粉 | `#F2D7D5` | 唇色、腮红、情感点缀 |
-| C6 | 青灰 | `#7A8B99` | 远景建筑、暗部 |
-| C7 | 琥珀暖 | `#C9A96E` | 暖光、灯光、情绪高点 |
-| C8 | 银灰 | `#C0C7CE` | 现代建筑、金属材质 |
-| C9 | 中性灰 | `#E8E8E8` | 设定图背景 |
-| C10 | 素白 | `#F8F6F0` | 室内墙面、基础中衣色 |
+| C1 |  | `#F5EDE8` | nữ vật cơ sở  |
+| C2 |  | `#F5E6D8` | nam vật cơ sở  |
+| C3 |  | `#B8D4E3` | ngàyrỗng 、gọi  |
+| C4 |  | `#1A1A2E` | phát vật 、、đường  |
+| C5 |  | `#F2D7D5` | vật 、、tình điểm tố  |
+| C6 |  | `#7A8B99` | Viễn cảnh (extreme wide shot)tạo 、bộ  |
+| C7 |  | `#C9A96E` | ánh 、ánh 、tình xúc cao điểm  |
+| C8 |  | `#C0C7CE` | tạo 、biệt  |
+| C9 | giữa  | `#E8E8E8` | thiết nối ảnh bối  |
+| C10 |  | `#F8F6F0` | trong mặt 、cơ sở giữa vật  |
 
-### 硬约束色（默认锁定）
+### vật （Mặc địnhnối ）
 
-| 色项 | 对应色 | 规则 |
+| vật  | đúng hồi vật  |  |
 |---|---|---|
-| 女性肤色基准 | C1 冷白肤 | 默认优先，允许小幅明度/暖度微调 |
-| 男性肤色基准 | C2 暖白肤 | 默认优先，避免偏黄或过灰 |
-| 发色/瞳色基准 | C4 墨黑 | 默认优先，允许暗蓝/冷棕轻微偏移 |
+| nữ vật cơ sở  | C1  | Mặc địnhtrước ，nhỏ dẫn độ /độ gọi  |
+| nam vật cơ sở  | C2  | Mặc địnhtrước ，hoặc  |
+| phát vật /vật cơ sở  | C4  | Mặc địnhtrước ，/ |
 
-### 软约束色（推荐优先）
+### vật （khuyến nghị trước ）
 
-> C3/C5/C6/C7/C8/C9/C10 为推荐色域，用于天空、情感点缀、远景、暖光、金属材质、背景、墙面等。可根据镜头氛围做同色相邻近调整。
+> C3/C5/C6/C7/C8/C9/C10 khuyến nghị vật vực ，hàm với ngàyrỗng 、tình điểm tố 、Viễn cảnh (extreme wide shot)、ánh 、biệt 、bối 、mặt 。dựa theoỐng kínhKhông khícùng vật gọi chỉnh 。
 
-### 情绪色盘（导演对齐版）
+### tình xúc vật đĩa （đạo diễnđúng bản ）
 
-| 情绪场景 | 主色 | 辅色 | 光效与对比建议 | 画面关键词 |
+| tình xúc Bối cảnh | chính vật  | vật  | ánh hiệu đúng tỷ Khuyến nghị | vẽ mặt liên từ  |
 |---|---|---|---|---|
-| 初见心动（克制甜） | C1 冷白肤 | C5 烟霞粉 + C8 银灰 | 冷基底 + 局部柔暖高光，强对比但不过曝 | 清冷、呼吸感、微甜 |
-| 暧昧升温（亲密拉近） | C5 烟霞粉 | C7 琥珀暖 + C10 素白 | 中近景提暖，肤色微升温，背景保持低饱和 | 软焦、耳语感、贴近 |
-| 守护承诺（稳定安全） | C10 素白 | C3 浅蓝 + C4 墨黑 | 明暗层次清晰，银色/蓝色强调安全感 | 安定、仪式感、信任 |
-| 分离误会（冷疏压抑） | C6 青灰 | C1 冷白肤 + C9 中性灰 | 整体降饱和，拉大冷暖反差，阴影加深 | 距离感、克制、静压 |
-| 重逢释怀（泪感回暖） | C1 冷白肤 | C7 琥珀暖 + C5 烟霞粉 | 先冷后暖，人物面部暖光渐进 | 回温、释然、湿润空气 |
-| 大婚喜庆（古典高光） | C7 琥珀暖 | C5 烟霞粉 + C3 浅蓝 | 局部可提高饱和，避免荧光色；金色强调仪式感 | 华贵、庄重、甜喜 |
-| 夜宴灯会（浪漫流光） | C7 琥珀暖 | C6 青灰 + C3 浅蓝 | 暖光源主导，背景冷色托举，保留暗部细节 | 流光、灯影、人潮中对视 |
-| 梦境回忆（写实化） | C1 冷白肤 | C6 青灰 + C3 浅蓝 | 低饱和雾化与真实光位并存，允许轻微偏色但不霓虹 | 空灵、旧忆感、真实可拍 |
+| thấy động （chép ） | C1  | C5  + C8  | cơ sở  + cục bộ cao ánh ，đúng tỷ nhưng không  | sạch 、、 |
+| （mật ） | C5  | C7  + C10  | giữa Cận cảnh (close-up)nhắc ，vật ，bối lưu giữ thấp  và  | 、ngữ 、 |
+| （nối an toàn ） | C10  | C3  + C4  | dẫn tầng lần sạch ，vật /vật gọi an toàn  | an nối 、thức 、tin  |
+| phútsẽ （nén ） | C6  | C1  + C9 giữa  | chỉnh thể  và ，lớn phụ ，sáng cộng  | 、chép 、nén  |
+| trùng （trả ） | C1  | C7  + C5  | trước sau ，ngườimặt bộ ánh tiến  | trả 、、rỗng  |
+| lớn （cao ánh ） | C7  | C5  + C3  | cục bộ nhắc cao  và ，ánh vật ；vật gọi thức  | 、trùng 、 |
+| sẽ （ánh ） | C7  | C6  + C3  | ánh nguồn chính dẫn ，bối vật ，lưu lưu bộ tiết  | ánh 、sáng 、ngườigiữa đúng video  |
+| trả （hóa ） | C1  | C6  + C3  | thấp  và hóa thật ánh vị trí nhất lưu ，vật nhưng không  | rỗng 、cũ 、thật  |
 
-### 情绪色盘使用规则
+### tình xúc vật đĩa hàm 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| E1 | 每条提示词至少指定 1 个「情绪场景」并绑定主色+辅色组合 |
-| E2 | 单镜头主色不超过 2 个，避免颜色叙事失焦 |
-| E3 | 情绪切换时优先调整光比与色温，再调整饱和度 |
-| E4 | 甜宠向默认遵循「冷底 + 暖点」：冷色铺底，暖色落在人物关系焦点 |
-| E5 | 若与剧情冲突，以情绪色盘优先于通用推荐色，但不得突破严禁项 |
+| E1 | mục Promptđến ít nối  1 mục 「tình xúc Bối cảnh」nhất ghép nốichính vật +vật nhóm hợp  |
+| E2 | đơn Ống kínhchính vật không vượt  2 mục ，vật việc thất  |
+| E3 | tình xúc đổi trước gọi chỉnh ánh tỷ vật ，gọi chỉnh  và độ  |
+| E4 | Mặc định「 + điểm 」：vật ，vật ở ngườiliên dòng điểm  |
+| E5 | kịch tình ，tình xúc vật đĩa trước với thông hàm khuyến nghị vật ，nhưng không được  |
 
-### 色温约束
+### vật 
 
-| 参数 | 值 | 说明 |
+| tham số | giá trị  | Giải thích |
 |---|---|---|
-| 整体色温 | 偏冷 5800-7000K（推荐） | 清冷仙气主基调 |
-| 肤色色温 | 微暖 5200-5600K（推荐） | 冷白但有生命感 |
-| 对比度 | 强（建议保持） | 明暗反差鲜明 |
-| 饱和度 | 中低 30-50%（建议区间） | 高级灰调 |
+| chỉnh thể vật  |  5800-7000K（khuyến nghị ） | sạch chính cơ sở gọi  |
+| vật vật  |  5200-5600K（khuyến nghị ） | nhưng có sinh  |
+| đúng tỷ độ  | （Khuyến nghịlưu giữ ） | dẫn phụ dẫn  |
+|  và độ  | giữa thấp  30-50%（Khuyến nghịkhu gian ） | cao cấp gọi  |
 
-### 容差与例外
+### dung lệ ngoài 
 
-| 项目 | 建议容差 |
+| dự án | Khuyến nghịdung  |
 |---|---|
-| 色相偏移 | ±8° |
-| 饱和度偏移 | ±10% |
-| 明度偏移 | ±12% |
+| vật  | ±8° |
+|  và độ  | ±10% |
+| dẫn độ  | ±12% |
 
-> 例外场景：婚礼、灯会、回忆、情绪高潮镜头可使用更暖或更高饱和局部色块；但禁止霓虹荧光与现代色彩语言入镜。
+> lệ ngoài Bối cảnh：、sẽ 、trả 、tình xúc cao Ống kínhhàm đổi hoặc đổi cao  và cục bộ vật ；nhưng Nghiêm cấmánh vật ngữ vào quay 。
 
 ---
 
-## 三、全局约束规则
+## 3、toàn cục 
 
-### 必守规则（所有技能继承）
+### bắt （tất cảthể ）
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须包含「二次元动画风格」风格锚定词（anime style / cel shading） |
-| R2 | 必须声明「赛璐璐上色 + 清晰线条」 |
-| R3 | 面部必须使用「面容细腻渲染 + 皮肤细腻」 |
-| R4 | 发丝必须使用「层次分明 + 发丝细腻渲染」 |
-| R5 | 纹理必须声明「纹理细节超清晰」 |
-| R6 | 必须声明「电影级构图 + 戏剧化低调光影」 |
+| R1 | Bắt buộcgói 「2lần động vẽ Phong cách」Phong cáchnối từ （anime style / cel shading） |
+| R2 | Bắt buộcthanh dẫn 「trên vật  + sạch đường mục 」 |
+| R3 | mặt bộ Bắt buộchàm 「mặt dung  + 」 |
+| R4 | phát Bắt buộchàm 「tầng lần phútdẫn  + phát 」 |
+| R5 | lý Bắt buộcthanh dẫn 「lý tiết vượt sạch 」 |
+| R6 | Bắt buộcthanh dẫn 「sáng cấp cấu ảnh  + kịch hóa thấp gọi Ánh sáng」 |
 
-### 严禁项（所有技能继承）
+### （tất cảthể ）
 
-| 编号 | 严禁内容 |
+| chỉnh số  | nội dung |
 |---|---|
-| X1 | 严禁「真人写实/摄影/3D渲染/CGI」 |
-| X2 | 严禁「高饱和荧光色/霓虹色」 |
-| X3 | 严禁「现代元素入镜」(手机、电脑屏幕、现代标识等) |
-| X4 | 严禁「面部变形/多指/肢体异常」倾向词 |
-| X5 | 严禁「裸体/暴露/透视/暗示性描述」 |
+| X1 | 「thật người/sáng /3D/CGI」 |
+| X2 | 「cao  và ánh vật /vật 」 |
+| X3 | 「vào quay 」(tay máy 、、biểu trưng ) |
+| X4 | 「mặt bộ dạng /nhiều /thể bất thường 」từ  |
+| X5 | 「thể //video /nhở Mô tả」 |

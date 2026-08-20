@@ -1,221 +1,221 @@
 ---
 name: director_planning_liveaction_urban
-description: 真人都市约束 — 定义真人都市风格在色调体系、光影方案、质感方向、场景空间元素、配乐选择与环境音上的全局约束，并针对Seedance 2.0做深度适配。适用于任何叙事类型。
+description: thật ngườiđều  — nối nghĩa thật ngườiđều Phong cáchở vật gọi thể dòng 、Ánh sángphương 、phương 、Bối cảnhrỗng gian 、nối chọn lựa âm trên  của toàn cục ，nhất đúng Seedance 2.0độ nối 。hàm với việc Loại。
 metaData: director_skills, seedance2.0_adapted
 ---
 
-# 真人都市约束 · 真人实拍都市 · 技法参考
+# thật ngườiđều  · Người Thật Thực Tếđều  · thức tham chiếu
 
 ---
 
-## 一、色调体系与画面基调
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
 
-- **色调基底** — 全片以都市白（#F5F2EC）、雾灰（#9EA2A8）、藏青（#2D3A4A）为基底色。整体色温分日间中性偏暖（5000-5800K）、夜间冷暖共存（暖街灯2800-3200K + 冷环境6000-8000K）。饱和度中低（35-55%），呈现"电影感但不滤镜感"的克制都市色调——色彩来自实际光源，不来自后期调色
-- **光源即色盘** — 不以"主色/辅色"配对，而是以光源的色温和方向来驱动画面色彩。晨光3500-4500K（暖白）、正午5500-6500K（冷白清透）、金色时刻2800-3500K（暖金）、蓝调时刻8000-10000K（深蓝紫）、钠灯街灯2000-2200K（暖橙黄）、便利店荧光灯4000-5000K（冷白）
-- **冷暖叙事对照** — 暖光（晨光/夕照/台灯/街灯钠灯）用于温情、治愈、亲密、烟火段落；冷光（正午天光/阴天漫射/蓝调时刻/荧光灯）用于克制、疏离、孤独、悬疑段落。关键转场可通过光源色温切换来暗示情绪转向
-- **光源先行原则** — 段落规划先确定"光从哪儿来、什么色温"，再确定画面色调。避免"这个镜头颜色好看但光源说不通"
-- **禁用色域** — 高饱和荧光色、廉价滤镜调色（如青橙预设/茶色预设）、CG霓虹溢色、非真实光源产生的异常色偏
+- **vật gọi cơ sở ** — toàn đều （#F5F2EC）、（#9EA2A8）、（#2D3A4A）cơ sở vật 。chỉnh thể vật phútngày gian giữa （5000-5800K）、gian lưu （2800-3200K + 6000-8000K）。 và độ giữa thấp （35-55%），"sáng nhưng không lọc quay " của chép đều vật gọi ——vật tự ánh nguồn ，không tự sau kỳ gọi vật 
+- **ánh nguồn vật đĩa ** — không "chính vật /vật "nối đúng ，là ánh nguồn  của vật  và phương động vẽ mặt vật 。ánh 3500-4500K（）、chính 5500-6500K（sạch ）、vật 2800-3500K（）、gọi 8000-10000K（）、2000-2200K（）、ánh 4000-5000K（）
+- **việc đúng ** — ánh （ánh //đài /）hàm với tình 、、mật 、đoạn ；ánh （chính ngàyánh /ngày/gọi /ánh ）hàm với chép 、、、đoạn 。liên chuyển trường thông quaánh nguồn vật đổi nhở tình xúc chuyển 
+- **ánh nguồn trước thi gốc ** — đoạn lập kế hoạchtrước nối "ánh từ nhi 、saovật "，nối vẽ mặt vật gọi 。"nàymục Ống kínhvật tốt xem nhưng ánh nguồn hướng không thông "
+- **hàm vật vực ** — cao  và ánh vật 、lọc quay gọi vật （như thiết /vật thiết ）、CGvật 、phi thật ánh nguồn nguyên sinh  của bất thường vật 
 
 ---
 
-## 二、光影方案体系
+## 2、Ánh sángphương thể dòng 
 
-- **光影即叙事** — 7 套光影方案对应不同情绪段落。导演规划阶段在段落层面确定光影基调方向，而非逐镜指定。每套方案必须指定"光的来源 + 色温 + 光比"，确保可被 Seedance 2.0 物理模拟
-- **实拍摄影光影特征** — 自然光窗口调度、实用光源（台灯/街灯/屏幕/霓虹/车灯）、环境反射（湿地面/玻璃幕墙/水面）、手持摄影的微晃呼吸感、景深变化引导注意力——为真人都市风格的核心光影手段
+- **Ánh sángviệc ** — 7 Ánh sángphương đúng hồi không cùng tình xúc đoạn 。Kế hoạch đạo diễnđoạn ở đoạn tầng mặt nối Ánh sángcơ sở gọi phương ，phi quay nối 。phương Bắt buộcnối "ánh  của nguồn  + vật  + ánh tỷ "，lưu  Seedance 2.0 lý mô 
+- **sáng Ánh sáng** — tự ánh cổng điều phối、hàm ánh nguồn （đài ////）、phụ （địa mặt //mặt ）、tay giữ sáng  của 、bối hóa dẫn tâm ý lực ——thật ngườiđều Phong cách của Ánh sángtay đoạn 
 
-| 方案 | 方案名 | 光源配方 | 光比 | 适用情绪 |
+| phương  | phương tên  | ánh nguồn nối phương  | ánh tỷ  | hàm tình xúc  |
 |---|---|---|---|---|
-| A | 都市鎏金 | 夕照窗光45°侧入（3000-3500K）+ 环境补光（天空反射5500K） | 1:3 中等反差 | 高光时刻、精英场合、温情回忆、重要会面 |
-| B | 日间清透 | 大面积窗光/天光漫射（5000-5500K），无硬阴影，窗帘柔化 | 1:1.5 低反差 | 日常松弛、都市漫步、治愈清新、办公室日间 |
-| C | 烟火暖光 | 台灯/吊灯/街灯钠灯暖调主光（2800-3200K），暗部保留细节 | 1:4 暖调包裹 | 居家日常、市井烟火、温情节拍、深夜私密 |
-| D | 冷调锐影 | 侧方硬光（窗光冷白5000K或街灯冷调）+ 深阴影 | 1:8 大光比 | 都市悬疑、对峙冲突、冷峻压抑、高压时刻 |
-| E | 室内漫射 | 窗光自然漫射（4500-5500K）+ 室内顶灯/屏幕冷光补面，阴影柔和 | 1:2 柔和过渡 | 室内日间、职场办公、独处静思、治愈静谧 |
-| F | 雨夜清辉 | 湿地面反射街灯（暖2800K光斑 + 冷6000K环境），窗玻璃雨痕散射光 | 1:6 冷暖共存 | 雨夜独行、思念独处、文艺感伤、悬疑铺垫 |
-| G | 蓝调诗篇 | 日落后20分钟天空漫射（8000-10000K深蓝紫）+ 初亮的人工暖光点 | 1:5 冷主暖点 | 过渡时刻、内心独白、诗意留白、尾声收束 |
+| A | đều  | ánh 45°vào （3000-3500K）+ bổ ánh （ngàyrỗng phụ 5500K） | 1:3 giữa phụ  | cao ánh 、trường hợp 、tình trả 、trùng cần sẽ mặt  |
+| B | ngày gian sạch  | lớn mặt ánh /ngàyánh （5000-5500K），không sáng ，hóa  | 1:1.5 thấp phụ  | ngày thường 、đều bước 、sạch mới 、ngày gian  |
+| C | ánh  | đài //gọi chính ánh （2800-3200K），bộ lưu lưu tiết  | 1:4 gọi gói  | ngày thường 、、tình tiết 、mật  |
+| D | gọi sáng  | phương ánh （ánh 5000Khoặc gọi ）+ sáng  | 1:8 lớn ánh tỷ  | đều 、đúng 、nén 、cao nén  |
+| E | trong  | ánh tự （4500-5500K）+ trong /ánh bổ mặt ，sáng  và  | 1:2  và  | trong ngày gian 、trường 、xử 、 |
+| F | sạch  | địa mặt phụ （2800Kánh  + 6000K），ánh  | 1:6 lưu  | thi 、xử 、tài 、 |
+| G | gọi bài  | ngày sau 20phútngàyrỗng （8000-10000K）+  của ngườiánh điểm  | 1:5 chính điểm  | 、Độc thoại nội tâm (inner monologue, OS)、ý lưu 、đuôi thanh nhận  |
 
-- **冷暖光分配** — 暖色光（晨光/夕照/台灯/钠灯街灯）适用于温情治愈、精英高光、市井烟火段落；冷色光（正午天光/阴天漫射/蓝调/荧光灯）适用于克制疏离、悬疑对峙、清冷独处段落。冷暖切换点即叙事转折点
-- **氛围方向映射** — 每场戏的氛围方向应能映射到上述光影方案（A-G）的某一方向。如叙事需要混合方案（如F+G），需明确主导光源
-- **Seedance 2.0 光影适配要点**：光源名称可被AI理解（"夕照窗光"优于"暖色体积光"）。光比数字帮助模型建立明暗意识。多光源场景须明确主光+辅光+环境光的层级
-
----
-
-## 三、质感方向——摄影机前的真实世界
-
-> 真人都市质感的唯一标尺：摄影机拍到的材质行为，不是渲染引擎生成的材质参数。
-
-- **皮肤质感** — 毛孔可见、T区自然出油反光、颧骨处自然泛红、眼周微暗——真实皮肤的"活着"的证据。Seedance 2.0 提示词用"visible skin pores, natural skin texture, not airbrushed，真实皮肤质感"替代 3D 项目的"次表面散射/SSS"
-- **发丝质感** — 碎发自然散落额前和颈后、发缕有自然的聚合与分离、逆光下头发边缘呈半透明暖色轮廓、被风吹或被打湿的自然状态。Seedance 2.0 用"flyaway hair strands, natural hair movement, backlit hair rim light"替代"物理级发丝模拟"
-- **衣料质感** — 棉质的柔软微皱、牛仔的斜纹肌理和落色、针织的线圈纹理、皮革的使用包浆和弯折痕。衣服有"被穿过"的证据——衣摆自然微皱、袖口有穿脱痕迹。Seedance 2.0 用"fabric texture with subtle wear, natural fabric drape, lived-in clothing"
-- **建筑材质** — 水泥墙面的水渍与微裂、玻璃幕墙的反射与手印、金属扶手的磨损包浆、瓷砖地面的细微划痕、木质表面的使用痕迹。Seedance 2.0 用"weathered building materials, real urban surfaces, not showroom clean"
-- **岁月质感至上** — 材质不可过于干净完美。生活痕迹（桌面日常杂物、墙面贴纸残留、地板磨损）不是缺陷，是空间叙事的基础。禁止"全新样板间"和"无痕效果图"
-- **Seedance 2.0 质感适配要点**：避免 "PBR材质""物理级渲染""8K贴图" 等CG术语。改用 "real texture, natural material surface, visible wear and use marks, not CGI"。当描述轻微瑕疵时用 "subtle" 而非 "micro-detail" 等建模术语
+- **ánh phútnối ** — vật ánh （ánh //đài /）hàm với tình 、cao ánh 、đoạn ；vật ánh （chính ngàyánh /ngày/gọi /ánh ）hàm với chép 、đúng 、sạch xử đoạn 。đổi điểm việc Điểm bước ngoặt
+- **Không khíphương ** — trường  của Không khíphương hồi thể đến trên tả Ánh sángphương （A-G） của 1 phương 。như việc cần cần hợp phương （như F+G），cần dẫn chính dẫn ánh nguồn 
+- **Seedance 2.0 Ánh sángnối cần điểm **：ánh nguồn TênAIlý giải （"ánh "với "vật thể ánh "）。ánh tỷ số chữ trợ giúp mô hìnhtạo lập dẫn ý trưng 。nhiều ánh nguồn Bối cảnhbuộc dẫn chính ánh +ánh +ánh  của tầng cấp 
 
 ---
 
-## 四、真人都市场景空间元素
+## 3、phương ——sáng máy trước  của thật giới 
 
-当代中国都市特有的场景元素及其在 Seedance 2.0 视频中的视觉叙事功能：
+> thật ngườiđều  của 1 biểu ：sáng máy đến  của thi ，không là tạo của tham số。
 
-- **窗/落地窗/玻璃隔断** — 真人都市最核心的构图与光影道具。窗即光源入口——窗光的方向和色温决定整个室内的光影逻辑。玻璃隔断制造"隔与透"的多层空间（前景→玻璃→中景→玻璃→后景）。Seedance 2.0 中重点描述"light entering through window at specific angle"以帮助模型理解光源方向
-- **街道/行道树/斑马线/车流** — 室外场景的空间骨架。空荡长街 = 孤寂，车水马龙 = 都市疏离，雨后湿路面反射街灯 = 情绪浓度。Seedance 2.0 中街道场景必须明确"wet road surface reflecting streetlights"或"dry pavement with long afternoon shadows"等可被模型执行的光学描述
-- **街灯/窗光/屏幕光/车灯** — 都市世界的核心光源叙事载体。街灯暖黄（2000-2200K钠灯或3000K LED）= 夜晚的体温；便利店的荧光灯冷白（4000-5000K）= 深夜城市的安全屋孤岛；手机屏幕冷蓝映在人脸上 = 独处时刻的孤独陪伴
-- **老城区巷弄/高层公寓/写字楼/地铁站** — 都市建筑的四种叙事容器。老城区的斑驳墙面和架空电线 = 市井烟火记忆；高层落地窗俯瞰城市 = 精英的孤独或掌控感；写字楼玻璃隔断的层层反射 = 职场的秩序与疏离；地铁站日光灯冷光+隧道黑暗 = 都市流动中的暂停
-- **段落间用场景空镜过渡** — 空镜为情绪缓冲，不用硬切。同一空间在不同时段/天气的空镜（如雨中街道→晴日街道）可暗示时间流逝。Seedance 2.0 中空镜需指定光源逻辑，空镜也有情绪
-- **转折点用视觉而非台词** — 光影突变（窗光被云遮住→空间突然变暗）、景别跳切（中景→大特写）、空间转场（室内→窗外街景）、焦点漂移——由摄影机完成叙事
+- **** — thấy 、Tkhu tự ra phụ ánh 、xử tự 、——thật  của "hoạt đang " của chứng liệu 。Seedance 2.0 Prompthàm "visible skin pores, natural skin texture, not airbrushed，thật " 3D dự án của "lần bảng mặt /SSS"
+- **phát ** — phát tự bổ trước  và sau 、phát có tự  của hợp phút、ánh dưới đầu phát nửa dẫn vật 、phong hoặc mở  của tự trạng thái。Seedance 2.0 hàm "flyaway hair strands, natural hair movement, backlit hair rim light""lý cấp phát mô "
+- **** —  của 、 của lý  và vật 、 của đường lý 、 của hàm gói  và 。phục có "" của chứng liệu ——tự 、cổng có 。Seedance 2.0 hàm "fabric texture with subtle wear, natural fabric drape, lived-in clothing"
+- **tạo ** — mặt  của 、 của phụ tay 、biệt tay  của gói 、địa mặt  của 、bảng mặt  của hàm 。Seedance 2.0 hàm "weathered building materials, real urban surfaces, not showroom clean"
+- **thángđến trên ** — không với đẹp 。sinh hoạt （mặt ngày thường 、mặt lưu 、địa ）không là ，là rỗng gian việc  của cơ sở 。Nghiêm cấm"toàn mới kiểu gian " và "không hiệu quả ảnh "
+- **Seedance 2.0 nối cần điểm **： "PBR""lý cấp ""8Kảnh " CGngữ 。sửa hàm  "real texture, natural material surface, visible wear and use marks, not CGI"。khi Mô tảhàm  "subtle" phi  "micro-detail" tạo mô ngữ 
 
 ---
 
-## 五、真人都市配乐与环境音
+## 4、thật ngườiđều Bối cảnhrỗng gian 
 
-### 5.1 配乐乐器选择
+khi giữa đều có  của Bối cảnhở  Seedance 2.0 videogiữa  của trực quanviệc công thể ：
 
-真人都市配乐以原声乐器为主、电子元素克制为辅，追求"不抢戏的存在感"：
+- **/địa /cách ** — thật ngườiđều nhất  của cấu ảnh Ánh sángĐạo cụ。ánh nguồn vào cổng ——ánh  của phương  và vật nối chỉnh mục trong  của Ánh sánglogic。cách chép tạo "cách " của nhiều tầng rỗng gian （trước bối →→Trung cảnh (medium shot)→→sau bối ）。Seedance 2.0 giữa trùng điểm Mô tả"light entering through window at specific angle"trợ giúp mô hìnhlý giải ánh nguồn phương 
+- **đạo /thi đạo /đường /** — ngoài Bối cảnh của rỗng gian 。rỗng dài  = ， = đều ，sau đường mặt phụ  = tình xúc độ 。Seedance 2.0 giữa đạo Bối cảnhBắt buộcdẫn "wet road surface reflecting streetlights"hoặc "dry pavement with long afternoon shadows"mô hìnhthực thi của ánh Mô tả
+- **/ánh /ánh /** — đều giới  của ánh nguồn việc xuống thể 。（2000-2200Khoặc 3000K LED）= Ban đêm của thể ； của ánh （4000-5000K）=  của an toàn ；tay máy ở ngườitrên  = xử  của 
+- **khu /cao tầng /chữ /địa trạm ** — đều tạo  của 4loại việc dung thiết bị 。khu  của mặt  và rỗng đường  = ；cao tầng địa  =  của hoặc sát ；chữ cách  của tầng tầng phụ  = trường  của xếp ；địa trạm ngày ánh ánh +đạo  = đều động giữa  của tạm 
+- **đoạn gian hàm Bối cảnhrỗng quay ** — rỗng quay tình xúc ，không hàm 。cùng 1 rỗng gian ở không cùng đoạn /ngày của rỗng quay （như giữa đạo →ngày đạo ）nhở thời gian。Seedance 2.0 giữa rỗng quay cần nối ánh nguồn logic，rỗng quay cũng có tình xúc 
+- **Điểm bước ngoặthàm trực quanphi Lời thoại** — Ánh sáng（ánh →rỗng gian ）、Cỡ cảnh（Trung cảnh (medium shot)→lớn Đặc tả (close-up)）、rỗng gian chuyển trường （trong →ngoài bối ）、điểm ——do sáng máy tạo việc 
 
-- **钢琴** — 清冷独处、温情细腻段落的核心乐器。单音重复或稀疏和弦的最佳状态——音符之间的沉默和音符本身同样重要
-- **弦乐组** — 情感积蓄与释放段落的推动力。中低音区铺底（温暖但不压迫），高音区用于情绪高点的轻触即收
-- **木吉他** — 日常松弛、治愈、都市漫步段落的底色。指弹或轻扫和弦的质感，自带"下午阳光"的温度
-- **电吉他（清音/微过载）** — 都市夜场、独行街头、轻度忧郁段落的情绪放大器。单音旋律线或氛围琶音，慎用失真
-- **电子氛围 Pad** — 都市悬疑、夜场过渡、时间流逝段落的低频铺底。作为"可以被忽略但拿走就不对"的底层存在
-- **口琴/手风琴** — 市井烟火、怀旧记忆段落的点睛乐器。不宜通篇使用，局部出现即叙事信号
-- **轻量电子节拍** — 都市节奏感段落（通勤蒙太奇、城市夜景快切）的节奏基底。碎拍或简约电子鼓，不超过80BPM
-- 慎用：大型管弦乐团全奏、重金属失真、高能电子舞曲——这些会让真人都市变成"配乐在演戏"
+---
 
-### 5.2 配乐组合策略
+## 5、thật ngườiđều nối âm 
 
-| 情绪阶段 | 乐器组合 |
+### 5.1 nối thiết bị chọn lựa 
+
+thật ngườiđều nối gốc thanh thiết bị chính 、chép ，cầu "không  của lưu ở "：
+
+- **** — sạch xử 、tình đoạn  của thiết bị 。đơn âm trùng lời hoặc  và  của nhất trạng thái——âm  của gian  của  và âm sách cùng kiểu trùng cần 
+- **nhóm ** — tình mở đoạn  của khuyến động lực 。giữa thấp âm khu （nhưng không nén ），cao âm khu hàm với tình xúc cao điểm  của nhận 
+- **anh ấy** — ngày thường 、、đều bước đoạn  của vật 。hoặc  và  của ，tự kèm "dưới ánh " của độ 
+- **anh ấy（sạch âm /xuống ）** — đều trường 、thi đầu 、độ đoạn  của tình xúc mở lớn thiết bị 。đơn âm đường hoặc Không khíâm ，hàm thất thật 
+- **Không khí Pad** — đều 、trường 、thời gianđoạn  của thấp tần 。tác vụ "nhưng lấy chạy thì không đúng " của tầng lưu ở 
+- **cổng /tay phong ** — 、cũ đoạn  của điểm thiết bị 。không thông bài hàm ，cục bộ ra việc tin số 
+- **lượng tiết ** — đều tiết đoạn （thông 、bối nhanh ） của tiết cơ sở 。hoặc ，không vượt 80BPM
+- hàm ：lớn kiểu toàn 、trùng biệt thất thật 、cao thể ——nàynhững sẽ để thật ngườiđều tạo "nối ở "
+
+### 5.2 nối nhóm hợp 
+
+| tình xúc đoạn  | thiết bị nhóm hợp  |
 |---|---|
-| 平稳开场/日常叙事 | 钢琴独奏 或 钢琴 + 极轻电子Pad |
-| 温情治愈/松弛日常 | 木吉他 + 钢琴 + 轻弦乐铺底 |
-| 职场精英/高光时刻 | 钢琴 + 弦乐中高音区 + 轻量电子节拍 |
-| 孤独独处/思念 | 钢琴稀疏单音 或 钢琴 + 口琴点缀 |
-| 情绪转折/命运时刻 | 弦乐组渐强 + 钢琴收束 |
-| 悬疑铺垫/都市夜 | 电子氛围Pad + 轻量电子节拍 + 电吉他清音单音 |
-| 市井烟火/怀旧 | 木吉他 + 手风琴/口琴点缀 + 极轻弦乐 |
-| 结尾/余韵 | 钢琴单音渐疏 → 环境音独奏 |
+| mở trường /ngày thường việc  |  hoặc   + Pad |
+| tình /ngày thường  | anh ấy +  +  |
+| trường /cao ánh  |  + giữa cao âm khu  + lượng tiết  |
+| xử / | đơn âm  hoặc   + cổng điểm tố  |
+| tình xúc chuyển /vận  | nhóm  + nhận  |
+| /đều  | Không khíPad + lượng tiết  + anh ấysạch âm đơn âm  |
+| /cũ  | anh ấy + tay phong /cổng điểm tố  +  |
+| kết đuôi / | đơn âm  → âm  |
 
-### 5.3 真人都市环境音
+### 5.3 thật ngườiđều âm 
 
-> 环境音是真人都市场景的"听觉材质"，决定了空间的沉浸感。每场戏标注 1-2 个核心环境音。
+> âm là thật ngườiđều Bối cảnh của ""，nối rỗng gian  của 。trường biểu tâm  1-2 mục âm 。
 
-**核心环境音层次：**
-- **室内环境音**：空调低鸣/键盘敲击/电梯提示音/水龙头滴水/冰箱压缩机运转/窗帘被风轻吹/时钟走动
-- **室外环境音**：车流胎噪/远处人声/风过楼宇/行道树叶簌簌/鸟鸣/雨打车窗和路面/施工闷响/共享单车锁车声
-- **过渡环境音**：地铁进站广播和刹车声/商场背景音乐和人流声/电梯运行和开门提示/走廊脚步声由远及近
-- **静默也是一种环境音**：深夜公寓只有冰箱的低频嗡鸣、清晨5点街道连车流声都没有——这种"声音的缺失"本身就是叙事
+**âm tầng lần ：**
+- **trong âm **：rỗng gọi thấp /đĩa /nhắc nhở âm /đầu /nén nhỏ máy vận chuyển /phong /chạy động 
+- **ngoài âm **：/xử ngườithanh /phong /thi đạo //mở  và đường mặt /phản /đơn thanh 
+- **âm **：địa tiến trạm  và thanh /cấp trường bối âm  và ngườithanh /vận thi  và mở cổng nhắc nhở /chạy bước thanh do 
+- **cũng là 1 loại âm **：chỉ có  của thấp tần 、Sáng sớm5điểm đạo thanh đều chưa có ——nàyloại "thanh âm  của thất "sách thì là việc 
 
-音效设计哲学：
-- 环境音不是贴上去的，是场景自带的声音
-- 关键时刻"抽掉"环境音比"加入"特效更能制造情绪冲击
-- 环境音的变化可以暗示空间转换——从嘈杂街道走进安静的便利店，声音突然"变干净了"
+Âm hiệuthiết tính ：
+- âm không là trên đi  của ，là Bối cảnhtự kèm  của thanh âm 
+- liên "bỏ "âm tỷ "cộng vào "hiệu đổi thể chép tạo tình xúc 
+- âm  của hóa nhở rỗng gian chuyển đổi ——từ đạo chạy tiến an  của ，thanh âm ""
 
 ---
 
-## 六、Seedance 2.0 专项适配
+## 6、Seedance 2.0 riêng nối 
 
-### 6.1 核心适配原则
+### 6.1 nối gốc 
 
-> Seedance 2.0 是真实感物理模拟优先的视频模型。真人都市风格与 Seedance 2.0 天然亲和——但需要把"摄影术语"翻译为模型能执行的"物理指令"。
+> Seedance 2.0 là thật lý mô trước  của videomô hình。thật ngườiđều Phong cách Seedance 2.0 ngày và ——nhưng cần cần đem "sáng ngữ "mô hìnhthể thực thi của "lý "。
 
-| 适配维度 | 通用提示词写法 | Seedance 2.0 优化写法 |
+| nối độ  | thông hàm Promptthức  | Seedance 2.0 tối ưuthức  |
 |---|---|---|
-| 光源描述 | 温暖窗光 | 午后阳光从画面右侧窗户45°斜入，色温约4500K暖白，在地面投射出拉长的窗框阴影 |
-| 表情 | 神情温柔 | 嘴角自然微扬，眼尾出现细微笑纹，注视对方时眼中有自然光点 |
-| 动作 | 转身 | 向右缓慢旋转约90度，重心从左脚移至右脚，全程约1.5秒，转身时衣摆自然摆动 |
-| 材质 | 真实皮肤质感 | 面颊毛孔隐约可见，T区有自然出油的微反光，非磨皮非硅胶质感 |
-| 天气 | 下雨的街道 | 细雨，湿路面反射街灯暖黄色光斑，窗玻璃有雨痕让窗外街景轻微模糊 |
+| ánh nguồn Mô tả | ánh  | sau ánh từ vẽ mặt phải dùng 45°vào ，vật 4500K，ở địa mặt ra dài  của sáng  |
+| bảng tình  | tình  | nhân tự ，đuôi ra ，tâm video đúng phương giữa có tự ánh điểm  |
+| động tác vụ  | chuyển  | phải chậm chuyển 90độ ，trùng từ trái đến phải ，toàn trình 1.5giây，chuyển tự động  |
+|  | thật  | mặt thấy ，Tkhu có tự ra  của phụ ánh ，phi phi  |
+| ngày | dưới  của đạo  | ，đường mặt phụ vật ánh ，có để ngoài bối mô  |
 
-### 6.2 画质底座（Seedance 2.0 真人都市专属）
-1080p，真人实拍电影质感，真实皮肤纹理，自然光影，24fps电影帧率，手持呼吸感或稳定器流动，真实颗粒结构，非CG非渲染
-### 6.3 光效指令（Seedance 2.0 真人都市专属，按光影方案选择）
+### 6.2 vẽ （Seedance 2.0 thật ngườiđều riêng biệt ）
+1080p，Người Thật Thực Tếsáng ，thật lý ，tự Ánh sáng，24fpssáng tỷ lệ ，tay giữ hoặc nối thiết bị động ，thật kết cấu ，phi CGphi 
+### 6.3 ánh hiệu （Seedance 2.0 thật ngườiđều riêng biệt ，theo Ánh sángphương chọn lựa ）
 
-| 光影方案 | Seedance 2.0 光效指令 |
+| Ánh sángphương  | Seedance 2.0 ánh hiệu  |
 |---|---|
-| A 都市鎏金 | 夕照自然光45°侧入，色温约3000-3500K暖金，天空环境光5500K作为暗部补光，光比约1:3 |
-| B 日间清透 | 大面积窗光漫射，色温约5000-5500K中性冷白，窗帘柔化光线，无硬阴影，光比约1:1.5低反差 |
-| C 烟火暖光 | 台灯暖光主光源，色温2800-3200K，暗部保留物体轮廓细节，光比约1:4暖调包裹 |
-| D 冷调锐影 | 侧方硬窗光，冷白5000K主光，暗部深但有细节，光比约1:8大光比 |
-| E 室内漫射 | 窗光自然漫射4500-5500K为主光，室内顶灯中性补光，阴影柔软过渡，光比约1:2 |
-| F 雨夜清辉 | 湿地面反射街灯暖调光斑2800K，环境冷调6000K，窗玻璃雨痕散射光，光比约1:6冷暖共存 |
-| G 蓝调诗篇 | 日落后天空深蓝紫漫射约8000-10000K，地面人工暖光点初亮2800K，光比约1:5冷主暖点 |
+| A đều  | tự ánh 45°vào ，vật 3000-3500K，ngàyrỗng ánh 5500Ktác vụ bộ bổ ánh ，ánh tỷ 1:3 |
+| B ngày gian sạch  | lớn mặt ánh ，vật 5000-5500Kgiữa ，hóa ánh đường ，không sáng ，ánh tỷ 1:1.5thấp phụ  |
+| C ánh  | đài ánh chính ánh nguồn ，vật 2800-3200K，bộ lưu lưu thể tiết ，ánh tỷ 1:4gọi gói  |
+| D gọi sáng  | phương ánh ，5000Kchính ánh ，bộ nhưng có tiết ，ánh tỷ 1:8lớn ánh tỷ  |
+| E trong  | ánh tự 4500-5500Kchính ánh ，trong giữa bổ ánh ，sáng ，ánh tỷ 1:2 |
+| F sạch  | địa mặt phụ gọi ánh 2800K，gọi 6000K，ánh ，ánh tỷ 1:6lưu  |
+| G gọi bài  | ngày sau ngàyrỗng 8000-10000K，địa mặt ngườiánh điểm 2800K，ánh tỷ 1:5chính điểm  |
 
-### 6.4 物理逻辑具象化（真人都市专属）
+### 6.4 lý logiccụ tượng hóa （thật ngườiđều riêng biệt ）
 
-> Seedance 2.0 能理解现实世界的物理规律。所有动作须用具体数值和物理表现描述，禁止"随之""然后""适当"。
+> Seedance 2.0 thể lý giải giới  của lý 。tất cảđộng tác vụ buộc hàm cụ thể số giá trị  và lý bảng Mô tả，Nghiêm cấm" của ""sau ""khi "。
 
-| 场景 | 抽象写法（禁止） | Seedance 2.0 具象写法 |
+| Bối cảnh | tượng thức （Nghiêm cấm） | Seedance 2.0 cụ tượng thức  |
 |---|---|---|
-| 起身离开 | 然后站起来 | 双手撑住椅子扶手，膝盖向前移动，0.5秒后身体重心前移至双脚，再1秒后站直——全程约2秒，站直后停顿0.5秒 |
-| 转头 | 转头看向窗外 | 头缓慢向右旋转约45度，视线从桌面的咖啡杯移至窗外城市天际线，旋转过程约1秒，到位后目光停留在远处 |
-| 接咖啡 | 倒了杯咖啡 | 右手持咖啡壶手柄，壶嘴倾斜约30度，深褐色咖啡液注入白色陶瓷杯，液面从杯底上升至杯身三分之二处，全程约3秒，蒸汽从杯口缓缓升起 |
-| 雨中行走 | 雨中独行 | 在湿路面缓步行走，步速约每秒一步，每步踩下时鞋底与水面接触产生细微涟漪，街灯暖黄光在湿路面形成拉长的倒影，雨丝在路灯下可见 |
+| mở  | sau trạm  | đôi tay tay ，trước động ，0.5giâysau thể trùng trước đến đôi ，1giâysau trạm trực ——toàn trình 2giây，trạm trực sau 0.5giây |
+| chuyển đầu  | chuyển đầu xem ngoài  | đầu chậm phải chuyển 45độ ，video đường từ mặt  của đến ngoài ngàyđường ，chuyển trình 1giây，đến vị trí sau mục ánh lưu ở xử  |
+| tiếp  |  | phải tay giữ tay ，30độ ，vật tâm vào vật ，mặt từ trên đến 3phút của 2xử ，toàn trình 3giây，từ cổng  |
+| giữa thi chạy  | giữa thi  | ở đường mặt bước thi chạy ，bước giây1 bước ，bước dưới mặt tiếp nguyên sinh ，ánh ở đường mặt dạng tạo dài  của sáng ，ở đường dưới thấy  |
 
-### 6.5 空间逻辑具象化（真人都市专属）
+### 6.5 rỗng gian logiccụ tượng hóa （thật ngườiđều riêng biệt ）
 
-**空间坐标定义标准：**
-- **水平位置**：画面左侧三分之一处 / 画面中央 / 画面右侧，或相对于场景固定物（"距落地窗1米"）
-- **纵深位置**：前景（距镜头1-2米）/ 中景（距镜头3-5米）/ 背景 / 窗外远景
-- **人物之间**：相对距离与朝向（"A与B面对面，相距约0.8米，A略偏左，B略偏右"）
-- **人与空间关系**：相对于场景固定物的距离和方向
+**rỗng gian biểu nối nghĩa biểu ：**
+- **vị trí trí **：vẽ mặt trái 3phút của 1 xử  / vẽ mặt giữa  / vẽ mặt phải ，hoặc đúng với Bối cảnhnối （"địa 1"）
+- **vị trí trí **：trước bối （Ống kính1-2）/ Trung cảnh (medium shot)（Ống kính3-5）/ bối  / ngoài Viễn cảnh (extreme wide shot)
+- **người của gian **：đúng （"ABmặt đúng mặt ，0.8，Atrái ，Bphải "）
+- **ngườirỗng gian liên dòng **：đúng với Bối cảnhnối  của  và phương 
 
-**站位衔接示例：**
-【片段A尾部】
-A站在落地窗前，距窗户约0.5米，面向窗外，位于画面中央偏右。
-身体微微右转约20度，右手抬起将咖啡杯放在右侧边桌上。
+**trạm vị trí tiếp Ví dụ：**
+【đoạn Ađuôi bộ 】
+Atrạm ở địa trước ，dùng 0.5，mặt ngoài ，vị trí với vẽ mặt giữa phải 。
+thể phải chuyển 20độ ，phải tay mở ở phải trên 。
 
-【片段B开头】
-A的右手刚从杯子上移开，杯子在边桌上。A仍站在落地窗前，位置未变。
-窗外天空已从黄昏转为蓝调时刻，室内台灯已亮起。
-### 6.6 @reference 强制锚定语法
+【đoạn Bmở đầu 】
+A của phải tay từ trên mở ，ở trên 。Atrạm ở địa trước ，vị trí trí chưa 。
+ngoài ngàyrỗng đã từ Hoàng hônchuyển gọi ，trong đài đã 。
+### 6.6 @reference chép nối ngữ thức 
 
-> Seedance 2.0 的角色/场景/道具一致性依赖 @reference 语法。
-角色锚定：必须引用 @ImageX，指定用途
-例：@Image1_职场女性_通勤西装作为角色外观参考，@Image2_写字楼_落地窗办公室作为场景环境参考
+> Seedance 2.0  của Nhân vật/Bối cảnh/Đạo cụ1 phụ thuộc  @reference ngữ thức 。
+Nhân vậtnối ：Bắt buộchàm  @ImageX，nối hàm 
+lệ ：@Image1_trường nữ _thông tác vụ Nhân vậtngoài tham chiếu，@Image2_chữ _địa tác vụ Bối cảnhtham chiếu
 
-场景锚定：必须引用对应场景资产的 @ImageX
-道具锚定：若有手持或核心道具，引用对应的 @ImageX
+Bối cảnhnối ：Bắt buộchàm đúng hồi Bối cảnhTài nguyên của  @ImageX
+Đạo cụnối ：có tay giữ hoặc Đạo cụ，hàm đúng hồi  của  @ImageX
 
-### 6.7 多镜头序列最佳实践（Seedance 2.0 真人都市）
+### 6.7 nhiều Ống kínhxếp hàng nhất （Seedance 2.0 thật ngườiđều ）
 
-> Seedance 2.0 单片段建议 2-3 个镜头，总时长 4-12 秒。
-[Shot 1: 中景 · 固定] 办公室落地窗前，A侧身持咖啡杯望向窗外。
-午后窗光从右侧45°斜入（约4500K），在地面投下窗框长影。
-A位于画面中央偏右，距镜头约3米。时长约4秒。
+> Seedance 2.0 đơn đoạn Khuyến nghị 2-3 mục Ống kính，tổng Thời lượng 4-12 giây。
+[Shot 1: Trung cảnh (medium shot) · nối ] địa trước ，Agiữ ngoài 。
+sau ánh từ phải 45°vào （4500K），ở địa mặt dưới dài sáng 。
+Avị trí với vẽ mặt giữa phải ，Ống kính3。Thời lượng4giây。
 
 [Cut to]
-[Shot 2: 近景 · 缓推] A的面部从侧45°缓慢转向镜头方向。
-嘴角微扬，眼神从窗外收回，眼中有窗光的自然高光点。
-面部毛孔和皮肤纹理可见，非磨皮。时长约3秒。
+[Shot 2: Cận cảnh (close-up) · khuyến ] A của mặt bộ từ 45°chậm chuyển Ống kínhphương 。
+nhân ，từ ngoài nhận trả ，giữa có ánh  của tự cao ánh điểm 。
+mặt bộ  và lý thấy ，phi 。Thời lượng3giây。
 
 [Cut to]
-[Shot 3: 特写 · 固定] A的手将咖啡杯放在边桌上，杯底与木质桌面接触发出轻响。
-窗光在杯口镀上一层暖金轮廓光。时长约2秒。
+[Shot 3: Đặc tả (close-up) · nối ] A của tay mở ở trên ，mặt tiếp phát ra phản 。
+ánh ở cổng trên 1 tầng ánh 。Thời lượng2giây。
 
-### 6.8 真人都市 Seedance 2.0 负面词（不超过7个）
-3D渲染, CG动画, 塑料假面, 磨皮皮肤, 非真人质感, 悬浮物品, 画面闪烁
-
----
-
-## 七、全局叙事约束
-
-- **空镜即情绪** — 每个叙事段落之间建议用场景空镜（同一空间在不同光线下）做情绪缓冲。空镜不是"没东西拍"，是"让观众喘口气"
-- **光的连续性与变化** — 同一空间内在日间段落的窗光角度应随时间连续变化。如果一场对话戏跨越了半小时，窗光的位置应该移动了一些——Seedance 2.0 能理解这种"合理的不完全一致"
-- **人物光源一致性** — 同一镜头内所有人物的面部光源方向必须统一。如果主光从左侧来，所有人的左脸都应该是亮面
-- **避免"过度导演"** — 真人都市追求"被摄影机捕获的生活"，不是"被编剧安排的情节"。允许画面中有不可控的日常细节（风吹动窗帘、一只路过的猫、咖啡杯里的轻微晃动）
-- **静默的价值** — 不必每个镜头都填满动作和台词。一个3秒的静止特写——人物只是呼吸、眨眼、存在——往往比任何台词都更有力
+### 6.8 thật ngườiđều  Seedance 2.0 mặt từ （không vượt 7mục ）
+3D, CGđộng vẽ , giả mặt , , phi thật người, , vẽ mặt 
 
 ---
 
-## 八、快速决策卡
+## 7、toàn cục việc 
 
-### 情绪 → 光影方案 + 配乐速查
+- **rỗng quay tình xúc ** — mục việc đoạn  của gian Khuyến nghịhàm Bối cảnhrỗng quay （cùng 1 rỗng gian ở không cùng ánh đường dưới ）tình xúc 。rỗng quay không là "chưa "，là "để cổng "
+- **ánh  của hóa ** — cùng 1 rỗng gian trong ở ngày gian đoạn  của ánh nhân độ hồi thời gianhóa 。như quả 1 trường đúng lời nửa giờ，ánh  của vị trí trí hồi động 1 những ——Seedance 2.0 thể lý giải nàyloại "hợp lý  của không toàn 1 "
+- **ngườiánh nguồn 1 ** — cùng 1 Ống kínhtrong tất cảngười của mặt bộ ánh nguồn phương Bắt buộcthống 1 。như quả chính ánh từ trái ，tất cảngười của trái đều hồi là mặt 
+- **"độ đạo diễn"** — thật ngườiđều cầu "sáng máy lấy  của sinh hoạt "，không là "chỉnh kịch an sắp  của tình tiết "。vẽ mặt giữa có không sát  của ngày thường tiết （phong động 、1 chỉ đường  của 、 của động ）
+- ** của giá trị ** — không bắt mục Ống kínhđều đầy động tác vụ  và Lời thoại。một 3giây của Tĩnh (static)Đặc tả (close-up)——ngườichỉ là 、、lưu ở ——tỷ Lời thoạiđều đổi có lực 
 
-| 情绪 | 光影方案 | 配乐方向 |
+---
+
+## 8、nhanh quyết định
+
+### tình xúc  → Ánh sángphương  + nối tra 
+
+| tình xúc  | Ánh sángphương  | nối phương  |
 |---|---|---|
-| 温情日常 | C 烟火暖光 或 E 室内漫射 | 木吉他 + 钢琴 |
-| 职场克制 | E 室内漫射 或 B 日间清透 | 钢琴 + 轻弦乐 |
-| 孤独思念 | F 雨夜清辉 或 G 蓝调诗篇 | 钢琴稀疏单音 |
-| 高光时刻 | A 都市鎏金 | 钢琴 + 弦乐组 |
-| 悬疑紧张 | D 冷调锐影 | 电子Pad + 轻节拍 |
-| 治愈新生 | B 日间清透 | 木吉他 + 钢琴 |
-| 市井烟火 | C 烟火暖光 | 木吉他 + 手风琴 |
-| 诗意留白 | G 蓝调诗篇 | 钢琴到环境音独奏 |
+| tình ngày thường  | C ánh  hoặc  E trong  | anh ấy +  |
+| trường chép  | E trong  hoặc  B ngày gian sạch  |  +  |
+|  | F sạch  hoặc  G gọi bài  | đơn âm  |
+| cao ánh  | A đều  |  + nhóm  |
+| bức  | D gọi sáng  | Pad + tiết  |
+| mới sinh  | B ngày gian sạch  | anh ấy +  |
+|  | C ánh  | anh ấy + tay phong  |
+| ý lưu  | G gọi bài  | đến âm  |

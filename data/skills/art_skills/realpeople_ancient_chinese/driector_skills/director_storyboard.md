@@ -1,211 +1,211 @@
 ---
 name: director_storyboard
-description: 导演分镜提示词技法 · 真人古风写实
+description: đạo diễnPhân cảnhPromptthức  · thật ngườiphong 
 metaData: director_skills
 ---
 
-# 分镜提示词 · 真人古风写实 · 风格专属技法
+# Phân cảnhPrompt · thật ngườiphong  · Phong cáchriêng biệt thức 
 
 ---
 
-## 适用范围
+## hàm khí 
 
-本 Skill 专用于**真人古风写实**风格的分镜提示词生成。
+sách  Skill riêng hàm với **thật ngườiphong **Phong cách của Phân cảnhPrompttạo。
 
 ---
 
-## 情绪 → 面容/眼神词映射
+## tình xúc  → mặt dung /từ 
 
-| 情绪输入 | 面容词 | 眼神词 | 微表情补充 |
+| tình xúc tải vào  | mặt dung từ  | từ  | bảng tình Bổ sung  |
 |----------|--------|--------|-----------|
-| 心动 / 悸动 | 面色微红，神情微怔 | 眼神含情，目光流连 | 嘴角微扬，表情克制 |
-| 悲伤 / 压抑 | 面容沉静，神情哀戚 | 眼眶微红，眼神低垂 | 眉头轻锁，神情内敛 |
-| 愤怒 / 压迫 | 眉眼凌厉，神情冷峻 | 目光如刀，眼神强势 | 唇线收紧，气场压迫 |
-| 温柔 / 深情 | 神情温和，眉目含情 | 眼神专注柔和，目光深情 | 嘴角轻扬，表情克制温润 |
-| 坚定 / 决绝 | 神情肃然，面容沉着 | 眼神坚定，目光清冽 | 眉眼沉静，气质凛然 |
-| 惊讶 / 震惊 | 神情微愣，面色微变 | 眼神放大，目光骤聚 | 眉梢轻挑，唇形微开 |
-| 冷漠 / 疏离 | 面容清冷，神情漠然 | 眼神空远，目光冰凉 | 表情几乎凝固，气质禁欲 |
-| 喜悦 / 雀跃 | 神情鲜活，笑意盈盈 | 眼神明亮有神，弯月眼尾 | 嘴角扬起，表情生动自然 |
-| 紧张 / 慌乱 | 表情略带茫然，神态慌张 | 眼神飘忽，目光四顾 | 眉心微蹙，表情生动真实 |
-| 隐忍 / 克制 | 神情内敛，面容沉静 | 眼神深沉，眼底有情绪压抑 | 唇线收紧，喉结微动 |
+| động  / động  | mặt vật ，tình  | tình ，mục ánh  | nhân ，bảng tình chép  |
+|  / nén  | mặt dung ，tình  | ，thấp  | đầu ，tình trong  |
+|  / nén  | ，tình  | mục ánh như ， | đường nhận ，trường nén  |
+|  / tình  | tình  và ，mục tình  | riêng tâm  và ，mục ánh tình  | nhân ，bảng tình chép  |
+| nối  /  | tình ，mặt dung đang  | nối ，mục ánh sạch  | ， |
+|  /  | tình ，mặt vật  | mở lớn ，mục ánh  | ，dạng mở  |
+|  /  | mặt dung sạch ，tình  | rỗng ，mục ánh  | bảng tình mấy ， |
+|  /  | tình hoạt ，ý  | dẫn có ，thángđuôi  | nhân ，bảng tình sinh động tự  |
+| bức  /  | bảng tình kèm ，thái bức  | ，mục ánh 4 | ，bảng tình sinh động thật  |
+|  / chép  | tình trong ，mặt dung  | ，có tình xúc nén  | đường nhận ，kết động  |
 
 ---
 
-## 光影氛围词库（真人古风写实）
+## Ánh sáng & Không khítừ kho （thật ngườiphong ）
 
-> **设计原则**：画面光影分为 **环境光（主）** 与 **器材光（辅）** 两层。环境光由场景时间、天气、空间决定，是画面光影的绝对主基调；器材光仅用于人物塑形和情绪补强，必须服从环境光方向与色温，不得产生独立光源感。
+> **thiết tính gốc **：vẽ mặt Ánh sángphút **ánh （chính ）**  **thiết bị ánh （）** 2tầng 。ánh do Bối cảnhthời gian、ngày、rỗng gian nối ，là vẽ mặt Ánh sáng của đúng chính cơ sở gọi ；thiết bị ánh chỉ hàm với ngườidạng  và tình xúc bổ ，Bắt buộcphục từ ánh phương vật ，không được nguyên sinh lập ánh nguồn 。
 
-### 一、环境光（主光源 · 场景自然光）
+### 1 、ánh （chính ánh nguồn  · Bối cảnhtự ánh ）
 
-> 每个分镜 **必须先确定环境光**，再决定是否叠加器材光。
+> mục Phân cảnh **Bắt buộctrước nối ánh **，nối là không cộng thiết bị ánh 。
 
-#### 时间段环境光
+#### thời gianđoạn ánh 
 
-| 时间段 | 自然光源 | 色调倾向 | 环境氛围 |
+| thời gianđoạn  | tự ánh nguồn  | vật gọi  | Không khí |
 |--------|---------|---------|----------|
-| 清晨 | 散射晨光，天光漫射 | 冷白光调，淡蓝调 | 薄雾弥漫，空气感，晨露质感 |
-| 午后 | 日光斜射，漫射散光 | 中性色调，轻暖调 | 光影斑驳，层次分明 |
-| 傍晚/黄昏 | 斜射余晖，天光冷暖交替 | 冷调为主，地平线局部暖光 | 长影拉伸，光感诗意 |
-| 夜间 | 月光冷蓝，烛火/灯笼暖点 | 冷蓝主调 | 光影幽深，明暗强对比 |
-| 阴雨 | 漫射冷光，云层遮蔽无主光源 | 灰冷色调 | 空气潮湿感，低饱和度 |
+| Sáng sớm | ánh ，ngàyánh  | ánh gọi ，gọi  | mỏng ，rỗng ， |
+| sau  | ngày ánh ，ánh  | giữa vật gọi ，gọi  | Ánh sáng，tầng lần phútdẫn  |
+| muộn /Hoàng hôn | ，ngàyánh tác vụ  | gọi chính ，địa đường cục bộ ánh  | dài sáng ，ánh ý  |
+| gian  | thángánh ，/điểm  | chính gọi  | Ánh sáng，dẫn đúng tỷ  |
+|  | ánh ，tầng không chính ánh nguồn  | vật gọi  | rỗng ，thấp  và độ  |
 
-#### 场景空间环境光
+#### Bối cảnhrỗng gian ánh 
 
-| 空间类型 | 典型环境光 | 光影特征 |
+| rỗng gian Loại | kiểu ánh  | Ánh sáng |
 |----------|-----------|----------|
-| 室外开阔 | 天光为主，日照方向决定明暗 | 远景大气透视自然形成层次 |
-| 庭院/园林 | 天光经枝叶过滤，斑驳散射 | 廊下阴影与庭中光区形成明暗对比 |
-| 室内（窗光） | 窗口单向自然光，室内渐暗 | 光线侧射，自然形成明暗过渡 |
-| 密室/暗室 | 烛火/油灯局部暖光，整体暗调 | 光源单一，光域有限，阴影深重 |
-| 竹林/山野 | 光线穿隙，散射光斑 | 高处透光，地面光影交错 |
-| 水面/湖边 | 天光 + 水面反射光 | 波光粼粼，倒影补光，氤氲感 |
+| ngoài mở  | ngàyánh chính ，ngày phương nối dẫn  | Viễn cảnh (extreme wide shot)lớn video tự dạng tạo tầng lần  |
+| / | ngàyánh đã lọc ， | dưới sáng giữa ánh khu dạng tạo dẫn đúng tỷ  |
+| trong （ánh ） | cổng đơn tự ánh ，trong  | ánh đường ，tự dạng tạo dẫn  |
+| mật / | /cục bộ ánh ，chỉnh thể gọi  | ánh nguồn đơn 1 ，ánh vực có hạn ，sáng trùng  |
+| / | ánh đường ，ánh  | cao xử ánh ，địa mặt Ánh sángtác vụ sai  |
+| mặt / | ngàyánh  + mặt phụ ánh  | ánh ，sáng bổ ánh ， |
 
-### 二、器材光（辅助光 · 人物塑形）
+### 2、thiết bị ánh （giúp ánh  · ngườidạng ）
 
-> ⚠️ 器材光 **必须服从环境光基调**：方向与环境光源一致，色温不得与环境光冲突，强度不得超过环境光。
+> ⚠️ thiết bị ánh  **Bắt buộcphục từ ánh cơ sở gọi **：phương ánh nguồn 1 ，vật không được ánh ，độ không được vượt ánh 。
 
-#### 器材光类型
+#### thiết bị ánh Loại
 
-| 光线类型 | 作用 | 适用场景 | 使用约束 |
+| ánh đường Loại | tác vụ hàm  | hàm Bối cảnh | hàm  |
 |----------|------|---------|----------|
-| 轮廓光（边缘光） | 勾勒人物边缘，增强人景分离 | 逆光/侧逆光环境 | 强度低于环境光，色温与环境光一致 |
-| 眼神光 | 增加眼部神采与生命感 | 特写/近景含人物 | 极微弱，仅作点睛，不可形成明显光斑 |
-| 补光（反射光） | 提亮暗部细节，避免面部死黑 | 强侧光/逆光造成暗部过重时 | 模拟环境反射，不可形成独立光源感 |
-| 顶光压迫 | 制造面部阴影，增强压迫感 | 审讯、对峙、威严场景 | 须有场景光源合理性（灯笼、天窗、殿顶光） |
+| ánh （ánh ） | người，ngườibối phút | ánh /ánh  | độ thấp với ánh ，vật ánh 1  |
+| ánh  | cộng bộ sinh  | Đặc tả (close-up)/Cận cảnh (close-up)người | ，chỉ tác vụ điểm ，không dạng tạo dẫn ánh  |
+| bổ ánh （phụ ánh ） | nhắc bộ tiết ，mặt bộ  | ánh /ánh tạo tạo bộ trùng  | mô phụ ，không dạng tạo lập ánh nguồn  |
+| ánh nén  | chép tạo mặt bộ sáng ，nén  | 、đúng 、Bối cảnh | buộc có Bối cảnhánh nguồn hợp lý （、ngày、ánh ） |
 
-#### 情绪 → 环境光 + 器材光配合
+#### tình xúc  → ánh  + thiết bị ánh nối hợp 
 
-| 情绪基调 | 环境光（主） | 器材光（辅） | 配合原则 |
+| tình xúc cơ sở gọi  | ánh （chính ） | thiết bị ánh （） | nối hợp gốc  |
 |----------|-------------|-------------|----------|
-| 心动/温情 | 柔和侧逆自然光，散射暖调环境 | 轮廓光微勾勒 | 环境光定侧逆光基调，器材光仅补充轮廓，浅景深柔化背景 |
-| 对峙/压迫 | 硬朗自然侧光，高对比明暗环境 | 可加顶光（须有合理光源） | 环境光定主方向与硬度，器材光仅增强对比，阴影硬朗 |
-| 压抑/悲伤 | 漫射冷光，阴天/暗室环境 | 极少补光，保留面部暗部 | 以环境冷光为主，刻意不补光以保留阴影层次 |
-| 神秘/肃穆 | 冷蓝环境光，逆光剪影 | 边缘光精准控制，光晕克制 | 环境光定冷蓝基调，器材光仅做边缘分离 |
-| 空灵/意境 | 散射软光，自然光微过曝 | 一般无需器材光 | 环境散射光为主，远景虚淡，空气透视感 |
+| động /tình  |  và tự ánh ，gọi  | ánh  | ánh nối ánh cơ sở gọi ，thiết bị ánh chỉ Bổ sung ，bối hóa bối  |
+| đúng /nén  | tự ánh ，cao đúng tỷ dẫn  | cộng ánh （buộc có hợp lý ánh nguồn ） | ánh nối chính phương độ ，thiết bị ánh chỉ đúng tỷ ，sáng  |
+| nén / | ánh ，ngày/ | ít bổ ánh ，lưu lưu mặt bộ bộ  | ánh chính ，ý không bổ ánh lưu lưu sáng tầng lần  |
+| / | ánh ，ánh sáng  | ánh sát chép ，ánh chép  | ánh nối cơ sở gọi ，thiết bị ánh chỉ phút |
+| rỗng /ý  | ánh ，tự ánh  | 1 không cần thiết bị ánh  | ánh chính ，Viễn cảnh (extreme wide shot)，rỗng video  |
 
-### 三、光影冲突规避规则
+### 3、Ánh sáng
 
-> 生成分镜提示词时，须严格遵循以下原则以确保画面光影自然可信：
+> tạoPhân cảnhPrompt，buộc khung dưới gốc lưu vẽ mặt Ánh sángtự tin ：
 
-1. **先定环境光，再叠器材光**：每个分镜先根据「时间段 + 场景空间」确定环境光基调，再决定是否需要器材光辅助人物塑形。
-2. **色温一致性**：器材光色温须与环境光协调（如夜间冷蓝环境不可叠加暖黄补光，除非有烛火等场景内合理暖光源）。
-3. **方向合理性**：器材光方向须有场景内光源支撑（窗光方向、烛火位置、月光角度），不可凭空出现。
-4. **强度从属性**：器材光强度 **不得超过环境光**，避免"人物单独打光"的影棚感。
-5. **宁缺毋滥**：当环境光已足够塑造人物、表达情绪时，**不加器材光**。
+1. **trước nối ánh ，thiết bị ánh **：mục Phân cảnhtrước dựa theo「thời gianđoạn  + Bối cảnhrỗng gian 」nối ánh cơ sở gọi ，nối là không cần cần thiết bị ánh giúp ngườidạng 。
+2. **vật 1 **：thiết bị ánh vật buộc ánh giao gọi （như gian không cộng bổ ánh ，bỏ phi có Bối cảnhtrong hợp lý ánh nguồn ）。
+3. **phương hợp lý **：thiết bị ánh phương buộc có Bối cảnhtrong ánh nguồn （ánh phương 、vị trí trí 、thángánh nhân độ ），không rỗng ra 。
+4. **độ từ biệt **：thiết bị ánh độ  **không được vượt ánh **，"ngườiđơn mở ánh " của sáng 。
+5. ****：khi ánh đã tạo người、bảng tình xúc ，**không cộng thiết bị ánh **。
 
 ---
 
-## 场景质感约束词（按场景类型）
+## Bối cảnhtừ （theo Bối cảnhLoại）
 
-| 场景类型 | 必加约束词 |
+| Bối cảnhLoại | bắt cộng từ  |
 |----------|-----------|
-| 宫殿内室 | 雕梁画栋，殿柱质感清晰，地砖反光，帷帐飘逸，烛光暖点 |
-| 庭院/园林 | 青石板路，廊柱斑驳，花木扶疏，水面倒影，空气透视 |
-| 竹林/山野 | 竹影婆娑，光线穿隙，地面竹叶纹理，远山如黛，空气感 |
-| 城楼/城墙 | 青砖纹理清晰，风化质感，远景层叠，大气透视 |
-| 水榭/湖边 | 水面波光，倒影层叠，薄雾氤氲，荷叶质感 |
-| 密室/暗室 | 光源单一，烛火质感，壁面纹理，阴影深重 |
-| 集市/街道 | 市井氛围，人群虚化，建筑纵深，幌子布料质感 |
+| trong  | vẽ ，sạch ，địa phụ ánh ，，ánh điểm  |
+| / | đường ，，，mặt sáng ，rỗng video  |
+| / | sáng ，ánh đường ，địa mặt lý ，như ，rỗng  |
+| / | lý sạch ，phong hóa ，Viễn cảnh (extreme wide shot)tầng ，lớn video  |
+| / | mặt ánh ，sáng tầng ，mỏng ， |
+| mật / | ánh nguồn đơn 1 ，，mặt lý ，sáng trùng  |
+| tập /đạo  | Không khí，ngườihóa ，tạo ， |
 
 ---
 
-## 固定风格锚定词（所有输出必须包含）
+## nối Phong cáchnối từ （tất cảtải ra Bắt buộcgói ）
 
-**真人写实锚定（必选）：**
+**thật ngườinối （bắt chọn ）：**
 ```
-真人写实摄影，电影级画质，超现实主义纪实，强对比度，极致细节，纹理超清晰
-```
-
-**人物质感（含人物镜头时必选）：**
-```
-皮肤细腻，面容细腻渲染，五官立体，发丝根根分明，发丝细腻渲染
+thật ngườisáng ，sáng cấp vẽ ，vượt chính nghĩa ，đúng tỷ độ ，tiết ，lý vượt sạch 
 ```
 
-**服饰质感（含人物镜头时必选）：**
+**người（ngườiỐng kínhbắt chọn ）：**
 ```
-衣物布料质感清晰，纹理细节超清晰，布料折痕真实，衣物随动态飘逸
-```
-
-**一致性锚定（参考图模式必选）：**
-```
-保持人物面容与参考图一致，保持服饰配色与参考图一致，保持场景光线风格统一
+，mặt dung ，5lập thể ，phát phútdẫn ，phát 
 ```
 
-**风格收尾（固定）：**
+**phục （ngườiỐng kínhbắt chọn ）：**
 ```
-古风写实美学，东方古典气韵，电影级分镜构图
-```
-
-**画质锁定词（所有输出必须包含，置于风格收尾之后）：**
-
-模式A（中文）——默认（画面无画内文字需求时）：
-```
-超清4K画质，高细节，自然锐度，写实清晰感，画面无字幕、无水印、无标题叠字
+sạch ，lý tiết vượt sạch ，thật ，động thái 
 ```
 
-模式A（中文）——画内文字场景（画面描述中含书写/书卷/匾额等道具文字时）：
+**1 nối （tham chiếuảnh mô thức bắt chọn ）：**
 ```
-超清4K画质，高细节，自然锐度，写实清晰感，画面无字幕、无水印、无标题叠字，书卷/匾额等场景道具上的文字清晰可辨
+lưu giữ ngườimặt dung tham chiếuảnh 1 ，lưu giữ phục nối vật tham chiếuảnh 1 ，lưu giữ Bối cảnhánh đường Phong cáchthống 1 
 ```
 
-模式B（英文）——默认：
+**Phong cáchnhận đuôi （nối ）：**
+```
+phong đẹp ，phương ，sáng cấp Phân cảnhcấu ảnh 
+```
+
+**vẽ nối từ （tất cảtải ra Bắt buộcgói ，trí với Phong cáchnhận đuôi  của sau ）：**
+
+mô thức A（giữa tài ）——Mặc định（vẽ mặt không vẽ trong tài chữ cần cầu ）：
+```
+vượt sạch 4Kvẽ ，cao tiết ，tự độ ，sạch ，vẽ mặt không chữ 、không 、không biểu đề chữ 
+```
+
+mô thức A（giữa tài ）——vẽ trong tài chữ Bối cảnh（Mô tả hình ảnhgiữa //bổ Đạo cụtài chữ ）：
+```
+vượt sạch 4Kvẽ ，cao tiết ，tự độ ，sạch ，vẽ mặt không chữ 、không 、không biểu đề chữ ，/bổ Bối cảnhĐạo cụtrên  của tài chữ sạch 
+```
+
+mô thức B（tài ）——Mặc định：
 ```
 ultra-sharp 4K, high detail, crisp textures, naturalistic sharpness, photorealistic clarity, no subtitles, no captions, no watermark, no title overlay
 ```
 
-模式B（英文）——画内文字场景：
+mô thức B（tài ）——vẽ trong tài chữ Bối cảnh：
 ```
 ultra-sharp 4K, high detail, crisp textures, naturalistic sharpness, photorealistic clarity, no subtitles, no captions, no watermark, no title overlay, legible text on in-scene props such as scrolls and plaques
 ```
 
-**负向词模板（模式B 必须包含，置于提示词末尾）：**
+**từ mô （mô thức B Bắt buộcgói ，trí với Promptđuôi ）：**
 
-> ⚠️ Seedream（模式A）**不支持负向提示词**，负向词仅适用于模式B。模式A 通过正向词中的质感锚定和画质锁定来保证画面质量。
+> ⚠️ Seedream（mô thức A）**không hỗ trợPrompt**，từ chỉ hàm với mô thức B。mô thức A thông quachính từ giữa  của nối  và vẽ nối lưu chứng vẽ mặt lượng 。
 
-模式B（英文）：
+mô thức B（tài ）：
 ```
 no plastic skin, no beauty filter, no studio lighting, no centered composition, no oversaturation, no AI generated look, no motion blur, no noise, no blurry, no out of focus, no subtitles, no captions, no watermark, no title overlay, no UI text
 ```
 
 ---
 
-## 美学禁止项（生成时严格规避）
+## đẹp Nghiêm cấm（tạokhung ）
 
-以下词汇/风格不得出现于输出提示词中：
+dưới từ /Phong cáchkhông được ra với tải ra Promptgiữa ：
 
-- ❌ 日系/韩系清新滤镜词（如：清新、小清新、日系感）
-- ❌ 动漫/二次元/插画/CG 渲染相关词
-- ❌ 现代服饰/现代场景元素
-- ❌ 暖黄主调色调词（可用"局部暖色烛光点缀"）
-- ❌ 柔焦/朦胧感/低对比滤镜词
-- ❌ 撞色/混搭/霓虹/荧光色系
-- ❌ 卡通比例、大眼睛、Q版等变形描述
-- ❌ 赛博朋克/蒸汽朋克/架空西幻元素
-- ❌ 画外叠加文字（字幕、水印、标题卡、旁白叠字、片头字等 UI 层文字，画面必须为纯视觉画面）
+- ❌ ngày dòng /dòng sạch mới lọc quay từ （như ：sạch mới 、nhỏ sạch mới 、ngày dòng ）
+- ❌ động /2lần /vẽ /CG liên từ 
+- ❌ phục /Bối cảnh
+- ❌ chính gọi vật gọi từ （hàm "cục bộ vật ánh điểm tố "）
+- ❌ //thấp đúng tỷ lọc quay từ 
+- ❌ vật ///ánh vật dòng 
+- ❌ thông Tỷ lệ、lớn 、Qbản dạng Mô tả
+- ❌ //rỗng 
+- ❌ vẽ ngoài cộng tài chữ （chữ 、、biểu đề 、chữ 、đầu chữ  UI tầng tài chữ ，vẽ mặt Bắt buộcthuần trực quanvẽ mặt ）
 
-> 💡 **例外**：故事世界内的道具文字（角色写字、书卷字迹、匾额、牌匾、书信、药方等场景中自然存在的文字）**不属于禁止范围**。当分镜画面描述中包含此类内容时，应如实描写其存在并要求文字清晰。
+> 💡 **lệ ngoài **：việc giới trong  của Đạo cụtài chữ （Nhân vậtchữ 、chữ 、bổ 、、tin 、phương Bối cảnhgiữa tự lưu ở  của tài chữ ）**không biệt với Nghiêm cấmkhí **。khi Phân cảnhMô tả hình ảnhgiữa gói loại nội dung，hồi như mô lưu ở nhất Yêu cầutài chữ sạch 。
 
 ---
 
-## 完整生成示例
+## chỉnh tạoVí dụ
 
-> 以下为同一输入分别使用模式A和模式B的对照展示，实际使用时**仅输出其中一种**。
+> dưới cùng 1 tải vào phútkhác hàm mô thức A và mô thức B của đúng nhở ，hàm **chỉ tải ra giữa 1 loại **。
 
-### 输入（分镜表行数据）
+### tải vào （Bảng phân cảnhthi dữ liệu）
 
-| 序号 | 画面描述 | 场景 | 关联资产名称 | 时长 | 景别 | 运镜 | 角色动作 | 情绪 | 光影氛围 |
+| xếp số  | Mô tả hình ảnh | Bối cảnh | Tên tài nguyên liên kết | Thời lượng | Cỡ cảnh | Góc quay | Hành động nhân vật | tình xúc  | Ánh sáng & Không khí |
 |------|---------|------|-------------|------|------|------|---------|------|----------|
-| 1 | 沈辞独立城楼之上，远眺苍茫大地 | 城楼 | 沈辞 | 4s | 全景 | 静止 | 负手而立，衣袂随风飘扬 | 坚定 / 决绝 | 黄昏冷调侧逆光 |
+| 1 | lập  của trên ，lớn địa  |  |  | 4s | Toàn cảnh (wide shot) | Tĩnh (static) | tay lập ，phong  | nối  /  | Hoàng hôngọi ánh  |
 
-### 示例输出A（模式A · Seedream）
+### Ví dụtải ra A（mô thức A · Seedream）
 
 ```
 [Prompt]
-真人写实摄影，电影级画质，超现实主义纪实，强对比度，极致细节，纹理超清晰，全景构图，人物全身入镜，皮肤细腻，面容细腻渲染，五官立体，发丝根根分明，发丝细腻渲染，男性主角立于城楼之上，双臂自然垂于身侧，衣袂初被风拂动，微微扬起，衣物布料质感清晰，布料折痕真实，衣物随动态飘逸，神情沉毅，目光即将投向远方，眼神坚定清冽，城楼青砖纹理清晰，风化质感，远景层叠，大气透视，黄昏冷调侧逆光，轮廓光勾勒人物边缘，古风写实美学，东方古典气韵，电影级分镜构图，超清4K画质，自然锐度，写实清晰感，画面无字幕、无水印、无标题叠字。
-Based on the reference image of 沈辞, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing on the ancient city wall at dusk, overlooking vast land. Keep character appearance identical to reference.
+thật ngườisáng ，sáng cấp vẽ ，vượt chính nghĩa ，đúng tỷ độ ，tiết ，lý vượt sạch ，Toàn cảnh (wide shot)cấu ảnh ，ngườitoàn vào quay ，，mặt dung ，5lập thể ，phát phútdẫn ，phát ，nam chính nhân lập với  của trên ，đôi tự với ，phong động ，，sạch ，thật ，động thái ，tình ，mục ánh phương ，nối sạch ，lý sạch ，phong hóa ，Viễn cảnh (extreme wide shot)tầng ，lớn video ，Hoàng hôngọi ánh ，ánh người，phong đẹp ，phương ，sáng cấp Phân cảnhcấu ảnh ，vượt sạch 4Kvẽ ，tự độ ，sạch ，vẽ mặt không chữ 、không 、không biểu đề chữ 。
+Based on the reference image of , maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing on the ancient city wall at dusk, overlooking vast land. Keep character appearance identical to reference.
 ```
 
-### 示例输出B（模式B · Nanobanana）
+### Ví dụtải ra B（mô thức B · Nanobanana）
 
 ```xml
 <role>
@@ -213,7 +213,7 @@ You are a cinematographer and storyboard artist.
 Maintain strict visual continuity across all shots.
 </role>
 <character_reference>
-Image [1]: 沈辞 — black long hair tied up, calm sharp eyes, dark ancient hanfu robe, tall slim body shape
+Image [1]:  — black long hair tied up, calm sharp eyes, dark ancient hanfu robe, tall slim body shape
 </character_reference>
 <continuity_rules>
 - Same wardrobe, hairstyle, face features across ALL shots
@@ -231,16 +231,16 @@ no plastic skin, no beauty filter, no studio lighting, no centered composition, 
 
 ---
 
-## 快速参考卡
+## nhanh tham chiếu
 
-### 情绪 → 画面词速查
+### tình xúc  → vẽ mặt từ tra 
 
-| 情绪 | 面容关键词 | 环境光（主） | 器材光（辅） |
+| tình xúc  | mặt dung liên từ  | ánh （chính ） | thiết bị ánh （） |
 |------|-----------|-------------|-------------|
-| 心动 | 面色微红，眼神含情 | 柔和侧逆自然光 | 轮廓光微勾勒 |
-| 悲伤 | 面容沉静，眼眶微红 | 漫射冷光 | 极少补光 |
-| 愤怒 | 眉眼凌厉，目光如刀 | 硬朗自然侧光，高对比 | 可加顶光（须合理光源） |
-| 温柔 | 眉目含情，眼神柔和 | 散射暖调环境光 | 轮廓光微补 |
-| 坚定 | 神情肃然，眼神清冽 | 冷调自然侧光 | 一般无需 |
-| 冷漠 | 面容清冷，眼神空远 | 冷蓝环境光 | 边缘光精准分离 |
-| 隐忍 | 面容沉静，眼底压抑 | 低调冷光环境 | 不补光，保留阴影 |
+| động  | mặt vật ，tình  |  và tự ánh  | ánh  |
+|  | mặt dung ， | ánh  | ít bổ ánh  |
+|  | ，mục ánh như  | tự ánh ，cao đúng tỷ  | cộng ánh （buộc hợp lý ánh nguồn ） |
+|  | mục tình ， và  | gọi ánh  | ánh bổ  |
+| nối  | tình ，sạch  | gọi tự ánh  | 1 không cần  |
+|  | mặt dung sạch ，rỗng  | ánh  | ánh phút |
+|  | mặt dung ，nén  | thấp gọi ánh  | không bổ ánh ，lưu lưu sáng  |

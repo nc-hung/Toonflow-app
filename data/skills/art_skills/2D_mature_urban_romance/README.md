@@ -1,34 +1,34 @@
-# 成熟都市言情二次元动画风格说明
+# Anime Ngôn Tình Đô Thị Hiện Đại (2D)Phong cáchGiải thích
 
-本风格专为**成熟都市言情二次元动画**题材打造，所有美术提示词、规范和生成内容均严格限定于：
+sách Phong cáchriêng **Anime Ngôn Tình Đô Thị Hiện Đại (2D)**đề mở tạo ，tất cảđẹp Prompt、 và tạonội dungkhung hạn nối với ：
 
-- **二次元动画风格**：所有角色、场景、道具均以二次元动画为标准，强调赛璐璐上色、清晰线条、戏剧化低调光影。
-- **现代都市言情背景**：现代都市生活场景，涵盖公寓、办公室、咖啡厅、城市街道等，杜绝古风/奇幻元素。
-- **电影级构图**：画面构图强调电影感，景深虚化、镜头光学特征、空气透视。
-- **低饱和冷色调**：整体色调偏冷，暖色仅作点缀，突出清冷与温柔并存的甜宠氛围。
+- **2lần động vẽ Phong cách**：tất cảNhân vật、Bối cảnh、Đạo cụ2lần động vẽ biểu ，gọi trên vật 、sạch đường mục 、kịch hóa thấp gọi Ánh sáng。
+- **Đô Thị Hiện Đạitình bối **：Đô Thị Hiện Đạisinh hoạt Bối cảnh，、、、đạo ，phong /。
+- **sáng cấp cấu ảnh **：vẽ mặt cấu ảnh gọi sáng ，bối hóa 、Ống kínhánh 、rỗng video 。
+- **thấp  và vật gọi **：chỉnh thể vật gọi ，vật chỉ tác vụ điểm tố ，ra sạch nhất lưu  của Không khí。
 
-## 适用范围
+## hàm khí 
 
-- 成熟都市言情题材的AI美术生成（角色、场景、道具、分镜等）
-- 现代小说改编动画风格的视觉创作
-- 需要清晰线条、赛璐璐上色、电影级构图的视觉创作
+- tạo đều tình đề  của AIđẹp tạo（Nhân vật、Bối cảnh、Đạo cụ、Phân cảnh）
+- Tiểu thuyếtsửa chỉnh động vẽ Phong cách của trực quansáng tác vụ 
+- cần cần sạch đường mục 、trên vật 、sáng cấp cấu ảnh  của trực quansáng tác vụ 
 
-## 严禁内容
+## nội dung
 
-- 真人写实/摄影/3D渲染风格
-- 高饱和荧光色/霓虹色
-- 古风/奇幻/科幻等现代元素以外的风格
-- 暗示性、暴露、透视等不适宜内容
+- thật người/sáng /3DPhong cách
+- cao  và ánh vật /vật 
+- phong //ngoài  của Phong cách
+- nhở 、、video không nội dung
 
-## 风格体验
+## Phong cáchthể chiếu 
 
-在本风格下，您将体验到：
+ở sách Phong cáchdưới ，thể chiếu đến ：
 
-- 角色面容精致、气质清冷或温润，服饰、妆容、发型均为现代都市二次元风格
-- 场景空间层次丰富，材质纹理超清晰，氛围真实且富有诗意
-- 道具、装饰、配饰等均为现代都市造型，工艺精细，质感极致
-- 分镜与视频均以二次元动画为基础，强调叙事与情感表达
+- Nhân vậtmặt dung 、sạch hoặc ，phục 、dung 、phát kiểu Đô Thị Hiện Đại2lần Phong cách
+- Bối cảnhrỗng gian tầng lần ，lý vượt sạch ，Không khíthật và có ý 
+- Đạo cụ、、nối Đô Thị Hiện Đạitạo kiểu ，，
+- Phân cảnhvideo2lần động vẽ cơ sở ，gọi việc tình bảng 
 
 ---
 
-本风格仅适用于"成熟都市言情二次元动画"相关项目。如需其他风格（如真人写实、古风、奇幻等），请勿使用本套提示词。
+sách Phong cáchchỉ hàm với "Anime Ngôn Tình Đô Thị Hiện Đại (2D)"liên dự án。như cần anh ấyPhong cách（như thật người、phong 、），vui lòng hàm sách Prompt。

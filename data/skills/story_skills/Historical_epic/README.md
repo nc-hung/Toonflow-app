@@ -1,50 +1,50 @@
-# 历史史诗 · 导演叙事手法技能包
+# Sử Thi Lịch Sử · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **历史史诗** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **Sử Thi Lịch Sử** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **大时代小人物** — 史诗的力量不在于帝王将相，而在于洪流中普通人的挣扎与抉择
-- **命运的不可抗力** — 历史叙事的张力来自"个人意志与时代洪流的碰撞"，越是抗争越显悲壮
-- **仪式感即重量** — 登基、盟誓、决战、殉道——关键节点的仪式感赋予事件历史的重量
-- **苍凉底色** — 史诗的情感底色是苍凉而非悲伤，是"知其不可而为之"的壮美
+- **lớn nhỏ người** —  của lực lượng không ở với ，ở với giữa thông người của lựa 
+- **vận  của không lực ** — việc  của bức lực tự "mục ngườiý  của "，là 
+- **thức trùng lượng ** — đăng cơ sở 、、、đạo ——liên tiết điểm  của thức sự kiện của trùng lượng 
+- **vật ** —  của tình vật là phi ，là "báo không  của " của đẹp 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Historical_epic/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义历史史诗在主题立意、情感节奏、场景情绪设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa Sử Thi Lịch Sửở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与情感内核 | 大时代小人物、命运碰撞、仪式感重量、苍凉底色 |
-| 叙事结构与节奏规划 | 宏微交织、史诗节奏弧、群像叙事、时间跨度处理 |
-| 分场景情绪设计 | 六大典型史诗段落设计、权力空间叙事、仪式场景 |
-| 声音与音乐方向 | 厚重低音、人声力量、战场音景、沉默的庄严 |
-| 构图与景别叙事 | 空间权力关系、群像调度、孤独个体与宏大空间 |
-| 镜头运动与节奏 | 庄重缓移、俯瞰全局、凝视与对峙、史诗长镜头 |
+| chính đề lập ý tình trong  | lớn nhỏ người、vận 、thức trùng lượng 、vật  |
+| việc kết cấu tiết lập kế hoạch | tác vụ 、tiết 、việc 、thời gianđộ xử lý  |
+| phútBối cảnhtình xúc thiết tính  | 6lớn kiểu đoạn thiết tính 、thực lực rỗng gian việc 、thức Bối cảnh |
+| thanh âm âm phương  | dày trùng thấp âm 、ngườithanh lực lượng 、trường âm bối 、 của  |
+| cấu ảnh Cỡ cảnhviệc  | rỗng gian thực lực liên dòng 、điều phối、mục thể lớn rỗng gian  |
+| Ống kínhvận động tiết  | trùng 、toàn cục 、video đúng 、dài Ống kính |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义历史史诗在分镜表中的景别权力叙事、运镜庄重感、时长把控、镜头合并与转场逻辑。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa Sử Thi Lịch Sửở Bảng phân cảnhgiữa  của Cỡ cảnhthực lực việc 、Góc quaytrùng 、Thời lượngđem sát 、Ống kínhhợp nhất chuyển trường logic。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为史诗叙事节奏控制核心工具的定位说明 |
-| 景别选择 | 宏观与微观交织、远景的史诗价值、特写的人性锚点 |
-| 运镜节奏 | 庄重缓移、俯瞰叙事、对峙静止、仪式运镜 |
-| 时长把控 | 史诗远景时长、仪式段落节奏、对白沉稳节奏 |
-| 镜头合并策略 | 群像整合、战役叙事密度、空间连续性 |
-| 一镜到底 | 战场穿越、仪式全程、时代变迁长镜头 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ Nhịp điệu tự sựsát chép cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | tác vụ 、Viễn cảnh (extreme wide shot) của giá trị 、Đặc tả (close-up) của ngườiđiểm  |
+| Góc quaytiết  | trùng 、việc 、đúng Tĩnh (static)、thức Góc quay |
+| Thời lượngđem sát  | Viễn cảnh (extreme wide shot)Thời lượng、thức đoạn tiết 、đúng tiết  |
+| Ống kínhhợp nhất  | chỉnh hợp 、việc mật độ 、rỗng gian  |
+| 1 quay đến  | trường 、thức toàn trình 、dài Ống kính |

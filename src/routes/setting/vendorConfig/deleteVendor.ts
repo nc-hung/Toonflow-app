@@ -19,6 +19,6 @@ export default router.post(
       vendorId: null,
     });
     fs.rmSync(path.join(u.getPath("vendor"), `${id}.ts`), { recursive: true, force: true });
-    res.status(200).send(success("删除成功"));
+    res.status(200).send(success("Xóa thành công"));
   },
 );

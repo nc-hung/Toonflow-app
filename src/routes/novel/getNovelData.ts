@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 获取原文数据
+// Lấy dữ liệu nguyên tác
 export default router.post(
   "/",
   validateFields({

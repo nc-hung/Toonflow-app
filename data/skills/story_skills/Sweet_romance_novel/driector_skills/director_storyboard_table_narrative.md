@@ -1,85 +1,85 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 甜宠言情 — 定义甜宠言情在分镜表中的景别递进、运镜节奏、时长把控、镜头合并、互动设计、台词留白与转场逻辑。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · Ngôn Tình Ngọt Ngào — nối nghĩa Ngôn Tình Ngọt Ngàoở Bảng phân cảnhgiữa  của Cỡ cảnhtiến 、Góc quaytiết 、Thời lượngđem sát 、Ống kínhhợp nhất 、động thiết tính 、Lời thoạilưu chuyển trường logic。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 甜宠言情 · 技法参考
+# Bảng phân cảnhviệc tay thức  · Ngôn Tình Ngọt Ngào · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供甜宠言情叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **甜宠戏的景别递进** — 同场戏内景别应随情感升温递进：半身→近景→特写→大特写。不要一上来就怼特写，留出情绪上升空间
-- **远景不是过场** — 远景镜头本身就有叙事价值（孤独感、空间压迫、季节氛围）。给远景足够时长（4-6s），别急着切走
-- **大特写要有理由** — 大特写（眼/唇/手）是情绪核弹，一集用 2-3 次足够。滥用会让观众疲劳
-- **定场镜头要精简** — 定场（建立镜头）最多 1-2 个镜头搞定，不要拆成 3 个以上碎片。典型做法：1 个大远景/远景定场 + 1 个全景引入主体，或直接 1 个带缓推的远景完成定场+引入。避免"先拍环境→再拍局部→再拍人物到达"的冗余三段式
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà Ngôn Tình Ngọt Ngàoviệc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **默认静止** — 60% 以上镜头应为静止机位，让画面细节和情绪自己说话
-- **缓推 = 情绪递进** — "观众靠近角色"的心理暗示，适合心动、发现、窥视
-- **缓拉 = 情绪抽离** — "观众退开"的心理暗示，适合离别、孤独、揭示全貌
-- **运镜即情绪** — 镜头运动不是技术选择，是情绪选择。静止 = 沉稳/压抑；缓推 = 靠近/心动；缓拉 = 抽离/孤独；缓摇 = 展示/庄重
-- **甜宠"心跳运镜"** — 暧昧升温段落可用微幅缓推配合景别递进（半身→近景→特写），模拟心跳加速时"注意力收窄"的生理感受
-
----
-
-## 四、时长把控
-
-- **特写/表情镜头** — 2-3s，聚焦微表情变化
-- **对话近景** — 3-4s，稳定出词
-- **全身亮相** — 3-5s，展示全貌
-- **远景/空镜** — 4-6s，氛围渲染
-- **单镜头不超过 6s** — 超过 6s 观众注意力衰减，需要运镜或动态元素维持
-- **黄金 6 秒规则** — 无台词镜头累计超过 6s 未出现新信息（台词/动作/主体变化），观众注意力断裂。定场+过渡类镜头尤其注意，宁可合并压缩也不要拖沓
+- ** của Cỡ cảnhtiến ** — cùng trường trong Cỡ cảnhhồi tình tiến ：nửa →Cận cảnh (close-up)→Đặc tả (close-up)→lớn Đặc tả (close-up)。không cần 1 trên thì Đặc tả (close-up)，lưu ra tình xúc trên rỗng gian 
+- **Viễn cảnh (extreme wide shot)không là trường ** — Viễn cảnh (extreme wide shot)Ống kínhsách thì có việc giá trị （、rỗng gian nén 、tiết Không khí）。cho Viễn cảnh (extreme wide shot)Thời lượng（4-6s），khác đang chạy 
+- **lớn Đặc tả (close-up)cần có lý do ** — lớn Đặc tả (close-up)（//tay ）là tình xúc ，1 tập hàm  2-3 lần 。hàm sẽ để 
+- **nối trường Ống kínhcần ** — nối trường （tạo lập Ống kính）nhất nhiều  1-2 mục Ống kínhnối ，không cần tạo  3 mục trên 。kiểu thức ：1 mục lớn Viễn cảnh (extreme wide shot)/Viễn cảnh (extreme wide shot)nối trường  + 1 mục Toàn cảnh (wide shot)vào chính thể ，hoặc trực tiếp  1 mục kèm khuyến  của Viễn cảnh (extreme wide shot)tạo nối trường +vào 。"trước →cục bộ →ngườiđến " của 3đoạn thức 
 
 ---
 
-## 五、镜头合并策略（去 AI 感）
+## 3、Góc quaytiết 
 
-- **能一镜交代的不拆两镜** — 如果一个带运镜的镜头（如缓推从远景到全景）能同时完成定场+主体引入，就不要拆成"先空镜定场→再切主体入画"两个镜头
-- **连续同类信息合并** — 连续描述同一空间不同局部的镜头（院门→藤蔓→焦黑厢房）应合并为一个镜头，用画面描述涵盖多层空间信息
-- **叙事密度优先** — 每个镜头必须推进叙事或情绪，纯装饰性镜头（只为展示环境细节）应合并到有叙事功能的镜头中
-- **导演思维检验** — 写完分镜后自检：如果一个真人导演会把相邻 2-3 个镜头合成 1 个镜头拍，说明拆得过细，应合并
-
----
-
-## 六、一镜到底（长镜头合并）
-
-- **适用条件** — 相邻镜头之间存在动作连续变化、场景轻度变化（同场景内位移）、或拍摄角度渐变时，优先考虑用一镜到底替代碎切，画面和内容更流畅
-- **典型场景** — 角色行走穿越空间、跟随动作从A点到B点、环绕角色展示环境、定场缓推到主体特写
-- **标注方式** — 在运镜字段写明完整路径（如"一镜到底：缓推远景→跟移至院内→落幅全景"），画面描述中交代起幅和落幅
-- **时长放宽** — 因信息量持续更新，可突破单镜 6s 上限，但不超过 12s
-- **抽卡风险** — 一镜到底对画面生成的连续性要求高，抽卡难度提升。仅在叙事流畅性收益明显大于碎切时使用，全片不宜超过 2-3 处
+- **Mặc địnhTĩnh (static)** — 60% trên Ống kínhhồi Tĩnh (static)máy vị trí ，để vẽ mặt tiết  và tình xúc tự mình hướng lời 
+- **khuyến  = tình xúc tiến ** — "Nhân vật" của lý nhở ，hợp động 、phát 、video 
+- ** = tình xúc ** — "đăng mở " của lý nhở ，hợp khác 、、nhở toàn 
+- **Góc quaytình xúc ** — Ống kínhvận động không là chọn lựa ，là tình xúc chọn lựa 。Tĩnh (static) = /nén ；khuyến  = /động ； = /； = nhở /trùng 
+- **"Góc quay"** — đoạn hàm khuyến nối hợp Cỡ cảnhtiến （nửa →Cận cảnh (close-up)→Đặc tả (close-up)），mô cộng "tâm ý lực nhận hẹp " của sinh lý 
 
 ---
 
-## 七、人物互动设计
+## 4、Thời lượngđem sát 
 
-- **单镜头动作不超过两个** — "低头拈花 + 微笑"可以，"低头拈花 + 微笑 + 转身 + 抬手"会崩
-- **甜宠互动用暗示** — 手指差一点碰到、衣袂擦过、目光追随又移开。不要在分镜表里写"拥抱""接吻"等大幅度双人交互，拆成暗示性的局部镜头
-
----
-
-## 八、台词与留白
-
-- **台词少的镜头给长时长** — 无台词的情绪镜头往往比有台词的更需要时间。沉默 3 秒比一句台词更有张力
-- **一句台词对应一个镜头** — 避免在单镜头内塞多句对白，切换说话者时应切镜头
-- **旁白镜头用远景或空镜** — 内心独白配近景容易显得嘴唇不动很假，配远景或场景空镜更自然
+- **Đặc tả (close-up)/bảng tình Ống kính** — 2-3s，bảng tình hóa 
+- **đúng lời Cận cảnh (close-up)** — 3-4s，nối ra từ 
+- **toàn ** — 3-5s，nhở toàn 
+- **Viễn cảnh (extreme wide shot)/rỗng quay ** — 4-6s，Không khí
+- **đơn Ống kínhkhông vượt  6s** — vượt  6s tâm ý lực ，cần cần Góc quayhoặc động thái giữ 
+- ** 6 giây** — Không có lời thoạiỐng kínhtính vượt  6s chưa ra mới thông tin（Lời thoại/động tác vụ /chính thể hóa ），tâm ý lực 。nối trường +loại Ống kínhtâm ý ，hợp nhất nén nhỏ cũng không cần 
 
 ---
 
-## 九、转场设计
+## 5、Ống kínhhợp nhất （đi  AI ）
 
-- **默认硬切** — 同场戏内镜头间用硬切，干净利落
-- **场景切换用空镜过渡** — 不同场景间插入 1 个场景空镜（2-3s）做情绪缓冲
-- **段落切换可用叠化/淡入淡出** — 大段落间的情绪跳跃用柔性转场，避免观众出戏
+- **thể 1 quay tác vụ  của không 2quay ** — như quả một kèm Góc quay của Ống kính（như khuyến từ Viễn cảnh (extreme wide shot)đến Toàn cảnh (wide shot)）thể cùng tạo nối trường +chính thể vào ，thì không cần tạo "trước rỗng quay nối trường →chính thể vào vẽ "2mục Ống kính
+- **cùng loại thông tinhợp nhất ** — Mô tảcùng 1 rỗng gian không cùng cục bộ  của Ống kính（cổng →→）hồi hợp nhất một Ống kính，hàm Mô tả hình ảnhnhiều tầng rỗng gian thông tin
+- **việc mật độ trước ** — mục Ống kínhBắt buộcĐẩy tới (push in / dolly in)việc hoặc tình xúc ，thuần Ống kính（chỉ nhở tiết ）hồi hợp nhất đến có việc công thể  của Ống kínhgiữa 
+- **đạo diễnkiểm chiếu ** — Phân cảnhsau tự kiểm ：như quả một thật ngườiđạo diễnsẽ đem  2-3 mục Ống kínhhợp tạo  1 mục Ống kính，Giải thíchđược ，hồi hợp nhất 
+
+---
+
+## 6、1 quay đến （dài Ống kínhhợp nhất ）
+
+- **hàm mục tệp ** — Ống kính của gian lưu ở động tác vụ hóa 、Bối cảnhđộ hóa （cùng Bối cảnhtrong vị trí ）、hoặc nhân độ ，trước hàm 1 quay đến ，vẽ mặt  và nội dungđổi 
+- **kiểu Bối cảnh** — Nhân vậtthi chạy rỗng gian 、động tác vụ từ Ađiểm đến Bđiểm 、Quay vòng (orbiting / surround)Nhân vậtnhở 、nối trường khuyến đến chính thể Đặc tả (close-up)
+- **biểu tâm cách thức** — ở Góc quaychữ đoạn dẫn chỉnh đường dẫn（như "1 quay đến ：khuyến Viễn cảnh (extreme wide shot)→đến trong →Toàn cảnh (wide shot)"），Mô tả hình ảnhgiữa tác vụ  và 
+- **Thời lượngmở rộng ** — thông tinlượng giữ cập nhật，đơn quay  6s trên hạn ，nhưng không vượt  12s
+- **phong ** — 1 quay đến đúng vẽ mặt tạo của Yêu cầucao ，độ nhắc 。chỉ ở việc nhận dẫn lớn với hàm ，toàn không vượt  2-3 xử 
+
+---
+
+## 7、ngườiđộng thiết tính 
+
+- **đơn Ống kínhđộng tác vụ không vượt 2mục ** — "thấp đầu  + "，"thấp đầu  +  + chuyển  + tay "sẽ 
+- **động hàm nhở ** — tay 1 điểm đến 、、mục ánh lại mở 。không cần ở Bảng phân cảnh"""tiếp "lớn độ đôi ngườitác vụ ，tạo nhở  của cục bộ Ống kính
+
+---
+
+## 8、Lời thoạilưu 
+
+- **Lời thoạiít  của Ống kínhcho dài Thời lượng** — Không có lời thoại của tình xúc Ống kínhtỷ có Lời thoại của đổi cần cần thời gian。 3 giâytỷ 1 câu Lời thoạiđổi có bức lực 
+- **1 câu Lời thoạiđúng hồi một Ống kính** — ở đơn Ống kínhtrong nhiều câu đúng ，đổi hướng lời giả hồi Ống kính
+- **Ống kínhhàm Viễn cảnh (extreme wide shot)hoặc rỗng quay ** — Độc thoại nội tâm (inner monologue, OS)nối Cận cảnh (close-up)dung được không động rất giả ，nối Viễn cảnh (extreme wide shot)hoặc Bối cảnhrỗng quay đổi tự 
+
+---
+
+## 9、chuyển trường thiết tính 
+
+- **Mặc định** — cùng trường trong Ống kínhgian hàm ，
+- **Bối cảnhđổi hàm rỗng quay ** — không cùng Bối cảnhgian vào  1 mục Bối cảnhrỗng quay （2-3s）tình xúc 
+- **đoạn đổi hàm hóa /vào ra ** — lớn đoạn gian  của tình xúc hàm chuyển trường ，ra 

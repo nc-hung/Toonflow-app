@@ -1,85 +1,85 @@
 ---
 name: director_planning_style
-description: 3D动画渲染约束 — 定义3D卡通渲染在色调体系、光影方案、质感方向、都市场景空间元素、乐器选择与环境音上的全局约束。适用于任何叙事类型。
+description: 3Dđộng vẽ  — nối nghĩa 3Dthông ở vật gọi thể dòng 、Ánh sángphương 、phương 、đều Bối cảnhrỗng gian 、thiết bị chọn lựa âm trên  của toàn cục 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 3D动画渲染约束 · 3D卡通渲染 · 技法参考
+# 3Dđộng vẽ  · 3Dthông  · thức tham chiếu
 
 ---
 
-## 一、色调体系与画面基调
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
 
-- **色调基底** — 全片以暖橙（C1）、天空蓝（C3）、樱花粉（C5）为基底色，整体色温偏暖（4800-5200K），饱和度中高（65-80%），呈现明快 3D 动画的温暖治愈感
-- **冷暖叙事对比** — 暖色（暖橙 C1、琥珀暖、暖粉）贯穿全片作为基调，冷色（淡蓝 C3、淡紫 C6）作为局部点缀增加层次感。冷暖切换应与故事弧线同步，而非随意混用
-- **冷暖分配策略** — 全片保持暖调基底，冷色调仅在夜晚或情绪转折段落使用，形成冷暖对比
-- **色盘先行原则** — 段落规划需先绑定情绪场景（相遇/日常/冒险/离别等），再确定主色+辅色与光影方案，避免"剧情对了但情绪不对色"
-- **禁用色域** — 暗沉灰暗色系、过度饱和的脏色、与 3D 动画明快气质不匹配的色彩体系均不兼容
+- **vật gọi cơ sở ** — toàn （C1）、ngàyrỗng （C3）、（C5）cơ sở vật ，chỉnh thể vật （4800-5200K）， và độ giữa cao （65-80%），dẫn nhanh  3D động vẽ  của 
+- **việc đúng tỷ ** — vật （ C1、、）toàn tác vụ cơ sở gọi ，vật （ C3、 C6）tác vụ cục bộ điểm tố cộng tầng lần 。đổi hồi việc đường cùng bước ，phi ý hàm 
+- **phútnối ** — toàn lưu giữ gọi cơ sở ，vật gọi chỉ ở Ban đêmhoặc tình xúc chuyển đoạn hàm ，dạng tạo đúng tỷ 
+- **vật đĩa trước thi gốc ** — đoạn lập kế hoạchcần trước ghép nốitình xúc Bối cảnh（/ngày thường //khác ），nối chính vật +vật Ánh sángphương ，"kịch tình đúng nhưng tình xúc không đúng vật "
+- **hàm vật vực ** — vật dòng 、độ  và  của vật 、 3D động vẽ dẫn nhanh không khớp của vật thể dòng không dung 
 
 ---
 
-## 二、光影方案体系
+## 2、Ánh sángphương thể dòng 
 
-- **光影即叙事** — 6 套光影方案对应不同情绪段落，导演规划阶段应在段落层面确定光影基调方向，而非逐镜指定
-- **光源角度** — 默认 45° 侧逆光，模拟黄昏霞光效果
+- **Ánh sángviệc ** — 6 Ánh sángphương đúng hồi không cùng tình xúc đoạn ，Kế hoạch đạo diễnđoạn hồi ở đoạn tầng mặt nối Ánh sángcơ sở gọi phương ，phi quay nối 
+- **ánh nguồn nhân độ ** — Mặc định 45° ánh ，mô Hoàng hônánh hiệu quả 
 
-| 光影方案 | 方案名 | 色调倾向 | 适用情绪 |
+| Ánh sángphương  | phương tên  | vật gọi  | hàm tình xúc  |
 |---|---|---|---|
-| A | 柔和晨光 | 暖黄底 + 均匀柔和光 | 全片开场、都市清晨 |
-| B | 暖调侧光 | 暖橙主调 + 局部暖光 | 日常温馨、咖啡厅/居家 |
-| C | 顶光 + 环境光 | 中性暖 + 柔和冷白 | 工作/学习段落 |
-| D | 逆光霞光 | 琥珀暖主导 + 暖粉点缀 | 黄昏浪漫、甜蜜段落 |
-| E | 霓虹光晕 | 暖橙 + 冷蓝背景 | 夜晚街景、浪漫段落 |
-| F | 暖光柔焦 | 暖黄主调 + 雾化效果 | 回忆/情感段落 |
+| A |  và ánh  |  +  và ánh  | toàn mở trường 、đều Sáng sớm |
+| B | gọi ánh  | chính gọi  + cục bộ ánh  | ngày thường 、/ |
+| C | ánh  + ánh  | giữa  +  và  | tác vụ /đoạn  |
+| D | ánh ánh  | chính dẫn  + điểm tố  | Hoàng hôn、đoạn  |
+| E | ánh  |  + bối  | Ban đêmbối 、đoạn  |
+| F | ánh  | chính gọi  + hóa hiệu quả  | trả /tình đoạn  |
 
-- **冷暖光分配** — 暖色调贯穿全片可用，冷色调（冷蓝 + 暖色对比）在夜晚或情绪转折后使用。导演可根据叙事需要调整冷暖切换点
-- **氛围方向映射** — 每场戏的氛围方向应能映射到上述光影方案（A-F）的某一方向，确保视觉一致性
-
----
-
-## 三、质感方向
-
-- **赛璐珞纪实感** — 3D 动画渲染的核心：轮廓线清晰、上色明快、柔和光影层次
-- **高细节材质 + 柔和光影** — 这是画面质感的锚点。不是过度平滑，不是现代写实渲染，是 3D 动画特有的赛璐珞质感
-- **材质细节丰富** — 所有服化道的材质细节应可信：衣料的褶皱纹理、金属的卡通高光、食物的温暖光泽。禁止"过度写实"和"粗糙低模感"
-- **赛璐珞不等于扁平** — 3D 动画强调赛璐珞质感表达（清晰轮廓线、明快上色、柔和光影层次），通过光影与构图设计放大感染力，而非依赖过度复杂特效
+- **ánh phútnối ** — vật gọi toàn hàm ，vật gọi （ + vật đúng tỷ ）ở Ban đêmhoặc tình xúc chuyển sau hàm 。đạo diễndựa theoviệc cần cần gọi chỉnh đổi điểm 
+- **Không khíphương ** — trường  của Không khíphương hồi thể đến trên tả Ánh sángphương （A-F） của 1 phương ，lưu trực quan1 
 
 ---
 
-## 四、都市场景空间元素
+## 3、phương 
 
-3D 动画都市世界观特有的场景元素及其视觉叙事功能：
-
-- **门窗框/走廊/楼梯** — 天然的框架式构图道具，制造空间纵深与层次感
-- **街道/公园/天空** — 留白构图的天然载体，景即情：黄昏街道的长影 = 浪漫感、咖啡厅暖光 = 安全感、高楼窗景 = 都市距离感
-- **台灯/霓虹/窗光** — 都市世界的光源载体，台灯 = 暖/私密（方案 B）、霓虹 = 活力/浪漫（方案 E）、窗光 = 日常/静谧（方案 A）
-- **段落间用场景空镜过渡** — 本风格有丰富的场景资产（不同时段/天候/天气变体），段落衔接建议用场景空镜做情绪缓冲，不要硬切
-- **转折点用画面 + 动作** — 优先使用画面手段（光影变化、场景转换）配合动作设计，而非依赖对白解释
+- **** — 3D động vẽ  của ：đường sạch 、trên vật dẫn nhanh 、 và Ánh sángtầng lần 
+- **cao tiết  +  và Ánh sáng** — nàylà vẽ mặt  của điểm 。không là độ ，không là ，là  3D động vẽ có  của 
+- **tiết ** — tất cảphục hóa đạo  của tiết hồi tin ： của lý 、biệt  của thông cao ánh 、 của ánh 。Nghiêm cấm"độ " và "thấp mô "
+- **không với ** — 3D động vẽ gọi bảng （sạch đường 、dẫn nhanh trên vật 、 và Ánh sángtầng lần ），thông quaÁnh sángcấu ảnh thiết tính mở lớn lực ，phi phụ thuộc độ lời hiệu 
 
 ---
 
-## 五、都市乐器与环境音
+## 4、đều Bối cảnhrỗng gian 
 
-3D 动画都市世界观下的声音元素约束：
+3D động vẽ đều giới có  của Bối cảnhtrực quanviệc công thể ：
 
-### 乐器选择
+- **cổng /chạy /** — ngày của thức cấu ảnh Đạo cụ，chép tạo rỗng gian tầng lần 
+- **đạo //ngàyrỗng ** — lưu cấu ảnh  của ngàyxuống thể ，bối tình ：Hoàng hônđạo  của dài sáng  = 、ánh  = an toàn 、cao bối  = đều 
+- **đài //ánh ** — đều giới  của ánh nguồn xuống thể ，đài  = /mật （phương  B）、 = hoạt lực /（phương  E）、ánh  = ngày thường /（phương  A）
+- **đoạn gian hàm Bối cảnhrỗng quay ** — sách Phong cáchcó  của Bối cảnhTài nguyên（không cùng đoạn /ngày/ngàythể ），đoạn tiếp Khuyến nghịhàm Bối cảnhrỗng quay tình xúc ，không cần 
+- **Điểm bước ngoặthàm vẽ mặt  + động tác vụ ** — ưu tiên sử dụng vẽ mặt tay đoạn （Ánh sánghóa 、Bối cảnhchuyển đổi ）nối hợp động tác vụ thiết tính ，phi phụ thuộc đúng giải 
 
-- **钢琴** — 日常/温馨/回忆段落的核心乐器，最能表现 3D 动画的质感
-- **吉他** — 轻松/浪漫/街头段落，扫弦的温柔感适合都市氛围
-- **弦乐铺底** — 情感升华/离别段落，拉弦的细腻感适合情绪过渡
-- **电子音效** — 年轻感/节奏感段落，适合现代都市场景
-- 环境音是重要元素但不宜喧宾夺主
+---
 
-### 乐器组合策略
+## 5、đều thiết bị âm 
 
-| 情绪阶段 | 乐器组合 |
+3D động vẽ đều giới dưới  của thanh âm ：
+
+### thiết bị chọn lựa 
+
+- **** — ngày thường //trả đoạn  của thiết bị ，nhất thể bảng  3D động vẽ  của 
+- **anh ấy** — //đầu đoạn ， của hợp đều Không khí
+- **** — tình /khác đoạn ， của hợp tình xúc 
+- **Âm hiệu** — năm/tiết đoạn ，hợp Đô Thị Hiện ĐạiBối cảnh
+- âm là trùng cần nhưng không chính 
+
+### thiết bị nhóm hợp 
+
+| tình xúc đoạn  | thiết bị nhóm hợp  |
 |---|---|
-| 平稳/开场/收尾 | 吉他独奏 或 电子音效 |
-| 日常温馨 | 钢琴 + 轻吉他 |
-| 情绪升华/浪漫 | 弦乐 + 钢琴 |
-| 紧张/急促 | 电子音效 + 弦乐衬底 |
+| /mở trường /nhận đuôi  | anh ấy hoặc  Âm hiệu |
+| ngày thường  |  + anh ấy |
+| tình xúc / |  +  |
+| bức / | Âm hiệu +  |
 
-### 都市环境音
+### đều âm 
 
-- **典型环境音层次** — 城市车流声 / 咖啡店背景音 / 地铁提示音 / 风吹树叶声 / 人群交谈声 / 脚步声 / 电梯声
-- **每场戏标注 1-2 个核心环境音**，帮助后续音效设计。环境音层次越丰富，都市场景越有沉浸感
+- **kiểu âm tầng lần ** — thanh  / bối âm  / địa nhắc nhở âm  / phong thanh  / ngườitác vụ thanh  / bước thanh  / thanh 
+- **trường biểu tâm  1-2 mục âm **，trợ giúp sau Âm hiệuthiết tính 。âm tầng lần ，đều Bối cảnhcó 

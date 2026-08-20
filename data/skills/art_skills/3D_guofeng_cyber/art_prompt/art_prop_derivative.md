@@ -1,145 +1,145 @@
 ---
 name: art_prop_derivative
-description: 道具衍生状态生成 · 约束手册
+description: Đạo cụsinh trạng tháitạo · sổ tay
 metaData: art_skills
 ---
-# 道具衍生状态生成 · 约束手册
+# Đạo cụsinh trạng tháitạo · sổ tay
 
 ---
 
-## 一、衍生原则
+## 1 、sinh gốc 
 
-1. **造型锚定** — 道具核心造型/轮廓、中式核心形制元素、赛博机能核心结构，在所有状态中必须清晰可识别，国风纹样与赛博结构的融合关系不可变更
-2. **状态可读** — 状态差异必须一目了然，观众能立即区分，国风元素与赛博机能的状态变化需同步呼应，无逻辑冲突
-3. **叙事服务** — 每种状态变体服务于国风赛博世界观下的特定剧情节点（如古物觉醒、机能改装、能量过载、灵能耗尽等）
-4. **渐进退化** — 损伤/老化/机能损耗状态应有合理的物理逻辑与赛博世界观逻辑，材质变化符合对应材料的属性规则
-5. **纯道具独立展示** — 画面中只能出现道具本身，严禁出现任何人物、手部、肢体，道具不可处于被持有/佩戴/握持/挂载状态，必须以静物陈列方式独立呈现，无任何场景附属物
+1. **tạo kiểu nối ** — Đạo cụtạo kiểu /、giữa thức dạng chép 、máy thể kết cấu ，ở tất cảtrạng tháigiữa Bắt buộcsạch trưng khác ，phong kiểu kết cấu  của hợp liên dòng không đổi 
+2. **trạng thái** — trạng tháibất Bắt buộc1 mục ，thể lập khu phút，phong máy thể  của trạng tháihóa cần cùng bước hồi ，không logic
+3. **việc phục vụ ** — loại trạng tháithể phục vụ với phong giới dưới  của nối kịch tình tiết điểm （như 、máy thể sửa 、thể lượng xuống 、thể ）
+4. **tiến đăng hóa ** — /hóa /máy thể trạng tháihồi có hợp lý  của lý logicgiới logic，hóa hợp đúng hồi  của biệt 
+5. **thuần Đạo cụlập nhở ** — vẽ mặt giữa chỉ thể ra Đạo cụsách ，ra người、tay bộ 、thể ，Đạo cụkhông xử với giữ có //giữ /xuống trạng thái，Bắt buộchàng cách thứclập ，không Bối cảnhbiệt 
 
 ---
 
-## 二、状态类型
+## 2、trạng tháiLoại
 
-### 2.1 使用状态
+### 2.1 hàm trạng thái
 
-| 状态 | 描述 | 适用道具 | 提示词 |
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
 |---|---|---|---|
-| 崭新 | 完好无损、光泽如新 | 所有道具 | 崭新、完好无损、光泽如新 |
-| 日常使用 | 微磨损、自然包浆 | 兵器/器物/饰品 | 日常使用痕迹、自然包浆 |
-| 陈旧 | 明显年代感、色泽暗淡 | 器物/信物/卷轴 | 古旧斑驳、年代感、色泽暗沉 |
-| 赛博制式全新 | 原厂镀层完整、电路无损耗、中式纹样清晰、机能接口全新 | 中式赛博兵器/灵能法器/机能组件/数据信物 | 赛博制式全新、镀层完整无划痕、电路通路完好、中式纹样清晰锐利、机能接口无磨损 |
-| 机能活化 | 日常机能运行、低功耗灵能流转、部件无损耗 | 灵能法器/赛博信物/能量组件 | 低功耗机能活化、灵能微光流转、电路稳定运行、部件无损耗 |
-| 古物赛博改装 | 中式古物基底完整、赛博改装结构贴合、改装件无损耗 | 改装兵器/改装法器/古物信物 | 中式古物基底完好、赛博改装结构贴合、改装组件全新、传统形制与机能结构融合统一 |
+| mới  | tốt không 、ánh như mới  | tất cảĐạo cụ | mới 、tốt không 、ánh như mới  |
+| ngày thường hàm  | 、tự gói  | thiết bị /thiết bị / | ngày thường hàm 、tự gói  |
+| cũ  | dẫn năm、vật  | thiết bị /tin / | cũ 、năm、vật  |
+| chép thức toàn mới  | gốc tầng chỉnh 、đường không 、giữa thức kiểu sạch 、máy thể tiếp cổng toàn mới  | giữa thức thiết bị /thể thức thiết bị /máy thể nhóm tệp /dữ liệutin  | chép thức toàn mới 、tầng chỉnh không 、đường thông đường tốt 、giữa thức kiểu sạch 、máy thể tiếp cổng không  |
+| máy thể hoạt hóa  | ngày thường máy thể vận thi 、thấp công thể chuyển 、bộ tệp không  | thể thức thiết bị /tin /thể lượng nhóm tệp  | thấp công máy thể hoạt hóa 、thể ánh chuyển 、đường nối vận thi 、bộ tệp không  |
+| sửa  | giữa thức cơ sở chỉnh 、sửa kết cấu hợp 、sửa tệp không  | sửa thiết bị /sửa thức thiết bị /tin  | giữa thức cơ sở tốt 、sửa kết cấu hợp 、sửa nhóm tệp toàn mới 、truyền thống dạng chép máy thể kết cấu hợp thống 1  |
 
-### 2.2 损伤状态
+### 2.2 trạng thái
 
-| 状态 | 描述 | 适用道具 | 提示词 |
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
 |---|---|---|---|
-| 微损 | 小裂纹/小缺口/轻微磨损 | 瓷器/玉佩/兵器 | 细微裂纹、轻微缺口 |
-| 破损 | 明显裂缝/断裂/破碎 | 瓷器/饰品/兵器 | 裂缝明显、碎裂、断裂 |
-| 残片 | 仅剩部分/碎片 | 瓷器/玉佩/信物 | 残片、碎片、仅存半块 |
-| 机能微损 | 电路轻微氧化、接口微磨损、灵能通路微损耗、外观无明显破损 | 赛博兵器/机能组件/灵能法器 | 电路轻微氧化、接口细微磨损、灵能通路微损耗、外观结构完整 |
-| 机能破损 | 电路断裂、镀层脱落、接口崩裂、灵能泄露、结构出现明显破损 | 赛博兵器/机能组件/灵能法器/数据信物 | 电路断裂、镀层大面积脱落、接口崩裂、灵能微光泄露、结构明显破损 |
-| 机能报废残片 | 核心结构碎裂、电路完全损毁、仅存部分机能残片、中式形制仍可识别 | 所有国风赛博道具 | 机能完全报废、核心结构碎裂、电路彻底损毁、仅存残片、中式核心形制可识别 |
+|  | nhỏ /nhỏ cổng / | thiết bị //thiết bị  | 、cổng  |
+|  | dẫn // | thiết bị //thiết bị  | dẫn 、、 |
+|  | chỉ bộ phút/ | thiết bị //tin  | 、、chỉ lưu nửa  |
+| máy thể  | đường hóa 、tiếp cổng 、thể thông đường 、ngoài không dẫn  | thiết bị /máy thể nhóm tệp /thể thức thiết bị  | đường hóa 、tiếp cổng 、thể thông đường 、ngoài kết cấu chỉnh  |
+| máy thể  | đường 、tầng 、tiếp cổng 、thể 、kết cấu ra dẫn  | thiết bị /máy thể nhóm tệp /thể thức thiết bị /dữ liệutin  | đường 、tầng lớn mặt 、tiếp cổng 、thể ánh 、kết cấu dẫn  |
+| máy thể  | kết cấu 、đường toàn 、chỉ lưu bộ phútmáy thể 、giữa thức dạng chép trưng khác  | tất cảphong Đạo cụ | máy thể toàn 、kết cấu 、đường 、chỉ lưu 、giữa thức dạng chép trưng khác  |
 
-### 2.3 特殊状态
+### 2.3 trạng thái
 
-| 状态 | 描述 | 适用道具 | 提示词 |
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
 |---|---|---|---|
-| 染血 | 血迹附着 | 兵器/衣物/信物 | 血迹斑驳、染血 |
-| 浸水/湿润 | 水渍、湿润反光 | 卷轴/信物/衣物 | 浸水、纸张湿润、墨迹晕染 |
-| 燃烧/焦损 | 焦黑边缘、火烧痕迹 | 卷轴/信物/木质品 | 边缘焦黑、火烧痕迹 |
-| 发光/激活 | 内在能量、光芒四射 | 信物/法器/玉石 | 微微发光、内蕴光华 |
-| 包裹/封存 | 用布/盒子包裹 | 信物/饰品/秘物 | 锦布包裹、木盒封存 |
-| 符文激活/满功率运行 | 中式符文全亮、灵能拉满、赛博电路满负荷运行、光芒内敛且有层次 | 灵能法器/赛博信物/能量兵器 | 中式符文全量激活、灵能光华内蕴外溢、赛博电路满功率运行、能量光效层次分明 |
-| 能量过载/灼烧 | 电路过载焦黑、符文过载崩裂、边缘高温灼烧痕迹、残留过载能量光晕 | 灵能法器/赛博兵器/机能组件 | 能量过载、电路焦黑熔断、符文崩裂、高温灼烧痕迹、残留过载能量光晕 |
-| 数据化/量子虚影 | 道具实体完整、边缘伴随数据化粒子特效、中式纹样转化为数据流、赛博结构半透明化 | 数据卷轴/量子信物/赛博秘物 | 数据化粒子特效、中式纹样数据流化、赛博结构半透明量子虚影、实体核心完整 |
-| 真空封存/赛博锁止 | 道具置于赛博真空封存舱内、中式锁止符文生效、机能完全锁止、外观完整无损耗 | 秘物/信物/高价值法器 | 赛博真空封存、中式锁止符文生效、机能完全锁止、透明封存舱、道具完整陈列 |
-| 灵能耗尽/宕机 | 符文完全熄灭、电路彻底断电、道具外观完整但无任何能量反应、色泽暗沉 | 灵能法器/赛博组件/能量信物 | 灵能耗尽、电路彻底宕机、符文熄灭无光、色泽暗沉、机能完全停止 |
+|  | đang  | thiết bị //tin  | 、 |
+| / | 、phụ ánh  | /tin / | 、bức 、 |
+| / | 、 | /tin / | 、 |
+| phát ánh /kích hoạt  | trong ở thể lượng 、ánh 4 | tin /thức thiết bị / | phát ánh 、trong ánh  |
+| gói /lưu  | hàm /gói  | tin // | gói 、lưu  |
+| tài kích hoạt /đầy công tỷ lệ vận thi  | giữa thức tài toàn 、thể đầy 、đường đầy vận thi 、ánh trong và có tầng lần  | thể thức thiết bị /tin /thể lượng thiết bị  | giữa thức tài toàn lượng kích hoạt 、thể ánh trong ngoài 、đường đầy công tỷ lệ vận thi 、thể lượng ánh hiệu tầng lần phútdẫn  |
+| thể lượng xuống / | đường xuống 、tài xuống 、cao 、lưu xuống thể lượng ánh  | thể thức thiết bị /thiết bị /máy thể nhóm tệp  | thể lượng xuống 、đường 、tài 、cao 、lưu xuống thể lượng ánh  |
+| dữ liệuhóa /lượng sáng  | Đạo cụthể chỉnh 、dữ liệuhóa hiệu 、giữa thức kiểu chuyển hóa dữ liệu、kết cấu nửa dẫn hóa  | dữ liệu/lượng tin / | dữ liệuhóa hiệu 、giữa thức kiểu dữ liệuhóa 、kết cấu nửa dẫn lượng sáng 、thể chỉnh  |
+| thật rỗng lưu / | Đạo cụtrí với thật rỗng lưu trong 、giữa thức tài sinh hiệu 、máy thể toàn 、ngoài chỉnh không  | /tin /cao giá trị thức thiết bị  | thật rỗng lưu 、giữa thức tài sinh hiệu 、máy thể toàn 、dẫn lưu 、Đạo cụchỉnh hàng  |
+| thể /máy  | tài toàn 、đường 、Đạo cụngoài chỉnh nhưng không thể lượng phụ hồi 、vật  | thể thức thiết bị /nhóm tệp /thể lượng tin  | thể 、đường máy 、tài không ánh 、vật 、máy thể toàn  |
 
 ---
 
-## 三、状态变体画面规范
+## 3、trạng tháithể vẽ mặt 
 
-### 单状态图
+### đơn trạng tháiảnh 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 背景 | 素灰纯色 #B8B8B8（与设定图一致），无任何多余纹理与装饰，确保国风赛博道具主体突出 |
-| 光线 | 均匀柔光照明，无硬阴影，精准还原PBR材质质感，保留国风赛博道具自发光/能量光效的层次，不出现过曝 |
-| 角度 | 与原设定图正面图一致，确保中式核心纹样、赛博机能结构、核心接口在所有视图中完整呈现，无遮挡 |
-| 比例 | 道具占画面主体 70%+，核心结构与纹样无裁切，细节完整可辨 |
+| bối  | thuần vật  #B8B8B8（thiết nối ảnh 1 ），không nhiều lý ，lưu phong Đạo cụchính thể ra  |
+| ánh đường  | ánh dẫn ，không sáng ，còn gốc PBR，lưu lưu phong Đạo cụtự phát ánh /thể lượng ánh hiệu  của tầng lần ，không ra  |
+| nhân độ  | gốc thiết nối ảnh chính mặt ảnh 1 ，lưu giữa thức kiểu 、máy thể kết cấu 、tiếp cổng ở tất cảvideo ảnh giữa chỉnh ，không  |
+| Tỷ lệ | Đạo cụvẽ mặt chính thể  70%+，kết cấu kiểu không ，tiết chỉnh  |
 
-### 状态对比图
+### trạng tháiđúng tỷ ảnh 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面并排展示 2-3 种状态，单状态占比均匀，无变形拉伸 |
-| 标注 | 每种状态下方标注状态名，字体不遮挡道具主体 |
-| 一致性 | 角度/光线/背景/比例完全一致，仅道具状态不同，国风元素与赛博结构的呈现方式完全统一 |
+| cục  | cùng 1 vẽ mặt nhất sắp nhở  2-3 loại trạng thái，đơn trạng tháitỷ ，không dạng  |
+| biểu tâm  | loại trạng tháidưới phương biểu tâm trạng tháitên ，chữ thể không Đạo cụchính thể  |
+| 1  | nhân độ /ánh đường /bối /Tỷ lệtoàn 1 ，chỉ Đạo cụtrạng tháikhông cùng ，phong kết cấu  của cách thứctoàn thống 1  |
 
 ---
 
-## 四、材质状态变化规则
+## 4、trạng tháihóa 
 
-| 材质 | 崭新 → 日常 | 日常 → 陈旧 | 损伤表现 |
+|  | mới  → ngày thường  | ngày thường  → cũ  | bảng  |
 |---|---|---|---|
-| 金属 | 亮光泽 → 微包浆 | 包浆 → 锈蚀斑点 | 缺口/卷刃/断裂 |
-| 玉石 | 通透温润 → 微磨损 | 磨损 → 表面微裂 | 裂纹/碎裂/缺角 |
-| 木质 | 新木纹理 → 自然包浆 | 包浆 → 色泽暗沉 | 开裂/断裂/虫蛀 |
-| 瓷器 | 釉面光泽 → 微划痕 | 划痕 → 釉面暗淡 | 裂纹/碎裂/缺口 |
-| 布/纸 | 崭新平整 → 微皱折 | 皱折 → 发黄变脆 | 撕裂/焦损/墨迹晕染 |
-| 国风赛博复合金属 | 亮面电镀+中式纹样蚀刻完整 → 镀层微磨损+接口氧化+纹样边缘微糊 | 镀层大面积脱落+电路锈蚀+纹样磨损模糊 | 刃口卷边/接口崩裂/电路断裂/结构变形 |
-| 灵能晶玉（赛博玉） | 通透温润+内嵌灵能电路完整+光泽均匀 | 表面微划痕+内电路微损耗+光泽减弱 | 表面磨损→内电路微裂 | 裂纹/碎裂/缺角/内电路彻底断裂/灵能泄露 |
-| 碳纤木纹复合材 | 新木纹理清晰+碳纤层完整无损伤 | 木纹自然包浆+碳纤层微磨损 | 木纹色泽暗沉+碳纤层划痕明显 | 开裂/断裂/碳纤层分层/纤维外露 |
-| 国风光釉陶瓷 | 釉面光泽拉满+中式纹样釉下彩清晰+赛博光感层完整 | 釉面微划痕+纹样微糊+光感层微损耗 | 釉面暗淡+纹样磨损+光感层失效 | 裂纹/碎裂/缺口/釉面大面积脱落 |
-| 纳米纤维织物/数据纸 | 崭新平整+纳米涂层完整+数据纹样清晰 | 微皱折+涂层微磨损+数据纹样边缘微糊 | 皱折明显+涂层脱落+纸张/织物发黄变脆+数据纹样模糊 | 撕裂/焦损/墨迹晕染/数据层损毁/纤维断裂 |
+| biệt  | ánh  → gói  | gói  → điểm  | cổng // |
+|  | thông  →  |  → bảng mặt  | //nhân  |
+|  | mới lý  → tự gói  | gói  → vật  | mở // |
+| thiết bị  | mặt ánh  →  |  → mặt  | //cổng  |
+| / | mới chỉnh  →  |  → phát  | // |
+| phong lời hợp biệt  | mặt +giữa thức kiểu chỉnh  → tầng +tiếp cổng hóa +kiểu  | tầng lớn mặt +đường +kiểu mô  | cổng /tiếp cổng /đường /kết cấu dạng  |
+| thể （） | thông +trong thể đường chỉnh +ánh  | bảng mặt +trong đường +ánh  | bảng mặt →trong đường  | //nhân /trong đường /thể  |
+| lời hợp  | mới lý sạch +tầng chỉnh không  | tự gói +tầng  | vật +tầng dẫn  | mở //tầng phúttầng /ngoài  |
+| phong ánh  | mặt ánh đầy +giữa thức kiểu dưới sạch +ánh tầng chỉnh  | mặt +kiểu +ánh tầng  | mặt +kiểu +ánh tầng thất hiệu  | //cổng /mặt lớn mặt  |
+| /dữ liệu | mới chỉnh +tầng chỉnh +dữ liệukiểu sạch  | +tầng +dữ liệukiểu  | dẫn +tầng +bức /phát +dữ liệukiểu mô  | ///dữ liệutầng / |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 
-### 单状态变体
+### đơn trạng tháithể 
 
-基于{国风赛博道具名}设定图，Unreal Engine 5渲染，超高清8K，高精度3D建模，PBR物理材质，国风赛博朋克风格，中式传统形制与赛博机能结构完美融合，电影级光影，OC渲染，超写实质感，
-{道具类型：中式赛博兵器/灵能法器/数据信物/机能组件/改装器物等}，{核心材质描述}，{中式核心纹样/赛博核心结构描述}，
-当前状态：{状态名}，{状态视觉描述}，
-{材质表面变化描述}，{国风元素状态变化描述}，{赛博机能状态变化描述}，
-纯道具静物展示，道具独立陈列，无人持有，无人佩戴，无人握持，无任何人物肢体，
-同一画面四宫格（2×2）固定布局：左上正面图(front view)+右上侧面图(side view)+左下背面图(back view)+右下细节特写(detail closeup)，
-素灰纯色#B8B8B8背景，均匀柔光，无硬阴影，无多余场景元素，
-材质纹理超清晰，PBR材质精准还原，状态细节拉满，国风纹样与赛博结构细节可辨，
-图中不要有任何文字、标注、水印，
-画面中绝对不能出现任何人物、手部、手指、肢体、躯干，道具不可处于被握持、佩戴、挂载、使用中的状态，无任何暗示人物存在的元素
+cơ sở với {phong Đạo cụtên }thiết nối ảnh ，Unreal Engine 5，vượt cao sạch 8K，cao độ 3Dtạo mô ，PBRlý ，phong Phong cách，giữa thức truyền thống dạng chép máy thể kết cấu đẹp hợp ，sáng cấp Ánh sáng，OC，vượt ，
+{Đạo cụLoại：giữa thức thiết bị /thể thức thiết bị /dữ liệutin /máy thể nhóm tệp /sửa thiết bị }，{Mô tả}，{giữa thức kiểu /kết cấu Mô tả}，
+hiện tạitrạng thái：{trạng tháitên }，{trạng tháitrực quanMô tả}，
+{bảng mặt hóa Mô tả}，{phong trạng tháihóa Mô tả}，{máy thể trạng tháihóa Mô tả}，
+thuần Đạo cụnhở ，Đạo cụlập hàng ，không ngườigiữ có ，không người，không ngườigiữ ，không ngườithể ，
+cùng 1 vẽ mặt 4khung （2×2）nối cục ：trái trên chính mặt ảnh (front view)+phải trên mặt ảnh (side view)+trái dưới mặt ảnh (back view)+phải dưới tiết Đặc tả (close-up)(detail closeup)，
+thuần vật #B8B8B8bối ，ánh ，không sáng ，không nhiều Bối cảnh，
+lý vượt sạch ，PBRcòn gốc ，trạng tháitiết đầy ，phong kiểu kết cấu tiết ，
+ảnh giữa không cần có tài chữ 、biểu tâm 、，
+vẽ mặt giữa đúng không thể ra người、tay bộ 、tay 、thể 、，Đạo cụkhông xử với giữ 、、xuống 、hàm giữa  của trạng thái，không nhở ngườilưu ở  của 
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 道具核心造型/轮廓在所有状态中可识别 |
-| R2 | 状态变化须符合物理逻辑 |
-| R3 | 必须使用四宫格（2×2）布局：左上正面图+右上侧面图+左下背面图+右下细节特写 |
-| R4 | 必须指定「素灰纯色背景」，均匀柔光，无硬阴影 |
-| R5 | 必须保留中式核心形制、纹样、文化元素与赛博机能结构的融合统一性，所有状态下二者不可割裂、不可错位 |
-| R6 | 赛博机能结构、能量光效、符文特效必须服务于状态表达，不可遮挡道具核心造型与状态细节 |
-| R7 | 所有新增的国风赛博专属状态，必须符合世界观逻辑，材质变化与状态表现一一对应 |
-| R8 | 四宫格所有视图中，必须完整呈现道具的中式核心元素与赛博核心结构，无裁切、无遮挡 |
+| R1 | Đạo cụtạo kiểu /ở tất cảtrạng tháigiữa trưng khác  |
+| R2 | trạng tháihóa buộc hợp lý logic |
+| R3 | Bắt buộchàm 4khung （2×2）cục ：trái trên chính mặt ảnh +phải trên mặt ảnh +trái dưới mặt ảnh +phải dưới tiết Đặc tả (close-up) |
+| R4 | Bắt buộcnối 「thuần vật bối 」，ánh ，không sáng  |
+| R5 | Bắt buộclưu lưu giữa thức dạng chép 、kiểu 、tài hóa máy thể kết cấu  của hợp thống 1 ，tất cảtrạng tháidưới 2giả không rời 、không sai vị trí  |
+| R6 | máy thể kết cấu 、thể lượng ánh hiệu 、tài hiệu Bắt buộcphục vụ với trạng tháibảng ，không Đạo cụtạo kiểu trạng tháitiết  |
+| R7 | tất cảthêm mới của phong riêng biệt trạng thái，Bắt buộchợp giới logic，hóa trạng tháibảng 1 1 đúng hồi  |
+| R8 | 4khung tất cảvideo ảnh giữa ，Bắt buộcchỉnh Đạo cụ của giữa thức kết cấu ，không 、không  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 状态变化后道具不可识别 |
-| X2 | 违反物理逻辑的损伤（玉石生锈等） |
-| X3 | 过度血腥/恐怖的损伤描绘 |
-| X4 | 出现任何人物形象，包括全身、半身、局部（手、手指、手臂等肢体） |
-| X5 | 道具处于被持有、握持、佩戴、使用中的状态 |
-| X6 | 出现暗示人物存在的元素（如手持痕迹、佩戴视角、使用姿态） |
-| X7 | 严禁中式元素与赛博结构违和拼接，出现不符合国风赛博世界观的杂乱元素 |
-| X8 | 严禁光效过度溢出、过曝，遮挡道具核心造型、纹样与状态细节 |
-| X9 | 严禁出现不符合国风赛博材质逻辑的状态变化（如灵能晶玉虫蛀、复合金属纸张式撕裂等） |
-| X10 | 严禁修改四宫格固定布局，严禁裁切道具核心结构与纹样 |
-| X11 | 严禁在背景中添加任何多余元素、纹理、场景，必须保持素灰纯色背景 |
+| X1 | trạng tháihóa sau Đạo cụkhông trưng khác  |
+| X2 | phụ lý logic của （sinh ） |
+| X3 | độ / của mô  |
+| X4 | ra ngườidạng tượng ，gói quát toàn 、nửa 、cục bộ （tay 、tay 、tay thể ） |
+| X5 | Đạo cụxử với giữ có 、giữ 、、hàm giữa  của trạng thái |
+| X6 | ra nhở ngườilưu ở  của （như tay giữ 、video nhân 、hàm thái ） |
+| X7 | giữa thức kết cấu  và ghép tiếp ，ra không hợp phong giới  của  |
+| X8 | ánh hiệu độ ra 、，Đạo cụtạo kiểu 、kiểu trạng tháitiết  |
+| X9 | ra không hợp phong logic của trạng tháihóa （như thể 、lời hợp biệt bức thức ） |
+| X10 | sửa 4khung nối cục ，Đạo cụkết cấu kiểu  |
+| X11 | ở bối giữa thêmnhiều 、lý 、Bối cảnh，Bắt buộclưu giữ thuần vật bối  |

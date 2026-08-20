@@ -1,114 +1,114 @@
 ---
 name: director_planning_narrative
-description: 叙事手法技法 · 悬疑推理 — 定义悬疑推理类型在主题立意、信息操控、悬念节奏、场景氛围设计与声音方向上的叙事规划方法。适用于任何视觉风格。
+description: việc tay thức thức  · khuyến lý  — nối nghĩa khuyến lý Loạiở chính đề lập ý 、thông tinthao sát 、tiết 、Bối cảnhKhông khíthiết tính thanh âm phương trên  của việc lập kế hoạchphương thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 叙事手法 · 悬疑推理 · 技法参考
+# việc tay thức  · khuyến lý  · thức tham chiếu
 
 ---
 
-## 一、主题立意与悬念内核
+## 1 、chính đề lập ý trong 
 
-### 悬疑推理叙事要点
+### khuyến lý việc cần điểm 
 
-- **信息差是悬念的本质** — 悬疑叙事的核心是操控观众与角色之间的信息差。导演必须清楚每个时刻观众"知道什么""不知道什么""以为自己知道什么"
-- **不可靠叙事** — 镜头可以"说谎"：选择性展示局部真相、用景别遮蔽关键信息、用转场暗示错误因果关系。观众信任镜头，利用这种信任制造反转
-- **真相分层设计** — 不要一次揭露全部真相。将真相拆成 3-5 层，每层揭示都让观众以为"这次是真的"，直到最终反转颠覆一切
-- **离场感受建议方向** — 细思恐极 / 恍然大悟 / 脊背发凉 / 意犹未尽。避免"轻松愉快""温馨治愈"等与悬疑气质不匹配的方向
-- **日常中的裂缝** — 最好的悬疑不是从异常开始，而是从"一切正常"开始，然后让观众渐渐发现——某些东西不对
-
----
-
-## 二、叙事结构与悬念节奏
-
-### 悬疑推理叙事要点
-
-- **钩子先行** — 开篇必须在 30 秒内抛出悬念钩子（一个反常现象、一句不该出现的话、一个不合理的画面），让观众产生"为什么？"的疑问
-- **信息释放节奏** — 遵循"给一藏三"原则：每释放一个信息，同时制造至少一个新疑问。信息量递增，但未解之谜也在递增，直到高潮段落集中清算
-- **红鲱鱼策略** — 有意识地设计 1-2 条误导线索，让观众建立错误推理。误导线索必须足够合理，揭穿时观众应感到"被骗了但心服口服"
-- **转折点用视觉而非对白** — 关键反转的处理方式应优先考虑视觉手段（镜头突然揭示被遮挡的全貌、闪回画面与当下画面的矛盾、道具位置的变化），而非角色口头解释
-- **节奏模型：收紧→释放→更紧** — 悬疑的节奏像拧发条：逐渐收紧→短暂释放假象→更猛烈地收紧。每次释放都是下一次收紧的起点
-- **时间线操控** — 悬疑推理可以打乱时间线叙事：倒叙开篇（先给结果再追因）、插叙补充（关键时刻插入过去线索）、平行时间线（同一时间不同视角）。但每次时间跳转必须有视觉标记
+- **thông tinlà  của sách ** — việc  của là thao sát Nhân vật của gian  của thông tin。đạo diễnBắt buộcsạch mục "báo đạo sao""không báo đạo sao""tự mình báo đạo sao"
+- **không việc ** — Ống kính"hướng "：chọn lựa nhở cục bộ thật 、hàm Cỡ cảnhliên thông tin、hàm chuyển trường nhở lỗiquả liên dòng 。tin Ống kính，hàm nàyloại tin chép tạo phụ chuyển 
+- **thật phúttầng thiết tính ** — không cần 1 lần toàn bộthật 。thật tạo  3-5 tầng ，tầng nhở đều để "nàylần là thật  của "，trực đến nhất phụ chuyển 1 
+- **trường Khuyến nghịphương ** —  / lớn  / phát  / ý chưa 。"nhanh """không khớp của phương 
+- **ngày thường giữa  của ** — nhất tốt  của không là từ bất thường mở ban đầu ，là từ "1 chính thường "mở ban đầu ，sau để phát ——những không đúng 
 
 ---
 
-## 三、分场景氛围设计
+## 2、việc kết cấu tiết 
 
-### 悬疑推理叙事要点
+### khuyến lý việc cần điểm 
 
-- **氛围用具象词** — 不说"紧张"，说"走廊尽头的灯突然灭了一盏"。具象的氛围描述能更好地指导置景和声效设计
-- **典型悬疑段落与设计** —
+- **hook trước thi ** — mở bài Bắt buộcở  30 giâytrong ra hook （một phụ thường tượng 、1 câu không ra  của lời 、một không hợp lý  của vẽ mặt ），để nguyên sinh "sao？" của hỏi 
+- **thông tinmở tiết ** — "cho 1 3"gốc ：mở một thông tin，cùng chép tạo đến ít một mới hỏi 。thông tinlượng ，nhưng chưa giải  của cũng ở ，trực đến cao đoạn tập giữa sạch toán 
+- **** — có ý trưng địa thiết tính  1-2 mục dẫn đường kiếm ，để tạo lập lỗikhuyến lý 。dẫn đường kiếm Bắt buộchợp lý ，hồi đến "nhưng phục cổng phục "
+- **Điểm bước ngoặthàm trực quanphi đúng ** — liên phụ chuyển  của xử lý cách thứchồi trước trực quantay đoạn （Ống kínhnhở  của toàn 、trả vẽ mặt khi dưới vẽ mặt  của 、Đạo cụvị trí trí  của hóa ），phi Nhân vậtcổng đầu giải 
+- **tiết mô hình：nhận →mở →đổi ** —  của tiết phát mục ：nhận →ngắn tạm mở giả tượng →đổi địa nhận 。lần mở đều là dưới 1 lần nhận  của điểm 
+- **thời gianđường thao sát ** — khuyến lý mở thời gianđường việc ：mở bài （trước cho kết quả）、Bổ sung （liên vào đi đường kiếm ）、thi thời gianđường （cùng 1 thời giankhông cùng video nhân ）。nhưng lần thời gianchuyển Bắt buộccó trực quanbiểu 
 
-| 段落类型 | 情绪方向 | 叙事手法 | 音乐建议 |
+---
+
+## 3、phútBối cảnhKhông khíthiết tính 
+
+### khuyến lý việc cần điểm 
+
+- **Không khíhàm cụ tượng từ ** — không hướng "bức "，hướng "chạy đầu  của 1 "。cụ tượng  của Không khíMô tảthể đổi tốt địa dẫn trí bối  và thanh hiệu thiết tính 
+- **kiểu đoạn thiết tính ** —
+
+| đoạn Loại | tình xúc phương  | việc tay thức  | âm Khuyến nghị |
 |---|---|---|---|
-| 日常/假象 | 平静 + 暗流 | 一切正常但有一个"不对"的细节 | 轻松日常配乐中混入一个不协和音 |
-| 发现异常 | 困惑 + 好奇 | 主角注意到某个不合理之处 | 配乐抽离，只剩环境音和一个低频嗡鸣 |
-| 调查/追踪 | 专注 + 不安 | 逐步接近真相但环境越来越压迫 | 节奏性底噪，渐强 |
-| 误导/红鲱鱼 | 笃定 + 放松 | 看似找到答案，观众以为结束了 | 短暂舒缓旋律（制造虚假安全感） |
-| 反转/揭示 | 震惊 + 细思恐极 | 一个镜头颠覆之前所有认知 | 突然静默，或刺耳单音 |
-| 真相大白 | 释然 + 余悸 | 全部线索回溯串联，真相拼图完成 | 从压迫感渐入宽广器乐，但保留不安余韵 |
+| ngày thường /giả tượng  |  +  | 1 chính thường nhưng có một "không đúng " của tiết  | ngày thường nối giữa vào một không giao  và âm  |
+| phát bất thường  |  + tốt  | chính nhân tâm ý đến mục không hợp lý  của xử  | nối ，chỉ âm  và một thấp tần  |
+| gọi tra / | riêng tâm  + không an  | bước tiếp thật nhưng nén  | tiết ， |
+| dẫn / | nối  + mở  | xem đến ，kết  | ngắn tạm （chép tạo giả an toàn ） |
+| phụ chuyển /nhở  |  +  | một Ống kính của trước tất cảbáo  | ，hoặc đơn âm  |
+| thật lớn  |  +  | toàn bộđường kiếm trả kết ，thật ghép ảnh tạo  | từ nén vào rộng thiết bị ，nhưng lưu lưu không an  |
 
-- **空间压迫是叙事工具** — 用空间的封闭程度映射悬念的紧迫感：
-  - **初期**：开阔空间，正常生活，安全感充足
-  - **中期**：空间收窄（走廊、密室、巷子），物理压迫感上升
-  - **高潮**：极度封闭（困兽之斗）或极度开阔（真相揭示后的空旷感）
-- **视觉线索必须"明放暗藏"** — 线索应在镜头中出现但不被强调：放在画面边缘、被前景部分遮挡、角色看了一眼但没反应。第一遍看忽略，回看时发现
-- **镜头意图写"隐藏什么"而非"展示什么"** — "用近景是为了不让观众看到桌上的第二只杯子"优于"用近景拍角色表情"。悬疑分镜的核心是设计"画框之外"
+- **rỗng gian nén là việc cụ ** — hàm rỗng gian  của trình độ  của ：
+  - **kỳ **：mở rỗng gian ，chính thường sinh hoạt ，an toàn sung 
+  - **giữa kỳ **：rỗng gian nhận hẹp （chạy 、mật 、），lý nén trên 
+  - **cao **：độ （ của ）hoặc độ mở （thật nhở sau  của rỗng ）
+- **trực quanđường kiếm Bắt buộc"dẫn mở "** — đường kiếm hồi ở Ống kínhgiữa ra nhưng không gọi ：mở ở vẽ mặt 、trước bối bộ phút、Nhân vậtxem 1 nhưng chưa phụ hồi 。Thứ 1 xem ，trả xem phát 
+- **Ống kínhý ảnh "sao"phi "nhở sao"** — "hàm Cận cảnh (close-up)là không để xem đến trên  của Thứ 2chỉ "với "hàm Cận cảnh (close-up)Nhân vậtbảng tình "。Phân cảnh của là thiết tính "vẽ  của ngoài "
 
 ---
 
-## 四、声音与音乐方向
+## 4、thanh âm âm phương 
 
-### 悬疑推理叙事要点
+### khuyến lý việc cần điểm 
 
-- **寂静比惊吓更恐怖** — 关键悬念时刻（发现异常、即将揭示真相）优先去掉所有声音，制造真空感。人在完全安静时本能地紧张
-- **底噪制造不安** — 低频嗡鸣、远处不明声响、若有若无的心跳声——持续的底噪让观众始终处于轻度不安状态，即使画面看起来正常
-- **音效误导** — 声音可以和镜头一样"说谎"：让观众听到门外的脚步声以为是凶手，实际是无关人物。声音的误导比视觉误导更难察觉
-- **环境音的反常** — 每场戏标注核心环境音时，考虑加入一个"不该出现"的声音元素（安静夜晚的远处金属碰撞、正常教室的异常回声），用声音暗示"有什么不对"
-- **音乐情绪模型** —
+- **tỷ đổi ** — liên （phát bất thường 、nhở thật ）trước đi bỏ tất cảthanh âm ，chép tạo thật rỗng 。ngườiở toàn an sách thể địa bức 
+- **chép tạo không an ** — thấp tần 、xử không dẫn thanh phản 、có không  của thanh ——giữ  của để ban đầu xử với độ không an trạng thái，vẽ mặt xem chính thường 
+- **Âm hiệudẫn ** — thanh âm  và Ống kính1 kiểu "hướng "：để đến cổng ngoài  của bước thanh là tay ，là không liên người。thanh âm  của dẫn tỷ trực quandẫn đổi 
+- **âm  của phụ thường ** — trường biểu tâm âm ，cộng vào một "không ra " của thanh âm （an Ban đêm của xử biệt 、chính thường  của bất thường trả thanh ），hàm thanh âm nhở "có saokhông đúng "
+- **âm tình xúc mô hình** —
 
-| 悬念阶段 | 音乐策略 | 覆盖率 |
+| đoạn  | âm  | tỷ lệ  |
 |---|---|---|
-| 日常/假象 | 正常配乐中暗藏不协和音 | 中 |
-| 疑点浮现 | 配乐减退，底噪渐起 | 低 |
-| 调查深入 | 节奏性底噪，逐渐压迫 | 中高 |
-| 反转前夕 | 完全静默（真空感） | 无 |
-| 反转瞬间 | 单一刺耳音/强打击或持续静默 | 极端 |
-| 真相回溯 | 宽广器乐，带忧伤或不安尾音 | 中 |
+| ngày thường /giả tượng  | chính thường nối giữa không giao  và âm  | giữa  |
+| điểm  | nối đăng ， | thấp  |
+| gọi tra vào  | tiết ，nén  | giữa cao  |
+| phụ chuyển trước  | toàn （thật rỗng ） | không  |
+| phụ chuyển gian  | đơn 1 âm /mở hoặc giữ  | đầu  |
+| thật trả  | rộng thiết bị ，kèm hoặc không an đuôi âm  | giữa  |
 
-- **"倒计时"听觉** — 接近真相的段落可用逐渐加速的节奏元素（钟摆、滴水、心跳渐快）暗示时间紧迫感，比配乐更能制造生理性紧张
-
----
-
-## 五、构图与景别叙事
-
-### 悬疑推理叙事要点
-
-- **三大核心构图的叙事功能** —
-  - **倾斜构图（荷兰角）** — 世界失序/不稳定/角色心理扭曲，用于关键反转或角色精神状态异常的段落
-  - **遮挡式构图** — 前景大面积遮挡主体，制造"偷窥""隐藏""不完整信息"的暗示
-  - **深焦构图** — 前景与背景同时清晰，让观众自行选择关注点——线索可能藏在不被注意的景深处
-- **中心构图的限定使用** — 中心构图在悬疑中暗示"审视/对峙/无处可逃"，留给审讯、对峙、真相揭示等高压场景
-- **画框边缘即线索区** — 悬疑构图中，画面边缘和角落是藏线索的黄金区域。观众注意力集中在中心，线索放边缘，回看时才被发现
-- **对称构图的不安感** — 过度完美的对称构图在悬疑中制造"人工感/不自然感"，暗示表面秩序下隐藏着混乱
-- **景别即信息操控** — 景别选择的核心逻辑不是"美不美"而是"让观众看到多少"：
-  - **特写** — 强制观众看到某个细节（可能是线索，也可能是误导）
-  - **中景** — 提供足够信息但遮蔽关键局部
-  - **全景** — 揭示全貌，常用于反转瞬间（原来房间里还有第三个人）
-- **大特写在悬疑中的功能** — 不是情感核弹而是"证据放大镜"：一把沾血的钥匙、一张照片上被划掉的脸、一双微微颤抖的手。每次大特写都应传递一个信息量
-- **远景的孤立感** — 远景在悬疑中强调角色的"渺小与无助"：茫茫雪原中独行的人、空旷仓库中的孤灯、迷宫般城市中的微小身影
+- **"tính "** — tiếp thật  của đoạn hàm cộng  của tiết （、、nhanh ）nhở thời gian，tỷ nối đổi thể chép tạo sinh lý bức 
 
 ---
 
-## 六、镜头运动与节奏
+## 5、cấu ảnh Cỡ cảnhviệc 
 
-### 悬疑推理叙事要点
+### khuyến lý việc cần điểm 
 
-- **窥视运镜** — 缓推 + 前景遮挡，模拟"有人在暗处注视"的视角。观众不知道"谁"在看，但能感受到被窥视的不安
-- **不安手持** — 轻微手持晃动打破稳定感，用于角色发现异常后的主观段落。晃动幅度要克制——不是纪录片抖动，而是"手不自觉微颤"的感觉
-- **突然静止** — 正在运动的镜头突然停下，制造"冻结"感。用于重大发现瞬间（角色/观众突然注意到某个不对的东西）
-- **快切与悬疑不完全兼容** — 快速剪辑适合追逐/逃亡段落，但在悬念建构段落应避免。悬念需要时间发酵，碎切会打断思考
-- **360° 环绕** — 适用于审讯/对峙场景，摄像机缓慢环绕角色，制造"被包围/无处可逃"的心理压迫
-- **运镜即信息** — 镜头运动的核心逻辑是"引导观众看什么"：缓推 = 引导关注细节；缓拉 = 揭示被遮蔽的全貌；横移 = 发现新信息；突然停止 = 信息冲击
-- **时间操控运镜** — 升格（慢动作）用于关键发现瞬间，放大角色的微反应；降格（加速）用于时间流逝的焦虑感。但悬疑中升格使用应极其克制（全片 1-2 次）
+- **3lớn cấu ảnh  của việc công thể ** —
+  - **cấu ảnh （nhân ）** — giới thất xếp /không nối /Nhân vậtlý ，hàm với liên phụ chuyển hoặc Nhân vậttrạng tháibất thường  của đoạn 
+  - **thức cấu ảnh ** — trước bối lớn mặt chính thể ，chép tạo """""không chỉnh thông tin" của nhở 
+  - **cấu ảnh ** — trước bối bối cùng sạch ，để tự thi chọn lựa liên tâm điểm ——đường kiếm thể ở không tâm ý  của bối xử 
+- **giữa cấu ảnh  của hạn nối hàm ** — giữa cấu ảnh ở giữa nhở "video /đúng /không xử "，lưu cho 、đúng 、thật nhở cao nén Bối cảnh
+- **vẽ đường kiếm khu ** — cấu ảnh giữa ，vẽ mặt  và nhân là đường kiếm  của khu vực 。tâm ý lực tập giữa ở giữa ，đường kiếm mở ，trả xem phát 
+- **đúng cấu ảnh  của không an ** — độ đẹp  của đúng cấu ảnh ở giữa chép tạo "người/không tự "，nhở bảng mặt xếp dưới đang 
+- **Cỡ cảnhthông tinthao sát ** — Cỡ cảnhchọn lựa  của logickhông là "đẹp không đẹp "là "để xem đến nhiều ít "：
+  - **Đặc tả (close-up)** — chép xem đến mục tiết （thể là đường kiếm ，cũng thể là dẫn ）
+  - **Trung cảnh (medium shot)** — nhắc nhà thông tinnhưng liên cục bộ 
+  - **Toàn cảnh (wide shot)** — nhở toàn ，thường hàm với phụ chuyển gian （gốc gian còn có Thứ 3mục người）
+- **lớn Đặc tả (close-up)ở giữa  của công thể ** — không là tình là "chứng liệu mở lớn quay "：1 đem  của 、1 bức trên bỏ  của 、1 đôi  của tay 。lần lớn Đặc tả (close-up)đều hồi truyền một thông tinlượng 
+- **Viễn cảnh (extreme wide shot) của lập ** — Viễn cảnh (extreme wide shot)ở giữa gọi Nhân vật của "nhỏ không giúp "：gốc giữa thi  của người、rỗng kho giữa  của 、giữa  của nhỏ sáng 
+
+---
+
+## 6、Ống kínhvận động tiết 
+
+### khuyến lý việc cần điểm 
+
+- **video Góc quay** — khuyến  + trước bối ，mô "có ngườiở xử tâm video " của video nhân 。không báo đạo ""ở xem ，nhưng thể đến video  của không an 
+- **không an tay giữ ** — tay giữ động mở nối ，hàm với Nhân vậtphát bất thường sau  của chính đoạn 。động độ cần chép ——không là lục động ，là "tay không tự " của 
+- **Tĩnh (static)** — đang vận động  của Ống kínhdưới ，chép tạo "kết "。hàm với trùng lớn phát gian （Nhân vật/tâm ý đến mục không đúng  của ）
+- **nhanh không toàn dung ** — nhanh sửa hợp /đoạn ，nhưng ở tạo cấu đoạn hồi 。cần cần thời gianphát ，sẽ mở 
+- **360° Quay vòng (orbiting / surround)** — hàm với /đúng Bối cảnh，máy chậm Quay vòng (orbiting / surround)Nhân vật，chép tạo "gói khí /không xử " của lý nén 
+- **Góc quaythông tin** — Ống kínhvận động  của logiclà "dẫn xem sao"：khuyến  = dẫn liên tâm tiết ； = nhở  của toàn ； = phát mới thông tin； = thông tin
+- **thời gianthao sát Góc quay** — khung （chậm động tác vụ ）hàm với liên phát gian ，mở lớn Nhân vật của phụ hồi ；khung （cộng ）hàm với thời gian của 。nhưng giữa khung hàm hồi chép （toàn  1-2 lần ）

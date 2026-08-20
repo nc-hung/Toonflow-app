@@ -18,6 +18,6 @@ export default router.post(
     await u.db("o_image").where({ id: id }).delete();
     const assetsData = await u.db("o_image").where("id", id);
     await Promise.all(assetsData.map((i) => i.filePath && u.oss.deleteFile(i.filePath)));
-    res.status(200).send(success({ message: "资产图片删除成功" }));
+    res.status(200).send(success({ message: "Xóa hình ảnh tài nguyên thành công" }));
   },
 );

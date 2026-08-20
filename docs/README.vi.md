@@ -15,12 +15,12 @@
 </p>
 
 <p align="center">
-  <a href="../README.md">简体中文</a> | 
-  <a href="./README.zhtw.md">繁體中文</a> | 
+  <a href="../README.md">thể giữa tài </a> | 
+  <a href="./README.zhtw.md">giữa tài </a> | 
   <a href="./README.en.md">English</a> | 
   <a href="./README.th.md">ไทย</a> | 
   <strong>Tiếng Việt</strong> | 
-  <a href="./README.ja.md">日本語</a> | 
+  <a href="./README.ja.md">ngày sách </a> | 
   <a href="./README.ru.md">Русский</a>
 </p>
 
@@ -106,12 +106,12 @@ Toonflow hỗ trợ giao diện các ngôn ngữ sau:
 
 | Ngôn ngữ       | Ngôn ngữ              |
 | ---------- | --------------------- |
-| 简体中文   | Tiếng Trung (Giản thể) |
-| 繁體中文   | Tiếng Trung (Phồn thể) |
+| thể giữa tài    | Tiếng Trung (Giản thể) |
+| giữa tài    | Tiếng Trung (Phồn thể) |
 | English    | Tiếng Anh               |
 | ไทย        | Tiếng Thái              |
 | Tiếng Việt | Tiếng Việt            |
-| 日本語     | Tiếng Nhật              |
+| ngày sách      | Tiếng Nhật              |
 | Русский    | Tiếng Nga              |
 
 > 💡 Đang thích ứng thêm nhiều ngôn ngữ, hoan nghênh đóng góp bản dịch!
@@ -681,7 +681,7 @@ Hoặc nhấp vào liên kết mời: [https://discord.gg/HEjKmpNpAZ](https://di
 
 # 💌 Liên hệ với chúng tôi
 
-📧 Email: [ltlctools@outlook.com](mailto:ltlctools@outlook.com?subject=Toonflow咨询)
+📧 Email: [ltlctools@outlook.com](mailto:ltlctools@outlook.com?subject=Toonflowvấn )
 
 ---
 
@@ -779,7 +779,7 @@ Cảm ơn các tổ chức/đơn vị/cá nhân sau đã cung cấp hỗ trợ c
     </tr>
     <tr>
       <td align="center"><img src="./sponsored/ai-galaxy.png" alt="Zhixing Cloud Logo" width="48"></td>
-      <td align="center"><b>Zhixing Cloud (智星云)</b></td>
+      <td align="center"><b>Zhixing Cloud ()</b></td>
       <td align="center">💻 Hỗ trợ tính toán <br/> 🖼️ Hỗ trợ image</td>
       <td>Thương hiệu dịch vụ tính toán chuyên nghiệp nổi tiếng tại Trung Quốc, cung cấp năng lực tính toán giá rẻ và ổn định. Phục vụ phòng thí nghiệm của hơn một nghìn trường đại học hàng đầu (Thanh Hoa, Bắc Kinh, Phục Đán, Chiết Giang...), Viện Hàn lâm Khoa học Trung Quốc và hơn 5.000 doanh nghiệp AI.</td>
       <td align="center"><a href="https://www.ai-galaxy.com">Trang chủ</a></td>

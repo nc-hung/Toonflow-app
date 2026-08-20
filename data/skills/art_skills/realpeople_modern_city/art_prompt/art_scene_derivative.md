@@ -1,189 +1,189 @@
 ---
 name: liveaction_urban_scene_derivative
-description: 真人都市场景衍生资产生成 · 约束手册
+description: thật ngườiđều Bối cảnhsinh Tài nguyêntạo · sổ tay
 metaData: liveaction_urban_art_skills
 ---
 
-# 真人都市场景衍生资产生成 · 约束手册
+# thật ngườiđều Bối cảnhsinh Tài nguyêntạo · sổ tay
 
 ---
 
-## 一、衍生原则
+## 1 、sinh gốc 
 
-> 真人都市的场景衍生不是"给渲染场景切机位"，而是"同一个真实场所，站在不同位置、在不同时间、不同天气下再次被摄影机拍下"。
+> thật ngườiđều  của Bối cảnhsinh không là "cho Bối cảnhmáy vị trí "，là "cùng một thật trường nơi ，trạm ở không cùng vị trí trí 、ở không cùng thời gian、không cùng ngàydưới lần sáng máy dưới "。
 
-1. **空间锚定** — 同一场景的核心空间结构在所有变体中必须可辨认。换了角度、变了光线、变了天气——但一看就知道"还是那个地方"
-2. **焦段叙事** — 同一场景用不同焦段拍，说出不同的事。广角说"这个人和城市的孤独关系"，中焦说"看看这个角落"，长焦说"远处有什么"
-3. **时段即情绪** — 晨光的办公室和深夜的办公室是同一个空间、两种情绪。时段变了，光变了，场景的叙事功能也变了——不是换个天空贴图那么简单
-4. **天气即故事** — 同一条街，晴天是日常，雨天是忧郁，雪天是浪漫或孤独。天气是场景的情绪滤镜，但不是滤镜——是真实的光学和环境变化
-5. **单视图摄影** — 每一个衍生变体都是一张独立的单张全景照片。与原场景设定图同空间，但可以是不同焦段、不同时段、不同天气
+1. **rỗng gian nối ** — cùng 1 Bối cảnh của rỗng gian kết cấu ở tất cảthể giữa Bắt buộc。đổi nhân độ 、ánh đường 、ngày——nhưng 1 xem thì báo đạo "còn là mục địa phương "
+2. **đoạn việc ** — cùng 1 Bối cảnhhàm không cùng đoạn ，hướng ra không cùng  của việc 。nhân hướng "nàymục người và  của liên dòng "，giữa hướng "xem xem nàymục nhân "，dài hướng "xử có sao"
+3. **đoạn tình xúc ** — ánh  của  và  của là cùng một rỗng gian 、2loại tình xúc 。đoạn ，ánh ，Bối cảnh của việc công thể cũng ——không là đổi mục ngàyrỗng ảnh saođơn 
+4. **ngàyviệc ** — cùng 1 mục ，ngàylà ngày thường ，ngàylà ，ngàylà hoặc 。ngàylà Bối cảnh của tình xúc lọc quay ，nhưng không là lọc quay ——là thật  của ánh  và hóa 
+5. **đơn video ảnh sáng ** — một sinh thể đều là 1 bức lập  của đơn bức Toàn cảnh (wide shot)。gốc Bối cảnhthiết nối ảnh cùng rỗng gian ，nhưng là không cùng đoạn 、không cùng đoạn 、không cùng ngày
 
 ---
 
-## 二、焦段与构图变体——同一个空间的不同目光
+## 2、đoạn cấu ảnh thể ——cùng một rỗng gian  của không cùng mục ánh 
 
-### 构图变体定义
+### cấu ảnh thể nối nghĩa 
 
-| 变体 | 焦段 | 范围 | 叙事功能 | 提示词 |
+| thể  | đoạn  | khí  | việc công thể  | Prompt |
 |---|---|---|---|---|
-| 广角全貌 | 24-28mm | 场景全貌+周边城市环境 | 建立空间定位、呈现空间与城市的关系、人物如在此处会显得渺小 | 24mm广角全貌、完整空间+环境关系、全景深f/8-f/11 |
-| 标准全景 | 35mm | 场景完整呈现 | 人眼等价视角、客观记录这个场所、最"诚实"的构图 | 35mm标准全景、人眼视角、场所的完整面貌 |
-| 中景聚焦 | 50mm | 场景核心功能区/最具辨识度的局部 | 聚焦空间的"心脏"——办公室的工位区、咖啡厅的吧台、街道的交叉口 | 50mm中景聚焦、空间的核心叙事区域 |
-| 近景细节 | 85mm | 空间中的一处局部——一扇窗、一盏灯、一张桌子 | 将视线引向空间的某个叙事细节——那杯还没喝完的咖啡、那张扔在沙发上的毯子 | 85mm近景、空间的叙事细节、浅景深突出主体 |
-| 同角度不同高度 | — | 视角高度变化 | 俯拍——命运的注视；平视——人的视角；仰拍——压迫或崇高 | 低角度仰拍/高角度俯拍、保持原空间结构 |
+| nhân toàn  | 24-28mm | Bối cảnhtoàn + | tạo lập rỗng gian nối vị trí 、rỗng gian  của liên dòng 、ngườinhư ở xử sẽ được nhỏ  | 24mmnhân toàn 、chỉnh rỗng gian +liên dòng 、Toàn cảnh (wide shot)f/8-f/11 |
+| biểu Toàn cảnh (wide shot) | 35mm | Bối cảnhchỉnh  | ngườivideo nhân 、lục nàymục trường nơi 、nhất "" của cấu ảnh  | 35mmbiểu Toàn cảnh (wide shot)、ngườivideo nhân 、trường nơi  của chỉnh mặt  |
+| Trung cảnh (medium shot) | 50mm | Bối cảnhcông thể khu /nhất cụ trưng độ  của cục bộ  | rỗng gian  của ""—— của vị trí khu 、 của đài 、đạo  của tác vụ cổng  | 50mmTrung cảnh (medium shot)、rỗng gian  của việc khu vực  |
+| Cận cảnh (close-up)tiết  | 85mm | rỗng gian giữa  của 1 xử cục bộ ——1 、1 、1 bức  | video đường rỗng gian  của mục việc tiết ——còn chưa  của 、bức ở phát trên  của  | 85mmCận cảnh (close-up)、rỗng gian  của việc tiết 、bối ra chính thể  |
+| cùng nhân độ không cùng cao độ  | — | video nhân cao độ hóa  | ——vận  của tâm video ；video ——người của video nhân ；——nén hoặc cao  | thấp nhân độ /cao nhân độ 、lưu giữ gốc rỗng gian kết cấu  |
 
-### 焦段衍生规则
+### đoạn sinh 
 
-| 从广角全貌衍生 | 保持不变 | 变化项 |
+| từ nhân toàn sinh  | lưu giữ không  | hóa  |
 |---|---|---|
-| 广角→标准全景 | 空间结构、光源逻辑、时段天气、使用痕迹 | 焦段收窄至35mm、画面范围缩小但不改变空间、透视更接近人眼 |
-| 标准全景→中景聚焦 | 材质质感、光线方向、色调、使用痕迹 | 焦段收窄至50mm、裁切聚焦核心区域、景深适度变浅 |
-| 中景→近景细节 | 材质纹理、道具位置、光线方向 | 焦段85mm、极浅景深、背景自然虚化、突出空间中的叙事细节 |
+| nhân →biểu Toàn cảnh (wide shot) | rỗng gian kết cấu 、ánh nguồn logic、đoạn ngày、hàm  | đoạn nhận hẹp đến 35mm、vẽ mặt khí nhỏ nhỏ nhưng không sửa rỗng gian 、video đổi tiếp người |
+| biểu Toàn cảnh (wide shot)→Trung cảnh (medium shot) | 、ánh đường phương 、vật gọi 、hàm  | đoạn nhận hẹp đến 50mm、khu vực 、bối độ  |
+| Trung cảnh (medium shot)→Cận cảnh (close-up)tiết  | lý 、Đạo cụvị trí trí 、ánh đường phương  | đoạn 85mm、bối 、bối tự hóa 、ra rỗng gian giữa  của việc tiết  |
 
 ---
 
-## 三、时段变体——时间给空间的妆容
+## 3、đoạn thể ——thời giancho rỗng gian  của dung 
 
-> 同一个空间，不同时段的光让它变成完全不同的场所。以下是真实光源在关键时段的行为。
+> cùng một rỗng gian ，không cùng đoạn  của ánh để nó tạo toàn không cùng  của trường nơi 。dưới là thật ánh nguồn ở liên đoạn  của thi 。
 
-| 时段 | 光的配方 | 空间的情绪变化 | 提示词 |
+| đoạn  | ánh  của nối phương  | rỗng gian  của tình xúc hóa  | Prompt |
 |---|---|---|---|
-| 清晨 | 低角度暖白晨光、空气中有薄雾漫射、空间微凉、未完全苏醒 | 静谧、蓄势、尚未被日间秩序填满——"一切还没开始" | 清晨场景、低角度晨光斜入、空间微冷未暖、尚未有人的安静 |
-| 上午 | 日光升高、冷白清澈、阴影锐利、材质清晰 | 秩序的建立——日间场景的"默认"状态 | 上午日光、空间明亮清晰、日常运转中的场所 |
-| 正午 | 顶光为主、阴影短而浓、若室外则材质反光强 | 暂停感——午休的空隙、日复一日的顶点 | 正午顶光、空间进入日间的暂停、午间的安静或短暂松弛 |
-| 午后 | 日光偏西、暖调渐强、斜光穿过窗或树形成长阴影和光斑 | 慵懒、时间变慢、午后的一切都柔和——"一天中最长的那段" | 午后斜光、长阴影穿过空间、光斑散落、慵懒温暖的午后 |
-| 金色时刻 | 极暖低角度金橙光、长阴影到极致、一切表面镀金 | 珍惜——一天中最珍贵的光、转瞬即逝的温暖 | 金色时刻、暖金斜光溢满空间、所有表面染上金边、转瞬即逝的温暖 |
-| 蓝调时刻 | 天空深蓝紫、自然光极暗极冷、人工光源刚刚亮起、冷暖共存 | 过渡——白天已尽、夜晚尚未完全接管、诗意的最短时刻 | 蓝调时刻、天空深蓝紫透过门窗、人工光源初亮、冷暖光线共存 |
-| 深夜 | 仅靠人工光源——一盏台灯、窗外的街灯、屏幕的冷光 | 孤独或私密——世界安静了、空间属于一个人（或属于无人） | 深夜场景、仅台灯/窗外街灯的单一暖光源、大部分区域沉入暗部、极静谧 |
+| Sáng sớm | thấp nhân độ ánh 、rỗng giữa có mỏng 、rỗng gian 、chưa toàn  | 、、chưa ngày gian xếp đầy ——"1 còn chưa mở ban đầu " | Sáng sớmBối cảnh、thấp nhân độ ánh vào 、rỗng gian chưa 、chưa có người của an  |
+| trên  | ngày ánh cao 、sạch 、sáng 、sạch  | xếp  của tạo lập ——ngày gian Bối cảnh của "Mặc định"trạng thái | trên ngày ánh 、rỗng gian dẫn sạch 、ngày thường vận chuyển giữa  của trường nơi  |
+| chính  | ánh chính 、sáng ngắn 、ngoài phụ ánh  | tạm —— của rỗng 、ngày lời 1 ngày  của điểm  | chính ánh 、rỗng gian tiến vào ngày gian  của tạm 、gian  của an hoặc ngắn tạm  |
+| sau  | ngày ánh 、gọi 、ánh hoặc dạng tạo dài sáng  và ánh  | 、thời gianchậm 、sau  của 1 đều  và ——"1 ngàygiữa nhất dài  của đoạn " | sau ánh 、dài sáng rỗng gian 、ánh 、 của sau  |
+| vật  | thấp nhân độ ánh 、dài sáng đến 、1 bảng mặt  | ——1 ngàygiữa nhất  của ánh 、chuyển  của  | vật 、ánh đầy rỗng gian 、tất cảbảng mặt trên 、chuyển  của  |
+| gọi  | ngàyrỗng 、tự ánh 、ngườiánh nguồn 、lưu  | ——Ban ngàyđã 、Ban đêmchưa toàn tiếp 、ý  của nhất ngắn  | gọi 、ngàyrỗng cổng 、ngườiánh nguồn 、ánh đường lưu  |
+|  | chỉ ngườiánh nguồn ——1 đài 、ngoài  của 、 của ánh  | hoặc mật ——giới an 、rỗng gian biệt với một người（hoặc biệt với không người） | Bối cảnh、chỉ đài /ngoài  của đơn 1 ánh nguồn 、lớn bộ phútkhu vực vào bộ 、 |
 
-### 时段衍生规则
+### đoạn sinh 
 
-| 从基准时段衍生 | 保持不变 | 变化项 |
+| từ cơ sở đoạn sinh  | lưu giữ không  | hóa  |
 |---|---|---|
-| 日间→黄昏（金色时刻） | 空间结构、家具/物品位置、建筑外观 | 光源色温暖化至2800-3500K、阴影拉长、亮面镀金调、人工光源逐步点亮 |
-| 日间→夜间 | 空间结构、家具/物品位置、建筑外观 | 整体曝光降低、人工光源全亮、霓虹/街灯/室内灯成为主光源、窗外从白昼变夜景 |
-| 室内日间→室内深夜 | 空间结构、陈设位置 | 仅留极少光源（一盏台灯/窗外路灯）、大范围沉入暗部、私密感或孤独感 |
+| ngày gian →Hoàng hôn（vật ） | rỗng gian kết cấu 、cụ /vị trí trí 、tạo ngoài  | ánh nguồn vật hóa đến 2800-3500K、sáng dài 、mặt gọi 、ngườiánh nguồn bước điểm  |
+| ngày gian →gian  | rỗng gian kết cấu 、cụ /vị trí trí 、tạo ngoài  | chỉnh thể ánh thấp 、ngườiánh nguồn toàn 、//trong tạo chính ánh nguồn 、ngoài từ bối  |
+| trong ngày gian →trong  | rỗng gian kết cấu 、thiết vị trí trí  | chỉ lưu ít ánh nguồn （1 đài /ngoài đường ）、lớn khí vào bộ 、mật hoặc  |
 
 ---
 
-## 四、天候变体——天气给空间的情绪
+## 4、ngàythể ——ngàycho rỗng gian  của tình xúc 
 
-> 同一条街、同一扇窗，不同天气让它变成不同的故事。
+> cùng 1 mục 、cùng 1 ，không cùng ngàyđể nó tạo không cùng  của việc 。
 
-| 天候 | 空间变化 | 情绪 | 提示词 |
+| ngày | rỗng gian hóa  | tình xúc  | Prompt |
 |---|---|---|---|
-| 晴天 | 光影锐利、材质清晰、色彩饱和 | 日常、明亮、开放 | 晴天场景、阳光充沛、光影分明、材质质感清晰 |
-| 多云/阴 | 柔光无硬影、整体偏冷灰、光线均匀 | 克制、平静、或是压抑的前兆 | 阴天柔光、无硬阴影、光线均匀漫射、整体偏灰冷调 |
-| 薄雾 | 远景自然虚化、近景清晰、空气有可见的湿度 | 朦胧、不确定、诗意 | 薄雾中的场景、远景逐渐消隐于雾中、近景清晰、空气中有可见的湿度 |
-| 小雨 | 窗玻璃有雨痕、湿地面有反光、室外金属/树叶挂水珠 | 忧郁、沉思、浪漫、或是故事的转折 | 细雨中的场景、窗玻璃雨痕、湿地面自然反光、空气清冷湿润 |
-| 大雨 | 雨幕浓厚、室外可见度降低、地面水洼和溅射、雨声的视觉化 | 隔绝——室内是避难所、室外是无处可逃 | 大雨场景、窗外雨幕厚重、地面水洼溅射、室内与室外的隔绝感 |
-| 雨后 | 万物湿润、地面仍有水洼、空气清透、反光清晰、云层间可能透出日光 | 新生、清透、情绪的洗涤 | 雨后场景、湿润的空气、地面水洼反射天空、万物被洗过后的清透 |
-| 小雪 | 雪花飘落、细微积白、暖光透过雪幕、空气中飘雪的可见轨迹 | 静谧、温柔、浪漫 | 小雪场景、稀疏雪花飘落、地面薄白、暖光透过飘雪、宁静温柔 |
-| 大雪 | 积雪覆盖表面、白色主导、声音被吸收的视觉化 | 孤寂或浪漫——世界被简化成黑白两色 | 大雪场景、积雪覆盖地面和建筑边缘、世界被白色简化、孤寂或浪漫 |
+| ngày | Ánh sáng、sạch 、vật  và  | ngày thường 、dẫn 、mở mở  | ngàyBối cảnh、ánh sung 、Ánh sángphútdẫn 、sạch  |
+| nhiều / | ánh không sáng 、chỉnh thể 、ánh đường  | chép 、、hoặc là nén  của trước  | ngàyánh 、không sáng 、ánh đường 、chỉnh thể gọi  |
+| mỏng  | Viễn cảnh (extreme wide shot)tự hóa 、Cận cảnh (close-up)sạch 、rỗng có thấy  của độ  | 、không nối 、ý  | mỏng giữa  của Bối cảnh、Viễn cảnh (extreme wide shot)hủy với giữa 、Cận cảnh (close-up)sạch 、rỗng giữa có thấy  của độ  |
+| nhỏ  | có 、địa mặt có phụ ánh 、ngoài biệt / | 、、、hoặc là việc  của chuyển  | giữa  của Bối cảnh、、địa mặt tự phụ ánh 、rỗng sạch  |
+| lớn  | dày 、ngoài thấy độ thấp 、địa mặt  và 、thanh  của trực quanhóa  | cách ——trong là nơi 、ngoài là không xử  | lớn Bối cảnh、ngoài dày trùng 、địa mặt 、trong ngoài  của cách  |
+| sau  | vạn、địa mặt có 、rỗng sạch 、phụ ánh sạch 、tầng gian thể ra ngày ánh  | mới sinh 、sạch 、tình xúc  của  | sau Bối cảnh、 của rỗng 、địa mặt phụ ngàyrỗng 、vạnsau  của sạch  |
+| nhỏ  | 、、ánh 、rỗng giữa  của thấy  | 、、 | nhỏ Bối cảnh、、địa mặt mỏng 、ánh 、 |
+| lớn  | bảng mặt 、vật chính dẫn 、thanh âm nhận  của trực quanhóa  | hoặc ——giới hóa tạo 2vật  | lớn Bối cảnh、địa mặt  và tạo 、giới vật hóa 、hoặc  |
 
-### 天候衍生规则
+### ngàysinh 
 
-| 从晴天衍生 | 保持不变 | 变化项 |
+| từ ngàysinh  | lưu giữ không  | hóa  |
 |---|---|---|
-| 晴→薄雾 | 空间结构、建筑外观、物品位置 | 增加雾气分层、远景虚化、饱和度降低、光源产生可见光束（真实丁达尔效应、非特效） |
-| 晴→小雨 | 空间结构、建筑外观、物品位置 | 室外增加雨丝、玻璃添加真实雨痕、地面湿滑反光、色调偏冷、植被挂水珠 |
-| 晴→雪 | 空间结构、建筑外观、物品位置 | 增加飘雪/积雪、色调偏冷白、暖光源的对比度提升、树枝/窗台积雪 |
-| 室内晴天→室内雨天 | 空间结构、陈设位置 | 窗外变雨景、窗玻璃有雨痕、室内光变暗偏冷、情绪从明亮变忧郁 |
+| →mỏng  | rỗng gian kết cấu 、tạo ngoài 、vị trí trí  | cộng phúttầng 、Viễn cảnh (extreme wide shot)hóa 、 và độ thấp 、ánh nguồn nguyên sinh thấy ánh （thật nhĩ hiệu hồi 、phi hiệu ） |
+| →nhỏ  | rỗng gian kết cấu 、tạo ngoài 、vị trí trí  | ngoài cộng 、thêmthật 、địa mặt phụ ánh 、vật gọi 、 |
+| → | rỗng gian kết cấu 、tạo ngoài 、vị trí trí  | cộng /、vật gọi 、ánh nguồn  của đúng tỷ độ nhắc 、/đài  |
+| trong ngày→trong ngày | rỗng gian kết cấu 、thiết vị trí trí  | ngoài bối 、có 、trong ánh 、tình xúc từ dẫn  |
 
 ---
 
-## 五、单视图摄影规范——所有衍生变体共享
+## 5、đơn video ảnh sáng ——tất cảsinh thể 
 
-> 每一个衍生变体都是一张独立的**单张**全景照片。不是2×2四视图、不是多角度拼贴。
+> một sinh thể đều là 1 bức lập  của **đơn bức **Toàn cảnh (wide shot)。không là 2×24video ảnh 、không là nhiều nhân độ ghép 。
 
-| 项目 | 摄影要求 |
+| dự án | sáng Yêu cầu |
 |---|---|
-| 空间结构 | 与原场景设定图**同一空间**。建筑结构/家具陈设/物品位置原则上不变——变的是焦段/时段/天气 |
-| 焦段 | 根据变体类型（广角全貌→近景细节），使用24mm/35mm/50mm/85mm |
-| 景深 | 广角全貌→全景深f/8-f/11；中景→适度浅景深f/4-f/5.6；近景细节→浅景深f/2.8 |
-| 光源 | 来源于真实的光——时段对应太阳高度和色温、天气对应大气散射和遮挡、室内对应窗光和人工灯 |
-| 人物 | **所有变体严禁出现任何人物、人影、人体轮廓** |
-| 画面比例 | 16:9或3:2宽幅，与原场景设定图一致 |
-| 色彩 | 由实际光源色温驱动，不套滤镜 |
+| rỗng gian kết cấu  | gốc Bối cảnhthiết nối ảnh **cùng 1 rỗng gian **。tạo kết cấu /cụ thiết /vị trí trí gốc trên không —— của là đoạn /đoạn /ngày |
+| đoạn  | dựa theothể Loại（nhân toàn →Cận cảnh (close-up)tiết ），hàm 24mm/35mm/50mm/85mm |
+| bối  | nhân toàn →Toàn cảnh (wide shot)f/8-f/11；Trung cảnh (medium shot)→độ bối f/4-f/5.6；Cận cảnh (close-up)tiết →bối f/2.8 |
+| ánh nguồn  | nguồn với thật  của ánh ——đoạn đúng hồi cao độ  và vật 、ngàyđúng hồi lớn  và 、trong đúng hồi ánh  và người |
+| người | **tất cảthể ra người、ngườisáng 、ngườithể ** |
+| vẽ mặt Tỷ lệ | 16:9hoặc 3:2rộng ，gốc Bối cảnhthiết nối ảnh 1  |
+| vật  | do ánh nguồn vật động ，không lọc quay  |
 
 ---
 
-## 六、提示词模板
+## 6、Promptmô 
 
-### 焦段变体
+### đoạn thể 
 
-真人都市场景衍生摄影，基于原场景{场景名}的同一空间，单张静物空间摄影，非3D渲染非CG，
-{广角全貌/标准全景/中景聚焦/近景细节}，{24mm/35mm/50mm/85mm}，
-保持原场景空间结构、陈设位置、光源逻辑不变，
-{焦段描述}，{景深描述}，{构图聚焦区域描述}，
-{时段+天气}，{光源行为描述}，
-空间无人——严禁出现任何人物人影人体轮廓，
-真实摄影画质、35mm全画幅摄影质感、单张空间摄影
+thật ngườiđều Bối cảnhsinh sáng ，cơ sở với gốc Bối cảnh{Bối cảnhtên } của cùng 1 rỗng gian ，đơn bức rỗng gian sáng ，phi 3Dphi CG，
+{nhân toàn /biểu Toàn cảnh (wide shot)/Trung cảnh (medium shot)/Cận cảnh (close-up)tiết }，{24mm/35mm/50mm/85mm}，
+lưu giữ gốc Bối cảnhrỗng gian kết cấu 、thiết vị trí trí 、ánh nguồn logickhông ，
+{đoạn Mô tả}，{bối Mô tả}，{cấu ảnh khu vực Mô tả}，
+{đoạn +ngày}，{ánh nguồn thi Mô tả}，
+rỗng gian không người——ra ngườingườisáng ngườithể ，
+thật sáng vẽ 、35mmtoàn vẽ sáng 、đơn bức rỗng gian sáng 
 
-### 时段变体
+### đoạn thể 
 
-真人都市场景衍生摄影，基于原场景{场景名}的同一空间，
-同一机位、同一焦段、仅时段变化——从原时段变为{新时段}，
-保持空间结构、物品位置完全不变，
-{新时段的光：光的方向、色温、强度}，
-{新时段的空间情绪：静谧/温暖/孤独/诗意}，
-{人工光源的开关和亮度变化}，
-空间无人——严禁出现任何人物人影人体轮廓，
-真实摄影画质、单张空间摄影
+thật ngườiđều Bối cảnhsinh sáng ，cơ sở với gốc Bối cảnh{Bối cảnhtên } của cùng 1 rỗng gian ，
+cùng 1 máy vị trí 、cùng 1 đoạn 、chỉ đoạn hóa ——từ gốc đoạn {mới đoạn }，
+lưu giữ rỗng gian kết cấu 、vị trí trí toàn không ，
+{mới đoạn  của ánh ：ánh  của phương 、vật 、độ }，
+{mới đoạn  của rỗng gian tình xúc ：///ý }，
+{ngườiánh nguồn  của mở liên  và độ hóa }，
+rỗng gian không người——ra ngườingườisáng ngườithể ，
+thật sáng vẽ 、đơn bức rỗng gian sáng 
 
-### 天候变体
+### ngàythể 
 
-真人都市场景衍生摄影，基于原场景{场景名}的同一空间，
-同一机位、同一焦段、同一时段——仅天气变化为{新天候}，
-保持空间结构、物品位置完全不变，
-{新天候的视觉特征：雨丝/雪/雾/湿地面/雨痕}，
-{材质表面因天候产生的真实变化：金属水膜/玻璃雨痕/地面积水反光/植被挂水/积雪}，
-{天候带来的情绪变化}，
-空间无人——严禁出现任何人物人影人体轮廓，
-真实摄影画质、单张空间摄影
+thật ngườiđều Bối cảnhsinh sáng ，cơ sở với gốc Bối cảnh{Bối cảnhtên } của cùng 1 rỗng gian ，
+cùng 1 máy vị trí 、cùng 1 đoạn 、cùng 1 đoạn ——chỉ ngàyhóa {mới ngày}，
+lưu giữ rỗng gian kết cấu 、vị trí trí toàn không ，
+{mới ngày của trực quan：///địa mặt /}，
+{bảng mặt ngàynguyên sinh  của thật hóa ：biệt //địa mặt phụ ánh //}，
+{ngàykèm  của tình xúc hóa }，
+rỗng gian không người——ra ngườingườisáng ngườithể ，
+thật sáng vẽ 、đơn bức rỗng gian sáng 
 
-> **使用说明**：焦段变体、时段变体、天候变体可单独使用也可组合使用（如"午后+小雨+中景"）。未涉及的维度在该条提示词中省略对应字段。
+> **hàm Giải thích**：đoạn thể 、đoạn thể 、ngàythể đơn hàm cũng nhóm hợp hàm （như "sau +nhỏ +Trung cảnh (medium shot)"）。chưa  của độ ở mục Promptgiữa đúng hồi chữ đoạn 。
 
-### 负面规避提示词
+### mặt Prompt
 
 3D render, 3D modeling, CGI, Unreal Engine, Blender, PBR material, volumetric lighting, ambient occlusion, ray tracing, game engine, cartoon, anime, 2D, illustration, hand drawn, painting,
 four views, grid layout, 2x2, turnaround, orthographic view, blueprint, multiple angles,
 showroom, brand new, pristine, perfect, unrealistically clean, sterile, empty without reason,
 people, person, human figure, silhouette, shadow figure, body, crowd,
 dramatic sky replacement, unrealistic sky, composite, fake weather, Photoshop effect, filter effect,
-古风, 古代, 仙侠, 武侠, 民国, 赛博朋克, 科幻, 西方奇幻, 中世纪, 异世界, 非中国城市,
+phong , , , , dân , , , phương , giữa , bất giới , phi giữa ,
 text, watermark, signature, logo, border, frame, UI element, HUD
 
 ---
 
-## 七、约束规则
+## 7、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 场景空间结构在所有衍生变体中必须保持可辨认——同一个地方，不能变成另一个地方 |
-| R2 | 时段变体的光源必须符合真实物理——太阳高度角决定色温和阴影长度、人工光源按逻辑开关 |
-| R3 | 天候变体必须同步适配材质表面的真实物理变化——玻璃雨痕/地面积水反光/植被挂水/积雪 |
-| R4 | 必须是**单张**全景摄影——单视图、非2×2四视图、非多角度、非turnaround |
-| R5 | 必须声明光源来源——光从哪儿来、色温多少、什么光源——不能是无来源的全局照明 |
-| R6 | 必须保持原空间的使用痕迹——时段和天候衍变不能"洗掉"空间的磨损和岁月感 |
-| R7 | **所有变体严禁出现任何人物、人影、人体轮廓** |
-| R8 | 必须声明"真人实拍摄影 + 非3D渲染非CG"核心锚定 |
+| R1 | Bối cảnhrỗng gian kết cấu ở tất cảsinh thể giữa Bắt buộclưu giữ ——cùng một địa phương ，không thể tạo một địa phương  |
+| R2 | đoạn thể  của ánh nguồn Bắt buộchợp thật lý ——cao độ nhân nối vật  và sáng dài độ 、ngườiánh nguồn theo logicmở liên  |
+| R3 | ngàythể Bắt buộccùng bước nối bảng mặt  của thật lý hóa ——/địa mặt phụ ánh // |
+| R4 | Bắt buộclà **đơn bức **Toàn cảnh (wide shot)sáng ——đơn video ảnh 、phi 2×24video ảnh 、phi nhiều nhân độ 、phi turnaround |
+| R5 | Bắt buộcthanh dẫn ánh nguồn nguồn ——ánh từ nhi 、vật nhiều ít 、saoánh nguồn ——không thể là không nguồn  của toàn cục dẫn  |
+| R6 | Bắt buộclưu giữ gốc rỗng gian  của hàm ——đoạn  và ngàykhông thể "bỏ "rỗng gian  của  và tháng |
+| R7 | **tất cảthể ra người、ngườisáng 、ngườithể ** |
+| R8 | Bắt buộcthanh dẫn "Người Thật Thực Tếsáng  + phi 3Dphi CG"nối  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 严禁空间结构发生不可辨认的改变——换了时段/天气/焦段不能"换了地方" |
-| X2 | 严禁「3D渲染 / 3D建模 / CG / UE引擎 / Blender / PBR材质 / 体积光 / AO」等一切CG术语 |
-| X3 | 严禁「2D手绘 / 插画 / 动画 / 二次元」等非摄影媒介 |
-| X4 | 严禁「四视图 / 2×2网格 / 多角度 / turnaround / orthographic view / blueprint」——仅单张 |
-| X5 | 严禁「古风/古代/仙侠/武侠/民国/赛博朋克/科幻/西方奇幻/异世界」等非当代都市场景 |
-| X6 | 严禁「出现任何人物/人影/人体轮廓/剪影/肢体」 |
-| X7 | 严禁「天空贴图替换式换天/PS合成感/滤镜套用」——天气变化必须是真实的光学和环境变化 |
-| X8 | 严禁「光源来源不明/无方向的全局均匀照明」 |
-| X9 | 严禁「时段变体不调整人工光源开关和亮度」——傍晚必须亮灯、深夜不能全亮 |
-| X10 | 严禁「天候变体抹除空间的日常使用痕迹」——雨后的墙仍然是斑驳的、雪下的地面仍然有磨损 |
-| X11 | 严禁「过曝死白/暗部死黑/无层次」 |
-| X12 | 严禁「水印 / 文字 / LOGO / 签名 / 边框 / AI生成痕迹」 |
+| X1 | rỗng gian kết cấu phát sinh không  của sửa ——đổi đoạn /ngày/đoạn không thể "đổi địa phương " |
+| X2 | 「3D / 3Dtạo mô  / CG / UE / Blender / PBR / thể ánh  / AO」1 CGngữ  |
+| X3 | 「2Dtay  / vẽ  / động vẽ  / 2lần 」phi sáng  |
+| X4 | 「4video ảnh  / 2×2mạng khung  / nhiều nhân độ  / turnaround / orthographic view / blueprint」——chỉ đơn bức  |
+| X5 | 「phong ////dân ///phương /bất giới 」phi khi đều Bối cảnh |
+| X6 | 「ra người/ngườisáng /ngườithể /sáng /thể 」 |
+| X7 | 「ngàyrỗng ảnh đổi thức đổi ngày/PShợp tạo /lọc quay hàm 」——ngàyhóa Bắt buộclà thật  của ánh  và hóa  |
+| X8 | 「ánh nguồn nguồn không dẫn /không phương  của toàn cục dẫn 」 |
+| X9 | 「đoạn thể không gọi chỉnh ngườiánh nguồn mở liên  và độ 」——muộn Bắt buộc、không thể toàn  |
+| X10 | 「ngàythể bỏ rỗng gian  của ngày thường hàm 」——sau  của là  của 、dưới  của địa mặt có  |
+| X11 | 「/bộ /không tầng lần 」 |
+| X12 | 「 / tài chữ  / LOGO / ký tên  /  / AItạo」 |

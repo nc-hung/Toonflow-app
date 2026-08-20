@@ -1,11 +1,11 @@
-# 视频提示词 · 视觉风格约束
+# videoPrompt · trực quanPhong cách
 
-生成视频提示词时，必须注入以下视觉风格标签：
+tạovideoPrompt，Bắt buộctâm vào dưới trực quanPhong cáchbiểu ký ：
 
-| 模式 | 风格标签 |
+| mô thức  | Phong cáchbiểu ký  |
 |------|----------|
-| **通用多参模式（英文）** | `2D flat design, geometric shapes, solid color blocks, minimal shadows, clean lines, modern aesthetic` |
-| **通用首尾帧模式（英文）** | `2D flat design, geometric shapes, solid color blocks, minimal shadows, clean lines, modern aesthetic, shallow depth of field` |
-| **Seedance 2.0（中文）** | `2D扁平风格，几何造型，纯色色块，无阴影，简洁线条，现代简约` |
+| **thông hàm nhiều tham mô thức （tài ）** | `2D flat design, geometric shapes, solid color blocks, minimal shadows, clean lines, modern aesthetic` |
+| **thông hàm Khung đầu/cuốimô thức （tài ）** | `2D flat design, geometric shapes, solid color blocks, minimal shadows, clean lines, modern aesthetic, shallow depth of field` |
+| **Seedance 2.0（giữa tài ）** | `2DPhong cách，mấy tạo kiểu ，thuần vật vật ，không sáng ，đường mục ，` |
 
 

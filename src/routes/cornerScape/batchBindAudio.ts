@@ -6,7 +6,7 @@ import { validateFields } from "@/middleware/middleware";
 import { tool, jsonSchema } from "ai";
 const router = express.Router();
 
-// 获取资产
+// Lấy danh sách tài nguyên
 export default router.post(
   "/",
   validateFields({
@@ -25,30 +25,30 @@ export default router.post(
       .andWhere("projectId", projectId)
       .select("id", "name", "describe");
 
-    if (!audioData.length) return res.status(400).send(error("暂无设置音频，请先前往资产中心上传音频"));
+    if (!audioData.length) return res.status(400).send(error("tạm thời chưa cóThiết lậpÂm thanh，vui lòng trước  trước  Tài nguyêngiữa tải lênÂm thanh"));
 
     const batchSize = concurrentCount ?? 1;
 
     async function processAsset(asset: (typeof assetsData)[number]) {
       try {
         const resultTool = tool({
-          description: "匹配完成后必须调用此工具提交结果",
+          description: "khớphoàn thànhsau  bắt buộc gọi hàm cụ nhắc tác vụ kết quả",
           inputSchema: jsonSchema<{ id: number; audioId: number }>(
             z
               .object({
-                audioId: z.number().nullable().optional().describe("与该资产匹配的音频ID列表，若无合适匹配则返回空数组"),
+                audioId: z.number().nullable().optional().describe("Tài nguyênkhớp của Âm thanhIDdanh sách，không hợp khớpTrả vềrỗng số nhóm "),
               })
               .toJSONSchema(),
           ),
           execute: async (result) => {
             await u.db("o_assetsRole2Audio").where("assetsRoleId", asset.id).delete();
             if (result?.audioId) await u.db("o_assetsRole2Audio").insert({ assetsRoleId: asset.id, assetsAudioId: result.audioId });
-            await u.db("o_assets").where("id", asset.id).update("audioBindState", "已完成");
-            return "无需回复用户任何内容";
+            await u.db("o_assets").where("id", asset.id).update("audioBindState", "Đã hoàn thành");
+            return "Không cần  phản hồi thêm cho người dùng";
           },
         });
 
-        const audioList = audioData.map((i) => `- ID:${i.id} | 名称:${i.name} | 描述:${i.describe ?? "无"}`).join("\n");
+        const audioList = audioData.map((i) => `- ID:${i.id} | tên:${i.name} | mô tả:${i.describe ?? "không "}`).join("\n");
         const promptData = await u.db("o_prompt").where("type", "audioBindPrompt").first();
         let audioBindPrompt = "" as string | undefined;
         if (promptData && promptData.useData) {
@@ -67,19 +67,19 @@ export default router.post(
             {
               role: "user",
               content: `
-                ## 候选音频列表
+                ## chọn Âm thanhdanh sách
                 ${audioList}
-                ## 待匹配资产
-                - ID:${asset.id} | 名称:${asset.name} | 描述:${asset.describe ?? "无"} | 类型：${asset.type}
-                请从候选音频列表中为该资产选出来一个最符合该角色设定的音色，并调用 resultTool 提交结果。
+                ## khớpTài nguyên
+                - ID:${asset.id} | tên:${asset.name} | mô tả:${asset.describe ?? "không "} | loại：${asset.type}
+                vui lòng từ chọn Âm thanhdanh sáchgiữa Tài nguyênchọn ra một nhất hợp Nhân vậtthiết nối  của giọng đọc，nhất gọi hàm  resultTool nhắc tác vụ kết quả。
            `,
             },
           ],
           tools: { resultTool },
         });
       } catch (e) {
-        await u.db("o_assets").where("id", asset.id).update("audioBindState", "生成失败");
-        console.error(`[bindAudio] 资产 ${asset.id} 处理失败:`, e);
+        await u.db("o_assets").where("id", asset.id).update("audioBindState", "Tạo thất bại");
+        console.error(`[bindAudio] Tài nguyên ${asset.id} Xử lýthất bại:`, e);
       }
     }
 
@@ -96,7 +96,7 @@ export default router.post(
         "id",
         assetsData.map((i) => i.id),
       )
-      .update("audioBindState", "生成中");
+      .update("audioBindState", "Đang tạo");
     runWithConcurrency();
     res.status(200).send(success());
   },

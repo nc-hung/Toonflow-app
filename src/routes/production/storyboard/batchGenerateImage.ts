@@ -32,30 +32,30 @@ export default router.post(
       concurrentCount: number;
       compulsory: boolean;
     } = req.body;
-    if (!storyboardIds || storyboardIds.length === 0) return res.status(400).send(error("storyboardIds不能为空"));
-    // 当没有 storyboardIds 时，通过 AI 生成新的分镜面板数据
+    if (!storyboardIds || storyboardIds.length === 0) return res.status(400).send(error("storyboardIdskhông thể rỗng "));
+    // khi chưa có  storyboardIds ，thông qua AI tạomới   của bản g phân cảnhDữ liệu
     let finalStoryboardIds: number[] = storyboardIds || [];
-    // shouldGenerateImage === 0 的分镜标记为「未生成」，其余标记为「生成中」
+    // shouldGenerateImage === 0  của Phân cảnhbiểu 「chưa tạo」，biểu 「Đang tạo」
     const storyboardData = await u.db("o_storyboard").where("scriptId", scriptId).where("projectId", projectId).whereIn("id", finalStoryboardIds);
-    if (!storyboardData.length) return res.status(500).send(error("未查到分镜数据"));
+    if (!storyboardData.length) return res.status(500).send(error("chưa tra đến Phân cảnhDữ liệu"));
     const storyIds = storyboardData.map((i) => i.id);
     if (compulsory) {
-      await u.db("o_storyboard").whereIn("id", storyIds).where("scriptId", scriptId).update({ state: "生成中", shouldGenerateImage: 1 });
+      await u.db("o_storyboard").whereIn("id", storyIds).where("scriptId", scriptId).update({ state: "Đang tạo", shouldGenerateImage: 1 });
     } else {
-      await u.db("o_storyboard").whereIn("id", storyIds).where("scriptId", scriptId).where("shouldGenerateImage", 0).update({ state: "未生成" });
-      await u.db("o_storyboard").whereIn("id", storyIds).where("scriptId", scriptId).where("shouldGenerateImage", 1).update({ state: "生成中" });
+      await u.db("o_storyboard").whereIn("id", storyIds).where("scriptId", scriptId).where("shouldGenerateImage", 0).update({ state: "chưa tạo" });
+      await u.db("o_storyboard").whereIn("id", storyIds).where("scriptId", scriptId).where("shouldGenerateImage", 1).update({ state: "Đang tạo" });
     }
 
     const projectSettingData = await u.db("o_project").where("id", projectId).select("imageModel", "imageQuality", "artStyle", "videoRatio").first();
 
-    // 按 rowid 顺序查出每个 storyboard 关联的 assetId 有序列表
+    // theo  rowid xếp tra ra mục  storyboard liên kết  của  assetId có xếp danh sách
     const assets2StoryboardRows = await u
       .db("o_assets2Storyboard")
       .whereIn("storyboardId", storyIds)
       .orderBy("rowid")
       .select("storyboardId", "assetId");
 
-    // 收集所有 assetId，批量查对应的 imageId
+    // nhận tập tất cả assetId，lượng tra đúng hồi  của  imageId
     const allAssetIds = [...new Set(assets2StoryboardRows.map((r: any) => r.assetId))];
     const assetImageMap: Record<number, number> = {};
     if (allAssetIds.length > 0) {
@@ -65,7 +65,7 @@ export default router.post(
       });
     }
 
-    // 按 rowid 顺序重建 assetRecord，值为有序的 imageId 列表
+    // theo  rowid xếp trùng tạo  assetRecord，giá trị có xếp  của  imageId danh sách
     const assetRecord: Record<number, number[]> = {};
     assets2StoryboardRows.forEach((item: any) => {
       if (!assetRecord[item.storyboardId]) {
@@ -104,8 +104,8 @@ export default router.post(
             ...repeloadObj,
           },
           {
-            taskClass: "生成分镜图片",
-            describe: "分镜图片生成",
+            taskClass: "tạoPhân cảnhHình ảnh",
+            describe: "Phân cảnhHình ảnhtạo",
             relatedObjects: JSON.stringify(repeloadObj),
             projectId: projectId,
           },
@@ -114,7 +114,7 @@ export default router.post(
         await imageCls.save(savePath);
         await u.db("o_storyboard").where("id", item.id).update({
           filePath: savePath,
-          state: "已完成",
+          state: "Đã hoàn thành",
         });
       } catch (e) {
         u.db("o_storyboard")
@@ -122,11 +122,11 @@ export default router.post(
           .update({
             filePath: "",
             reason: u.error(e).message,
-            state: "生成失败",
+            state: "Tạo thất bại",
           });
       }
     };
-    // 按 concurrentCount 控制并发数，分批执行；跳过 shouldGenerateImage === 0 的分镜
+    // theo  concurrentCount sát chép nhất phát số ，phần thực thi； shouldGenerateImage === 0  của Phân cảnh
     let generateList = [];
     if (compulsory) {
       generateList = storyboardData;
@@ -144,13 +144,13 @@ async function getAssetsImageBase64(imageIds: number[]) {
 
   const imagePaths = await u.db("o_image").whereIn("o_image.id", imageIds).select("o_image.id", "o_image.filePath");
 
-  // 建立 id 到 filePath 的映射
+  // tạo lập  id đến  filePath  của 
   const id2Path = new Map<number, string>();
   for (const row of imagePaths) {
     id2Path.set(row.id, row.filePath);
   }
 
-  // 保证输出顺序与 imageIds 一致
+  // lưu chứng xuất ra xếp  imageIds 1 
   const imageUrls = await Promise.all(
     imageIds.map(async (id) => {
       const filePath = id2Path.get(id);
@@ -164,6 +164,6 @@ async function getAssetsImageBase64(imageIds: number[]) {
       return null;
     }),
   );
-  // 保留顺序，并且过滤掉无效项
+  // lưu lưu xếp ，nhất và lọc bỏ vô hiệu
   return (imageUrls.filter(Boolean) as string[]).map((url) => ({ type: "image" as const, base64: url }));
 }

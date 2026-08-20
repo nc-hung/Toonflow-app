@@ -1,122 +1,122 @@
-# 道具衍生状态生成 · 扁平风约束手册
+# Đạo cụsinh trạng tháitạo · phong sổ tay
 
 ---
 
-## 一、衍生原则
+## 1 、sinh gốc 
 
-1. **轮廓锚定** — 道具核心造型/轮廓在所有状态中可识别
-2. **状态可读** — 状态差异必须一目了然，观众能立即区分
-3. **叙事服务** — 每种状态变体服务于特定剧情节点
-4. **渐进退化** — 损伤/老化状态应有合理的物理逻辑
-5. **纯道具独立展示** — 画面中只能出现道具本身，严禁出现任何人物、手部、肢体，道具不可处于被持有/佩戴/握持状态，必须以静物陈列方式独立呈现
-
----
-
-## 二、状态类型
-
-### 2.1 使用状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 崭新 | 完好无损、纯色如新 | 所有道具 | 扁平崭新、完好无损、纯色如新 |
-| 日常使用 | 微磨损、简单色块变化 | 兵器/器物/饰品 | 扁平使用痕迹、简单磨损 |
-| 陈旧 | 明显年代感、颜色暗淡 | 器物/信物/卷轴 | 扁平陈旧、年代感、颜色暗沉 |
-
-### 2.2 损伤状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 微损 | 小裂纹/小缺口/轻微磨损 | 瓷器/玉佩/兵器 | 扁平微损、简单裂纹 |
-| 破损 | 明显裂缝/断裂/破碎 | 瓷器/饰品/兵器 | 扁平破损、简单断裂 |
-| 残片 | 仅剩部分/碎片 | 瓷器/玉佩/信物 | 扁平残片、简单碎片 |
-
-### 2.3 特殊状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 染血 | 红色色块附着 | 兵器/衣物/信物 | 扁平染血、红色痕迹 |
-| 浸水/湿润 | 颜色晕染、湿润感 | 卷轴/信物/衣物 | 扁平浸水、颜色晕染 |
-| 燃烧/焦损 | 黑色边缘、扁平火烧痕迹 | 卷轴/信物/木质品 | 扁平焦黑、简单火烧 |
-| 发光/激活 | 简单发光色块、简单光芒 | 信物/法器/玉石 | 扁平发光、简单光芒 |
-| 包裹/封存 | 用布/盒子包裹 | 信物/饰品/秘物 | 扁平包裹、简单封装 |
+1. **nối ** — Đạo cụtạo kiểu /ở tất cảtrạng tháigiữa trưng khác 
+2. **trạng thái** — trạng tháibất Bắt buộc1 mục ，thể lập khu phút
+3. **việc phục vụ ** — loại trạng tháithể phục vụ với nối kịch tình tiết điểm 
+4. **tiến đăng hóa ** — /hóa trạng tháihồi có hợp lý  của lý logic
+5. **thuần Đạo cụlập nhở ** — vẽ mặt giữa chỉ thể ra Đạo cụsách ，ra người、tay bộ 、thể ，Đạo cụkhông xử với giữ có //giữ trạng thái，Bắt buộchàng cách thứclập 
 
 ---
 
-## 三、状态变体画面规范
+## 2、trạng tháiLoại
 
-### 单状态图
+### 2.1 hàm trạng thái
 
-| 项目 | 约束 |
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+| mới  | tốt không 、thuần vật như mới  | tất cảĐạo cụ | mới 、tốt không 、thuần vật như mới  |
+| ngày thường hàm  | 、đơn vật hóa  | thiết bị /thiết bị / | hàm 、đơn  |
+| cũ  | dẫn năm、vật  | thiết bị /tin / | cũ 、năm、vật  |
+
+### 2.2 trạng thái
+
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+|  | nhỏ /nhỏ cổng / | thiết bị //thiết bị  | 、đơn  |
+|  | dẫn // | thiết bị //thiết bị  | 、đơn  |
+|  | chỉ bộ phút/ | thiết bị //tin  | 、đơn  |
+
+### 2.3 trạng thái
+
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+|  | vật vật đang  | thiết bị //tin  | 、vật  |
+| / | vật 、 | /tin / | 、vật  |
+| / | vật 、 | /tin / | 、đơn  |
+| phát ánh /kích hoạt  | đơn phát ánh vật 、đơn ánh  | tin /thức thiết bị / | phát ánh 、đơn ánh  |
+| gói /lưu  | hàm /gói  | tin // | gói 、đơn  |
+
+---
+
+## 3、trạng tháithể vẽ mặt 
+
+### đơn trạng tháiảnh 
+
+| dự án |  |
 |---|---|
-| 背景 | 纯净中性灰 #E8E8E8（与设定图一致） |
-| 光线 | 无光影，纯平涂色块 |
-| 角度 | 与原设定图正面图一致 |
-| 比例 | 道具占画面主体 70%+ |
+| bối  | thuần giữa  #E8E8E8（thiết nối ảnh 1 ） |
+| ánh đường  | không Ánh sáng，thuần vật  |
+| nhân độ  | gốc thiết nối ảnh chính mặt ảnh 1  |
+| Tỷ lệ | Đạo cụvẽ mặt chính thể  70%+ |
 
-### 状态对比图
+### trạng tháiđúng tỷ ảnh 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面并排展示 2-3 种状态 |
-| 标注 | 每种状态下方标注状态名 |
-| 一致性 | 角度/光线/背景完全一致，仅状态不同 |
+| cục  | cùng 1 vẽ mặt nhất sắp nhở  2-3 loại trạng thái |
+| biểu tâm  | loại trạng tháidưới phương biểu tâm trạng tháitên  |
+| 1  | nhân độ /ánh đường /bối toàn 1 ，chỉ trạng tháikhông cùng  |
 
 ---
 
-## 四、材质状态变化规则
+## 4、trạng tháihóa 
 
-| 材质 | 崭新 → 日常 | 日常 → 陈旧 | 损伤表现 |
+|  | mới  → ngày thường  | ngày thường  → cũ  | bảng  |
 |---|---|---|---|
-| 金属 | 纯色 → 简单包浆色块 | 包浆 → 简单锈蚀色块 | 简单缺口/卷刃/断裂 |
-| 玉石 | 纯色 → 简单磨损色块 | 磨损 → 表面简单裂纹 | 简单裂纹/碎裂/缺角 |
-| 木质 | 纯色 → 简单包浆色块 | 包浆 → 色泽暗沉 | 简单开裂/断裂/虫蛀 |
-| 瓷器 | 纯色 → 简单划痕色块 | 划痕 → 釉面暗淡色块 | 简单裂纹/碎裂/缺口 |
-| 布/纸 | 纯色平整 → 简单皱折色块 | 皱折 → 发黄变脆色块 | 简单撕裂/焦损/晕染 |
+| biệt  | thuần vật  → đơn gói vật  | gói  → đơn vật  | đơn cổng // |
+|  | thuần vật  → đơn vật  |  → bảng mặt đơn  | đơn //nhân  |
+|  | thuần vật  → đơn gói vật  | gói  → vật  | đơn mở // |
+| thiết bị  | thuần vật  → đơn vật  |  → mặt vật  | đơn //cổng  |
+| / | thuần vật chỉnh  → đơn vật  |  → phát vật  | đơn // |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 
-### 单状态变体
+### đơn trạng tháithể 
 
 ```
-基于{道具名}设定图，
+cơ sở với {Đạo cụtên }thiết nối ảnh ，
 2d flat design，vector art，flat illustration，
 minimalist，clean lines，solid colors，
-{道具类型}，{材质描述}，
-当前状态：{状态名}，{状态视觉描述}，
-{材质表面变化描述}，
-纯道具静物展示，道具独立陈列，无人持有，无人佩戴，
-同一画面四宫格（2×2）：左上正面图(front view)+右上侧面图(side view)+左下背面图(back view)+右下细节特写(detail closeup)，
-纯净中性灰背景，无光影，无渐变，
-线条清晰，色块分明，状态细节可辨
-图中不要有任何文字，
-画面中不能出现任何人物、手部、手指、肢体，道具不可处于被握持或佩戴状态
+{Đạo cụLoại}，{Mô tả}，
+hiện tạitrạng thái：{trạng tháitên }，{trạng tháitrực quanMô tả}，
+{bảng mặt hóa Mô tả}，
+thuần Đạo cụnhở ，Đạo cụlập hàng ，không ngườigiữ có ，không người，
+cùng 1 vẽ mặt 4khung （2×2）：trái trên chính mặt ảnh (front view)+phải trên mặt ảnh (side view)+trái dưới mặt ảnh (back view)+phải dưới tiết Đặc tả (close-up)(detail closeup)，
+thuần giữa bối ，không Ánh sáng，không ，
+đường mục sạch ，vật phútdẫn ，trạng tháitiết 
+ảnh giữa không cần có tài chữ ，
+vẽ mặt giữa không thể ra người、tay bộ 、tay 、thể ，Đạo cụkhông xử với giữ hoặc trạng thái
 ```
 
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 道具核心造型/轮廓在所有状态中可识别 |
-| R2 | 状态变化须符合物理逻辑 |
-| R3 | 必须使用四宫格（2×2）布局：左上正面图+右上侧面图+左下背面图+右下细节特写 |
-| R4 | 必须指定「纯净中性灰背景」，无光影，无渐变 |
+| R1 | Đạo cụtạo kiểu /ở tất cảtrạng tháigiữa trưng khác  |
+| R2 | trạng tháihóa buộc hợp lý logic |
+| R3 | Bắt buộchàm 4khung （2×2）cục ：trái trên chính mặt ảnh +phải trên mặt ảnh +trái dưới mặt ảnh +phải dưới tiết Đặc tả (close-up) |
+| R4 | Bắt buộcnối 「thuần giữa bối 」，không Ánh sáng，không  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 状态变化后道具不可识别 |
-| X2 | 违反物理逻辑的损伤（玉石生锈等） |
-| X3 | 过度血腥/恐怖的损伤描绘 |
-| X4 | 出现任何人物形象，包括全身、半身、局部（手、手指、手臂等肢体） |
-| X5 | 道具处于被持有、握持、佩戴、使用中的状态 |
-| X6 | 出现暗示人物存在的元素（如手持痕迹、佩戴视角、使用姿态） |
-| X7 | 添加渐变/阴影/高光/立体感效果 |
-| X8 | 状态变化过于复杂、色块区分不清 |
+| X1 | trạng tháihóa sau Đạo cụkhông trưng khác  |
+| X2 | phụ lý logic của （sinh ） |
+| X3 | độ / của mô  |
+| X4 | ra ngườidạng tượng ，gói quát toàn 、nửa 、cục bộ （tay 、tay 、tay thể ） |
+| X5 | Đạo cụxử với giữ có 、giữ 、、hàm giữa  của trạng thái |
+| X6 | ra nhở ngườilưu ở  của （như tay giữ 、video nhân 、hàm thái ） |
+| X7 | thêm/sáng /cao ánh /lập thể hiệu quả  |
+| X8 | trạng tháihóa với lời 、vật khu phútkhông sạch  |

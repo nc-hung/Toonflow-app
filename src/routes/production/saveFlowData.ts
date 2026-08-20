@@ -38,7 +38,7 @@ export default router.post(
               }),
           );
         } catch (error) {
-          console.error("更新分镜排序失败", error);
+          console.error("Cập nhật thứ tự phân cảnh thất bại", error);
         }
       }
     }

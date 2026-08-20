@@ -19,7 +19,7 @@ export default router.post(
       .where("projectId", projectId)
       .where("scriptId", scriptId)
       .whereIn("id", trackIds)
-      .whereIn("state", ["已完成", "生成失败"])
+      .whereIn("state", ["Đã hoàn thành", "Tạo thất bại"])
       .select("id", "state", "reason", "prompt");
     res.status(200).send(success(promptList));
   },

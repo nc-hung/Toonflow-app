@@ -6,7 +6,7 @@ import { validateFields } from "@/middleware/middleware";
 
 const router = express.Router();
 
-// 清洗小说原文，生成事件列表
+// sạch tiểu thuyếtgốc tài ，tạosự kiệndanh sách
 export default router.post(
   "/",
   validateFields({
@@ -22,7 +22,7 @@ export default router.post(
       Promise.resolve(new u.cleanNovel(concurrentCount)),
     ]);
     if (allChapters.length === 0) {
-      return res.status(400).send(success("没有对应章节"));
+      return res.status(400).send(success("chưa có đúng hồi chương"));
     }
     await u.db("o_novel").where("projectId", projectId).whereIn("id", novelIds).update({ eventState: 0, event: null });
     novel.emitter.on("item", async (item) => {
@@ -33,6 +33,6 @@ export default router.post(
     });
     novel.start(allChapters, projectId);
 
-    return res.status(200).send(success("生成事件成功"));
+    return res.status(200).send(success("tạosự kiệnthành công"));
   },
 );

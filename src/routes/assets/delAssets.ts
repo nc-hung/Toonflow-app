@@ -29,6 +29,6 @@ export default router.post(
     await u.db("o_image").where({ assetsId: id }).delete();
     await u.db("o_assets").where({ id }).delete();
     await u.db("o_assets").where("assetsId", id).delete();
-    res.status(200).send(success({ message: "删除资产成功" }));
+    res.status(200).send(success({ message: "Xóa tài nguyên thành công" }));
   },
 );

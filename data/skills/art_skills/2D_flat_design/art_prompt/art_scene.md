@@ -1,152 +1,152 @@
-# 场景图生成 · 扁平风约束手册
+# Bối cảnhảnh tạo · phong sổ tay
 
 ---
 
-## 一、场景美学原则
+## 1 、Bối cảnhđẹp gốc 
 
-1. **空间叙事** — 场景承载情绪与叙事功能，不是纯背景板
-2. **层次扁平** — 前/中/后景通过色块区分，无纵深透视
-3. **色块至上** — 所有场景必须通过色块表达，拒绝渐变/光影
-4. **扁平为锚** — 一切画面以扁平矢量插画为标准，拒绝 3D 渲染/CG 动画质感；追求简洁线条、纯色填充
+1. **rỗng gian việc ** — Bối cảnhxuống tình xúc việc công thể ，không là thuần bối 
+2. **tầng lần ** — trước /giữa /sau bối thông quavật khu phút，không video 
+3. **vật đến trên ** — tất cảBối cảnhBắt buộcthông quavật bảng ，/Ánh sáng
+4. **** — 1 vẽ mặt lượng vẽ biểu ， 3D /CG động vẽ ；cầu đường mục 、thuần vật sung 
 
 ---
 
-## 二、季节色调映射
+## 2、tiết vật gọi 
 
-| 季节 | 主色调 | 辅色调 | 提示词 |
+| tiết  | chính vật gọi  | vật gọi  | Prompt |
 |---|---|---|---|
-| 春 | 青翠 + 桃粉 | 月白、鹅黄 | 扁平春色、青色桃粉 |
-| 夏 | 碧绿 + 荷粉 | 天青、莲白 | 扁平夏荷、碧绿荷粉 |
-| 秋 | 赤红 + 金黄 | 琥珀、暮灰 | 扁平秋枫、赤红金黄 |
-| 冬 | 素白 + 霜银 | 墨玉黑、冰蓝 | 扁平冬雪、素白霜银 |
+|  |  +  | tháng、 | vật 、vật  |
+|  |  +  | ngày、 | 、 |
+|  |  +  | 、 | 、 |
+|  |  +  | 、 | 、 |
 
 ---
 
-## 三、室内场景
+## 3、trong Bối cảnh
 
-### 空间规范
+### rỗng gian 
 
-| 维度 | 约束 | 提示词 |
+| độ  |  | Prompt |
 |---|---|---|
-| 风格 | 古代宅邸/宫殿/书房/闺阁，魏晋至唐宋 | 古代{朝代}风格、扁平古风 |
-| 材质 | 纯色色块、线条勾勒 | 扁平檀木、扁平玉石、扁平绢纱 |
-| 色调 | 低饱和纯色色块 | 扁平暖色、扁平素雅 |
-| 纵深 | 前/中/后景色块区分 | 前景{色块}、中景{色块}、后景{色块} |
-| 质感 | 无质感、纯色填充 | 无纹理、扁平质感、flat texture |
-| 光照 | 无光照、纯平涂色块 | 无光影、扁平光照、no lighting |
-| 镜头感 | 无景深虚化、纯平面 | 无景深、扁平视角、no depth |
-| 瑕疵感 | 无瑕疵、纯色完美 | 无磨损、扁平完美、no wear |
+| Phong cách | ///，đến  | {}Phong cách、phong  |
+|  | thuần vật vật 、đường mục  | 、、 |
+| vật gọi  | thấp  và thuần vật vật  | vật 、 |
+|  | trước /giữa /sau bối vật khu phút | trước bối {vật }、Trung cảnh (medium shot){vật }、sau bối {vật } |
+|  | không 、thuần vật sung  | không lý 、、flat texture |
+| ánh  | không ánh 、thuần vật  | không Ánh sáng、ánh 、no lighting |
+| Ống kính | không bối hóa 、thuần mặt  | không bối 、video nhân 、no depth |
+|  | không 、thuần vật đẹp  | không 、đẹp 、no wear |
 
-### 室内类型速查
+### trong Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 闺阁/卧房 | 纱帐、梳妆台、铜镜、花瓶 | 扁平温馨、简约私密 |
-| 书房/书斋 | 书架、卷轴、笔墨、棋盘 | 扁平幽静、简约雅致 |
-| 大殿/正厅 | 高柱、匾额、帷幕、烛台 | 扁平庄严、简约华美 |
-| 庭院回廊 | 廊柱、石栏、花木、灯笼 | 扁平曲径、简约灯影 |
-| 厨房/膳堂 | 灶台、蒸笼、食器 | 扁平烟火、简约日常 |
+| / | 、đài 、quay 、 | 、mật  |
+| / | 、、、đĩa  | 、 |
+| lớn /chính  | cao 、bổ 、、đài  | 、đẹp  |
+| trả  | 、、、 | kính 、sáng  |
+| / | đài 、、thiết bị  | 、ngày thường  |
 
 ---
 
-## 四、室外场景
+## 4、ngoài Bối cảnh
 
-### 空间规范
+### rỗng gian 
 
-| 维度 | 约束 | 提示词 |
+| độ  |  | Prompt |
 |---|---|---|
-| 类型 | 庭院/山林/溪畔/古桥/集市 | {场景}、{季节}、{时间}、扁平古风 |
-| 天候 | 晴/阴/薄雾/细雨/飞雪 | 扁平薄雾、扁平细雨 |
-| 植被 | 梅/竹/松/桃花/柳/荷（须符合季节） | 扁平桃花、扁平翠竹 |
-| 水体 | 溪/湖/瀑布需有纯色表现 | 扁平溪流、扁平湖面 |
-| 建筑 | 飞檐斗拱、青瓦白墙、石桥木亭 | 扁平飞檐、扁平石桥 |
-| 空气感 | 无空气透视、纯平面 | 无透视、扁平远景、flat far |
-| 光照 | 无光照、纯平涂色块 | 无光照、扁平日光、no light |
-| 镜头感 | 无景深虚化、纯平面 | 无景深、扁平视角、no depth |
-| 瑕疵感 | 无瑕疵、纯色完美 | 无风化、扁平完美、no weathering |
+| Loại | ////tập  | {Bối cảnh}、{tiết }、{thời gian}、phong  |
+| ngày | //mỏng // | mỏng 、 |
+|  | /////（buộc hợp tiết ） | 、 |
+| thể  | //cần có thuần vật bảng  | 、mặt  |
+| tạo  | 、、 | 、 |
+| rỗng  | không rỗng video 、thuần mặt  | không video 、Viễn cảnh (extreme wide shot)、flat far |
+| ánh  | không ánh 、thuần vật  | không ánh 、ngày ánh 、no light |
+| Ống kính | không bối hóa 、thuần mặt  | không bối 、video nhân 、no depth |
+|  | không 、thuần vật đẹp  | không phong hóa 、đẹp 、no weathering |
 
-### 室外类型速查
+### ngoài Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 庭院花园 | 假山、池塘、花木、石径 | 扁平花影、简约曲径 |
-| 山林竹海 | 古木、竹林、山石、云雾 | 扁平层峦、简约云雾 |
-| 溪畔湖边 | 溪流、卵石、垂柳、荷花 | 扁平溪水、简约垂柳 |
-| 古桥长亭 | 石拱桥、长亭、柳树 | 扁平古桥、简约长亭 |
-| 集市街道 | 酒旗、摊贩、灯笼 | 扁平市井、简约热闹 |
-| 屋顶天台 | 瓦片、飞檐、夜空 | 扁平瓦片、简约夜空 |
+|  | giả 、、、kính  | sáng 、kính  |
+|  | 、、、 | tầng 、 |
+|  | 、、、 | 、 |
+| dài  | 、dài 、 | 、dài  |
+| tập đạo  | 、、 | 、 |
+| ngàyđài  | 、、rỗng  | 、rỗng  |
 
 ---
 
-## 五、主视图规范
+## 5、chính video ảnh 
 
-### 视图定义
+### video ảnh nối nghĩa 
 
-> 单画面主视图，从场景中最具代表性的角度拍摄，承载空间叙事与构图重心。
+> đơn vẽ mặt chính video ảnh ，từ Bối cảnhgiữa nhất cụ bảng  của nhân độ ，xuống rỗng gian việc cấu ảnh trùng 。
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 视角 | 自然观察视角，构图最能体现场景主体与色块层次 | hero shot、representative angle |
-| 视点高度 | 默认人眼平视高度，特殊场景可俯/仰 | eye level（默认） |
-| 构图 | 主体居中或符合三分法，前/中/后景色块层次清晰 | balanced composition |
+| video nhân  | tự video nhân ，cấu ảnh nhất thể thể Bối cảnhchính thể vật tầng lần  | hero shot、representative angle |
+| video điểm cao độ  | Mặc địnhngườivideo cao độ ，Bối cảnh/ | eye level（Mặc định） |
+| cấu ảnh  | chính thể giữa hoặc hợp 3phútthức ，trước /giữa /sau bối vật tầng lần sạch  | balanced composition |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 单画面（非拼图、非多视图、非分屏） |
-| 人物 | **严禁出现任何人物、人影、人体轮廓** |
-| 一致性 | 风格/材质/色调统一 |
-| 光线 | 无光照、纯色填充、无光影逻辑 |
-| 画面比例 | 默认 1:1（或按调用方设定） |
+| cục  | đơn vẽ mặt （phi ghép ảnh 、phi nhiều video ảnh 、phi phút） |
+| người | **ra người、ngườisáng 、ngườithể ** |
+| 1  | Phong cách//vật gọi thống 1  |
+| ánh đường  | không ánh 、thuần vật sung 、không Ánh sánglogic |
+| vẽ mặt Tỷ lệ | Mặc định 1:1（hoặc theo gọi hàm phương thiết nối ） |
 
 ---
 
-## 六、提示词模板
+## 6、Promptmô 
 
 ```
-扁平古风场景主视图概念图，
+phong Bối cảnhchính video ảnh ảnh ，
 2d flat design，vector art，flat illustration，
 minimalist，clean lines，solid colors，
 flat scene，environment design，no people，no characters，no human figures，
-{室内/室外}，{场景类型}，{朝代风格}，{季节+时间}，
-前景：{色块元素}，中景：{色块元素}，后景：{色块元素}，
-{色调描述}，{天候/氛围元素}，
-{材质描述}，无透视，纯色填充，
-无岁月痕迹，无磨损，扁平完美，
-无光照，无阴影，纯色平涂，
-单画面构图，自然观察视角，构图能代表场景主体并展示前/中/后景色块层次，
-画面中无任何人物
-图中不要有任何文字
+{trong /ngoài }，{Bối cảnhLoại}，{Phong cách}，{tiết +thời gian}，
+trước bối ：{vật }，Trung cảnh (medium shot)：{vật }，sau bối ：{vật }，
+{vật gọi Mô tả}，{ngày/Không khí}，
+{Mô tả}，không video ，thuần vật sung ，
+không tháng，không ，đẹp ，
+không ánh ，không sáng ，thuần vật ，
+đơn vẽ mặt cấu ảnh ，tự video nhân ，cấu ảnh thể bảng Bối cảnhchính thể nhất nhở trước /giữa /sau bối vật tầng lần ，
+vẽ mặt giữa không người
+ảnh giữa không cần có tài chữ 
 ```
 
 ---
 
-## 七、约束规则
+## 7、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 场景必须有「前中后景色块层次」 |
-| R2 | 室外必须为「扁平远景」无空气透视 |
-| R3 | 场景图必须为「单画面主视图」，不得拼接多视图/分屏/网格 |
-| R4 | 构图须能代表场景主体并展示前/中/后景色块层次 |
-| R5 | 场景图中**严禁出现任何人物** |
-| R6 | 必须指定「扁平风格」关键词（2d flat design、vector art） |
-| R7 | 必须指定「无光影无渐变」 |
-| R8 | 材质必须为纯色填充，禁止复杂纹理/岁月感 |
+| R1 | Bối cảnhBắt buộccó 「trước giữa sau bối vật tầng lần 」 |
+| R2 | ngoài Bắt buộc「Viễn cảnh (extreme wide shot)」không rỗng video  |
+| R3 | Bối cảnhảnh Bắt buộc「đơn vẽ mặt chính video ảnh 」，không được ghép tiếp nhiều video ảnh /phút/mạng khung  |
+| R4 | cấu ảnh buộc thể bảng Bối cảnhchính thể nhất nhở trước /giữa /sau bối vật tầng lần  |
+| R5 | Bối cảnhảnh giữa **ra người** |
+| R6 | Bắt buộcnối 「Phong cách」liên từ （2d flat design、vector art） |
+| R7 | Bắt buộcnối 「không Ánh sángkhông 」 |
+| R8 | Bắt buộcthuần vật sung ，Nghiêm cấmlời lý /tháng |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 背景纯白/纯黑/无场景 |
-| X2 | 极端天候（暴风雨/雷电/暴雪，除非剧情需要） |
-| X3 | 场景无层次/无色块区分 |
-| X4 | 植被/天候与季节矛盾 |
-| X5 | 出现任何人物、人影、人体剪影或人体轮廓 |
-| X6 | 画面被拼接成多视图/网格/分屏布局 |
-| X7 | 3D 渲染/CG 动画/卡通/游戏引擎质感（禁用 3D render、CGI、Unreal Engine、Unity 等词） |
-| X8 | 材质过于复杂、色块区分不清 |
-| X9 | 添加光影/阴影/渐变/立体感效果 |
+| X1 | bối thuần /thuần /không Bối cảnh |
+| X2 | đầu ngày（phong //，bỏ phi kịch tình cần cần ） |
+| X3 | Bối cảnhkhông tầng lần /không vật khu phút |
+| X4 | /ngàytiết  |
+| X5 | ra người、ngườisáng 、ngườithể sáng hoặc ngườithể  |
+| X6 | vẽ mặt ghép tiếp tạo nhiều video ảnh /mạng khung /phútcục  |
+| X7 | 3D /CG động vẽ /thông /（hàm  3D render、CGI、Unreal Engine、Unity từ ） |
+| X8 | với lời 、vật khu phútkhông sạch  |
+| X9 | thêmÁnh sáng/sáng //lập thể hiệu quả  |

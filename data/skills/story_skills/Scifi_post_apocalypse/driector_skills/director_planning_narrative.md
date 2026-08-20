@@ -1,114 +1,114 @@
 ---
 name: director_planning_narrative
-description: 叙事手法技法 · 科幻末世 — 定义科幻末世类型在主题立意、生存节奏、场景废墟设计与声音方向上的叙事规划方法。适用于任何视觉风格。
+description: việc tay thức thức  · Khoa Học Viễn Tưởng / Tận Thế — nối nghĩa Khoa Học Viễn Tưởng / Tận ThếLoạiở chính đề lập ý 、sinh lưu tiết 、Bối cảnhthiết tính thanh âm phương trên  của việc lập kế hoạchphương thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 叙事手法 · 科幻末世 · 技法参考
+# việc tay thức  · Khoa Học Viễn Tưởng / Tận Thế · thức tham chiếu
 
 ---
 
-## 一、主题立意与末世内核
+## 1 、chính đề lập ý trong 
 
-### 科幻末世叙事要点
+### Khoa Học Viễn Tưởng / Tận Thếviệc cần điểm 
 
-- **生存是叙事的底层操作系统** — 末世中的一切行为（走路、喝水、睡觉、信任）都被"活下去"这个前提重新定义。叙事中每个决策都应有生存成本的考量
-- **文明的残骸即叙事** — 废墟中残存的文明痕迹（一张全家福、一个生锈的游乐设施、一辆废弃的校车）自带叙事力量——它们无声地讲述"这里曾经有什么"。善用环境叙事代替对白解释
-- **人性在极端中显形** — 末世是天然的"人性实验室"：资源不够时谁先被抛弃？生死关头谁选择牺牲？背叛能换来活路时谁会动摇？极端环境把平时隐藏的人性放大到无处可藏
-- **离场感受建议方向** — 苍凉震撼 / 绝处逢生 / 人性拷问 / 苦涩希望。避免"轻松""幽默""甜蜜"等与末世气质不匹配的方向
-- **希望的重量与绝望成正比** — 末世中的希望不能廉价。越是漆黑的世界，一丝光亮越珍贵——废墟中长出的一株绿芽、绝望中有人伸出的手、濒死时听到的远处人声。希望必须以绝望为底色
-
----
-
-## 二、叙事结构与生存节奏
-
-### 科幻末世叙事要点
-
-- **危机驱动叙事** — 末世叙事的引擎不是"想要什么"而是"必须活过今天"。每个段落应有明确的生存危机（资源耗尽、威胁逼近、庇护所失守、同伴受伤），危机推动行动，行动推动叙事
-- **资源即冲突** — 食物、水、药品、弹药、安全的栖息地——资源短缺是末世冲突的根源。叙事中应始终让观众感受到"不够用"的紧迫感
-- **信任考验递进** — 末世中的信任比资源更稀缺。信任线遵循"试探→合作→考验→背叛或坚守"的递进。每次信任考验的赌注应比前一次更高
-- **段落间用荒原做呼吸** — 危机段落之间用荒原行走/废墟探索等低强度段落做情绪缓冲。这些段落不是"空"的，而是用环境叙事补充世界观
-- **希望曲线** — 末世叙事的情绪不是持续下坠，而是"绝望→微光→更大绝望→更强微光"的锯齿状曲线。每次触底后给一丝希望（找到水源、遇到友善的人、发现避难所），再用更大的打击推翻希望
-- **结局不必圆满** — 末世叙事的最佳结局不是"一切恢复正常"，而是"带着伤痕继续走"。幸存本身就是胜利，不需要救赎全世界
+- **sinh lưu là việc  của tầng thao tác vụ dòng thống ** — giữa  của 1 thi （chạy đường 、、、tin ）đều "hoạt dưới đi "nàymục trước nhắc trùng mới nối nghĩa 。việc giữa mục quyết địnhđều hồi có sinh lưu tạo sách  của lượng 
+- **tài dẫn  của việc ** — giữa lưu  của tài dẫn （1 bức toàn 、một sinh  của thiết 、1  của đối ）tự kèm việc lực lượng ——nó không thanh địa tả "nàyđã có sao"。hàm việc đúng giải 
+- **ngườiở đầu giữa dạng ** — là ngày của "ngườichiếu "：tài nguồn không trước ？sinh liên đầu chọn lựa ？thể đổi hoạt đường sẽ động ？đầu đem  của ngườimở lớn đến không xử 
+- **trường Khuyến nghịphương ** —  / xử sinh  / ngườihỏi  / 。""""""không khớp của phương 
+- ** của trùng lượng tạo chính tỷ ** — giữa  của không thể 。là  của giới ，1 ánh ——giữa dài ra  của 1 、giữa có ngườira  của tay 、đến  của xử ngườithanh 。Bắt buộcvật 
 
 ---
 
-## 三、分场景氛围设计
+## 2、việc kết cấu sinh lưu tiết 
 
-### 科幻末世叙事要点
+### Khoa Học Viễn Tưởng / Tận Thếviệc cần điểm 
 
-- **氛围用衰败描述** — 不说"荒凉"，说"锈迹蔓延到第三层台阶，杂草从裂开的地砖中挤出来"。具象的衰败细节比抽象词更有冲击力
-- **典型末世段落与设计** —
+- **máy động việc ** — việc  của không là "nghĩ cần sao"là "Bắt buộchoạt ngày"。mục đoạn hồi có dẫn  của sinh lưu máy （tài nguồn 、、nơi thất 、cùng ），máy khuyến động thi động ，thi động khuyến động việc 
+- **tài nguồn ** — 、、、、an toàn  của địa ——tài nguồn ngắn là  của nguồn 。việc giữa hồi ban đầu để đến "không hàm " của 
+- **tin chiếu tiến ** — giữa  của tin tỷ tài nguồn đổi 。tin đường "tra →hợp tác vụ →chiếu →hoặc " của tiến 。lần tin chiếu  của tâm hồi tỷ trước 1 lần đổi cao 
+- **đoạn gian hàm gốc ** — máy đoạn  của gian hàm gốc thi chạy /kiếm thấp độ đoạn tình xúc 。nàynhững đoạn không là "rỗng " của ，là hàm việc Bổ sung giới 
+- **đường ** — việc  của tình xúc không là giữ dưới ，là "→ánh →đổi lớn →đổi ánh " của trạng đường 。lần sau cho 1 （đến nguồn 、đến  của người、phát nơi ），hàm đổi lớn  của mở khuyến 
+- **kết cục không bắt đầy ** — việc  của nhất kết cục không là "1 lời chính thường "，là "kèm đang chạy "。lưu sách thì là ，không cần cần toàn giới 
 
-| 段落类型 | 情绪方向 | 叙事手法 | 音乐建议 |
+---
+
+## 3、phútBối cảnhKhông khíthiết tính 
+
+### Khoa Học Viễn Tưởng / Tận Thếviệc cần điểm 
+
+- **Không khíhàm bại Mô tả** — không hướng ""，hướng "trì đến Thứ 3tầng đài ，từ mở  của địa giữa ra "。cụ tượng  của bại tiết tỷ tượng từ đổi có lực 
+- **kiểu đoạn thiết tính ** —
+
+| đoạn Loại | tình xúc phương  | việc tay thức  | âm Khuyến nghị |
 |---|---|---|---|
-| 废墟探索 | 警觉 + 好奇 | 缓慢推进、扫视空间、发现文明遗迹 | 低频嗡鸣+偶发金属碰撞音 |
-| 资源争夺 | 紧迫 + 对抗 | 搜索物资、与他人争夺、做取舍 | 节奏性底噪渐强 |
-| 暂歇/营地 | 疲惫 + 脆弱 | 围火、简单分食、短暂的人情温暖 | 极低音量吉他或口琴独奏 |
-| 危机/威胁 | 恐惧 + 求生 | 被追击、庇护所失守、同伴受伤 | 心跳鼓点+刺耳警报或全寂 |
-| 人性抉择 | 挣扎 + 沉重 | 是否抛弃伤员、是否打开最后的罐头 | 配乐消失，纯沉默 |
-| 希望微光 | 苦涩 + 温暖 | 废墟中发现绿芽、远处传来人声、日出 | 从沉默到温暖的单一器乐渐入 |
+| kiếm  | báo  + tốt  | chậm Đẩy tới (push in / dolly in)、video rỗng gian 、phát tài dẫn  | thấp tần +phát biệt âm  |
+| tài nguồn  |  + đúng  | tìm kiếm tài 、anh ấyngười、xuất  | tiết  |
+| tạm /địa  |  +  | khí 、đơn phút、ngắn tạm  của ngườitình  | thấp âm lượng anh ấyhoặc cổng  |
+| máy / |  + cầu sinh  | 、nơi thất 、cùng  | điểm +báo hoặc toàn  |
+| ngườilựa  |  + trùng  | là không 、là không mở mở nhất sau  của đầu  | nối hủy thất ，thuần  |
+| ánh  |  +  | giữa phát 、xử truyền ngườithanh 、ngày ra  | từ đến  của đơn 1 thiết bị vào  |
 
-- **空间衰败即时间叙事** — 环境的衰败程度直接叙述"末日过去了多久"：
-  - **近期末日**：建筑基本完好但空无一人，物品散落如刚离开
-  - **中期末日**：锈蚀、杂草丛生、部分坍塌，自然开始收回领地
-  - **远期末日**：废墟、残垣、植被覆盖一切，文明痕迹只余轮廓
-- **环境即威胁** — 末世中环境本身就是敌人：有毒的空气、不稳定的建筑、被污染的水源、极端天气。分镜中应始终让观众感受到环境的敌意
-- **镜头意图写"生存感受"而非"场景描述"** — "用远景是为了让观众感受到废墟的无边无际中人的渺小与无助"优于"用远景拍废墟"
+- **rỗng gian bại thời gianviệc ** —  của bại trình độ trực tiếp tả "ngày đi nhiều "：
+  - **kỳ ngày **：tạo cơ sở sách tốt nhưng rỗng không 1 người，như mở 
+  - **giữa kỳ ngày **：、sinh 、bộ phút，tự mở ban đầu nhận trả địa 
+  - **kỳ ngày **：、、1 ，tài dẫn chỉ 
+- **** — giữa sách thì là người：có  của rỗng 、không nối  của tạo 、 của nguồn 、đầu ngày。Phân cảnhgiữa hồi ban đầu để đến  của ý 
+- **Ống kínhý ảnh "sinh lưu "phi "Bối cảnhMô tả"** — "hàm Viễn cảnh (extreme wide shot)là để đến  của không không giữa người của nhỏ không giúp "với "hàm Viễn cảnh (extreme wide shot)"
 
 ---
 
-## 四、声音与音乐方向
+## 4、thanh âm âm phương 
 
-### 科幻末世叙事要点
+### Khoa Học Viễn Tưởng / Tận Thếviệc cần điểm 
 
-- **寂静是末世的底色** — 末世最令人不安的不是怪物的嘶吼，而是"应该有声音的地方没有声音"：空无一人的城市、不再运转的工厂、沉默的游乐场。寂静本身就在叙述"消亡"
-- **工业废噪** — 金属摩擦、管道漏气、电线短路的滋滋声、远处不明的轰鸣——这些"文明的遗骸之声"构成末世的独特音景
-- **配乐极度克制** — 全片配乐覆盖率不超过 30%。末世的力量在于"真空感"，过多配乐会削弱荒芜的冲击力
-- **警报/信号音的叙事功能** — 残存的电子设备偶尔发出的声音（无信号广播、循环播放的紧急广播、间歇性蜂鸣）是末世特有的"幽灵之声"，极具氛围渲染力
-- **音乐情绪模型** —
+- **là  của vật ** — nhất ngườikhông an  của không là  của ，là "hồi có thanh âm  của địa phương chưa có thanh âm "：rỗng không 1 người của 、không vận chuyển  của 、 của trường 。sách thì ở tả "hủy "
+- **** — biệt 、đạo 、đường ngắn đường  của thanh 、xử không dẫn  của ——nàynhững "tài dẫn  của  của thanh "cấu tạo  của âm bối 
+- **nối độ chép ** — toàn nối tỷ lệ không vượt  30%。 của lực lượng ở với "thật rỗng "，nhiều nối sẽ  của lực 
+- **báo /tin số âm  của việc công thể ** — lưu  của thiết nhĩ phát ra  của thanh âm （không tin số 、mở  của 、gian ）là có  của " của thanh "，cụ Không khílực 
+- **âm tình xúc mô hình** —
 
-| 情绪阶段 | 音乐策略 | 覆盖率 |
+| tình xúc đoạn  | âm  | tỷ lệ  |
 |---|---|---|
-| 废墟探索 | 低频嗡鸣+偶发金属音 | 低 |
-| 日常生存 | 无配乐，纯环境音 | 无 |
-| 危机逼近 | 心跳鼓点，渐强 | 中 |
-| 人性抉择 | 完全静默 | 无 |
-| 战斗/逃亡 | 节奏性电子底噪+打击 | 中高 |
-| 希望微光 | 单一温暖器乐缓入 | 低→中 |
+| kiếm  | thấp tần +phát biệt âm  | thấp  |
+| ngày thường sinh lưu  | không nối ，thuần âm  | không  |
+| máy  | điểm ， | giữa  |
+| ngườilựa  | toàn  | không  |
+| / | tiết +mở  | giữa cao  |
+| ánh  | đơn 1 thiết bị vào  | thấp →giữa  |
 
-- **一声定氛围** — 末世中单一的突发声音比丰富的音景更有冲击力：远处一声枪响、一扇门被风吹开的吱呀声、瓦砾中传出的一声呼救。在完全的寂静中，一个声音就是一个事件
-
----
-
-## 五、构图与景别叙事
-
-### 科幻末世叙事要点
-
-- **三大核心构图的叙事功能** —
-  - **废墟全景** — 大面积废墟中嵌入微小人影，传递"文明已逝、人如蝼蚁"的末世感。是科幻末世使用频率最高的构图
-  - **压迫空间** — 低矮天花板/狭窄通道/坍塌废墟中穿行，物理空间的压迫直接传递生存的窒息感
-  - **人与废墟对比** — 将人物与文明遗迹并置（人站在废弃摩天大楼前/行走在废弃高速路上），用尺度反差叙述文明的陨落
-- **中心构图的"最后一人"感** — 中心构图在末世中暗示"这片废墟中只剩你一个"的极端孤独，留给独行者在废墟中的标志性镜头
-- **倾斜构图的失序感** — 荷兰角在末世中传递"世界已经倾斜/失序"的心理暗示，适合灾难初期、精神崩溃、环境极端危险的段落
-- **前景废墟遮挡** — 用废墟残骸做前景遮挡主体，制造"透过废墟窥见生存者"的偷窥/搜索感
-- **景别即生存状态** —
-  - **大远景/远景** — 废墟全貌、荒原无际、文明消亡的宏观震撼
-  - **全景** — 生存者在空间中的位置关系、威胁方位
-  - **中景** — 生存行为（搜索、警戒、行走）、人物互动
-  - **特写** — 生存细节（龟裂的嘴唇、沾满灰的手、最后一罐食物）、情绪聚焦
-- **大特写的"遗物"功能** — 大特写在末世中常聚焦"文明遗物"：一张褪色的全家福、一个没电的手机屏幕、一只布满灰的玩偶。这些细节自带千字叙事
+- **1 thanh nối Không khí** — giữa đơn 1  của phát thanh âm tỷ  của âm bối đổi có lực ：xử 1 thanh phản 、1 cổng phong mở  của thanh 、giữa truyền ra  của 1 thanh 。ở toàn  của giữa ，một thanh âm thì là một sự kiện
 
 ---
 
-## 六、镜头运动与节奏
+## 5、cấu ảnh Cỡ cảnhviệc 
 
-### 科幻末世叙事要点
+### Khoa Học Viễn Tưởng / Tận Thếviệc cần điểm 
 
-- **手持是末世的基础语言** — 50% 以上镜头用轻微手持，传递"不稳定/随时可能发生意外"的生存焦虑。晃动幅度分级：安全时微晃→危险时明显晃→战斗时剧烈
-- **缓移探索** — 废墟探索段落用极缓水平移动，模拟角色小心翼翼地推进。速度越慢，观众越紧张（"下一秒会看到什么？"）
-- **快推 = 危机爆发** — 威胁突然出现时猛然快推，模拟"被吓到/冲击"的生理反应
-- **缓拉 = 揭示荒芜** — 从人物/细节缓拉到远景，揭示周围废墟的无边无际。是末世叙事最经典的"叹息运镜"
-- **不用稳定器的段落** — 逃亡/战斗段落刻意不用稳定器，用真实的画面抖动传递混乱与恐惧
-- **运镜即生存状态** — 静止 = 安全/警戒；缓移 = 探索/搜索；手持跟拍 = 行进/不安；快推 = 危机/发现；缓拉 = 绝望/孤独
-- **360° 环视废墟** — 角色到达新地点时用缓慢 360° 环视，让观众和角色一起"扫描"周围环境，判断安全性。兼具定场和悬念功能
+- **3lớn cấu ảnh  của việc công thể ** —
+  - **Toàn cảnh (wide shot)** — lớn mặt giữa vào nhỏ ngườisáng ，truyền "tài dẫn đã 、ngườinhư " của 。là Khoa Học Viễn Tưởng / Tận Thếhàm tần tỷ lệ tối đa  của cấu ảnh 
+  - **nén rỗng gian ** — thấp ngày/hẹp thông đạo /giữa thi ，lý rỗng gian  của nén trực tiếp truyền sinh lưu  của 
+  - **ngườiđúng tỷ ** — ngườitài dẫn nhất trí （ngườitrạm ở ngàylớn trước /thi chạy ở cao đường trên ），hàm độ phụ tả tài dẫn  của 
+- **giữa cấu ảnh  của "nhất sau 1 người"** — giữa cấu ảnh ở giữa nhở "nàygiữa chỉ bạnmột " của đầu ，lưu cho thi giả ở giữa  của biểu Ống kính
+- **cấu ảnh  của thất xếp ** — nhân ở giữa truyền "giới đã đã /thất xếp " của lý nhở ，hợp kỳ 、、đầu  của đoạn 
+- **trước bối ** — hàm trước bối chính thể ，chép tạo "thấy sinh lưu giả " của /tìm kiếm 
+- **Cỡ cảnhsinh lưu trạng thái** —
+  - **lớn Viễn cảnh (extreme wide shot)/Viễn cảnh (extreme wide shot)** — toàn 、gốc không 、tài dẫn hủy  của 
+  - **Toàn cảnh (wide shot)** — sinh lưu giả ở rỗng gian giữa  của vị trí trí liên dòng 、phương vị trí 
+  - **Trung cảnh (medium shot)** — sinh lưu thi （tìm kiếm 、báo 、thi chạy ）、ngườiđộng 
+  - **Đặc tả (close-up)** — sinh lưu tiết （ của 、đầy  của tay 、nhất sau 1 ）、tình xúc 
+- **lớn Đặc tả (close-up) của ""công thể ** — lớn Đặc tả (close-up)ở giữa thường "tài dẫn "：1 bức vật  của toàn 、một chưa  của tay máy 、1 chỉ đầy  của 。nàynhững tiết tự kèm nghìnchữ việc 
+
+---
+
+## 6、Ống kínhvận động tiết 
+
+### Khoa Học Viễn Tưởng / Tận Thếviệc cần điểm 
+
+- **tay giữ là  của cơ sở ngữ ** — 50% trên Ống kínhhàm tay giữ ，truyền "không nối /thể phát sinh ý ngoài " của sinh lưu 。động độ phútcấp ：an toàn →dẫn →kịch 
+- **kiếm ** — kiếm đoạn hàm động ，mô Nhân vậtnhỏ địa Đẩy tới (push in / dolly in)。độ chậm ，bức （"dưới 1 giâysẽ xem đến sao？"）
+- **nhanh khuyến  = máy phát ** — ra nhanh khuyến ，mô "đến /" của sinh lý phụ hồi 
+- ** = nhở ** — từ người/tiết đến Viễn cảnh (extreme wide shot)，nhở khí  của không không 。là việc nhất đã  của "Góc quay"
+- **không hàm nối thiết bị  của đoạn ** — /đoạn ý không hàm nối thiết bị ，hàm thật  của vẽ mặt động truyền 
+- **Góc quaysinh lưu trạng thái** — Tĩnh (static) = an toàn /báo ； = kiếm /tìm kiếm ；tay giữ  = thi tiến /không an ；nhanh khuyến  = máy /phát ； = /
+- **360° video ** — Nhân vậtđến mới địa điểm hàm chậm  360° video ，để  và Nhân vật1 "mô "khí ，an toàn 。cụ nối trường  và công thể 

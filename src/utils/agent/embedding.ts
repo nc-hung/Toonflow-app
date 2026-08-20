@@ -5,9 +5,9 @@ import fs from "fs";
 import getPath from "@/utils/getPath";
 import db from "@/utils/db";
 
-// ── 模型配置 ──
-// const modelOnnxFile = ["all-MiniLM-L6-v2", "onnx", "model_fp16.onnx"]; // 模型文件路径
-// const modelDtype = "fp16" as const; // 量化类型：fp32
+// ── Mô hìnhCấu hình ──
+// const modelOnnxFile = ["all-MiniLM-L6-v2", "onnx", "model_fp16.onnx"]; // Mô hìnhTệpđường dẫn
+// const modelDtype = "fp16" as const; // lượng hóa loại：fp32
 let extractor: FeatureExtractionPipeline | null = null;
 
 export async function initEmbedding(): Promise<void> {
@@ -18,11 +18,11 @@ export async function initEmbedding(): Promise<void> {
   Object.entries(modelConfigData).forEach(([key, value]) => {
     modelObj[key] = value as string;
   });
-  let modelOnnxFile = modelObj?.modelOnnxFile ? JSON.parse(modelObj.modelOnnxFile) : ["all-MiniLM-L6-v2", "onnx", "model_fp16.onnx"]; // 模型文件路径
-  let modelDtype = modelObj?.modelDtype ?? ("fp16" as const); // 量化类型：fp32
+  let modelOnnxFile = modelObj?.modelOnnxFile ? JSON.parse(modelObj.modelOnnxFile) : ["all-MiniLM-L6-v2", "onnx", "model_fp16.onnx"]; // Mô hìnhTệpđường dẫn
+  let modelDtype = modelObj?.modelDtype ?? ("fp16" as const); // lượng hóa loại：fp32
   const onnxPath = path.join(getPath("models"), ...modelOnnxFile);
   if (!fs.existsSync(onnxPath)) {
-    throw new Error(`Embedding 模型文件不存在: ${onnxPath}`);
+    throw new Error(`Embedding Mô hìnhTệp không tồn tại: ${onnxPath}`);
   }
 
   transformersEnv.allowRemoteModels = false;
@@ -30,7 +30,7 @@ export async function initEmbedding(): Promise<void> {
   transformersEnv.localModelPath = getPath("models").replace(/\\/g, "/") + "/";
 
   const modelFolder = modelOnnxFile[0];
-  // @ts-ignore - pipeline 重载联合类型过于复杂
+  // @ts-ignore - pipeline trùng xuống kết hợp loạivới lời 
   extractor = await pipeline("feature-extraction", modelFolder, { dtype: modelDtype });
 }
 

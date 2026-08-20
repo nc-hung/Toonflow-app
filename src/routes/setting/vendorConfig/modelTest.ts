@@ -6,7 +6,7 @@ import { z } from "zod";
 import { tool, jsonSchema } from "ai";
 const router = express.Router();
 
-// 检查语言模型
+// Kiểm tra mô hình ngôn ngữ
 export default router.post(
   "/",
   validateFields({
@@ -24,9 +24,9 @@ export default router.post(
           fnName: "imageRequest",
           modelData: {
             prompt:
-              "一张16:9比例的图片，完美等分为2x2四宫格布局，各区域无缝衔接：\n左上宫格：一只可爱的猫，毛发蓬松，眼睛明亮，姿态俏皮\n右上宫格：一只友善的狗，金毛犬，表情愉悦，摇着尾巴\n左下宫格：一头健壮的牛，田园背景，目光温和，皮毛光泽\n右下宫格：一匹骏马，姿态优雅，鬃毛飘逸，肌肉健美\n风格要求：四个宫格风格统一，色彩鲜艳饱和，高清画质，细节清晰锐利，专业插画风格，线条干净，统一的左上方光源，柔和阴影，和谐配色，卡通/半写实风格，宫格间用白色或浅灰细线分隔", //图片提示词
-            referenceList: [], //输入的图片提示词
-            size: "1K", // 图片尺寸
+              "1 ảnh  16:9tỷ lệ của Hình ảnh，đẹp phần 2x24khung cục ，các khu vực không tiếp ：\ntrái trên khung ：1 chỉ  của ，phát ，dẫn ，thái \nphải trên khung ：1 chỉ  của ，，bản gtình ，đang đuôi \ntrái dưới khung ：1 đầu  của ，bối ，mục ánh  và ，ánh \nphải dưới khung ：1 khớp ，thái ，，đẹp \nphong cáchcần  cầu ：4mục khung phong cáchthống nhất ，vật  và ，cao sạch vẽ ，tiết sạch ，riêng vẽ phong cách，đường mục ，thống nhất  của trái trên phương ánh nguồn ， và sáng ， và nối vật ，thông /nửa phong cách，khung gian hàm vật hoặc đường ngăn cách", //Hình ảnhPrompt
+            referenceList: [], //Prompt hình ảnh đầu vào
+            size: "1K", // Kích thước hình ảnh
             aspectRatio: "16:9",
           },
         },
@@ -34,8 +34,8 @@ export default router.post(
       } as const;
       const vendorConfigData = await u.db("o_vendorConfig").where("id", id).first();
 
-      if (!vendorConfigData) return res.status(500).send(error("未找到该供应商配置"));
-      if (!vendorConfigData.models) return res.status(500).send(error("未找到模型列表"));
+      if (!vendorConfigData) return res.status(500).send(error("Không tìm thấy cấu hình nhà cung cấp này"));
+      if (!vendorConfigData.models) return res.status(500).send(error("Không tìm thấy danh sách mô hình"));
 
       const modelList = await u.vendor.getModelList(vendorConfigData.id!);
 
@@ -74,14 +74,14 @@ export default router.post(
 
       if (type == "text") {
         const { textStream } = await u.Ai.Text(`${id}:${modelName}`).stream({
-          prompt: "请调用工具获取火星的天气，并回答我多少气温",
+          prompt: "Hãy gọi công cụ để lấy thời tiết trên Sao Hỏa và cho tôi biết nhiệt độ hiện tại là bao nhiêu",
           tools: { getWeatherTool },
         });
         let fullResponse = "";
         for await (const chunk of textStream) {
           fullResponse += chunk;
         }
-        if (!fullResponse) return res.status(500).send(error("模型未返回结果"));
+        if (!fullResponse) return res.status(500).send(error("Mô hình không trả về kết quả"));
         res.status(200).send(success(fullResponse));
       } else {
         const aiTypeFn = {

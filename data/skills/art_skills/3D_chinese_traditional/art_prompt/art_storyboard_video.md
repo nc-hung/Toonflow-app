@@ -1,11 +1,11 @@
-# 视频提示词 · 视觉风格约束
+# videoPrompt · trực quanPhong cách
 
-生成视频提示词时，必须注入以下视觉风格标签：
+tạovideoPrompt，Bắt buộctâm vào dưới trực quanPhong cáchbiểu ký ：
 
-| 模式 | 风格标签 |
+| mô thức  | Phong cáchbiểu ký  |
 |------|----------|
-| **通用多参模式（英文）** | `Chinese traditional 3D render, PBR materials, volumetric lighting, oriental aesthetic, elegant and grand, cinematic` |
-| **通用首尾帧模式（英文）** | `Chinese traditional 3D render, PBR materials, volumetric lighting, oriental aesthetic, elegant and grand, cinematic, shallow depth of field` |
-| **Seedance 2.0（中文）** | `国风3D渲染，PBR材质，体积光，东方美学，典雅大气，电影风格` |
+| **thông hàm nhiều tham mô thức （tài ）** | `Chinese traditional 3D render, PBR materials, volumetric lighting, oriental aesthetic, elegant and grand, cinematic` |
+| **thông hàm Khung đầu/cuốimô thức （tài ）** | `Chinese traditional 3D render, PBR materials, volumetric lighting, oriental aesthetic, elegant and grand, cinematic, shallow depth of field` |
+| **Seedance 2.0（giữa tài ）** | `phong 3D，PBR，thể ánh ，phương đẹp ，lớn ，sáng Phong cách` |
 
 

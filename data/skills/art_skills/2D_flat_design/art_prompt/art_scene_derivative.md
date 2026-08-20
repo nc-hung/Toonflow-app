@@ -1,164 +1,164 @@
-# 场景衍生资产生成 · 扁平风约束手册
+# Bối cảnhsinh Tài nguyêntạo · phong sổ tay
 
 ---
 
-## 一、衍生原则
+## 1 、sinh gốc 
 
-1. **空间一致** — 建筑结构/布局/材质在所有变体中保持一致
-2. **景别驱动** — 同一场景通过不同景别展示不同叙事功能
-3. **时段切换** — 同一空间在不同时间段呈现不同色调色块
-4. **天候变化** — 同一空间在不同天气下呈现不同色彩氛围
-5. **扁平为锚** — 所有变体必须保持扁平矢量插画质感，拒绝 3D 渲染/CG 动画感；保持简洁线条、纯色填充
+1. **rỗng gian 1 ** — tạo kết cấu /cục /ở tất cảthể giữa lưu giữ 1 
+2. **Cỡ cảnhđộng ** — cùng 1 Bối cảnhthông quakhông cùng Cỡ cảnhnhở không cùng việc công thể 
+3. **đoạn đổi ** — cùng 1 rỗng gian ở không cùng thời gianđoạn không cùng vật gọi vật 
+4. **ngàyhóa ** — cùng 1 rỗng gian ở không cùng ngàydưới không cùng vật Không khí
+5. **** — tất cảthể Bắt buộclưu giữ lượng vẽ ， 3D /CG động vẽ ；lưu giữ đường mục 、thuần vật sung 
 
 ---
 
-## 二、景别变体
+## 2、Cỡ cảnhthể 
 
-### 景别定义
+### Cỡ cảnhnối nghĩa 
 
-| 景别 | 范围 | 叙事功能 | 提示词 |
+| Cỡ cảnh | khí  | việc công thể  | Prompt |
 |---|---|---|---|
-| 大全景 | 场景全貌 + 周围环境 | 建立空间感、定位 | extreme wide shot、大全景、flat extreme wide |
-| 全景 | 场景完整呈现 | 展示空间结构 | wide shot、全景、flat wide |
-| 中景 | 场景局部区域 | 聚焦功能区 | medium shot、中景、flat medium |
-| 近景 | 场景细部 | 色块/氛围道具特写 | close shot、近景、flat close |
-| 特写 | 极局部细节 | 色块纹理/关键道具 | extreme closeup、特写、flat extreme close |
+| lớn Toàn cảnh (wide shot) | Bối cảnhtoàn  + khí  | tạo lập rỗng gian 、nối vị trí  | extreme wide shot、lớn Toàn cảnh (wide shot)、flat extreme wide |
+| Toàn cảnh (wide shot) | Bối cảnhchỉnh  | nhở rỗng gian kết cấu  | wide shot、Toàn cảnh (wide shot)、flat wide |
+| Trung cảnh (medium shot) | Bối cảnhcục bộ khu vực  | công thể khu  | medium shot、Trung cảnh (medium shot)、flat medium |
+| Cận cảnh (close-up) | Bối cảnhbộ  | vật /Không khíĐạo cụĐặc tả (close-up) | close shot、Cận cảnh (close-up)、flat close |
+| Đặc tả (close-up) | cục bộ tiết  | vật lý /liên Đạo cụ | extreme closeup、Đặc tả (close-up)、flat extreme close |
 
-### 景别衍生规范
+### Cỡ cảnhsinh 
 
-| 从基准图衍生 | 保持不变 | 允许变化 |
+| từ cơ sở ảnh sinh  | lưu giữ không  | hóa  |
 |---|---|---|
-| 大全景 → 全景 | 建筑外观、整体布局 | 视角收窄、前景增加色块 |
-| 全景 → 中景 | 材质、色调、光线 | 裁切聚焦、纯色变化 |
-| 中景 → 近景 | 材质、色调 | 纯色聚焦、背景色块 |
-| 近景 → 特写 | 色块纹理 | 纯色聚焦、微距色块 |
+| lớn Toàn cảnh (wide shot) → Toàn cảnh (wide shot) | tạo ngoài 、chỉnh thể cục  | video nhân nhận hẹp 、trước bối cộng vật  |
+| Toàn cảnh (wide shot) → Trung cảnh (medium shot) | 、vật gọi 、ánh đường  | 、thuần vật hóa  |
+| Trung cảnh (medium shot) → Cận cảnh (close-up) | 、vật gọi  | thuần vật 、bối vật  |
+| Cận cảnh (close-up) → Đặc tả (close-up) | vật lý  | thuần vật 、vật  |
 
 ---
 
-## 三、时段变体
+## 3、đoạn thể 
 
-### 时段定义
+### đoạn nối nghĩa 
 
-| 时段 | 视觉特征 | 提示词 |
+| đoạn  | trực quan | Prompt |
 |---|---|---|
-| 清晨 | 扁平色调、浅色色块 | 扁平清晨、浅色晨色 |
-| 正午 | 扁平明亮、纯色色块 | 扁平正午、纯色明亮 |
-| 黄昏 | 扁平金色、暖色色块 | 扁平黄昏、暖色金辉 |
-| 夜间（月光） | 扁平冷蓝、深色色块 | 扁平月光、冷蓝月色 |
-| 夜间（灯火） | 扁平暖黄、深色背景 | 扁平灯火、暖黄暗底 |
+| Sáng sớm | vật gọi 、vật vật  | Sáng sớm、vật vật  |
+| chính  | dẫn 、thuần vật vật  | chính 、thuần vật dẫn  |
+| Hoàng hôn | vật 、vật vật  | Hoàng hôn、vật  |
+| gian （thángánh ） | 、vật vật  | thángánh 、thángvật  |
+| gian （） | 、vật bối  | 、 |
 
-### 时段衍生规范
+### đoạn sinh 
 
-| 从基准时段衍生 | 保持不变 | 变化项 |
+| từ cơ sở đoạn sinh  | lưu giữ không  | hóa  |
 |---|---|---|
-| 日间 → 黄昏 | 建筑/布局/材质 | 天空色块暖化、阴影色块 |
-| 日间 → 夜间 | 建筑/布局/材质 | 整体色块变暗、增加灯火/月色色块 |
-| 室内日间 → 室内夜间 | 空间结构、家具 | 整体色块暖化、增加烛火/灯笼色块 |
+| ngày gian  → Hoàng hôn | tạo /cục / | ngàyrỗng vật hóa 、sáng vật  |
+| ngày gian  → gian  | tạo /cục / | chỉnh thể vật 、cộng /thángvật vật  |
+| trong ngày gian  → trong gian  | rỗng gian kết cấu 、cụ  | chỉnh thể vật hóa 、cộng /vật  |
 
 ---
 
-## 四、天候变体
+## 4、ngàythể 
 
-### 天候定义
+### ngàynối nghĩa 
 
-| 天候 | 视觉特征 | 提示词 |
+| ngày | trực quan | Prompt |
 |---|---|---|
-| 晴天 | 扁平明亮、纯色色块 | 扁平晴天、纯色晴日 |
-| 阴天 | 扁平均匀、灰色色块 | 扁平阴天、灰色柔光 |
-| 薄雾 | 扁平朦胧、低饱和色块 | 扁平薄雾、朦胧色块 |
-| 细雨 | 扁平雨丝、湿润色块 | 扁平细雨、湿润色块 |
-| 飞雪 | 扁平白色、覆盖色块 | 扁平飞雪、白色覆盖 |
+| ngày | dẫn 、thuần vật vật  | ngày、thuần vật ngày  |
+| ngày | 、vật vật  | ngày、vật ánh  |
+| mỏng  | 、thấp  và vật  | mỏng 、vật  |
+|  | 、trau chuốt | 、trau chuốt |
+|  | vật 、vật  | 、vật  |
 
-### 天候衍生规范
+### ngàysinh 
 
-| 从基准天候衍生 | 保持不变 | 变化项 |
+| từ cơ sở ngàysinh  | lưu giữ không  | hóa  |
 |---|---|---|
-| 晴 → 薄雾 | 建筑/布局 | 增加扁平雾层、远景色块模糊、饱和度降低 |
-| 晴 → 细雨 | 建筑/布局 | 增加扁平雨丝、地面色块、色调偏冷 |
-| 晴 → 飞雪 | 建筑/布局 | 增加扁平积雪、雪花色块、色调偏白 |
-| 植被需随天候逻辑适配 | — | 扁平雨色、扁平雪色 |
+|  → mỏng  | tạo /cục  | cộng tầng 、Viễn cảnh (extreme wide shot)vật mô 、 và độ thấp  |
+|  →  | tạo /cục  | cộng 、địa mặt vật 、vật gọi  |
+|  →  | tạo /cục  | cộng 、vật 、vật gọi  |
+| cần ngàylogicnối  | — | vật 、vật  |
 
 ---
 
-## 五、角度变体
+## 5、nhân độ thể 
 
-### 角度定义
+### nhân độ nối nghĩa 
 
-> 衍生图相对参考图，可在以下角度维度上进行切换。调用方会传入参考图 + 目标角度描述，本文件只定义角度语汇与一致性约束。
+> sinh ảnh đúng tham chiếuảnh ，ở dưới nhân độ độ trên tiến thi đổi 。gọi hàm phương sẽ truyền vào tham chiếuảnh  + mục biểu nhân độ Mô tả，sách tệpchỉ nối nghĩa nhân độ ngữ 1 。
 
-| 角度 | 描述 | 提示词 |
+| nhân độ  | Mô tả | Prompt |
 |---|---|---|
-| 正面/前视 | 与参考图相比，视线朝向场景正面 | front view、eye level |
-| 侧面（左/右） | 朝场景左/右侧 90° 平视 | left side view / right side view |
-| 背面/后视 | 朝场景背面 180° | back view |
-| 俯视 | 高位俯瞰，呈现整体布局 | high angle、bird's eye view |
-| 仰视 | 低位仰望，强调高大主体 | low angle、worm's eye view |
-| 近景推进 | 同方向但镜头推进，聚焦局部 | push-in、closer angle |
-| 自由角度 | 调用方自定义的任意角度描述 | 按 `{目标角度}` 注入 |
+| chính mặt /trước video  | tham chiếuảnh tỷ ，video đường Bối cảnhchính mặt  | front view、eye level |
+| mặt （trái /phải ） | Bối cảnhtrái /phải  90° video  | left side view / right side view |
+| mặt /sau video  | Bối cảnhmặt  180° | back view |
+| video  | cao vị trí ，chỉnh thể cục  | high angle、bird's eye view |
+| video  | thấp vị trí ，gọi cao lớn chính thể  | low angle、worm's eye view |
+| Cận cảnh (close-up)Đẩy tới (push in / dolly in) | cùng phương nhưng Ống kínhĐẩy tới (push in / dolly in)，cục bộ  | push-in、closer angle |
+| tự do nhân độ  | gọi hàm phương tự nối nghĩa  của ý nhân độ Mô tả | theo  `{mục biểu nhân độ }` tâm vào  |
 
-### 角度衍生规范
+### nhân độ sinh 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 参考一致性 | 建筑结构/布局/材质/色调/季节/天候必须与参考图一致 |
-| 视点 | 同一场景中心点，仅角度切换；视线高度可随角度调整 |
-| 光照逻辑 | 保持扁平无光影逻辑，与参考图一致 |
-| 布局 | 单画面（非拼图、非多视图、非分屏） |
-| 人物 | **严禁出现任何人物、人影、人体轮廓** |
-| 画面比例 | 默认 1:1（或按调用方设定） |
+| tham chiếu1  | tạo kết cấu /cục //vật gọi /tiết /ngàyBắt buộctham chiếuảnh 1  |
+| video điểm  | cùng 1 Bối cảnhgiữa điểm ，chỉ nhân độ đổi ；video đường cao độ nhân độ gọi chỉnh  |
+| ánh logic | lưu giữ không Ánh sánglogic，tham chiếuảnh 1  |
+| cục  | đơn vẽ mặt （phi ghép ảnh 、phi nhiều video ảnh 、phi phút） |
+| người | **ra người、ngườisáng 、ngườithể ** |
+| vẽ mặt Tỷ lệ | Mặc định 1:1（hoặc theo gọi hàm phương thiết nối ） |
 
 ---
 
-## 六、提示词模板
+## 6、Promptmô 
 
 ```
-扁平古风衍生场景图，基于参考图，
+phong sinh Bối cảnhảnh ，cơ sở với tham chiếuảnh ，
 2d flat design，vector art，flat illustration，
 minimalist，clean lines，solid colors，
 flat scene derivative，environment concept art，no people，no characters，no human figures，
-保持场景空间结构一致，
-{目标角度（如有）}，{景别视角（如有）}，{时段描述（如有）}，{天候描述（如有）}，
-{前景色块}，{中景色块}，{后景色块}，
-{色调描述}，{色块变化（如有）}，{天空色块变化（如有）}，{氛围调整（如有）}，
-{天候视觉特征（如有）}，{材质色块变化（如有）}，{植被适配描述（如有）}，
-无岁月痕迹，无磨损，扁平完美，
-无光照，无阴影，纯色平涂，
-无透视，纯色填充，
-单画面构图，与参考图保持建筑结构/材质/色调一致，仅按目标角度切换视点，
-画面中无任何人物
-图中不要有任何文字
+lưu giữ Bối cảnhrỗng gian kết cấu 1 ，
+{mục biểu nhân độ （như có ）}，{Cỡ cảnhvideo nhân （như có ）}，{đoạn Mô tả（như có ）}，{ngàyMô tả（như có ）}，
+{trước bối vật }，{Trung cảnh (medium shot)vật }，{sau bối vật }，
+{vật gọi Mô tả}，{vật hóa （như có ）}，{ngàyrỗng vật hóa （như có ）}，{Không khígọi chỉnh （như có ）}，
+{ngàytrực quan（như có ）}，{vật hóa （như có ）}，{nối Mô tả（như có ）}，
+không tháng，không ，đẹp ，
+không ánh ，không sáng ，thuần vật ，
+không video ，thuần vật sung ，
+đơn vẽ mặt cấu ảnh ，tham chiếuảnh lưu giữ tạo kết cấu //vật gọi 1 ，chỉ theo mục biểu nhân độ đổi video điểm ，
+vẽ mặt giữa không người
+ảnh giữa không cần có tài chữ 
 ```
 
-> **使用说明**：根据用户提供的信息自行判断需要应用的变化维度（角度/景别/时段/天候），未提及的维度对应字段留空省略即可。无需为每种变体单独生成模板。
+> **hàm Giải thích**：dựa theohàm dùng nhắc nhà  của thông tintự thi cần cần hồi hàm  của hóa độ （nhân độ /Cỡ cảnh/đoạn /ngày），chưa nhắc  của độ đúng hồi chữ đoạn lưu rỗng 。không cần loại thể đơn tạomô 。
 
 ---
 
-## 七、约束规则
+## 7、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 场景空间结构在所有变体中保持一致 |
-| R2 | 时段变体必须调整色块色调与氛围 |
-| R3 | 天候变体必须适配色块/材质表面 |
-| R4 | 衍生图必须为「单画面」，不得拼接多视图/网格/分屏 |
-| R5 | 衍生图必须与参考图保持建筑结构/材质/色调一致，仅按指定角度切换视点 |
-| R6 | 场景图中**严禁出现任何人物** |
-| R7 | 根据用户提供的信息自行判断变化维度（角度/景别/时段/天候），未提及维度留空省略 |
-| R8 | 必须指定「扁平风格」关键词（2d flat design、vector art） |
-| R9 | 必须指定「无光影无渐变」 |
-| R10 | 材质必须为纯色填充，禁止复杂纹理/岁月感 |
+| R1 | Bối cảnhrỗng gian kết cấu ở tất cảthể giữa lưu giữ 1  |
+| R2 | đoạn thể Bắt buộcgọi chỉnh vật vật gọi Không khí |
+| R3 | ngàythể Bắt buộcnối vật /bảng mặt  |
+| R4 | sinh ảnh Bắt buộc「đơn vẽ mặt 」，không được ghép tiếp nhiều video ảnh /mạng khung /phút |
+| R5 | sinh ảnh Bắt buộctham chiếuảnh lưu giữ tạo kết cấu //vật gọi 1 ，chỉ theo nối nhân độ đổi video điểm  |
+| R6 | Bối cảnhảnh giữa **ra người** |
+| R7 | dựa theohàm dùng nhắc nhà  của thông tintự thi hóa độ （nhân độ /Cỡ cảnh/đoạn /ngày），chưa nhắc độ lưu rỗng  |
+| R8 | Bắt buộcnối 「Phong cách」liên từ （2d flat design、vector art） |
+| R9 | Bắt buộcnối 「không Ánh sángkhông 」 |
+| R10 | Bắt buộcthuần vật sung ，Nghiêm cấmlời lý /tháng |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 变体间建筑结构/布局不一致 |
-| X2 | 天候与季节矛盾（夏天飞雪等） |
-| X3 | 变体间材质/风格突变 |
-| X4 | 出现任何人物、人影、人体剪影或人体轮廓 |
-| X5 | 画面被拼接成多视图/网格/分屏布局 |
-| X6 | 3D 渲染/CG 动画/卡通/游戏引擎质感（禁用 3D render、CGI、Unreal Engine、Unity 等词） |
-| X7 | 材质过于复杂、色块区分不清 |
-| X8 | 添加光影/阴影/渐变/立体感效果 |
+| X1 | thể gian tạo kết cấu /cục không 1  |
+| X2 | ngàytiết （ngày） |
+| X3 | thể gian /Phong cách |
+| X4 | ra người、ngườisáng 、ngườithể sáng hoặc ngườithể  |
+| X5 | vẽ mặt ghép tiếp tạo nhiều video ảnh /mạng khung /phútcục  |
+| X6 | 3D /CG động vẽ /thông /（hàm  3D render、CGI、Unreal Engine、Unity từ ） |
+| X7 | với lời 、vật khu phútkhông sạch  |
+| X8 | thêmÁnh sáng/sáng //lập thể hiệu quả  |

@@ -59,7 +59,7 @@ class Logger {
     this.writing = true;
     try {
       let str = typeof chunk === "string" ? chunk : chunk?.toString?.("utf-8") ?? "";
-      str = str.replace(/\x1B\[\d*m/g, ""); // 去除 ANSI 颜色码
+      str = str.replace(/\x1B\[\d*m/g, ""); // đi bỏ  ANSI vật mã 
       if (str.trim() && this.stream && !this.stream.destroyed) this.stream.write(str.endsWith("\n") ? str : str + "\n");
     } finally {
       this.writing = false;
@@ -70,7 +70,7 @@ class Logger {
     try {
       if (!fs.existsSync(LOG_FILE) || fs.statSync(LOG_FILE).size < MAX_SIZE) return;
       this.stream?.end();
-      // 单文件轮转：保留后半部分日志
+      // đơn Tệpchuyển ：lưu lưu sau  nửa bộ phần ngày 
       const content = fs.readFileSync(LOG_FILE, "utf-8");
       const half = content.slice(content.length >>> 1);
       const firstNewline = half.indexOf("\n");
@@ -81,7 +81,7 @@ class Logger {
 
   private hijack(): void {
     if (this.isHijacked) return;
-    // 劫持 console 方法
+    // giữ  console phương thức 
     for (const level of LEVELS) {
       const original = console[level];
       if (typeof original !== "function") continue;
@@ -99,7 +99,7 @@ class Logger {
       };
     }
 
-    // 劫持 stdout/stderr（捕获 morgan 等直接写 stdout 的输出）
+    // giữ  stdout/stderr（lấy  morgan trực tiếp  stdout  của xuất ra ）
     this.originalStdoutWrite = process.stdout.write.bind(process.stdout);
     this.originalStderrWrite = process.stderr.write.bind(process.stderr);
 
@@ -116,20 +116,20 @@ class Logger {
     this.isHijacked = true;
   }
 
-  /** 导出日志内容 */
+  /** Exportngày nội dung */
   exportLogs(): string {
     if (!fs.existsSync(LOG_FILE)) return "";
     return fs.readFileSync(LOG_FILE, "utf-8");
   }
 
-  /** 清空日志 */
+  /** xóa sạchngày  */
   clear(): void {
     this.stream?.end();
     if (fs.existsSync(LOG_FILE)) fs.unlinkSync(LOG_FILE);
     this.stream = fs.createWriteStream(LOG_FILE, { flags: "a" });
   }
 
-  /** 关闭日志 */
+  /** liên ngày  */
   close(): void {
     if (this.isHijacked) {
       for (const level of LEVELS) {

@@ -1,15 +1,15 @@
 /**
- * Toonflow AI供应商模板 - AtlasCloud MASS
+ * Toonflow AINhà cung cấpTemplate - AtlasCloud MASS
  * @version 0.8
  *
- * 说明：
- * 1) 文本接口使用 OpenAI 兼容基地址：https://api.atlascloud.ai/v1
- * 2) 图片/视频使用 Atlas Cloud 媒体接口：https://api.atlascloud.ai/api/v1
- * 3) 图片/视频为异步任务：提交后轮询 /api/v1/model/prediction/{id}
+ * Ghi chú:
+ * 1) API văn bản  sử dụng Base URL tương thích OpenAI: https://api.atlascloud.ai/v1
+ * 2) Hình ảnh/Video sử dụng media API của Atlas Cloud: https://api.atlascloud.ai/api/v1
+ * 3) Hình ảnh/Video là tác vụ bất đồng bộ: sau  khi gửi sẽ truy vấn trạng thái tại /api/v1/model/prediction/{id}
  */
 
 // ============================================================
-// 类型定义
+// Định nghĩa kiểu dữ liệu
 // ============================================================
 
 type VideoMode =
@@ -109,7 +109,7 @@ type AtlasVideoModelKind =
   | "generic";
 
 // ============================================================
-// 全局声明
+// Khai báo toàn cục
 // ============================================================
 
 declare const axios: any;
@@ -128,7 +128,7 @@ declare const exports: {
 };
 
 // ============================================================
-// 供应商配置
+// Nhà cung cấpCấu hình
 // ============================================================
 
 const vendor: VendorConfig = {
@@ -136,11 +136,11 @@ const vendor: VendorConfig = {
   version: "1.0",
   author: "AtlasCloud",
   name: "AtlasCloud MASS",
-  description: "AtlasCloud 全模态平台接入 Toonflow。默认按官方文档填写文本、图片、视频与任务轮询路径。",
+  description: "Nền tảng toàn phương thức AtlasCloud kết nối với Toonflow. Mặc định điền đường dẫn văn bản , hình ảnh, video và truy vấn tác vụ theo tài liệu chính thức.",
   inputs: [
-    { key: "apiKey", label: "API密钥", type: "password", required: true, placeholder: "AtlasCloud API Key" },
-    { key: "chatBaseUrl", label: "文本基地址", type: "url", required: true, placeholder: "https://api.atlascloud.ai/v1", disabled: true },
-    { key: "mediaBaseUrl", label: "媒体基地址", type: "url", required: true, placeholder: "https://api.atlascloud.ai/api/v1", disabled: true },
+    { key: "apiKey", label: "Khóa API (API Key)", type: "password", required: true, placeholder: "AtlasCloud API Key" },
+    { key: "chatBaseUrl", label: "văn bản  cơ sở địa chỉ", type: "url", required: true, placeholder: "https://api.atlascloud.ai/v1", disabled: true },
+    { key: "mediaBaseUrl", label: "Base URL Media", type: "url", required: true, placeholder: "https://api.atlascloud.ai/api/v1", disabled: true },
   ],
   inputValues: {
     apiKey: "",
@@ -210,7 +210,7 @@ const vendor: VendorConfig = {
 };
 
 // ============================================================
-// 辅助工具
+// Công cụ bổ trợ
 // ============================================================
 
 const getChatBaseUrl = () => vendor.inputValues.chatBaseUrl.replace(/\/+$/, "");
@@ -220,7 +220,7 @@ const getMediaBaseUrl = () => vendor.inputValues.mediaBaseUrl.replace(/\/+$/, ""
 const joinUrl = (base: string, path: string) => `${base}${path.startsWith("/") ? "" : "/"}${path}`;
 
 const getHeaders = () => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少 API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu  API Key");
   return {
     "Content-Type": "application/json",
     Authorization: `Bearer ${vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "")}`,
@@ -372,7 +372,7 @@ const buildAtlasVideoPayload = (config: VideoConfig, model: VideoModel) => {
 
   if (kind === "wanReferenceToVideo") {
     if (imageRefs.length < 1) {
-      throw new Error(`${model.name} 需要至少 1 张参考图`);
+      throw new Error(`${model.name} Cần ít nhất  1 ảnh tham chiếu `);
     }
     body.images = [imageRefs[0]];
     body.ratio = ratio;
@@ -382,7 +382,7 @@ const buildAtlasVideoPayload = (config: VideoConfig, model: VideoModel) => {
     body.seed = -1;
   } else if (kind === "seedanceReferenceToVideo") {
     if (imageRefs.length < 1) {
-      throw new Error(`${model.name} 需要至少 1 张参考图`);
+      throw new Error(`${model.name} Cần ít nhất  1 ảnh tham chiếu `);
     }
     if (shouldGenerateAudio) body.generate_audio = true;
     body.images = [imageRefs[0]];
@@ -392,7 +392,7 @@ const buildAtlasVideoPayload = (config: VideoConfig, model: VideoModel) => {
     body.watermark = false;
   } else if (kind === "seedanceImageToVideo") {
     if (imageRefs.length < 1) {
-      throw new Error(`${model.name} 需要至少 1 张参考图`);
+      throw new Error(`${model.name} Cần ít nhất  1 ảnh tham chiếu `);
     }
     if (shouldGenerateAudio) body.generate_audio = true;
     body.images = imageRefs;
@@ -418,11 +418,11 @@ const buildAtlasVideoPayload = (config: VideoConfig, model: VideoModel) => {
 };
 
 // ============================================================
-// 适配器函数
+// Hàm Adapter
 // ============================================================
 
 const textRequest = (model: TextModel, think: boolean, thinkLevel: 0 | 1 | 2 | 3) => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少 API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu  API Key");
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
   const effortMap: Record<number, string> = { 0: "minimal", 1: "low", 2: "medium", 3: "high" };
 
@@ -469,20 +469,20 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
     body.resolution = sizeToResolution[config.size || "1K"] || "1k";
   }
 
-  logger(`[AtlasCloud 图片] 提交任务: ${model.modelName} -> ${resolvedModelName}, refs=${imageRefs.length}`);
+  logger(`[AtlasCloud Hình ảnh] Gửi tác vụ: ${model.modelName} -> ${resolvedModelName}, refs=${imageRefs.length}`);
   const submitResp = await axios.post(url, body, { headers });
   const submitData = submitResp.data;
 
-  // 同步返回（直接拿图）
+  // cùng bước Trả về（trực tiếp lấy ảnh ）
   const syncB64 = extractB64(submitData);
   if (syncB64) return syncB64;
   const syncUrl = extractUrl(submitData);
   if (syncUrl) return await urlToBase64(syncUrl);
 
-  // 异步返回（拿 taskId 再轮询）
+  // bất bước Trả về（lấy  taskId Truy vấn）
   const taskId = extractTaskId(submitData);
   if (!taskId) {
-    throw new Error(`图片任务提交失败：未获取到任务ID。原始响应：${JSON.stringify(submitData).slice(0, 500)}`);
+    throw new Error(`Hình ảnhGửi tác vụthất bại：chưa Lấyđến ID tác vụ。gốc ban đầu phản hồi ：${JSON.stringify(submitData).slice(0, 500)}`);
   }
 
   const pollResult = await pollTask(
@@ -497,10 +497,10 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
         if (b64) return { completed: true, data: b64 };
         const mediaUrl = extractUrl(data);
         if (mediaUrl) return { completed: true, data: mediaUrl };
-        return { completed: true, error: "任务成功但未返回结果地址" };
+        return { completed: true, error: "tác vụ thành côngnhưng chưa Trả vềkết quảđịa chỉ" };
       }
       if (["failed", "error", "cancelled", "canceled", "expired"].includes(status)) {
-        return { completed: true, error: extractError(data) || "图片生成失败" };
+        return { completed: true, error: extractError(data) || "Hình ảnhtạothất bại" };
       }
       return { completed: false };
     },
@@ -509,7 +509,7 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
   );
 
   if (pollResult.error) throw new Error(pollResult.error);
-  if (!pollResult.data) throw new Error("图片生成失败：轮询未返回数据");
+  if (!pollResult.data) throw new Error("Hình ảnhtạothất bại：Truy vấnchưa Trả vềDữ liệu");
   if (pollResult.data.startsWith("data:")) return pollResult.data;
   if (pollResult.data.startsWith("http")) return await urlToBase64(pollResult.data);
   return pollResult.data;
@@ -520,7 +520,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
   const url = joinUrl(getMediaBaseUrl(), "/model/generateVideo");
   const { body, summary } = buildAtlasVideoPayload(config, model);
 
-  logger(`[AtlasCloud 视频] 提交任务: ${model.modelName}, ${summary}`);
+  logger(`[AtlasCloud Video] Gửi tác vụ: ${model.modelName}, ${summary}`);
   const submitResp: any = await withNetworkRetry<any>(() => axios.post(url, body, { headers }), 3, 1500);
   const submitData = submitResp.data;
 
@@ -528,7 +528,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
   if (!taskId) {
     const syncUrl = extractUrl(submitData);
     if (syncUrl) return await urlToBase64(syncUrl);
-    throw new Error(`视频任务提交失败：未获取到任务ID。原始响应：${JSON.stringify(submitData).slice(0, 500)}`);
+    throw new Error(`VideoGửi tác vụthất bại：chưa Lấyđến ID tác vụ。gốc ban đầu phản hồi ：${JSON.stringify(submitData).slice(0, 500)}`);
   }
 
   const pollResult = await pollTask(
@@ -541,10 +541,10 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       if (["succeeded", "success", "done", "completed"].includes(status)) {
         const mediaUrl = extractUrl(data);
         if (mediaUrl) return { completed: true, data: mediaUrl };
-        return { completed: true, error: "任务成功但未返回视频地址" };
+        return { completed: true, error: "tác vụ thành côngnhưng chưa Trả vềVideođịa chỉ" };
       }
       if (["failed", "error", "cancelled", "canceled", "expired"].includes(status)) {
-        return { completed: true, error: extractError(data) || "视频生成失败" };
+        return { completed: true, error: extractError(data) || "Videotạothất bại" };
       }
       return { completed: false };
     },
@@ -553,12 +553,12 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
   );
 
   if (pollResult.error) throw new Error(pollResult.error);
-  if (!pollResult.data) throw new Error("视频生成失败：轮询未返回数据");
+  if (!pollResult.data) throw new Error("Videotạothất bại：Truy vấnchưa Trả vềDữ liệu");
   return await urlToBase64(pollResult.data);
 };
 
 const ttsRequest = async (_config: TTSConfig, _model: TTSModel): Promise<string> => {
-  // AtlasCloud 当前版本先不接 TTS。
+  // AtlasCloud hiện tạibản sách trước  không tiếp  TTS。
   return "";
 };
 
@@ -566,7 +566,7 @@ const checkForUpdates = async (): Promise<{ hasUpdate: boolean; latestVersion: s
   return {
     hasUpdate: false,
     latestVersion: vendor.version,
-    notice: "AtlasCloud MASS 初稿。",
+    notice: "AtlasCloud MASS 。",
   };
 };
 
@@ -575,7 +575,7 @@ const updateVendor = async (): Promise<string> => {
 };
 
 // ============================================================
-// 导出
+// Export
 // ============================================================
 
 exports.vendor = vendor;

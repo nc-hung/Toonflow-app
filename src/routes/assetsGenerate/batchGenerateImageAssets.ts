@@ -20,40 +20,40 @@ interface AssetTypeConfig {
 
 const assetTypeConfig: Record<AssetType, AssetTypeConfig> = {
   role: {
-    label: "角色",
-    taskClass: "角色图生成",
+    label: "Nhân vật",
+    taskClass: "Nhân vậtảnh tạo",
     dir: "role",
-    promptTitle: "角色标准四视图",
-    promptEnd: "人物角色四视图",
+    promptTitle: "Nhân vậtTiêu chuẩn4video ảnh ",
+    promptEnd: "ngườiNhân vật4video ảnh ",
   },
   scene: {
-    label: "场景",
-    taskClass: "场景图生成",
+    label: "Bối cảnh",
+    taskClass: "Bối cảnhảnh tạo",
     dir: "scene",
-    promptTitle: "标准场景图",
-    promptEnd: "标准场景图",
+    promptTitle: "Tiêu chuẩnBối cảnhảnh ",
+    promptEnd: "Tiêu chuẩnBối cảnhảnh ",
   },
   tool: {
-    label: "道具",
-    taskClass: "道具图生成",
+    label: "Đạo cụ",
+    taskClass: "Đạo cụảnh tạo",
     dir: "props",
-    promptTitle: "标准道具图",
-    promptEnd: "标准道具图",
+    promptTitle: "Tiêu chuẩnĐạo cụảnh ",
+    promptEnd: "Tiêu chuẩnĐạo cụảnh ",
   },
 };
 
 function buildPrompt(cfg: AssetTypeConfig, artStyle: string, name: string, prompt: string): string {
   return `
-    请根据以下参数生成${cfg.promptTitle}：
+    vui lòng Dựa theodưới tham sốtạo${cfg.promptTitle}：
 
-    **基础参数：**
-    - 画风风格: ${artStyle || "未指定"}
+    **cơ sở tham số：**
+    - vẽ phong phong cách: ${artStyle || "chưa nối "}
 
-    **${cfg.label}设定：**
-    - 名称:${name},
-    - 提示词:${prompt},
+    **${cfg.label}thiết nối ：**
+    - tên:${name},
+    - Prompt:${prompt},
 
-    请严格按照系统规范生成${cfg.promptEnd}。
+    vui lòng khung theo dòng thống tạo${cfg.promptEnd}。
   `;
 }
 
@@ -76,30 +76,30 @@ const requestSchema = {
 export default router.post("/", validateFields(requestSchema), async (req, res) => {
   const { projectId, model, resolution, concurrentCount, items } = req.body;
 
-  // 1. 查询项目
+  // 1. Truy vấnDự án
   const project = await u.db("o_project").where("id", projectId).select("artStyle", "type", "intro").first();
-  if (!project) return res.status(500).send(error("项目为空"));
+  if (!project) return res.status(500).send(error("Dự ánrỗng "));
 
-  // 2. 逐条插入 o_image 占位记录，收集 imageId 列表
+  // 2. mục Chèn o_image vị trí lục ，nhận tập  imageId danh sách
   const totalNovelId: number[] = [];
   for (const item of items) {
     const [imageId] = await u.db("o_image").insert({
       type: item.type,
-      state: "生成中",
+      state: "Đang tạo",
       assetsId: item.id,
     });
     await u.db("o_assets").where("id", item.id).update({ imageId });
     totalNovelId.push(imageId);
   }
 
-  // 3. 后台异步并发生成，不阻塞响应
+  // 3. sau  đài bất bước nhất phát tạo，không phản hồi 
   const limit = pLimit(concurrentCount ?? 1);
 
   const tasks = items.map((item: { id: number; type: string; name: string; prompt: string; base64: string | null | undefined }, index: number) =>
     limit(async () => {
       const imageId = totalNovelId[index];
       const data = await u.db("o_image").where("id", imageId).select("state").first();
-      if (data?.state === "生成失败") {
+      if (data?.state === "Tạo thất bại") {
         return;
       }
       const cfg = assetTypeConfig[item.type as AssetType];
@@ -109,7 +109,7 @@ export default router.post("/", validateFields(requestSchema), async (req, res) 
 
       const imagePath = `/${projectId}/${cfg.dir}/${uuidv4()}.jpg`;
       const userPrompt = buildPrompt(cfg, project.artStyle ?? "", item.name, item.prompt);
-      const describe = `生成${cfg.label}图，名称：${item.name}，提示词：${item.prompt}`;
+      const describe = `tạo${cfg.label}ảnh ，tên：${item.name}，Prompt：${item.prompt}`;
       const relatedObjects = { id: item.id, projectId, type: cfg.label };
       try {
         const aiImage = u.Ai.Image(model);
@@ -130,14 +130,14 @@ export default router.post("/", validateFields(requestSchema), async (req, res) 
         aiImage.save(imagePath);
 
         const imageData = await u.db("o_image").where("id", imageId).select("*").first();
-        if (!imageData) return res.status(500).send("资产已被删除");
+        if (!imageData) return res.status(500).send("Tài nguyênđã Xóa");
         if (!imageData) return;
-        if (imageData.state === "生成失败") return;
+        if (imageData.state === "Tạo thất bại") return;
         await u
           .db("o_image")
           .where("id", imageId)
           .update({
-            state: "已完成",
+            state: "Đã hoàn thành",
             filePath: imagePath,
             type: item.type,
             model: model.split(/:(.+)/)[1],
@@ -149,12 +149,12 @@ export default router.post("/", validateFields(requestSchema), async (req, res) 
         await u
           .db("o_image")
           .where("id", imageId)
-          .update({ state: "生成失败", errorReason: u.error(e).message });
+          .update({ state: "Tạo thất bại", errorReason: u.error(e).message });
       }
     }),
   );
 
-  // 后台执行，不等待结果
+  // sau  đài thực thi，không kết quả
   Promise.all(tasks).catch(() => {});
 
   return res.status(200).send(success({ total: items.length }));

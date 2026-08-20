@@ -15,12 +15,12 @@
 </p>
 
 <p align="center">
-  <a href="../README.md">简体中文</a> | 
-  <strong>繁體中文</strong> | 
+  <a href="../README.md">thể giữa tài </a> | 
+  <strong>giữa tài </strong> | 
   <a href="./README.en.md">English</a> | 
   <a href="./README.th.md">ไทย</a> | 
   <a href="./README.vi.md">Tiếng Việt</a> | 
-  <a href="./README.ja.md">日本語</a> | 
+  <a href="./README.ja.md">ngày sách </a> | 
   <a href="./README.ru.md">Русский</a>
 </p>
 
@@ -78,7 +78,7 @@
     <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Electron/electron2.svg" alt="Electron" />
   </p>
   
-  > 🚀 **一站式短劇工程**：從文本到角色，從分鏡到影片，0門檻全流程AI化，創作效率提升10倍+！
+  > 🚀 **1 trạm thức ngắn trình **：tài sách đến nhân vật，phútđến sáng ，0toàn trình AIhóa ，tác vụ hiệu tỷ lệ nhắc 10+！
 </div>
 
 <div align="center">
@@ -86,7 +86,7 @@
     <tr>
       <td width="50%" align="center">
         <a href="./g-star.png" target="_blank">
-          <img src="./g-star.png" alt="AtomGit G-Star 認證證書" width="100%"/>
+          <img src="./g-star.png" alt="AtomGit G-Star " width="100%"/>
         </a>
       </td>
       <td width="50%" align="center">
@@ -100,81 +100,81 @@
 
 ---
 
-# 🌐 多語言支援
+# 🌐 nhiều 
 
-Toonflow 支援以下語言介面：
+Toonflow dưới mặt ：
 
-| 語言       | Language              |
+|        | Language              |
 | ---------- | --------------------- |
-| 簡體中文   | Chinese (Simplified)  |
-| 繁體中文   | Chinese (Traditional) |
+| giữa tài    | Chinese (Simplified)  |
+| giữa tài    | Chinese (Traditional) |
 | English    | English               |
 | ไทย        | Thai                  |
 | Tiếng Việt | Vietnamese            |
-| 日本語     | Japanese              |
+| ngày sách      | Japanese              |
 | Русский    | Russian               |
 
-> 💡 更多語言適配中，歡迎貢獻翻譯！
+> 💡 đổi nhiều nối giữa ，！
 
 ---
 
-# 🌟 主要功能
+# 🌟 chính cần công thể 
 
-Toonflow 是面向短劇生產的 AI 工作檯，圍繞「策劃 → 編劇 → 分鏡 → 出片」構建完整閉環，並支援本地化、可程式化、可持續迭代的生產流程。
+Toonflow là mặt ngắn sinh  của  AI tác vụ ，「 →  → phút → ra 」tạo chỉnh ，sách địa hóa 、trình thức hóa 、giữ  của sinh trình 。
 
-- ✅ **無限畫布生產工作檯**  
-  以類無限畫布形式組織劇本、角色、分鏡、素材與影片節點，支援自由編排、回溯與並行生產，不受線性步驟限制。
-- ✅ **三層 Agent 協作體系**  
-  決策層、執行層、監督層協同工作，涵蓋任務拆解、內容生成、品質審閱與修訂反饋，提升穩定性與成片一致性。
-- ✅ **持久化 Agent 記憶**  
-  基於本地 ONNX 向量檢索的跨會話記憶系統，支援短期訊息、長期摘要和語義召回，確保多輪創作連續性。
-- ✅ **可程式化供應商系統**  
-  支援在設定中心直接編寫供應商 TypeScript 邏輯並即時生效，無需改源碼或重啟，便於私有化和多模型接入。
-- ✅ **章節事件圖譜驅動改編**  
-  自動提取原著章節事件並結構化儲存，劇本改編按事件圖譜精準呼叫上下文，減少長文本資訊遺失。
-- ✅ **Skill 檔案化配置**  
-  ScriptAgent 與 ProductionAgent 的核心提示詞外化為 Markdown Skill 檔案，支援線上編輯與快速調優。
-
----
-
-# 📦 應用場景
-
-- 短視頻內容創作
-- 小說影視化實驗
-- AI 文學改編工具
-- 劇本開發與快速原型
-- 影片素材生成
+- ✅ **hạn sinh tác vụ **  
+  hạn dạng thức sách 、nhân vật、phút、sáng ，tự do sắp 、trả thi sinh ，không bước hạn chép 。
+- ✅ **3 Agent tác vụ dòng **  
+  、thi 、cùng tác vụ ，giải 、dung tạo、phụ ，nhắc nối tạo 1 。
+- ✅ **giữ hóa  Agent **  
+  cơ sở sách địa  ONNX lượng kiếm  của dòng ，ngắn kỳ 、kỳ cần  và trả ，lưu nhiều tác vụ 。
+- ✅ **trình thức hóa nhà cấp dòng **  
+  ở nối giữa trực tiếp nhà cấp  TypeScript sinh hiệu ，cần sửa nguồn hoặc trùng ，có hóa  và nhiều mô hìnhtiếp vào 。
+- ✅ **chương sự kiệnsửa **  
+  tự trích xuấtgốc chương sự kiệnhóa lưu ，sách sửa theo sự kiệntrên dưới tài ，ít tài sách thất 。
+- ✅ **Skill hóa cấu hình**  
+  ScriptAgent  ProductionAgent  của nhắc nhở ngoài hóa  Markdown Skill ，trên nhanh 。
 
 ---
 
-# 🔰 使用指南
+# 📦 hàm bối 
 
-## 快速上手
+- ngắn dung tác vụ 
+- nhỏ sáng hóa 
+- AI tài sửa cụ 
+- sách nhanh gốc kiểu 
+- sáng tạo
 
-1. 啟動應用並登入（預設帳號：`admin` / `admin123`）。
-2. 在設定中心完成模型供應商配置（文字/圖像/影片模型）。
-3. 新建專案並匯入原著，執行章節事件提取。
-4. 進入 ScriptAgent 生成故事骨架、改編策略與結構化劇本。
-5. 切換到 ProductionAgent，在無限畫布中組織分鏡、素材與影片節點。
-6. 對分鏡圖進行節點化精調後回流工作檯，完成影片拼接與匯出。
+---
 
-## 📺 影片教學
+# 🔰 hàm 
+
+## nhanh trên tay 
+
+1. hàm đăng vào （：`admin` / `admin123`）。
+2. ở nối giữa tạo mô hìnhnhà cấp cấu hình（tài chữ //sáng mô hình）。
+3. mới tạo vào gốc ，thi chương sự kiệntrích xuất。
+4. vào  ScriptAgent tạoviệc 、sửa hóa sách 。
+5. đến  ProductionAgent，ở hạn giữa phút、sáng 。
+6. phútthi hóa trả tác vụ ，tạo sáng ghép tiếp ra 。
+
+## 📺 sáng 
 
 https://www.bilibili.com/video/BV1oXD7BqEqJ
-[![Toonflow 12 分鐘快速上手 AI 影片](./videoCover.jpg)](https://www.bilibili.com/video/BV1oXD7BqEqJ)
+[![Toonflow 12 phútnhanh trên tay  AI sáng ](./videoCover.jpg)](https://www.bilibili.com/video/BV1oXD7BqEqJ)
 
-**Toonflow 12 分鐘快速上手 AI 影片**
-👉 [點擊觀看](https://www.bilibili.com/video/BV1oXD7BqEqJ)
+**Toonflow 12 phútnhanh trên tay  AI sáng **
+👉 [xem ](https://www.bilibili.com/video/BV1oXD7BqEqJ)
 
-📱 手機微信掃碼觀看
+📱 tay tin xem 
 
-<img src="./videoQR.png" alt="微信掃碼觀看" width="150"/>
+<img src="./videoQR.png" alt="tin xem " width="150"/>
 
 ---
 
-# 📸 示範截圖與影片
+# 📸 nhở cắt sáng 
 
-以下截圖及影片來自使用 Toonflow 製作的一段 AI 短劇 Demo，全程約 2 小時完成，涵蓋劇本生成、分鏡製作及剪輯環節。
+dưới cắt sáng tự hàm  Toonflow tác vụ  của 1 đoạn  AI ngắn  Demo，toàn trình  2 nhỏ tạo ，sách tạo、phúttác vụ 。
 
 <div align="center">
 <table>
@@ -201,146 +201,146 @@ https://www.bilibili.com/video/BV1oXD7BqEqJ
 </table>
 </div>
 
-## 🎬 Demo 影片
+## 🎬 Demo sáng 
 
 <div align="center">
 
 https://github.com/user-attachments/assets/2d9fddac-dfdf-4640-b030-b09d7f7287e9
 
-如無法播放，請[點擊下載影片](./screenshot/demo.mp4)
+như thức mở ，[dưới sáng ](./screenshot/demo.mp4)
 
 </div>
 
-## Demo 資訊
+## Demo 
 
-| 項目 | 詳情 |
+| mục  | tình  |
 | :--- | :--- |
-| 製作週期 | 約 2 小時 |
-| 影片模型 | Seedance 2.0 |
-| 圖片模型 | GPT Image 2 |
-| 語言模型 | Claude Opus 4.6 |
-| 成片總時長 | 約 2 分鐘（原始素材 3 分鐘，剪除廢片約 1 分鐘） |
+| tác vụ kỳ  |  2 nhỏ  |
+| sáng mô hình | Seedance 2.0 |
+| mô hình | GPT Image 2 |
+| mô hình | Claude Opus 4.6 |
+| tạo  |  2 phút（gốc ban đầu  3 phút，bỏ  1 phút） |
 
-## 成本明細
+## tạo sách dẫn 
 
-| 模型類型 | 費用 |
+| mô hìnhkiểu  | hàm  |
 | :--- | :--- |
-| 語言模型 | 約 ¥10 |
-| 影片模型（全量生成） | 約 ¥120 |
-| 圖片模型 | 不足 ¥1 |
-| **合計** | **約 ¥130** |
+| mô hình |  ¥10 |
+| sáng mô hình（toàn lượng tạo） |  ¥120 |
+| mô hình | không  ¥1 |
+| **hợp ** | ** ¥130** |
 
-> **聲明**：Demo 原始解析度為 1080×1882，發布版本已壓縮至 480p。如涉及版權問題，請聯繫我們刪除處理。
+> **dẫn **：Demo gốc ban đầu giải tích độ  1080×1882，bản sách đã đến  480p。như bản ，tôibỏ lý 。
 
 ---
 
-# 🚀 安裝
+# 🚀 an 
 
-## 前置條件
+## tiền xử lýtệp 
 
-在安裝和使用本軟體之前，請準備以下內容：
+ở an  và hàm sách  của trước ，dưới dung ：
 
-- ✅ 大語言模型 AI 服務介面地址
-- ✅ Sora 或豆包影片服務介面地址
-- ✅ Nano Banana Pro 圖片生成模型服務介面
+- ✅ lớn mô hình AI phục mặt địa chỉ
+- ✅ Sora hoặc Doubaosáng phục mặt địa chỉ
+- ✅ Nano Banana Pro tạomô hìnhphục mặt 
 
-## 本機安裝
+## sách an 
 
-### 1. 下載與安裝
+### 1. dưới an 
 
-| 作業系統 | GitHub                                                       | 說明           |
+| tác vụ dòng  | GitHub                                                       | dẫn            |
 | :------: | :----------------------------------------------------------- | :------------- |
-| Windows  | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | 官方發布安裝包 |
-|  Linux   | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | 官方發布安裝包 |
-|  macOS   | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | 官方發布安裝包 |
+| Windows  | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | phương an gói  |
+|  Linux   | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | phương an gói  |
+|  macOS   | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | phương an gói  |
 
 > [!CAUTION]
-> MacOS 系統請到 設定-隱私與安全性 配置安全性否則可能因憑證問題無法正常開啟
+> MacOS dòng đến  nối -an toàn  cấu hìnhan toàn không thể thức chính thường 
 >
-> 參考知乎文件：[https://www.zhihu.com/question/433389276](https://www.zhihu.com/question/433389276)
+> báo tệp：[https://www.zhihu.com/question/433389276](https://www.zhihu.com/question/433389276)
 
-> 因 Gitee OS 環境限制及 Release 檔案上傳大小限制，暫不提供 Gitee Release 下載地址。
+>  Gitee OS hạn chép  Release trên lớn nhỏ hạn chép ，không nhắc nhà  Gitee Release dưới địa chỉ。
 
-### 2. 啟動服務
+### 2. phục 
 
-安裝完成後，啟動程式即可開始使用本服務。
+an tạo ，trình thức ban đầu hàm sách phục 。
 
-> ⚠️ **首次登入**  
-> 帳號：`admin`  
-> 密碼：`admin123`
+> ⚠️ **lần đăng vào **  
+> ：`admin`  
+> mật ：`admin123`
 
-## Docker 部署
+## Docker bộ 
 
-### 前置條件
+### tiền xử lýtệp 
 
-- 已安裝 [Docker](https://docs.docker.com/get-docker/)（版本 20.10+）
+- đã an  [Docker](https://docs.docker.com/get-docker/)（bản sách  20.10+）
 
-### 方式一：線上部署
+### cách thức1 ：trên bộ 
 
-待完善，暫時使用本地建置。
+，hàm sách địa tạo trí 。
 
-### 方式二：本地建置
+### cách thức2：sách địa tạo trí 
 
-使用本地已有的原始碼直接建置，適合開發者或已克隆倉庫的使用者，這需要你在本地安裝 git：
+hàm sách địa đã có  của gốc ban đầu trực tiếp tạo trí ，hợp giả hoặc đã  của hàm giả ，cần cần bạnở sách địa an  git：
 
 ```shell
-# 先克隆專案（如已有則跳過）
+# trước （như đã có ）
 git clone https://github.com/HBAI-Ltd/Toonflow-app.git
 cd Toonflow-app
 
-# 使用 docker-compose 本地建置並啟動
+# hàm  docker-compose sách địa tạo trí 
 yarn docker:local
 
-# 或者手動建置
+# hoặc giả tay tạo trí 
 docker build -t toonflow .
-docker run -d -p <本地埠>:10588 -v <本地資料路徑>:/app/data toonflow
+docker run -d -p <sách địa >:10588 -v <sách địa đường >:/app/data toonflow
 
-# 此時在相應埠的 /index.html 路徑即可訪問頁面
-# 例如 http://localhost:10588/index.html
+# ở  của  /index.html đường mặt 
+# lệ như  http://localhost:10588/index.html
 ```
 
-### 服務埠說明
+### phục dẫn 
 
-| 埠      | 用途     | 部署映射      |
+|       | hàm      | bộ       |
 | ------- | -------- | ------------- |
-| `10588` | 軟體介面 | `10588:10588` |
+| `10588` | mặt  | `10588:10588` |
 
-**環境變數說明：**
+**dẫn ：**
 
-| 變數       | 說明                               |
+|        | dẫn                                |
 | ---------- | ---------------------------------- |
-| `NODE_ENV` | 執行環境，`prod` 表示生產環境      |
-| `PORT`     | 服務監聽埠（預設 10588）           |
-| `OSSURL`   | 檔案儲存訪問位址，用於靜態資源訪問 |
+| `NODE_ENV` | thi ，`prod` bảng nhở sinh       |
+| `PORT`     | phục （ 10588）           |
+| `OSSURL`   | lưu vị trí địa chỉ ，hàm nguồn  |
 
 ---
 
-## 雲端部署
+## đầu bộ 
 
-### 雲伺服器部署
+### phục thiết bị bộ 
 
-#### 一、伺服器環境要求
+#### 1 、phục thiết bị cần cầu 
 
-- **系統**：Ubuntu 20.04+ / CentOS 7+
-- **Node.js**：24.x（推薦，最低 23.11.1+）
-- **記憶體**：2GB+
+- **dòng **：Ubuntu 20.04+ / CentOS 7+
+- **Node.js**：24.x（khuyến ，nhất thấp  23.11.1+）
+- ****：2GB+
 
-#### 二、伺服器部署
+#### 2、phục thiết bị bộ 
 
-##### 1. 安裝環境
+##### 1. an 
 
 ```bash
-# 安裝 Node.js
+# an  Node.js
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 source ~/.bashrc
 nvm install 24
-# 安裝 Yarn 和 PM2
+# an  Yarn  và  PM2
 npm install -g yarn pm2
 ```
 
-##### 2. 部署專案
+##### 2. bộ 
 
-**從 GitHub 克隆：**
+** GitHub ：**
 
 ```bash
 cd /opt
@@ -350,7 +350,7 @@ yarn install
 yarn build
 ```
 
-**從 Gitee 克隆（國內推薦）：**
+** Gitee （khuyến ）：**
 
 ```bash
 cd /opt
@@ -360,9 +360,9 @@ yarn install
 yarn build
 ```
 
-##### 3. 配置 PM2
+##### 3. cấu hình PM2
 
-建立 `pm2.json` 檔案：
+tạo lập  `pm2.json` ：
 
 ```json
 {
@@ -378,17 +378,17 @@ yarn build
 }
 ```
 
-**環境變數說明：**
+**dẫn ：**
 
-| 變數       | 說明                               |
+|        | dẫn                                |
 | ---------- | ---------------------------------- |
-| `NODE_ENV` | 執行環境，`prod` 表示生產環境      |
-| `PORT`     | 服務監聽埠                         |
-| `OSSURL`   | 檔案儲存訪問位址，用於靜態資源訪問 |
+| `NODE_ENV` | thi ，`prod` bảng nhở sinh       |
+| `PORT`     | phục                          |
+| `OSSURL`   | lưu vị trí địa chỉ ，hàm nguồn  |
 
 ---
 
-##### 4. 啟動服務
+##### 4. phục 
 
 ```bash
 pm2 start pm2.json
@@ -396,331 +396,331 @@ pm2 startup
 pm2 save
 ```
 
-##### 5. 常用指令
+##### 5. thường hàm 
 
 ```bash
-pm2 list              # 查看進程
-pm2 logs toonflow-app # 查看日誌
-pm2 restart all       # 重啟服務
-pm2 monit             # 監控面板
+pm2 list              # tra xem trình 
+pm2 logs toonflow-app # tra xem ngày 
+pm2 restart all       # trùng phục 
+pm2 monit             # sát mặt 
 ```
 
-> ⚠️ **首次登入**  
-> 帳號：`admin`  
-> 密碼：`admin123`
+> ⚠️ **lần đăng vào **  
+> ：`admin`  
+> mật ：`admin123`
 
-##### 6. 部署前端網站
+##### 6. bộ trước đầu trạm 
 
-如需單獨部署或定製前端介面，請參考前端倉庫：
+như cần bộ hoặc nối trước đầu mặt ，trước đầu ：
 
 - **GitHub**：[Toonflow-web](https://github.com/HBAI-Ltd/Toonflow-web)
 - **Gitee**：[Toonflow-web](https://gitee.com/HBAI-Ltd/Toonflow-web)
 
-> 💡 **說明**：本倉庫已內建編譯好的前端資源，一般使用者無需單獨部署前端。前端倉庫僅供需要二次開發的開發者使用。
+> 💡 **dẫn **：sách đã tạo tốt  của trước đầu nguồn ，1 hàm giả cần bộ trước đầu 。trước đầu nhà cần cần 2lần  của giả hàm 。
 
-### 雲平台部署
+### đài bộ 
 
-> 🎉 **官方認證算力合作平台 —— 智星雲**
+> 🎉 **phương toán lực hợp tác vụ đài  —— **
 >
-> **[智星雲](https://www.ai-galaxy.com/)** 是 **Toonflow 官方授權的商用鏡像服務商**，已合法搭載、分發並支援商用全套 Toonflow AI 短劇製作鏡像，**開箱即用，無需手動部署**。
+> **[](https://www.ai-galaxy.com/)** là  **Toonflow phương  của cấp hàm phục cấp **，đã hợp thức 、phútcấp hàm toàn  Toonflow AI ngắn tác vụ ，**hàm ，cần tay bộ **。
 >
-> - 🌐 官網：[https://www.ai-galaxy.com](https://www.ai-galaxy.com)
-> - 📖 鏡像部署圖文教程：[點擊查看教程](https://mp.weixin.qq.com/s/lq9X1ovQ1_TKeXMOLgicKg?scene=1)
+> - 🌐 ：[https://www.ai-galaxy.com](https://www.ai-galaxy.com)
+> - 📖 bộ tài trình ：[tra xem trình ](https://mp.weixin.qq.com/s/lq9X1ovQ1_TKeXMOLgicKg?scene=1)
 
 <details>
-<summary>📄 點擊展開文字版教程</summary>
+<summary>📄 tài chữ bản trình </summary>
 
-#### 一、租用 GPU 階段教程
+#### 1 、hàm  GPU đoạn trình 
 
-1. 智星雲 - 算力市場 - 4090 / 4090 Plus，點擊「立即租用」進入租用詳情頁。
-   > 💡 建議開啟「按小時自動續租」模式，防止正在跑影片時實例到期停工。
-2. 鏡像選擇：`windows10LTSCwin10_Toonflow` - 建立實例。
-3. 等待實例啟動 30s ~ 60s，查看連接方式 - RDP 登入檔案下載 - 點擊複製密碼 - 雙擊已下載好的雲端連接檔案。
-4. 將複製好的密碼貼上並登入，連接進入雲端桌面。
-   > 💡 滑鼠移到雲端桌面頂端稍作停留，會顯示切換桌面操作欄，可點擊「──」切換回自己的電腦桌面，或點擊「□」縮小佈置到自己的電腦桌面作為操作視窗。
+1.  - toán lực  - 4090 / 4090 Plus，「lập hàm 」vào hàm tình 。
+   > 💡 tạo 「theo nhỏ tự 」mô thức ，đang sáng lệ đến kỳ 。
+2. ：`windows10LTSCwin10_Toonflow` - tạo lập lệ 。
+3. lệ  30s ~ 60s，tra xem tiếp cách thức - RDP đăng vào dưới  - mật  - đã dưới tốt  của đầu tiếp 。
+4. tốt  của mật trên đăng vào ，tiếp vào đầu mặt 。
+   > 💡 đến đầu mặt đầu tác vụ lưu ，nhở mặt thao tác vụ ，「──」trả tự mình  của mặt ，hoặc 「□」nhỏ trí đến tự mình  của mặt tác vụ thao tác vụ 。
 
-#### 二、配置 Toonflow、啟動 ComfyUI 階段教程
+#### 2、cấu hình Toonflow、 ComfyUI đoạn trình 
 
-1. 先配置調用 Agent 的模型：打開桌面上的 Toonflow - 模型服務 - OpenAI 標準介面 - 填入 API 金鑰以及請求位址。
-   預設帳號：`admin`　密碼：`admin123`（建議登入後修改密碼）
-   > 💡 這裡直接使用智星雲的 AI 大模型 Token 服務，官方介面，穩定安全，低至 6 折（小說轉劇本調用一次，約花費 6.4 毛錢）。
-   - 智星雲調用模型 Token 請求位址：`https://token.ai-galaxy.com/v1`
-   - 智星雲 Token 充值步驟：Token 市場 - 帳戶概覽 - 充值 - 將智星雲帳戶餘額或算力券充值到 Token 帳戶中。
-   - 充值完成後進入「Key 管理」- 新建 API 管理，名稱填 `Toonflow` 或其他均可，點擊確定並複製 API 金鑰。
-2. 回到步驟 1，將生成的 API 金鑰和請求位址貼上到 Toonflow 模型服務中，填好後點擊空白處，系統會提示「供應商配置已更新」。
-   點擊「手動添加」，回到智星雲 - Token 市場頁面，複製完整的模型名稱。
-   > 💡 一個 Key 可以調用智星雲上的所有模型，選擇你想用的即可，推薦 `deepseek-v4-pro`。
-   將模型名稱完整複製貼上到 Toonflow 中並確認，完成模型配置。
-3. 配置完成後檢查兩處：
-   - 模型服務中的三個模型調用開關是否已開啟
-   - Agent 配置中調用的模型是否與你配置的一致（不一致時點擊選擇改正即可）
-4. 啟動 ComfyUI：雲端桌面 - 繪世啟動器 - 一鍵啟動。
-5. 啟動大約需要 1~2 分鐘，啟動完成後保持頁面開啟狀態即可。
+1. trước cấu hìnhhàm  Agent  của mô hình：mở mặt trên  của  Toonflow - mô hìnhphục  - OpenAI mặt  - vào  API cầu vị trí địa chỉ 。
+   ：`admin`　mật ：`admin123`（tạo đăng vào sửa mật ）
+   > 💡 trực tiếp hàm  của  AI lớn mô hình Token phục ，phương mặt ，nối an toàn ，thấp đến  6 （nhỏ sách hàm 1 lần ， 6.4 ）。
+   - hàm mô hình Token cầu vị trí địa chỉ ：`https://token.ai-galaxy.com/v1`
+   -  Token sung giá trị bước ：Token  -  - sung giá trị  - hoặc toán lực sung giá trị đến  Token giữa 。
+   - sung giá trị tạo vào 「Key lý 」- mới tạo  API lý ，tên  `Toonflow` hoặc anh ấy，nối  API 。
+2. trả đến bước  1，tạo của  API  và cầu vị trí địa chỉ trên đến  Toonflow mô hìnhphục giữa ，tốt rỗng ，dòng nhắc nhở 「nhà cấp cấu hìnhđã cập nhật」。
+   「tay thêm」，trả đến  - Token mặt ，chỉnh  của mô hìnhtên 。
+   > 💡 1  Key hàm trên  của tất cảmô hình，bạnnghĩ hàm  của ，khuyến  `deepseek-v4-pro`。
+   mô hìnhtên chỉnh trên đến  Toonflow giữa ，tạo mô hìnhcấu hình。
+3. cấu hìnhtạo tra ：
+   - mô hìnhphục giữa  của 3mô hìnhhàm là không đã 
+   - Agent cấu hìnhgiữa hàm  của mô hìnhlà không bạncấu hình của 1 （không 1 sửa chính ）
+4.  ComfyUI：đầu mặt  - thiết bị  - 1 。
+5. lớn cần cần  1~2 phút，tạo lưu giữ mặt 。
 
 </details>
 
 ---
 
-# 🔧 開發流程指南
+# 🔧 trình 
 
 > [!CAUTION]
-> 🚧 **PR 提交規範** 🚧
+> 🚧 **PR nhắc tác vụ ** 🚧
 >
-> ⛔ `master` 分支不接受任何 PR ｜ ✅ 請將 PR 提交到 `develop` 分支
+> ⛔ `master` phútkhông tiếp  PR ｜ ✅  PR nhắc tác vụ đến  `develop` phút
 >
-> 歡迎開發者們共同參與 Toonflow 的共創。如有興趣加入，請在交流群內聯繫主持人 ACT
+> giả cùng  Toonflow  của 。như có cộng vào ，ở tác vụ chính giữ người ACT
 
-## 🛠️ 技術棧
+## 🛠️ 
 
-| 類別       | 技術                                                                                      |
+|        |                                                                                       |
 | ---------- | ----------------------------------------------------------------------------------------- |
-| 執行時     | Node.js 23.11.1+                                                                          |
-| 語言       | TypeScript 5.x                                                                            |
-| 後端框架   | Express 5                                                                                 |
-| 資料庫     | SQLite（better-sqlite3 / knex）                                                           |
-| AI 整合    | Vercel AI SDK（OpenAI / Anthropic / Google / DeepSeek / 智譜 / MiniMax / 通義千問 / xAI） |
-| 本地推理   | @huggingface/transformers（ONNX）                                                         |
-| 即時通訊   | Socket.IO                                                                                 |
-| 桌面客戶端 | Electron 40                                                                               |
-| 圖像處理   | Sharp                                                                                     |
-| 容器化     | Docker                                                                                    |
+| thi      | Node.js 23.11.1+                                                                          |
+|        | TypeScript 5.x                                                                            |
+| đầu    | Express 5                                                                                 |
+|      | SQLite（better-sqlite3 / knex）                                                           |
+| AI chỉnh hợp     | Vercel AI SDK（OpenAI / Anthropic / Google / DeepSeek /  / MiniMax / thông nghìn / xAI） |
+| sách địa khuyến lý    | @huggingface/transformers（ONNX）                                                         |
+| thông    | Socket.IO                                                                                 |
+| mặt đầu  | Electron 40                                                                               |
+| lý    | Sharp                                                                                     |
+| dung thiết bị hóa      | Docker                                                                                    |
 
-## 開發環境準備
+## 
 
-- **Node.js**：版本要求 23.11.1 及以上
-- **Yarn**：推薦作為專案套件管理器
+- **Node.js**：bản sách cần cầu  23.11.1 trên 
+- **Yarn**：khuyến tác vụ tệp lý thiết bị 
 
-## 快速啟動專案
+## nhanh 
 
-1. **克隆專案**
+1. ****
 
-   **從 GitHub 克隆：**
+   ** GitHub ：**
 
    ```bash
    git clone https://github.com/HBAI-Ltd/Toonflow-app.git
    cd Toonflow-app
    ```
 
-   **從 Gitee 克隆（國內推薦）：**
+   ** Gitee （khuyến ）：**
 
    ```bash
    git clone https://gitee.com/HBAI-Ltd/Toonflow-app.git
    cd Toonflow-app
    ```
 
-2. **安裝依賴**
+2. **an phụ **
 
-   請先在專案根目錄下執行以下指令以安裝依賴項：
+   trước ở mục dưới thi dưới an phụ ：
 
    ```bash
    yarn install
    ```
 
-3. **啟動開發環境**
+3. ****
 
-   本專案包含 **後端 API 服務** 和 **前端頁面** 兩部分，請根據需要選擇啟動方式：
+   sách gói  **đầu  API phục **  và  **trước đầu mặt ** bộ phút，cần cần cách thức：
 
-   - **方式一：僅啟動後端服務**
+   - **cách thức1 ：đầu phục **
 
      ```bash
      yarn dev
      ```
 
-     > ⚠️ 此指令僅啟動後端 API 服務（埠 10588），**不包含前端頁面**。直接訪問 `http://localhost:10588` 只能呼叫 API 介面，無法看到完整的網頁介面。如需同時使用前端頁面，請配合前端專案單獨啟動，或使用下方的 GUI 模式。
+     > ⚠️ đầu  API phục （ 10588），**không gói trước đầu mặt **。trực tiếp  `http://localhost:10588` chỉ thể  API mặt ，thức xem đến chỉnh  của mặt 。như cần cùng hàm trước đầu mặt ，nối hợp trước đầu ，hoặc hàm dưới phương  của  GUI mô thức 。
 
-   - **方式二：啟動 Electron 桌面客戶端**
+   - **cách thức2： Electron mặt đầu **
 
      ```bash
      yarn dev:gui
      ```
 
-     > 此指令會同時啟動後端服務和 Electron 桌面視窗，自帶內建前端頁面，開箱即用，無需額外配置。適合想要完整體驗所有功能的開發者。
+     > cùng đầu phục  và  Electron mặt ，tự tạo trước đầu mặt ，hàm ，cần ngoài cấu hình。hợp nghĩ cần chỉnh tất cảcông thể  của giả 。
 
-   - **方式三：生產模式啟動**
+   - **cách thức3：sinh mô thức **
 
      ```bash
      yarn start
      ```
 
-     > 以生產模式直接執行編譯後的服務（需先執行 `yarn build`）。
+     > sinh mô thức trực tiếp thi  của phục （cần trước thi  `yarn build`）。
 
-4. **專案打包**
+4. **mở gói **
 
-   - 編譯並生成 TypeScript 檔案：
+   - tạo TypeScript ：
 
      ```bash
      yarn build
      ```
 
-   - 打包為 Windows 平台可執行程式：
+   - mở gói  Windows đài thi trình thức ：
 
      ```bash
      yarn dist:win
      ```
 
-   - 打包為 Mac 平台可執行程式：
+   - mở gói  Mac đài thi trình thức ：
 
      ```bash
      yarn dist:mac
      ```
 
-   - 打包為 Linux 平台可執行程式：
+   - mở gói  Linux đài thi trình thức ：
 
      ```bash
      yarn dist:linux
      ```
 
-5. **程式碼品質檢查**
+5. **trình thức tra **
 
-   - 進行全域語法和規範檢查：
+   - thi toàn vực thức  và tra ：
 
      ```bash
      yarn lint
      ```
 
-6. **AI 偵錯面板（可選）**
+6. **AI mặt （）**
 
-   啟動 AI SDK 的可視化偵錯工具，方便偵錯 AI 呼叫：
+    AI SDK  của hóa cụ ，phương  AI ：
 
    ```bash
    yarn debug:ai
    ```
 
-## 前端開發
+## trước đầu 
 
-如需修改前端介面，請前往前端倉庫進行開發：
+như cần sửa trước đầu mặt ，trước trước đầu thi ：
 
 - **GitHub**：[Toonflow-web](https://github.com/HBAI-Ltd/Toonflow-web)
 - **Gitee**：[Toonflow-web](https://gitee.com/HBAI-Ltd/Toonflow-web)
 
-前端建置後，將 `dist` 目錄內容複製到本專案的 `data/web` 目錄即可整合。
+trước đầu tạo trí ， `dist` mục dung đến sách  của  `data/web` mục chỉnh hợp 。
 
-## 專案結構
+## 
 
 ```
-📂 build/                    # 編譯產物
-📂 data/                     # 執行時資料
-│  ├─ 📂 models/            # 本地推理模型（ONNX）
-│  ├─ 📂 oss/               # 物件儲存（素材/角色/場景）
-│  ├─ 📂 serve/             # 生產環境入口
-│  ├─ 📂 skills/            # Agent 技能提示詞
-│  └─ 📂 web/               # 前端編譯產物（內建）
-📂 docs/                     # 文件資源
-📂 env/                      # 環境配置
-📂 scripts/                  # 建置與輔助腳本
+📂 build/                    # 
+📂 data/                     # thi 
+│  ├─ 📂 models/            # sách địa khuyến lý mô hình（ONNX）
+│  ├─ 📂 oss/               # tệp lưu （/nhân vật/bối ）
+│  ├─ 📂 serve/             # sinh vào cổng 
+│  ├─ 📂 skills/            # Agent thể nhắc nhở 
+│  └─ 📂 web/               # trước đầu （tạo ）
+📂 docs/                     # tệpnguồn 
+📂 env/                      # cấu hình
+📂 scripts/                  # tạo trí giúp sách 
 📂 src/
-├─ 📂 agents/               # AI Agent 模組
-│  ├─ 📂 productionAgent/   # 生產 Agent
-│  └─ 📂 scriptAgent/       # 劇本 Agent
-├─ 📂 lib/                  # 公共庫（資料庫初始化、回應格式）
-├─ 📂 middleware/            # 中介軟體
-├─ 📂 routes/               # 路由模組
-│  ├─ 📂 agents/            # Agent 記憶管理
-│  ├─ 📂 artStyle/          # 畫風管理
-│  ├─ 📂 assets/            # 素材管理
-│  ├─ 📂 assetsGenerate/    # 素材生成
-│  ├─ 📂 cornerScape/       # 分鏡管理
-│  ├─ 📂 general/           # 通用介面
-│  ├─ 📂 login/             # 登入認證
-│  ├─ 📂 migrate/           # 資料遷移
-│  ├─ 📂 modelSelect/       # 模型選擇
-│  ├─ 📂 novel/             # 小說管理
-│  ├─ 📂 other/             # 其他功能
-│  ├─ 📂 production/        # 製作管理
-│  ├─ 📂 project/           # 專案管理
-│  ├─ 📂 script/            # 劇本生成
-│  ├─ 📂 scriptAgent/       # 劇本 Agent 介面
-│  ├─ 📂 setting/           # 系統設定
-│  ├─ 📂 task/              # 任務管理
-│  └─ 📂 test/              # 測試介面
-├─ 📂 socket/               # WebSocket 即時通訊
-├─ 📂 types/                # TypeScript 型別宣告
-├─ 📂 utils/                # 工具函數
-├─ 📄 app.ts                # 應用入口
-├─ 📄 core.ts               # 核心初始化
-├─ 📄 env.ts                # 環境變數處理
-├─ 📄 err.ts                # 錯誤處理
-├─ 📄 logger.ts             # 日誌模組
-├─ 📄 router.ts             # 路由註冊
-└─ 📄 utils.ts              # 通用工具
-📄 Dockerfile                # Docker 建置檔案
-📄 electron-builder.yml      # Electron 打包配置
-📄 skillList.json            # 技能清單
-📄 LICENSE                   # 許可證（Apache-2.0）
-📄 NOTICES.txt               # 第三方依賴宣告
-📄 package.json              # 專案配置
-📄 tsconfig.json             # TypeScript 配置
+├─ 📂 agents/               # AI Agent mô 
+│  ├─ 📂 productionAgent/   # sinh  Agent
+│  └─ 📂 scriptAgent/       # sách  Agent
+├─ 📂 lib/                  # （ban đầu hóa 、trả khung thức ）
+├─ 📂 middleware/            # giữa 
+├─ 📂 routes/               # đường do mô 
+│  ├─ 📂 agents/            # Agent lý 
+│  ├─ 📂 artStyle/          # lý 
+│  ├─ 📂 assets/            # lý 
+│  ├─ 📂 assetsGenerate/    # tạo
+│  ├─ 📂 cornerScape/       # phútlý 
+│  ├─ 📂 general/           # thông hàm mặt 
+│  ├─ 📂 login/             # đăng vào 
+│  ├─ 📂 migrate/           # 
+│  ├─ 📂 modelSelect/       # mô hình
+│  ├─ 📂 novel/             # nhỏ lý 
+│  ├─ 📂 other/             # anh ấycông thể 
+│  ├─ 📂 production/        # tác vụ lý 
+│  ├─ 📂 project/           # lý 
+│  ├─ 📂 script/            # sách tạo
+│  ├─ 📂 scriptAgent/       # sách  Agent mặt 
+│  ├─ 📂 setting/           # dòng nối 
+│  ├─ 📂 task/              # lý 
+│  └─ 📂 test/              # mặt 
+├─ 📂 socket/               # WebSocket thông 
+├─ 📂 types/                # TypeScript kiểu thông 
+├─ 📂 utils/                # cụ 
+├─ 📄 app.ts                # hàm vào cổng 
+├─ 📄 core.ts               # ban đầu hóa 
+├─ 📄 env.ts                # lý 
+├─ 📄 err.ts                # lý 
+├─ 📄 logger.ts             # ngày mô 
+├─ 📄 router.ts             # đường do 
+└─ 📄 utils.ts              # thông hàm cụ 
+📄 Dockerfile                # Docker tạo trí 
+📄 electron-builder.yml      # Electron mở gói cấu hình
+📄 skillList.json            # thể sạch 
+📄 LICENSE                   # （Apache-2.0）
+📄 NOTICES.txt               # Thứ 3phương phụ thông 
+📄 package.json              # cấu hình
+📄 tsconfig.json             # TypeScript cấu hình
 ```
 
 ---
 
-# 🔗 相關倉庫
+# 🔗 
 
-| 倉庫             | 說明                               | GitHub                                             | Gitee                                            |
+|              | dẫn                                | GitHub                                             | Gitee                                            |
 | ---------------- | ---------------------------------- | -------------------------------------------------- | ------------------------------------------------ |
-| **Toonflow-app** | 完整客戶端（本倉庫，推薦一般使用者） | [GitHub](https://github.com/HBAI-Ltd/Toonflow-app) | [Gitee](https://gitee.com/HBAI-Ltd/Toonflow-app) |
-| **Toonflow-web** | 前端原始碼（適合前端開發者）       | [GitHub](https://github.com/HBAI-Ltd/Toonflow-web) | [Gitee](https://gitee.com/HBAI-Ltd/Toonflow-web) |
+| **Toonflow-app** | chỉnh đầu （sách ，khuyến 1 hàm giả ） | [GitHub](https://github.com/HBAI-Ltd/Toonflow-app) | [Gitee](https://gitee.com/HBAI-Ltd/Toonflow-app) |
+| **Toonflow-web** | trước đầu gốc ban đầu （hợp trước đầu giả ）       | [GitHub](https://github.com/HBAI-Ltd/Toonflow-web) | [Gitee](https://gitee.com/HBAI-Ltd/Toonflow-web) |
 
-> 💡 **提示**：如果您只是想使用 Toonflow，直接下載本倉庫的客戶端即可。前端倉庫僅供需要二次開發或定製前端介面的開發者使用。
+> 💡 **nhắc nhở **：như quả chỉ là nghĩ hàm  Toonflow，trực tiếp dưới sách  của đầu 。trước đầu nhà cần cần 2lần hoặc nối trước đầu mặt  của giả hàm 。
 
 ---
 
-# 👨‍👩‍👧‍👦 微信交流群
+# 👨‍👩‍👧‍👦 tin tác vụ 
 
-拉群小助手:
+nhỏ giúp tay :
 
 <img src="./QR.png" alt="Toonflow QR" height="400"/>
 
-也可以點擊圖示加入 Discord：
+cũng nhở cộng vào  Discord：
 
 [![Join our Discord](https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg)](https://discord.gg/HEjKmpNpAZ)
 
-或點擊邀請連接： [https://discord.gg/HEjKmpNpAZ](https://discord.gg/HEjKmpNpAZ)
+hoặc tiếp ： [https://discord.gg/HEjKmpNpAZ](https://discord.gg/HEjKmpNpAZ)
 
 ---
 
-# 💌 聯繫我們
+# 💌 tôi
 
-📧 信箱：[ltlctools@outlook.com](mailto:ltlctools@outlook.com?subject=Toonflow諮詢)
+📧 tin ：[ltlctools@outlook.com](mailto:ltlctools@outlook.com?subject=Toonflow)
 
 ---
 
-# 📜 許可證
+# 📜 
 
-Toonflow 基於 Apache-2.0 協議開源發布，並附有補充商業協議。
+Toonflow cơ sở  Apache-2.0 nguồn ，có sung cấp 。
 
-許可證詳情：https://www.apache.org/licenses/LICENSE-2.0
+tình ：https://www.apache.org/licenses/LICENSE-2.0
 
-## 補充協議
+## sung 
 
-- 若將本軟體以產品形式分發給 **2 個及以上獨立第三方**使用，須取得 HBAI-Ltd **書面商業授權**。
-- **≤ 5 個法人**聯合運營內部使用，不對外提供服務的，視為內部使用，**無需授權**。
-- 不得刪除或修改 Toonflow 中的標識或版權資訊。
+- sách dạng thức phút **2 trên lập Thứ 3phương **hàm ，xuất được  HBAI-Ltd **mặt cấp **。
+- **≤ 5 thức người**hợp bộ hàm ，không ngoài nhắc nhà phục  của ，bộ hàm ，**cần **。
+- không được bỏ hoặc sửa  Toonflow giữa  của hoặc bản 。
 
-## 永久免費場景
+## bối 
 
-- ✅ 用 Toonflow 製作內容並獲得平台分帳
-- ✅ 二次開發供自己團隊內部使用
-- ✅ ≤ 5 個法人聯合運營內部使用
-- ✅ 個人學習、研究、非商業用途
+- ✅ hàm  Toonflow tác vụ dung được đài phút
+- ✅ 2lần nhà tự mình bộ hàm 
+- ✅ ≤ 5 thức ngườihợp bộ hàm 
+- ✅ người、、phi cấp hàm 
 
-## 商業授權定價
+## cấp nối 
 
-| 階段 | 年銷售額 | 年費 |
+| đoạn  | năm | năm |
 |------|---------|------|
-| 🌱 扶持期 | < ¥10 萬 | **申請即可免費授權** |
-| 🚀 初創期 | ¥10–50 萬 | ¥5,000/年 |
-| 📈 成長期 | ¥50–150 萬 | ¥20,000/年 |
-| 🏢 規模期 | ¥150–500 萬 | ¥80,000/年 |
-| 🌐 企業級 | > ¥500 萬 | 面議 |
+| 🌱 giữ kỳ  | < ¥10  | **** |
+| 🚀 kỳ  | ¥10–50  | ¥5,000/năm |
+| 📈 tạo kỳ  | ¥50–150  | ¥20,000/năm |
+| 🏢 mô kỳ  | ¥150–500  | ¥80,000/năm |
+| 🌐  | > ¥500  | mặt  |
 
-> **不追溯條款**：v1.0.8 發布前基於 AGPL-3.0 使用的使用者，繼續按 AGPL-3.0 執行，不受本協議變更約束。
+> **không **：v1.0.8 trước cơ sở  AGPL-3.0 hàm  của hàm giả ，theo  AGPL-3.0 thi ，không sách đổi 。
 
-完整協議詳見 [LICENSE](./LICENSE) 檔案。
+chỉnh  [LICENSE](./LICENSE) 。
 
 ---
 
-# ⭐️ 星標歷史
+# ⭐️ 
 
 [![Star History Rank](https://api.star-history.com/badge?repo=HBAI-Ltd/Toonflow-app)](https://www.star-history.com/#HBAI-Ltd/Toonflow-app)
 
@@ -729,67 +729,67 @@ Toonflow 基於 Apache-2.0 協議開源發布，並附有補充商業協議。
 ---
 
 
-# 🙏 致謝
+# 🙏 
 
-感謝以下開源專案為 Toonflow 提供強大支援：
+dưới nguồn  Toonflow nhắc nhà lớn ：
 
-- [Express](https://expressjs.com/) - 快速、開放、極簡的 Node.js Web 框架
-- [AI SDK](https://ai-sdk.dev/) - 面向 TypeScript 的 AI 工具包
-- [Better-SQLite3](https://github.com/WiseLibs/better-sqlite3) - 高效能 SQLite3 綁定庫
-- [Sharp](https://sharp.pixelplumbing.com/) - 高效能 Node.js 圖像處理庫
-- [Axios](https://axios-http.com/) - 基於 Promise 的 HTTP 客戶端
-- [Zod](https://zod.dev/) - TypeScript 優先的模式驗證庫
-- [Socket.IO](https://socket.io/) - 即時雙向事件通訊引擎
-- [Electron](https://www.electronjs.org/) - 跨平台桌面應用開發框架
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers.js) - 本地 ML 推理庫
+- [Express](https://expressjs.com/) - nhanh 、mở 、 của  Node.js Web 
+- [AI SDK](https://ai-sdk.dev/) - mặt  TypeScript  của  AI cụ gói 
+- [Better-SQLite3](https://github.com/WiseLibs/better-sqlite3) - cao hiệu thể  SQLite3 nối 
+- [Sharp](https://sharp.pixelplumbing.com/) - cao hiệu thể  Node.js lý 
+- [Axios](https://axios-http.com/) - cơ sở  Promise  của  HTTP đầu 
+- [Zod](https://zod.dev/) - TypeScript trước  của mô thức 
+- [Socket.IO](https://socket.io/) - sự kiệnthông 
+- [Electron](https://www.electronjs.org/) - đài mặt hàm 
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers.js) - sách địa  ML khuyến lý 
 
-感謝以下組織/單位/個人為 Toonflow 提供支援：
+dưới /vị trí /người Toonflow nhắc nhà ：
 
 <table>
   <thead>
     <tr>
       <th align="center">Logo</th>
-      <th align="center">名稱</th>
-      <th align="center">支援方式</th>
-      <th>簡介</th>
-      <th align="center">官網</th>
+      <th align="center">tên </th>
+      <th align="center">cách thức</th>
+      <th></th>
+      <th align="center"></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center"><img src="./sponsored/sophnet.png" alt="算能雲 Logo" width="48"></td>
-      <td align="center"><b>算能雲</b></td>
-      <td align="center">💻 算力贊助</td>
-      <td>致力於打造更快、更穩、更省的一站式模型推理API服務平台</td>
-      <td align="center"><a href="https://www.sophnet.com/">官網</a></td>
+      <td align="center"><img src="./sponsored/sophnet.png" alt="toán thể  Logo" width="48"></td>
+      <td align="center"><b>toán thể </b></td>
+      <td align="center">💻 toán lực giúp </td>
+      <td>lực mở tạo đổi nhanh 、đổi 、đổi  của 1 trạm thức mô hìnhkhuyến lý APIphục đài </td>
+      <td align="center"><a href="https://www.sophnet.com/"></a></td>
     </tr>
     <tr>
       <td align="center"><img src="./sponsored/atlascloud.png" alt="Atlas Cloud Logo" width="48"></td>
       <td align="center"><b>Atlas Cloud</b></td>
-      <td align="center">💻 算力贊助</td>
-      <td>全球首個全模態推理平台。對話、圖像、影片、音訊——全部統一 API。300+ 模型，OpenAI 相容。</td>
-      <td align="center"><a href="https://www.atlascloud.ai/">官網</a></td>
+      <td align="center">💻 toán lực giúp </td>
+      <td>toàn toàn mô khuyến lý đài 。、、sáng 、âm ——toàn bộ1  API。300+ mô hình，OpenAI dung 。</td>
+      <td align="center"><a href="https://www.atlascloud.ai/"></a></td>
     </tr>
     <tr>
-      <td align="center"><img src="./sponsored/hunyuan.webp" alt="騰訊混元3D Logo" width="48"></td>
-      <td align="center"><b>騰訊混元3D</b></td>
-      <td align="center">🌐 世界模型技術支援</td>
-      <td>騰訊混元3D AI創作引擎基於騰訊混元3D生成大模型2.5版本，業界首個一站式3D內容AI創作平台。具備文生、圖生3D、3D動畫生成、紋理生成等功能，支援草圖生3D、3D人物生成，有低多邊形模型生成優勢。</td>
-      <td align="center"><a href="https://3d.hunyuan.tencent.com/">官網</a></td>
+      <td align="center"><img src="./sponsored/hunyuan.webp" alt="3D Logo" width="48"></td>
+      <td align="center"><b>3D</b></td>
+      <td align="center">🌐 giới mô hình</td>
+      <td>3D AItác vụ cơ sở 3Dtạolớn mô hình2.5bản sách ，giới 1 trạm thức 3Ddung AItác vụ đài 。cụ tài sinh 、sinh 3D、3Dtạo、lý tạocông thể ，sinh 3D、3Dngườitạo，có thấp nhiều dạng mô hìnhtạo。</td>
+      <td align="center"><a href="https://3d.hunyuan.tencent.com/"></a></td>
     </tr>
     <tr>
-      <td align="center"><img src="./sponsored/ai-galaxy.png" alt="智星雲 Logo" width="48"></td>
-      <td align="center"><b>智星雲</b></td>
-      <td align="center">💻 算力支持 <br/> 🖼️ 鏡像支持</td>
-      <td>國內知名專業算力服務品牌，提供便宜穩定的算力，服務國內清北、復旦、浙大等上千所985/211高校實驗室、中科院及5000餘家AI企業。</td>
-      <td align="center"><a href="https://www.ai-galaxy.com">官網</a></td>
+      <td align="center"><img src="./sponsored/ai-galaxy.png" alt=" Logo" width="48"></td>
+      <td align="center"><b></b></td>
+      <td align="center">💻 toán lực hỗ trợ <br/> 🖼️ hỗ trợ</td>
+      <td>báo tên toán lực phục ，nhắc nhà nối  của toán lực ，phục sạch 、、lớn trên nghìnnơi 985/211cao đối 、giữa 5000AI。</td>
+      <td align="center"><a href="https://www.ai-galaxy.com"></a></td>
     </tr>
   </tbody>
 </table>
 
-完整的第三方依賴清單請查閱 `NOTICES.txt`
+chỉnh  của Thứ 3phương phụ sạch tra  `NOTICES.txt`
 
-##### copyright © 北京愛阿科技有限公司
+##### copyright © có hạn 
 
 
 

@@ -1,48 +1,48 @@
 ---
 name: director_storyboard_table_style
-description: 分镜表都市言情约束 — 定义成熟都市言情二次元动画在分镜表中的光影氛围规范、赛璐璐质感、动作节奏、环境动态、运镜禁忌与转场禁忌。适用于任何叙事类型。
+description: Bảng phân cảnhđều tình  — nối nghĩa Anime Ngôn Tình Đô Thị Hiện Đại (2D)ở Bảng phân cảnhgiữa  của Ánh sáng & Không khí、、động tác vụ tiết 、động thái 、Góc quaychuyển trường 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 分镜表都市言情约束 · 成熟都市言情二次元动画 · 技法参考
+# Bảng phân cảnhđều tình  · Anime Ngôn Tình Đô Thị Hiện Đại (2D) · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。以下仅提供成熟都市言情二次元动画风格在分镜表层面的约束规范。
-
----
-
-## 二、光影与氛围
-
-- **同场戏光影统一** — 一场戏内不应出现两种以上光影方案，除非有明确的叙事转折（如室内灯光切换→窗外暮色渐深、晴天→突降细雨）
-- **情绪色盘绑定** — 每场戏至少绑定 1 个情绪场景（初见心动/暧昧升温/守护承诺/分离误会/重逢释怀/夜宴灯会），并在镜头组内保持主色+辅色连续性
-- **光源角度规范** — 正给镜头光源默认柔和侧逆光或散射光，侧给镜头根据画面需要调整。描述光影时须区分自然光（窗光/阳光）与人造光（灯光/屏幕光）的差异
-- **冷暖色调与叙事阶段匹配** — 分离/压抑/冷漠段落严格使用冷色光（青灰 C6 + 浅蓝 C3），禁用琥珀暖/烟霞粉等暖色调；暖色调（琥珀暖 C7 + 烟霞粉 C5）仅在情感回暖、暧昧升温段落使用
-- **光影转场是高级手段** — 从窗外自然光渐变到室内暖灯光 = 日转夜的时间流逝；从明亮办公室到昏暗公寓 = 情绪转折。在分镜表中标注光影变化点
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。dưới chỉ nhắc nhà Anime Ngôn Tình Đô Thị Hiện Đại (2D)Phong cáchở Bảng phân cảnhtầng mặt  của Quy chuẩn ràng buộc。
 
 ---
 
-## 三、环境动态
+## 2、Ánh sángKhông khí
 
-- **环境动态增加画面呼吸感** — 窗帘轻摆、咖啡杯热气升腾、雨滴滑过玻璃窗、城市灯光明灭、树叶飘落。每 3-4 个镜头至少安排一个有环境动态的镜头，避免画面"死"掉
-- **现代都市环境元素优先** — 环境动态应选用现代都市世界观内的元素：窗帘轻摆、车流光影、雨丝划过玻璃、落叶飘过街道、咖啡热气蒸腾、路灯光晕闪烁，禁止出现古风/奇幻元素
-- **赛璐璐动态表现** — 环境动态应符合二次元动画的表现方式：光影斑驳的手绘质感、布料飘动的线条美感、雨丝与灯光的赛璐璐渲染效果
-
----
-
-## 四、都市人物动作节奏
-
-- **动作要克制** — 成熟都市言情角色的动作应内敛含蓄，情绪不外放。关键动作（转身、抬手、回眸）标注"缓慢"或"从容"
-- **服饰动态** — 现代都市服饰（西装衣摆、裙摆、围巾、大衣下摆）的微动态是天然的画面资产，可在画面描述中加入衣物随风/随动作的轻微飘动，增加画面的"活"感
-- **仪态约束** — 都市言情角色的举止应符合成熟精英气质：站姿挺拔从容、举手投足优雅克制、不出现夸张的二次元化肢体语言（如夸张手势、Q版变形表情）
-- **微表情优先** — 以面部微表情（嘴角弧度、眉梢轻动、眼神流转）传达情绪，而非依赖大幅度肢体动作
+- **cùng trường Ánh sángthống 1 ** — 1 trường trong không hồi ra 2loại trên Ánh sángphương ，bỏ phi có dẫn  của việc chuyển （như trong ánh đổi →ngoài vật 、ngày→）
+- **tình xúc vật đĩa ghép nối** — trường đến ít ghép nối 1 mục tình xúc Bối cảnh（thấy động ///phútsẽ /trùng /sẽ ），nhất ở Ống kínhnhóm trong lưu giữ chính vật +vật 
+- **ánh nguồn nhân độ ** — chính cho Ống kínhánh nguồn Mặc định và ánh hoặc ánh ，cho Ống kínhdựa theovẽ mặt cần cần gọi chỉnh 。Mô tảÁnh sángbuộc khu phúttự ánh （ánh /ánh ）ngườitạo ánh （ánh /ánh ） của bất 
+- **vật gọi việc đoạn khớp** — phút/nén /đoạn khung hàm vật ánh （ C6 +  C3），hàm /vật gọi ；vật gọi （ C7 +  C5）chỉ ở tình trả 、đoạn hàm 
+- **Ánh sángchuyển trường là cao cấp tay đoạn ** — từ ngoài tự ánh đến trong ánh  = ngày chuyển  của thời gian；từ dẫn đến  = tình xúc chuyển 。ở Bảng phân cảnhgiữa biểu tâm Ánh sánghóa điểm 
 
 ---
 
-## 五、运镜禁忌
+## 3、động thái 
 
-- **禁用快速运镜** — 甩镜、急推、手持晃动与成熟都市言情二次元动画的清冷优雅气质冲突
-- **禁用花式转场** — 划屏、旋转、百叶窗、闪白等与本风格不兼容
-- **善用景深与空间** — 可利用现代都市场景的空间纵深做缓慢的推拉/跟随运镜，通过浅景深虚化制造电影感，但须保持沉稳克制的节奏
+- **động thái cộng vẽ mặt ** — 、、、ánh dẫn 、。 3-4 mục Ống kínhđến ít an sắp một có động thái  của Ống kính，vẽ mặt ""bỏ 
+- **Đô Thị Hiện Đạitrước ** — động thái hồi chọn hàm Đô Thị Hiện Đạigiới trong  của ：、Ánh sáng、、đạo 、、đường ánh ，Nghiêm cấmra phong /
+- **động thái bảng ** — động thái hồi hợp 2lần động vẽ  của bảng cách thức：Ánh sáng của tay 、động  của đường mục đẹp 、ánh  của hiệu quả 
+
+---
+
+## 4、đều ngườiđộng tác vụ tiết 
+
+- **động tác vụ cần chép ** — tạo đều tình Nhân vật của động tác vụ hồi trong ，tình xúc không ngoài mở 。liên động tác vụ （chuyển 、tay 、trả ）biểu tâm "chậm "hoặc "từ dung "
+- **phục động thái ** — Đô Thị Hiện Đạiphục （、、khí 、lớn dưới ） của động thái là ngày của vẽ mặt Tài nguyên，ở Mô tả hình ảnhgiữa cộng vào phong /động tác vụ  của động ，cộng vẽ mặt  của "hoạt "
+- **thái ** — đều tình Nhân vật của hồi hợp tạo ：trạm từ dung 、tay chép 、không ra bức  của 2lần hóa thể ngữ （như bức tay 、Qbản dạng bảng tình ）
+- **bảng tình trước ** — mặt bộ bảng tình （nhân độ 、động 、chuyển ）truyền tình xúc ，phi phụ thuộc lớn độ thể động tác vụ 
+
+---
+
+## 5、Góc quay
+
+- **hàm nhanh Góc quay** — Lia nhanh (whip pan)、khuyến 、tay giữ động Anime Ngôn Tình Đô Thị Hiện Đại (2D) của sạch 
+- **hàm thức chuyển trường ** — 、chuyển 、trăm 、sách Phong cáchkhông dung 
+- **hàm bối rỗng gian ** — hàm Đô Thị Hiện ĐạiBối cảnh của rỗng gian chậm  của khuyến /Góc quay，thông quabối hóa chép tạo sáng ，nhưng buộc lưu giữ chép  của tiết 

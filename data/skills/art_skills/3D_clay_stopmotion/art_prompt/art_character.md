@@ -1,190 +1,190 @@
-# 黏土定格动画角色基础形象生成 · 约束手册
+# nối khung động vẽ Nhân vậtcơ sở dạng tượng tạo · sổ tay
 
 ---
 
-## 一、基础形象原则
+## 1 、cơ sở dạng tượng gốc 
 
-1. **黏土肌理为魂** — 表面可见手工捏塑痕迹，手指压痕/黏土纹理清晰可辨
-2. **3D卡通底模** — 基础打底为简化造型的黏土角色，后续服化均为叠加层
-3. **四视图一致** — 面容/体型/发型/基础服装跨视图高度统一
-4. **治愈氛围** — 无妆状态仍需体现角色性格（柔和/圆润/亲切）
+1. **lý ** — bảng mặt thấy tay ，tay nén /lý sạch 
+2. **3Dthông mô ** — cơ sở mở hóa tạo kiểu  của Nhân vật，sau phục hóa cộng tầng 
+3. **4video ảnh 1 ** — mặt dung /thể kiểu /phát kiểu /cơ sở phục video ảnh cao độ thống 1 
+4. **Không khí** — không trạng tháicần thể Nhân vậtkhung （ và //）
 
 ---
 
-## 二、面容约束
+## 2、mặt dung 
 
-> 不再固定五官特征参数，由角色描述（性别/年龄/性格/气质）驱动 AI 自由生成五官，保证人物间外观差异化。
+> không nối 5tham số，do Nhân vậtMô tả（khác /năm/khung /）động  AI tự do tạo5，lưu chứng ngườigian ngoài bất hóa 。
 
-### 通用要求
+### thông hàm Yêu cầu
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 五官 | 由角色描述自然推导，不预设脸型/眼型/眉型/鼻型/唇型；整体保持黏土圆润感（无尖锐棱角） |
-| 风格底色 | 黏土定格动画、3D 卡通渲染、哑光黏土质感、暖调光影 |
-| 气质 | 必须从角色描述提炼整体气质关键词（如温暖治愈/稳重可靠/活泼亲切），并写入提示词 |
-| 表情 | 中性微表情，符合角色气质 |
+| 5 | do Nhân vậtMô tảtự khuyến dẫn ，không thiết kiểu /kiểu /kiểu /kiểu /kiểu ；chỉnh thể lưu giữ （không nhân ） |
+| Phong cáchvật  | nối khung động vẽ 、3D thông 、ánh 、gọi Ánh sáng |
+|  | Bắt buộctừ Nhân vậtMô tảnhắc chỉnh thể liên từ （như /trùng /hoạt ），nhất vào Prompt |
+| bảng tình  | giữa bảng tình ，hợp Nhân vật |
 
 ---
 
-## 三、肤感约束
+## 3、
 
-### 女性
+### nữ 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 肤色 | 暖调奶油色、柔和均匀 | 暖奶油色肌肤、柔和肤色 |
-| 光泽 | 哑光黏土质感、无高光 | 哑光黏土质感、matte clay texture |
-| 质感 | 黏土肌理清晰、可见捏塑痕迹 | 黏土表面、手工捏塑痕迹 |
-| 露肤 | 面部/颈部/手部 | 肌肤温润、黏土质感 |
+| vật  | gọi vật 、 và  | vật 、 và vật  |
+| ánh  | ánh 、không cao ánh  | ánh 、matte clay texture |
+|  | lý sạch 、thấy  | bảng mặt 、tay  |
+|  | mặt bộ /bộ /tay bộ  | 、 |
 
-### 男性
+### nam 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 肤色 | 暖调米色、柔和均匀 | 暖调米色肌肤、柔和肤色 |
-| 光泽 | 哑光黏土质感、无高光 | 哑光黏土质感、matte clay texture |
-| 质感 | 黏土肌理清晰、可见手指压痕 | 黏土表面、手工痕迹清晰 |
+| vật  | gọi vật 、 và  | gọi vật 、 và vật  |
+| ánh  | ánh 、không cao ánh  | ánh 、matte clay texture |
+|  | lý sạch 、thấy tay nén  | bảng mặt 、tay sạch  |
 
 ---
 
-## 四、体型约束
+## 4、thể kiểu 
 
-### 女性
+### nữ 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 身高 | 默认155-165cm，头身比体现 | {身高}cm tall |
-| 头身比 | 六头身至七头身，头大身小 | 6-7 heads tall、圆润比例 |
-| 肩颈 | 圆润肩线、无锐利棱角 | 圆润肩颈、柔和线条 |
-| 手部 | 圆润手指、关节简化 | 圆润小手、简化手部细节 |
-| 体态 | 柔和曲线、无攻击性姿态 | 姿态柔和、曲线圆润 |
+| cao  | Mặc định155-165cm，đầu tỷ thể  | {cao }cm tall |
+| đầu tỷ  | 6đầu đến 7đầu ，đầu lớn nhỏ  | 6-7 heads tall、Tỷ lệ |
+|  | đường 、không nhân  | 、 và đường mục  |
+| tay bộ  | tay 、liên tiết hóa  | nhỏ tay 、hóa tay bộ tiết  |
+| thể thái  |  và đường 、không thái  | thái  và 、đường  |
 
-### 男性
+### nam 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 身高 | 默认170-180cm，头身比体现 | {身高}cm tall |
-| 头身比 | 六头身半至七头半 | 6.5-7.5 heads tall、圆润比例 |
-| 肩颈 | 圆润宽肩、肩部柔和 | 圆润肩部、温和肩线 |
-| 手部 | 圆润手掌、指节简化 | 圆润手掌、简化指节 |
-| 体态 | 稳重大方、线条柔和 | 姿态稳重、线条圆润 |
+| cao  | Mặc định170-180cm，đầu tỷ thể  | {cao }cm tall |
+| đầu tỷ  | 6đầu nửa đến 7đầu nửa  | 6.5-7.5 heads tall、Tỷ lệ |
+|  | rộng 、bộ  và  | bộ 、 và đường  |
+| tay bộ  | tay 、tiết hóa  | tay 、hóa tiết  |
+| thể thái  | trùng lớn phương 、đường mục  và  | thái trùng 、đường mục  |
 
 ---
 
-## 五、基础发型约束
+## 5、cơ sở phát kiểu 
 
-### 女性
+### nữ 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 发色 | 暖棕、栗色、深褐等自然色系 | 暖棕色长发、栗色秀发 |
-| 发长 | 及肩或及腰 | 及肩长发 |
-| 发质 | 黏土塑形、发束块状化 | 黏土发型、块状发束 |
-| 造型 | 自然散落、简单扎发、无复杂发饰 | 自然发束、简单束发 |
+| phát vật  | 、vật 、tự vật dòng  | vật dài phát 、vật phát  |
+| phát dài  | hoặc  | dài phát  |
+| phát  | dạng 、phát trạng hóa  | phát kiểu 、trạng phát  |
+| tạo kiểu  | tự 、đơn phát 、không lời phát  | tự phát 、đơn phát  |
 
-### 男性
+### nam 
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 发色 | 暖棕、深褐、黑色 | 暖棕色短发、深色发型 |
-| 发长 | 短发或中长发 | 短发、中长发 |
-| 发质 | 黏土塑形、发束块状化 | 黏土发型、块状发束 |
-| 造型 | 自然散落、简单束发 | 自然发束、简单发型 |
+| phát vật  | 、、vật  | vật ngắn phát 、vật phát kiểu  |
+| phát dài  | ngắn phát hoặc giữa dài phát  | ngắn phát 、giữa dài phát  |
+| phát  | dạng 、phát trạng hóa  | phát kiểu 、trạng phát  |
+| tạo kiểu  | tự 、đơn phát  | tự phát 、đơn phát kiểu  |
 
 ---
 
-## 六、基础服装约束
+## 6、cơ sở phục 
 
-> 基础服装为简化造型，无复杂细节。
+> cơ sở phục hóa tạo kiểu ，không lời tiết 。
 
-### 女性基础服装
+### nữ cơ sở phục 
 
-简化连衣裙或上衣+裙装，颜色为低饱和暖色调，无花纹装饰。
+hóa hoặc trên +，vật thấp  và vật gọi ，không 。
 
-### 男性基础服装
+### nam cơ sở phục 
 
-简化衬衫+裤装，颜色为低饱和暖色调，无花纹装饰。
+hóa +，vật thấp  và vật gọi ，không 。
 
-### 着装统一规则
+### đang thống 1 
 
-- 服装风格统一，确保后续服饰叠加无色彩干扰
-- 除面部/手部/颈部外基本覆盖
-- 四视图服装款式完全一致
-- 基础服装仅为安全打底，焦点在面容与体态
+- phục Phong cáchthống 1 ，lưu sau phục cộng không vật 
+- bỏ mặt bộ /tay bộ /bộ ngoài cơ sở sách 
+- 4video ảnh phục thức toàn 1 
+- cơ sở phục chỉ an toàn mở ，điểm ở mặt dung thể thái 
 
 ---
 
-## 七、四视图设定图规范
+## 7、4video ảnh thiết nối ảnh 
 
-### 视图定义
+### video ảnh nối nghĩa 
 
-| 位置 | 视图 | 角度 | 景别 | 要求 | 提示词 |
+| vị trí trí  | video ảnh  | nhân độ  | Cỡ cảnh | Yêu cầu | Prompt |
 |---|---|---|---|---|---|
-| 左一 | 人像特写 | 正面平视 | 头顶至锁骨 | 面部占60%+，五官清晰 | portrait closeup、face detail |
-| 左二 | 正视图 | 正面 0° | 全身立像 | 面对镜头、从头顶到脚底完整 | front view、full body |
-| 右二 | 侧视图 | 右侧 90° | 全身立像 | 侧面轮廓清晰、从头到脚完整 | side view、profile、full body |
-| 右一 | 后视图 | 后方 180° | 全身立像 | 后脑/背部/发尾/脚部清晰 | back view、rear view、full body |
+| trái 1  | ngườiĐặc tả (close-up) | chính mặt video  | đầu đến  | mặt bộ 60%+，5sạch  | portrait closeup、face detail |
+| trái 2 | chính video ảnh  | chính mặt  0° | toàn lập  | mặt đúng Ống kính、từ đầu đến chỉnh  | front view、full body |
+| phải 2 | video ảnh  | phải  90° | toàn lập  | mặt sạch 、từ đầu đến chỉnh  | side view、profile、full body |
+| phải 1  | sau video ảnh  | sau phương  180° | toàn lập  | sau /bộ /phát đuôi /bộ sạch  | back view、rear view、full body |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面从左至右并排四视图 |
-| 背景 | 纯净中性灰 #E8E8E8 |
-| 站姿 | 自然站立、双脚平行微分、双臂自然下垂 |
-| 全身展示 | 全身立像必须从头到脚完整入画，严禁裁切 |
-| 特写展示 | 人像特写必须从头顶到锁骨完整入画，严禁裁切 |
-| 表情 | 中性微表情，符合角色性格 |
-| 光线 | 暖调柔光，前方主光+双侧补光，无硬阴影 |
-| 一致性 | 四视图的肤色/体型/发型/面容/基础服装完全一致 |
-| 画面比例 | 建议 4:1 或 3:1 |
+| cục  | cùng 1 vẽ mặt từ trái đến phải nhất sắp 4video ảnh  |
+| bối  | thuần giữa  #E8E8E8 |
+| trạm  | tự trạm lập 、đôi thi phút、đôi tự dưới  |
+| toàn nhở  | toàn lập Bắt buộctừ đầu đến chỉnh vào vẽ ， |
+| Đặc tả (close-up)nhở  | ngườiĐặc tả (close-up)Bắt buộctừ đầu đến chỉnh vào vẽ ， |
+| bảng tình  | giữa bảng tình ，hợp Nhân vậtkhung  |
+| ánh đường  | gọi ánh ，trước phương chính ánh +đôi bổ ánh ，không sáng  |
+| 1  | 4video ảnh  của vật /thể kiểu /phát kiểu /mặt dung /cơ sở phục toàn 1  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 4:1 hoặc  3:1 |
 
 ---
 
-## 八、提示词模板
+## 8、Promptmô 
 
 ```
-黏土定格动画{性别}角色四视图设定图，定格动画风格，3D卡通渲染，暖调光影，
+nối khung động vẽ {khác }Nhân vật4video ảnh thiết nối ảnh ，nối khung động vẽ Phong cách，3Dthông ，gọi Ánh sáng，
 character design sheet，character turnaround，
-{角色描述对应的五官特征 - 由角色描述自然推导，整体保持黏土圆润感}，{整体气质}，
-{肤色}，哑光黏土质感，黏土肌理清晰，手工捏塑痕迹，
-{身高描述}，{头身比，如：7 heads tall proportion}，{身材描述}，{体态描述}，
-{发色}{发长}，黏土发型，{基础造型}，无复杂发饰，
-（女性：简化连衣裙 / 男性：简化衬衫+裤装），低饱和暖色调，无花纹，
-同一画面左至右并排：人像特写+正视图+侧视图+后视图，
-人像特写从头顶到锁骨完整展示，head to collarbone complete，
-全身立像从头顶到脚底完整展示，full body head to toe，
-自然站立，纯净中性灰背景，暖调柔光，无硬阴影，
-四视图一致性，黏土肌理细腻渲染，表情柔和治愈
-图中不要有任何文字
+{Nhân vậtMô tảđúng hồi  của 5 - do Nhân vậtMô tảtự khuyến dẫn ，chỉnh thể lưu giữ }，{chỉnh thể }，
+{vật }，ánh ，lý sạch ，tay ，
+{cao Mô tả}，{đầu tỷ ，như ：7 heads tall proportion}，{Mô tả}，{thể thái Mô tả}，
+{phát vật }{phát dài }，phát kiểu ，{cơ sở tạo kiểu }，không lời phát ，
+（nữ ：hóa  / nam ：hóa +），thấp  và vật gọi ，không ，
+cùng 1 vẽ mặt trái đến phải nhất sắp ：ngườiĐặc tả (close-up)+chính video ảnh +video ảnh +sau video ảnh ，
+ngườiĐặc tả (close-up)từ đầu đến chỉnh nhở ，head to collarbone complete，
+toàn lập từ đầu đến chỉnh nhở ，full body head to toe，
+tự trạm lập ，thuần giữa bối ，gọi ánh ，không sáng ，
+4video ảnh 1 ，lý ，bảng tình  và 
+ảnh giữa không cần có tài chữ 
 ```
 
 ---
 
-## 九、约束规则
+## 9、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须为「哑光黏土质感」状态 |
-| R2 | 必须声明基础服装（女性：简化连衣裙；男性：简化衬衫+裤装） |
-| R3 | 必须声明「无复杂发饰、无现代配饰」 |
-| R4 | 必须指定「纯净中性灰背景」 |
-| R5 | 必须指定「四视图一致性」 |
-| R6 | 全身立像必须从头到脚完整展示，严禁裁切 |
-| R7 | 必须指定角色身高并通过头身比约束全身比例（默认6-7头身） |
-| R8 | 人像特写必须从头顶到锁骨完整展示，严禁裁切头顶 |
+| R1 | Bắt buộc「ánh 」trạng thái |
+| R2 | Bắt buộcthanh dẫn cơ sở phục （nữ ：hóa ；nam ：hóa +） |
+| R3 | Bắt buộcthanh dẫn 「không lời phát 、không nối 」 |
+| R4 | Bắt buộcnối 「thuần giữa bối 」 |
+| R5 | Bắt buộcnối 「4video ảnh 1 」 |
+| R6 | toàn lập Bắt buộctừ đầu đến chỉnh nhở ， |
+| R7 | Bắt buộcnối Nhân vậtcao nhất thông quađầu tỷ toàn Tỷ lệ（Mặc định6-7đầu ） |
+| R8 | ngườiĐặc tả (close-up)Bắt buộctừ đầu đến chỉnh nhở ，đầu  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 真人写实摄影质感/照片级真实 |
-| X2 | 冷硬光线/硬阴影/高对比 |
-| X3 | 尖锐棱角/攻击性姿态 |
-| X4 | 复杂场景背景（必须纯灰底） |
-| X5 | 夸张表情/动态姿势 |
-| X6 | 全身立像裁切头顶或脚底 |
-| X7 | 人像特写裁切头顶 |
-| X8 | 忽略身高和头身比约束 |
+| X1 | thật ngườisáng /cấp thật  |
+| X2 | ánh đường /sáng /cao đúng tỷ  |
+| X3 | nhân /thái  |
+| X4 | lời Bối cảnhbối （Bắt buộcthuần ） |
+| X5 | bức bảng tình /động thái  |
+| X6 | toàn lập đầu hoặc  |
+| X7 | ngườiĐặc tả (close-up)đầu  |
+| X8 | cao  và đầu tỷ  |

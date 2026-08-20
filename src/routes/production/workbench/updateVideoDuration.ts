@@ -15,6 +15,6 @@ export default router.post(
         await u.db("o_videoTrack").where("id", id).update({
             duration,
         });
-        res.status(200).send(success("更新成功"));
+        res.status(200).send(success("Cập nhật thành công"));
     },
 );

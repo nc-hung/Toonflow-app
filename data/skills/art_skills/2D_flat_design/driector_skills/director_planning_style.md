@@ -1,85 +1,85 @@
 ---
 name: director_planning_style
-description: 扁平风约束 — 定义2D扁平风在色调体系、色块方案、质感方向、场景空间元素、乐器选择与环境音上的全局约束。适用于任何叙事类型。
+description: phong  — nối nghĩa 2Dphong ở vật gọi thể dòng 、vật phương 、phương 、Bối cảnhrỗng gian 、thiết bị chọn lựa âm trên  của toàn cục 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 扁平风约束 · 2D扁平风（Flat Design） · 技法参考
+# phong  · 2Dphong （Flat Design） · thức tham chiếu
 
 ---
 
-## 一、色调体系与画面基调
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
 
-- **色调基底** — 全片以明快蓝（C1）、活力橙（C2）、米白（C9）为基底色，整体色温中性（5500-6500K），饱和度中高（70-90%），呈现现代扁平风的清新简洁感
-- **冷暖叙事对比** — 暖色（活力橙 C2、暖粉 C7）作为情感升温的视觉信号，用于心动、浪漫段落局部强化。冷色（明快蓝 C1、淡紫 C6）用于日常、夜晚段落。冷暖切换应与故事弧线同步，而非随意混用
-- **冷暖分配策略** — 日常/办公段落保持中性偏冷色调基底；暖色仅在情感升温后释放，用冷暖对比做叙事转折
-- **色盘先行原则** — 段落规划需先绑定情绪场景（日常/心动/浪漫/回忆等），再确定主色+辅色与色块方案，避免"剧情对了但情绪不对色"
-- **禁用色域** — 高饱和荧光色、霓虹色、3D 渲染色彩体系均与本风格不兼容
+- **vật gọi cơ sở ** — toàn dẫn nhanh （C1）、hoạt lực （C2）、（C9）cơ sở vật ，chỉnh thể vật giữa （5500-6500K）， và độ giữa cao （70-90%），phong  của sạch mới 
+- **việc đúng tỷ ** — vật （hoạt lực  C2、 C7）tác vụ tình  của trực quantin số ，hàm với động 、đoạn cục bộ hóa 。vật （dẫn nhanh  C1、 C6）hàm với ngày thường 、Ban đêmđoạn 。đổi hồi việc đường cùng bước ，phi ý hàm 
+- **phútnối ** — ngày thường /đoạn lưu giữ giữa vật gọi cơ sở ；vật chỉ ở tình sau mở ，hàm đúng tỷ việc chuyển 
+- **vật đĩa trước thi gốc ** — đoạn lập kế hoạchcần trước ghép nốitình xúc Bối cảnh（ngày thường /động //trả ），nối chính vật +vật vật phương ，"kịch tình đúng nhưng tình xúc không đúng vật "
+- **hàm vật vực ** — cao  và ánh vật 、vật 、3D vật thể dòng sách Phong cáchkhông dung 
 
 ---
 
-## 二、色块方案体系
+## 2、vật phương thể dòng 
 
-- **色块即叙事** — 6 套色块方案对应不同情绪段落，导演规划阶段应在段落层面确定色块基调方向，而非逐镜指定
-- **扁平风格无传统光影** — 通过色块明度差异制造"伪光影"，不使用光源角度
+- **vật việc ** — 6 vật phương đúng hồi không cùng tình xúc đoạn ，Kế hoạch đạo diễnđoạn hồi ở đoạn tầng mặt nối vật cơ sở gọi phương ，phi quay nối 
+- **Phong cáchkhông truyền thống Ánh sáng** — thông quavật dẫn độ bất chép tạo "Ánh sáng"，không hàm ánh nguồn nhân độ 
 
-| 色块方案 | 方案名 | 色调倾向 | 适用情绪 |
+| vật phương  | phương tên  | vật gọi  | hàm tình xúc  |
 |---|---|---|---|
-| A | 纯色块 | 暖橙 + 米白 + 浅蓝 | 日常温馨 |
-| B | 色块对比 | 暖粉 + 暖橙对比 | 心动瞬间、升温段 |
-| C | 冷色调 | 冷蓝 + 灰色 + 白色 | 办公/学习、冷静段 |
-| D | 暖调主导 | 暖橙 + 暖粉 + 浅黄 | 浪漫场景、甜蜜段 |
-| E | 冷色主导 | 深蓝 + 紫色 + 暖黄点缀 | 夜晚静谧 |
-| F | 低饱和 | 浅黄 + 浅灰 + 暖粉 | 回忆/闪回 |
+| A | thuần vật  |  +  +  | ngày thường  |
+| B | vật đúng tỷ  |  + đúng tỷ  | động gian 、đoạn  |
+| C | vật gọi  |  + vật  + vật  | /、đoạn  |
+| D | gọi chính dẫn  |  +  +  | Bối cảnh、đoạn  |
+| E | vật chính dẫn  |  + vật  + điểm tố  | Ban đêm |
+| F | thấp  và  |  +  +  | trả /trả  |
 
-- **冷暖色分配** — 暖色块（活力橙/暖粉）适用于情感升温段落；冷静/夜晚段落用冷色块。导演可根据叙事需要调整冷暖切换点
-- **氛围方向映射** — 每场戏的氛围方向应能映射到上述色块方案（A-F）的某一方向，确保视觉一致性
-
----
-
-## 三、质感方向
-
-- **几何极简感** — 扁平设计的核心：纯色色块、清晰轮廓、无阴影无渐变、色块边界明确
-- **简洁线条 + 纯净色彩** — 这是画面质感的锚点。不是写实渲染，不是复杂细节，是几何化的极简表达
-- **禁止写实元素** — 所有视觉元素必须符合扁平风格：无阴影、无渐变、无纹理、无光影。禁止"3D感"和"写实感"
-- **色块对比清晰** — 色块间边界分明，主色与辅色对比明确，避免模糊过渡
-- **扁平不等于单调** — 通过色彩对比与构图设计传递情感，而非依赖写实细节。用色块大小、色相变化制造视觉层次
+- **vật phútnối ** — vật （hoạt lực /）hàm với tình đoạn ；/Ban đêmđoạn hàm vật 。đạo diễndựa theoviệc cần cần gọi chỉnh đổi điểm 
+- **Không khíphương ** — trường  của Không khíphương hồi thể đến trên tả vật phương （A-F） của 1 phương ，lưu trực quan1 
 
 ---
 
-## 四、扁平场景空间元素
+## 3、phương 
 
-扁平风格特有的场景元素及其视觉叙事功能：
-
-- **纯色背景/色块分区** — 天然的构图载体，用色块区域划分空间层次，制造简洁的空间感与画面纵深
-- **几何形状/图标符号** — 扁平风格的表意工具，圆形 = 温暖/完整、三角 = 动态/冲突、方形 = 稳定/日常
-- **留白区域** — 扁平风格的重要情感手段。大面积留白 = 聚焦、满色块 = 充实、局部留白 = 呼吸感
-- **段落间用纯色过渡** — 本风格有丰富的色块资产（不同色相/明度变体），段落衔接建议用纯色块做情绪缓冲，不要硬切
-- **转折点用色块变化** — 优先使用画面手段（明度变化、色相变化、色块对比突变）而非依赖对白解释
+- **mấy ** — thiết tính  của ：thuần vật vật 、sạch 、không sáng không 、vật giới dẫn 
+- **đường mục  + thuần vật ** — nàylà vẽ mặt  của điểm 。không là ，không là lời tiết ，là mấy hóa  của bảng 
+- **Nghiêm cấm** — tất cảtrực quanBắt buộchợp Phong cách：không sáng 、không 、không lý 、không Ánh sáng。Nghiêm cấm"3D" và ""
+- **vật đúng tỷ sạch ** — vật gian giới phútdẫn ，chính vật vật đúng tỷ dẫn ，mô 
+- **không với đơn gọi ** — thông quavật đúng tỷ cấu ảnh thiết tính truyền tình ，phi phụ thuộc tiết 。hàm vật lớn nhỏ 、vật hóa chép tạo trực quantầng lần 
 
 ---
 
-## 五、扁平风乐器与环境音
+## 4、Bối cảnhrỗng gian 
 
-扁平风格下的声音元素约束：
+Phong cáchcó  của Bối cảnhtrực quanviệc công thể ：
 
-### 乐器选择
+- **thuần vật bối /vật phútkhu ** — ngày của cấu ảnh xuống thể ，hàm vật khu vực phútrỗng gian tầng lần ，chép tạo  của rỗng gian vẽ mặt 
+- **mấy dạng trạng /Iconsố ** — Phong cách của bảng ý cụ ，dạng  = /chỉnh 、3nhân  = động thái /、phương dạng  = nối /ngày thường 
+- **lưu khu vực ** — Phong cách của trùng cần tình tay đoạn 。lớn mặt lưu  = 、đầy vật  = sung 、cục bộ lưu  = 
+- **đoạn gian hàm thuần vật ** — sách Phong cáchcó  của vật Tài nguyên（không cùng vật /dẫn độ thể ），đoạn tiếp Khuyến nghịhàm thuần vật tình xúc ，không cần 
+- **Điểm bước ngoặthàm vật hóa ** — ưu tiên sử dụng vẽ mặt tay đoạn （dẫn độ hóa 、vật hóa 、vật đúng tỷ ）phi phụ thuộc đúng giải 
 
-- **电子合成器** — 日常/温馨/现代段落的核心乐器，最能表现扁平风格的简洁感
-- **钢琴** — 浪漫/情感段落，干净的音色适合简约氛围
-- **轻快节奏** — 明亮/活力段落，适合快节奏场景
-- **弦乐** — 情绪升华段落的铺底，不宜喧宾夺主
+---
 
-### 乐器组合策略
+## 5、phong thiết bị âm 
 
-| 情绪阶段 | 乐器组合 |
+Phong cáchdưới  của thanh âm ：
+
+### thiết bị chọn lựa 
+
+- **hợp tạo thiết bị ** — ngày thường //đoạn  của thiết bị ，nhất thể bảng Phong cách của 
+- **** — /tình đoạn ， của giọng đọchợp Không khí
+- **nhanh tiết ** — dẫn /hoạt lực đoạn ，hợp nhanh tiết Bối cảnh
+- **** — tình xúc đoạn  của ，không chính 
+
+### thiết bị nhóm hợp 
+
+| tình xúc đoạn  | thiết bị nhóm hợp  |
 |---|---|
-| 平稳/开场/收尾 | 电子音效独奏 |
-| 日常温馨 | 合成器 + 轻钢琴 |
-| 情绪升华/浪漫 | 钢琴 + 弦乐 |
-| 关键情感瞬间 | 纯环境音（去掉配乐） |
+| /mở trường /nhận đuôi  | Âm hiệu |
+| ngày thường  | hợp tạo thiết bị  +  |
+| tình xúc / |  +  |
+| liên tình gian  | thuần âm （đi bỏ nối ） |
 
-### 扁平风环境音
+### phong âm 
 
-- **典型环境音层次** — 城市交通声 / 办公室键盘声 / 咖啡厅背景音 / 风吹窗帘声 / 人群低语声 / 鼠标点击声
-- **每场戏标注 1-2 个核心环境音**，帮助后续音效设计。环境音层次越丰富，场景越有沉浸感
+- **kiểu âm tầng lần ** — tác vụ thông thanh  / đĩa thanh  / bối âm  / phong thanh  / ngườithấp ngữ thanh  / biểu điểm thanh 
+- **trường biểu tâm  1-2 mục âm **，trợ giúp sau Âm hiệuthiết tính 。âm tầng lần ，Bối cảnhcó 

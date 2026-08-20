@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 删除项目
+// Xóa dự án
 export default router.post(
   "/",
   validateFields({
@@ -13,51 +13,51 @@ export default router.post(
   }),
   async (req, res) => {
     const { id } = req.body;
-    //删除项目
+    //Xóa dự án
     await u.db("o_project").where("id", id).delete();
     await u.db("o_agentWorkData").where("projectId", id).delete();
-    //删除项目下的原文
+    //Xóa dự ándưới  của gốc tài 
     await u.db("o_novel").where("projectId", id).delete();
-    // 删除项目下的剧本信息
+    // Xóa dự ándưới  của Kịch bản thông tin
     const scriptData = await u.db("o_script").where("projectId", id).select("id");
     const scriptIds = scriptData.map((item: any) => item.id);
     if (scriptIds && scriptIds.length > 0) {
       await u.db("o_scriptAssets").whereIn("scriptId", scriptIds).delete();
     }
     await u.db("o_script").where("projectId", id).delete();
-    // 删除项目下的任务
+    // Xóa dự ándưới  của tác vụ 
     await u.db("o_tasks").where("projectId", id).delete();
-    // 删除项目下的分镜
+    // Xóa dự ándưới  của Phân cảnh
     const storyboardData = await u.db("o_storyboard").where("projectId", id).select("id");
     const storyboardIds = storyboardData.map((item: any) => item.id);
     if (storyboardIds.length > 0) {
       await u.db("o_assets2Storyboard").whereIn("storyboardId", storyboardIds).delete();
     }
     await u.db("o_storyboard").where("projectId", id).delete();
-    //删除需要删除资产的归属图片
+    //XóaCần Xóa tài nguyên của biệt Hình ảnh
     const assetsData = await u.db("o_assets").where("projectId", id).select("id");
     const assetsIds = assetsData.map((item: any) => item.id);
     if (assetsIds && assetsIds.length > 0) {
-      // 先将 o_assets.imageId 置空，解除对 o_image 的外键引用
+      // trước   o_assets.imageId trí rỗng ，giải bỏ đúng  o_image  của ngoài hàm 
       await u.db("o_assets").whereIn("id", assetsIds).update({ imageId: null });
       await u.db("o_image").whereIn("assetsId", assetsIds).delete();
     }
-    // 删除项目下的资产
+    // Xóa dự ándưới  của Tài nguyên
     await u.db("o_assets").where("projectId", id).delete();
-    //删除项目下的视频轨道和视频
+    //Xóa dự ándưới  của Videođạo  và Video
     await u.db("o_videoTrack").where("projectId", id).delete();
     await u.db("o_video").where("projectId", id).delete();
-    //删除项目下的资源
+    //Xóa dự ándưới  của tài nguồn 
 
     await u.db("memories").where("isolationKey", "like", `${id}:%`).delete();
 
     try {
       await u.oss.deleteDirectory(`${id}/`);
-      console.log(`项目 ${id} 的OSS文件夹删除成功`);
+      console.log(`Dự án ${id}  của OSSthư mục tệp Xóa thành công`);
     } catch (error: any) {
-      console.log(`项目 ${id} 没有对应的OSS文件夹，跳过删除`);
+      console.log(`Dự án ${id} chưa có đúng hồi  của OSSthư mục tệp ，Xóa`);
     }
 
-    res.status(200).send(success({ message: "删除项目成功" }));
+    res.status(200).send(success({ message: "Xóa dự án thành công" }));
   },
 );

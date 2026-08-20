@@ -1,200 +1,200 @@
 ---
 name: art_scene_derivative
-description: 3D国风赛博场景衍生资产生成 · 约束手册
+description: 3Dphong Bối cảnhsinh Tài nguyêntạo · sổ tay
 metaData: art_skills
 ---
-# 3D国风赛博场景衍生资产生成 · 约束手册
-（古风场景+现代都市场景 双向全适配）
+# 3Dphong Bối cảnhsinh Tài nguyêntạo · sổ tay
+（phong Bối cảnh+Đô Thị Hiện ĐạiBối cảnh đôi toàn nối ）
 
 ---
 
-## 一、衍生原则
-（核心约束：古风/都市双场景通用，所有变体严格遵循「风格融合统一、空间逻辑一致」）
+## 1 、sinh gốc 
+（：phong /đều đôi Bối cảnhthông hàm ，tất cảthể khung 「Phong cáchhợp thống 1 、rỗng gian logic1 」）
 
-1. **空间一致** — 建筑结构/布局/材质、国风赛博核心融合元素在所有变体中保持完全一致
-    - 古风场景：固定古建制式/飞檐斗拱/榫卯结构/院落布局/传统纹样的赛博改造逻辑
-    - 都市场景：固定楼宇结构/街巷路网/城市功能区布局/国风改造元素（中式飞檐/斗拱/纹样）的融合逻辑
-    - 严禁变体间出现元素错位、结构改动、风格割裂
-2. **景别驱动** — 同一场景通过不同景别展示不同叙事功能，精准适配古风/都市场景的空间叙事逻辑
-3. **时段切换** — 同一空间在不同时间段呈现不同光影氛围，同步适配双场景专属光源的亮度、色温与开关逻辑
-    - 古风场景：传统灯笼/符文灯/全息国风投影/霓虹管线
-    - 都市场景：楼宇大屏/路灯/车灯/国风霓虹招牌/全息水墨广告
-4. **天候变化** — 同一空间在不同天气下呈现不同情绪，同步适配双场景材质与元素的物理反馈
-    - 古风场景：雨雾霓虹丁达尔、积雪覆盖飞檐、瓦当滴水、木构湿润肌理
-    - 都市场景：玻璃幕墙雨痕反光、路面积水霓虹倒影、飞雪覆盖楼宇飞檐、金属结构霜花
-5. **3D为锚** — 所有变体必须保持3D渲染质感，拒绝平面贴图/CG动画感/二次元平涂风格；严格保留PBR物理材质、光线追踪全局光照、体积光、环境光遮蔽、景深虚化，强化双场景专属材质质感
-    - 古风专属：风化木构、做旧金属、砖瓦肌理、织物垂褶、漆面磨损、青苔风化
-    - 都市专属：超白玻璃幕墙、阳极氧化铝材、清水混凝土、沥青路面、磨砂金属、LED自发光屏
+1. **rỗng gian 1 ** — tạo kết cấu /cục /、phong hợp ở tất cảthể giữa lưu giữ toàn 1 
+    - phong Bối cảnh：nối tạo chép thức //kết cấu /cục /truyền thống kiểu  của sửa tạo logic
+    - đều Bối cảnh：nối kết cấu /đường mạng /công thể khu cục /phong sửa tạo （giữa thức //kiểu ） của hợp logic
+    - thể gian ra sai vị trí 、kết cấu sửa động 、Phong cáchrời 
+2. **Cỡ cảnhđộng ** — cùng 1 Bối cảnhthông quakhông cùng Cỡ cảnhnhở không cùng việc công thể ，nối phong /đều Bối cảnh của rỗng gian việc logic
+3. **đoạn đổi ** — cùng 1 rỗng gian ở không cùng thời gianđoạn không cùng Ánh sáng & Không khí，cùng bước nối đôi Bối cảnhriêng biệt ánh nguồn  của độ 、vật mở liên logic
+    - phong Bối cảnh：truyền thống /tài /toàn phong sáng /đường 
+    - đều Bối cảnh：lớn /đường //phong /toàn thông 
+4. **ngàyhóa ** — cùng 1 rỗng gian ở không cùng ngàydưới không cùng tình xúc ，cùng bước nối đôi Bối cảnh của lý phụ 
+    - phong Bối cảnh：nhĩ 、、khi 、cấu lý 
+    - đều Bối cảnh：phụ ánh 、đường mặt sáng 、、biệt kết cấu 
+5. **3D** — tất cảthể Bắt buộclưu giữ 3D，mặt ảnh /CGđộng vẽ /2lần Phong cách；khung lưu lưu PBRlý 、ánh đường toàn cục ánh 、thể ánh 、ánh 、bối hóa ，hóa đôi Bối cảnhriêng biệt 
+    - phong riêng biệt ：phong hóa cấu 、cũ biệt 、lý 、、mặt 、phong hóa 
+    - đều riêng biệt ：vượt 、hóa 、sạch 、đường mặt 、biệt 、LEDtự phát ánh 
 
 ---
 
-## 二、景别变体
+## 2、Cỡ cảnhthể 
 
-### 景别定义
-（古风/都市双场景全覆盖，适配不同空间的叙事需求）
+### Cỡ cảnhnối nghĩa 
+（phong /đều đôi Bối cảnhtoàn ，nối không cùng rỗng gian  của việc cần cầu ）
 
-| 景别 | 范围 | 叙事功能 | 提示词 |
+| Cỡ cảnh | khí  | việc công thể  | Prompt |
 |---|---|---|---|
-| 大全景 | 场景全貌 + 周围环境 | 建立空间感、全局定位 | extreme wide shot、大全景、国风赛博场景全貌、古风场景：古建群落与赛博改造天际线；都市场景：国风赛博都市天际线、城市全景布局 |
-| 全景 | 场景完整呈现 | 展示整体空间结构与融合逻辑 | wide shot、全景、国风赛博场景完整结构、古风场景：院落/古建完整形制与赛博改造；都市场景：楼宇/街区完整布局与国风融合 |
-| 中景 | 场景局部区域 | 聚焦核心功能区 | medium shot、中景、国风赛博功能区、古风场景：殿宇局部/街巷纵深/园林节点；都市场景：楼宇立面/街巷纵深/商圈节点 |
-| 近景 | 场景细部 | 材质/氛围道具特写 | close shot、近景、国风赛博材质特写、古风场景：榫卯机械结构/纹样霓虹光效/飞檐构件；都市场景：国风纹样幕墙/飞檐造型楼宇结构/霓虹招牌细节 |
-| 特写 | 极局部细节 | 材质纹理/关键道具 | extreme closeup、特写、国风赛博纹理细节、古风场景：传统纹样蚀刻/管线接口/发光符文；都市场景：金属漆面磨损/LED屏像素肌理/玻璃幕墙反光细节 |
+| lớn Toàn cảnh (wide shot) | Bối cảnhtoàn  + khí  | tạo lập rỗng gian 、toàn cục nối vị trí  | extreme wide shot、lớn Toàn cảnh (wide shot)、phong Bối cảnhtoàn 、phong Bối cảnh：tạo sửa tạo ngàyđường ；đều Bối cảnh：phong đều ngàyđường 、Toàn cảnh (wide shot)cục  |
+| Toàn cảnh (wide shot) | Bối cảnhchỉnh  | nhở chỉnh thể rỗng gian kết cấu hợp logic | wide shot、Toàn cảnh (wide shot)、phong Bối cảnhchỉnh kết cấu 、phong Bối cảnh：/tạo chỉnh dạng chép sửa tạo ；đều Bối cảnh：/khu chỉnh cục phong hợp  |
+| Trung cảnh (medium shot) | Bối cảnhcục bộ khu vực  | công thể khu  | medium shot、Trung cảnh (medium shot)、phong công thể khu 、phong Bối cảnh：cục bộ //tiết điểm ；đều Bối cảnh：lập mặt //cấp tiết điểm  |
+| Cận cảnh (close-up) | Bối cảnhbộ  | /Không khíĐạo cụĐặc tả (close-up) | close shot、Cận cảnh (close-up)、phong Đặc tả (close-up)、phong Bối cảnh：máy kết cấu /kiểu ánh hiệu /cấu tệp ；đều Bối cảnh：phong kiểu /tạo kiểu kết cấu /tiết  |
+| Đặc tả (close-up) | cục bộ tiết  | lý /liên Đạo cụ | extreme closeup、Đặc tả (close-up)、phong lý tiết 、phong Bối cảnh：truyền thống kiểu /đường tiếp cổng /phát ánh tài ；đều Bối cảnh：biệt mặt /LEDlý /phụ ánh tiết  |
 
-### 景别衍生规范
-（古风/都市双场景通用，严格控制变体一致性）
+### Cỡ cảnhsinh 
+（phong /đều đôi Bối cảnhthông hàm ，khung sát chép thể 1 ）
 
-| 从基准图衍生 | 保持不变 | 允许变化 |
+| từ cơ sở ảnh sinh  | lưu giữ không  | hóa  |
 |---|---|---|
-| 大全景 → 全景 | 建筑外观、整体布局、国风赛博核心融合元素、空间路网/院落结构 | 视角收窄、前景增加对应场景专属元素（古风：浮空灯笼/全息投影；都市：浮空国风广告/路灯/行道树） |
-| 全景 → 中景 | 材质、色调、光线、国风赛博元素位置与融合逻辑 | 裁切聚焦、景深变化、聚焦核心功能区 |
-| 中景 → 近景 | 材质、色调、国风赛博核心材质属性 | 景深浅、背景虚化、聚焦材质与道具细节 |
-| 近景 → 特写 | 材质纹理、国风赛博纹理细节 | 极浅景深、微距感、聚焦微观肌理与光效细节 |
+| lớn Toàn cảnh (wide shot) → Toàn cảnh (wide shot) | tạo ngoài 、chỉnh thể cục 、phong hợp 、rỗng gian đường mạng /kết cấu  | video nhân nhận hẹp 、trước bối cộng đúng hồi Bối cảnhriêng biệt （phong ：rỗng /toàn sáng ；đều ：rỗng phong thông /đường /thi đạo ） |
+| Toàn cảnh (wide shot) → Trung cảnh (medium shot) | 、vật gọi 、ánh đường 、phong vị trí trí hợp logic | 、bối hóa 、công thể khu  |
+| Trung cảnh (medium shot) → Cận cảnh (close-up) | 、vật gọi 、phong biệt  | bối 、bối hóa 、Đạo cụtiết  |
+| Cận cảnh (close-up) → Đặc tả (close-up) | lý 、phong lý tiết  | bối 、、lý ánh hiệu tiết  |
 
 ---
 
-## 三、时段变体
+## 3、đoạn thể 
 
-### 时段定义
-（古风/都市双场景光源逻辑全覆盖，光影自洽不冲突）
+### đoạn nối nghĩa 
+（phong /đều đôi Bối cảnhánh nguồn logictoàn ，Ánh sángtự không ）
 
-| 时段 | 视觉特征 | 提示词 |
+| đoạn  | trực quan | Prompt |
 |---|---|---|
-| 清晨 | 薄雾柔光、冷暖交织色调、冷调霓虹余辉未熄、晨光穿透薄雾与全息投影形成丁达尔光效<br>古风：飞檐镀晨光金边、灯笼余辉<br>都市：楼宇大屏待机微光、路灯余辉、晨光穿透摩天楼群 | 晨光微熹、清晨薄雾、国风赛博清晨、霓虹余辉、晨光穿雾 |
-| 正午 | 明亮高饱和、阴影短而清晰、色彩还原真实<br>古风：古建结构阴影清晰、金属与石材高光自然<br>都市：玻璃幕墙强光反光、楼宇阴影边界清晰、霓虹弱光待机 | 正午阳光、光线明亮、国风赛博正午、硬光质感、材质物理反光 |
-| 黄昏 | 金色暖调、长投影、天空橙紫渐变、金辉与霓虹渐次亮起<br>古风：古建轮廓长影、灯笼初亮<br>都市：楼宇天际线金边、大屏与霓虹招牌渐次开启、车灯光轨 | 暮色金辉、golden hour、国风赛博黄昏、霓虹初亮、天际线渐变 |
-| 夜间（月光） | 冷蓝色调、幽静清冷、低照度高对比<br>古风：冷蓝月光、冷调霓虹、木构与金属清冷反光<br>都市：月光覆盖楼宇群、冷调楼宇轮廓光、冷色霓虹、街道空镜 | 月光清辉、moonlight、国风赛博月夜、冷调霓虹、全息淡光 |
-| 夜间（灯火） | 明暗强对比、暖冷光交织、高动态光影<br>古风：暖黄灯笼与赛博霓虹交织、窗格暖光、全息投影光效<br>都市：楼宇内透暖光、国风霓虹招牌、大屏广告、路灯车灯、街巷灯火 | 灯火阑珊、烛光点点、国风赛博夜景、霓虹灯火、灯笼暖光、全息光效 |
+| Sáng sớm | mỏng ánh 、tác vụ vật gọi 、gọi chưa 、ánh mỏng toàn sáng dạng tạo nhĩ ánh hiệu <br>phong ：ánh 、<br>đều ：lớn máy ánh 、đường 、ánh ngày | ánh 、Sáng sớmmỏng 、phong Sáng sớm、、ánh  |
+| chính  | dẫn cao  và 、sáng ngắn sạch 、vật còn gốc thật <br>phong ：tạo kết cấu sáng sạch 、biệt cao ánh tự <br>đều ：ánh phụ ánh 、sáng giới sạch 、ánh máy  | chính ánh 、ánh đường dẫn 、phong chính 、ánh 、lý phụ ánh  |
+| Hoàng hôn | vật gọi 、dài sáng 、ngàyrỗng 、lần <br>phong ：tạo dài sáng 、<br>đều ：ngàyđường 、lớn lần mở động 、ánh  | vật 、golden hour、phong Hoàng hôn、、ngàyđường  |
+| gian （thángánh ） | vật gọi 、sạch 、thấp độ cao đúng tỷ <br>phong ：thángánh 、gọi 、cấu biệt sạch phụ ánh <br>đều ：thángánh 、gọi ánh 、vật 、đạo rỗng quay  | thángánh sạch 、moonlight、phong tháng、gọi 、toàn ánh  |
+| gian （） | dẫn đúng tỷ 、ánh tác vụ 、cao động thái Ánh sáng<br>phong ：tác vụ 、khung ánh 、toàn sáng ánh hiệu <br>đều ：trong ánh 、phong 、lớn thông 、đường 、 | 、ánh điểm điểm 、phong bối 、、ánh 、toàn ánh hiệu  |
 
-### 时段衍生规范
-（古风/都市双场景通用，固定核心结构，只变光影氛围）
+### đoạn sinh 
+（phong /đều đôi Bối cảnhthông hàm ，nối kết cấu ，chỉ Ánh sáng & Không khí）
 
-| 从基准时段衍生 | 保持不变 | 变化项 |
+| từ cơ sở đoạn sinh  | lưu giữ không  | hóa  |
 |---|---|---|
-| 日间 → 黄昏 | 建筑/布局/材质、国风赛博核心元素位置与结构 | 天空色调暖化、影子拉长、霓虹光源渐次开启、全息投影亮度提升、对应场景专属光源同步适配 |
-| 日间 → 夜间 | 建筑/布局/材质、国风赛博核心元素位置与结构 | 整体变暗、增加灯火/月色氛围、开启对应场景专属自发光光源、古风：灯笼/符文灯；都市：大屏/路灯/车灯 |
-| 室内日间 → 室内夜间 | 空间结构、家具、国风赛博改造结构 | 整体色调暖化、增加对应场景专属光源、古风：烛火/灯笼；都市：控制台光源/LED屏/国风壁灯 |
+| ngày gian  → Hoàng hôn | tạo /cục /、phong vị trí trí kết cấu  | ngàyrỗng vật gọi hóa 、sáng dài 、ánh nguồn lần mở động 、toàn sáng độ nhắc 、đúng hồi Bối cảnhriêng biệt ánh nguồn cùng bước nối  |
+| ngày gian  → gian  | tạo /cục /、phong vị trí trí kết cấu  | chỉnh thể 、cộng /thángvật Không khí、mở động đúng hồi Bối cảnhriêng biệt tự phát ánh ánh nguồn 、phong ：/tài ；đều ：lớn /đường / |
+| trong ngày gian  → trong gian  | rỗng gian kết cấu 、cụ 、phong sửa tạo kết cấu  | chỉnh thể vật gọi hóa 、cộng đúng hồi Bối cảnhriêng biệt ánh nguồn 、phong ：/；đều ：sát chép đài ánh nguồn /LED/phong  |
 
 ---
 
-## 四、天候变体
+## 4、ngàythể 
 
-### 天候定义
-（古风/都市双场景物理反馈全覆盖，材质表现符合逻辑）
+### ngàynối nghĩa 
+（phong /đều đôi Bối cảnhlý phụ toàn ，bảng hợp logic）
 
-| 天候 | 视觉特征 | 提示词 |
+| ngày | trực quan | Prompt |
 |---|---|---|
-| 晴天 | 明亮通透、阴影清晰、高对比度<br>古风：阳光与霓虹同亮、木构砖瓦纹理清晰<br>都市：玻璃幕墙高光反光、楼宇阴影清晰、沥青路面质感明确 | 晴空万里、阳光明媚、国风赛博晴天、阳光与霓虹共存 |
-| 阴天 | 柔光漫射、无硬阴影、低对比度、色彩柔和<br>古风：霓虹光效凸显、木构纹理自然<br>都市：金属与混凝土哑光质感、楼宇轮廓柔和、霓虹饱和度提升 | 阴天柔光、overcast、国风赛博阴天、柔光漫射、霓虹凸显 |
-| 薄雾 | 分层雾气、能见度梯度降低、空气朦胧感<br>古风：远景古建朦胧、霓虹光效丁达尔效应、全息投影在雾中散射<br>都市：远景楼宇朦胧、街道路灯与霓虹形成光雾、体积光穿透雾气 | 薄雾弥漫、雾气缭绕、国风赛博薄雾、体积光丁达尔、霓虹光雾 |
-| 细雨 | 雨丝光轨、湿润反光、水洼倒影<br>古风：瓦当滴水、木构湿润肌理、雨丝反射霓虹光效<br>都市：玻璃幕墙雨痕、路面积水反射霓虹与楼宇、金属表面水珠挂壁 | 细雨如丝、雨幕轻纱、国风赛博细雨、雨丝光轨、水面霓虹反射 |
-| 飞雪 | 积雪覆盖、雪花飘落、冷白调、霜花肌理<br>古风：飞檐斗拱挂雪、木构与金属表面霜花、雪花被霓虹染色<br>都市：楼宇国风飞檐积雪、行道树枝挂雪、路面薄雪、金属结构霜花 | 飞雪纷纷、银装素裹、国风赛博飞雪、霓虹染雪、霜花肌理 |
+| ngày | dẫn thông 、sáng sạch 、cao đúng tỷ độ <br>phong ：ánh cùng 、cấu lý sạch <br>đều ：cao ánh phụ ánh 、sáng sạch 、đường mặt dẫn  | rỗng vạn、ánh dẫn 、phong ngày、ánh lưu  |
+| ngày | ánh 、không sáng 、thấp đúng tỷ độ 、vật  và <br>phong ：ánh hiệu 、cấu lý tự <br>đều ：biệt ánh 、 và 、 và độ nhắc  | ngàyánh 、overcast、phong ngày、ánh 、 |
+| mỏng  | phúttầng 、thể thấy độ độ thấp 、rỗng <br>phong ：Viễn cảnh (extreme wide shot)tạo 、ánh hiệu nhĩ hiệu hồi 、toàn sáng ở giữa <br>đều ：Viễn cảnh (extreme wide shot)、đạo đường dạng tạo ánh 、thể ánh  | mỏng 、、phong mỏng 、thể ánh nhĩ 、ánh  |
+|  | ánh 、phụ ánh 、sáng <br>phong ：khi 、cấu lý 、phụ ánh hiệu <br>đều ：、đường mặt phụ 、biệt bảng mặt  | như 、、phong 、ánh 、mặt phụ  |
+|  | 、、gọi 、lý <br>phong ：、cấu biệt bảng mặt 、vật <br>đều ：phong 、thi đạo 、đường mặt mỏng 、biệt kết cấu  | 、、phong 、、lý  |
 
-### 天候衍生规范
-（古风/都市双场景通用，固定空间结构，只变天候物理反馈）
+### ngàysinh 
+（phong /đều đôi Bối cảnhthông hàm ，nối rỗng gian kết cấu ，chỉ ngàylý phụ ）
 
-| 从基准天候衍生 | 保持不变 | 变化项 |
+| từ cơ sở ngàysinh  | lưu giữ không  | hóa  |
 |---|---|---|
-| 晴 → 薄雾 | 建筑/布局、国风赛博核心元素结构与位置 | 增加雾气层、远景模糊、饱和度降低、霓虹光效形成丁达尔体积光、全息投影散射效果 |
-| 晴 → 细雨 | 建筑/布局、国风赛博核心元素结构与位置 | 增加雨丝、地面反光、色调偏冷、对应场景专属材质湿润质感、水洼倒影同步适配场景元素 |
-| 晴 → 飞雪 | 建筑/布局、国风赛博核心元素结构与位置 | 增加积雪、雪花、色调偏白、对应场景专属结构积雪覆盖、金属表面霜花、雪花被光源染色 |
-| 植被需随天候逻辑适配 | — | 古风：雨中花瓣湿润、雪中松枝挂雪；都市：雨中发光叶片湿润、雪中行道树挂霜，天候变化同步适配植被物理状态与光效反馈 |
+|  → mỏng  | tạo /cục 、phong kết cấu vị trí trí  | cộng tầng 、Viễn cảnh (extreme wide shot)mô 、 và độ thấp 、ánh hiệu dạng tạo nhĩ thể ánh 、toàn sáng hiệu quả  |
+|  →  | tạo /cục 、phong kết cấu vị trí trí  | cộng 、địa mặt phụ ánh 、vật gọi 、đúng hồi Bối cảnhriêng biệt 、sáng cùng bước nối Bối cảnh |
+|  →  | tạo /cục 、phong kết cấu vị trí trí  | cộng 、、vật gọi 、đúng hồi Bối cảnhriêng biệt kết cấu 、biệt bảng mặt 、ánh nguồn vật  |
+| cần ngàylogicnối  | — | phong ：giữa 、giữa ；đều ：giữa phát ánh 、giữa thi đạo ，ngàyhóa cùng bước nối lý trạng tháiánh hiệu phụ  |
 
 ---
 
-## 五、四视图设定图规范
+## 5、4video ảnh thiết nối ảnh 
 
-### 视图定义
-（古风/都市双场景通用，360°环视空间逻辑完全自洽）
+### video ảnh nối nghĩa 
+（phong /đều đôi Bối cảnhthông hàm ，360°video rỗng gian logictoàn tự ）
 
-> 摄像机固定于场景中心点，分别朝前/后/左/右四个方向平视拍摄，形成 360° 无死角环视，古风院落/都市街区通用。
+> máy nối với Bối cảnhgiữa điểm ，phútkhác trước /sau /trái /phải 4mục phương video ，dạng tạo  360° không nhân video ，phong /đều khu thông hàm 。
 
-| 位置 | 视图 | 视角方向 | 要求 | 提示词 |
+| vị trí trí  | video ảnh  | video nhân phương  | Yêu cầu | Prompt |
 |---|---|---|---|---|
-| 左上 | 前视图 | 从中心点向前方平视（0°） | 展示场景正面主体结构与纵深层次，完整呈现国风赛博融合逻辑<br>古风：古建正面形制与赛博改造层级<br>都市：楼宇/街区正面结构与国风改造层级 | front view、eye level、looking forward、国风赛博场景正面结构、古建/都市融合正面呈现 |
-| 右上 | 右视图 | 从中心点向右方平视（90°） | 展示场景右侧空间延伸与侧面结构，完整呈现侧面形制与管线/街巷布局<br>古风：古建右侧结构与纵深院落<br>都市：楼宇右侧立面与纵深街巷 | right side view、eye level、looking right、国风赛博场景右侧结构、古建/都市融合侧面呈现 |
-| 左下 | 后视图 | 从中心点向后方平视（180°） | 展示场景背面结构与空间纵深，完整呈现背面形制与设备/管线排布<br>古风：古建后檐结构与后院布局<br>都市：楼宇背面结构与后街布局 | back view、eye level、looking backward、国风赛博场景背面结构、古建/都市融合背面呈现 |
-| 右下 | 左视图 | 从中心点向左方平视（270°） | 展示场景左侧空间延伸与侧面结构，完整呈现侧面形制与街巷/元素布局<br>古风：古建左侧结构与侧院布局<br>都市：楼宇左侧立面与侧街布局 | left view、eye level、looking left、国风赛博场景左侧结构、古建/都市融合侧面呈现 |
+| trái trên  | trước video ảnh  | từ giữa điểm trước phương video （0°） | nhở Bối cảnhchính mặt chính thể kết cấu tầng lần ，chỉnh phong hợp logic<br>phong ：tạo chính mặt dạng chép sửa tạo tầng cấp <br>đều ：/khu chính mặt kết cấu phong sửa tạo tầng cấp  | front view、eye level、looking forward、phong Bối cảnhchính mặt kết cấu 、tạo /đều hợp chính mặt  |
+| phải trên  | phải video ảnh  | từ giữa điểm phải phương video （90°） | nhở Bối cảnhphải rỗng gian trì mặt kết cấu ，chỉnh mặt dạng chép đường /cục <br>phong ：tạo phải kết cấu <br>đều ：phải lập mặt  | right side view、eye level、looking right、phong Bối cảnhphải kết cấu 、tạo /đều hợp mặt  |
+| trái dưới  | sau video ảnh  | từ giữa điểm sau phương video （180°） | nhở Bối cảnhmặt kết cấu rỗng gian ，chỉnh mặt dạng chép thiết /đường sắp <br>phong ：tạo sau kết cấu sau cục <br>đều ：mặt kết cấu sau cục  | back view、eye level、looking backward、phong Bối cảnhmặt kết cấu 、tạo /đều hợp mặt  |
+| phải dưới  | trái video ảnh  | từ giữa điểm trái phương video （270°） | nhở Bối cảnhtrái rỗng gian trì mặt kết cấu ，chỉnh mặt dạng chép /cục <br>phong ：tạo trái kết cấu cục <br>đều ：trái lập mặt cục  | left view、eye level、looking left、phong Bối cảnhtrái kết cấu 、tạo /đều hợp mặt  |
 
-### 画面规范
-（古风/都市双场景通用，严格约束一致性，杜绝AI生成错位）
+### vẽ mặt 
+（phong /đều đôi Bối cảnhthông hàm ，khung 1 ，AItạosai vị trí ）
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面四宫格（2×2），左上前视图+右上右视图+左下后视图+右下左视图，形成从中心点环视的四方向视图 |
-| 人物 | **严禁出现任何人物、人影、人体轮廓、动物轮廓** |
-| 视点 | 四视图均从同一中心点出发，视线高度一致（标准人眼平视高度1.6m），无高低偏移 |
-| 一致性 | 四视图的建筑结构/材质/色调/光线/季节/天候完全一致，国风赛博核心融合元素的位置、结构、光效逻辑完全统一，无错位、无遗漏 |
-| 光线 | 四视图光源方向完全统一，光影逻辑100%自洽（主光源/环境光/自发光光源在不同视角下的位置关系、投影方向完全正确） |
-| 画面比例 | 固定1:1正方形画幅（2×2 网格均匀分布） |
+| cục  | cùng 1 vẽ mặt 4khung （2×2），trái trên trước video ảnh +phải trên phải video ảnh +trái dưới sau video ảnh +phải dưới trái video ảnh ，dạng tạo từ giữa điểm video  của 4phương video ảnh  |
+| người | **ra người、ngườisáng 、ngườithể 、động ** |
+| video điểm  | 4video ảnh từ cùng 1 giữa điểm ra phát ，video đường cao độ 1 （biểu ngườivideo cao độ 1.6m），không cao thấp  |
+| 1  | 4video ảnh  của tạo kết cấu //vật gọi /ánh đường /tiết /ngàytoàn 1 ，phong hợp  của vị trí trí 、kết cấu 、ánh hiệu logictoàn thống 1 ，không sai vị trí 、không  |
+| ánh đường  | 4video ảnh ánh nguồn phương toàn thống 1 ，Ánh sánglogic100%tự （chính ánh nguồn /ánh /tự phát ánh ánh nguồn ở không cùng video nhân dưới  của vị trí trí liên dòng 、sáng phương toàn chính ） |
+| vẽ mặt Tỷ lệ | nối 1:1chính phương dạng vẽ （2×2 mạng khung phút） |
 
 ---
 
-## 六、提示词模板
-（古风/都市双场景通用，占位符灵活适配，直接复制可用）
+## 6、Promptmô 
+（phong /đều đôi Bối cảnhthông hàm ，vị trí hoạt nối ，trực tiếp lời chép hàm ）
 
-3D国风赛博场景衍生四视图设定图，基于{场景名}概念图，
-{场景类型：古风场景/现代都市场景二选一}，chinoiserie cyberpunk，国风赛博朋克，
-{古风场景专属：传统古建与赛博科技融合，飞檐斗拱搭配霓虹管线，榫卯结构结合机械模组，传统纹样蚀刻与霓虹光效，全息国风投影，赛博化传统匾额}
-{都市场景专属：现代都市与国风文化融合，中式飞檐造型摩天楼，斗拱结构楼宇立面，传统纹样玻璃幕墙，国风霓虹招牌，全息水墨广告，赛博化中式街巷}
-3D渲染风格，高精度硬表面建模，PBR物理材质，国风3D，电影级光影，HDR高动态范围，光线追踪全局光照，
+3Dphong Bối cảnhsinh 4video ảnh thiết nối ảnh ，cơ sở với {Bối cảnhtên }ảnh ，
+{Bối cảnhLoại：phong Bối cảnh/Đô Thị Hiện ĐạiBối cảnh2chọn 1 }，chinoiserie cyberpunk，phong ，
+{phong Bối cảnhriêng biệt ：truyền thống tạo hợp ，nối đường ，kết cấu kết hợp máy mô nhóm ，truyền thống kiểu ánh hiệu ，toàn phong sáng ，hóa truyền thống bổ }
+{đều Bối cảnhriêng biệt ：Đô Thị Hiện Đạiphong tài hóa hợp ，giữa thức tạo kiểu ngày，kết cấu lập mặt ，truyền thống kiểu ，phong ，toàn thông ，hóa giữa thức }
+3DPhong cách，cao độ bảng mặt tạo mô ，PBRlý ，phong 3D，sáng cấp Ánh sáng，HDRcao động thái khí ，ánh đường toàn cục ánh ，
 3D rendered, volumetric lighting,
 depth of field, natural lens vignette, subtle chromatic aberration, bokeh,
-3D渲染质感，丁达尔体积光，自然光照，物理光影，霓虹自发光光影，
+3D，nhĩ thể ánh ，tự ánh ，lý Ánh sáng，tự phát ánh Ánh sáng，
 scene derivative design sheet, environment concept art, no people, no characters, no human figures,
-保持场景空间结构与国风赛博核心元素完全一致，
-{景别视角（如有）}, {时段描述（如有）}, {天候描述（如有）},
-{国风赛博核心元素（如有）}, {赛博光源描述（如有）},
-{前景}, {中景}, {后景},
-{色调描述}, {景深描述（如有）}, {天空色调变化（如有）}, {氛围调整（如有）},
-{天候视觉特征（如有）}, {材质表面变化（如有）}, {植被适配描述（如有）},
-材质自然磨损痕迹，岁月包浆，青苔风化，布料自然垂褶，做旧金属质感，风化木构肌理，漆面磨损细节，金属锈蚀肌理，
-体积光，环境光遮蔽，自然光漫射，柔和光影，霓虹光雾，
-空气透视，纹理细节超清晰，8K超高清，超精细细节，
-同一画面四宫格（2×2）：从场景中心点环视，前视图+右视图+后视图+左视图，
-四视图均从同一中心点平视拍摄，建筑结构一致，材质色调一致，光影逻辑一致，国风赛博元素完全统一，
-画面中无任何人物
-图中不要有任何文字
+lưu giữ Bối cảnhrỗng gian kết cấu phong toàn 1 ，
+{Cỡ cảnhvideo nhân （như có ）}, {đoạn Mô tả（như có ）}, {ngàyMô tả（như có ）},
+{phong （như có ）}, {ánh nguồn Mô tả（như có ）},
+{trước bối }, {Trung cảnh (medium shot)}, {sau bối },
+{vật gọi Mô tả}, {bối Mô tả（như có ）}, {ngàyrỗng vật gọi hóa （như có ）}, {Không khígọi chỉnh （như có ）},
+{ngàytrực quan（như có ）}, {bảng mặt hóa （như có ）}, {nối Mô tả（như có ）},
+tự ，thánggói ，phong hóa ，tự ，cũ biệt ，phong hóa cấu lý ，mặt tiết ，biệt lý ，
+thể ánh ，ánh ，tự ánh ， và Ánh sáng，ánh ，
+rỗng video ，lý tiết vượt sạch ，8Kvượt cao sạch ，vượt tiết ，
+cùng 1 vẽ mặt 4khung （2×2）：từ Bối cảnhgiữa điểm video ，trước video ảnh +phải video ảnh +sau video ảnh +trái video ảnh ，
+4video ảnh từ cùng 1 giữa điểm video ，tạo kết cấu 1 ，vật gọi 1 ，Ánh sánglogic1 ，phong toàn thống 1 ，
+vẽ mặt giữa không người
+ảnh giữa không cần có tài chữ 
 
-> **使用说明**：根据用户提供的信息自行判断需要应用的变化维度（景别/时段/天候），未提及的维度对应字段留空省略即可。无需为每种变体单独生成模板。古风/都市场景二选一填写，未选场景的专属字段直接删除。
+> **hàm Giải thích**：dựa theohàm dùng nhắc nhà  của thông tintự thi cần cần hồi hàm  của hóa độ （Cỡ cảnh/đoạn /ngày），chưa nhắc  của độ đúng hồi chữ đoạn lưu rỗng 。không cần loại thể đơn tạomô 。phong /đều Bối cảnh2chọn 1 ，chưa chọn Bối cảnh của riêng biệt chữ đoạn trực tiếp xóa。
 
 ---
 
-## 七、约束规则
+## 7、
 
-### 必守规则
-（古风/都市双场景通用，AI生成强制触发）
+### bắt 
+（phong /đều đôi Bối cảnhthông hàm ，AItạochép phát ）
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 场景空间结构、路网/院落布局在所有变体中保持完全一致 |
-| R2 | 时段变体必须调整天空色调与氛围，同步适配对应场景专属光源的开关、亮度与色温逻辑 |
-| R3 | 天候变体必须适配植被/材质表面，同步适配对应场景专属元素的物理与光影反馈 |
-| R4 | 必须为「四视图设定图」（从中心点环视：前视图 + 右视图 + 后视图 + 左视图），严格遵循2×2四宫格布局 |
-| R5 | 四视图的建筑结构/材质/色调/光线/季节/天候必须完全一致，国风赛博融合元素无错位、无遗漏 |
-| R6 | 场景图中**严禁出现任何人物、人影、人体轮廓、动物轮廓** |
-| R7 | 根据用户提供的信息自行判断变化维度，无需拆分为独立模板 |
-| R8 | 必须包含3D渲染核心关键词（3D rendered / volumetric lighting / PBR materials 至少2项） |
-| R9 | 必须包含镜头光学特征（depth of field / lens vignette / bokeh 至少一项） |
-| R10 | 材质必须带有自然磨损/岁月痕迹，禁止全新无瑕的"塑料感""CG感" |
-| R11 | 所有变体必须保留国风赛博核心融合逻辑，古风场景：传统东方形制为核，赛博科技为表；都市场景：现代都市空间为核，国风文化为魂，禁止元素割裂 |
-| R12 | 必须包含国风赛博专属关键词（chinoiserie cyberpunk、国风赛博、古建赛博改造、都市国风融合 至少2项） |
-| R13 | 所有自发光元素（霓虹/全息/大屏/灯笼）的光影逻辑必须符合物理规则，与环境光、时段、天候完美适配，无光效溢出、无投影错位 |
+| R1 | Bối cảnhrỗng gian kết cấu 、đường mạng /cục ở tất cảthể giữa lưu giữ toàn 1  |
+| R2 | đoạn thể Bắt buộcgọi chỉnh ngàyrỗng vật gọi Không khí，cùng bước nối đúng hồi Bối cảnhriêng biệt ánh nguồn  của mở liên 、độ vật logic |
+| R3 | ngàythể Bắt buộcnối /bảng mặt ，cùng bước nối đúng hồi Bối cảnhriêng biệt  của lý Ánh sángphụ  |
+| R4 | Bắt buộc「4video ảnh thiết nối ảnh 」（từ giữa điểm video ：trước video ảnh  + phải video ảnh  + sau video ảnh  + trái video ảnh ），khung 2×24khung cục  |
+| R5 | 4video ảnh  của tạo kết cấu //vật gọi /ánh đường /tiết /ngàyBắt buộctoàn 1 ，phong hợp không sai vị trí 、không  |
+| R6 | Bối cảnhảnh giữa **ra người、ngườisáng 、ngườithể 、động ** |
+| R7 | dựa theohàm dùng nhắc nhà  của thông tintự thi hóa độ ，không cần phútlập mô  |
+| R8 | Bắt buộcgói 3Dliên từ （3D rendered / volumetric lighting / PBR materials đến ít 2） |
+| R9 | Bắt buộcgói Ống kínhánh （depth of field / lens vignette / bokeh đến ít 1 ） |
+| R10 | Bắt buộckèm có tự /tháng，Nghiêm cấmtoàn mới không  của """CG" |
+| R11 | tất cảthể Bắt buộclưu lưu phong hợp logic，phong Bối cảnh：truyền thống phương dạng chép ，bảng ；đều Bối cảnh：Đô Thị Hiện Đạirỗng gian ，phong tài hóa ，Nghiêm cấmrời  |
+| R12 | Bắt buộcgói phong riêng biệt liên từ （chinoiserie cyberpunk、phong 、tạo sửa tạo 、đều phong hợp  đến ít 2） |
+| R13 | tất cảtự phát ánh （/toàn /lớn /） của Ánh sánglogicBắt buộchợp lý ，ánh 、đoạn 、ngàyđẹp nối ，không ánh hiệu ra 、không sáng sai vị trí  |
 
-### 严禁规则
-（古风/都市双场景通用，AI生成强制规避）
+### 
+（phong /đều đôi Bối cảnhthông hàm ，AItạochép ）
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 变体间建筑结构/布局/路网/院落不一致 |
-| X2 | 天候与季节矛盾（夏天飞雪、雨季积雪等） |
-| X3 | 变体间材质/色调/风格突变、融合逻辑不一致 |
-| X4 | 出现任何人物、人影、人体剪影、人体轮廓、动物轮廓 |
-| X5 | 四视图之间建筑结构/材质/色调不一致，或视点中心/高度不统一 |
-| X6 | 低精度建模/粗糙贴图/塑料质感/平涂风格（禁用 low-poly、rough modeling、flat color 等词） |
-| X7 | 材质过于干净完美、无任何使用痕迹与岁月感（避免"塑料感""玩具感"） |
-| X8 | 光照过于均匀平坦、无景深虚化、无镜头光学特征、无体积光/环境光遮蔽 |
-| X9 | 国风与赛博元素生硬拼接、无逻辑堆砌（禁止古建与都市楼宇无融合乱搭、禁止传统元素与赛博元素无逻辑摆放） |
-| X10 | 赛博光效溢出、光影逻辑混乱，自发光光源无合理物理支撑、投影方向错误 |
-| X11 | 丢失场景核心特征：古风场景丢失传统东方建筑/文化内核，都市场景丢失现代城市空间逻辑 |
-| X12 | 单一场景风格失衡：古风场景过度赛博化丢失国风内核，都市场景过度国风化丢失赛博未来感 |
+| X1 | thể gian tạo kết cấu /cục /đường mạng /không 1  |
+| X2 | ngàytiết （ngày、） |
+| X3 | thể gian /vật gọi /Phong cách、hợp logickhông 1  |
+| X4 | ra người、ngườisáng 、ngườithể sáng 、ngườithể 、động  |
+| X5 | 4video ảnh  của gian tạo kết cấu //vật gọi không 1 ，hoặc video điểm giữa /cao độ không thống 1  |
+| X6 | thấp độ tạo mô /ảnh //Phong cách（hàm  low-poly、rough modeling、flat color từ ） |
+| X7 | với đẹp 、không hàm tháng（"""cụ "） |
+| X8 | ánh với 、không bối hóa 、không Ống kínhánh 、không thể ánh /ánh  |
+| X9 | phong sinh ghép tiếp 、không logic（Nghiêm cấmtạo đều không hợp 、Nghiêm cấmtruyền thống không logicmở ） |
+| X10 | ánh hiệu ra 、Ánh sánglogic，tự phát ánh ánh nguồn không hợp lý lý 、sáng phương lỗi |
+| X11 | thất Bối cảnh：phong Bối cảnhthất truyền thống phương tạo /tài hóa trong ，đều Bối cảnhthất rỗng gian logic |
+| X12 | đơn 1 Bối cảnhPhong cáchthất ：phong Bối cảnhđộ hóa thất phong trong ，đều Bối cảnhđộ phong hóa thất chưa  |

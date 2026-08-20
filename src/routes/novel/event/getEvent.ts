@@ -18,7 +18,7 @@ export default router.post(
     const { projectId, page, limit, search } = req.body;
     const offset = (page - 1) * limit;
 
-    // 构造基础查询：通过 o_eventChapter -> o_novel 过滤 projectId，再 join o_event 取名称和内容
+    // Khởi tạo cơ sở Truy vấn：thông qua o_eventChapter -> o_novel lọc  projectId， join o_event xuất tên và nội dung
     const baseQuery = u
       .db("o_event as e")
       .join("o_eventChapter as ec", "ec.eventId", "e.id")
@@ -29,14 +29,14 @@ export default router.post(
       baseQuery.where("e.name", "like", `%${search}%`);
     }
 
-    // 统计去重后的事件总数
+    // thống tính khử trùng lặp sau   của sự kiệntổng số 
     const [{ total }] = await baseQuery.clone().countDistinct("e.id as total");
 
     if (!Number(total)) {
       return res.status(200).send(success({ list: [], total: 0 }));
     }
 
-    // 分页查询：每个事件对应多个 chapterIndex，用 GROUP_CONCAT 聚合
+    // Truy vấn phân trang：mục sự kiệnđúng hồi nhiều mục  chapterIndex，hàm  GROUP_CONCAT hợp 
     const rows = await baseQuery
       .clone()
       .select("e.id", "e.name as eventName", "e.detail", "e.createTime", db.raw("GROUP_CONCAT(n.chapterIndex) as chapterIndexes"))

@@ -1,88 +1,88 @@
 ---
 name: director_planning_style
-description: 古风约束 — 定义真人古风写实在色调体系、光影方案、质感方向、场景空间元素、乐器选择与环境音上的全局约束。适用于任何叙事类型。
+description: phong  — nối nghĩa thật ngườiphong ở vật gọi thể dòng 、Ánh sángphương 、phương 、Bối cảnhrỗng gian 、thiết bị chọn lựa âm trên  của toàn cục 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 古风约束 · 真人古风写实 · 技法参考
+# phong  · thật ngườiphong  · thức tham chiếu
 
 ---
 
-## 一、色调体系与画面基调
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
 
-- **色调基底** — 全片以月白（C1）、冷白肤（C2）、青黛（C6）为基底色，整体色温偏冷（4800-5200K），饱和度中低（30-50%），呈现悲凉清冷的高级灰调
-- **冷暖叙事对比** — 暖色（琥珀暖 C7、珠光金 C3、烟霞粉 C5）作为叙事转折的视觉信号，用于情感回暖段落局部点缀。冷暖切换应与故事弧线同步，而非随意混用
-- **冷暖分配策略** — 悲戚/孤绝/压抑段落严格维持冷色调基底，禁用暖橙、琥珀等暖色调；暖色仅在情感回暖后释放，用冷暖对比做叙事转折
-- **色盘先行原则** — 段落规划需先绑定情绪场景（初见/升温/误会/重逢/大婚等），再确定主色+辅色与光影方案，避免"剧情对了但情绪不对色"
-- **禁用色域** — 高饱和荧光色、霓虹色、现代色彩体系均与本风格不兼容
+- **vật gọi cơ sở ** — toàn tháng（C1）、（C2）、（C6）cơ sở vật ，chỉnh thể vật （4800-5200K）， và độ giữa thấp （30-50%），sạch  của cao cấp gọi 
+- **việc đúng tỷ ** — vật （ C7、ánh  C3、 C5）tác vụ việc chuyển  của trực quantin số ，hàm với tình trả đoạn cục bộ điểm tố 。đổi hồi việc đường cùng bước ，phi ý hàm 
+- **phútnối ** — //nén đoạn khung giữ vật gọi cơ sở ，hàm 、vật gọi ；vật chỉ ở tình trả sau mở ，hàm đúng tỷ việc chuyển 
+- **vật đĩa trước thi gốc ** — đoạn lập kế hoạchcần trước ghép nốitình xúc Bối cảnh（thấy //sẽ /trùng /lớn ），nối chính vật +vật Ánh sángphương ，"kịch tình đúng nhưng tình xúc không đúng vật "
+- **hàm vật vực ** — cao  và ánh vật 、vật 、vật thể dòng sách Phong cáchkhông dung 
 
 ---
 
-## 二、光影方案体系
+## 2、Ánh sángphương thể dòng 
 
-- **光影即叙事** — 7 套光影方案对应不同情绪段落，导演规划阶段应在段落层面确定光影基调方向，而非逐镜指定
-- **光源角度** — 正给镜头默认 38.5° 斜射（非 45°），侧给镜头可适当调整
+- **Ánh sángviệc ** — 7 Ánh sángphương đúng hồi không cùng tình xúc đoạn ，Kế hoạch đạo diễnđoạn hồi ở đoạn tầng mặt nối Ánh sángcơ sở gọi phương ，phi quay nối 
+- **ánh nguồn nhân độ ** — chính cho Ống kínhMặc định 38.5° （phi  45°），cho Ống kínhkhi gọi chỉnh 
 
-| 光影方案 | 方案名 | 色调倾向 | 适用情绪 |
+| Ánh sángphương  | phương tên  | vật gọi  | hàm tình xúc  |
 |---|---|---|---|
-| A | 珠光柔漫 | 冷白底 + 微暖肤光 | 日常温馨、轻松甜蜜 |
-| B | 侧逆仙气 | 月白 + 珠光金边缘光 | 仙境亮相、惊艳登场 |
-| C | 烛光暖影 | 琥珀暖主导 + 墨玉黑暗部 | 夜间暧昧、亲密升温 |
-| D | 月光冷辉 | 青黛 + 霜雪银 | 夜间孤寂、思念独处 |
-| E | 窗纱透光 | 冷白底 + 侧光斑驳 | 室内日间、日常起居 |
-| F | 天光漫射 | 青黛远景 + 月白雾气 | 远景、雾中、意境空镜 |
-| G | 冷光侧射 | 青黛冷白 + 38.5°侧射冷光，无暖色 | 悲戚孤绝、压抑冷清 |
+| A | ánh  |  + ánh  | ngày thường 、 |
+| B |  | tháng + ánh ánh  | 、đăng trường  |
+| C | ánh sáng  | chính dẫn  + bộ  | gian 、mật  |
+| D | thángánh  |  +  | gian 、xử  |
+| E | ánh  |  + ánh  | trong ngày gian 、ngày thường  |
+| F | ngàyánh  | Viễn cảnh (extreme wide shot) + tháng | Viễn cảnh (extreme wide shot)、giữa 、ý rỗng quay  |
+| G | ánh  |  + 38.5°ánh ，không vật  | 、nén sạch  |
 
-- **冷暖光分配** — 暖色光（琥珀暖/暖橙）适用于情感回暖段落；悲戚/孤绝段落一律冷光。导演可根据叙事需要调整冷暖切换点
-- **氛围方向映射** — 每场戏的氛围方向应能映射到上述光影方案（A-G）的某一方向，确保视觉一致性
-
----
-
-## 三、质感方向
-
-- **超清纪实感** — 真人写实摄影的核心：毛孔可见、发丝根根分明、纹理细节超清晰
-- **强对比度 + 极致细节** — 这是画面质感的锚点。不是胶片颗粒，不是水墨写意，是影视级纪实摄影
-- **材质真实** — 所有服化道的材质必须可信：丝绸的光泽、棉麻的纹理、金属的反光、玉石的润感。禁止"塑料感"和"CG感"
-- **皮肤质感** — 真实皮肤的毛孔、微瑕、光泽感。既不过度磨皮也不刻意放大瑕疵，追求"真实但好看"
-- **写实不等于平淡** — 真人古风写实强调真实可拍的影像表达（真实光位、真实材质、真实动作节奏），通过镜头与情绪设计放大感染力，而非依赖奇观特效
+- **ánh phútnối ** — vật ánh （/）hàm với tình trả đoạn ；/đoạn 1 ánh 。đạo diễndựa theoviệc cần cần gọi chỉnh đổi điểm 
+- **Không khíphương ** — trường  của Không khíphương hồi thể đến trên tả Ánh sángphương （A-G） của 1 phương ，lưu trực quan1 
 
 ---
 
-## 四、古风场景空间元素
+## 3、phương 
 
-古风世界观特有的场景元素及其视觉叙事功能：
-
-- **纱帘/屏风/门框** — 天然的框架式构图道具，制造"看不透"的层次感与空间纵深
-- **庭院/花树/雨幕** — 留白构图的天然载体，景即情：满庭花开 = 释然、独坐雨中 = 孤寂、落叶纷飞 = 离愁
-- **烛火/月色/窗光** — 古风世界的光源载体，烛光 = 暖/私密（方案C）、月色 = 冷/孤寂（方案D）、窗光 = 日常/静谧（方案E）
-- **段落间用场景空镜过渡** — 本风格有丰富的场景资产（不同时段/天候变体），段落衔接建议用场景空镜做情绪缓冲，不要硬切
-- **转折点用视觉而非台词** — 优先使用画面手段（光影突变、景别跳切、空镜隐喻）而非依赖对白解释
+- **vượt sạch ** — thật ngườisáng  của ：thấy 、phát phútdẫn 、lý tiết vượt sạch 
+- **đúng tỷ độ  + tiết ** — nàylà vẽ mặt  của điểm 。không là ，không là ý ，là sáng video cấp sáng 
+- **thật ** — tất cảphục hóa đạo  của Bắt buộctin ： của ánh 、 của lý 、biệt  của phụ ánh 、 của 。Nghiêm cấm"" và "CG"
+- **** — thật  của 、、ánh 。không độ cũng không ý mở lớn ，cầu "thật nhưng tốt xem "
+- **không với ** — thật ngườiphong gọi thật  của sáng bảng （thật ánh vị trí 、thật 、thật động tác vụ tiết ），thông quaỐng kínhtình xúc thiết tính mở lớn lực ，phi phụ thuộc hiệu 
 
 ---
 
-## 五、古风乐器与环境音
+## 4、phong Bối cảnhrỗng gian 
 
-古风世界观下的声音元素约束：
+phong giới có  của Bối cảnhtrực quanviệc công thể ：
 
-### 乐器选择
+- **/phong /cổng ** — ngày của thức cấu ảnh Đạo cụ，chép tạo "xem không " của tầng lần rỗng gian 
+- **//** — lưu cấu ảnh  của ngàyxuống thể ，bối tình ：đầy mở  = 、giữa  = 、 = 
+- **/thángvật /ánh ** — phong giới  của ánh nguồn xuống thể ，ánh  = /mật （phương C）、thángvật  = /（phương D）、ánh  = ngày thường /（phương E）
+- **đoạn gian hàm Bối cảnhrỗng quay ** — sách Phong cáchcó  của Bối cảnhTài nguyên（không cùng đoạn /ngàythể ），đoạn tiếp Khuyến nghịhàm Bối cảnhrỗng quay tình xúc ，không cần 
+- **Điểm bước ngoặthàm trực quanphi Lời thoại** — ưu tiên sử dụng vẽ mặt tay đoạn （Ánh sáng、Cỡ cảnh、rỗng quay ）phi phụ thuộc đúng giải 
 
-- **箫** — 凄凉、孤寂、悲戚段落的核心乐器，最能表现冷清哀婉
-- **二胡** — 情感激荡、悲痛、思念段落，拉弦的哭腔感适合情绪爆发
-- **唢呐** — 情感波动剧烈段落（大悲大喜、命运转折、高潮），慎用但一用即核弹
-- **古琴** — 开场定调 / 平稳段落，与箫搭配使用
-- **琵琶** — 紧张、急促段落的点缀，不作主导
-- 弦乐铺底可增加电影感但不宜喧宾夺主
+---
 
-### 乐器组合策略
+## 5、phong thiết bị âm 
 
-| 情绪阶段 | 乐器组合 |
+phong giới dưới  của thanh âm ：
+
+### thiết bị chọn lựa 
+
+- **** — 、、đoạn  của thiết bị ，nhất thể bảng sạch 
+- **2** — tình kích 、、đoạn ， của hợp tình xúc phát 
+- **** — tình động kịch đoạn （lớn lớn 、vận chuyển 、cao ），hàm nhưng 1 hàm 
+- **** — mở trường nối gọi  / đoạn ，nối hàm 
+- **** — bức 、đoạn  của điểm tố ，không tác vụ chính dẫn 
+- cộng sáng nhưng không chính 
+
+### thiết bị nhóm hợp 
+
+| tình xúc đoạn  | thiết bị nhóm hợp  |
 |---|---|
-| 平稳/开场/收尾 | 古琴独奏 或 古琴 + 箫 |
-| 悲戚渐浓 | 箫 + 二胡 |
-| 情绪爆发/命运转折 | 唢呐独奏 或 唢呐 + 二胡 |
-| 紧张/急促 | 琵琶点缀 + 弦乐衬底 |
+| /mở trường /nhận đuôi  |  hoặc   +  |
+|  |  + 2 |
+| tình xúc phát /vận chuyển  |  hoặc   + 2 |
+| bức / | điểm tố  +  |
 
-### 古风环境音
+### phong âm 
 
-- **典型环境音层次** — 蝉鸣虫唱 / 溪水潺潺 / 风过竹林 / 市井叫卖 / 夜雨滴檐 / 衣料摩擦 / 风铃轻响
-- **每场戏标注 1-2 个核心环境音**，帮助后续音效设计。环境音层次越丰富，古风场景越有沉浸感
+- **kiểu âm tầng lần ** —  /  / phong  /  /  /  / phong phản 
+- **trường biểu tâm  1-2 mục âm **，trợ giúp sau Âm hiệuthiết tính 。âm tầng lần ，phong Bối cảnhcó 

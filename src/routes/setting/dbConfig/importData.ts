@@ -9,10 +9,10 @@ export default router.post("/", async (req, res) => {
   try {
     const { tables: importTables } = req.body;
     if (!importTables || typeof importTables !== "object") {
-      return res.status(400).send(error("无效的导入数据格式"));
+      return res.status(400).send(error("Định dạng dữ liệu nhập không hợp lệ"));
     }
 
-    // 删除所有现有表
+    // Xóa tất cả các bản g hiện có
     const existingTables: { name: string }[] = await db.raw(
       `SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' AND name NOT LIKE 'knex_%'`,
     );
@@ -23,24 +23,24 @@ export default router.post("/", async (req, res) => {
     }
     await db.raw("PRAGMA foreign_keys = ON");
 
-    // 重新初始化表结构
+    // Khởi tạo lại cấu trúc bản g
     await initDB(db as any);
 
-    // 导入数据
+    // Nhập dữ liệu
     await db.raw("PRAGMA foreign_keys = OFF");
     for (const [tableName, rows] of Object.entries(importTables)) {
       if (!Array.isArray(rows) || rows.length === 0) continue;
 
-      // 验证表名合法性（防止SQL注入）
+      // Xác thực tính hợp lệ của tên bản g (chống SQL Injection)
       const tableExists = await db.raw(
         `SELECT name FROM sqlite_master WHERE type='table' AND name=?`,
         [tableName],
       );
       if (tableExists.length === 0) continue;
 
-      // 清空表数据后插入导入数据
+      // Xóa sạch dữ liệu bản g trước  khi chèn dữ liệu nhập
       await db.raw(`DELETE FROM "${tableName}"`);
-      // 分批插入，每批100条
+      // Chèn theo từng đợt, mỗi đợt 100 dòng
       for (let i = 0; i < rows.length; i += 100) {
         const batch = rows.slice(i, i + 100);
         await db(tableName).insert(batch);
@@ -48,8 +48,8 @@ export default router.post("/", async (req, res) => {
     }
     await db.raw("PRAGMA foreign_keys = ON");
 
-    res.status(200).send(success("数据库导入成功"));
+    res.status(200).send(success("Nhập cơ sở dữ liệu thành công"));
   } catch (err: any) {
-    res.status(500).send(error(err?.message || "导入失败"));
+    res.status(500).send(error(err?.message || "Nhập thất bại"));
   }
 });

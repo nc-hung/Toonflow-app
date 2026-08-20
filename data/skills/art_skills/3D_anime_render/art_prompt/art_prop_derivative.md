@@ -1,124 +1,124 @@
-# 3D动画渲染都市道具衍生状态生成 · 约束手册
+# 3Dđộng vẽ đều Đạo cụsinh trạng tháitạo · sổ tay
 
 ---
 
-## 一、衍生原则
+## 1 、sinh gốc 
 
-1. **造型锚定** — 道具核心造型/轮廓在所有状态中可识别
-2. **状态可读** — 状态差异必须一目了然，观众能立即区分
-3. **叙事服务** — 每种状态变体服务于特定剧情节点
-4. **渐进退化** — 损伤/老化状态应有合理的物理逻辑（赛璐珞呈现）
-5. **纯道具独立展示** — 画面中只能出现道具本身，严禁出现任何人物、手部、肢体，道具不可处于被持有/佩戴/握持状态，必须以静物陈列方式独立呈现
-
----
-
-## 二、状态类型
-
-### 2.1 使用状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 崭新 | 完好无损、光泽如新 | 所有道具 | 崭新、完好无损、光泽如新 |
-| 日常使用 | 微磨损、自然使用痕迹（赛璐珞化） | 所有道具 | 日常使用痕迹、轻微磨损 |
-| 陈旧 | 明显使用感、色泽暗淡（赛璐珞化） | 器物/配件/电子 | 使用痕迹、岁月感、色泽暗淡 |
-
-### 2.2 损伤状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 微损 | 小裂纹/小缺口/轻微磨损（赛璐珞化） | 玻璃/陶瓷/电子设备 | 细微裂纹、轻微缺口 |
-| 破损 | 明显裂缝/断裂/破碎（赛璐珞化） | 玻璃/陶瓷/电子设备 | 裂缝明显、碎裂、断裂 |
-| 残片 | 仅剩部分/碎片（赛璐珞化） | 玻璃/陶瓷/电子设备 | 残片、碎片、仅存半块 |
-
-### 2.3 特殊状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 充电/工作 | 屏幕亮起/指示灯（赛璐珞化） | 电子设备 | 屏幕亮起、工作指示灯 |
-| 浸水/湿润 | 水渍、湿润反光（赛璐珞化） | 电子设备/纸张 | 浸水、表面湿润、反光 |
-| 屏幕损坏 | 屏幕裂纹/显示异常 | 电子设备 | 屏幕裂纹、显示异常 |
-| 电池耗尽 | 指示灯熄灭/电量图标 | 电子设备 | 电量耗尽、指示灯熄灭 |
-| 收纳/携带 | 收纳袋/收纳盒 | 配件/电子设备 | 收纳袋、收纳盒 |
+1. **tạo kiểu nối ** — Đạo cụtạo kiểu /ở tất cảtrạng tháigiữa trưng khác 
+2. **trạng thái** — trạng tháibất Bắt buộc1 mục ，thể lập khu phút
+3. **việc phục vụ ** — loại trạng tháithể phục vụ với nối kịch tình tiết điểm 
+4. **tiến đăng hóa ** — /hóa trạng tháihồi có hợp lý  của lý logic（）
+5. **thuần Đạo cụlập nhở ** — vẽ mặt giữa chỉ thể ra Đạo cụsách ，ra người、tay bộ 、thể ，Đạo cụkhông xử với giữ có //giữ trạng thái，Bắt buộchàng cách thứclập 
 
 ---
 
-## 三、状态变体画面规范
+## 2、trạng tháiLoại
 
-### 单状态图
+### 2.1 hàm trạng thái
 
-| 项目 | 约束 |
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+| mới  | tốt không 、ánh như mới  | tất cảĐạo cụ | mới 、tốt không 、ánh như mới  |
+| ngày thường hàm  | 、tự hàm （hóa ） | tất cảĐạo cụ | ngày thường hàm 、 |
+| cũ  | dẫn hàm 、vật （hóa ） | thiết bị /nối tệp / | hàm 、tháng、vật  |
+
+### 2.2 trạng thái
+
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+|  | nhỏ /nhỏ cổng /（hóa ） | //thiết  | 、cổng  |
+|  | dẫn //（hóa ） | //thiết  | dẫn 、、 |
+|  | chỉ bộ phút/（hóa ） | //thiết  | 、、chỉ lưu nửa  |
+
+### 2.3 trạng thái
+
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+| sung /tác vụ  | /nhở （hóa ） | thiết  | 、tác vụ nhở  |
+| / | 、phụ ánh （hóa ） | thiết /bức  | 、bảng mặt 、phụ ánh  |
+| xấu  | /nhở bất thường  | thiết  | 、nhở bất thường  |
+|  | nhở /lượng Icon | thiết  | lượng 、nhở  |
+| nhận /kèm  | nhận /nhận  | nối tệp /thiết  | nhận 、nhận  |
+
+---
+
+## 3、trạng tháithể vẽ mặt 
+
+### đơn trạng tháiảnh 
+
+| dự án |  |
 |---|---|
-| 背景 | 纯净中性灰 #E8E8E8（与设定图一致） |
-| 光线 | 均匀照明，无硬阴影 |
-| 角度 | 与原设定图正面图一致 |
-| 比例 | 道具占画面主体 70%+ |
+| bối  | thuần giữa  #E8E8E8（thiết nối ảnh 1 ） |
+| ánh đường  | dẫn ，không sáng  |
+| nhân độ  | gốc thiết nối ảnh chính mặt ảnh 1  |
+| Tỷ lệ | Đạo cụvẽ mặt chính thể  70%+ |
 
-### 状态对比图
+### trạng tháiđúng tỷ ảnh 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面并排展示 2-3 种状态 |
-| 标注 | 每种状态下方标注状态名 |
-| 一致性 | 角度/光线/背景完全一致，仅状态不同 |
+| cục  | cùng 1 vẽ mặt nhất sắp nhở  2-3 loại trạng thái |
+| biểu tâm  | loại trạng tháidưới phương biểu tâm trạng tháitên  |
+| 1  | nhân độ /ánh đường /bối toàn 1 ，chỉ trạng tháikhông cùng  |
 
 ---
 
-## 四、材质状态变化规则
+## 4、trạng tháihóa 
 
-| 材质 | 崭新 → 日常 | 日常 → 陈旧 | 损伤表现（赛璐珞化） |
+|  | mới  → ngày thường  | ngày thường  → cũ  | bảng （hóa ） |
 |---|---|---|---|
-| 金属 | 亮光泽 → 微划痕 | 划痕 → 色泽暗沉 | 缺口/卷刃/断裂（赛璐珞处理） |
-| 玻璃 | 透明度 → 微划痕 | 划痕 → 表面磨损 | 裂纹/碎裂/缺角（赛璐珞处理） |
-| 塑料 | 光滑 → 轻微划痕 | 划痕 → 色泽暗淡 | 开裂/断裂/磨损（赛璐珞处理） |
-| 皮革 | 光滑 → 自然褶皱 | 褶皱 → 色泽暗淡 | 磨损/裂纹/褪色（赛璐珞处理） |
-| 纸张 | 平整 → 轻微皱折 | 皱折 → 发黄 | 撕裂/磨损/墨迹晕染（赛璐珞处理） |
+| biệt  | ánh  →  |  → vật  | cổng //（xử lý ） |
+|  | dẫn độ  →  |  → bảng mặt  | //nhân （xử lý ） |
+|  | ánh  →  |  → vật  | mở //（xử lý ） |
+|  | ánh  → tự  |  → vật  | //vật （xử lý ） |
+| bức  | chỉnh  →  |  → phát  | //（xử lý ） |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 
-### 单状态变体
+### đơn trạng tháithể 
 
 ```
-基于{道具名}设定图，3D 动画渲染，电影级打光，活力赛璐珞质感，高细节材质，愉悦治愈氛围，卡通都市风，高细节卡通材质，适度卡通比例，暖色调配色，8K 超高清，电影级构图，柔和光影层次，明快卡通渲染风格，温馨治愈，
+cơ sở với {Đạo cụtên }thiết nối ảnh ，3D động vẽ ，sáng cấp mở ánh ，hoạt lực ，cao tiết ，Không khí，thông đều phong ，cao tiết thông ，độ thông Tỷ lệ，vật gọi nối vật ，8K vượt cao sạch ，sáng cấp cấu ảnh ， và Ánh sángtầng lần ，dẫn nhanh thông Phong cách，，
 anime style, cel-shaded, 3D animation render,
-{道具类型}，{材质描述}，
-当前状态：{状态名}，{状态视觉描述}，
-{材质表面变化描述}，（赛璐珞化处理）
-纯道具静物展示，道具独立陈列，无人持有，无人佩戴，
-同一画面四宫格（2×2）：左上正面图(front view)+右上侧面图(side view)+左下背面图(back view)+右下细节特写(detail closeup)，
-纯净中性灰背景，均匀柔光，无硬阴影，
-材质纹理清晰，赛璐珞渲染，状态细节可辨，赛璐珞化处理，
-8K 超高清，电影级构图，
-图中不要有任何文字，
-画面中不能出现任何人物、手部、手指、肢体，道具不可处于被握持或佩戴状态
+{Đạo cụLoại}，{Mô tả}，
+hiện tạitrạng thái：{trạng tháitên }，{trạng tháitrực quanMô tả}，
+{bảng mặt hóa Mô tả}，（hóa xử lý ）
+thuần Đạo cụnhở ，Đạo cụlập hàng ，không ngườigiữ có ，không người，
+cùng 1 vẽ mặt 4khung （2×2）：trái trên chính mặt ảnh (front view)+phải trên mặt ảnh (side view)+trái dưới mặt ảnh (back view)+phải dưới tiết Đặc tả (close-up)(detail closeup)，
+thuần giữa bối ，ánh ，không sáng ，
+lý sạch ，，trạng tháitiết ，hóa xử lý ，
+8K vượt cao sạch ，sáng cấp cấu ảnh ，
+ảnh giữa không cần có tài chữ ，
+vẽ mặt giữa không thể ra người、tay bộ 、tay 、thể ，Đạo cụkhông xử với giữ hoặc trạng thái
 ```
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 道具核心造型/轮廓在所有状态中可识别 |
-| R2 | 状态变化须符合物理逻辑（赛璐珞化） |
-| R3 | 必须使用四宫格（2×2）布局：左上正面图+右上侧面图+左下背面图+右下细节特写 |
-| R4 | 必须指定「纯净中性灰背景」，均匀柔光，无硬阴影 |
-| R5 | 必须包含3D动画渲染关键词（cel-shaded, 3D animation render, anime style） |
-| R6 | 必须包含8K超高清、电影级构图关键词 |
+| R1 | Đạo cụtạo kiểu /ở tất cảtrạng tháigiữa trưng khác  |
+| R2 | trạng tháihóa buộc hợp lý logic（hóa ） |
+| R3 | Bắt buộchàm 4khung （2×2）cục ：trái trên chính mặt ảnh +phải trên mặt ảnh +trái dưới mặt ảnh +phải dưới tiết Đặc tả (close-up) |
+| R4 | Bắt buộcnối 「thuần giữa bối 」，ánh ，không sáng  |
+| R5 | Bắt buộcgói 3Dđộng vẽ liên từ （cel-shaded, 3D animation render, anime style） |
+| R6 | Bắt buộcgói 8Kvượt cao sạch 、sáng cấp cấu ảnh liên từ  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 状态变化后道具不可识别 |
-| X2 | 违反物理逻辑的损伤（电子产品生锈等） |
-| X3 | 过度血腥/恐怖的损伤描绘（赛璐珞化限度内） |
-| X4 | 出现任何人物形象，包括全身、半身、局部（手、手指、手臂等肢体） |
-| X5 | 道具处于被持有、握持、佩戴、使用中的状态 |
-| X6 | 出现暗示人物存在的元素（如手持痕迹、佩戴视角、使用姿态） |
-| X7 | 使用写实摄影术语（如real photography, photorealistic, RAW photo等） |
-| X8 | 过度写实损伤纹理、破坏赛璐珞风格一致性 |
-| X9 | 古代/未来元素、非现代都市风格 |
+| X1 | trạng tháihóa sau Đạo cụkhông trưng khác  |
+| X2 | phụ lý logic của （nguyên sinh ） |
+| X3 | độ / của mô （hóa hạn độ trong ） |
+| X4 | ra ngườidạng tượng ，gói quát toàn 、nửa 、cục bộ （tay 、tay 、tay thể ） |
+| X5 | Đạo cụxử với giữ có 、giữ 、、hàm giữa  của trạng thái |
+| X6 | ra nhở ngườilưu ở  của （như tay giữ 、video nhân 、hàm thái ） |
+| X7 | hàm sáng ngữ （như real photography, photorealistic, RAW photo） |
+| X8 | độ lý 、xấu Phong cách1  |
+| X9 | /chưa 、phi Đô Thị Hiện ĐạiPhong cách |

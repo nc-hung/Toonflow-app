@@ -16,7 +16,7 @@ export default router.post(
       .db("o_assets")
       .leftJoin("o_image", "o_assets.imageId", "o_image.id")
       .whereIn("o_assets.id", ids)
-      .whereNot("o_image.state", "生成中")
+      .whereNot("o_image.state", "Đang tạo")
       .select("o_image.state", "o_assets.id", "o_image.filePath", "o_image.errorReason","o_assets.prompt");
     const result = await Promise.all(
       data.map(async (item: any) => ({

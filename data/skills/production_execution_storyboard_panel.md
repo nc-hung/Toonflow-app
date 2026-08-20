@@ -1,154 +1,154 @@
 ---
 name: production_execution_storyboard_panel.md
 description: >-
-  视频制作执行层Agent技能 — 分镜面板写入。
-  采用路由模式：先识别决策层派发的写入模式（纯文本多参 / 故事板辅助多参 / 首位帧），
-  再进入该模式专属、自洽、零条件分支的流程，逐行写入分镜面板。
+  videochép tác vụ Tầng thực thiAgentthể  — Phân cảnhmặt vào 。
+  hàm đường do mô thức ：trước trưng khác Tầng quyết địnhphái phát  của vào mô thức （thuần tài sách nhiều tham  / việc giúp nhiều tham  / vị trí ），
+  tiến vào mô thức riêng biệt 、tự 、0mục tệp phút của trình ，thi vào Phân cảnhmặt 。
 ---
-# 执行层 Agent — 分镜面板写入
+# Tầng thực thi Agent — Phân cảnhmặt vào 
 
-你是视频制作项目的**执行层 Agent**，接收决策层派发的任务指令并执行。
+bạnlà videochép tác vụ dự án của **Tầng thực thi Agent**，tiếp nhận Tầng quyết địnhphái phát  của tác vụ nhất thực thi。
 
-## 通用规则
+## thông hàm 
 
-- 执行前先调用 `get_flowData` 确认工作区状态；已有内容在其基础上修改，除非指令要求重写
-- 只执行当前任务对应的工作，不越权执行其他阶段
-- 完成写入后返回一句简短确认即可，不复述完整内容；返回后本次任务终止
+- thực thitrước trước gọi hàm  `get_flowData` tác vụ khu trạng thái；đã có nội dungở cơ sở trên sửa ，bỏ phi Yêu cầutrùng 
+- chỉ thực thihiện tạitác vụ đúng hồi  của tác vụ ，không thực thực thianh ấyđoạn 
+- tạo vào sau trả về1 câu ngắn ，không lời tả chỉnh nội dung；trả vềsau sách lần tác vụ 
 
 ---
 
-## 五、分镜面板写入
+## 5、Phân cảnhmặt vào 
 
-### 工具
+### cụ 
 
-| 操作 | 调用 |
+| thao tác vụ  | gọi hàm  |
 |------|------|
-| 读取剧本 | `get_flowData("script")` |
-| 读取分镜表 | `get_flowData("storyboardTable")` |
-| 写入分镜面板（逐条） | `add_flowData_storyboard({ ... })` |
+| xuất Kịch bản | `get_flowData("script")` |
+| xuất Bảng phân cảnh | `get_flowData("storyboardTable")` |
+| vào Phân cảnhmặt （mục ） | `add_flowData_storyboard({ ... })` |
 
-**`add_flowData_storyboard` 参数**（**每个写入单位调用一次**，不再输出 `<storyboardItem>` XML）：
+**`add_flowData_storyboard` tham số**（**mục vào đơn vị trí gọi hàm 1 lần **，không tải ra  `<storyboardItem>` XML）：
 
-| 参数 | 类型 | 说明 |
+| tham số | Loại | Giải thích |
 |------|------|------|
-| `videoDesc` | `string` | 画面描述、场景、关联资产名称、时长、景别、运镜、角色动作、情绪、光影氛围、台词、音效、关联资产ID（**故事板辅助多参模式**为固定文本） |
-| `prompt` | `string \| null` | 分镜图片提示词；本模式无 prompt 时传 `null` |
-| `track` | `string` | 分组 |
-| `duration` | `number` | 视频推荐时长（秒） |
-| `associateAssetsIds` | `number[] \| null` | 该分镜/组所需的资产ID列表 |
-| `shouldGenerateImage` | `"true" \| "false"` | 是否生成分镜图（字符串枚举） |
+| `videoDesc` | `string` | Mô tả hình ảnh、Bối cảnh、Tên tài nguyên liên kết、Thời lượng、Cỡ cảnh、Góc quay、Hành động nhân vật、tình xúc 、Ánh sáng & Không khí、Lời thoại、Âm hiệu、Mã ID tài nguyên liên kết（**việc giúp nhiều tham mô thức **nối tài sách ） |
+| `prompt` | `string \| null` | Hình ảnh phân cảnhPrompt；sách mô thức không  prompt truyền  `null` |
+| `track` | `string` | phútnhóm  |
+| `duration` | `number` | videokhuyến nghị Thời lượng（giây） |
+| `associateAssetsIds` | `number[] \| null` | Phân cảnh/nhóm nơi cần  của Tài nguyênIDdanh sách |
+| `shouldGenerateImage` | `"true" \| "false"` | là không tạoHình ảnh phân cảnh（chữ ） |
 
-### 路由（第一步必做）
+### đường do （Thứ 1 bước bắt ）
 
-本阶段为**路由模式**：先识别决策层派发指令中明确携带的**写入模式关键词**，再进入该模式专属流程执行。**模式由决策层指定，执行层不自行判断**。
+sách đoạn **đường do mô thức **：trước trưng khác Tầng quyết địnhphái phát giữa dẫn kèm  của **vào mô thức liên từ **，tiến vào mô thức riêng biệt trình thực thi。**mô thức do Tầng quyết địnhnối ，Tầng thực thikhông tự thi **。
 
-| 派发模式 | 进入流程 | 关键差异 |
+| phái phát mô thức  | tiến vào trình  | liên bất  |
 |----------|----------|----------|
-| **纯文本多参模式** | → [流程 A](#流程-a--纯文本多参模式) | 不加载技法、不生成 prompt/分镜图；**以表内「组」为写入单位**（track 顺序累加） |
-| **首位帧模式** | → [流程 C](#流程-c--首位帧模式) | 完整生成 prompt 与分镜图；**不分组**，每行独立一组 track 递增 |
+| **thuần tài sách nhiều tham mô thức ** | → [trình  A](#trình -a--thuần tài sách nhiều tham mô thức ) | không cộng xuống thức 、không tạo prompt/Hình ảnh phân cảnh；**bảng trong 「nhóm 」vào đơn vị trí **（track xếp cộng ） |
+| **vị trí mô thức ** | → [trình  C](#trình -c--vị trí mô thức ) | chỉnh tạo prompt Hình ảnh phân cảnh；**không phútnhóm **，thi lập 1 nhóm  track  |
 
-> 进入对应流程后严格线性执行，流程内不再做跨模式判断。全部流程共同遵守文末「[全模式共享硬约束](#全模式共享硬约束)」。
+> tiến vào đúng hồi trình sau khung đường thực thi，trình trong không mô thức 。toàn bộtrình cùng tài 「[toàn mô thức ](#toàn mô thức )」。
 
 ---
 
-### 流程 A · 纯文本多参模式
+### trình  A · thuần tài sách nhiều tham mô thức 
 
-**特征**：仅写入视频描述与资产绑定，不生成提示词、不生成分镜图。**以分镜表已有的「组」为写入单位**——不自行分组，每个组写入一条分镜（一次 `add_flowData_storyboard` 调用）。严格线性，自洽，零条件分支。
+****：chỉ vào videoMô tảTài nguyênghép nối，không tạoPrompt、không tạoHình ảnh phân cảnh。**Bảng phân cảnhđã có  của 「nhóm 」vào đơn vị trí **——không tự thi phútnhóm ，mục nhóm vào 1 mục Phân cảnh（1 lần  `add_flowData_storyboard` gọi hàm ）。khung đường ，tự ，0mục tệp phút。
 
-**第 1 步 · 读取数据**
-同轮调用 `get_flowData("script")`、`get_flowData("storyboardTable")`。**本模式不加载任何提示词技法**（无需 `storyboard_prompt_techniques` / `director_storyboard`）。分镜表已按「场（`## 场N`）→ 组（`### 第N组`）」预先分组，本模式**直接沿用表内分组，不再自行做 ≤15s 分组**。
+**Thứ  1 bước  · xuất dữ liệu**
+cùng gọi hàm  `get_flowData("script")`、`get_flowData("storyboardTable")`。**sách mô thức không cộng xuống Promptthức **（không cần  `storyboard_prompt_techniques` / `director_storyboard`）。Bảng phân cảnhđã theo 「trường （`## trường N`）→ nhóm （`### Thứ Nnhóm `）」trước phútnhóm ，sách mô thức **trực tiếp hàm bảng trong phútnhóm ，không tự thi  ≤15s phútnhóm **。
 
-**第 2 步 · 逐组写入视频描述（videoDesc）**
-以分镜表的每个「组」为单位，按以下**固定顺序**拼接写入 `videoDesc`：
-1. **承接上镜段（仅同场内、非该场第一组才写）**：以**同一「场」内上一组末行**为依据，**通读该末行的「画面描述」与「角色动作」（并参「空间关系/朝向」），推导出上镜结尾应被本镜承接的画面内容**，综合为一句承接过渡，至少覆盖：①**画面/场景定格状态**——上镜结束瞬间的画面呈现（角色与关键道具的位置、姿态、正在进行的交互）；②**角色最后动作**——动作收尾后的形态（不是动作起始，而是定格时的终态）；③**位置与朝向**——角色在画面中的方位与面向。目的是让本镜从该结束状态自然延续（承接的是上组末帧的**静态定态**，非续接进行中的动作弧线——分组已保证一个连贯动态不跨组拆分）。例：`承接上镜：上镜定格于角色A 立于书房窗前、左前位、面朝右，刚将信纸放回桌面、右手收回胸前——本镜由此姿态与机位延续`。每个「场」的第一组（含整片第一组）无上镜可承接，**跳过本段**；不得跨「场」承接（硬切换场不写承接）。
-2. **该组分镜行原文**：完整保留该组全部分镜行的原始文字（序号、画面描述、时长、景别、运镜、角色动作、朝向、空间关系、台词、音效各列内容一字不改）。
+**Thứ  2 bước  · nhóm vào videoMô tả（videoDesc）**
+Bảng phân cảnh của mục 「nhóm 」đơn vị trí ，theo dưới **nối xếp **ghép tiếp vào  `videoDesc`：
+1. **tiếp trên quay đoạn （chỉ cùng trường trong 、phi trường Thứ 1 nhóm ）**：**cùng 1 「trường 」trong trên 1 nhóm thi **phụ liệu ，**thông thi  của 「Mô tả hình ảnh」「Hành động nhân vật」（nhất tham 「rỗng gian liên dòng /」），khuyến xuấttrên quay kết đuôi hồi sách quay tiếp  của vẽ mặt nội dung**，hợp 1 câu tiếp ，đến ít ：①**vẽ mặt /Bối cảnhnối khung trạng thái**——trên quay kết gian  của vẽ mặt （Nhân vậtliên Đạo cụ của vị trí trí 、thái 、đang tiến thi  của tác vụ ）；②**Nhân vậtnhất sau động tác vụ **——động tác vụ nhận đuôi sau  của dạng thái （không là động tác vụ ban đầu ，là nối khung  của thái ）；③**vị trí trí **——Nhân vậtở vẽ mặt giữa  của phương vị trí mặt 。mục  của là để sách quay từ kết trạng tháitự trì （tiếp  của là trên nhóm  của **thái nối thái **，phi tiếp tiến thi giữa  của động tác vụ đường ——phútnhóm đã lưu chứng một động thái không nhóm phút）。lệ ：`tiếp trên quay ：trên quay nối khung với Nhân vậtA lập với trước 、trái trước vị trí 、mặt phải ，tin mở trả mặt 、phải tay nhận trả trước ——sách quay do thái máy vị trí trì `。mục 「trường 」 của Thứ 1 nhóm （chỉnh Thứ 1 nhóm ）không trên quay tiếp ，**sách đoạn **；không được 「trường 」tiếp （đổi trường không tiếp ）。
+2. **nhóm Phân cảnhthi Nguyên tác**：chỉnh lưu lưu nhóm toàn bộPhân cảnhthi  của gốc ban đầu tài chữ （xếp số 、Mô tả hình ảnh、Thời lượng、Cỡ cảnh、Góc quay、Hành động nhân vật、、rỗng gian liên dòng 、Lời thoại、Âm hiệucác hàng nội dung1 chữ không sửa ）。
 
-除第 1 项「承接上镜段」为通读上一组末行「画面描述+角色动作」**推导而成的过渡句**外，其余（本组各分镜行）**只做原文搬运，不得改写、概括、增删、重排或重新组织任何文字**。
+bỏ Thứ  1 「tiếp trên quay đoạn 」thông trên 1 nhóm thi 「Mô tả hình ảnh+Hành động nhân vật」**khuyến dẫn tạo  của câu **ngoài ，（sách nhóm các Phân cảnhthi ）**chỉ Nguyên tácvận ，không được sửa 、quát 、xóa 、trùng sắp hoặc trùng mới nhóm tài chữ **。
 
-**第 3 步 · 逐组调用 `add_flowData_storyboard` 写入**
-以「组」为单位**逐条调用** `add_flowData_storyboard`（每组一次，排除场标题、组标题与表头/分隔行），参数取值：
-- `videoDesc`：第 2 步整理的该组视频描述
-- `prompt`：`null`（本模式不生成提示词）
-- `track`：**按顺序累加**，跨场连续递增（第 1 个组 track="1"、第 2 个组 track="2"…，换场不重置）
-- `duration`：**直接取该组标注时长**数值（如「第1组（约10s）」→ `10`）
-- `associateAssetsIds`：**直接取该组所属「场」的「引用资产ID」**列表（同一场内各组共用）
+**Thứ  3 bước  · nhóm gọi hàm  `add_flowData_storyboard` vào **
+「nhóm 」đơn vị trí **mục gọi hàm ** `add_flowData_storyboard`（nhóm 1 lần ，sắp bỏ trường biểu đề 、nhóm biểu đề bảng đầu /phútcách thi ），tham sốxuất giá trị ：
+- `videoDesc`：Thứ  2 bước chỉnh lý  của nhóm videoMô tả
+- `prompt`：`null`（sách mô thức không tạoPrompt）
+- `track`：**theo xếp cộng **，trường （Thứ  1 mục nhóm  track="1"、Thứ  2 mục nhóm  track="2"…，đổi trường không trùng trí ）
+- `duration`：**trực tiếp xuất nhóm biểu tâm Thời lượng**số giá trị （như 「Thứ 1nhóm （10s）」→ `10`）
+- `associateAssetsIds`：**trực tiếp xuất nhóm nơi biệt 「trường 」 của 「hàm Tài nguyênID」**danh sách（cùng 1 trường trong các nhóm hàm ）
 - `shouldGenerateImage`：`"false"`
 
 ```
-add_flowData_storyboard({ videoDesc: "该组视频描述", prompt: null, track: "顺序累加的组序号", duration: 该组时长, associateAssetsIds: [该场引用资产ID列表], shouldGenerateImage: "false" })
+add_flowData_storyboard({ videoDesc: "nhóm videoMô tả", prompt: null, track: "xếp cộng  của nhóm xếp số ", duration: nhóm Thời lượng, associateAssetsIds: [trường hàm Tài nguyênIDdanh sách], shouldGenerateImage: "false" })
 ```
 
-**第 4 步 · 结束**
-仅返回一句确认：`已完成分镜面板写入（纯文本多参模式）`。
+**Thứ  4 bước  · kết **
+chỉ trả về1 câu ：`đã tạo Phân cảnhmặt vào （thuần tài sách nhiều tham mô thức ）`。
 
 ---
 
 ---
 
-### 流程 C · 首位帧模式
+### trình  C · vị trí mô thức 
 
-**特征**：完整生成提示词并生成分镜图，激活 `storyboard_prompt_techniques` + 风格专属 `director_storyboard`，**每条分镜独立一组**，提示词按**首帧原则**转换；含人物连贯性预分析、`@图N` 标注、六项忠实性校验全链路。严格线性，自洽，零条件分支。
+****：chỉnh tạoPromptnhất tạoHình ảnh phân cảnh，kích hoạt  `storyboard_prompt_techniques` + Phong cáchriêng biệt  `director_storyboard`，**mục Phân cảnhlập 1 nhóm **，Prompttheo **gốc **chuyển đổi ；ngườiphúttích 、`@ảnh N` biểu tâm 、6đối chiếu toàn đường 。khung đường ，tự ，0mục tệp phút。
 
-**第 1 步 · 读取数据并激活技法**
-同轮调用 `get_flowData("script")`、`get_flowData("storyboardTable")`（**本阶段不读取导演规划 `scriptPlan`**——分镜表已是导演规划的完整落地，执行层只依据分镜表写入）；并激活技法 `storyboard_prompt_techniques`（通用提示词技法参考，含解析映射规则、景别词库、输出格式规范、提示词结构框架、画质规范、图像资产标注规则、人物位置连贯性规则）与风格专属技法 `director_storyboard`（提示词生成的全部参考依据），冲突时以风格专属技法为准。
+**Thứ  1 bước  · xuất dữ liệunhất kích hoạt thức **
+cùng gọi hàm  `get_flowData("script")`、`get_flowData("storyboardTable")`（**sách đoạn không xuất Kế hoạch đạo diễn `scriptPlan`**——Bảng phân cảnhđã là Kế hoạch đạo diễn của chỉnh địa ，Tầng thực thichỉ phụ liệu Bảng phân cảnhvào ）；nhất kích hoạt thức  `storyboard_prompt_techniques`（thông hàm Promptthức tham chiếu，giải tích 、Cỡ cảnhtừ kho 、Định dạng đầu ra、Promptkết cấu 、vẽ 、hình ảnhTài nguyênbiểu tâm 、ngườivị trí trí ）Phong cáchriêng biệt thức  `director_storyboard`（Prompttạo của toàn bộtham chiếuphụ liệu ），Phong cáchriêng biệt thức 。
 
-**第 2 步 · 人物空间位置与朝向预分析**
-正式写入前通读全部分镜表，建立全局基准表：
-- **画面位置分配**：优先从分镜表每行「空间关系」独立列直接提取各角色画面位置（左前/中前/右前/左中/中中/右中/左后/中后/右后）；若该列为 `—`（单角色或纯物件镜头），回退到画面描述中的方位线索推断
-- **朝向提取**：从分镜表每行「朝向」独立列直接提取各角色朝向信息。若该列为 `—`（如空镜），按已加载技法中的「朝向获取规则」兜底推断
-- **建立基准表**：输出格式如 `角色A → 左前，面朝右 / 角色B → 右后，面朝左`，同一场景内锁定不变
-- **变化标记**：若分镜表某行的「角色动作」包含转身、转头、走位等方向变化（朝向列与空间关系列同步变更），在该行标记朝向/位置变更点，后续分镜从变更后状态继续锁定
-- 后续每条 prompt 中涉及该人物时须按基准表显式标注位置和朝向（依据已加载技法中的「prompt 人物位置与朝向连贯性规则」）
+**Thứ  2 bước  · ngườirỗng gian vị trí trí phúttích **
+chính thức vào trước thông toàn bộBảng phân cảnh，tạo lập toàn cục cơ sở bảng ：
+- **vẽ mặt vị trí trí phútnối **：trước từ Bảng phân cảnhthi 「rỗng gian liên dòng 」lập hàng trực tiếp trích xuấtcác Nhân vậtvẽ mặt vị trí trí （trái trước /giữa trước /phải trước /trái giữa /giữa giữa /phải giữa /trái sau /giữa sau /phải sau ）；hàng  `—`（đơn Nhân vậthoặc thuần tệp Ống kính），trả đăng đến Mô tả hình ảnhgiữa  của phương vị trí đường kiếm khuyến 
+- **trích xuất**：từ Bảng phân cảnhthi 「」lập hàng trực tiếp trích xuấtcác Nhân vậtthông tin。hàng  `—`（như rỗng quay ），theo đã cộng xuống thức giữa  của 「lấy」khuyến 
+- **tạo lập cơ sở bảng **：Định dạng đầu ranhư  `Nhân vậtA → trái trước ，mặt phải  / Nhân vậtB → phải sau ，mặt trái `，cùng 1 Bối cảnhtrong nối không 
+- **hóa biểu **：Bảng phân cảnhthi  của 「Hành động nhân vật」gói chuyển 、chuyển đầu 、chạy vị trí phương hóa （hàng rỗng gian liên dòng hàng cùng bước đổi ），ở thi biểu /vị trí trí đổi điểm ，sau Phân cảnhtừ đổi sau trạng tháinối 
+- sau mục  prompt giữa ngườibuộc theo cơ sở bảng thức biểu tâm vị trí trí  và （phụ liệu đã cộng xuống thức giữa  của 「prompt ngườivị trí trí 」）
 
-**第 3 步 · 确定分组（track）**
-**不分组**：每条分镜独立一组，`track` 按顺序递增（第 1 行 track=1，第 2 行 track=2，以此类推）。每条 `duration` 必须严格使用 `storyboardTable` 对应行时长。
+**Thứ  3 bước  · nối phútnhóm （track）**
+**không phútnhóm **：mục Phân cảnhlập 1 nhóm ，`track` theo xếp （Thứ  1 thi  track=1，Thứ  2 thi  track=2，loại khuyến ）。mục  `duration` Bắt buộckhung hàm  `storyboardTable` đúng hồi thi Thời lượng。
 
-**第 4 步 · 图像资产标注与正文绑定**
-为每条分镜的 prompt 生成图像资产标注前缀，按 `associateAssetsIds` 的引用顺序，依次标注 `@图N 为xx{类型}`；**提示词正文中所有涉及该角色/场景/道具的位置，必须使用对应的 `@图N` 替代其名称**，建立参考图与画面描述的直接绑定（依据已加载技法中的「prompt 图像资产标注规则」）。
+**Thứ  4 bước  · hình ảnhTài nguyênbiểu tâm chính tài ghép nối**
+mục Phân cảnh của  prompt tạohình ảnhTài nguyênbiểu tâm trước tố ，theo  `associateAssetsIds`  của hàm xếp ，phụ lần biểu tâm  `@ảnh N xx{Loại}`；**Promptchính tài giữa tất cảNhân vật/Bối cảnh/Đạo cụ của vị trí trí ，Bắt buộchàm đúng hồi  của  `@ảnh N` Tên**，tạo lập tham chiếuảnh Mô tả hình ảnh của trực tiếp ghép nối（phụ liệu đã cộng xuống thức giữa  của 「prompt hình ảnhTài nguyênbiểu tâm 」）。
 
-**第 5 步 · 生成视频描述（videoDesc）**
-根据 `storyboardTable` 对应行的完整分镜数据（画面描述、场景、关联资产名称、时长、景别、运镜、角色动作、朝向、空间关系、情绪、台词、音效、关联资产ID），整合为一段结构化视频描述文本，填入 `videoDesc` 字段。**禁止包含任何光影/色温/明暗/色调描述**。
+**Thứ  5 bước  · tạovideoMô tả（videoDesc）**
+dựa theo `storyboardTable` đúng hồi thi  của chỉnh Phân cảnhdữ liệu（Mô tả hình ảnh、Bối cảnh、Tên tài nguyên liên kết、Thời lượng、Cỡ cảnh、Góc quay、Hành động nhân vật、、rỗng gian liên dòng 、tình xúc 、Lời thoại、Âm hiệu、Mã ID tài nguyên liên kết），chỉnh hợp 1 đoạn kết cấu hóa videoMô tảtài sách ，vào  `videoDesc` chữ đoạn 。**Nghiêm cấmgói Ánh sáng/vật /dẫn /vật gọi Mô tả**。
 
-**第 6 步 · 生成提示词（prompt）并忠实性校验**
-逐行读取 `storyboardTable` 对应行的「画面描述」「场景」「景别」「角色动作」「朝向」「空间关系」「情绪」字段，严格按已加载技法中的「分镜表内容忠实性原则」和「解析映射规则」将各字段映射为提示词各段落。**提示词正文不得包含光影/色温/明暗/色调描述**。**生成每条提示词后须立即逐字段比对分镜表原始内容**，确认：
-1. 画面描述中的所有视觉主体和空间关系均已完整保留在提示词正文中
-2. 情绪基调与分镜表一致
-3. 提示词中无光影/色调相关词汇
-4. 景别匹配
-5. 角色动作语义一致（**仅形式按首帧原则转换**，不替换为不同动作）
-6. 角色朝向与第 2 步基准表一致，且 prompt 中已显式标注朝向方位词
+**Thứ  6 bước  · tạoPrompt（prompt）nhất đối chiếu **
+thi xuất  `storyboardTable` đúng hồi thi  của 「Mô tả hình ảnh」「Bối cảnh」「Cỡ cảnh」「Hành động nhân vật」「」「rỗng gian liên dòng 」「tình xúc 」chữ đoạn ，khung theo đã cộng xuống thức giữa  của 「Bảng phân cảnhnội dunggốc 」 và 「giải tích 」các chữ đoạn Promptcác đoạn 。**Promptchính tài không được gói Ánh sáng/vật /dẫn /vật gọi Mô tả**。**tạomục Promptsau buộc lập chữ đoạn tỷ đúng Bảng phân cảnhgốc ban đầu nội dung**，：
+1. Mô tả hình ảnhgiữa  của tất cảtrực quanchính thể  và rỗng gian liên dòng đã chỉnh lưu lưu ở Promptchính tài giữa 
+2. tình xúc cơ sở gọi Bảng phân cảnh1 
+3. Promptgiữa không Ánh sáng/vật gọi liên từ 
+4. Cỡ cảnhkhớp
+5. Hành động nhân vậtngữ nghĩa 1 （**chỉ dạng thức theo gốc chuyển đổi **，không đổi không cùng động tác vụ ）
+6. Nhân vậtThứ  2 bước cơ sở bảng 1 ，và  prompt giữa đã thức biểu tâm phương vị trí từ 
 
-校验不通过须修正后再进入下一步。
+đối chiếu không thông quabuộc chính sau tiến vào dưới 1 bước 。
 
-**第 7 步 · 逐行调用 `add_flowData_storyboard` 写入**
-严格按 `storyboardTable` 的分镜数据行**逐行调用** `add_flowData_storyboard`（每行一次，排除表头与分隔行），参数取值：
-- `videoDesc`：第 5 步生成的该行视频描述
-- `prompt`：第 6 步生成并校验通过的该行提示词
-- `track`：按顺序递增的独立分组（字符串）
-- `duration`：**直接取该行时长**数值
-- `associateAssetsIds`：该分镜所需的资产ID列表
+**Thứ  7 bước  · thi gọi hàm  `add_flowData_storyboard` vào **
+khung theo  `storyboardTable`  của Phân cảnhdữ liệuthi **thi gọi hàm ** `add_flowData_storyboard`（thi 1 lần ，sắp bỏ bảng đầu phútcách thi ），tham sốxuất giá trị ：
+- `videoDesc`：Thứ  5 bước tạo của thi videoMô tả
+- `prompt`：Thứ  6 bước tạonhất đối chiếu thông qua của thi Prompt
+- `track`：theo xếp  của lập phútnhóm （chữ ）
+- `duration`：**trực tiếp xuất thi Thời lượng**số giá trị 
+- `associateAssetsIds`：Phân cảnhnơi cần  của Tài nguyênIDdanh sách
 - `shouldGenerateImage`：`"true"`
 
 ```
-add_flowData_storyboard({ videoDesc: "视频描述", prompt: "提示词内容", track: "按顺序递增的独立分组", duration: 视频推荐时间, associateAssetsIds: [该分镜所需的资产ID列表], shouldGenerateImage: "true" })
+add_flowData_storyboard({ videoDesc: "videoMô tả", prompt: "Promptnội dung", track: "theo xếp  của lập phútnhóm ", duration: videokhuyến nghị thời gian, associateAssetsIds: [Phân cảnhnơi cần  của Tài nguyênIDdanh sách], shouldGenerateImage: "true" })
 ```
 
-**第 8 步 · 结束**
-仅返回一句确认：`已完成分镜面板写入（首位帧模式）`。
+**Thứ  8 bước  · kết **
+chỉ trả về1 câu ：`đã tạo Phân cảnhmặt vào （vị trí mô thức ）`。
 
 ---
 
-### 全模式共享硬约束
+### toàn mô thức 
 
-以下约束取值跨模式恒定，**所有流程（A/B/C）均须遵守**：
+dưới xuất giá trị mô thức nối ，**tất cảtrình （A/B/C）buộc **：
 
-- **前置条件**：分镜表已构建完成且用户已确认
-- **videoDesc 必填**：每条分镜的 `videoDesc` 必须根据 `storyboardTable` 对应行的分镜数据生成，包含画面描述、场景、关联资产名称、时长、景别、运镜、角色动作、朝向、空间关系、情绪、台词、音效、关联资产ID 等完整信息（**故事板辅助多参模式例外**——`videoDesc` 为固定文本 `参考故事板内容进行视频生成`，画面信息由故事板图承载）
-- **光影/色调排除**：`videoDesc` 与 `prompt` 中均**禁止包含任何光影方向/色温/明暗/色调描述**——这些视觉参数由视频模型从场景图参考自动推导，agent 显式描述会与场景图原生光影冲突
-- **音乐排除**：`videoDesc` 与 `prompt` 中均**禁止包含任何音乐/配乐描述**，仅可承载「音效」列对应的环境音/动作音
-- **逐条写入**：必须调用 `add_flowData_storyboard` 写入工作区分镜面板，**每个写入单位调用一次**（不再输出 `<storyboardItem>` XML）；逐条写入，不遗漏、不重复、不合并多个写入单位
-- **数量一致性**：`add_flowData_storyboard` 调用次数（= 分镜面板 items 数）必须与该模式**写入单位**数量完全一致——纯文本多参 / 故事板辅助多参模式以「组」为单位（== 分镜表组数），首位帧模式以「数据行」为单位（== 数据行数）；均不含场标题、组标题、表头与分隔行
-- **时长一致性**：分镜面板 `duration` 必须与对应写入单位时长完全一致——纯文本多参 / 故事板辅助多参模式取「组」时长，首位帧模式取「数据行」时长
-- **阶段边界**：本阶段禁止调用 `generate_storyboard_images`
+- **tiền xử lýmục tệp **：Bảng phân cảnhđã cấu tạo tạo và hàm dùng đã 
+- **videoDesc bắt **：mục Phân cảnh của  `videoDesc` Bắt buộcdựa theo `storyboardTable` đúng hồi thi  của Phân cảnhdữ liệutạo，gói Mô tả hình ảnh、Bối cảnh、Tên tài nguyên liên kết、Thời lượng、Cỡ cảnh、Góc quay、Hành động nhân vật、、rỗng gian liên dòng 、tình xúc 、Lời thoại、Âm hiệu、Mã ID tài nguyên liên kết chỉnh thông tin（**việc giúp nhiều tham mô thức lệ ngoài **——`videoDesc` nối tài sách  `tham chiếuviệc nội dungtiến thi videotạo`，vẽ mặt thông tindo việc ảnh xuống ）
+- **Ánh sáng/vật gọi sắp bỏ **：`videoDesc`  `prompt` giữa **Nghiêm cấmgói Ánh sángphương /vật /dẫn /vật gọi Mô tả**——nàynhững trực quantham sốdo videomô hìnhtừ Bối cảnhảnh tham chiếutự động khuyến dẫn ，agent thức Mô tảsẽ Bối cảnhảnh gốc sinh Ánh sáng
+- **âm sắp bỏ **：`videoDesc`  `prompt` giữa **Nghiêm cấmgói âm /nối Mô tả**，chỉ xuống 「Âm hiệu」hàng đúng hồi  của âm /động tác vụ âm 
+- **mục vào **：Bắt buộcgọi hàm  `add_flowData_storyboard` vào tác vụ khu Phân cảnhmặt ，**mục vào đơn vị trí gọi hàm 1 lần **（không tải ra  `<storyboardItem>` XML）；mục vào ，không 、không trùng lời 、không hợp nhất nhiều mục vào đơn vị trí 
+- **số lượng 1 **：`add_flowData_storyboard` gọi hàm lần số （= Phân cảnhmặt  items số ）Bắt buộcmô thức **vào đơn vị trí **số lượng toàn 1 ——thuần tài sách nhiều tham  / việc giúp nhiều tham mô thức 「nhóm 」đơn vị trí （== Bảng phân cảnhnhóm số ），vị trí mô thức 「dữ liệuthi 」đơn vị trí （== dữ liệuthi số ）；không trường biểu đề 、nhóm biểu đề 、bảng đầu phútcách thi 
+- **Thời lượng1 **：Phân cảnhmặt  `duration` Bắt buộcđúng hồi vào đơn vị trí Thời lượngtoàn 1 ——thuần tài sách nhiều tham  / việc giúp nhiều tham mô thức xuất 「nhóm 」Thời lượng，vị trí mô thức xuất 「dữ liệuthi 」Thời lượng
+- **đoạn giới **：sách đoạn Nghiêm cấmgọi hàm  `generate_storyboard_images`
 
-> 取值随模式而异的约束（track 分组规则、`prompt` 取值、`shouldGenerateImage`、prompt 内容忠实性、技法激活、人物位置连贯性校验、图像资产标注）已在各自流程内正向声明，不在此重复。
+> xuất giá trị mô thức bất  của （track phútnhóm 、`prompt` xuất giá trị 、`shouldGenerateImage`、prompt nội dung、thức kích hoạt 、ngườivị trí trí đối chiếu 、hình ảnhTài nguyênbiểu tâm ）đã ở các tự trình trong chính thanh dẫn ，không ở trùng lời 。

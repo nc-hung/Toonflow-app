@@ -1,306 +1,306 @@
 ---
 name: liveaction_urban_character
-description: 真人都市人物基础形象生成 · 约束手册
+description: thật ngườiđều ngườicơ sở dạng tượng tạo · sổ tay
 metaData: liveaction_urban_art_skills
 ---
 
-# 真人都市人物基础形象生成 · 约束手册
+# thật ngườiđều ngườicơ sở dạng tượng tạo · sổ tay
 
 ---
 
-## 一、选角逻辑——摄影机前的人
+## 1 、chọn nhân logic——sáng máy trước  của người
 
-> 3D角色的起点是"建一个模型"；真人都市的起点是"选一个人站在摄影机前"。以下原则不从建模出发，而从选角和拍摄出发。
+> 3DNhân vật của điểm là "tạo một mô hình"；thật ngườiđều  của điểm là "chọn một ngườitrạm ở sáng máy trước "。dưới gốc không từ tạo mô ra phát ，từ chọn nhân  và ra phát 。
 
-1. **面孔即叙事** — 一张脸就是一部未被写出的故事。真人都市不追求"完美的五官"，而追求"值得被注视的五官"——有辨识度的不对称、有故事感的微瑕疵、能被摄影机凝视的面孔
-2. **素人感优先于明星感** — 都市叙事需要的是"看起来像你每天在地铁里会遇到的人"，而非"看起来像刚从杂志封面走下来的人"。素颜状态下的真实面容优先于精致妆造
-3. **体态说真话** — 真实的站姿不是对称的——重心偏一条腿、肩膀微斜、脖子自然前倾或后仰。杜绝模特式对称站姿和军人式立正体态
-4. **同一人物跨角度可辨认** — 正面/侧面/背面/特写四角度必须呈现为同一个人的摄影记录，而非四个相似的人。核心识别点：颌骨轮廓、鼻梁转折、耳廓形状、发际线走向
-
----
-
-## 二、女性面容——摄影机凝视下的五种面孔
-
-> 不按"脸型/眼型/鼻型"的解剖分类，而是按摄影机如何阅读一张脸来组织。
-
-### 类型A：清冷克制型
-
-| 摄影特征 | 描述 | 提示词 |
-|---|---|---|
-| 面部结构 | 骨感清晰，颧骨可见但不外扩，下颌线干净流畅，面中偏平（亚洲特征），不追求西式立体感 | 骨感清晰的面部结构、柔和颧骨、干净下颌线、亚洲面孔的自然平面感 |
-| 眼神 | 单眼皮或窄内双，眼裂偏长，眼白干净，不刻意睁大，自带疏离感 | 窄内双/单眼皮、偏长眼裂、干净眼白、克制的注视、疏离而不冷漠 |
-| 嘴部 | 唇形薄而轮廓清晰，自然闭合或微启，嘴角不上扬不下垂 | 清晰薄唇、自然闭合、中性唇态 |
-| 皮肤 | 微冷白基调，可见颧骨处自然毛细血管，T区轻微油光，非全脸哑光 | 微冷白肤色、自然面部光泽、T区轻微出油、保留真实皮肤质感 |
-| 摄影关系 | 适合50mm近距离凝视、侧面光勾勒骨感、黑白色调 | — |
-
-### 类型B：温柔治愈型
-
-| 摄影特征 | 描述 | 提示词 |
-|---|---|---|
-| 面部结构 | 线条柔和圆润，脸颊饱满但不下垂，下巴略圆，整体轮廓偏柔和无锐角 | 柔和圆润的面部线条、饱满脸颊、圆润下巴、无锐角的柔和轮廓 |
-| 眼神 | 圆眼/杏眼，眼裂上下开度大，卧蚕明显，眼含笑意但不夸张，瞳孔大而清澈 | 圆润杏眼、明显卧蚕、含笑但克制的眼神、大而清澈的瞳孔 |
-| 嘴部 | 略厚的唇，唇峰圆润，自然状态下嘴角微扬，唇色偏暖粉 | 偏厚唇形、圆润唇峰、自然微扬嘴角、暖粉唇色 |
-| 皮肤 | 暖白基调，通透有血色，面颊自然红晕，光泽柔和 | 暖白通透肤色、自然面颊红晕、柔和皮肤光泽 |
-| 摄影关系 | 适合85mm中长焦拉近、窗光45°侧打、暖调色彩 | — |
-
-### 类型C：都市干练型
-
-| 摄影特征 | 描述 | 提示词 |
-|---|---|---|
-| 面部结构 | 轮廓利落，下颌角清晰但不宽大，面中结构明确，整体呈现—种"被认真对待"的精致感 | 利落面部轮廓、清晰下颌角、结构明确的面中、精干而不失柔和 |
-| 眼神 | 眼型偏长，内眼角尖锐，眼尾微扬但不夸张，注视沉稳有力 | 偏长眼型、尖锐内眼角、微扬眼尾、沉稳有力的注视 |
-| 嘴部 | 唇形清晰，唇线分明，自然状态下嘴唇微抿，呈现克制感 | 轮廓清晰的唇形、分明唇线、自然微抿、克制气质 |
-| 皮肤 | 中性偏冷白基调，肤质细腻但保留自然纹理，光泽感适中 | 中性冷白肤色、细腻但保留纹理的肤质、适中光泽 |
-| 摄影关系 | 适合35mm环境肖像、办公室窗光、冷调但不失温度的色彩 | — |
-
-### 类型D：青春元气型
-
-| 摄影特征 | 描述 | 提示词 |
-|---|---|---|
-| 面部结构 | 脸颊饱满有婴儿肥残留，下巴小巧，轮廓偏圆偏短，面部骨感弱，胶原蛋白感强 | 饱满幼态脸颊、小巧下巴、偏圆偏短轮廓、胶原蛋白饱满感 |
-| 眼神 | 大而圆的眼型，眼裂上下开阔，眼神明亮清澈，像未经世事的直接注视 | 大圆眼型、开阔眼裂、明亮清澈的眼神、直接而不设防的注视 |
-| 嘴部 | 唇形饱满微翘，唇珠明显，自然状态下嘴唇轻微分开，唇色浅粉 | 饱满微翘唇形、明显唇珠、自然微启、浅粉唇色 |
-| 皮肤 | 暖白基底，通透光泽强，几乎无可见毛孔粗大，面颊自然粉嫩 | 暖白通透皮肤、强烈自然光泽、细腻毛孔、粉嫩面颊 |
-| 摄影关系 | 适合35mm近距离、强自然光、高调暖调色彩 | — |
-
-### 类型E：市井烟火型
-
-| 摄影特征 | 描述 | 提示词 |
-|---|---|---|
-| 面部结构 | 轮廓偏宽偏圆，下颌角略宽，颧骨稍高，整体呈现—种"被生活打磨过"的质感 | 偏宽偏圆轮廓、略宽下颌角、稍高颧骨、被生活雕刻的真实面容 |
-| 眼神 | 单眼皮或内双，眼尾微垂或平直，眼神有阅历感——疲惫里有温度，世故里有善意 | 单眼皮/内双、微垂眼尾、饱含阅历的眼神、疲惫中的温度 |
-| 嘴部 | 唇形适中偏薄，唇线不太分明，嘴角可能有细微纹路 | 适中偏薄唇形、柔和唇线、自然的嘴角细纹 |
-| 皮肤 | 偏暖/小麦色基调，可见日晒痕迹、表皮细纹、皮肤质感厚重真实 | 偏暖小麦肤色、可见日晒痕迹、自然细纹、厚重的真实皮肤质感 |
-| 摄影关系 | 适合50mm纪实感、菜市场/巷弄的自然光、低反差真实色彩 | — |
+1. **mặt việc ** — 1 bức thì là 1 bộ chưa ra  của việc 。thật ngườiđều không cầu "đẹp  của 5"，cầu "giá trị được tâm video  của 5"——có trưng độ  của không đúng 、có việc  của 、thể sáng máy video  của mặt 
+2. **ngườitrước với dẫn ** — đều việc cần cần  của là "xem bạnngàyở địa sẽ đến  của người"，phi "xem từ mặt chạy dưới  của người"。trạng tháidưới  của thật mặt dung trước với tạo 
+3. **thể thái hướng thật lời ** — thật  của trạm không là đúng  của ——trùng 1 mục 、、tự trước hoặc sau 。mô thức đúng trạm  và ngườithức lập chính thể thái 
+4. **cùng 1 ngườinhân độ ** — chính mặt /mặt /mặt /Đặc tả (close-up)4nhân độ Bắt buộccùng một người của sáng lục ，phi 4mục  của người。trưng khác điểm ：、chuyển 、dạng trạng 、phát đường chạy 
 
 ---
 
-## 三、男性面容——摄影机凝视下的五种面孔
+## 2、nữ mặt dung ——sáng máy video dưới  của 5loại mặt 
 
-### 类型A：清冽克制型
+> không theo "kiểu /kiểu /kiểu " của giải phútloại ，là theo sáng máy như 1 bức nhóm 。
 
-| 摄影特征 | 描述 | 提示词 |
+### LoạiA：sạch chép kiểu 
+
+| sáng  | Mô tả | Prompt |
 |---|---|---|
-| 面部结构 | 骨感突出，下颌线锋利，颧骨清晰，面中偏平，整体清瘦利落 | 骨感锋利的面部结构、清晰颧骨、利落下颌线、清瘦利落 |
-| 眼神 | 单眼皮或窄内双，眼裂偏长，眼神冷而不凶，带有观察者的距离感 | 单眼皮/窄内双、偏长眼裂、观察者的注视、冷而不凶 |
-| 嘴部 | 唇薄而轮廓清晰，自然闭合，人中明显 | 清晰薄唇、自然闭合、清晰人中 |
-| 皮肤 | 偏冷白基调，T区自然出油，胡茬青影隐约可见 | 冷白基调肤色、自然T区油脂、隐约胡茬青影 |
-| 摄影关系 | 适合50mm正面凝视、侧面硬光勾勒骨感、暗调低饱和 | — |
+| mặt bộ kết cấu  | sạch ，thấy nhưng không ngoài ，dưới đường ，mặt giữa （），không cầu thức lập thể  | sạch  của mặt bộ kết cấu 、 và 、dưới đường 、mặt  của tự mặt  |
+|  | đơn hoặc hẹp trong đôi ，dài ，，không ý lớn ，tự kèm  | hẹp trong đôi /đơn 、dài 、、chép  của tâm video 、không  |
+| bộ  | dạng mỏng sạch ，tự hợp hoặc động ，nhân không trên không dưới  | sạch mỏng 、tự hợp 、giữa thái  |
+|  | cơ sở gọi ，thấy xử tự ，Tkhu ánh ，phi toàn ánh  | vật 、tự mặt bộ ánh 、Tkhu ra 、lưu lưu thật  |
+| sáng liên dòng  | hợp 50mmvideo 、mặt ánh 、vật gọi  | — |
 
-### 类型B：温润内敛型
+### LoạiB：kiểu 
 
-| 摄影特征 | 描述 | 提示词 |
+| sáng  | Mô tả | Prompt |
 |---|---|---|
-| 面部结构 | 轮廓柔和但不失棱角，面颊饱满度适中，下巴圆中带方，整体亲切但不软糯 | 柔和不失棱角的轮廓、适中面颊、圆中带方的下巴 |
-| 眼神 | 眼型偏圆，眼裂开阔，眼神温和有光，注视时给人一种"他在认真听"的感觉 | 偏圆眼型、开阔眼裂、温和有光的眼神、认真倾听的注视 |
-| 嘴部 | 唇厚适中，唇线柔和，自然状态下嘴角微扬，微笑感不刻意 | 厚薄适中、柔和唇线、自然微扬嘴角 |
-| 皮肤 | 暖白/中性基调，肤质干净，皮肤纹理自然可见 | 暖白/中性肤色、干净肤质、自然可见的皮肤纹理 |
-| 摄影关系 | 适合85mm中长焦、窗光漫射、暖调柔光 | — |
+| mặt bộ kết cấu  | đường mục  và ，đầy nhưng không dưới ，dưới ，chỉnh thể  và không nhân  |  và  của mặt bộ đường mục 、đầy 、dưới 、không nhân  của  và  |
+|  | /，trên dưới mở độ lớn ，dẫn ，ý nhưng không bức ，lớn sạch  | 、dẫn 、nhưng chép  của 、lớn sạch  của  |
+| bộ  | dày  của ，，tự trạng tháidưới nhân ，vật  | dày dạng 、、tự nhân 、vật  |
+|  | cơ sở gọi ，thông có vật ，mặt tự ，ánh  và  | thông vật 、tự mặt 、 và ánh  |
+| sáng liên dòng  | hợp 85mmgiữa dài 、ánh 45°mở 、gọi vật  | — |
 
-### 类型C：硬朗成熟型
+### LoạiC：đều kiểu 
 
-| 摄影特征 | 描述 | 提示词 |
+| sáng  | Mô tả | Prompt |
 |---|---|---|
-| 面部结构 | 轮廓分明，颧骨高，下颌角宽而有力，眉弓突出，面部骨骼感强烈——一张"被风吹过"的脸 | 轮廓分明的硬朗面部、高颧骨、宽而有力的下颌角、突出眉弓、强烈的骨骼感 |
-| 眼神 | 深邃眼窝，眼型偏长，注视沉稳，眼神里有经历但不沉重 | 深邃眼窝、偏长眼型、沉稳有力的注视、有故事但不沉重的眼神 |
-| 嘴部 | 唇形偏薄，唇线清晰，自然闭合状态下嘴唇微抿 | 偏薄清晰唇形、自然微抿 |
-| 皮肤 | 偏暖/小麦色，皮肤纹理明显，可见岁月痕迹（眼角细纹、法令纹初现），毛孔真实可见 | 偏暖小麦肤色、明显的皮肤纹理、自然的岁月痕迹、真实可见的毛孔 |
-| 摄影关系 | 适合35mm环境肖像、侧硬光雕刻轮廓、暗调高对比 | — |
+| mặt bộ kết cấu  | ，dưới nhân sạch nhưng không rộng lớn ，mặt giữa kết cấu dẫn ，chỉnh thể —loại "thật đúng " của  | mặt bộ 、sạch dưới nhân 、kết cấu dẫn  của mặt giữa 、không thất  và  |
+|  | kiểu dài ，trong nhân ，đuôi nhưng không bức ，tâm video có lực  | dài kiểu 、trong nhân 、đuôi 、có lực  của tâm video  |
+| bộ  | dạng sạch ，đường phútdẫn ，tự trạng tháidưới ，chép  | sạch  của dạng 、phútdẫn đường 、tự 、chép  |
+|  | giữa cơ sở gọi ，nhưng lưu lưu tự lý ，ánh giữa  | giữa vật 、nhưng lưu lưu lý  của 、giữa ánh  |
+| sáng liên dòng  | hợp 35mm、ánh 、gọi nhưng không thất độ  của vật  | — |
 
-### 类型D：阳光少年型
+### LoạiD：kiểu 
 
-| 摄影特征 | 描述 | 提示词 |
+| sáng  | Mô tả | Prompt |
 |---|---|---|
-| 面部结构 | 轮廓偏圆偏柔和，骨骼感弱，面颊饱满，下巴略短，尚未完全褪去少年感 | 偏圆柔和轮廓、弱骨骼感、饱满面颊、少年尚未褪尽的面孔 |
-| 眼神 | 大而清澈的眼型，眼裂开阔，眼神明亮直接，毫无防备的注视方式 | 大而清澈的眼型、开阔眼裂、明亮直接的眼神、不设防的注视 |
-| 嘴部 | 嘴唇偏厚，唇线柔和，自然状态下嘴唇微微分开，笑时露齿自然 | 偏厚柔和唇形、自然微启、自然露齿笑 |
-| 皮肤 | 暖白基调，肤质细腻干净，光泽感强，几乎无岁月痕迹 | 暖白肤色、细腻干净肤质、强光泽感 |
-| 摄影关系 | 适合35mm环境肖像、充足自然光、高调明快色彩 | — |
+| mặt bộ kết cấu  | đầy có nhi lưu ，dưới nhỏ ，ngắn ，mặt bộ ，gốc  | đầy thái 、nhỏ dưới 、ngắn 、gốc đầy  |
+|  | lớn  của kiểu ，trên dưới mở ，dẫn sạch ，chưa đã việc  của trực tiếp tâm video  | lớn kiểu 、mở 、dẫn sạch  của 、trực tiếp không thiết  của tâm video  |
+| bộ  | dạng đầy ，dẫn ，tự trạng tháidưới phútmở ，vật  | đầy dạng 、dẫn 、tự động 、vật  |
+|  | cơ sở ，thông ánh ，mấy không thấy lớn ，mặt tự  | thông 、tự ánh 、、mặt  |
+| sáng liên dòng  | hợp 35mm、tự ánh 、cao gọi gọi vật  | — |
 
-### 类型E：市井江湖型
+### LoạiE：kiểu 
 
-| 摄影特征 | 描述 | 提示词 |
+| sáng  | Mô tả | Prompt |
 |---|---|---|
-| 面部结构 | 轮廓偏宽，额头宽阔，下颌宽而有力，面部有"用过"的痕迹——被太阳晒过、被风吹过、被生活磨过 | 偏宽轮廓、宽阔额头、宽而有力的下颌、被生活雕刻的面孔 |
-| 眼神 | 单眼皮/内双，眼型偏小偏长，眼神有市井的精明和江湖的义气，注视直接不躲闪 | 单眼皮/内双、偏小偏长眼型、精明中有义气的眼神、直接不躲闪的注视 |
-| 嘴部 | 唇形偏厚，唇线不太分明，自然状态下嘴唇微张，有抽烟/喝茶留下的生活痕迹 | 偏厚唇形、柔和不分明的唇线、自然微张、日常生活痕迹 |
-| 皮肤 | 小麦/偏深基调，明显的日晒色差（领口/袖口），皮肤纹理厚重，毛孔粗大可见，可能有旧疤痕 | 小麦/偏深肤色、明显日晒色差、真实的厚重皮肤纹理、粗大可见的毛孔、自然旧疤痕 |
-| 摄影关系 | 适合35mm纪实感、街头自然光、真实高反差色彩 | — |
+| mặt bộ kết cấu  | rộng ，dưới nhân rộng ，cao ，chỉnh thể —loại "sinh hoạt mở " của  | rộng 、rộng dưới nhân 、cao 、sinh hoạt  của thật mặt dung  |
+|  | đơn hoặc trong đôi ，đuôi hoặc trực ，có ——có độ ，có ý  | đơn /trong đôi 、đuôi 、 của 、giữa  của độ  |
+| bộ  | dạng giữa mỏng ，đường không phútdẫn ，nhân thể có đường  | giữa mỏng dạng 、 và đường 、tự  của nhân  |
+|  | /nhỏ vật cơ sở gọi ，thấy ngày 、bảng 、dày trùng thật  | nhỏ vật 、thấy ngày 、tự 、dày trùng  của thật  |
+| sáng liên dòng  | hợp 50mm、trường / của tự ánh 、thấp phụ thật vật  | — |
 
 ---
 
-## 四、肤感——摄影机下的皮肤
+## 3、nam mặt dung ——sáng máy video dưới  của 5loại mặt 
 
-> 真人都市的肤感不是渲染参数，而是光线在真实皮肤上的行为：反射、透射、散射都取决于皮肤自身的油脂、水分、色素和岁月。
+### LoạiA：sạch chép kiểu 
 
-### 女性
-
-| 维度 | 摄影要求 | 提示词 |
+| sáng  | Mô tả | Prompt |
 |---|---|---|
-| 肤色基调 | 真实亚洲都市女性肤色范围：冷白至暖白，允许轻微肤色不均（颧骨偏红、眼周偏暗），这是真人的证据 | 真实亚洲女性肤色、自然肤色不均、颧骨自然泛红、眼周真人质感 |
-| 表面光泽 | 非哑光非油光——T区自然出油的反光、颧骨高点的自然高光，是皮肤"活着"的迹象 | 自然皮肤光泽、T区真实出油反光、活着而非建模的皮肤 |
-| 纹理可见度 | 在50mm镜头、1米距离的拍摄条件下：颧骨上方毛孔隐约可见、鼻翼两侧毛孔清晰、眉间细纹自然存在 | 可见的真实皮肤毛孔、鼻翼真实纹理、自然的眉间细纹 |
-| 瑕疵保留 | 保留但不强调：零星小痣、浅色雀斑、旧痘印淡痕、表皮微血管——这些是"人"的证据，不是需要修复的bug | 保留真实小痣、自然淡色雀斑、真人肌肤的不完美质感 |
-| 严禁 | 塑料磨皮、蜡像假面、零毛孔硅胶感、全脸均匀哑光、AI感平滑皮肤 | — |
+| mặt bộ kết cấu  | ra ，dưới đường ，sạch ，mặt giữa ，chỉnh thể sạch  |  của mặt bộ kết cấu 、sạch 、dưới đường 、sạch  |
+|  | đơn hoặc hẹp trong đôi ，dài ，không ，kèm có giả  của  | đơn /hẹp trong đôi 、dài 、giả  của tâm video 、không  |
+| bộ  | mỏng sạch ，tự hợp ，ngườigiữa dẫn  | sạch mỏng 、tự hợp 、sạch ngườigiữa  |
+|  | cơ sở gọi ，Tkhu tự ra ，sáng thấy  | cơ sở gọi vật 、tự Tkhu 、sáng  |
+| sáng liên dòng  | hợp 50mmchính mặt video 、mặt ánh 、gọi thấp  và  | — |
 
-### 男性
+### LoạiB：trong kiểu 
 
-| 维度 | 摄影要求 | 提示词 |
+| sáng  | Mô tả | Prompt |
 |---|---|---|
-| 肤色基调 | 真实亚洲都市男性肤色范围：冷白至健康小麦色，允许日晒色差（面部与颈部肤色自然过渡，T区较深、眼周较暗） | 真实亚洲男性肤色、自然日晒色差、面部与颈部真实肤色过渡 |
-| 表面光泽 | T区出油反光（额头/鼻梁高光）、剃须后下颌的微光泽——男性的皮肤光泽来自油脂而非高光粉 | 自然T区出油光泽、真实剃须后面部质感、真实的而非修饰的皮肤反光 |
-| 纹理可见度 | 在50mm镜头、1米距离的拍摄条件下：毛孔粗大明显可见、眉间纹/抬头纹自然出现、胡茬根部与毛孔纹理清晰 | 粗大可见的真实毛孔、自然的眉间纹/抬头纹、胡茬根部毛孔清晰可见 |
-| 瑕疵保留 | 保留但不强调：旧痘印、浅色疤痕、日晒斑、剃须小伤口痕迹——这些不是缺陷，是"这一个"人的识别特征 | 保留旧痘印/浅色疤痕、真实的日晒斑、人物的不可替代特征 |
-| 严禁 | 过度磨皮至女性化光滑、蜡像假面、零毛孔CG感、胡茬P掉痕迹 | — |
+| mặt bộ kết cấu  |  và nhưng không thất nhân ，mặt đầy độ giữa ，dưới giữa kèm phương ，chỉnh thể nhưng không  |  và không thất nhân  của 、giữa mặt 、giữa kèm phương  của dưới  |
+|  | kiểu ，mở ， và có ánh ，tâm video cho người1 loại "anh ấyở thật " của  | kiểu 、mở 、 và có ánh  của 、thật  của tâm video  |
+| bộ  | dày giữa ，đường  và ，tự trạng tháidưới nhân ，không ý  | dày mỏng giữa 、 và đường 、tự nhân  |
+|  | /giữa cơ sở gọi ，，lý tự thấy  | /giữa vật 、、tự thấy  của lý  |
+| sáng liên dòng  | hợp 85mmgiữa dài 、ánh 、gọi ánh  | — |
+
+### LoạiC：tạo kiểu 
+
+| sáng  | Mô tả | Prompt |
+|---|---|---|
+| mặt bộ kết cấu  | phútdẫn ，cao ，dưới nhân rộng có lực ，ra ，mặt bộ ——1 bức "phong " của  | phútdẫn  của mặt bộ 、cao 、rộng có lực  của dưới nhân 、ra 、 của  |
+|  | ，kiểu dài ，tâm video ，có đã nhưng không trùng  | 、dài kiểu 、có lực  của tâm video 、có việc nhưng không trùng  của  |
+| bộ  | dạng mỏng ，đường sạch ，tự hợp trạng tháidưới  | mỏng sạch dạng 、tự  |
+|  | /nhỏ vật ，lý dẫn ，thấy tháng（nhân 、thức ），thật thấy  | nhỏ vật 、dẫn  của lý 、tự  của tháng、thật thấy  của  |
+| sáng liên dòng  | hợp 35mm、ánh 、gọi cao đúng tỷ  | — |
+
+### LoạiD：ánh Thiếu niênkiểu 
+
+| sáng  | Mô tả | Prompt |
+|---|---|---|
+| mặt bộ kết cấu  |  và ，，mặt đầy ，dưới ngắn ，chưa toàn đi Thiếu niên |  và 、、đầy mặt 、Thiếu niênchưa  của mặt  |
+|  | lớn sạch  của kiểu ，mở ，dẫn trực tiếp ，không  của tâm video cách thức | lớn sạch  của kiểu 、mở 、dẫn trực tiếp  của 、không thiết  của tâm video  |
+| bộ  | dày ，đường  và ，tự trạng tháidưới phútmở ，tự  | dày  và dạng 、tự động 、tự  |
+|  | cơ sở gọi ，，ánh ，mấy không tháng | vật 、、ánh  |
+| sáng liên dòng  | hợp 35mm、sung tự ánh 、cao gọi dẫn nhanh vật  | — |
+
+### LoạiE：kiểu 
+
+| sáng  | Mô tả | Prompt |
+|---|---|---|
+| mặt bộ kết cấu  | rộng ，bổ đầu rộng ，dưới rộng có lực ，mặt bộ có "hàm " của ——、phong 、sinh hoạt  | rộng 、rộng bổ đầu 、rộng có lực  của dưới 、sinh hoạt  của mặt  |
+|  | đơn /trong đôi ，kiểu nhỏ dài ，có  của dẫn  và  của nghĩa ，tâm video trực tiếp không  | đơn /trong đôi 、nhỏ dài kiểu 、dẫn giữa có nghĩa  của 、trực tiếp không  của tâm video  |
+| bộ  | dạng dày ，đường không phútdẫn ，tự trạng tháidưới bức ，có /lưu dưới  của sinh hoạt  | dày dạng 、 và không phútdẫn  của đường 、tự bức 、ngày thường sinh hoạt  |
+|  | nhỏ /cơ sở gọi ，dẫn  của ngày vật （cổng /cổng ），lý dày trùng ，lớn thấy ，thể có cũ  | nhỏ /vật 、dẫn ngày vật 、thật  của dày trùng lý 、lớn thấy  của 、tự cũ  |
+| sáng liên dòng  | hợp 35mm、đầu tự ánh 、thật cao phụ vật  | — |
 
 ---
 
-## 五、身体——站姿、体态与摄影机的关系
+## 4、——sáng máy dưới  của 
 
-### 女性
+> thật ngườiđều  của không là tham số，là ánh đường ở thật trên  của thi ：phụ 、、đều xuất với tự  của 、phút、vật  và tháng。
 
-| 维度 | 摄影要求 | 提示词 |
+### nữ 
+
+| độ  | sáng Yêu cầu | Prompt |
 |---|---|---|
-| 身高 | 角色设定指定，默认范围158-172cm（涵盖中国都市女性主流身高区间） | {身高}cm tall、{身高对应的自然身体比例} |
-| 身体比例 | 真实亚洲女性身体比例，不过度拉长腿部，头身比接近现实（约6.5-7.5头身） | 真实的亚洲女性身体比例、自然的头身比、不拉长不缩小的写实身形 |
-| 站姿 | "被拍到时"的自然站姿——重心偏一条腿、骨盆轻微倾斜、肩膀不完全水平、手臂自然垂落或微曲——杜绝模特对称站姿 | 重心偏移的自然站姿、骨盆轻微倾斜、真实的而非摆拍的站立姿态 |
-| 肩颈 | 自然肩颈线条，有斜方肌的自然存在，锁骨清晰但不过分突出，颈部前倾角度符合日常体态 | 自然肩颈线条、真实斜方肌、自然颈部体态、真实的锁骨 |
-| 手部 | 自然手型，指关节可见，指甲干净无需美甲，手掌有真实纹路，手背可见浅表血管 | 自然手型、可见指关节、真实手掌纹路、自然手背 |
-| 严禁 | 模特对称站姿、过度拉长腿部、直角肩、天鹅颈过度美化、手指纤细至失真 | — |
+| vật cơ sở gọi  | thật đều nữ vật khí ：đến ，vật không （、），nàylà thật người của chứng liệu  | thật nữ vật 、tự vật không 、tự 、thật người |
+| bảng mặt ánh  | phi ánh phi ánh ——Tkhu tự ra  của phụ ánh 、cao điểm  của tự cao ánh ，là "hoạt đang " của tượng  | tự ánh 、Tkhu thật ra phụ ánh 、hoạt đang phi tạo mô  của  |
+| lý thấy độ  | ở 50mmỐng kính、1 của mục tệp dưới ：trên phương thấy 、2sạch 、gian tự lưu ở  | thấy  của thật 、thật lý 、tự  của gian  |
+| lưu lưu  | lưu lưu nhưng không gọi ：0nhỏ 、vật 、cũ 、bảng ——nàynhững là "người" của chứng liệu ，không là cần cần lời  của bug | lưu lưu thật nhỏ 、tự vật 、thật người của không đẹp  |
+|  | 、giả mặt 、0、toàn ánh 、AI | — |
 
-### 男性
+### nam 
 
-| 维度 | 摄影要求 | 提示词 |
+| độ  | sáng Yêu cầu | Prompt |
 |---|---|---|
-| 身高 | 角色设定指定，默认范围170-185cm（涵盖中国都市男性主流身高区间） | {身高}cm tall、{身高对应的自然身体比例} |
-| 身体比例 | 真实亚洲男性身体比例，不过度拉长腿部，头身比接近现实（约7-7.5头身） | 真实的亚洲男性身体比例、自然的头身比、写实而非漫画身形 |
-| 站姿 | "被叫住回头"那一刻的自然体态——重心偏一条腿、肩线微微倾斜、手臂自然下垂或在口袋/叉腰（非摆拍） | 被叫住回头的自然体态、重心自然偏移、真实的日常站姿 |
-| 肩颈 | 肩宽自然（不故意展肩），斜方肌自然存在，颈部前倾角在日常范围内，喉结可见 | 自然肩宽不做作、真实斜方肌、日常颈部体态、可见喉结 |
-| 手部 | 骨节分明，手指比例自然，指甲短而干净，手掌有使用痕迹（握笔茧、劳动痕迹），手背血管可见 | 骨节分明的自然手型、真实手掌使用痕迹、可见手背血管 |
-| 严禁 | 健美式展背、军人式立正站姿、过度拉长腿部比例、手指粗短或细长至失真 | — |
+| vật cơ sở gọi  | thật đều nam vật khí ：đến nhỏ vật ，ngày vật （mặt bộ bộ vật tự ，Tkhu 、） | thật nam vật 、tự ngày vật 、mặt bộ bộ thật vật  |
+| bảng mặt ánh  | Tkhu ra phụ ánh （bổ đầu /cao ánh ）、buộc sau dưới  của ánh ——nam  của ánh tự phi cao ánh  | tự Tkhu ra ánh 、thật buộc sau mặt bộ 、thật  của phi  của phụ ánh  |
+| lý thấy độ  | ở 50mmỐng kính、1 của mục tệp dưới ：lớn dẫn thấy 、gian /đầu tự ra 、bộ lý sạch  | lớn thấy  của thật 、tự  của gian /đầu 、bộ sạch thấy  |
+| lưu lưu  | lưu lưu nhưng không gọi ：cũ 、vật 、ngày 、buộc nhỏ cổng ——nàynhững không là ，là "nàymột "người của trưng khác  | lưu lưu cũ /vật 、thật  của ngày 、người của không  |
+|  | độ đến nữ hóa ánh 、giả mặt 、0CG、Pbỏ  | — |
 
 ---
 
-## 六、发型——真实的头发在镜头前
+## 5、thể ——trạm 、thể thái sáng máy  của liên dòng 
 
-> 真人都市的头发不是建模发丝，而是有重量、有油脂、会被风吹乱、会贴在出汗的额头上、会在逆光中变成碎金色轮廓线的真实头发。
+### nữ 
 
-### 女性
-
-| 维度 | 摄影要求 | 提示词 |
+| độ  | sáng Yêu cầu | Prompt |
 |---|---|---|
-| 发色 | 自然黑/深棕/栗棕，允许阳光下的自然棕红色反光，禁止非自然染色 | 自然黑发/深棕发、阳光下的暖棕反光、原生健康发色 |
-| 发长与造型 | 按角色设定指定：齐耳短发/锁骨发/中长发/及腰长发/高马尾/低马尾/丸子头/慵懒盘发。基础状态为自然垂落，不加发饰、不编发 | {发长}、自然垂落/束起、无发饰、无编发、无夸张造型 |
-| 发质与纹理 | 真实的头发纹理——不是根根分明的CG发丝，而是：发缕有自然的聚合与分离、碎发飘散在脸颊和颈后、发尾有自然分叉和毛躁、被光照射时呈半透明暖色轮廓 | 真实发缕的聚合与分离、自然飘散的碎发、发尾自然毛躁、逆光下的碎发轮廓光 |
-| 头皮可见 | 分缝处自然可见头皮，发际线有婴儿碎发，不是假发套的整齐边界 | 分缝处自然头皮可见、发际线的婴儿碎发、真实的而非假发套的发际线 |
-| 严禁 | CG发丝根根分明、假发套般整齐划一、无碎发、无风感僵硬、荧光染发 | — |
+| cao  | Nhân vậtthiết nối nối ，Mặc địnhkhí 158-172cm（giữa đều nữ chính cao khu gian ） | {cao }cm tall、{cao đúng hồi  của tự thể Tỷ lệ} |
+| thể Tỷ lệ | thật nữ thể Tỷ lệ，không độ dài bộ ，đầu tỷ tiếp （6.5-7.5đầu ） | thật  của nữ thể Tỷ lệ、tự  của đầu tỷ 、không dài không nhỏ nhỏ  của dạng  |
+| trạm  | "đến " của tự trạm ——trùng 1 mục 、、không toàn 、tay tự hoặc ——mô đúng trạm  | trùng  của tự trạm 、、thật  của phi  của trạm lập thái  |
+|  | tự đường mục ，có phương  của tự lưu ở ，sạch nhưng không phútra ，bộ trước nhân độ hợp ngày thường thể thái  | tự đường mục 、thật phương 、tự bộ thể thái 、thật  của  |
+| tay bộ  | tự tay kiểu ，liên tiết thấy ，không cần đẹp ，tay có thật đường ，tay thấy bảng  | tự tay kiểu 、thấy liên tiết 、thật tay đường 、tự tay  |
+|  | mô đúng trạm 、độ dài bộ 、trực nhân 、ngàyđộ đẹp hóa 、tay đến thất thật  | — |
 
-### 男性
+### nam 
 
-| 维度 | 摄影要求 | 提示词 |
+| độ  | sáng Yêu cầu | Prompt |
 |---|---|---|
-| 发色 | 自然黑/深棕，允许阳光下暖棕反光，允许两鬓自然斑白（中年角色），禁止非自然染色 | 自然黑发/深棕发、阳光下的暖棕反光、自然两鬓斑白（如需） |
-| 发长与造型 | 按角色设定指定：板寸/利落短发/微分碎盖/中短发/及肩发。基础状态为自然发型，不用发胶硬定型 | {发长}、自然发型、无明显发胶定型痕迹、无夸张造型 |
-| 发质与纹理 | 真实的男性头发纹理——短发状态下头皮隐约可见、发丝有自然走向（发旋方向）、鬓角与胡茬自然过渡、额头碎发自然散落 | 真实短发纹理、头发自然走向、鬓角与胡茬的自然过渡、额头自然碎发 |
-| 头皮可见 | 短发/板寸状态下头皮清晰可见，发际线自然（可能有轻微后退），头顶发旋自然 | 短发状态下头皮可见、自然发际线、真实发旋 |
-| 严禁 | CG发丝根根分明、假发感、发胶硬壳感、不自然的整齐边界 | — |
+| cao  | Nhân vậtthiết nối nối ，Mặc địnhkhí 170-185cm（giữa đều nam chính cao khu gian ） | {cao }cm tall、{cao đúng hồi  của tự thể Tỷ lệ} |
+| thể Tỷ lệ | thật nam thể Tỷ lệ，không độ dài bộ ，đầu tỷ tiếp （7-7.5đầu ） | thật  của nam thể Tỷ lệ、tự  của đầu tỷ 、phi vẽ dạng  |
+| trạm  | "trả đầu "1  của tự thể thái ——trùng 1 mục 、đường 、tay tự dưới hoặc ở cổng /（phi ） | trả đầu  của tự thể thái 、trùng tự 、thật  của ngày thường trạm  |
+|  | rộng tự （không ý ），phương tự lưu ở ，bộ trước nhân ở ngày thường khí trong ，kết thấy  | tự rộng không tác vụ 、thật phương 、ngày thường bộ thể thái 、thấy kết  |
+| tay bộ  | tiết phútdẫn ，tay Tỷ lệtự ，ngắn ，tay có hàm （、động ），tay thấy  | tiết phútdẫn  của tự tay kiểu 、thật tay hàm 、thấy tay  |
+|  | đẹp thức 、ngườithức lập chính trạm 、độ dài bộ Tỷ lệ、tay ngắn hoặc dài đến thất thật  | — |
 
 ---
 
-## 七、基础服装——被穿过的那一件
+## 6、phát kiểu ——thật  của đầu phát ở Ống kínhtrước 
 
-> 真人都市的基础服装不是"打底款"，而是"挂在椅背上、穿过好几次、有身体记忆的那件衣服"。
+> thật ngườiđều  của đầu phát không là tạo mô phát ，là có trùng lượng 、có 、sẽ phong 、sẽ ở ra  của bổ đầu trên 、sẽ ở ánh giữa tạo vật đường  của thật đầu phát 。
 
-### 女性基础服装
+### nữ 
 
-素色基础款上衣（圆领T恤/棉质衬衫/针织开衫）+ 基础款下装（直筒牛仔裤/棉质长裤/及膝半裙），颜色以黑/白/灰/米/藏蓝/卡其等都市日常基础色为主。面料可见自然纹理（棉的柔软褶皱、牛仔的斜纹肌理、针织的线圈纹理）。无品牌标识、无大面积印花、无装饰性设计。
+| độ  | sáng Yêu cầu | Prompt |
+|---|---|---|
+| phát vật  | tự //，ánh dưới  của tự vật phụ ánh ，Nghiêm cấmphi tự vật  | tự phát /phát 、ánh dưới  của phụ ánh 、gốc sinh phát vật  |
+| phát dài tạo kiểu  | theo Nhân vậtthiết nối nối ：ngắn phát /phát /giữa dài phát /dài phát /cao đuôi /thấp đuôi /đầu /đĩa phát 。cơ sở trạng tháitự ，không cộng phát 、không chỉnh phát  | {phát dài }、tự /、không phát 、không chỉnh phát 、không bức tạo kiểu  |
+| phát lý  | thật  của đầu phát lý ——không là phútdẫn  của CGphát ，là ：phát có tự  của hợp phút、phát ở  và sau 、phát đuôi có tự phút và 、ánh nửa dẫn vật  | thật phát  của hợp phút、tự  của phát 、phát đuôi tự 、ánh dưới  của phát ánh  |
+| đầu thấy  | phútxử tự thấy đầu ，phát đường có nhi phát ，không là giả phát  của chỉnh giới  | phútxử tự đầu thấy 、phát đường  của nhi phát 、thật  của phi giả phát  của phát đường  |
+|  | CGphát phútdẫn 、giả phát chỉnh 1 、không phát 、không phong 、ánh phát  | — |
 
-### 男性基础服装
+### nam 
 
-素色基础款上衣（圆领T恤/亨利领长袖/棉质衬衫）+ 基础款下装（直筒牛仔裤/棉质休闲裤），颜色以黑/白/灰/藏蓝/卡其等都市日常基础色为主。面料可见自然纹理（棉质的洗涤后微皱、牛仔的落色与磨损、衬衫领口的自然卷曲）。无品牌标识、无大面积印花、无装饰性设计。
-
-### 着装统一规则
-
-- 基础服装不是"打底"——它自身就是完整的日常穿着，只是去除了一切装饰性元素
-- 服装有"穿过"的痕迹：衣摆自然微皱、袖口有穿脱痕迹、膝盖/手肘处有轻微的拉伸纹理
-- 覆盖范围：除面部/颈部/手部外基本覆盖，日常都市着装覆盖度，无过度裸露
-- 四角度服装款式、颜色、质地完全一致，呈现为同一件衣服在不同角度下的摄影记录
+| độ  | sáng Yêu cầu | Prompt |
+|---|---|---|
+| phát vật  | tự /，ánh dưới phụ ánh ，2tự （Trung niênNhân vật），Nghiêm cấmphi tự vật  | tự phát /phát 、ánh dưới  của phụ ánh 、tự 2（như cần ） |
+| phát dài tạo kiểu  | theo Nhân vậtthiết nối nối ：/ngắn phát /phút/giữa ngắn phát /phát 。cơ sở trạng tháitự phát kiểu ，không hàm phát nối kiểu  | {phát dài }、tự phát kiểu 、không dẫn phát nối kiểu 、không bức tạo kiểu  |
+| phát lý  | thật  của nam đầu phát lý ——ngắn phát trạng tháidưới đầu thấy 、phát có tự chạy （phát phương ）、nhân tự 、bổ đầu phát tự  | thật ngắn phát lý 、đầu phát tự chạy 、nhân  của tự 、bổ đầu tự phát  |
+| đầu thấy  | ngắn phát /trạng tháidưới đầu sạch thấy ，phát đường tự （thể có sau đăng ），đầu phát tự  | ngắn phát trạng tháidưới đầu thấy 、tự phát đường 、thật phát  |
+|  | CGphát phútdẫn 、giả phát 、phát 、không tự  của chỉnh giới  | — |
 
 ---
 
-## 八、人物肖像系列——四角度摄影规范
+## 7、cơ sở phục —— của 1 tệp 
 
-> 以下不是3D建模的"四视图turnaround"，而是同一人物在**同一次棚拍**中的四个摄影角度。光影、服装、被摄者状态必须呈现为连续的拍摄记录。
+> thật ngườiđều  của cơ sở phục không là "mở "，là "ở trên 、tốt mấy lần 、có thể  của tệp phục "。
 
-### 视图定义
+### nữ cơ sở phục 
 
-| 位置 | 角度 | 景别 | 摄影要求 | 提示词 |
+vật cơ sở trên （T//mở ）+ cơ sở dưới （trực /dài /nửa ），vật /////đều ngày thường cơ sở vật chính 。mặt thấy tự lý （ của 、 của lý 、 của đường lý ）。không biểu trưng 、không lớn mặt 、không thiết tính 。
+
+### nam cơ sở phục 
+
+vật cơ sở trên （T/dài /）+ cơ sở dưới （trực /），vật ////đều ngày thường cơ sở vật chính 。mặt thấy tự lý （ của sau 、 của vật 、cổng  của tự ）。không biểu trưng 、không lớn mặt 、không thiết tính 。
+
+### đang thống 1 
+
+- cơ sở phục không là "mở "——nó tự thì là chỉnh  của ngày thường đang ，chỉ là đi bỏ 1 
+- phục có "" của ：tự 、cổng có 、/tay xử có  của lý 
+- khí ：bỏ mặt bộ /bộ /tay bộ ngoài cơ sở sách ，ngày thường đều đang độ ，không độ 
+- 4nhân độ phục thức 、vật 、địa toàn 1 ，cùng 1 tệp phục ở không cùng nhân độ dưới  của sáng lục 
+
+---
+
+## 8、ngườidòng hàng ——4nhân độ sáng 
+
+> dưới không là 3Dtạo mô  của "4video ảnh turnaround"，là cùng 1 ngườiở **cùng 1 lần **giữa  của 4mục sáng nhân độ 。Ánh sáng、phục 、giả trạng tháiBắt buộc của lục 。
+
+### video ảnh nối nghĩa 
+
+| vị trí trí  | nhân độ  | Cỡ cảnh | sáng Yêu cầu | Prompt |
 |---|---|---|---|---|
-| 左一 | 正面近景 | 头顶至锁骨上缘 | 面部占据画面60%以上。镜头焦段50mm或85mm，浅景深（f/2.8-f/4），焦点在瞳孔。光影柔和均匀，眼中有自然高光点。完整呈现发际线到锁骨，不裁切头顶 | portrait closeup, head to collarbone, shallow depth of field, eyes in sharp focus, natural catchlight, live-action photography |
-| 左二 | 正面0° | 全身 | 人物正对摄影机，双臂自然下垂或微曲于身侧。镜头焦段35mm或50mm。景深适中（f/5.6-f/8），人物全身清晰，头顶到脚底完整入画 | front view, full body, facing camera, head to toe complete, live-action full body portrait |
-| 右二 | 右侧90° | 全身 | 人物侧对摄影机，呈现纯侧轮廓。鼻梁、唇形、下颌、肩背、腿部的侧面轮廓清晰可辨。头发侧面状态自然。头顶到脚底完整入画 | profile view, full body, side angle 90 degrees, head to toe complete, natural side profile |
-| 右一 | 后方180° | 全身 | 人物背对摄影机。呈现后脑发型、背部体态、脚后跟。后颈发际线、耳后碎发、衣领后侧自然可见。头顶到脚底完整入画 | back view, full body, rear angle 180 degrees, head to toe complete, live-action back portrait |
+| trái 1  | chính mặt Cận cảnh (close-up) | đầu đến trên  | mặt bộ liệu vẽ mặt 60%trên 。Ống kínhđoạn 50mmhoặc 85mm，bối （f/2.8-f/4），điểm ở 。Ánh sáng và ，giữa có tự cao ánh điểm 。chỉnh phát đường đến ，không đầu  | portrait closeup, head to collarbone, shallow depth of field, eyes in sharp focus, natural catchlight, live-action photography |
+| trái 2 | chính mặt 0° | toàn  | ngườichính đúng sáng máy ，đôi tự dưới hoặc với 。Ống kínhđoạn 35mmhoặc 50mm。bối giữa （f/5.6-f/8），ngườitoàn sạch ，đầu đến chỉnh vào vẽ  | front view, full body, facing camera, head to toe complete, live-action full body portrait |
+| phải 2 | phải 90° | toàn  | ngườiđúng sáng máy ，thuần 。、dạng 、dưới 、、bộ  của mặt sạch 。đầu phát mặt trạng tháitự 。đầu đến chỉnh vào vẽ  | profile view, full body, side angle 90 degrees, head to toe complete, natural side profile |
+| phải 1  | sau phương 180° | toàn  | ngườiđúng sáng máy 。sau phát kiểu 、bộ thể thái 、sau 。sau phát đường 、sau phát 、sau tự thấy 。đầu đến chỉnh vào vẽ  | back view, full body, rear angle 180 degrees, head to toe complete, live-action back portrait |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 摄影要求 |
+| dự án | sáng Yêu cầu |
 |---|---|
-| 布局 | 同一画面从左至右并排四个角度，间距均匀，无重叠。呈现为一张"选角照/人物参考板"的摄影排版 |
-| 背景 | 中灰无缝背景纸，色值约 #B0B0B0，无接缝、无渐变、无光斑、无投影。背景纸的轻微肌理可见，证明这是实拍而非渲染 |
-| 站姿 | "被摄影师要求'站直，自然一点'"的站姿——不是立正，不是模特pose，而是日常站立时被突然要求不动的瞬间 |
-| 一致性 | 同一人物、同一次拍摄、同一服装、同一光影条件——四个角度呈现的是同一个人的连续摄影记录。识别锚点：颌骨轮廓、耳廓形状、发际线走向、站姿习惯 |
-| 面部表情 | 中性微表情——被拍摄者面对摄影机时的自然状态，不刻意微笑、不刻意严肃。眼睛里有"看镜头"的微弱自觉 |
-| 光线 | 摄影棚标准柔光设置：前方大型柔光箱主光 + 双侧补光板反射。光影柔和、方向明确、无硬阴影、无阴阳脸。光比约1:2至1:3，保留面部立体感 |
-| 画面比例 | 建议 4:1 或 16:4 宽幅 |
+| cục  | cùng 1 vẽ mặt từ trái đến phải nhất sắp 4mục nhân độ ，gian ，không trùng 。1 bức "chọn nhân /ngườitham chiếu" của sáng sắp bản  |
+| bối  | giữa không bối ，vật giá trị  #B0B0B0，không tiếp 、không 、không ánh 、không sáng 。bối  của lý thấy ，chứng dẫn nàylà phi  |
+| trạm  | "sáng Yêu cầu'trạm trực ，tự 1 điểm '" của trạm ——không là lập chính ，không là mô pose，là ngày thường trạm lập Yêu cầukhông động  của gian  |
+| 1  | cùng 1 người、cùng 1 lần 、cùng 1 phục 、cùng 1 Ánh sángmục tệp ——4mục nhân độ  của là cùng một người của sáng lục 。trưng khác điểm ：、dạng trạng 、phát đường chạy 、trạm  |
+| mặt bộ bảng tình  | giữa bảng tình ——giả mặt đúng sáng máy  của tự trạng thái，không ý 、không ý 。có "xem Ống kính" của tự  |
+| ánh đường  | sáng biểu ánh cài đặt：trước phương lớn kiểu ánh chính ánh  + đôi bổ ánh phụ 。Ánh sáng và 、phương dẫn 、không sáng 、không 。ánh tỷ 1:2đến 1:3，lưu lưu mặt bộ lập thể  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 4:1 hoặc  16:4 rộng  |
 
 ---
 
-## 九、提示词模板
+## 9、Promptmô 
 
-{性别}真人都市人物肖像系列，真人实拍摄影，棚拍柔光，中灰无缝背景纸，人物参考板排版，
+{khác }thật ngườiđều ngườidòng hàng ，Người Thật Thực Tếsáng ，ánh ，giữa không bối ，ngườitham chiếusắp bản ，
 character portrait series, live-action photography, studio soft lighting, seamless grey backdrop, character reference sheet,
-同一画面从左至右并排：近景特写+正面全身+侧面全身+背面全身，
-{面孔类型描述：脸型、眼型、鼻型、唇型、整体气质}、原生素颜状态、无妆容痕迹或仅极淡日常妆、
-{肤色描述}、真人皮肤质感、真实皮肤毛孔纹理、自然皮肤光泽、非磨皮非硅胶感、
-{身高描述}、真实亚洲{男/女}性身体比例、自然的头身比、真实日常站姿、重心偏移而非立正、
-{发型描述}、真实发质纹理、自然碎发与发缕、发际线自然过渡、逆光下发丝半透明感、
-{基础服装描述：素色基础款上衣+基础款下装}、{颜色}、面料真实纹理可见、自然的衣物穿着褶皱、无logo无印花无装饰、
-四角度呈现同一人物的连续棚拍摄影记录、
-中灰无缝背景纸 #B0B0B0、均匀棚拍柔光、光比柔和、无硬阴影、无死黑、
-画面干净无文字无水印无签名无边框、
-真人写实摄影画质、35mm全画幅摄影质感、非3D非渲染非CG非手绘
+cùng 1 vẽ mặt từ trái đến phải nhất sắp ：Cận cảnh (close-up)Đặc tả (close-up)+chính mặt toàn +mặt toàn +mặt toàn ，
+{mặt LoạiMô tả：kiểu 、kiểu 、kiểu 、kiểu 、chỉnh thể }、gốc sinh trạng thái、không dung hoặc chỉ ngày thường 、
+{vật Mô tả}、thật người、thật lý 、tự ánh 、phi phi 、
+{cao Mô tả}、thật {nam /nữ }thể Tỷ lệ、tự  của đầu tỷ 、thật ngày thường trạm 、trùng phi lập chính 、
+{phát kiểu Mô tả}、thật phát lý 、tự phát phát 、phát đường tự 、ánh dưới phát nửa dẫn 、
+{cơ sở phục Mô tả：vật cơ sở trên +cơ sở dưới }、{vật }、mặt thật lý thấy 、tự  của đang 、không logokhông không 、
+4nhân độ cùng 1 người của sáng lục 、
+giữa không bối  #B0B0B0、ánh 、ánh tỷ  và 、không sáng 、không 、
+vẽ mặt không tài chữ không không ký tên không 、
+thật ngườisáng vẽ 、35mmtoàn vẽ sáng 、phi 3Dphi phi CGphi tay 
 
 ---
 
-## 十、约束规则
+## 10、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须是「原生素颜状态」或仅极淡日常妆（无色唇膏、透明眉胶级别），禁止可见妆容 |
-| R2 | 必须声明基础服装为「素色基础款日常着装」，无任何品牌标识、印花、图案、装饰性设计 |
-| R3 | 必须声明「无发饰、无配饰、无首饰、无头饰、无纹身贴纸」 |
-| R4 | 必须指定「中灰无缝背景纸，无场景、无光斑、无渐变」 |
-| R5 | 必须指定「四角度为同一人物的连续摄影记录」，面容/体型/发型/服装/光影完全呈现为同一次拍摄 |
-| R6 | 全身角度必须从头顶到脚底完整入画，严禁裁切身体任何部位 |
-| R7 | 近景特写必须从头顶到锁骨上缘完整入画，严禁裁切头顶 |
-| R8 | 必须声明「真人实拍摄影 + 非3D非渲染非CG」核心锚定 |
-| R9 | 必须声明「真实皮肤质感 + 非磨皮 + 非硅胶假面」 |
-| R10 | 站姿必须声明为「真实日常体态 + 重心偏移的非对称站姿」 |
+| R1 | Bắt buộclà 「gốc sinh trạng thái」hoặc chỉ ngày thường （không vật 、dẫn cấp khác ），Nghiêm cấmthấy dung  |
+| R2 | Bắt buộcthanh dẫn cơ sở phục 「vật cơ sở ngày thường đang 」，không biểu trưng 、、ảnh 、thiết tính  |
+| R3 | Bắt buộcthanh dẫn 「không phát 、không nối 、không 、không đầu 、không 」 |
+| R4 | Bắt buộcnối 「giữa không bối ，không Bối cảnh、không ánh 、không 」 |
+| R5 | Bắt buộcnối 「4nhân độ cùng 1 người của sáng lục 」，mặt dung /thể kiểu /phát kiểu /phục /Ánh sángtoàn cùng 1 lần  |
+| R6 | toàn nhân độ Bắt buộctừ đầu đến chỉnh vào vẽ ，thể bộ vị trí  |
+| R7 | Cận cảnh (close-up)Đặc tả (close-up)Bắt buộctừ đầu đến trên chỉnh vào vẽ ，đầu  |
+| R8 | Bắt buộcthanh dẫn 「Người Thật Thực Tếsáng  + phi 3Dphi phi CG」nối  |
+| R9 | Bắt buộcthanh dẫn 「thật  + phi  + phi giả mặt 」 |
+| R10 | trạm Bắt buộcthanh dẫn 「thật ngày thường thể thái  + trùng  của phi đúng trạm 」 |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 严禁「3D渲染 / 3D建模 / CG / UE引擎 / Blender / PBR材质 / 次世代建模 / 8K建模」等一切CG术语 |
-| X2 | 严禁「2D手绘 / 插画 / 动画 / 二次元 / 漫画 / Q版」等一切非摄影媒介 |
-| X3 | 严禁「过度磨皮 / 塑料假面 / 零毛孔硅胶脸 / 全脸均匀哑光 / AI感平滑皮肤」 |
-| X4 | 严禁「模特对称站姿 / 军人式立正 / 走秀pose / 夸张动态 / 大幅度肢体动作」 |
-| X5 | 严禁「浓妆 / 彩妆 / 烟熏妆 / 红唇 / 假睫毛 / 美瞳 / 修容过度」 |
-| X6 | 严禁「复杂场景 / 户外背景 / 渐变背景 / 图案背景 / 道具干扰」 |
-| X7 | 严禁「过度拉长腿部 / 漫画式头身比 / 不真实的瘦身效果」 |
-| X8 | 严禁「古风 / 古装 / 汉服 / 仙侠 / 武侠 / 民国 / 赛博朋克 / 科幻」等非当代都市元素 |
-| X9 | 严禁「裸体 / 暴露 / 透视 / 低俗暗示 / 擦边 / 暴力血腥」 |
-| X10 | 严禁「水印 / 文字 / 签名 / LOGO / 边框 / AI生成工具痕迹」 |
-| X11 | 严禁「非真人质感的皮肤与面部——这是真人都市风格的最高红线」 |
+| X1 | 「3D / 3Dtạo mô  / CG / UE / Blender / PBR / lần tạo mô  / 8Ktạo mô 」1 CGngữ  |
+| X2 | 「2Dtay  / vẽ  / động vẽ  / 2lần  / vẽ  / Qbản 」1 phi sáng  |
+| X3 | 「độ  / giả mặt  / 0 / toàn ánh  / AI」 |
+| X4 | 「mô đúng trạm  / ngườithức lập chính  / chạy pose / bức động thái  / lớn độ thể động tác vụ 」 |
+| X5 | 「 /  /  /  / giả  / đẹp  / dung độ 」 |
+| X6 | 「lời Bối cảnh / dùng ngoài bối  / bối  / ảnh bối  / Đạo cụ」 |
+| X7 | 「độ dài bộ  / vẽ thức đầu tỷ  / không thật  của hiệu quả 」 |
+| X8 | 「phong  /  / phục  /  /  / dân  /  / 」phi khi đều  |
+| X9 | 「thể  /  / video  / thấp nhở  /  / lực 」 |
+| X10 | 「 / tài chữ  / ký tên  / LOGO /  / AItạocụ 」 |
+| X11 | 「phi thật người của mặt bộ ——nàylà thật ngườiđều Phong cách của tối đa đường 」 |

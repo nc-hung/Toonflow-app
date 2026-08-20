@@ -1,89 +1,89 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 心理博弈 — 定义心理博弈在分镜表中的景别博弈控制、运镜心理映射、时长张力、镜头合并与转场逻辑。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · lý  — nối nghĩa lý ở Bảng phân cảnhgiữa  của Cỡ cảnhsát chép 、Góc quaylý 、Thời lượngbức lực 、Ống kínhhợp nhất chuyển trường logic。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 心理博弈 · 技法参考
+# Bảng phân cảnhviệc tay thức  · lý  · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供心理博弈叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **特写是读心工具** — 心理博弈叙事中特写的使用频率高于其他类型。特写用于捕捉角色"嘴上说的和心里想的不一样"的微表情破绽：眼神一瞬间的飘移、嘴角微不可察的上扬、瞳孔的收缩
-- **中景是博弈主场** — 对话博弈段落的主力景别是中景/近景，确保观众同时看到角色的表情和肢体语言。纯特写丢失肢体信息，纯远景丢失表情信息
-- **远景交代格局** — 远景用于交代博弈的"格局"：谁和谁在一起、第三方在哪里、空间中的权力位置关系
-- **大特写是线索投放** — 大特写（指尖颤抖/瞳孔变化/嘴角一闪而过的抽搐）用于向观众投放关键线索：这个人在说谎、这个人发现了什么、这个人即将行动
-- **定场要暗藏信息** — 博弈叙事的定场镜头不只交代空间，要在定场中就传递"博弈场"的属性：密闭/开阔、有无第三者、退路在哪里
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà lý việc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **默认静止，静止即对峙** — 65% 以上镜头应为静止机位。心理博弈中镜头的静止传递"两个人在较量，谁先动谁先露破绽"的对峙感
-- **极缓推 = 逼近/施压** — 比正常缓推更慢的速度，暗示"真相在被逼近"或"一方正在施加心理压力"
-- **缓拉 = 揭示/发现** — 从角色缓慢拉开揭示角色不知道的信息（有人在身后/证据在桌上/另一个角色的反应）
-- **微妙偏移 = 天平倾斜** — 静止画面中镜头极缓地偏向一侧，暗示博弈态势正在改变
-- **快切仅用于反转** — 反转揭底瞬间允许快速景别跳切（中景→特写→大特写），模拟认知震荡。其余段落禁止快切
-
----
-
-## 四、时长把控
-
-- **对话镜头 3-5s** — 博弈对话的正反打节奏稍慢于日常对话。每句话之间的沉默间隔是"双方都在计算"的心理时间
-- **沉默对峙 4-6s** — 无台词的对视/沉默段落需要足够时长，让观众感受到"空气中在发生什么"
-- **微表情特写 2-3s** — 微表情破绽的特写时长要精确：太短观众看不到，太长变成刻意强调
-- **反转瞬间 1-2s** — 底牌翻开的关键反应镜头要短而精准，快到让观众来不及反应就被震到
-- **远景/格局交代 3-4s** — 交代博弈格局的远景不需要太长，信息到位即可
-- **黄金法则：沉默比台词长** — 心理博弈中，两句话之间的沉默应该比话本身更长。沉默是双方在"出牌"之间的博弈
+- **Đặc tả (close-up)là cụ ** — lý việc giữa Đặc tả (close-up) của hàm tần tỷ lệ cao với anh ấyLoại。Đặc tả (close-up)hàm với Nhân vật"trên hướng  của  và nghĩ  của không 1 kiểu " của bảng tình ：1 gian  của 、nhân không  của trên 、 của nhận nhỏ 
+- **Trung cảnh (medium shot)là chính trường ** — đúng lời đoạn  của chính lực Cỡ cảnhlà Trung cảnh (medium shot)/Cận cảnh (close-up)，lưu cùng xem đến Nhân vật của bảng tình  và thể ngữ 。thuần Đặc tả (close-up)thất thể thông tin，thuần Viễn cảnh (extreme wide shot)thất bảng tình thông tin
+- **Viễn cảnh (extreme wide shot)tác vụ khung cục ** — Viễn cảnh (extreme wide shot)hàm với tác vụ  của "khung cục "： và ở 1 、Thứ 3phương ở 、rỗng gian giữa  của thực lực vị trí trí liên dòng 
+- **lớn Đặc tả (close-up)là đường kiếm mở ** — lớn Đặc tả (close-up)（/hóa /nhân 1  của ）hàm với mở liên đường kiếm ：nàymục ngườiở hướng 、nàymục ngườiphát sao、nàymục ngườithi động 
+- **nối trường cần thông tin** — việc  của nối trường Ống kínhkhông chỉ tác vụ rỗng gian ，cần ở nối trường giữa thì truyền "trường " của biệt ：mật /mở 、có không Thứ 3giả 、đăng đường ở 
 
 ---
 
-## 五、镜头合并策略（去 AI 感）
+## 3、Góc quaytiết 
 
-- **对话段落保持正反打** — 与其他类型不同，心理博弈的对话段落需要精确的正反打来传递攻防节奏，不应强行合并为双人镜头。每一次切换都是"球"在两个人之间的传递
-- **博弈回合一组完成** — 一个完整的"攻防回合"（试探→回应→再试探→摊牌）应作为一组镜头整体规划，保持内部节奏的连贯
-- **叙事密度极高** — 心理博弈中每个镜头都必须承载信息（台词潜台词/微表情/肢体线索/空间暗示），不允许纯氛围镜头
-- **导演思维检验** — 写完分镜后自检：每个镜头是否都有"信息层"？观众在这个镜头中能"读到"什么？如果什么都读不到，这个镜头不该存在
-
----
-
-## 六、一镜到底（长镜头合并）
-
-- **适用条件** — 两人在空间中走位变化、权力关系随空间位置转移、从一个信息状态过渡到另一个信息状态
-- **典型场景** — 角色A站起走向窗边（从对等变为俯视）、角色围着桌子走一圈（权力展示）、从会议室走到走廊（从公开到私密）
-- **标注方式** — 在运镜字段写明完整路径（如"一镜到底：角色A起身→缓推跟随到窗前→摇镜带入角色B在座位上的反应→落幅双人构图"），画面描述中交代起幅和落幅
-- **时长放宽** — 博弈长镜头因信息密度持续更新，可突破单镜 6s 上限，但不超过 12s
-- **空间位移即心理位移** — 长镜头中角色的每一步空间移动都应对应心理博弈态势的变化
+- **Mặc địnhTĩnh (static)，Tĩnh (static)đúng ** — 65% trên Ống kínhhồi Tĩnh (static)máy vị trí 。lý giữa Ống kính của Tĩnh (static)truyền "2mục ngườiở lượng ，trước động trước " của đúng 
+- **khuyến  = /nén ** — tỷ chính thường khuyến đổi chậm  của độ ，nhở "thật ở "hoặc "1 phương đang cộng lý nén lực "
+- ** = nhở /phát ** — từ Nhân vậtchậm mở nhở Nhân vậtkhông báo đạo  của thông tin（có ngườiở sau /chứng liệu ở trên /một Nhân vật của phụ hồi ）
+- ** = ngày** — Tĩnh (static)vẽ mặt giữa Ống kínhđịa 1 ，nhở thái đang sửa 
+- **nhanh chỉ hàm với phụ chuyển ** — phụ chuyển gian nhanh Cỡ cảnh（Trung cảnh (medium shot)→Đặc tả (close-up)→lớn Đặc tả (close-up)），mô báo 。đoạn Nghiêm cấmnhanh 
 
 ---
 
-## 七、人物互动设计
+## 4、Thời lượngđem sát 
 
-- **对话就是交锋** — 分镜表中博弈对话的每句台词都应标注"潜台词"或"真实意图"。台词是表面，潜台词才是博弈
-- **微动作即破绽** — 分镜表中每个博弈镜头应为角色设计一个细微的"真实反应"动作：不经意地摸耳朵 = 紧张；手指轻敲桌面 = 计算；喝水 = 拖延时间
-- **谁先开口谁先输** — 博弈对峙中沉默是武器。分镜表应标注"沉默属于谁"——谁在制造沉默（主动施压），谁在承受沉默（被动防守）
-
----
-
-## 八、台词与留白
-
-- **每句话都有两层意思** — 心理博弈中没有"普通台词"。分镜表中的台词应精简且多义，让观众在二刷时发现"原来那句话是这个意思"
-- **沉默比台词更危险** — 博弈中最危险的时刻不是争吵，而是一方突然不说话了。沉默代表"我已经想好了下一步"
-- **回答中的信息量** — 台词的信息量需要精确控制：回答太少 = 可疑（在隐瞒）；回答太多 = 可疑（在掩饰）；回答刚好 = 最可疑（太完美了）
+- **đúng lời Ống kính 3-5s** — đúng lời  của chính phụ mở tiết chậm với ngày thường đúng lời 。câu lời  của gian  của gian cách là "đôi phương đều ở tính toán" của lý thời gian
+- **đúng  4-6s** — Không có lời thoại của đúng video /đoạn cần cần Thời lượng，để đến "rỗng giữa ở phát sinh sao"
+- **bảng tình Đặc tả (close-up) 2-3s** — bảng tình  của Đặc tả (close-up)Thời lượngcần ：ngắn xem không đến ，dài tạo ý gọi 
+- **phụ chuyển gian  1-2s** — mở  của liên phụ hồi Ống kínhcần ngắn ，nhanh đến để không phụ hồi thì đến 
+- **Viễn cảnh (extreme wide shot)/khung cục tác vụ  3-4s** — tác vụ khung cục  của Viễn cảnh (extreme wide shot)không cần cần dài ，thông tinđến vị trí 
+- **thức ：tỷ Lời thoạidài ** — lý giữa ，2câu lời  của gian  của hồi tỷ lời sách đổi dài 。là đôi phương ở "ra " của gian  của 
 
 ---
 
-## 九、转场设计
+## 5、Ống kínhhợp nhất （đi  AI ）
 
-- **默认硬切** — 同场戏内镜头间用硬切，保持博弈节奏的利落与紧张
-- **博弈回合间用短暂黑屏** — 一个博弈回合结束到下一回合开始，可用 0.3-0.5s 的短暂黑屏做"呼吸"，同时暗示"新一轮开始了"
-- **视角切换用硬切** — 从角色A视角切换到角色B视角时，用硬切制造"认知翻转"的冲击感
-- **闪回用快闪** — 博弈中角色突然回忆起关键线索时，用极短的闪回画面（0.5-1s）插入，模拟"灵光一闪"的认知体验
-- **场景切换保持紧张** — 不同场景间的转场不用柔性过渡，保持心理博弈全程的紧绷感。如需缓冲，用一个角色独处的短镜头（思考/计划下一步）做情绪过渡
+- **đúng lời đoạn lưu giữ chính phụ mở ** — anh ấyLoạikhông cùng ，lý  của đúng lời đoạn cần cần  của chính phụ mở truyền tiết ，không hồi thi hợp nhất đôi ngườiỐng kính。1 lần đổi đều là ""ở 2mục người của gian  của truyền 
+- **trả hợp 1 nhóm tạo ** — một chỉnh  của "trả hợp "（tra →trả hồi →tra →）hồi tác vụ 1 nhóm Ống kínhchỉnh thể lập kế hoạch，lưu giữ trong bộ tiết  của 
+- **việc mật độ cao ** — lý giữa mục Ống kínhđều Bắt buộcxuống thông tin（Lời thoạiLời thoại/bảng tình /thể đường kiếm /rỗng gian nhở ），không thuần Không khíỐng kính
+- **đạo diễnkiểm chiếu ** — Phân cảnhsau tự kiểm ：mục Ống kínhlà không đều có "thông tintầng "？ở nàymục Ống kínhgiữa thể "đến "sao？như quả saođều không đến ，nàymục Ống kínhkhông lưu ở 
+
+---
+
+## 6、1 quay đến （dài Ống kínhhợp nhất ）
+
+- **hàm mục tệp ** — 2ngườiở rỗng gian giữa chạy vị trí hóa 、thực lực liên dòng rỗng gian vị trí trí chuyển 、từ một thông tintrạng tháiđến một thông tintrạng thái
+- **kiểu Bối cảnh** — Nhân vậtAtrạm chạy （từ đúng video ）、Nhân vậtkhí đang chạy 1 （thực lực nhở ）、từ sẽ thức chạy đến chạy （từ mở đến mật ）
+- **biểu tâm cách thức** — ở Góc quaychữ đoạn dẫn chỉnh đường dẫn（như "1 quay đến ：Nhân vậtA→khuyến đến trước →Lia máy (pan)kèm vào Nhân vậtBở vị trí trên  của phụ hồi →đôi ngườicấu ảnh "），Mô tả hình ảnhgiữa tác vụ  và 
+- **Thời lượngmở rộng ** — dài Ống kínhMật độ thông tingiữ cập nhật，đơn quay  6s trên hạn ，nhưng không vượt  12s
+- **rỗng gian vị trí lý vị trí ** — dài Ống kínhgiữa Nhân vật của 1 bước rỗng gian động đều hồi đúng hồi lý thái  của hóa 
+
+---
+
+## 7、ngườiđộng thiết tính 
+
+- **đúng lời thì là tác vụ ** — Bảng phân cảnhgiữa đúng lời  của câu Lời thoạiđều hồi biểu tâm "Lời thoại"hoặc "thật ý ảnh "。Lời thoạilà bảng mặt ，Lời thoạilà 
+- **động tác vụ ** — Bảng phân cảnhgiữa mục Ống kínhhồi Nhân vậtthiết tính một  của "thật phụ hồi "động tác vụ ：không đã ý địa  = bức ；tay mặt  = tính toán； = trì thời gian
+- **trước mở cổng trước tải ** — đúng giữa là thiết bị 。Bảng phân cảnhhồi biểu tâm "biệt với "——ở chép tạo （chính động nén ），ở （động ）
+
+---
+
+## 8、Lời thoạilưu 
+
+- **câu lời đều có 2tầng ý ** — lý giữa chưa có "thông Lời thoại"。Bảng phân cảnhgiữa  của Lời thoạihồi và nhiều nghĩa ，để ở 2làm phát "gốc câu lời là nàymục ý "
+- **tỷ Lời thoạiđổi ** — giữa nhất  của không là ，là 1 phương không hướng lời 。bảng "tôiđã đã nghĩ tốt dưới 1 bước "
+- **trả giữa  của thông tinlượng ** — Lời thoại của thông tinlượng cần cần sát chép ：trả ít  = （ở ）；trả nhiều  = （ở ）；trả tốt  = nhất （đẹp ）
+
+---
+
+## 9、chuyển trường thiết tính 
+
+- **Mặc định** — cùng trường trong Ống kínhgian hàm ，lưu giữ tiết  của bức 
+- **trả hợp gian hàm ngắn tạm ** — một trả hợp kết đến dưới 1 trả hợp mở ban đầu ，hàm  0.3-0.5s  của ngắn tạm ""，cùng nhở "mới 1 mở ban đầu "
+- **video nhân đổi hàm ** — từ Nhân vậtAvideo nhân đổi đến Nhân vậtBvideo nhân ，hàm chép tạo "báo chuyển " của 
+- **trả hàm nhanh ** — giữa Nhân vậttrả liên đường kiếm ，hàm ngắn  của trả vẽ mặt （0.5-1s）vào ，mô "ánh 1 " của báo thể chiếu 
+- **Bối cảnhđổi lưu giữ bức ** — không cùng Bối cảnhgian  của chuyển trường không hàm ，lưu giữ lý toàn trình  của 。như cần ，hàm một Nhân vậtxử  của ngắn Ống kính（/tính dưới 1 bước ）tình xúc 

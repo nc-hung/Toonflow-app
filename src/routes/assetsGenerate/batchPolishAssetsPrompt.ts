@@ -27,7 +27,7 @@ interface NovelChapter {
 
 type ItemType = "characters" | "props" | "scenes";
 
-//润色提示词
+//trau chuốtPrompt
 export default router.post(
   "/",
   validateFields({
@@ -45,19 +45,19 @@ export default router.post(
   }),
   async (req, res) => {
     const { projectId, items, concurrentCount, otherTextPrompt } = req.body;
-    //获取风格
+    //Lấyphong cách
     const project = await u.db("o_project").where("id", projectId).select("artStyle", "type", "intro").first();
-    //如果没有找到对应的项目，返回错误
-    if (!project) return res.status(500).send(success({ message: "项目为空" }));
+    //Nếuchưa có đến đúng hồi  của Dự án，Trả vềlỗi
+    if (!project) return res.status(500).send(success({ message: "Dự ánrỗng " }));
 
-    // 预加载公共数据
+    // tảiDữ liệu
     const assetsIds = items.map((item: { assetsId: number }) => item.assetsId);
-    //查询所有资产，用于判断每个资产是否是衍生资产
+    //Truy vấntất cảTài nguyên，hàm với Kiểm tramục Tài nguyênlà không là Biến thể tài nguyên
     const assetsDataList = await u.db("o_assets").whereIn("id", assetsIds).select("id", "assetsId");
-    if (!assetsDataList || assetsDataList.length === 0) return res.status(500).send(error("资产不存在"));
+    if (!assetsDataList || assetsDataList.length === 0) return res.status(500).send(error("Tài nguyênkhông tồn tại"));
     const assetsDataMap = new Map(assetsDataList.map((a: any) => [a.id, a]));
-    // 所有前置检测通过后，再批量更新状态为生成中
-    await u.db("o_assets").whereIn("id", assetsIds).update({ promptState: "生成中" });
+    // tất cảtiền xử lýkiểm kiểm thông quasau  ，lượng Cập nhậttrạng tháiĐang tạo
+    await u.db("o_assets").whereIn("id", assetsIds).update({ promptState: "Đang tạo" });
 
     const getTypeConfig = (
       isDerivative: boolean,
@@ -65,27 +65,27 @@ export default router.post(
       role: {
         promptKey: "role-polish",
         itemType: "characters",
-        label: "角色标准四视图",
-        nameLabel: "角色",
+        label: "Nhân vậtTiêu chuẩn4video ảnh ",
+        nameLabel: "Nhân vật",
         visualManual: isDerivative ? "art_character_derivative" : "art_character",
       },
       scene: {
         promptKey: "scene-polish",
         itemType: "scenes",
-        label: "场景图",
-        nameLabel: "场景",
+        label: "Bối cảnhảnh ",
+        nameLabel: "Bối cảnh",
         visualManual: isDerivative ? "art_scene_derivative" : "art_scene",
       },
       tool: {
         promptKey: "tool-polish",
         itemType: "props",
-        label: "道具图",
-        nameLabel: "道具",
+        label: "Đạo cụảnh ",
+        nameLabel: "Đạo cụ",
         visualManual: isDerivative ? "art_prop_derivative" : "art_prop",
       },
     });
 
-    // 后台异步并发生成，不阻塞响应
+    // sau  đài bất bước nhất phát tạo，không phản hồi 
     const limit = pLimit(concurrentCount ?? 1);
     const tasks = items.map((item: { assetsId: number; type: string; name: string; describe: string }) =>
       limit(async () => {
@@ -94,10 +94,10 @@ export default router.post(
         const typeConfig = getTypeConfig(!!assetData.assetsId);
         const config = typeConfig[item.type];
         if (!config) return;
-        //获取到视觉手册
+        //Lấyđến trực quansổ tay
         const visualManual = await u.getArtPrompt(project.artStyle as string, "art_skills", config.visualManual);
         if (!visualManual) {
-          await u.db("o_assets").where("id", item.assetsId).update({ promptState: "生成失败", promptErrorReason: "视觉手册未定义" });
+          await u.db("o_assets").where("id", item.assetsId).update({ promptState: "Tạo thất bại", promptErrorReason: "trực quansổ taychưa nối nghĩa " });
           return;
         }
         const systemPrompt = visualManual;
@@ -108,30 +108,30 @@ export default router.post(
               {
                 role: "user",
                 content: `
-                    **基础参数：**
-      **${config.nameLabel}设定：**
-      - ${config.nameLabel}名称:${item.name},
-      - ${config.nameLabel}描述:${item.describe},`,
+                    **cơ sở tham số：**
+      **${config.nameLabel}thiết nối ：**
+      - ${config.nameLabel}tên:${item.name},
+      - ${config.nameLabel}mô tả:${item.describe},`,
               },
             ],
           })) as any;
 
           if (!_output) {
-            await u.db("o_assets").where("id", item.assetsId).update({ promptState: "生成失败" });
+            await u.db("o_assets").where("id", item.assetsId).update({ promptState: "Tạo thất bại" });
             return;
           }
 
-          await u.db("o_assets").where("id", item.assetsId).update({ prompt: _output, promptState: "已完成" });
+          await u.db("o_assets").where("id", item.assetsId).update({ prompt: _output, promptState: "Đã hoàn thành" });
         } catch (e: any) {
           await u
             .db("o_assets")
             .where("id", item.assetsId)
-            .update({ promptState: "失败", promptErrorReason: u.error(e).message });
+            .update({ promptState: "thất bại", promptErrorReason: u.error(e).message });
         }
       }),
     );
 
-    // 后台执行，不等待结果
+    // sau  đài thực thi，không kết quả
     Promise.all(tasks).catch((err: any) => {
       res.status(500).send(error(err));
     });

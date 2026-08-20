@@ -1,84 +1,84 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 热血少年 — 定义热血少年在分镜表中的景别策略、运镜节奏、时长把控、对抗镜头设计、伙伴叙事与转场手法。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · Thiếu niên — nối nghĩa Thiếu niênở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaytiết 、Thời lượngđem sát 、đúng Ống kínhthiết tính 、việc chuyển trường tay thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 热血少年 · 技法参考
+# Bảng phân cảnhviệc tay thức  · Thiếu niên · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供热血少年叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **景别即力量表达** — 热血分镜中景别的核心逻辑是"传递力量感和情绪强度"。低谷用俯拍远景（渺小感），爆发用仰拍特写（力量感）
-- **仰拍是核心武器** — 仰拍角度自带"高大/不可撼动"的心理暗示。主角站起来、宣言信念、最终出招时必须用仰拍
-- **俯拍制造绝境** — 俯拍让主体显得渺小无助。被击败倒地、面对压倒性强敌时用俯拍，与后续仰拍形成最大反差
-- **大特写留给临界瞬间** — 大特写（瞳孔/拳头/血滴）是情绪核弹，全段落用 1-2 次。放在爆发前的最后一刻，引爆情绪
-- **定场镜头要有压迫感** — 热血叙事的定场不只交代环境，要用空间传递压迫：巨大的竞技场、无尽的废墟、高耸的敌人身影。1-2 个镜头搞定，远景即可
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà Thiếu niênviệc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **蓄力段落以静为主** — 爆发前的蓄力段落 70% 静止机位，让沉默和表情积蓄情绪
-- **爆发段落释放动能** — 出招/觉醒瞬间切换到快推、跟拍、横移等运动镜头，释放蓄积的动能
-- **快推 = 出击冲击** — 猛然推向主体，模拟力量释放。用于出招的第一帧、觉醒睁眼的瞬间
-- **环绕 = 英雄定格** — 缓速环绕主角，全片最多 1-2 次，给最燃的"英雄时刻"
-- **升格运镜 = 时间膨胀** — 关键一击用升格（慢动作），放大冲击瞬间的力量感与细节。升格镜头全段不超过 2 个
-- **运镜即力量方向** — 推 = 前进/攻击；拉 = 蓄力/后退；摇 = 扫视战场；跟 = 并肩同行；环绕 = 英雄凝视
-
----
-
-## 四、时长把控
-
-- **蓄力镜头拉长** — 爆发前的"站起来""握拳""睁眼"等镜头给 4-5s，甚至配合升格到 6s，让情绪充分积蓄
-- **冲击镜头压短** — 出招/碰撞/命中的瞬间压到 1-1.5s（闪切），速度感即冲击感
-- **升格黄金时刻** — 升格镜头（慢动作）可突破 6s 上限，但不超过 8s。信息量靠细节持续输出（飞散的碎屑、飘动的发丝、震动的地面）
-- **日常镜头正常节奏** — 温情/日常段落保持 2-4s 正常节奏，不要用战斗节奏，让观众松弛
-- **黄金 6 秒规则** — 非升格镜头不超过 6s。热血叙事的"力量感"不靠拖时长，靠节奏反差
-- **反差节奏公式** — 爆发前最后镜头（慢/长）→ 爆发第一镜头（快/短），极端的时长反差制造最大冲击
+- **Cỡ cảnhlực lượng bảng ** — Phân cảnhgiữa Cỡ cảnh của logiclà "truyền lực lượng  và Cường độ cảm xúc"。thấp hàm Viễn cảnh (extreme wide shot)（nhỏ ），phát hàm Đặc tả (close-up)（lực lượng ）
+- **là thiết bị ** — nhân độ tự kèm "cao lớn /không động " của lý nhở 。chính nhân trạm 、tin 、nhất ra Bắt buộchàm 
+- **chép tạo ** — để chính thể được nhỏ không giúp 。bại địa 、mặt đúng nén hàm ，sau dạng tạo nhất lớn phụ 
+- **lớn Đặc tả (close-up)lưu cho giới gian ** — lớn Đặc tả (close-up)（/đầu /）là tình xúc ，toàn đoạn hàm  1-2 lần 。mở ở phát trước  của nhất sau 1 ，tình xúc 
+- **nối trường Ống kínhcần có nén ** — việc  của nối trường không chỉ tác vụ ，cần hàm rỗng gian truyền nén ：lớn  của trường 、không  của 、cao  của ngườisáng 。1-2 mục Ống kínhnối ，Viễn cảnh (extreme wide shot)
 
 ---
 
-## 五、对抗镜头设计
+## 3、Góc quaytiết 
 
-- **攻防节奏交替** — 战斗段落的分镜不能全是进攻：攻→防→退→再攻，有来有回才有张力。纯单方面碾压没有叙事性
-- **力量对比用景别** — 敌强我弱时：敌人用仰拍全景（巨大感），主角用俯拍中景（渺小感）。逆转时反过来
-- **一击定胜负** — 终极对决的最后一击给足仪式感：蓄力（升格特写）→出招（闪切快推）→命中（大特写+冲击留白）→结果（缓拉全景）。四拍完整呈现
-- **受伤即成长** — 主角的伤口在分镜中要有特写：血滴、裂痕、颤抖的手。伤痛是"代价"的可视化，代价越大胜利越有重量
-- **能一镜交代的不拆两镜** — 一个带运镜的长镜头（如跟拍主角从被击退到重新冲锋）比拆成碎镜头更有冲击力。战斗长镜头可突破 6s
-
----
-
-## 六、伙伴叙事
-
-- **并肩构图** — 伙伴同框时用横构图，两人处于画面同一水平线，暗示平等与信任
-- **信任传递镜头** — 一个眼神交换、一次无言的点头、一个交出后背的动作——信任不需要台词。用近景对切完成
-- **牺牲镜头的时长** — 伙伴挡在前面/倒下的镜头给足时长（4-5s），配合主角的表情特写反应。不要快速带过，这是催泪燃点
-- **回归镜头的仪式感** — 关键时刻伙伴赶到的镜头：先给主角绝望表情→背后传来声音/光影变化→缓拉揭示伙伴身影。分三拍完成，不要一步到位
+- **lực đoạn chính ** — phát trước  của lực đoạn  70% Tĩnh (static)máy vị trí ，để  và bảng tình tình xúc 
+- **phát đoạn mở động thể ** — ra /gian đổi đến nhanh khuyến 、、vận động Ống kính，mở  của động thể 
+- **nhanh khuyến  = ra ** — khuyến chính thể ，mô lực lượng mở 。hàm với ra  của Thứ 1 、 của gian 
+- **Quay vòng (orbiting / surround) = nối khung ** — Quay vòng (orbiting / surround)chính nhân ，toàn nhất nhiều  1-2 lần ，cho nhất  của ""
+- **khung Góc quay = thời gian** — liên 1 hàm khung （chậm động tác vụ ），mở lớn gian  của lực lượng tiết 。khung Ống kínhtoàn đoạn không vượt  2 mục 
+- **Góc quaylực lượng phương ** — khuyến  = trước tiến /； = lực /sau đăng ； = video trường ； = nhất cùng thi ；Quay vòng (orbiting / surround) = video 
 
 ---
 
-## 七、台词与呐喊
+## 4、Thời lượngđem sát 
 
-- **信念宣言一句够** — 主角的信念宣言（"我要保护的人就在身后！"）全片精选 2-3 句，不要反复碎碎念。一句配仰拍近景，力量拉满
-- **沉默比宣言更有力** — 觉醒/站起来的段落用沉默+动作替代台词。观众能从行动中读出信念，不需要角色说出来
-- **战吼的克制** — 纯粹的"啊——！"式战吼全片最多 2 次，放在终极爆发瞬间。搭配快推+大特写
-- **对手的台词** — 对手的嘲讽/质疑是蓄力工具："你不可能赢""放弃吧"——这些台词是爆发前的燃料，用近景拍对手说完后，切主角沉默的特写
-- **旁白极少** — 热血叙事靠行动说话，旁白仅在必须补充内心独白时使用，配远景或空镜
+- **lực Ống kínhdài ** — phát trước  của "trạm """""Ống kínhcho  4-5s，đến nối hợp khung đến  6s，để tình xúc sung phút
+- **Ống kínhnén ngắn ** — ra //giữa  của gian nén đến  1-1.5s（），độ 
+- **khung ** — khung Ống kính（chậm động tác vụ ） 6s trên hạn ，nhưng không vượt  8s。thông tinlượng tiết giữ tải ra （ của 、động  của phát 、động  của địa mặt ）
+- **ngày thường Ống kínhchính thường tiết ** — tình /ngày thường đoạn lưu giữ  2-4s chính thường tiết ，không cần hàm tiết ，để 
+- ** 6 giây** — phi khung Ống kínhkhông vượt  6s。việc  của "lực lượng "không Thời lượng，tiết phụ 
+- **phụ tiết thức ** — phát trước nhất sau Ống kính（chậm /dài ）→ phát Thứ 1 Ống kính（nhanh /ngắn ），đầu  của Thời lượngphụ chép tạo nhất lớn 
 
 ---
 
-## 八、转场设计
+## 5、đúng Ống kínhthiết tính 
 
-- **同场战斗用硬切** — 战斗内部镜头间硬切，保持节奏紧凑
-- **冲击波转场** — 大招/爆发瞬间用闪白（0.3-0.5s）做转场，模拟冲击波的视觉效果
-- **蓄力用黑屏** — 爆发前可用短黑屏（0.5-1s）做"深呼吸"，接下来的画面是爆发第一帧
-- **段落间用空镜喘息** — 战斗段落与日常段落之间用 1-2 个环境空镜（天空、残阳、飘落的花瓣）做情绪过渡，给观众呼吸空间
-- **回忆闪回用闪切** — 爆发前主角脑海中闪过的信念画面（伙伴的笑脸、守护的约定），用 0.5-1s 的闪切快速插入，不打断节奏
+- **tiết tác vụ ** — đoạn  của Phân cảnhkhông thể toàn là tiến ：→→đăng →，có có trả có bức lực 。thuần đơn phương mặt nén chưa có việc 
+- **lực lượng đúng tỷ hàm Cỡ cảnh** — tôi：ngườihàm Toàn cảnh (wide shot)（lớn ），chính nhân hàm Trung cảnh (medium shot)（nhỏ ）。chuyển phụ 
+- **1 nối ** — đúng  của nhất sau 1 cho thức ：lực （khung Đặc tả (close-up)）→ra （nhanh khuyến ）→giữa （lớn Đặc tả (close-up)+lưu ）→kết quả（Toàn cảnh (wide shot)）。4chỉnh 
+- **tạo dài ** — chính nhân  của cổng ở Phân cảnhgiữa cần có Đặc tả (close-up)：、、 của tay 。là "" của video hóa ，lớn có trùng lượng 
+- **thể 1 quay tác vụ  của không 2quay ** — một kèm Góc quay của dài Ống kính（như chính nhân từ đăng đến trùng mới ）tỷ tạo Ống kínhđổi có lực 。dài Ống kính 6s
+
+---
+
+## 6、việc 
+
+- **nhất cấu ảnh ** — cùng hàm cấu ảnh ，2ngườixử với vẽ mặt cùng 1 đường ，nhở tin 
+- **tin truyền Ống kính** — một tác vụ đổi 、1 lần không  của điểm đầu 、một tác vụ ra sau  của động tác vụ ——tin không cần cần Lời thoại。hàm Cận cảnh (close-up)đúng tạo 
+- **Ống kính của Thời lượng** — ở trước mặt /dưới  của Ống kínhcho Thời lượng（4-5s），nối hợp chính nhân  của bảng tình Đặc tả (close-up)phụ hồi 。không cần nhanh kèm ，nàylà điểm 
+- **trả Ống kính của thức ** — liên đến  của Ống kính：trước cho chính nhân bảng tình →sau truyền thanh âm /Ánh sánghóa →nhở sáng 。phút3tạo ，không cần 1 bước đến vị trí 
+
+---
+
+## 7、Lời thoại
+
+- **tin 1 câu ** — chính nhân  của tin （"tôicần lưu  của ngườithì ở sau ！"）toàn chọn  2-3 câu ，không cần phụ lời 。1 câu nối Cận cảnh (close-up)，lực lượng đầy 
+- **tỷ đổi có lực ** — /trạm  của đoạn hàm +động tác vụ Lời thoại。thể từ thi động giữa ra tin ，không cần cần Nhân vậthướng ra 
+- ** của chép ** — thuần  của "——！"thức toàn nhất nhiều  2 lần ，mở ở phát gian 。nối nhanh khuyến +lớn Đặc tả (close-up)
+- **đúng tay  của Lời thoại** — đúng tay  của /là lực cụ ："bạnkhông thể ""mở "——nàynhững Lời thoạilà phát trước  của ，hàm Cận cảnh (close-up)đúng tay hướng sau ，chính nhân  của Đặc tả (close-up)
+- **ít ** — việc thi động hướng lời ，chỉ ở Bắt buộcBổ sung Độc thoại nội tâm (inner monologue, OS)hàm ，nối Viễn cảnh (extreme wide shot)hoặc rỗng quay 
+
+---
+
+## 8、chuyển trường thiết tính 
+
+- **cùng trường hàm ** — trong bộ Ống kínhgian ，lưu giữ tiết 
+- **chuyển trường ** — lớn /phát gian hàm （0.3-0.5s）chuyển trường ，mô  của trực quanhiệu quả 
+- **lực hàm ** — phát trước hàm ngắn （0.5-1s）""，tiếp dưới  của vẽ mặt là phát Thứ 1 
+- **đoạn gian hàm rỗng quay ** — đoạn ngày thường đoạn  của gian hàm  1-2 mục rỗng quay （ngàyrỗng 、、 của ）tình xúc ，cho rỗng gian 
+- **trả trả hàm ** — phát trước chính nhân giữa  của tin vẽ mặt （ của 、 của nối ），hàm  0.5-1s  của nhanh vào ，không mở tiết 

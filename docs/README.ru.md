@@ -15,12 +15,12 @@
 </p>
 
 <p align="center">
-  <a href="../README.md">简体中文</a> | 
-  <a href="./README.zhtw.md">繁體中文</a> | 
+  <a href="../README.md">thể giữa tài </a> | 
+  <a href="./README.zhtw.md">giữa tài </a> | 
   <a href="./README.en.md">English</a> | 
   <a href="./README.th.md">ไทย</a> | 
   <a href="./README.vi.md">Tiếng Việt</a> | 
-  <a href="./README.ja.md">日本語</a> | 
+  <a href="./README.ja.md">ngày sách </a> | 
   <strong>Русский</strong>
 </p>
 
@@ -106,12 +106,12 @@ Toonflow поддерживает интерфейс на следующих я�
 
 | Язык                    | Language              |
 | ----------------------- | --------------------- |
-| 简体中文                | Chinese (Simplified)  |
-| 繁體中文                | Chinese (Traditional) |
+| thể giữa tài                 | Chinese (Simplified)  |
+| giữa tài                 | Chinese (Traditional) |
 | English                 | English               |
 | ไทย                     | Thai                  |
 | Tiếng Việt              | Vietnamese            |
-| 日本語                  | Japanese              |
+| ngày sách                   | Japanese              |
 | Русский                 | Russian               |
 
 > 💡 Скоро будут добавлены другие языки. Приветствуется помощь с переводами!
@@ -161,14 +161,14 @@ Toonflow — это AI-рабочее место для производства
 ## 📺 Видеоурок
 
 https://www.bilibili.com/video/BV1oXD7BqEqJ
-[![Toonflow 12 分钟快速上手 AI 视频](./videoCover.jpg)](https://www.bilibili.com/video/BV1oXD7BqEqJ)
+[![Toonflow 12 phútnhanh trên tay  AI video](./videoCover.jpg)](https://www.bilibili.com/video/BV1oXD7BqEqJ)
 
 **Toonflow: быстрый старт с AI-видео за 12 минут**
 👉 [Нажмите для просмотра](https://www.bilibili.com/video/BV1oXD7BqEqJ)
 
 📱 Отсканируйте QR-код в WeChat для просмотра
 
-<img src="./videoQR.png" alt="微信扫码观看" width="150"/>
+<img src="./videoQR.png" alt="tin mã xem " width="150"/>
 
 ---
 
@@ -420,7 +420,7 @@ pm2 monit             # Панель мониторинга
 
 ### Развёртывание на облачной платформе
 
-> 🎉 **Новый официально сертифицированный партнёр по вычислительным ресурсам — AI Galaxy (智星云)**
+> 🎉 **Новый официально сертифицированный партнёр по вычислительным ресурсам — AI Galaxy ()**
 >
 > **[AI Galaxy](https://www.ai-galaxy.com/)** — это **официально авторизованный поставщик коммерческих образов Toonflow**, предоставляющий полностью готовый образ для коммерческого использования, включающий весь набор инструментов Toonflow для производства коротких AI-драм — **готов к использованию из коробки, ручное развёртывание не требуется**.
 >
@@ -681,7 +681,7 @@ pm2 monit             # Панель мониторинга
 
 # 💌 Контакты
 
-📧 Эл. почта: [ltlctools@outlook.com](mailto:ltlctools@outlook.com?subject=Toonflow咨询)
+📧 Эл. почта: [ltlctools@outlook.com](mailto:ltlctools@outlook.com?subject=Toonflowvấn )
 
 ---
 
@@ -779,7 +779,7 @@ Toonflow распространяется с открытым исходным �
     </tr>
     <tr>
       <td align="center"><img src="./sponsored/ai-galaxy.png" alt="AI Galaxy Logo" width="48"></td>
-      <td align="center"><b>AI Galaxy (智星云)</b></td>
+      <td align="center"><b>AI Galaxy ()</b></td>
       <td align="center">💻 Поддержка вычислений <br/> 🖼️ Поддержка образов</td>
       <td>Известный в Китае профессиональный бренд вычислительных услуг, предоставляющий доступные и стабильные вычислительные мощности. Обслуживает лаборатории более тысячи ведущих университетов (Цинхуа, Пекинский, Фуданьский, Чжэцзянский и др.), Китайскую академию наук и более 5000 AI-компаний.</td>
       <td align="center"><a href="https://www.ai-galaxy.com">Сайт</a></td>

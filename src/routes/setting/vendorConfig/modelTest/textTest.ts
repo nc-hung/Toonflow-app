@@ -6,7 +6,7 @@ import { z } from "zod";
 import { tool, jsonSchema } from "ai";
 const router = express.Router();
 
-// 检查语言模型
+// Kiểm tra mô hình ngôn ngữ
 export default router.post(
   "/",
   validateFields({
@@ -25,8 +25,8 @@ export default router.post(
     try {
       const vendorConfigData = await u.db("o_vendorConfig").where("id", id).first();
 
-      if (!vendorConfigData) return res.status(500).send(error("未找到该供应商配置"));
-      if (!vendorConfigData.models) return res.status(500).send(error("未找到模型列表"));
+      if (!vendorConfigData) return res.status(500).send(error("Không tìm thấy cấu hình nhà cung cấp này"));
+      if (!vendorConfigData.models) return res.status(500).send(error("Không tìm thấy danh sách mô hình"));
 
       const modelList = await u.vendor.getModelList(vendorConfigData.id!);
 
@@ -52,7 +52,7 @@ export default router.post(
         tools: { getWeatherTool },
       });
       console.log("%c Line:46 🍐 data", "background:#6ec1c2", data);
-      if (!data) return res.status(500).send(error("模型未返回结果"));
+      if (!data) return res.status(500).send(error("Mô hình không trả về kết quả"));
       res.status(200).send(success({ thinking: data.reasoningText, content: data.text }));
     } catch (err) {
       console.error(err);

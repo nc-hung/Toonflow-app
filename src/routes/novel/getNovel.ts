@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 获取原文数据
+// Lấy dữ liệu nguyên tác
 export default router.post(
   "/",
   validateFields({
@@ -30,7 +30,7 @@ export default router.post(
       .limit(limit)
       .offset(offset);
 
-    // 统计总数
+    // Thống kê tổng số
     const totalQuery = (await u
       .db("o_novel")
       .where("projectId", projectId)

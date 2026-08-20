@@ -5,7 +5,7 @@ import { error, success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 编辑剧本
+// Chỉnh sửa kịch bản 
 export default router.post(
   "/",
   validateFields({
@@ -34,6 +34,6 @@ export default router.post(
       }
     }
 
-    res.status(200).send(success({ message: "编辑剧本成功" }));
+    res.status(200).send(success({ message: "Chỉnh sửa kịch bản  thành công" }));
   },
 );

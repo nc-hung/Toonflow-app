@@ -1,109 +1,109 @@
 ---
 name: director_planning_narrative
-description: 叙事手法技法 · 恐怖灵异 — 定义恐怖灵异类型在主题立意、情感节奏、场景情绪设计与声音方向上的叙事规划方法。适用于任何视觉风格。
+description: việc tay thức thức  · bất  — nối nghĩa bất Loạiở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của việc lập kế hoạchphương thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 叙事手法 · 恐怖灵异 · 技法参考
+# việc tay thức  · bất  · thức tham chiếu
 
 ---
 
-## 一、主题立意与情感内核
+## 1 、chính đề lập ý tình trong 
 
-### 恐怖灵异叙事要点
+### bất việc cần điểm 
 
-- **未知即恐惧** — 真正的恐怖来自"看不见的东西"。不要急于揭示怪物/鬼魂全貌，观众的想象力远比任何设计更可怕。主题立意应围绕"未知的威胁"，而非"已知的怪物"
-- **日常的裂缝** — 最有效的恐怖是在熟悉的日常中出现"不对劲"的细节：时钟倒走、椅子多了一把、照片里多了一个人。立意应强调"安全感的瓦解"
-- **缓慢侵蚀** — 恐怖不是一次性惊吓，而是不安感的持续积累。主题设计应有"从微妙到失控"的侵蚀弧线，让观众从"好像不太对"滑向"彻底无法逃脱"
-- **离场感受建议方向** — 后怕 / 脊背发凉 / 细思极恐 / 不敢回头。避免"恶心""血腥"等纯感官刺激方向
-- **人心比鬼可怕** — 最高级的恐怖叙事，超自然元素只是人性黑暗面的隐喻。真正的恐惧源头应指向人心：贪婪、猜忌、背叛、疯狂
-
----
-
-## 二、叙事结构与节奏规划
-
-### 恐怖灵异叙事要点
-
-- **不安积累是基本功** — 恐怖叙事的前半段核心任务是"积累不安"。用日常场景中的微小异常一点点侵蚀观众的安全感，每一个段落的"不对劲"程度都应比上一个升一级
-- **松紧交替制造心理落差** — 不能一直紧绷，否则观众会麻木。在恐怖段落之间插入"假性安全"（角色以为危险过去了），让观众松口气——然后再狠狠拉紧
-- **信息控制是核心引擎** — 恐怖的本质是信息不对称：观众不知道什么在那里、角色不知道危险已经靠近。叙事规划应明确每个段落"观众知道什么""角色知道什么"
-- **延迟揭示** — 关键恐怖元素（怪物真容、真相、威胁来源）应尽可能延迟揭示。每次揭示一点点，制造"越知道越害怕"的螺旋
-- **高潮是恐惧的确认** — 前面积累的所有不安，在高潮段落得到"最坏预感成真"的确认。高潮不是最吓人的一刻，而是"原来一直以来都……"的恐怖顿悟
-- **虚实模糊模型** — 恐怖叙事的高级手法是让观众分不清"到底是真的还是角色的幻觉"：现实→异常→质疑→确认→更大的质疑。真假界限越模糊，不安感越强
+- **chưa báo ** — thật chính  của tự "xem không thấy  của "。không cần với nhở /toàn ， của nghĩ tượng lực tỷ thiết tính đổi 。chính đề lập ý hồi khí "chưa báo  của "，phi "đã báo  của "
+- **ngày thường  của ** — nhất hợp lệ của là ở  của ngày thường giữa ra "không đúng " của tiết ：chạy 、nhiều 1 đem 、nhiều một người。lập ý hồi gọi "an toàn  của giải "
+- **chậm ** — không là 1 lần ，là không an  của giữ 。chính đề thiết tính hồi có "từ đến thất sát " của đường ，để từ "tốt không đúng ""không thức "
+- **trường Khuyến nghịphương ** — sau  / phát  /  / không trả đầu 。""""thuần kích phương 
+- **ngườitỷ ** — tối đa cấp  của việc ，vượt tự chỉ là ngườimặt  của 。thật chính  của nguồn đầu hồi người：、、、
 
 ---
 
-## 三、分场景情绪设计
+## 2、việc kết cấu tiết lập kế hoạch
 
-### 恐怖灵异叙事要点
+### bất việc cần điểm 
 
-- **情绪目标用体感词** — 不说"害怕"，说"后背突然发凉""想转头但不敢转"。体感层面的情绪描述能更好指导叙事节奏和表演设计
-- **典型情绪段落与设计** —
+- **không an là cơ sở sách công ** — việc  của trước nửa đoạn tác vụ là "không an "。hàm ngày thường Bối cảnhgiữa  của nhỏ bất thường 1 điểm điểm  của an toàn ，một đoạn  của "không đúng "trình độ đều hồi tỷ trên một 1 cấp 
+- **tác vụ chép tạo lý ** — không thể 1 trực ，không sẽ 。ở đoạn  của gian vào "giả an toàn "（Nhân vậtđi ），để cổng ——sau 
+- **thông tinsát chép là ** —  của sách là thông tinkhông đúng ：không báo đạo saoở 、Nhân vậtkhông báo đạo đã đã 。việc lập kế hoạchhồi dẫn mục đoạn "báo đạo sao""Nhân vậtbáo đạo sao"
+- **trì hoãn nhở ** — liên （thật dung 、thật 、nguồn ）hồi thể trì hoãn nhở 。lần nhở 1 điểm điểm ，chép tạo "báo đạo " của 
+- **cao là  của ** — trước mặt  của tất cảkhông an ，ở cao đoạn được đến "nhất xấu tạo thật " của 。cao không là nhất người của 1 ，là "gốc 1 trực đều ……" của 
+- **mô mô hình** — việc  của cao cấp tay thức là để phútkhông sạch "đến là thật  của còn là Nhân vật của "：→bất thường →→→đổi lớn  của 。thật giả giới hạn mô ，không an 
 
-| 段落类型 | 情绪方向 | 叙事手法 | 音效建议 |
+---
+
+## 3、phútBối cảnhtình xúc thiết tính 
+
+### bất việc cần điểm 
+
+- **tình xúc mục biểu hàm thể từ ** — không hướng ""，hướng "sau phát ""nghĩ chuyển đầu nhưng không chuyển "。thể tầng mặt  của tình xúc Mô tảthể đổi tốt dẫn Nhịp điệu tự sự và bảng thiết tính 
+- **kiểu tình xúc đoạn thiết tính ** —
+
+| đoạn Loại | tình xúc phương  | việc tay thức  | Âm hiệuKhuyến nghị |
 |---|---|---|---|
-| 日常建立 | 安全 + 温暖 | 正常的生活场景，刻意营造"一切都好" | 自然环境音，轻松氛围 |
-| 微妙异常 | 隐隐不安 | 一个不该出现的细节，角色没注意但观众看到了 | 环境音中混入一个不协调的声音 |
-| 安全感瓦解 | 恐惧萌芽 | 异常频率增加，角色开始察觉"不对劲" | 环境音逐渐稀薄，低频渐入 |
-| 假性安全 | 短暂放松 | 危机看似解除，角色松口气 | 恢复正常环境音，音乐停止 |
-| 恐惧确认 | 极度恐惧 | 最坏的猜测被证实，无处可逃 | 突然静默，或极低频压迫 |
-| 余韵/后怕 | 细思极恐 | 看似结束但留下一个"不对"的细节 | 日常环境音中埋入之前的异常音 |
+| ngày thường tạo lập  | an toàn  +  | chính thường  của sinh hoạt Bối cảnh，ý tạo "1 đều tốt " | tự âm ，Không khí |
+| bất thường  | không an  | một không ra  của tiết ，Nhân vậtchưa tâm ý nhưng xem đến  | âm giữa vào một không giao gọi  của thanh âm  |
+| an toàn giải  |  | bất thường tần tỷ lệ cộng ，Nhân vậtmở ban đầu "không đúng " | âm mỏng ，thấp tần vào  |
+| giả an toàn  | ngắn tạm mở  | máy xem giải bỏ ，Nhân vậtcổng  | lời chính thường âm ，âm  |
+|  | độ  | nhất xấu  của kiểm chứng ，không xử  | ，hoặc thấp tần nén  |
+| /sau  |  | xem kết nhưng lưu dưới một "không đúng " của tiết  | ngày thường âm giữa vào  của trước  của bất thường âm  |
 
-- **"安全感剥夺"是叙事核心工具** — 用角色的安全区域被逐步侵蚀来映射恐惧升级：
-  - **初期**：威胁在远处、在外面、在黑暗中
-  - **中期**：威胁进入生活空间，但还能逃避
-  - **后期**：威胁就在身边/身后/体内，无处可逃
-- **空间即心理** — 善用空间特征传递恐惧感。封闭空间 = 无处可逃；开阔空间 = 无处可藏；熟悉空间异化 = 安全感崩塌
-- **恐惧的"不可言说性"** — 最恐怖的东西不应被完整描述。角色的反应（瞳孔放大、说不出话、转身就跑）比直接展示"那个东西"更有效
+- **"an toàn "là việc cụ ** — hàm Nhân vật của an toàn khu vực bước cấp ：
+  - **kỳ **：ở xử 、ở ngoài mặt 、ở giữa 
+  - **giữa kỳ **：tiến vào sinh hoạt rỗng gian ，nhưng còn thể 
+  - **sau kỳ **：thì ở /sau /thể trong ，không xử 
+- **rỗng gian lý ** — hàm rỗng gian truyền 。rỗng gian  = không xử ；mở rỗng gian  = không xử ；rỗng gian bất hóa  = an toàn 
+- ** của "không hướng "** — nhất  của không hồi chỉnh Mô tả。Nhân vật của phụ hồi （mở lớn 、hướng không ra lời 、chuyển thì ）tỷ trực tiếp nhở "mục "đổi hợp lệ
 
 ---
 
-## 四、声音与音乐方向
+## 4、thanh âm âm phương 
 
-### 恐怖灵异叙事要点
+### bất việc cần điểm 
 
-- **寂静是最强的恐惧工具** — 恐怖片的杀手锏不是尖叫音效，而是之前的绝对寂静。关键恐怖段落应设计"声音真空"——所有环境音突然消失，观众本能地屏息
-- **低频压迫** — 人耳听不清但身体能感知的低频声音（18-20Hz范围）会制造生理性不安。在不安积累段落使用低频底噪，观众说不清为什么但就是难受
-- **声源不明** — 恐怖音效的黄金法则是"听到了但不知道是什么发出的"。脚步声、呼吸声、刮擦声——越日常的声音在不该出现的时候出现，越恐怖
-- **环境音是恐惧温度计** — 用环境音层次的变化标记恐惧等级：正常（鸟鸣/虫鸣/人声）→ 稀薄（声音逐渐消失）→ 死寂 → 异常音出现
-- **音乐情绪递进模型** —
+- **là nhất  của cụ ** —  của tay không là Âm hiệu，là  của trước  của đúng 。liên đoạn hồi thiết tính "thanh âm thật rỗng "——tất cảâm hủy thất ，sách thể địa 
+- **thấp tần nén ** — ngườikhông sạch nhưng thể thể báo  của thấp tần thanh âm （18-20Hzkhí ）sẽ chép tạo sinh lý không an 。ở không an đoạn hàm thấp tần ，hướng không sạch saonhưng thì là 
+- **thanh nguồn không dẫn ** — Âm hiệu của thức là "đến nhưng không báo đạo là saophát ra  của "。bước thanh 、thanh 、thanh ——ngày thường  của thanh âm ở không ra  của ra ，
+- **âm là độ tính ** — hàm âm tầng lần  của hóa biểu cấp ：chính thường （//ngườithanh ）→ mỏng （thanh âm hủy thất ）→  → bất thường âm ra 
+- **âm tình xúc tiến mô hình** —
 
-| 情绪阶段 | 音乐策略 | 覆盖率 |
+| tình xúc đoạn  | âm  | tỷ lệ  |
 |---|---|---|
-| 日常安全 | 正常配乐或纯环境音 | 低 |
-| 不安萌芽 | 不协和音程，极低音量 | 中低 |
-| 恐惧升级 | 低频底噪渐强，节奏感暗示 | 中 |
-| 恐惧高潮 | 突然静默或极端音效 | 极端 |
-| 假性安全 | 恢复正常环境音 | 低 |
-| 后怕余韵 | 日常音中混入异常元素 | 中低 |
+| ngày thường an toàn  | chính thường nối hoặc thuần âm  | thấp  |
+| không an  | không giao  và âm trình ，thấp âm lượng  | giữa thấp  |
+| cấp  | thấp tần ，tiết nhở  | giữa  |
+| cao  | hoặc đầu Âm hiệu | đầu  |
+| giả an toàn  | lời chính thường âm  | thấp  |
+| sau  | ngày thường âm giữa vào bất thường  | giữa thấp  |
 
-- **"跳吓"要克制** — 突然的巨响惊吓（Jump Scare）最多用 1-2 次，且必须在长时间寂静积累之后。滥用跳吓是最低级的恐怖手法，会消解之前积累的氛围恐惧
-
----
-
-## 五、构图与景别叙事
-
-### 恐怖灵异叙事要点
-
-- **三大核心构图的叙事功能** —
-  - **大面积留白** — 空旷区域 = 潜在威胁区，观众会本能地在空白处"寻找"恐惧源
-  - **框架遮蔽构图** — 门缝/窗户/走廊尽头，限制视野 = 限制信息 = 放大恐惧
-  - **失衡构图** — 主体偏向画面一侧，另一侧留出"不安全的空间"，暗示有东西在那里
-- **视野受限即恐惧** — 恐怖叙事中，观众看到的越少越害怕。用景别和构图控制信息量：让观众看不到角色身后、看不到房间的角落、看不到黑暗中的全貌
-- **空间纵深的威胁感** — 利用空间纵深制造"远处有东西"的暗示：走廊尽头的模糊轮廓、背景中不该动的东西动了、焦外的异常形状
-- **景别与信息控制** — 特写 = 角色不知道周围发生什么（观众也不知道）；远景 = 角色暴露在威胁中（观众看到了但角色不知道）。用景别切换制造不同类型的恐惧
-- **大特写的恐惧功能** — 大特写（瞳孔/嘴唇/手指）在恐怖叙事中用于捕捉"恐惧的生理反应"：瞳孔放大、嘴唇颤抖、指甲抠进掌心
-- **"多出来的东西"** — 恐怖构图的核心技巧：画面中出现不该出现的元素（镜中的第二张脸、阴影中的轮廓、背景中多出的人影），观众发现时的恐惧远超任何音效
+- **""cần chép ** —  của phản （Jump Scare）nhất nhiều hàm  1-2 lần ，và Bắt buộcở dài thời gian của sau 。hàm là nhất thấp cấp  của tay thức ，sẽ hủy giải  của trước  của Không khí
 
 ---
 
-## 六、镜头运动与节奏
+## 5、cấu ảnh Cỡ cảnhviệc 
 
-### 恐怖灵异叙事要点
+### bất việc cần điểm 
 
-- **静止 = 压迫** — 恐怖叙事中 70% 以上镜头应为静止机位。静止的画面让观众无法通过镜头运动获得"有人在控制"的安全感，制造"被抛弃在现场"的孤独恐惧
-- **极缓推 = 逼近/不可逃避** — 比正常缓推更慢的推进，暗示"有东西在靠近"或"你不得不面对"，适合恐怖确认段落
-- **缓拉 = 暴露/发现全貌** — 缓慢拉远揭示角色没看到的恐怖全貌（身后的人影、房间的异常），是"观众知道但角色不知道"的经典手法
-- **突然静止** — 运动中的镜头突然停住不动，暗示"有什么让镜头停下来了"，制造极强的不安
-- **呼吸感运镜** — 微幅的轻微抖动/起伏，模拟"有人在这里偷偷看"的主观窥视感。不是手持摇晃，是极微妙的"呼吸"
-- **运镜即威胁方向** — 镜头运动方向暗示威胁来源。观众本能地认为镜头移动的方向就是"要看到什么"的方向——可以利用这个预期，也可以违背它制造惊吓
+- **3lớn cấu ảnh  của việc công thể ** —
+  - **lớn mặt lưu ** — rỗng khu vực  = ở khu ，sẽ sách thể địa ở rỗng xử ""nguồn 
+  - **cấu ảnh ** — cổng /dùng /chạy đầu ，hạn chép video  = hạn chép thông tin = mở lớn 
+  - **thất cấu ảnh ** — chính thể vẽ mặt 1 ，1 lưu ra "không an toàn  của rỗng gian "，nhở có ở 
+- **video hạn ** — việc giữa ，xem đến  của ít 。hàm Cỡ cảnh và cấu ảnh sát chép thông tinlượng ：để xem không đến Nhân vậtsau 、xem không đến gian  của nhân 、xem không đến giữa  của toàn 
+- **rỗng gian  của ** — hàm rỗng gian chép tạo "xử có " của nhở ：chạy đầu  của mô 、bối giữa không động  của động 、ngoài  của bất thường dạng trạng 
+- **Cỡ cảnhthông tinsát chép ** — Đặc tả (close-up) = Nhân vậtkhông báo đạo khí phát sinh sao（cũng không báo đạo ）；Viễn cảnh (extreme wide shot) = Nhân vậtở giữa （xem đến nhưng Nhân vậtkhông báo đạo ）。hàm Cỡ cảnhđổi chép tạo không cùng Loại của 
+- **lớn Đặc tả (close-up) của công thể ** — lớn Đặc tả (close-up)（//tay ）ở việc giữa hàm với " của sinh lý phụ hồi "：mở lớn 、、tiến 
+- **"nhiều ra  của "** — cấu ảnh  của ：vẽ mặt giữa ra không ra  của （quay giữa  của Thứ 2bức 、sáng giữa  của 、bối giữa nhiều ra  của ngườisáng ），phát  của vượt Âm hiệu
+
+---
+
+## 6、Ống kínhvận động tiết 
+
+### bất việc cần điểm 
+
+- **Tĩnh (static) = nén ** — việc giữa  70% trên Ống kínhhồi Tĩnh (static)máy vị trí 。Tĩnh (static) của vẽ mặt để không thức thông quaỐng kínhvận động lấy được "có ngườiở sát chép " của an toàn ，chép tạo "ở trường " của 
+- **khuyến  = /không ** — tỷ chính thường khuyến đổi chậm  của Đẩy tới (push in / dolly in)，nhở "có ở "hoặc "bạnkhông được không mặt đúng "，hợp đoạn 
+- ** = /phát toàn ** — chậm Kéo lùi (pull back / dolly out)nhở Nhân vậtchưa xem đến  của toàn （sau  của ngườisáng 、gian  của bất thường ），là "báo đạo nhưng Nhân vậtkhông báo đạo " của đã tay thức 
+- **Tĩnh (static)** — vận động giữa  của Ống kínhkhông động ，nhở "có saođể Ống kínhdưới "，chép tạo  của không an 
+- **Góc quay** —  của động /，mô "có ngườiở nàyxem " của chính video 。không là tay giữ ，là  của ""
+- **Góc quayphương ** — Ống kínhvận động phương nhở nguồn 。sách thể địa Ống kínhđộng  của phương thì là "cần xem đến sao" của phương ——hàm nàymục kỳ ，cũng nó chép tạo 

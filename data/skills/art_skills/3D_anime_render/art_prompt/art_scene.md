@@ -1,161 +1,161 @@
-# 3D动画渲染都市场景图生成 · 约束手册
+# 3Dđộng vẽ đều Bối cảnhảnh tạo · sổ tay
 
 ---
 
-## 一、场景美学原则
+## 1 、Bối cảnhđẹp gốc 
 
-1. **空间叙事** — 场景承载情绪与叙事功能，不是纯背景板
-2. **层次纵深** — 所有场景必须具备前/中/后景，杜绝扁平
-3. **质感至上** — 木纹/石质/布料/水面等材质纹理清晰，但赛璐珞渲染简化
-4. **赛璐珞为锚** — 一切画面以3D动画渲染+赛璐珞为标准，拒绝写实摄影/CG 动画质感；保持动画风格一致性与镜头特征
-5. **都市氛围** — 现代都市景观、建筑风格、色调统一
+1. **rỗng gian việc ** — Bối cảnhxuống tình xúc việc công thể ，không là thuần bối 
+2. **tầng lần ** — tất cảBối cảnhBắt buộccụ trước /giữa /sau bối ，
+3. **đến trên ** — ///mặt lý sạch ，nhưng hóa 
+4. **** — 1 vẽ mặt 3Dđộng vẽ +biểu ，sáng /CG động vẽ ；lưu giữ động vẽ Phong cách1 Ống kính
+5. **đều Không khí** — Đô Thị Hiện Đạibối 、tạo Phong cách、vật gọi thống 1 
 
 ---
 
-## 二、季节色调映射
+## 2、tiết vật gọi 
 
-| 季节 | 主色调 | 辅色调 | 提示词 |
+| tiết  | chính vật gọi  | vật gọi  | Prompt |
 |---|---|---|---|
-| 春 | 青翠 + 桃粉 | 浅蓝、鹅黄 | 春色青翠、花开满枝 |
-| 夏 | 碧绿 + 荷粉 | 天青、白色 | 夏意盎然、绿树成荫 |
-| 秋 | 赤红 + 金黄 | 琥珀、浅灰 | 秋意浓、红叶飘落 |
-| 冬 | 素白 + 霜银 | 深蓝、浅灰 | 冬雪覆盖、冬日宁静 |
+|  |  +  | 、 | vật 、mở đầy  |
+|  |  +  | ngày、vật  | ý 、tạo  |
+|  |  +  | 、 | ý 、 |
+|  |  +  | 、 | 、ngày  |
 
 ---
 
-## 三、城市建筑
+## 3、tạo 
 
-### 空间规范
+### rỗng gian 
 
-| 维度 | 约束 | 提示词 |
+| độ  |  | Prompt |
 |---|---|---|
-| 风格 | 现代都市、写字楼/住宅/商业区 | 现代都市建筑 |
-| 材质 | 玻璃/混凝土/金属为主（赛璐珞化） | 现代材质、赛璐珞渲染 |
-| 色调 | 暖色调为主、黄昏霞光氛围 | 暖色调、黄昏氛围 |
-| 纵深 | 前/中/后景层次（赛璐珞纵深） | 前景{元素}、中景{元素}、后景{元素} |
-| 质感 | 建筑纹理清晰（赛璐珞化） | 纹理清晰、赛璐珞质感 |
-| 光照 | 自然光为主（窗光/路灯），光线柔和 | 自然光、柔和光照 |
-| 镜头感 | 浅景深虚化前后景、赛璐珞镜头效果 | shallow depth of field、赛璐珞镜头 |
-| 瑕疵感 | 建筑有使用痕迹、自然磨损（赛璐珞化） | 自然磨损、赛璐珞处理 |
+| Phong cách | Đô Thị Hiện Đại、chữ //cấp khu  | Đô Thị Hiện Đạitạo  |
+|  | //biệt chính （hóa ） | 、 |
+| vật gọi  | vật gọi chính 、Hoàng hônánh Không khí | vật gọi 、Hoàng hônKhông khí |
+|  | trước /giữa /sau bối tầng lần （） | trước bối {}、Trung cảnh (medium shot){}、sau bối {} |
+|  | tạo lý sạch （hóa ） | lý sạch 、 |
+| ánh  | tự ánh chính （ánh /đường ），ánh đường  và  | tự ánh 、 và ánh  |
+| Ống kính | bối hóa trước sau bối 、Ống kínhhiệu quả  | shallow depth of field、Ống kính |
+|  | tạo có hàm 、tự （hóa ） | tự 、xử lý  |
 
-### 城市类型速查
+### Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 商业街区 | 高楼大厦/商铺/广告牌 | 繁华热闹、现代都市 |
-| 住宅区 | 公寓楼/花园/街道 | 温馨生活、宁静社区 |
-| 办公区 | 写字楼/停车场/咖啡区 | 职场氛围、商务气息 |
-| 公园绿地 | 树木/步道/长椅 | 休闲放松、绿意盎然 |
-| 交通枢纽 | 地铁站/公交站/人行天桥 | 繁忙交通、都市脉搏 |
-| 河滨/湖畔 | 水域/步道/灯光 | 浪漫氛围、水景优美 |
+| cấp khu  | cao lớn /cấp /thông  | 、Đô Thị Hiện Đại |
+| khu  | //đạo  | sinh hoạt 、khu  |
+| khu  | chữ /trường /khu  | trường Không khí、cấp vụ  |
+| địa  | /bước đạo /dài  | mở 、ý  |
+| tác vụ thông  | địa trạm /tác vụ trạm /ngườithi ngày | tác vụ thông 、đều  |
+| / | vực /bước đạo /ánh  | Không khí、bối đẹp  |
 
 ---
 
-## 四、室内外场景
+## 4、trong ngoài Bối cảnh
 
-### 室内空间规范
+### trong rỗng gian 
 
-| 维度 | 约束 | 提示词 |
+| độ  |  | Prompt |
 |---|---|---|
-| 风格 | 办公室/咖啡厅/公寓/便利店 | 现代室内风格 |
-| 材质 | 地板/墙面/家具（赛璐珞化） | 现代材质、赛璐珞渲染 |
-| 色调 | 暖色调为主、黄昏氛围 | 暖色调、温馨氛围 |
-| 纵深 | 前/中/后景层次 | 前景{元素}、中景{元素}、后景{元素} |
-| 质感 | 材质纹理清晰（赛璐珞化） | 纹理清晰、赛璐珞质感 |
-| 光照 | 自然光+室内灯光，光线柔和 | 自然光、室内灯光、柔和 |
-| 镜头感 | 浅景深虚化前后景 | shallow depth of field、室内镜头 |
-| 瑕疵感 | 家具有使用痕迹、自然磨损 | 自然磨损、赛璐珞处理 |
+| Phong cách | /// | trong Phong cách |
+|  | địa /mặt /cụ （hóa ） | 、 |
+| vật gọi  | vật gọi chính 、Hoàng hônKhông khí | vật gọi 、Không khí |
+|  | trước /giữa /sau bối tầng lần  | trước bối {}、Trung cảnh (medium shot){}、sau bối {} |
+|  | lý sạch （hóa ） | lý sạch 、 |
+| ánh  | tự ánh +trong ánh ，ánh đường  và  | tự ánh 、trong ánh 、 và  |
+| Ống kính | bối hóa trước sau bối  | shallow depth of field、trong Ống kính |
+|  | cụ có hàm 、tự  | tự 、xử lý  |
 
-### 室内类型速查
+### trong Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 办公室 | 办公桌/电脑/文件/椅子 | 职场氛围、商务气息 |
-| 咖啡厅 | 咖啡桌/座椅/吧台/装饰 | 温馨惬意、休闲氛围 |
-| 公寓 | 沙发/床/书架/装饰 | 居家温馨、舒适空间 |
-| 便利店 | 货架/收银台/饮料 | 生活便利、日常感 |
-| 餐厅 | 餐桌/椅子/厨房 | 餐饮氛围、温馨就餐 |
-| 健身房 | 跑步机/器械/镜子 | 运动氛围、活力空间 |
+|  | //tệp/ | trường Không khí、cấp vụ  |
+|  | //đài / | ý 、Không khí |
+|  | phát /// | 、rỗng gian  |
+|  | /nhận đài / | sinh hoạt 、ngày thường  |
+|  | // | Không khí、thì  |
+|  | bước máy /thiết bị /quay  | vận động Không khí、hoạt lực rỗng gian  |
 
 ---
 
-## 五、主视图规范
+## 5、chính video ảnh 
 
-### 视图定义
+### video ảnh nối nghĩa 
 
-> 单画面主视图，从场景中最具代表性的角度拍摄，承载空间叙事与构图重心。
+> đơn vẽ mặt chính video ảnh ，từ Bối cảnhgiữa nhất cụ bảng  của nhân độ ，xuống rỗng gian việc cấu ảnh trùng 。
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 视角 | 自然观察视角，构图最能体现场景主体与纵深 | hero shot、representative angle |
-| 视点高度 | 默认人眼平视高度，特殊场景可俯/仰 | eye level（默认） |
-| 构图 | 主体居中或符合三分法，前/中/后景层次清晰 | balanced composition |
+| video nhân  | tự video nhân ，cấu ảnh nhất thể thể Bối cảnhchính thể  | hero shot、representative angle |
+| video điểm cao độ  | Mặc địnhngườivideo cao độ ，Bối cảnh/ | eye level（Mặc định） |
+| cấu ảnh  | chính thể giữa hoặc hợp 3phútthức ，trước /giữa /sau bối tầng lần sạch  | balanced composition |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 单画面（非拼图、非多视图、非分屏） |
-| 人物 | **严禁出现任何人物、人影、人体轮廓** |
-| 一致性 | 风格/材质/色调/光线统一（赛璐珞化处理） |
-| 光线 | 单一光源逻辑，光影方向一致（赛璐珞化处理） |
-| 画面比例 | 默认 16:9（或按调用方设定） |
+| cục  | đơn vẽ mặt （phi ghép ảnh 、phi nhiều video ảnh 、phi phút） |
+| người | **ra người、ngườisáng 、ngườithể ** |
+| 1  | Phong cách//vật gọi /ánh đường thống 1 （hóa xử lý ） |
+| ánh đường  | đơn 1 ánh nguồn logic，Ánh sángphương 1 （hóa xử lý ） |
+| vẽ mặt Tỷ lệ | Mặc định 16:9（hoặc theo gọi hàm phương thiết nối ） |
 
 ---
 
-## 六、提示词模板
+## 6、Promptmô 
 ```
-3D 动画渲染，电影级打光，活力赛璐珞质感，高细节材质，愉悦治愈氛围，卡通都市风，高细节卡通材质，适度卡通比例，暖色调配色，8K 超高清，电影级构图，柔和光影层次，明快卡通渲染风格，温馨治愈，都市场景主视图概念图，
+3D động vẽ ，sáng cấp mở ánh ，hoạt lực ，cao tiết ，Không khí，thông đều phong ，cao tiết thông ，độ thông Tỷ lệ，vật gọi nối vật ，8K vượt cao sạch ，sáng cấp cấu ảnh ， và Ánh sángtầng lần ，dẫn nhanh thông Phong cách，，đều Bối cảnhchính video ảnh ảnh ，
 anime style, cel-shaded, 3D animation render,
 film lighting, warm sunset lighting,
 scene design sheet, environment concept art, no people, no characters, no human figures,
-{室内/室外}，{场景类型}，{建筑风格}，{季节+时间}，
-前景：{元素}，中景：{元素}，后景：{元素}，
-{色调描述}，{天候/氛围元素}，
-{材质描述}，空气透视，纹理清晰，赛璐珞化处理，
-材质自然使用痕迹，生活感磨损，布料自然垂褶（赛璐珞化），
-自然光漫射，体积光，赛璐珞光效，赛璐珞投影，
-单画面构图，自然观察视角，构图能代表场景主体并展示前/中/后景层次，
-画面中无任何人物，
-赛璐珞渲染风格，柔和光影，适度卡通比例，高细节卡通材质，
-暖色调配色，黄昏霞光氛围，愉悦治愈氛围，
-8K 超高清，电影级构图，
-图中不要有任何文字
+{trong /ngoài }，{Bối cảnhLoại}，{tạo Phong cách}，{tiết +thời gian}，
+trước bối ：{}，Trung cảnh (medium shot)：{}，sau bối ：{}，
+{vật gọi Mô tả}，{ngày/Không khí}，
+{Mô tả}，rỗng video ，lý sạch ，hóa xử lý ，
+tự hàm ，sinh hoạt ，tự （hóa ），
+tự ánh ，thể ánh ，ánh hiệu ，sáng ，
+đơn vẽ mặt cấu ảnh ，tự video nhân ，cấu ảnh thể bảng Bối cảnhchính thể nhất nhở trước /giữa /sau bối tầng lần ，
+vẽ mặt giữa không người，
+Phong cách， và Ánh sáng，độ thông Tỷ lệ，cao tiết thông ，
+vật gọi nối vật ，Hoàng hônánh Không khí，Không khí，
+8K vượt cao sạch ，sáng cấp cấu ảnh ，
+ảnh giữa không cần có tài chữ 
 ```
 
 ---
 
-## 七、约束规则
+## 7、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 场景必须有「前中后景层次」 |
-| R2 | 室外必须包含「空气透视」 |
-| R3 | 场景图必须为「单画面主视图」，不得拼接多视图/分屏/网格 |
-| R4 | 构图须能代表场景主体并展示前/中/后景层次 |
-| R5 | 场景图中**严禁出现任何人物** |
-| R6 | 必须包含3D动画渲染关键词（cel-shaded, 3D animation render, anime style） |
-| R7 | 必须包含镜头光学特征（shallow depth of field / lens vignette / bokeh 至少一项，赛璐珞化处理） |
-| R8 | 材质必须带有自然磨损/岁月痕迹，禁止全新无瑕的"CG 感"，但赛璐珞化呈现 |
-| R9 | 必须保持赛璐珞渲染风格一致性，不得混搭写实元素 |
-| R10 | 必须包含暖色调配色、黄昏霞光氛围关键词 |
-| R11 | 必须包含8K超高清、电影级构图关键词 |
+| R1 | Bối cảnhBắt buộccó 「trước giữa sau bối tầng lần 」 |
+| R2 | ngoài Bắt buộcgói 「rỗng video 」 |
+| R3 | Bối cảnhảnh Bắt buộc「đơn vẽ mặt chính video ảnh 」，không được ghép tiếp nhiều video ảnh /phút/mạng khung  |
+| R4 | cấu ảnh buộc thể bảng Bối cảnhchính thể nhất nhở trước /giữa /sau bối tầng lần  |
+| R5 | Bối cảnhảnh giữa **ra người** |
+| R6 | Bắt buộcgói 3Dđộng vẽ liên từ （cel-shaded, 3D animation render, anime style） |
+| R7 | Bắt buộcgói Ống kínhánh （shallow depth of field / lens vignette / bokeh đến ít 1 ，hóa xử lý ） |
+| R8 | Bắt buộckèm có tự /tháng，Nghiêm cấmtoàn mới không  của "CG "，nhưng hóa  |
+| R9 | Bắt buộclưu giữ Phong cách1 ，không được  |
+| R10 | Bắt buộcgói vật gọi nối vật 、Hoàng hônánh Không khíliên từ  |
+| R11 | Bắt buộcgói 8Kvượt cao sạch 、sáng cấp cấu ảnh liên từ  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 背景纯白/纯黑/无场景 |
-| X2 | 极端天候（暴风雨/雷电/暴雪，除非剧情需要，且需赛璐珞化） |
-| X3 | 场景无纵深/无层次 |
-| X4 | 植被/天候与季节矛盾 |
-| X5 | 出现任何人物、人影、人体剪影或人体轮廓 |
-| X6 | 画面被拼接成多视图/网格/分屏布局 |
-| X7 | 3D 渲染/CG 动画/游戏引擎质感（禁用 3D render、CGI、Unreal Engine、Unity 等词），但需明确赛璐珞动画渲染 |
-| X8 | 材质过于干净完美、无任何使用痕迹与岁月感（避免"塑料感"），需赛璐珞化处理 |
-| X9 | 光照过于均匀平坦、无景深虚化、无镜头光学特征 |
-| X10 | 使用写实摄影术语（如real photography, photorealistic, RAW photo等） |
-| X11 | 古代/未来元素、非现代都市风格 |
-| X12 | 冷色调/夜间主色调、非暖色调/黄昏氛围 |
+| X1 | bối thuần /thuần /không Bối cảnh |
+| X2 | đầu ngày（phong //，bỏ phi kịch tình cần cần ，và cần hóa ） |
+| X3 | Bối cảnhkhông /không tầng lần  |
+| X4 | /ngàytiết  |
+| X5 | ra người、ngườisáng 、ngườithể sáng hoặc ngườithể  |
+| X6 | vẽ mặt ghép tiếp tạo nhiều video ảnh /mạng khung /phútcục  |
+| X7 | 3D /CG động vẽ /（hàm  3D render、CGI、Unreal Engine、Unity từ ），nhưng cần dẫn động vẽ  |
+| X8 | với đẹp 、không hàm tháng（""），cần hóa xử lý  |
+| X9 | ánh với 、không bối hóa 、không Ống kínhánh  |
+| X10 | hàm sáng ngữ （như real photography, photorealistic, RAW photo） |
+| X11 | /chưa 、phi Đô Thị Hiện ĐạiPhong cách |
+| X12 | vật gọi /gian chính vật gọi 、phi vật gọi /Hoàng hônKhông khí |

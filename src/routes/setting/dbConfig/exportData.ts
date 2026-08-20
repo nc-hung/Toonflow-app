@@ -24,6 +24,6 @@ export default router.get("/", async (req, res) => {
     res.setHeader("Content-Disposition", `attachment; filename=toonflow-backup-${Date.now()}.json`);
     res.status(200).send(JSON.stringify(exportData, null, 2));
   } catch (err: any) {
-    res.status(500).send(error(err?.message || "导出失败"));
+    res.status(500).send(error(err?.message || "Xuất dữ liệu thất bại"));
   }
 });

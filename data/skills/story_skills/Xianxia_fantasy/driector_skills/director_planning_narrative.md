@@ -1,114 +1,114 @@
 ---
 name: director_planning_narrative
-description: 叙事手法技法 · 古风仙侠 — 定义古风仙侠类型在主题立意、宿命节奏、场景意境设计与声音方向上的叙事规划方法。适用于任何视觉风格。
+description: việc tay thức thức  · phong  — nối nghĩa phong Loạiở chính đề lập ý 、tiết 、Bối cảnhý thiết tính thanh âm phương trên  của việc lập kế hoạchphương thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 叙事手法 · 古风仙侠 · 技法参考
+# việc tay thức  · phong  · thức tham chiếu
 
 ---
 
-## 一、主题立意与仙侠内核
+## 1 、chính đề lập ý trong 
 
-### 古风仙侠叙事要点
+### phong việc cần điểm 
 
-- **天道与人心的拉扯** — 仙侠叙事的核心矛盾是"天道无情"与"人心有情"的对抗。修仙要斩断七情六欲，但打动观众的恰恰是角色无法割舍的情——这种矛盾本身就是最好的叙事张力
-- **宿命不是结局是起点** — "命中注定"不是叙事终点，而是叙事起点。知道宿命后选择接受还是反抗，才是角色弧线的关键。越不可违抗的天命，逆天而行越震撼
-- **孤独求道** — 仙侠主角的底色是孤独：独上昆仑、独守千年、独对天劫。孤独不是悲剧，是修行本身。叙事要让观众"理解"这种孤独的重量
-- **离场感受建议方向** — 苍凉壮美 / 超然物外 / 意难平 / 悟道释然。避免"甜蜜""轻松""搞笑"等与仙侠气质不匹配的方向
-- **大爱与小情** — 仙侠的格局是"大爱"（苍生/天道/正义），但打动人的是"小情"（一个人的守候/一句未说出的话/一件留下的信物）。大爱立意，小情动人
-
----
-
-## 二、叙事结构与宿命节奏
-
-### 古风仙侠叙事要点
-
-- **命运伏笔贯穿全篇** — 仙侠叙事适合在开篇就植入命运的种子（预言、天象、前世记忆碎片），让观众从头到尾都在"等待命运兑现"的张力中
-- **三世因果结构** — 仙侠天然适合"前世—今生—来世"的多层叙事。前世的遗憾在今生重演，今生的抉择决定来世。时间跨度越大，情感越厚重
-- **悟道递进** — 主角的成长不是"打怪升级"，而是"悟道递进"：从执念到放下、从有招到无招、从求仙到问心。每次领悟都应伴随一个叙事转折点
-- **段落间用天象/季节做呼吸** — 仙侠段落衔接用天地变化做自然过渡：春去秋来、日升月落、云聚云散。比人工转场更有意境
-- **劫难弧线** — 仙侠的节奏引擎是"劫"：心劫（情感考验）→ 身劫（肉体考验）→ 天劫（终极考验）。每次渡劫都比前一次代价更大、领悟更深
-- **高潮段落的"静"比"动"更高级** — 仙侠终极对决的最高形态不是大开大合的法术碰撞，而是万法归一后的静默对峙——一剑、一眼、一念之间，胜负已分
+- **ngàyđạo người của ** — việc  của là "ngàyđạo không tình ""ngườicó tình " của đúng 。cần 7tình 6，nhưng mở động  của là Nhân vậtkhông thức rời  của tình ——nàyloại sách thì là nhất tốt  của việc bức lực 
+- **không là kết cục là điểm ** — "giữa tâm nối "không là việc điểm ，là việc điểm 。báo đạo sau chọn lựa tiếp còn là phụ ，là Nhân vậtđường  của liên 。không  của ngày，ngàythi 
+- **cầu đạo ** — chính nhân  của vật là ：trên 、nghìnnăm、đúng ngày。không là kịch ，là thi sách 。việc cần để "lý giải "nàyloại  của trùng lượng 
+- **trường Khuyến nghịphương ** — đẹp  / vượt ngoài  / ý  / đạo 。""""""không khớp của phương 
+- **lớn nhỏ tình ** —  của khung cục là "lớn "（sinh /ngàyđạo /chính nghĩa ），nhưng mở động người của là "nhỏ tình "（một người của /1 câu chưa hướng ra  của lời /1 tệp lưu dưới  của tin ）。lớn lập ý ，nhỏ tình động người
 
 ---
 
-## 三、分场景意境设计
+## 2、việc kết cấu tiết 
 
-### 古风仙侠叙事要点
+### phong việc cần điểm 
 
-- **意境用诗化描述** — 不说"美丽"，说"月照寒潭，松影横斜"。诗化的意境描述能更好地指导场景美术和镜头取景
-- **典型仙侠段落与设计** —
+- **vận toàn bài ** — việc hợp ở mở bài thì vào vận  của loại （、ngàytượng 、trước ），để từ đầu đến đuôi đều ở "vận " của bức lực giữa 
+- **3quả kết cấu ** — ngàyhợp "trước —sinh —" của nhiều tầng việc 。trước  của ở sinh trùng ，sinh  của lựa nối 。thời gianđộ lớn ，tình dày trùng 
+- **đạo tiến ** — chính nhân  của tạo dài không là "mở cấp "，là "đạo tiến "：từ thực đến mở dưới 、từ có đến không 、từ cầu đến hỏi 。lần đều hồi một việc Điểm bước ngoặt
+- **đoạn gian hàm ngàytượng /tiết ** — đoạn tiếp hàm ngàyđịa hóa tự ：đi 、ngày tháng、。tỷ ngườichuyển trường đổi có ý 
+- **đường ** —  của tiết là ""：（tình chiếu ）→ （thể chiếu ）→ ngày（chiếu ）。lần đều tỷ trước 1 lần đổi lớn 、đổi 
+- **cao đoạn  của ""tỷ "động "đổi cao cấp ** — đúng  của tối đa dạng thái không là lớn mở lớn hợp  của thức ，là vạnthức 1 sau  của đúng ——1 、1 、1  của gian ，đã phút
 
-| 段落类型 | 情绪方向 | 叙事手法 | 音乐建议 |
+---
+
+## 3、phútBối cảnhý thiết tính 
+
+### phong việc cần điểm 
+
+- **ý hàm hóa Mô tả** — không hướng "đẹp "，hướng "tháng，sáng "。hóa  của ý Mô tảthể đổi tốt địa dẫn Bối cảnhđẹp  và Ống kínhxuất bối 
+- **kiểu đoạn thiết tính ** —
+
+| đoạn Loại | tình xúc phương  | việc tay thức  | âm Khuyến nghị |
 |---|---|---|---|
-| 入世/出场 | 超然 + 惊艳 | 云雾中现身、御剑飞行、远景渐入 | 空灵箫笛，大量留白 |
-| 修行/悟道 | 静谧 + 专注 | 独坐山巅、瀑布下练功、星空冥想 | 古琴独奏或纯自然音 |
-| 情劫/羁绊 | 隐忍 + 深情 | 欲触未触、转身离去、信物交接 | 箫/埙独奏，悲而不伤 |
-| 误解/分离 | 苍凉 + 决绝 | 背对背、各自踏入不同的路 | 低沉弦乐或风声独白 |
-| 渡劫/对决 | 壮烈 + 悲悯 | 天象巨变、一人独对天地 | 从寂静到磅礴鼓乐 |
-| 飞升/涅槃 | 释然 + 超脱 | 化光上升、万物复苏、微笑消散 | 梵音/天籁渐起渐远 |
+| vào /ra trường  | vượt  +  | giữa 、thi 、Viễn cảnh (extreme wide shot)vào  | rỗng ，lớn lượng lưu  |
+| thi /đạo  |  + riêng tâm  | 、dưới công 、rỗng nghĩ  | hoặc thuần tự âm  |
+| tình / |  + tình  | chưa 、chuyển đi 、tin tác vụ tiếp  | /，không  |
+| giải /phút |  +  | đúng 、các tự vào không cùng  của đường  | thấp hoặc phong thanh  |
+| /đúng  |  +  | ngàytượng 、1 ngườiđúng ngàyđịa  | từ đến  |
+| / |  + vượt  | hóa ánh trên 、vạnlời 、hủy  | âm /ngày |
 
-- **天人感应是叙事核心** — 角色情绪与天地自然同频共振：
-  - **平静**：风平浪静、日光正好、花自开落
-  - **悲伤**：天降细雨、落叶纷飞、月被云遮
-  - **愤怒**：狂风骤起、雷电交加、大地震颤
-  - **觉悟**：云开日出、天光倾泻、万物生辉
-- **空间即修行境界** — 场景的空间层次映射角色的修行阶段：山脚（入门）→ 山腰（历练）→ 山巅（悟道）→ 天外天（超脱）。空间越高越开阔，意境越通透
-- **镜头意图写"境界"而非"画面"** — "用远景是为了让观众感受他独对天地的渺小与从容"优于"用远景拍山巅的人"。意境表达清晰了，分镜自然准确
+- **ngàyngườihồi là việc ** — Nhân vậttình xúc ngàyđịa tự cùng tần ：
+  - ****：phong 、ngày ánh chính tốt 、tự mở 
+  - ****：ngày、、tháng
+  - ****：phong 、tác vụ cộng 、lớn địa 
+  - ****：mở ngày ra 、ngàyánh 、vạnsinh 
+- **rỗng gian thi giới ** — Bối cảnh của rỗng gian tầng lần Nhân vật của thi đoạn ：（vào cổng ）→ （）→ （đạo ）→ ngàyngoài ngày（vượt ）。rỗng gian cao mở ，ý thông 
+- **Ống kínhý ảnh "giới "phi "vẽ mặt "** — "hàm Viễn cảnh (extreme wide shot)là để anh ấyđúng ngàyđịa  của nhỏ từ dung "với "hàm Viễn cảnh (extreme wide shot) của người"。ý bảng sạch ，Phân cảnhtự 
 
 ---
 
-## 四、声音与音乐方向
+## 4、thanh âm âm phương 
 
-### 古风仙侠叙事要点
+### phong việc cần điểm 
 
-- **天籁即配乐** — 仙侠最好的"配乐"是自然之声：松涛、瀑布、风铃、鸟鸣、远钟。自然音的层次越丰富，仙气越足
-- **古乐留白** — 古琴/箫/笛/埙不满配，一句一停，让音符间的空白传递意境。配乐的空白和画面的留白一样重要
-- **避免现代感音效** — 电子合成器、重低音贝斯等现代音效与仙侠气质不兼容。即使是战斗段落，也应以鼓/锣/钟等传统打击乐为节奏骨架
-- **梵音/吟唱的仪式感** — 飞升、渡劫、大悟等重要段落可用梵音或无词吟唱，制造"超越凡尘"的仪式感。全片不超过 2-3 处
-- **音乐情绪模型** —
+- **ngàynối ** — nhất tốt  của "nối "là tự  của thanh ：、、phong 、、。tự âm  của tầng lần ，
+- **lưu ** — ///không đầy nối ，1 câu 1 ，để âm gian  của rỗng truyền ý 。nối  của rỗng  và vẽ mặt  của lưu 1 kiểu trùng cần 
+- **Âm hiệu** — hợp tạo thiết bị 、trùng thấp âm Âm hiệukhông dung 。là đoạn ，cũng hồi //truyền thống mở tiết 
+- **âm / của thức ** — 、、lớn trùng cần đoạn hàm âm hoặc không từ ，chép tạo "vượt " của thức 。toàn không vượt  2-3 xử 
+- **âm tình xúc mô hình** —
 
-| 情绪阶段 | 音乐策略 | 覆盖率 |
+| tình xúc đoạn  | âm  | tỷ lệ  |
 |---|---|---|
-| 日常/修行 | 古琴或箫独奏，极低音量 | 低 |
-| 情劫/羁绊 | 箫/埙悲奏，节制隐忍 | 中低 |
-| 酝酿/蓄势 | 鼓点从远到近，渐强 | 中 |
-| 渡劫/对决 | 磅礴鼓乐或突然全寂 | 极端 |
-| 飞升/超脱 | 梵音/天籁渐远 | 中高→渐弱 |
+| ngày thường /thi  | hoặc ，thấp âm lượng  | thấp  |
+| tình / | /，tiết chép  | giữa thấp  |
+| / | điểm từ đến ， | giữa  |
+| /đúng  | hoặc toàn  | đầu  |
+| /vượt  | âm /ngày | giữa cao → |
 
-- **"一声定乾坤"** — 仙侠中最有力的音效往往是一个单独的声音：一声剑鸣、一声钟响、一声远雷。在关键瞬间用一个清晰的单一音效，比丰满的配乐更震撼
-
----
-
-## 五、构图与景别叙事
-
-### 古风仙侠叙事要点
-
-- **三大核心构图的叙事功能** —
-  - **山水写意构图** — 大量天地留白中嵌入微小人影，传递"天地辽阔、人如蜉蝣"的仙侠哲学
-  - **云雾遮蔽构图** — 云雾/烟霞半遮半掩主体，制造仙境的朦胧感与神秘感
-  - **纵深层叠构图** — 前景枝叶/中景人物/远景山峦层层叠叠，空间纵深感越强意境越深
-- **中心构图的神圣感** — 中心构图在仙侠中暗示"天命所归/独立天地间"，留给飞升、渡劫、终极领悟等仪式性场景
-- **竖构图的"通天"感** — 瀑布、悬崖、飞升等纵向场景用竖构图，强调天地贯通的气势
-- **空镜不是过渡** — 仙侠的山水空镜本身就是叙事：一片落花 = 时光流逝；一轮明月 = 思念；一场大雪 = 心如止水。给空镜 4-6s 足够时长
-- **景别即境界** —
-  - **大远景/远景** — 天地格局、孤独修行、宿命感
-  - **全景** — 场景全貌、仪式场面、对峙站位
-  - **中景/近景** — 人物互动、对话、表情变化
-  - **特写** — 眼中星辰、指尖灵力、信物纹理，灵韵聚焦
-- **大特写在仙侠中的功能** — 不是放大情绪而是"见微知著"：一滴泪映出月光、一片花瓣落在掌心、剑刃上映出对手的脸。大特写全片 2-3 次
+- **"1 thanh nối "** — giữa nhất có lực  của Âm hiệulà một đơn  của thanh âm ：1 thanh 、1 thanh phản 、1 thanh 。ở liên gian hàm một sạch  của đơn 1 Âm hiệu，tỷ đầy  của nối đổi 
 
 ---
 
-## 六、镜头运动与节奏
+## 5、cấu ảnh Cỡ cảnhviệc 
 
-### 古风仙侠叙事要点
+### phong việc cần điểm 
 
-- **以静为宗** — 70% 以上镜头应为静止或极缓运动，仙侠的气质是"不动如山"。画面越静，意境越深
-- **御风跟拍** — 御剑飞行、腾云驾雾等段落用流畅跟拍，速度感中保持画面稳定，营造"乘风"而非"被风追"的从容
-- **缓摇 = 天地展卷** — 缓慢水平摇移展示山水全貌，如同卷轴缓缓展开。速度控制在"观众来得及品味每一寸风景"
-- **缓推 = 入境/走近** — 从远景缓推至人物，模拟"走进这个世界"的入境感。适合开篇定场和悟道段落
-- **快切在仙侠中极少使用** — 仙侠战斗不靠快切堆节奏，靠一招一式的"意"。即使是法术碰撞，也应是大开大合的完整镜头而非碎片剪辑
-- **运镜即天道** — 静止 = 定/悟；缓推 = 入世/靠近；缓拉 = 出世/超脱；缓摇 = 天地展卷；升降 = 升华/坠落
-- **升降运镜的仙侠特权** — 仙侠是少数能大量使用升降运镜的类型：从地面升至云端（飞升）、从天空降至人间（入世）。升降方向本身就是叙事
+- **3lớn cấu ảnh  của việc công thể ** —
+  - **ý cấu ảnh ** — lớn lượng ngàyđịa lưu giữa vào nhỏ ngườisáng ，truyền "ngàyđịa 、ngườinhư " của 
+  - **cấu ảnh ** — /nửa nửa chính thể ，chép tạo  của 
+  - **tầng cấu ảnh ** — trước bối /Trung cảnh (medium shot)người/Viễn cảnh (extreme wide shot)tầng tầng ，rỗng gian ý 
+- **giữa cấu ảnh  của ** — giữa cấu ảnh ở giữa nhở "ngàynơi /lập ngàyđịa gian "，lưu cho 、、thức Bối cảnh
+- **cấu ảnh  của "thông ngày"** — 、、Bối cảnhhàm cấu ảnh ，gọi ngàyđịa thông  của 
+- **rỗng quay không là ** —  của rỗng quay sách thì là việc ：1  = ánh ；1 dẫn tháng = ；1 trường lớn  = như 。cho rỗng quay  4-6s Thời lượng
+- **Cỡ cảnhgiới ** —
+  - **lớn Viễn cảnh (extreme wide shot)/Viễn cảnh (extreme wide shot)** — ngàyđịa khung cục 、thi 、
+  - **Toàn cảnh (wide shot)** — Bối cảnhtoàn 、thức trường mặt 、đúng trạm vị trí 
+  - **Trung cảnh (medium shot)/Cận cảnh (close-up)** — ngườiđộng 、đúng lời 、bảng tình hóa 
+  - **Đặc tả (close-up)** — giữa 、lực 、tin lý ，
+- **lớn Đặc tả (close-up)ở giữa  của công thể ** — không là mở lớn tình xúc là "thấy báo "：1 ra thángánh 、1 ở 、trên ra đúng tay  của 。lớn Đặc tả (close-up)toàn  2-3 lần 
+
+---
+
+## 6、Ống kínhvận động tiết 
+
+### phong việc cần điểm 
+
+- **** — 70% trên Ống kínhhồi Tĩnh (static)hoặc vận động ， của là "không động như "。vẽ mặt ，ý 
+- **phong ** — thi 、đoạn hàm ，độ giữa lưu giữ vẽ mặt nối ，tạo "nhân phong "phi "phong " của từ dung 
+- ** = ngàyđịa ** — chậm nhở toàn ，như cùng mở 。độ sát chép ở "được 1 phong bối "
+- **khuyến  = vào /chạy ** — từ Viễn cảnh (extreme wide shot)khuyến đến người，mô "chạy tiến nàymục giới " của vào 。hợp mở bài nối trường  và đạo đoạn 
+- **nhanh ở giữa ít hàm ** — không nhanh tiết ，1 1 thức  của "ý "。là thức ，cũng hồi là lớn mở lớn hợp  của chỉnh Ống kínhphi sửa 
+- **Góc quayngàyđạo ** — Tĩnh (static) = nối /；khuyến  = vào /； = ra /vượt ； = ngàyđịa ；Nâng / Hạ máy (crane up/down) = /
+- **Nâng / Hạ máy (crane up/down)Góc quay của thực ** — là ít số thể lớn lượng hàm Nâng / Hạ máy (crane up/down)Góc quay của Loại：từ địa mặt đến đầu （）、từ ngàyrỗng đến ngườigian （vào ）。Nâng / Hạ máy (crane up/down)phương sách thì là việc 

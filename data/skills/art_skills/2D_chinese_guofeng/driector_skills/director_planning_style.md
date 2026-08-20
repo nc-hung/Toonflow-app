@@ -1,94 +1,94 @@
 ---
 name: director_planning_style
-description: 国风二次元约束 — 定义国风二次元新国潮在色调体系、光影方案、质感方向、场景空间元素、乐器选择与环境音上的全局约束。适用于任何叙事类型。
+description: phong 2lần  — nối nghĩa Anime Cổ Phong Tân Quốc Triều (2D)ở vật gọi thể dòng 、Ánh sángphương 、phương 、Bối cảnhrỗng gian 、thiết bị chọn lựa âm trên  của toàn cục 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 国风二次元约束 · 国风二次元新国潮 · 技法参考
+# phong 2lần  · Anime Cổ Phong Tân Quốc Triều (2D) · thức tham chiếu
 
 ---
 
-## 一、色调体系与画面基调
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
 
-- **色调基底** — 全片以核心色盘为基底：月白（C1 #E8EAF5）、青绿（C2 #4A9B8A）、朱红（C3 #C93752）、靛蓝（C4 #2B4C7E）、金黄（C5 #D4AF37）、墨黑（C6 #1A1A2E）、胭脂（C7 #A94A5F）、赭石（C8 #965E3E）、藤黄（C9 #F5E375）、灰紫（C10 #7B6C85），整体色温偏中性（5000-5600K），饱和度中高（55-70%），呈现新国潮色盘饱满的东方古韵画面
-- **冷暖叙事对比** — 暖色（朱红 C3、金黄 C5、胭脂 C7、藤黄 C9）作为正向情感/华贵/喜庆的视觉信号；冷色（靛蓝 C4、墨黑 C6、青绿 C2）作为冲突/肃杀/孤寂的视觉信号。冷暖切换应与故事弧线同步，而非随意混用
-- **冷暖分配策略** — 武侠肃杀/悲戚孤绝段落使用冷色调（靛蓝 + 墨黑 + 青绿），禁用朱红/金黄暖光；仙侠飘逸/少女日常段落使用柔和暖调（月白 + 胭脂 + 藤黄）；宫廷华贵/节日庆典段落使用朱红 + 金黄高光
-- **色盘先行原则** — 段落规划需先绑定情绪场景（仙侠飘逸/宫廷华贵/武侠肃杀/少女日常/月夜诗意/节日庆典等），再确定主色+辅色与光影方案，避免"剧情对了但情绪不对色"
-- **禁用色域** — 高饱和荧光色、霓虹色、数码感强色彩均与本风格不兼容。色相偏移容差 ±8°，饱和度偏移 ±10%，明度偏移 ±12%
+- **vật gọi cơ sở ** — toàn vật đĩa cơ sở ：tháng（C1 #E8EAF5）、（C2 #4A9B8A）、（C3 #C93752）、（C4 #2B4C7E）、（C5 #D4AF37）、（C6 #1A1A2E）、（C7 #A94A5F）、（C8 #965E3E）、（C9 #F5E375）、（C10 #7B6C85），chỉnh thể vật giữa （5000-5600K）， và độ giữa cao （55-70%），mới vật đĩa đầy  của phương vẽ mặt 
+- **việc đúng tỷ ** — vật （ C3、 C5、 C7、 C9）tác vụ chính tình // của trực quantin số ；vật （ C4、 C6、 C2）tác vụ // của trực quantin số 。đổi hồi việc đường cùng bước ，phi ý hàm 
+- **phútnối ** — /đoạn hàm vật gọi （ +  + ），hàm /ánh ；/ít nữ ngày thường đoạn hàm  và gọi （tháng +  + ）；/tiết ngày đoạn hàm  + cao ánh 
+- **vật đĩa trước thi gốc ** — đoạn lập kế hoạchcần trước ghép nốitình xúc Bối cảnh（///ít nữ ngày thường /thángý /tiết ngày ），nối chính vật +vật Ánh sángphương ，"kịch tình đúng nhưng tình xúc không đúng vật "
+- **hàm vật vực ** — cao  và ánh vật 、vật 、số mã vật sách Phong cáchkhông dung 。vật dung  ±8°， và độ  ±10%，dẫn độ  ±12%
 
 ---
 
-## 二、光影方案体系
+## 2、Ánh sángphương thể dòng 
 
-- **光影即叙事** — 7 套光影方案对应不同情绪段落，导演规划阶段应在段落层面确定光影基调方向，而非逐镜指定
-- **赛璐璐光影为锚** — 所有光影方案必须保持赛璐璐平涂质感，阴影使用同色系加深，禁止黑色硬阴影，允许体积光/景深虚化等日式渲染技法
-- **光源角度** — 正给镜头默认 38.5° 斜射柔光（赛璐璐平涂质感），侧给镜头可适当调整
+- **Ánh sángviệc ** — 7 Ánh sángphương đúng hồi không cùng tình xúc đoạn ，Kế hoạch đạo diễnđoạn hồi ở đoạn tầng mặt nối Ánh sángcơ sở gọi phương ，phi quay nối 
+- **Ánh sáng** — tất cảÁnh sángphương Bắt buộclưu giữ ，sáng hàm cùng vật dòng cộng ，Nghiêm cấmvật sáng ，thể ánh /bối hóa ngày thức thức 
+- **ánh nguồn nhân độ ** — chính cho Ống kínhMặc định 38.5° ánh （），cho Ống kínhkhi gọi chỉnh 
 
-| 光影方案 | 方案名 | 色调倾向 | 适用情绪 |
+| Ánh sángphương  | phương tên  | vật gọi  | hàm tình xúc  |
 |---|---|---|---|
-| A | 柔光清透 | 月白底 + 胭脂微暖肤光 | 少女日常、温馨甜蜜、治愈清新 |
-| B | 仙气飘逸 | 月白 + 青绿 + 金黄边缘光 | 仙侠飘逸、空灵意境、惊艳登场 |
-| C | 烛光暖影 | 赭石暖主导 + 墨黑暗部 | 夜间暧昧、亲密升温、暖意绵绵 |
-| D | 月光冷辉 | 靛蓝 + 月白冷光 | 月夜诗意、思念独处、宁静清冷 |
-| E | 窗纱透光 | 月白底 + 侧光斑驳 | 闺阁室内、书房日常、日间静谧 |
-| F | 宫廷华辉 | 朱红 + 金黄高光 + 墨黑暗部 | 宫廷华贵、庆典盛大、正式庄严 |
-| G | 冷调肃杀 | 靛蓝 + 墨黑 + 38.5°侧射冷光，无暖色 | 武侠对决、悲戚孤绝、氛围紧张 |
+| A | ánh sạch  | tháng + ánh  | ít nữ ngày thường 、、sạch mới  |
+| B |  | tháng +  + ánh  | 、rỗng ý 、đăng trường  |
+| C | ánh sáng  | chính dẫn  + bộ  | gian 、mật 、ý  |
+| D | thángánh  |  + thángánh  | thángý 、xử 、sạch  |
+| E | ánh  | tháng + ánh  | trong 、ngày thường 、ngày gian  |
+| F |  |  + cao ánh  + bộ  | 、lớn 、chính thức  |
+| G | gọi  |  +  + 38.5°ánh ，không vật  | đúng 、、Không khíbức  |
 
-- **冷暖光分配** — 暖色光（赭石暖/朱红/金黄）适用于正向情感/华贵段落；武侠肃杀/悲戚段落一律冷光。导演可根据叙事需要调整冷暖切换点
-- **氛围方向映射** — 每场戏的氛围方向应能映射到上述光影方案（A-G）的某一方向，确保视觉一致性
-
----
-
-## 三、质感方向
-
-- **赛璐璐平涂为锚** — 国风二次元的核心：细腻线条、赛璐璐平涂、日式动画渲染、色块平滑渐变、禁止色块断层/色彩溢出
-- **细腻笔触 + 电影质感** — 这是画面质感的锚点。不是写实摄影，不是 3D CG，是二次元日式动画渲染加国风美学的融合
-- **材质二次元化** — 所有服化道的材质必须以赛璐璐平涂呈现：丝绸的光泽用平滑色块、金属的反光用冷光泽线条、玉石的润感用内透光色块。禁止"3D 感"和"写实摄影感"
-- **皮肤质感** — 粉白基调、赛璐璐平涂、自然光泽、柔和质感、内透光感、皮肤通透发光。禁止哑光/死白/蜡感/油光/过曝
-- **二次元不等于扁平** — 国风二次元新国潮强调在赛璐璐平涂基础上通过光影层次、景深虚化、体积光等手段增加空间感与电影感，而非扁平无纵深的卡通风格
+- **ánh phútnối ** — vật ánh （//）hàm với chính tình /đoạn ；/đoạn 1 ánh 。đạo diễndựa theoviệc cần cần gọi chỉnh đổi điểm 
+- **Không khíphương ** — trường  của Không khíphương hồi thể đến trên tả Ánh sángphương （A-G） của 1 phương ，lưu trực quan1 
 
 ---
 
-## 四、国风二次元场景空间元素
+## 3、phương 
 
-国风世界观特有的场景元素及其视觉叙事功能：
-
-- **纱帘/屏风/门框/雕花窗棂** — 天然的框架式构图道具，制造"看不透"的层次感与空间纵深，以赛璐璐线条呈现精致雕花细节
-- **庭院/花树/雨幕/青绿山水** — 留白构图的天然载体，景即情：满庭花开 = 释然、独坐雨中 = 孤寂、落叶纷飞 = 离愁、云雾缥缈 = 仙意空灵
-- **烛火/月色/窗光/灯笼** — 国风世界的光源载体，烛光 = 暖/私密（方案C）、月色 = 冷/孤寂（方案D）、窗光 = 日常/静谧（方案E）、灯笼 = 庆典/市井（方案F）
-- **飞檐斗拱/朱红宫墙/石拱桥/古典家具** — 建筑元素以新国潮美学呈现，细节丰富、赛璐璐线条清晰，材质带自然磨损/岁月包浆感，禁止全新无瑕的"塑料感"
-- **段落间用场景空镜过渡** — 本风格有丰富的场景资产（不同时段/天候/景别变体），段落衔接建议用场景空镜做情绪缓冲，不要硬切
-- **转折点用视觉而非台词** — 优先使用画面手段（光影突变、景别跳切、空镜隐喻）而非依赖对白解释
-- **前中后景层次** — 所有场景必须具备前/中/后景，杜绝扁平，室外必须包含空气透视（远山如黛）
+- **** — phong 2lần  của ：đường mục 、、ngày thức động vẽ 、vật 、Nghiêm cấmvật tầng /vật ra 
+- ** + sáng ** — nàylà vẽ mặt  của điểm 。không là sáng ，không là  3D CG，là 2lần ngày thức động vẽ cộng phong đẹp  của hợp 
+- **2lần hóa ** — tất cảphục hóa đạo  của Bắt buộc： của ánh hàm vật 、biệt  của phụ ánh hàm ánh đường mục 、 của hàm trong ánh vật 。Nghiêm cấm"3D " và "sáng "
+- **** — cơ sở gọi 、、tự ánh 、 và 、trong ánh 、thông phát ánh 。Nghiêm cấmánh ///ánh /
+- **2lần không với ** — Anime Cổ Phong Tân Quốc Triều (2D)gọi ở cơ sở trên thông quaÁnh sángtầng lần 、bối hóa 、thể ánh tay đoạn cộng rỗng gian sáng ，phi không  của thông Phong cách
 
 ---
 
-## 五、古风乐器与环境音
+## 4、phong 2lần Bối cảnhrỗng gian 
 
-古风世界观下的声音元素约束：
+phong giới có  của Bối cảnhtrực quanviệc công thể ：
 
-### 乐器选择
+- **/phong /cổng /** — ngày của thức cấu ảnh Đạo cụ，chép tạo "xem không " của tầng lần rỗng gian ，đường mục tiết 
+- **///** — lưu cấu ảnh  của ngàyxuống thể ，bối tình ：đầy mở  = 、giữa  = 、 = 、 = ý rỗng 
+- **/thángvật /ánh /** — phong giới  của ánh nguồn xuống thể ，ánh  = /mật （phương C）、thángvật  = /（phương D）、ánh  = ngày thường /（phương E）、 = /（phương F）
+- **///cụ ** — tạo mới đẹp ，tiết 、đường mục sạch ，kèm tự /thánggói ，Nghiêm cấmtoàn mới không  của ""
+- **đoạn gian hàm Bối cảnhrỗng quay ** — sách Phong cáchcó  của Bối cảnhTài nguyên（không cùng đoạn /ngày/Cỡ cảnhthể ），đoạn tiếp Khuyến nghịhàm Bối cảnhrỗng quay tình xúc ，không cần 
+- **Điểm bước ngoặthàm trực quanphi Lời thoại** — ưu tiên sử dụng vẽ mặt tay đoạn （Ánh sáng、Cỡ cảnh、rỗng quay ）phi phụ thuộc đúng giải 
+- **trước giữa sau bối tầng lần ** — tất cảBối cảnhBắt buộccụ trước /giữa /sau bối ，，ngoài Bắt buộcgói rỗng video （như ）
 
-- **箫** — 凄凉、孤寂、悲戚段落的核心乐器，与月夜诗意/仙侠飘逸氛围高度适配
-- **二胡** — 情感激荡、悲痛、思念段落，拉弦的哭腔感适合情绪爆发
-- **唢呐** — 情感波动剧烈段落（大悲大喜、命运转折、高潮），慎用但一用即核弹
-- **古琴** — 开场定调 / 平稳段落 / 仙侠意境，与箫搭配使用
-- **琵琶** — 紧张、急促段落的点缀，武侠对决场景的节奏推动器，不作主导
-- 弦乐铺底可增加电影感但不宜喧宾夺主
+---
 
-### 乐器组合策略
+## 5、phong thiết bị âm 
 
-| 情绪阶段 | 乐器组合 |
+phong giới dưới  của thanh âm ：
+
+### thiết bị chọn lựa 
+
+- **** — 、、đoạn  của thiết bị ，thángý /Không khícao độ nối 
+- **2** — tình kích 、、đoạn ， của hợp tình xúc phát 
+- **** — tình động kịch đoạn （lớn lớn 、vận chuyển 、cao ），hàm nhưng 1 hàm 
+- **** — mở trường nối gọi  / đoạn  / ý ，nối hàm 
+- **** — bức 、đoạn  của điểm tố ，đúng Bối cảnh của tiết khuyến động thiết bị ，không tác vụ chính dẫn 
+- cộng sáng nhưng không chính 
+
+### thiết bị nhóm hợp 
+
+| tình xúc đoạn  | thiết bị nhóm hợp  |
 |---|---|
-| 平稳/开场/收尾 | 古琴独奏 或 古琴 + 箫 |
-| 仙侠/空灵/意境 | 箫 + 古琴 + 轻铃 |
-| 悲戚渐浓 | 箫 + 二胡 |
-| 情绪爆发/命运转折 | 唢呐独奏 或 唢呐 + 二胡 |
-| 紧张/急促/武侠 | 琵琶点缀 + 鼓点 + 弦乐衬底 |
-| 少女日常/甜蜜 | 古筝 + 竹笛 |
-| 宫廷/庆典/盛大 | 编钟 + 古筝 + 弦乐铺底 |
+| /mở trường /nhận đuôi  |  hoặc   +  |
+| /rỗng /ý  |  +  +  |
+|  |  + 2 |
+| tình xúc phát /vận chuyển  |  hoặc   + 2 |
+| bức // | điểm tố  + điểm  +  |
+| ít nữ ngày thường / |  +  |
+| //lớn  | chỉnh  +  +  |
 
-### 古风环境音
+### phong âm 
 
-- **典型环境音层次** — 蝉鸣虫唱 / 溪水潺潺 / 风过竹林 / 市井叫卖 / 夜雨滴檐 / 衣料摩擦 / 风铃轻响 / 落花飘零 / 萤火虫光点微响
-- **每场戏标注 1-2 个核心环境音**，帮助后续音效设计。环境音层次越丰富，国风场景越有沉浸感
+- **kiểu âm tầng lần ** —  /  / phong  /  /  /  / phong phản  / 0 / ánh điểm phản 
+- **trường biểu tâm  1-2 mục âm **，trợ giúp sau Âm hiệuthiết tính 。âm tầng lần ，phong Bối cảnhcó 

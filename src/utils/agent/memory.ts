@@ -5,7 +5,7 @@ import type { memories as MemoryRow } from "@/types/database";
 import { tool, jsonSchema } from "ai";
 import { z } from "zod";
 
-// ── 可调配置默认值 ──
+// ── gọi Cấu hìnhMặc địnhgiá trị  ──
 const DEFAULTS: {
   messagesPerSummary: number;
   summaryMaxLength: number;
@@ -14,15 +14,15 @@ const DEFAULTS: {
   ragLimit: number;
   deepRetrieveSummaryLimit: number;
 } = {
-  messagesPerSummary: 3, // 每累积多少条message触发一次summary生成
-  summaryMaxLength: 500, // summary最大字符长度
-  shortTermLimit: 5, // get()返回的近期未总结message条数
-  summaryLimit: 10, // get()返回的summary条数
-  ragLimit: 3, // get()向量相似搜索返回的message条数
-  deepRetrieveSummaryLimit: 5, // deepRetrieve()向量召回summary的条数
+  messagesPerSummary: 3, // nhiều ít mục messagephát 1 lần summarytạo
+  summaryMaxLength: 500, // summarynhất lớn chữ dài độ 
+  shortTermLimit: 5, // get()Trả về của kỳ chưa tổng kết messagemục số 
+  summaryLimit: 10, // get()Trả về của summarymục số 
+  ragLimit: 3, // get()lượng tìm kiếm Trả về của messagemục số 
+  deepRetrieveSummaryLimit: 5, // deepRetrieve()lượng trả summary của mục số 
 };
 
-// ── 向量搜索辅助 ──
+// ── lượng tìm kiếm giúp  ──
 function vectorSearch(rows: MemoryRow[], queryEmbedding: number[], limit: number) {
   return rows
     .map((row) => {
@@ -45,7 +45,7 @@ class Memory {
   private async generateSummary(contents: string[]): Promise<string> {
     const { summaryMaxLength } = await this.getConfigData({ summaryMaxLength: DEFAULTS.summaryMaxLength });
     const { text } = await u.Ai.Text(this.agentType as any).invoke({
-      system: `你是一个记忆压缩助手。请将以下多条记忆内容压缩为一段简洁的摘要，不超过${summaryMaxLength}个字符。只输出摘要内容，不要加任何前缀或解释。`,
+      system: `bạnlà một nén nhỏ giúp tay 。vui lòng dưới nhiều mục nội dungNén thành1 đoạn  của cần  ，không vượt ${summaryMaxLength}mục chữ 。chỉ xuất ra cần  nội dung，không cần  cộng trước  tố hoặc giải 。`,
       messages: [{ role: "user", content: contents.map((c, i) => `${i + 1}. ${c}`).join("\n") }],
     });
     return text.slice(0, Number(summaryMaxLength));
@@ -55,8 +55,8 @@ class Memory {
     const list = summaries.map((s) => `[${s.id}] ${s.content}`).join("\n");
     const { text } = await u.Ai.Text(this.agentType as any).invoke({
       system:
-        '你是一个信息检索助手。用户会给你一个关键词和一组摘要，请判断哪些摘要可能包含与关键词相关的详细信息。只返回相关摘要的id列表，用JSON数组格式，例如 ["id1","id2"]。不要解释。',
-      messages: [{ role: "user", content: `关键词: ${keyword}\n\n摘要列表:\n${list}` }],
+        'bạnlà một thông tinkiểm kiếm giúp tay 。Người dùngsẽ cho bạnmột liên từ  và 1 nhóm cần  ，vui lòng Kiểm tranhững cần  thể gói liên từ liên  của chi thông tin。chỉ Trả vềliên cần   của iddanh sách，hàm JSONsố nhóm định dạng，lệ như  ["id1","id2"]。không cần  giải 。',
+      messages: [{ role: "user", content: `liên từ : ${keyword}\n\ncần  danh sách:\n${list}` }],
     });
     try {
       const ids = JSON.parse(text);
@@ -76,7 +76,7 @@ class Memory {
     const result = { ...defaults };
     for (const key of keys) {
       const raw = dbMap[key];
-      if (raw == null) continue; // null / undefined 使用默认值
+      if (raw == null) continue; // null / undefined sử dụng Mặc địnhgiá trị 
       const num = Number(raw);
       (result as Record<string, string | number>)[key] = Number.isNaN(num) ? raw : num;
     }
@@ -102,7 +102,7 @@ class Memory {
       createTime: options?.createTime ?? Date.now(),
     } as any);
 
-    // 检查未总结消息数量
+    // kiểm tra chưa tổng kết hủy số lượng
     const unsummarized = await u.db("memories").where({ isolationKey, type: "message", summarized: 0 }).orderBy("createTime", "asc");
 
     if (unsummarized.length >= Number(messagesPerSummary)) {
@@ -125,7 +125,7 @@ class Memory {
         createTime: Date.now(),
       } as any);
 
-      // 标记已总结
+      // biểu đã tổng kết 
       await u.db("memories").whereIn("id", batchIds).update({ summarized: 1 });
     }
   }
@@ -138,19 +138,19 @@ class Memory {
     });
 
     const isolationKey = this.isolationKey;
-    // shortTerm: 最近未被总结的 messages
+    // shortTerm: nhất chưa tổng kết  của  messages
     const shortTerm = await u
       .db("memories")
       .where({ isolationKey, type: "message", summarized: 0 })
       .orderBy("createTime", "desc")
       .limit(Number(shortTermLimit));
-    shortTerm.reverse(); // 最旧在前
+    shortTerm.reverse(); // nhất cũ  ở trước  
 
-    // summaries: 最近的 summary
+    // summaries: nhất  của  summary
     const summaries = await u.db("memories").where({ isolationKey, type: "summary" }).orderBy("createTime", "desc").limit(Number(summaryLimit));
     summaries.reverse();
 
-    // rag: 向量搜索所有 messages
+    // rag: lượng tìm kiếm tất cả messages
     const queryEmbedding = await getEmbedding(text);
     const allMessages = await u.db("memories").where({ isolationKey, type: "message" });
     const ragResults = vectorSearch(allMessages, queryEmbedding, Number(ragLimit));
@@ -171,14 +171,14 @@ class Memory {
     const { deepRetrieveSummaryLimit } = await this.getConfigData({ deepRetrieveSummaryLimit: DEFAULTS.deepRetrieveSummaryLimit });
 
     const isolationKey = this.isolationKey;
-    // 步骤1: 向量搜索 summary
+    // bước 1: lượng tìm kiếm  summary
     const queryEmbedding = await getEmbedding(keyword);
     const allSummaries = await u.db("memories").where({ isolationKey, type: "summary" });
     const topSummaries = vectorSearch(allSummaries, queryEmbedding, Number(deepRetrieveSummaryLimit));
 
     if (topSummaries.length === 0) return [];
 
-    // 步骤2: AI 判断相关性
+    // bước 2: AI Kiểm traliên 
     const relevantIds = await this.judgeSummaryRelevance(
       keyword,
       topSummaries.map((s) => ({ id: s.id!, content: s.content })),
@@ -186,7 +186,7 @@ class Memory {
 
     if (relevantIds.length === 0) return [];
 
-    // 步骤3: 展开查询原始 messages
+    // bước 3: mở Truy vấngốc ban đầu  messages
     const relevantSummaries = topSummaries.filter((s) => relevantIds.includes(s.id!));
     const messageIds = relevantSummaries.flatMap((s) => JSON.parse(s.relatedMessageIds || "[]") as string[]);
 
@@ -200,17 +200,17 @@ class Memory {
   getTools() {
     return {
       deepRetrieve: tool({
-        description: "深度检索记忆：当你需要回忆与某个关键词相关的详细历史信息时使用此工具",
+        description: "độ kiểm kiếm ：khi bạnCần trả mục liên từ liên  của chi thông tinsử dụng cụ ",
         inputSchema: jsonSchema<{ keyword: string }>(
           z
             .object({
-              keyword: z.string().describe("要检索的关键词"),
+              keyword: z.string().describe("cần  kiểm kiếm  của liên từ "),
             })
             .toJSONSchema(),
         ),
         execute: async ({ keyword }) => {
           const results = await this.deepRetrieve(keyword);
-          if (results.length === 0) return { found: false, message: "未找到相关记忆" };
+          if (results.length === 0) return { found: false, message: "không tìm thấyliên " };
           return { found: true, memories: results.map((r) => r.content) };
         },
       }),

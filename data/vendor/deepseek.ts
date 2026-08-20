@@ -1,10 +1,10 @@
 /**
- * Toonflow AI供应商模板 - DeepSeek
+ * Toonflow AINhà cung cấpTemplate - DeepSeek
  * @version 2.1
  */
 
 // ============================================================
-// 类型定义
+// Định nghĩa kiểu dữ liệu
 // ============================================================
 
 type VideoMode =
@@ -91,7 +91,7 @@ interface PollResult {
 }
 
 // ============================================================
-// 全局声明
+// Khai báo toàn cục
 // ============================================================
 
 declare const axios: any;
@@ -122,7 +122,7 @@ declare const exports: {
 };
 
 // ============================================================
-// 供应商配置
+// Nhà cung cấpCấu hình
 // ============================================================
 
 const vendor: VendorConfig = {
@@ -131,11 +131,11 @@ const vendor: VendorConfig = {
   author: "Toonflow",
   name: "DeepSeek",
   description:
-    "DeepSeek 官方接口适配，支持 V4 系列模型与思考模式（思维链输出）。\n\n[前往平台](https://platform.deepseek.com/)",
+    "Giao diện chính thức của DeepSeek, hỗ trợ dòng mô hình V3/R1 và chế độ suy luận chuyên sâu (Chain of Thought).\n\n🔗 [Truy cập nền tảng DeepSeek](https://platform.deepseek.com/)",
   icon: "",
   inputs: [
-    { key: "apiKey", label: "API密钥", type: "password", required: true },
-    { key: "baseUrl", label: "请求地址", type: "url", required: true, placeholder: "示例：https://api.deepseek.com" },
+    { key: "apiKey", label: "Khóa API (API Key)", type: "password", required: true },
+    { key: "baseUrl", label: "Địa chỉ yêu cầu", type: "url", required: true, placeholder: "Ví dụ: https://api.deepseek.com" },
   ],
   inputValues: {
     apiKey: "",
@@ -148,14 +148,14 @@ const vendor: VendorConfig = {
 };
 
 // ============================================================
-// 适配器函数
+// Hàm Adapter
 // ============================================================
 
 const textRequest = (model: TextModel, think: boolean, thinkLevel: 0 | 1 | 2 | 3) => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu API Key");
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
 
-  // DeepSeek 思考强度仅支持 high / max（low、medium 会被映射为 high，xhigh 会被映射为 max）
+  // Cường độ suy nghĩ DeepSeek hỗ trợ high / max (low, medium ánh xạ thành high, xhigh ánh xạ thành max)
   // thinkLevel: 0/1/2 → high, 3 → max
   const effortMap: Record<0 | 1 | 2 | 3, "high" | "max"> = {
     0: "high",
@@ -210,7 +210,7 @@ const updateVendor = async (): Promise<string> => {
 };
 
 // ============================================================
-// 导出
+// Export
 // ============================================================
 
 exports.vendor = vendor;

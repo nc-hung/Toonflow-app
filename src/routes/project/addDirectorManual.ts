@@ -7,7 +7,7 @@ import { validateFields } from "@/middleware/middleware";
 import { z } from "zod";
 const router = express.Router();
 
-// 新增导演手册
+// thêm mới đạo diễnsổ tay
 export default router.post(
   "/",
   validateFields({
@@ -30,26 +30,26 @@ export default router.post(
         data: { label: string; value: string; data: string }[];
         directorManual: string;
       };
-      // 安全校验：不允许包含路径分隔符、纯数字，防止越级删除或误删项目目录
+      // an toàn đối chiếu ：không gói đường dẫnngăn cách、thuần số chữ ，cấp Xóahoặc xóa Dự ánthư mục
       if (name.includes("/") || name.includes("\\") || name === "." || name === ".." || /^\d+$/.test(name)) {
-        res.status(400).send(error("名称不能包含路径分隔符或为纯数字"));
+        res.status(400).send(error("tênkhông thể gói đường dẫnngăn cáchhoặc thuần số chữ "));
         return;
       }
 
       const mainPath = u.getPath(["skills", "story_skills", directorManual]);
       if (fs.existsSync(mainPath)) {
-        return res.status(400).send(error("请勿填写重复名称的视觉手册"));
+        return res.status(400).send(error("vui lòng trùng lời tên của trực quansổ tay"));
       }
-      // 字段映射表（与 getVisualManual 保持一致）
+      // chữ đoạn bản g（ getVisualManual lưu giữ 1 ）
       const DATA_MAP: { value: string; subDir?: string }[] = [
         { value: "README" },
         { value: "director_planning_narrative", subDir: "driector_skills" },
         { value: "director_storyboard_table_narrative", subDir: "driector_skills" },
       ];
-      // 根据 DATA_MAP 构建 value -> subDir 的映射
+      // Dựa theo DATA_MAP cấu tạo  value -> subDir  của 
       const SUB_DIR_MAP = new Map(DATA_MAP.map(({ value, subDir }) => [value, subDir ?? ""]));
 
-      // 合法的 value 值集合，用于校验
+      // hợp thức  của  value giá trị tập hợp ，hàm với đối chiếu 
       const VALID_KEYS = new Set(DATA_MAP.map(({ value }) => value));
 
       for (const item of data) {
@@ -60,7 +60,7 @@ export default router.post(
         const filePath = u.getPath([...dirArr, `${item.value}.md`]);
 
         const fileDir = path.dirname(filePath);
-        // 目录不存在时递归创建
+        // thư mụckhông tồn tạisáng tạo 
         if (!fs.existsSync(fileDir)) {
           fs.mkdirSync(fileDir, { recursive: true });
         }

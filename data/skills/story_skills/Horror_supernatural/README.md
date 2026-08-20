@@ -1,50 +1,50 @@
-# 恐怖灵异 · 导演叙事手法技能包
+# bất  · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **恐怖灵异** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **bất ** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **未知即恐惧** — 真正的恐怖来自"看不见的东西"，观众的想象力远比任何画面更可怕
-- **日常的裂缝** — 最有效的恐怖不是鬼怪本身，而是熟悉环境中出现的"不对劲"
-- **缓慢侵蚀** — 恐惧不是一次性吓人，而是从微妙的不安一点点蔓延到无处可逃
-- **人心比鬼可怕** — 最深层的恐怖来自人性的黑暗面，超自然只是照妖镜
+- **chưa báo ** — thật chính  của tự "xem không thấy  của "， của nghĩ tượng lực tỷ vẽ mặt đổi 
+- **ngày thường  của ** — nhất hợp lệ của không là sách ，là giữa ra  của "không đúng "
+- **chậm ** — không là 1 lần người，là từ  của không an 1 điểm điểm trì đến không xử 
+- **ngườitỷ ** — nhất tầng  của tự người của mặt ，vượt tự chỉ là quay 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Horror_supernatural/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义恐怖灵异在主题立意、情感节奏、场景情绪设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa bất ở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与情感内核 | 未知恐惧、日常裂缝、缓慢侵蚀、人心映射 |
-| 叙事结构与节奏规划 | 不安积累、松紧交替、虚实模糊、高潮反转 |
-| 分场景情绪设计 | 六大典型恐怖段落设计、安全感剥夺、空间异化 |
-| 声音与音乐方向 | 寂静杀伤力、低频压迫、声源不明、突然静默 |
-| 构图与景别叙事 | 空间留白威胁、视角受限、景别信息控制 |
-| 镜头运动与节奏 | 呼吸感运镜、失控感、窥视视角、静止压迫 |
+| chính đề lập ý tình trong  | chưa báo 、ngày thường 、chậm 、người |
+| việc kết cấu tiết lập kế hoạch | không an 、tác vụ 、mô 、cao phụ chuyển  |
+| phútBối cảnhtình xúc thiết tính  | 6lớn kiểu đoạn thiết tính 、an toàn 、rỗng gian bất hóa  |
+| thanh âm âm phương  | lực 、thấp tần nén 、thanh nguồn không dẫn 、 |
+| cấu ảnh Cỡ cảnhviệc  | rỗng gian lưu 、video nhân hạn 、Cỡ cảnhthông tinsát chép  |
+| Ống kínhvận động tiết  | Góc quay、thất sát 、video video nhân 、Tĩnh (static)nén  |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义恐怖灵异在分镜表中的景别控制、运镜恐惧构建、时长张力、镜头合并与转场逻辑。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa bất ở Bảng phân cảnhgiữa  của Cỡ cảnhsát chép 、Góc quaycấu tạo 、Thời lượngbức lực 、Ống kínhhợp nhất chuyển trường logic。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为恐惧节奏控制核心工具的定位说明 |
-| 景别选择 | 信息遮蔽景别、威胁暗示、主观受限视野 |
-| 运镜节奏 | 缓慢逼近、失控摇晃、突然静止、窥视跟踪 |
-| 时长把控 | 恐惧拉长、惊吓压缩、寂静时长控制 |
-| 镜头合并策略 | 连续不安感维持、氛围镜头整合、叙事密度 |
-| 一镜到底 | 长镜头窒息感、逃跑跟踪、空间探索 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ tiết sát chép cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | thông tinCỡ cảnh、nhở 、chính hạn video  |
+| Góc quaytiết  | chậm 、thất sát 、Tĩnh (static)、video Bám theo (tracking shot) |
+| Thời lượngđem sát  | dài 、nén nhỏ 、Thời lượngsát chép  |
+| Ống kínhhợp nhất  | không an giữ 、Không khíỐng kínhchỉnh hợp 、việc mật độ  |
+| 1 quay đến  | dài Ống kính、Bám theo (tracking shot)、rỗng gian kiếm  |

@@ -28,6 +28,6 @@ export default router.post(
       .update({
         data: JSON.stringify(data),
       });
-    res.status(200).send(success("更新成功"));
+    res.status(200).send(success("Cập nhật thành công"));
   },
 );

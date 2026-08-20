@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 新增资产
+// Thêm tài nguyên mới 
 export default router.post(
   "/",
   validateFields({
@@ -55,7 +55,7 @@ export default router.post(
       describe,
     });
 
-    // 删除不在 assetsItem 中的子项
+    // Xóa các mục con không có trong assetsItem
     const existingItems = await u.db("o_assets").where("assetsId", id).select("id");
     const existingIds = existingItems.map((i: { id?: number }) => i.id!);
     const incomingIds = assetsItem.filter((i: { id?: number }) => i.id).map((i: { id?: number }) => i.id);
@@ -63,7 +63,7 @@ export default router.post(
     if (toDeleteIds.length > 0) {
       const deleteItems = await u.db("o_assets").whereIn("id", toDeleteIds).select("imageId");
       const deleteImageIds = deleteItems.map((i: { imageId?: number | null }) => i.imageId!).filter(Boolean);
-      // 先将 o_assets.imageId 置空，解除外键约束，再删除 o_image，最后删除 o_assets
+      // Gán rỗng o_assets.imageId trước  để gỡ ràng buộc khóa ngoại, sau  đó xóa o_image, cuối cùng xóa o_assets
       await u.db("o_assets").whereIn("id", toDeleteIds).update({ imageId: null });
       if (deleteImageIds.length > 0) {
         await u.db("o_image").whereIn("id", deleteImageIds).delete();
@@ -96,7 +96,7 @@ export default router.post(
           filePath: item.src,
           type: "audio",
           assetsId,
-          state: "已完成",
+          state: "Đã hoàn thành",
         });
         await u.db("o_assets").where("id", assetsId).update({
           imageId,
@@ -104,6 +104,6 @@ export default router.post(
       }
     }
 
-    res.status(200).send(success({ message: "新增资产成功" }));
+    res.status(200).send(success({ message: "Thêm tài nguyên thành công" }));
   },
 );

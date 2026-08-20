@@ -26,6 +26,6 @@ export default router.post(
     const filePath = path.join(dir, `${name}.md`);
     await fs.writeFile(filePath, data, "utf-8");
 
-    res.status(200).send(success("保存成功"));
+    res.status(200).send(success("Lưu thành công"));
   },
 );

@@ -1,10 +1,10 @@
 /**
- * Toonflow AI供应商模板 - 火山引擎(豆包)
+ * Toonflow AINhà cung cấpTemplate - Volcengine(Doubao)
  * @version 2.0
  */
 
 // ============================================================
-// 类型定义
+// Định nghĩa kiểu dữ liệu
 // ============================================================
 
 type VideoMode =
@@ -97,7 +97,7 @@ interface PollResult {
 }
 
 // ============================================================
-// 全局声明
+// Khai báo toàn cục
 // ============================================================
 
 declare const axios: any;
@@ -128,7 +128,7 @@ declare const exports: {
   updateVendor?: () => Promise<string>;
 };
 
-// 常量配置
+// Cấu hình hằng số
 const SERVICE = "ark";
 const VERSION = "2024-01-01";
 const REGION = "cn-beijing";
@@ -139,24 +139,24 @@ const PATH = "/";
 const TIMEOUT = 120_000;
 
 // ============================================================
-// 供应商配置
+// Nhà cung cấpCấu hình
 // ============================================================
 
 const vendor: VendorConfig = {
   id: "volcengineSd2",
   version: "2.0",
   author: "toonflow",
-  name: "火山引擎sd2.0真人",
-  description: "火山引擎豆包大模型，支持文本、图片生成、视频生成等能力。\n\n需要在[火山引擎控制台](https://console.volcengine.com/ark)获取API密钥。",
+  name: "Volcengine SD2.0 Người thật",
+  description: "Mô hình lớn Doubao của Volcengine (Bytedance), hỗ trợ văn bản , tạo ảnh, tạo video người thật chất lượng cao.\n\nCần lấy Khóa API tại [Bảng điều khiển Volcengine](https://console.volcengine.com/ark)。",
   icon: "",
   inputs: [
-    { key: "apiKey", label: "API密钥", type: "password", required: true, placeholder: "火山引擎API Key" },
-    { key: "baseUrl", label: "请求地址", type: "url", required: true, placeholder: "以v3结束，示例：https://ark.cn-beijing.volces.com/api/v3" },
-    { key: "ak", label: "火山 Access Key ID", type: "text", required: true, placeholder: "火山引擎/OSS API访问密钥" },
-    { key: "sk", label: "火山 Secret Access Key", type: "password", required: true, placeholder: "火山引擎/OSS Secret Access Key" },
-    { key: "groupId", label: "资产组ID", type: "text", required: true, placeholder: "火山引擎资产组ID" },
-    { key: "tosEndpoint", label: "火山TOS Endpoint", type: "url", required: true, placeholder: "如 tos-cn-beijing.volces.com" },
-    { key: "tosBucket", label: "火山TOS Bucket", type: "text", required: true, placeholder: "Bucket 名称" },
+    { key: "apiKey", label: "Khóa API (API Key)", type: "password", required: true, placeholder: "API Key của Volcengine" },
+    { key: "baseUrl", label: "Địa chỉ yêu cầu", type: "url", required: true, placeholder: "Kết thúc bằng v3, ví dụ: https://ark.cn-beijing.volces.com/api/v3" },
+    { key: "ak", label: "Volcengine  Access Key ID", type: "text", required: true, placeholder: "Khóa bí mật truy cập API Volcengine / OSS" },
+    { key: "sk", label: "Volcengine  Secret Access Key", type: "password", required: true, placeholder: "Secret Access Key của Volcengine / OSS" },
+    { key: "groupId", label: "ID nhóm tài nguyên", type: "text", required: true, placeholder: "ID nhóm tài nguyên Volcengine" },
+    { key: "tosEndpoint", label: "Volcengine TOS Endpoint", type: "url", required: true, placeholder: "như  tos-cn-beijing.volces.com" },
+    { key: "tosBucket", label: "Volcengine TOS Bucket", type: "text", required: true, placeholder: "Bucket tên" },
   ],
   inputValues: {
     apiKey: "",
@@ -169,7 +169,7 @@ const vendor: VendorConfig = {
   },
   models: [
     {
-      name: "Seedance-2.0(音画同生)",
+      name: "Seedance-2.0(Đồng bộ Âm thanh & Hình ảnh)",
       modelName: "doubao-seedance-2-0-260128",
       type: "video",
       mode: ["text", "startFrameOptional", ["imageReference:9", "videoReference:3", "audioReference:3"]],
@@ -177,7 +177,7 @@ const vendor: VendorConfig = {
       durationResolutionMap: [{ duration: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], resolution: ["480p", "720p"] }],
     },
     {
-      name: "Seedance-2.0-Fast(音画同生)",
+      name: "Seedance-2.0-Fast(Đồng bộ Âm thanh & Hình ảnh)",
       modelName: "doubao-seedance-2-0-fast-260128",
       type: "video",
       mode: ["text", "startFrameOptional", ["imageReference:9", "videoReference:3", "audioReference:3"]],
@@ -185,7 +185,7 @@ const vendor: VendorConfig = {
       durationResolutionMap: [{ duration: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], resolution: ["480p", "720p"] }],
     },
     {
-      name: "Seedance-1.5-Pro(音画同生)",
+      name: "Seedance-1.5-Pro(Đồng bộ Âm thanh & Hình ảnh)",
       modelName: "doubao-seedance-1-5-pro-251215",
       type: "video",
       mode: ["text", "startFrameOptional"],
@@ -194,7 +194,7 @@ const vendor: VendorConfig = {
     },
   ],
 };
-/** 签名密钥派生 */
+/** ký tên Khóa bí mật (Secret Key)phái sinh  */
 function deriveSigningKey(shortDate: string) {
   const kDate = crypto.createHmac("sha256", vendor.inputValues.sk).update(shortDate).digest();
   const kRegion = crypto.createHmac("sha256", kDate).update(REGION).digest();
@@ -214,11 +214,11 @@ function buildQueryString(params: Record<string, string>): string {
     .join("&");
 }
 /**
- * 火山引擎 HMAC-SHA256 签名请求
- * @param action  API Action 名称
- * @param body    请求体对象（自动序列化为 JSON）
- * @param method  HTTP 方法，默认 POST
- * @param header  额外的自定义请求头
+ * Volcengine HMAC-SHA256 ký tên vui lòng cầu 
+ * @param action  API Action tên
+ * @param body    vui lòng cầu thể đúng tượng （tự động xếp hàng hóa  JSON）
+ * @param method  HTTP phương thức ，Mặc định POST
+ * @param header  bổ ngoài  của tùy chỉnh vui lòng cầu đầu 
  */
 async function request(
   action: string,
@@ -228,15 +228,15 @@ async function request(
 ): Promise<any> {
   const bodyStr = JSON.stringify(body);
 
-  // 查询参数（按 key 排序）
+  // Truy vấntham số（theo  key Sắp xếp）
   const sortedQuery = Object.fromEntries(Object.entries({ Action: action, Version: VERSION }).sort(([a], [b]) => a.localeCompare(b)));
 
-  // 时间戳 & 内容哈希
+  // thời gian & nội dung
   const date = new Date().toISOString().replace(/[-:]/g, "").replace(/\..+/, "Z");
   const shortDate = date.slice(0, 8);
   const xContentSha256 = crypto.createHash("sha256").update(bodyStr).digest("hex");
 
-  // 规范化请求字符串
+  // hóa vui lòng cầu chuỗi ký tự
   const queryString = buildQueryString(sortedQuery as Record<string, string>);
   const canonicalRequest = [
     method,
@@ -255,11 +255,11 @@ async function request(
   const credentialScope = `${shortDate}/${REGION}/${SERVICE}/request`;
   const stringToSign = `HMAC-SHA256\n${date}\n${credentialScope}\n${hashedCanonicalRequest}`;
 
-  // 计算签名
+  // tính toánký tên 
   const signingKey = deriveSigningKey(shortDate);
   const signature = crypto.createHmac("sha256", signingKey).update(stringToSign).digest("hex");
 
-  // 组装请求头
+  // nhóm vui lòng cầu đầu 
   const authorization = `HMAC-SHA256 Credential=${vendor.inputValues.ak}/${credentialScope}, SignedHeaders=${SIGNED_HEADERS}, Signature=${signature}`;
   const headers: Record<string, string> = {
     Host: HOST,
@@ -277,7 +277,7 @@ async function request(
 }
 
 // ============================================================
-// 火山引擎 TOS V4 签名工具函数
+// Volcengine TOS V4 ký tên cụ hàm 
 // ============================================================
 const TOS_SIGNING_ALGORITHM = "TOS4-HMAC-SHA256";
 function getTosRegion(): string {
@@ -317,7 +317,7 @@ function tosSecurityToken(): string {
 }
 function getStorageProvider(): "tos" | "oss" {
   if (hasCompleteTosConfig()) return "tos";
-  throw new Error("未检测到可用对象存储配置，请填写完整的 TOS 或 OSS 配置");
+  throw new Error("chưa kiểm kiểm đến hàm đúng tượng lưu trữ Cấu hình，vui lòng chỉnh  của  TOS hoặc  OSS Cấu hình");
 }
 function tosUriEncode(str: string, encodeSlash: boolean = false): string {
   const encoded = encodeURIComponent(str).replace(/!/g, "%21").replace(/'/g, "%27").replace(/\(/g, "%28").replace(/\)/g, "%29").replace(/\*/g, "%2A");
@@ -414,7 +414,7 @@ async function tosUpload(objectKey: string, data: Buffer, contentType: string): 
   const bucket = tosBucket();
   const endpoint = tosEndpoint();
   if (!bucket || !endpoint || !tosAk() || !tosSk()) {
-    throw new Error("TOS 配置不完整");
+    throw new Error("TOS Cấu hìnhkhông chỉnh ");
   }
 
   const host = `${bucket}.${endpoint}`;
@@ -453,7 +453,7 @@ async function tosUpload(objectKey: string, data: Buffer, contentType: string): 
 
   if (!res.ok) {
     const errText = await res.text().catch(() => `${res.status} ${res.statusText}`);
-    throw new Error(`TOS 上传失败: ${errText}`);
+    throw new Error(`TOS tải lênthất bại: ${errText}`);
   }
 }
 function tosGetSignedUrl(objectKey: string, expiresIn: number = 7200): string {
@@ -496,7 +496,7 @@ function tosGetSignedUrl(objectKey: string, expiresIn: number = 7200): string {
 
   return `https://${host}/${tosUriEncode(objectKey)}?${finalQuery}`;
 }
-/** 从 base64 Data URL 中解析 MIME 类型和文件扩展名 */
+/** từ  base64 Data URL giữa giải tích  MIME loại và Tệptên  */
 function parseBase64(base64: string): { mimeType: string; ext: string; data: string } {
   const match = base64.match(/^data:([^;]+);base64,(.+)$/);
   if (!match) {
@@ -535,14 +535,14 @@ async function uploadAssets(source: string, type: "Image" | "Video" | "Audio"): 
     let assetUrl: string;
     const exists = await tosFileExists(objectKey);
     if (!exists) {
-      logger(`[TOS] 上传文件: ${objectKey} (${mimeType})`);
+      logger(`[TOS] tải lênTệp: ${objectKey} (${mimeType})`);
       await tosUpload(objectKey, buffer, mimeType);
     } else {
-      logger(`[TOS] 文件已存在，跳过上传: ${objectKey}`);
+      logger(`[TOS] Tệpđã lưu ở ，tải lên: ${objectKey}`);
     }
     assetUrl = tosGetSignedUrl(objectKey, 7200);
 
-    logger(`生成预签名URL: ${assetUrl}`);
+    logger(`tạoký tên URL: ${assetUrl}`);
 
     const res = await request("CreateAsset", {
       GroupId: vendor.inputValues.groupId,
@@ -553,30 +553,30 @@ async function uploadAssets(source: string, type: "Image" | "Video" | "Audio"): 
 
     if (!res.ok) {
       const errorText = await res.text();
-      throw new Error(`创建资产失败: ${errorText}`);
+      throw new Error(`sáng tạo Tài nguyênthất bại: ${errorText}`);
     }
 
     const resData = await res.json();
     const assetId: string = resData.Result.Id;
-    logger(`资产已创建: ${assetId}`);
+    logger(`Tài nguyênđã sáng tạo : ${assetId}`);
 
     const result = await pollTask(
       async (): Promise<PollResult> => {
         const queryRes = await request("GetAsset", { Id: assetId, AssetType: type });
         if (!queryRes.ok) {
           const errorText = await queryRes.text();
-          throw new Error(`查询资产状态失败: ${errorText}`);
+          throw new Error(`Truy vấnTài nguyêntrạng tháithất bại: ${errorText}`);
         }
         const task = await queryRes.json();
         const status: string = task.Result.Status;
 
-        logger(`[资产轮询] 状态: ${JSON.stringify(task, null, 2)}`);
+        logger(`[Tài nguyênTruy vấn] trạng thái: ${JSON.stringify(task, null, 2)}`);
 
         switch (status) {
           case "Active":
             return { completed: true, data: assetId };
           case "Failed":
-            return { completed: true, error: task.Result.Error?.Message || "资产创建失败" };
+            return { completed: true, error: task.Result.Error?.Message || "Tài nguyênsáng tạo thất bại" };
           default:
             return { completed: false };
         }
@@ -592,17 +592,17 @@ async function uploadAssets(source: string, type: "Image" | "Video" | "Audio"): 
     return `asset://${result.data}`;
   } catch (err: any) {
     const msg = typeof err?.message === "string" ? err.message : String(err);
-    logger(`[uploadAssets] 上传失败: ${msg}`);
+    logger(`[uploadAssets] tải lênthất bại: ${msg}`);
     return source;
   }
 }
 
 // ============================================================
-// 辅助工具
+// Công cụ bổ trợ
 // ============================================================
 
 const getHeaders = () => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu API Key");
   return {
     "Content-Type": "application/json",
     Authorization: `Bearer ${vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "")}`,
@@ -612,7 +612,7 @@ const getHeaders = () => {
 const getBaseUrl = () => vendor.inputValues.baseUrl.replace(/\/+$/, "");
 
 // ============================================================
-// 适配器函数
+// Hàm Adapter
 // ============================================================
 
 const textRequest = (model: TextModel, think: boolean, thinkLevel: 0 | 1 | 2 | 3) => {};
@@ -699,7 +699,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
         break;
     }
   } else if (Array.isArray(config.mode)) {
-    // 多模态参考模式：按类型分别提取并添加
+    // Chế độ đa phương thức: theo loạiphần khác trích xuấtnhất thêm
     const imageRefs = config.referenceList?.filter((r) => r.type === "image") ?? [];
     const videoRefs = config.referenceList?.filter((r) => r.type === "video") ?? [];
     const audioRefs = config.referenceList?.filter((r) => r.type === "audio") ?? [];
@@ -754,7 +754,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
   } else {
     body.generate_audio = false;
   }
-  logger(`[视频生成] 提交任务, 模型: ${model.modelName}, 时长: ${config.duration}s, 分辨率: ${config.resolution}`);
+  logger(`[Videotạo] Gửi tác vụ, Mô hình: ${model.modelName}, thời lượng: ${config.duration}s, phần tỷ lệ : ${config.resolution}`);
   const res = await fetch(`${baseUrl}/contents/generations/tasks`, {
     method: "POST",
     headers,
@@ -763,17 +763,17 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
 
   if (!res.ok) {
     const errorText = await res.text();
-    throw new Error(`视频生成任务创建失败: ${errorText}`);
+    throw new Error(`Videotạotác vụ sáng tạo thất bại: ${errorText}`);
   }
   const createResponse = await res.json();
   logger(createResponse);
   const taskId = createResponse?.id;
 
   if (!taskId) {
-    throw new Error("视频生成任务创建失败：未返回任务ID");
+    throw new Error("Videotạotác vụ sáng tạo thất bại：chưa Trả vềID tác vụ");
   }
 
-  logger(`[视频生成] 任务已创建, ID: ${taskId}`);
+  logger(`[Videotạo] tác vụ đã sáng tạo , ID: ${taskId}`);
 
   const result = await pollTask(
     async (): Promise<PollResult> => {
@@ -783,24 +783,24 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       });
       if (!queryRes.ok) {
         const errorText = await queryRes.text();
-        throw new Error(`查询视频生成任务状态失败: ${errorText}`);
+        throw new Error(`Truy vấnVideotạotác vụ trạng tháithất bại: ${errorText}`);
       }
       const task = await queryRes.json();
 
-      logger(`[视频生成] 任务状态: ${JSON.stringify(task)}`);
+      logger(`[Videotạo] tác vụ trạng thái: ${JSON.stringify(task)}`);
 
       switch (task.status) {
         case "succeeded":
           if (task.content?.video_url) {
             return { completed: true, data: task.content.video_url };
           }
-          return { completed: true, error: "任务成功但未返回视频URL" };
+          return { completed: true, error: "tác vụ thành côngnhưng chưa Trả vềVideoURL" };
         case "failed":
-          return { completed: true, error: task.error?.message || "视频生成失败" };
+          return { completed: true, error: task.error?.message || "Videotạothất bại" };
         case "expired":
-          return { completed: true, error: "视频生成任务超时" };
+          return { completed: true, error: "Videotạotác vụ Hết thời gian chờ" };
         case "cancelled":
-          return { completed: true, error: "视频生成任务已取消" };
+          return { completed: true, error: "Videotạotác vụ đã xuất hủy " };
         default:
           return { completed: false };
       }
@@ -829,7 +829,7 @@ const updateVendor = async (): Promise<string> => {
 };
 
 // ============================================================
-// 导出
+// Export
 // ============================================================
 
 exports.vendor = vendor;

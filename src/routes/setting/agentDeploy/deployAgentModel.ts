@@ -27,6 +27,6 @@ export default router.post(
       const { id, name, model, modelName, vendorId, desc, temperature, maxOutputTokens } = item;
       await u.db("o_agentDeploy").where({ id }).update({ id, name, model, modelName, vendorId, desc, temperature, maxOutputTokens });
     }
-    res.status(200).send(success("批量配置成功"));
+    res.status(200).send(success("Cấu hình hàng loạt thành công"));
   },
 );

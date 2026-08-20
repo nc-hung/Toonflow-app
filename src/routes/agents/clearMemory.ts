@@ -20,11 +20,11 @@ export default router.post(
     if (type === "all") {
       await u.db("memories").where({ isolationKey }).del();
     } else if (type === "message") {
-      // 删 message 时同步删关联的 summary，避免悬挂引用
+      // xóa  message cùng bước xóa liên kết  của  summary，hàm 
       await u.db("memories").where({ isolationKey, type: "message" }).del();
       await u.db("memories").where({ isolationKey, type: "summary" }).del();
     } else {
-      // 删 summary 时将关联的 message 重置为未总结，使其重新进入 shortTerm
+      // xóa  summary liên kết  của  message trùng trí chưa tổng kết ，trùng mới  tiến vào  shortTerm
       await u
         .db("memories")
         .where({ isolationKey, type: "message", summarized: 1 })

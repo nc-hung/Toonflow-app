@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 获取生成图片
+// Lấy hình ảnh đã tạo
 export default router.post(
   "/",
   validateFields({
@@ -26,24 +26,24 @@ export default router.post(
         filePath: item.filePath ? await u.oss.getFileUrl(item.filePath) : "",
       })),
     );
-    //拿到本地片尾视频并插入到data中
+    // Lấy video kết thúc cục bộ và chèn vào data
     const ending = await u.oss.getFileUrl("/ending.mp4", "assets");
     data.push({
       id: 0,
-      name: "Toonflow片尾",
+      name: "Video kết thúc Toonflow",
       filePath: ending,
       type: "clip",
     });
-    // 查询视频轨道
+    // Truy vấn track video
     const trackRows = await u
       .db("o_videoTrack")
       .where("o_videoTrack.scriptId", scriptId)
       .andWhere("o_videoTrack.projectId", projectId)
       .select("o_videoTrack.id as trackId","o_videoTrack.videoId");
-    // 按轨道分组处理视频
+    // Xử lý video theo từng nhóm track
     const video = await Promise.all(
       trackRows.map(async (track) => {
-        const videoItems = await u.db("o_video").where("o_video.videoTrackId", track.trackId).andWhere("o_video.state", "生成成功").select("*");
+        const videoItems = await u.db("o_video").where("o_video.videoTrackId", track.trackId).andWhere("o_video.state", "Tạo thành công").select("*");
         const videoList = await Promise.all(
           videoItems.map(async (v) => ({
             id: v.id,

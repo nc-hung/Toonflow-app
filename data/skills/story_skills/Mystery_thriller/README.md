@@ -1,62 +1,62 @@
-# 悬疑推理 · 导演叙事手法技能包
+# khuyến lý  · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **悬疑推理** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **khuyến lý ** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **信息操控** — 叙事的本质是控制观众"何时知道什么"，悬念来自信息差
-- **不可靠叙事** — 镜头本身可以"说谎"：选择性展示、误导性景别、欺骗性转场
-- **层层剥茧** — 每个段落揭示一层真相，同时制造新的疑问，维持观众的解谜欲
-- **细节即线索** — 每个看似无关的镜头都可能是伏笔，回看时恍然大悟才是最高奖赏
+- **thông tinthao sát ** — việc  của sách là sát chép "báo đạo sao"，tự thông tin
+- **không việc ** — Ống kínhsách "hướng "：chọn lựa nhở 、dẫn Cỡ cảnh、chuyển trường 
+- **tầng tầng ** — mục đoạn nhở 1 tầng thật ，cùng chép tạo mới  của hỏi ，giữ  của giải 
+- **tiết đường kiếm ** — mục xem không liên  của Ống kínhđều thể là ，trả xem lớn là tối đa 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Mystery_thriller/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义悬疑推理在主题立意、信息操控、悬念节奏、场景氛围与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa khuyến lý ở chính đề lập ý 、thông tinthao sát 、tiết 、Bối cảnhKhông khíthanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与悬念内核 | 信息差操控、不可靠叙事、真相层级设计 |
-| 叙事结构与悬念节奏 | 钩子→铺陈→转折→揭示循环、红鲱鱼策略、信息释放节奏 |
-| 分场景氛围设计 | 六大典型悬疑段落设计、空间压迫叙事、视觉线索埋设 |
-| 声音与音乐方向 | 不安底噪、寂静恐惧、音效误导、心理音景 |
-| 构图与景别叙事 | 倾斜构图/遮挡构图/深焦叙事、景别的信息操控 |
-| 镜头运动与节奏 | 窥视运镜、不安手持、突然静止、时间操控 |
+| chính đề lập ý trong  | thông tinthao sát 、không việc 、thật tầng cấp thiết tính  |
+| việc kết cấu tiết  | hook →→chuyển →nhở 、、thông tinmở tiết  |
+| phútBối cảnhKhông khíthiết tính  | 6lớn kiểu đoạn thiết tính 、rỗng gian nén việc 、trực quanđường kiếm thiết  |
+| thanh âm âm phương  | không an 、、Âm hiệudẫn 、lý âm bối  |
+| cấu ảnh Cỡ cảnhviệc  | cấu ảnh /cấu ảnh /việc 、Cỡ cảnh của thông tinthao sát  |
+| Ống kínhvận động tiết  | video Góc quay、không an tay giữ 、Tĩnh (static)、thời gianthao sát  |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义悬疑推理在分镜表中的景别策略、运镜逻辑、时长操控、线索镜头设计与转场手法。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa khuyến lý ở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaylogic、Thời lượngthao sát 、đường kiếm Ống kínhthiết tính chuyển trường tay thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为信息操控核心工具的定位说明 |
-| 景别选择 | 信息遮蔽景别、选择性特写、误导性全景 |
-| 运镜节奏 | 窥视缓推、不安摇移、突然静止的心理冲击 |
-| 时长把控 | 悬念拉伸、节奏骤变、沉默倒计时 |
-| 线索镜头设计 | 伏笔植入、视觉线索、回忆闪回处理 |
-| 信息揭示策略 | 真相揭示节奏、反转镜头语言、观众预期管理 |
-| 人物行为设计 | 可疑行为暗示、微表情线索、多义性动作 |
-| 台词与留白 | 未说完的话、歧义台词、沉默的嫌疑 |
-| 转场设计 | 时间跳切/闪回闪前/匹配剪辑/黑屏悬念 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ thông tinthao sát cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | thông tinCỡ cảnh、chọn lựa Đặc tả (close-up)、dẫn Toàn cảnh (wide shot) |
+| Góc quaytiết  | video khuyến 、không an 、Tĩnh (static) của lý  |
+| Thời lượngđem sát  | 、tiết 、tính  |
+| đường kiếm Ống kínhthiết tính  | vào 、trực quanđường kiếm 、trả trả xử lý  |
+| thông tinnhở  | thật nhở tiết 、phụ chuyển Ống kínhngữ 、kỳ lý  |
+| ngườithi thiết tính  | thi nhở 、bảng tình đường kiếm 、nhiều nghĩa động tác vụ  |
+| Lời thoạilưu  | chưa hướng  của lời 、nghĩa Lời thoại、 của  |
+| chuyển trường thiết tính  | thời gian/trả trước /khớpsửa / |
 
-## 使用方式
+## hàm cách thức
 
-本技能包作为 ToonFlow 导演 AI 的叙事手法参考，在故事创作流程中自动加载，指导：
+sách thể gói tác vụ  ToonFlow đạo diễn AI  của việc tay thức tham chiếu，ở việc sáng tác vụ trình giữa tự động cộng xuống ，dẫn ：
 
-1. **叙事规划** — 确定悬念内核、信息释放节奏、场景氛围与音效方向
-2. **分镜表生成** — 根据叙事规划输出具体的景别、运镜、时长与转场方案
+1. **việc lập kế hoạch** — nối trong 、thông tinmở tiết 、Bối cảnhKhông khíÂm hiệuphương 
+2. **Bảng phân cảnhtạo** — dựa theoviệc lập kế hoạchtải ra cụ thể  của Cỡ cảnh、Góc quay、Thời lượngchuyển trường phương 
 
-两个文件分工明确、逐层递进，从"为什么这样拍"到"具体怎么拍"形成完整闭环。
+2mục tệpphútdẫn 、tầng tiến ，từ "saonàykiểu "đến "cụ thể sao"dạng tạo chỉnh 。

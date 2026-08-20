@@ -5,14 +5,14 @@ import fs from "fs";
 import path from "path";
 const router = express.Router();
 
-// 字段映射表
+// chữ đoạn bản g
 const DATA_MAP: { label: string; value: string; subDir?: string }[] = [
   { label: "README", value: "README" },
-  { label: "导演规划", value: "director_planning_narrative", subDir: "driector_skills" },
-  { label: "分镜表", value: "director_storyboard_table_narrative", subDir: "driector_skills" },
+  { label: "Kế hoạch đạo diễn", value: "director_planning_narrative", subDir: "driector_skills" },
+  { label: "Phân cảnhbản g", value: "director_storyboard_table_narrative", subDir: "driector_skills" },
 ];
 
-// 读取 md 文件内容，文件不存在时返回空字符串
+// xuất  md Tệpnội dung，Tệp không tồn tạiTrả vềrỗng chuỗi ký tự
 function readMd(filePath: string): string {
   try {
     return fs.readFileSync(filePath, "utf-8");
@@ -21,7 +21,7 @@ function readMd(filePath: string): string {
   }
 }
 
-// 获取 images 文件夹下所有图片文件路径列表
+// Lấy images thư mục tệp dưới tất cảHình ảnhTệpđường dẫndanh sách
 async function readAllImages(imagesDir: string) {
   try {
     const ossPath = u.getPath(path.join("skills", "story_skills", imagesDir, "images"));
@@ -37,12 +37,12 @@ async function readAllImages(imagesDir: string) {
   }
 }
 
-// 获取导演手册
+// Lấyđạo diễnsổ tay
 export default router.post("/", async (req, res) => {
   try {
     const artPromptsDir = u.getPath(["skills", "story_skills"]);
 
-    // 读取所有风格文件夹
+    // xuất tất cảphong cáchthư mục tệp 
     const styleDirs = fs
       .readdirSync(artPromptsDir, { withFileTypes: true })
       .filter((d) => d.isDirectory())

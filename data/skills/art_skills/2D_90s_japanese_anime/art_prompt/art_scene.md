@@ -1,149 +1,149 @@
-# 90年代复古日系动画风格 - 场景图生成 · 约束手册
+# 90nămlời ngày dòng động vẽ Phong cách - Bối cảnhảnh tạo · sổ tay
 
 ---
 
-## 一、场景美学原则
+## 1 、Bối cảnhđẹp gốc 
 
-1. **空间叙事** — 场景承载情绪与叙事功能，不是纯背景板
-2. **层次纵深** — 所有场景必须具备前/中/后景，杜绝扁平
-3. **质感至上** — 线条/色彩/光影等材质表现必须清晰
-4. **90年代为锚** — 一切画面以90年代复古日系动画为标准，拒绝现代CG/3D渲染；追求手绘线条特征（流畅线条、块面阴影）与电影感光影（柔和暖光、体积光）
+1. **rỗng gian việc ** — Bối cảnhxuống tình xúc việc công thể ，không là thuần bối 
+2. **tầng lần ** — tất cảBối cảnhBắt buộccụ trước /giữa /sau bối ，
+3. **đến trên ** — đường mục /vật /Ánh sángbảng Bắt buộcsạch 
+4. **90năm** — 1 vẽ mặt 90nămlời ngày dòng động vẽ biểu ，CG/3D；cầu tay đường mục （đường mục 、mặt sáng ）sáng Ánh sáng（ và ánh 、thể ánh ）
 
 ---
 
-## 二、季节色调映射
+## 2、tiết vật gọi 
 
-| 季节 | 主色调 | 辅色调 | 提示词 |
+| tiết  | chính vật gọi  | vật gọi  | Prompt |
 |---|---|---|---|
-| 春 | 粉色+嫩绿 | 浅黄、淡紫 | 春日粉色、樱花盛开 |
-| 夏 | 碧绿+蓝色 | 浅蓝、白色 | 夏日碧绿、蓝天白云 |
-| 秋 | 金黄+橙红 | 棕色、深绿 | 秋日金黄、枫叶变红 |
-| 冬 | 白色+灰色 | 深蓝、浅蓝 | 冬日白色、雪花飘落 |
+|  | vật + | 、 | ngày vật 、mở  |
+|  | +vật  | 、vật  | ngày 、ngày |
+|  | + | vật 、 | ngày 、 |
+|  | vật +vật  | 、 | ngày vật 、 |
 
 ---
 
-## 三、室内场景
+## 3、trong Bối cảnh
 
-### 空间规范
+### rỗng gian 
 
-| 维度 | 约束 | 提示词 |
+| độ  |  | Prompt |
 |---|---|---|
-| 风格 | 90年代日式房间/西式房间 | {风格}风格 |
-| 材质 | 木质/石材/布料/玻璃为主 | 木质家具、布艺装饰 |
-| 色调 | 低饱和暖色调/柔和冷色调 | 暖色调/冷色调 |
-| 纵深 | 前/中/后景层次 | 前景{元素}、中景{元素}、后景{元素} |
-| 质感 | 线条流畅、色彩柔和 | 线条流畅、色彩柔和 |
-| 光照 | 自然光/灯光，柔和电影光 | 自然光照、柔和电影光 |
-| 线条感 | 轮廓线清晰、块面阴影 | 清晰线条、块面阴影 |
-| 瑕疵感 | 墙面有使用痕迹、家具自然磨损 | 使用痕迹、自然磨损 |
+| Phong cách | 90nămngày thức gian /thức gian  | {Phong cách}Phong cách |
+|  | ///chính  | cụ 、 |
+| vật gọi  | thấp  và vật gọi / và vật gọi  | vật gọi /vật gọi  |
+|  | trước /giữa /sau bối tầng lần  | trước bối {}、Trung cảnh (medium shot){}、sau bối {} |
+|  | đường mục 、vật  và  | đường mục 、vật  và  |
+| ánh  | tự ánh /ánh ， và sáng ánh  | tự ánh 、 và sáng ánh  |
+| đường mục  | đường sạch 、mặt sáng  | sạch đường mục 、mặt sáng  |
+|  | mặt có hàm 、cụ tự  | hàm 、tự  |
 
-### 室内类型速查
+### trong Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 卧室/闺房 | 床/衣柜/梳妆台 | 温馨私密、舒适 |
-| 书房/书斋 | 书架/书桌/椅子 | 宁静、书卷气 |
-| 客厅/正厅 | 沙发/茶几/装饰 | 舒适、温馨 |
-| 走廊/阳台 | 栏杆/植物/装饰 | 通透、开阔 |
-| 厨房/餐厅 | 餐桌/厨具 | 温馨、烟火气 |
+| / | //đài  | mật 、 |
+| / | // | 、 |
+| /chính  | phát /mấy / | 、 |
+| chạy /đài  | // | thông 、mở  |
+| / | /cụ  | 、 |
 
 ---
 
-## 四、室外场景
+## 4、ngoài Bối cảnh
 
-### 空间规范
+### rỗng gian 
 
-| 维度 | 约束 | 提示词 |
+| độ  |  | Prompt |
 |---|---|---|
-| 类型 | 庭院/山林/街道/广场 | {场景}，{季节}，{时间} |
-| 天候 | 晴/阴/雨/雪 | 晴天、雨天、雪天 |
-| 植被 | 树/花/草（须符合季节） | 树木、花草 |
-| 建筑 | 90年代建筑/日式建筑 | 90年代建筑/日式建筑 |
-| 空气感 | 必须有空气透视，远处偏灰 | 空气透视、远景模糊 |
-| 光照 | 自然光为唯一光源，柔和电影光 | 自然光照、柔和电影光 |
-| 线条感 | 轮廓线清晰、块面阴影 | 清晰线条、块面阴影 |
-| 瑕疵感 | 墙面有使用痕迹、地面有磨损 | 使用痕迹、磨损痕迹 |
+| Loại | //đạo /trường  | {Bối cảnh}，{tiết }，{thời gian} |
+| ngày | /// | ngày、ngày、ngày |
+|  | //（buộc hợp tiết ） | 、 |
+| tạo  | 90nămtạo /ngày thức tạo  | 90nămtạo /ngày thức tạo  |
+| rỗng  | Bắt buộccó rỗng video ，xử  | rỗng video 、Viễn cảnh (extreme wide shot)mô  |
+| ánh  | tự ánh 1 ánh nguồn ， và sáng ánh  | tự ánh 、 và sáng ánh  |
+| đường mục  | đường sạch 、mặt sáng  | sạch đường mục 、mặt sáng  |
+|  | mặt có hàm 、địa mặt có  | hàm 、 |
 
-### 室外类型速查
+### ngoài Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 庭院花园 | 植物/小桥/水池 | 宁静、优美 |
-| 山林/公园 | 树木/山石/道路 | 自然、开阔 |
-| 街道/市场 | 建筑/摊位/行人 | 热闹、生活气息 |
-| 河边/湖边 | 水面/桥梁/树木 | 宁静、优美 |
-| 屋顶/天台 | 栏杆/天空/远景 | 开阔、自由 |
+|  | /nhỏ / | 、đẹp  |
+| / | //đạo đường  | tự 、mở  |
+| đạo /trường  | tạo /vị trí /thi người | 、sinh hoạt  |
+| / | mặt // | 、đẹp  |
+| /ngàyđài  | /ngàyrỗng /Viễn cảnh (extreme wide shot) | mở 、tự do  |
 
 ---
 
-## 五、主视图规范
+## 5、chính video ảnh 
 
-### 视图定义
+### video ảnh nối nghĩa 
 
-> 单画面主视图，从场景中最具代表性的角度拍摄，承载空间叙事与构图重心。
+> đơn vẽ mặt chính video ảnh ，từ Bối cảnhgiữa nhất cụ bảng  của nhân độ ，xuống rỗng gian việc cấu ảnh trùng 。
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 视角 | 自然观察视角，构图最能体现场景主体与纵深 | hero shot、representative angle |
-| 视点高度 | 默认人眼平视高度，特殊场景可俯/仰 | eye level（默认） |
-| 构图 | 主体居中或符合三分法，前/中/后景层次清晰 | balanced composition |
+| video nhân  | tự video nhân ，cấu ảnh nhất thể thể Bối cảnhchính thể  | hero shot、representative angle |
+| video điểm cao độ  | Mặc địnhngườivideo cao độ ，Bối cảnh/ | eye level（Mặc định） |
+| cấu ảnh  | chính thể giữa hoặc hợp 3phútthức ，trước /giữa /sau bối tầng lần sạch  | balanced composition |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 单画面（非拼图、非多视图、非分屏） |
-| 人物 | **严禁出现任何人物、人影、人体轮廓** |
-| 一致性 | 风格/材质/色调/光线统一 |
-| 光线 | 单一光源逻辑，光影方向一致 |
-| 画面比例 | 默认 16:9（或按调用方设定） |
+| cục  | đơn vẽ mặt （phi ghép ảnh 、phi nhiều video ảnh 、phi phút） |
+| người | **ra người、ngườisáng 、ngườithể ** |
+| 1  | Phong cách//vật gọi /ánh đường thống 1  |
+| ánh đường  | đơn 1 ánh nguồn logic，Ánh sángphương 1  |
+| vẽ mặt Tỷ lệ | Mặc định 16:9（hoặc theo gọi hàm phương thiết nối ） |
 
 ---
 
-## 六、提示词模板
+## 6、Promptmô 
 ```
-90年代复古日系动画风格场景主视图概念图，
-90s anime style，手绘平涂上色，柔和暖色调，精细流畅线条，电影感光影，
+90nămlời ngày dòng động vẽ Phong cáchBối cảnhchính video ảnh ảnh ，
+90s anime style，tay trên vật ， và vật gọi ，đường mục ，sáng Ánh sáng，
 scene design sheet，environment concept art，no people，no characters，no human figures，
-90年代复古风格，怀旧治愈氛围，
-{室内/室外}，{场景类型}，{季节+时间}，
-前景：{元素}，中景：{元素}，后景：{元素}，
-{色调描述}，{天候/氛围元素}，
-{材质描述}，空气透视，线条细节超清晰，
-线条流畅、块面阴影、使用痕迹，
-柔和电影光、背景光晕、自然光照，
-单画面构图，自然观察视角，构图能代表场景主体并展示前/中/后景层次，
-画面中无任何人物
-图中不要有任何文字
+90nămlời Phong cách，cũ Không khí，
+{trong /ngoài }，{Bối cảnhLoại}，{tiết +thời gian}，
+trước bối ：{}，Trung cảnh (medium shot)：{}，sau bối ：{}，
+{vật gọi Mô tả}，{ngày/Không khí}，
+{Mô tả}，rỗng video ，đường mục tiết vượt sạch ，
+đường mục 、mặt sáng 、hàm ，
+ và sáng ánh 、bối ánh 、tự ánh ，
+đơn vẽ mặt cấu ảnh ，tự video nhân ，cấu ảnh thể bảng Bối cảnhchính thể nhất nhở trước /giữa /sau bối tầng lần ，
+vẽ mặt giữa không người
+ảnh giữa không cần có tài chữ 
 ```
 
 ---
 
-## 七、约束规则
+## 7、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 场景必须有「前中后景层次」 |
-| R2 | 室外必须包含「空气透视」 |
-| R3 | 场景图必须为「单画面主视图」，不得拼接多视图/分屏/网格 |
-| R4 | 构图须能代表场景主体并展示前/中/后景层次 |
-| R5 | 场景图中**严禁出现任何人物** |
-| R6 | 必须包含90年代关键词（90s anime style / hand-drawn / warm tone） |
-| R7 | 必须包含线条特征（流畅线条、块面阴影 至少一项） |
-| R8 | 材质必须带有使用痕迹，禁止全新无瑕的"CG 感" |
+| R1 | Bối cảnhBắt buộccó 「trước giữa sau bối tầng lần 」 |
+| R2 | ngoài Bắt buộcgói 「rỗng video 」 |
+| R3 | Bối cảnhảnh Bắt buộc「đơn vẽ mặt chính video ảnh 」，không được ghép tiếp nhiều video ảnh /phút/mạng khung  |
+| R4 | cấu ảnh buộc thể bảng Bối cảnhchính thể nhất nhở trước /giữa /sau bối tầng lần  |
+| R5 | Bối cảnhảnh giữa **ra người** |
+| R6 | Bắt buộcgói 90nămliên từ （90s anime style / hand-drawn / warm tone） |
+| R7 | Bắt buộcgói đường mục （đường mục 、mặt sáng  đến ít 1 ） |
+| R8 | Bắt buộckèm có hàm ，Nghiêm cấmtoàn mới không  của "CG " |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 背景纯白/纯黑/无场景 |
-| X2 | 极端天候（暴风雨/雷电/暴雪，除非剧情需要） |
-| X3 | 场景无纵深/无层次 |
-| X4 | 植被/天候与季节矛盾 |
-| X5 | 出现任何人物、人影、人体剪影 |
-| X6 | 画面被拼接成多视图/网格/分屏布局 |
-| X7 | 3D 渲染/CG 动画/现代风格质感 |
-| X8 | 材质过于干净完美、无任何使用痕迹 |
-| X9 | 光照过于均匀平坦、无柔和电影光 |
+| X1 | bối thuần /thuần /không Bối cảnh |
+| X2 | đầu ngày（phong //，bỏ phi kịch tình cần cần ） |
+| X3 | Bối cảnhkhông /không tầng lần  |
+| X4 | /ngàytiết  |
+| X5 | ra người、ngườisáng 、ngườithể sáng  |
+| X6 | vẽ mặt ghép tiếp tạo nhiều video ảnh /mạng khung /phútcục  |
+| X7 | 3D /CG động vẽ /Phong cách |
+| X8 | với đẹp 、không hàm  |
+| X9 | ánh với 、không  và sáng ánh  |

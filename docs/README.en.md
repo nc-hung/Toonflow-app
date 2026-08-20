@@ -15,12 +15,12 @@
 </p>
 
 <p align="center">
-  <a href="../README.md">简体中文</a> | 
-  <a href="./README.zhtw.md">繁體中文</a> | 
+  <a href="../README.md">thể giữa tài </a> | 
+  <a href="./README.zhtw.md">giữa tài </a> | 
   <strong>English</strong> | 
   <a href="./README.th.md">ไทย</a> | 
   <a href="./README.vi.md">Tiếng Việt</a> | 
-  <a href="./README.ja.md">日本語</a> | 
+  <a href="./README.ja.md">ngày sách </a> | 
   <a href="./README.ru.md">Русский</a>
 </p>
 
@@ -106,12 +106,12 @@ Toonflow supports the following interface languages:
 
 | Language             | Language              |
 | -------------------- | --------------------- |
-| Chinese (Simplified) | 简体中文              |
-| Chinese (Traditional)| 繁體中文              |
+| Chinese (Simplified) | thể giữa tài               |
+| Chinese (Traditional)| giữa tài               |
 | English              | English               |
 | Thai                 | ไทย                  |
 | Vietnamese           | Tiếng Việt            |
-| Japanese             | 日本語                |
+| Japanese             | ngày sách                 |
 | Russian              | Русский               |
 
 > 💡 More languages are being adapted — contributions for translations are welcome!

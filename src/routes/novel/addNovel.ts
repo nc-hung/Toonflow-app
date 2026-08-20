@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 新增原文数据
+// Thêm dữ liệu nguyên tác
 export default router.post(
   "/",
   validateFields({
@@ -49,6 +49,6 @@ export default router.post(
     });
     novelClass.start(chapterAllList, projectId);
 
-    res.status(200).send(success({ message: "新增原文成功" }));
+    res.status(200).send(success({ message: "Thêm nguyên tác thành công" }));
   },
 );

@@ -15,12 +15,12 @@
 </p>
 
 <p align="center">
-  <a href="../README.md">简体中文</a> | 
-  <a href="./README.zhtw.md">繁體中文</a> | 
+  <a href="../README.md">thể giữa tài </a> | 
+  <a href="./README.zhtw.md">giữa tài </a> | 
   <a href="./README.en.md">English</a> | 
   <a href="./README.th.md">ไทย</a> | 
   <a href="./README.vi.md">Tiếng Việt</a> | 
-  <strong>日本語</strong> | 
+  <strong>ngày sách </strong> | 
   <a href="./README.ru.md">Русский</a>
 </p>
 
@@ -78,7 +78,7 @@
     <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Electron/electron2.svg" alt="Electron" />
   </p>
   
-  > 🚀 **オールインワンのショートドラマエンジン**：テキストからキャラクター、絵コンテから動画まで、ゼロハードルで全工程をAI化、制作効率10倍以上！
+  > 🚀 **オールインワンのショートドラマエンジン**：テキストからキャラクター、コンテからvẽ まで、ゼロハードルでtoàn trình をAIhóa 、chép tác vụ tỷ lệ 10trên ！
 </div>
 
 <div align="center">
@@ -86,7 +86,7 @@
     <tr>
       <td width="50%" align="center">
         <a href="./g-star.png" target="_blank">
-          <img src="./g-star.png" alt="AtomGit G-Star 認証証明書" width="100%"/>
+          <img src="./g-star.png" alt="AtomGit G-Star dẫn " width="100%"/>
         </a>
       </td>
       <td width="50%" align="center">
@@ -100,81 +100,81 @@
 
 ---
 
-# 🌐 多言語サポート
+# 🌐 nhiều サポート
 
-Toonflow は以下の言語のインターフェースに対応しています：
+Toonflow はdưới ののインターフェースにしています：
 
-| 言語       | Language              |
+|        | Language              |
 | ---------- | --------------------- |
-| 简体中文   | Chinese (Simplified)  |
-| 繁體中文   | Chinese (Traditional) |
+| thể giữa tài    | Chinese (Simplified)  |
+| giữa tài    | Chinese (Traditional) |
 | English    | English               |
 | ไทย        | Thai                  |
 | Tiếng Việt | Vietnamese            |
-| 日本語     | Japanese              |
+| ngày sách      | Japanese              |
 | Русский    | Russian               |
 
-> 💡 他の言語も準備中です。翻訳のご協力をお待ちしています！
+> 💡 anh ấyのもgiữa です。のごlực をおちしています！
 
 ---
 
-# 🌟 主な機能
+# 🌟 chính なthể 
 
-Toonflow はショートドラマ制作のためのAIワークベンチです。「企画→脚本→絵コンテ→映像出力」の完全なクローズドループを構築し、ローカライズ・プログラマブル・持続的イテレーションが可能な制作フローをサポートします。
+Toonflow はショートドラマchép tác vụ のためのAIワークベンチです。「vẽ →sách →コンテ→ra lực 」のtoàn なクローズドループをし、ローカライズ・プログラマブル・giữ  của イテレーションがthể なchép tác vụ フローをサポートします。
 
-- ✅ **無限キャンバス制作ワークベンチ**  
-  無限キャンバス状に脚本、キャラクター、絵コンテ、素材、動画ノードを整理。自由な配置、巻き戻し、並行制作が可能で、線形ステップに制限されません。
-- ✅ **3層エージェント協調システム**  
-  意思決定層、実行層、監督層が連携し、タスク分解、コンテンツ生成、品質レビュー、修正フィードバックをカバー。安定性と出力の一貫性を向上します。
-- ✅ **永続化エージェントメモリ**  
-  ローカルONNXベクトル検索によるセッションを跨ぐメモリシステム。短期メッセージ、長期要約、意味検索をサポートし、複数ラウンドの創作の連続性を確保します。
+- ✅ **hạn キャンバスchép tác vụ ワークベンチ**  
+  hạn キャンバスtrạng にsách 、キャラクター、コンテ、、vẽ ノードをchỉnh lý 。tự do なcấu hình、きし、thi chép tác vụ がthể で、dạng ステップにchép hạn されません。
+- ✅ **3エージェントシステム**  
+  ý nối 、thi 、がし、タスクphútgiải 、コンテンツtạo、レビュー、chính フィードバックをカバー。an nối とra lực の1 をtrên します。
+- ✅ **hóa エージェントメモリ**  
+  ローカルONNXベクトルkiếm によるセッションをぐメモリシステム。ngắn kỳ メッセージ、kỳ cần 、ý kiếm をサポートし、số ラウンドのtác vụ のをlưu します。
 - ✅ **プログラマブルベンダーシステム**  
-  設定センターでベンダーのTypeScriptロジックを直接記述し、即座に反映。ソースコードの変更や再起動は不要で、プライベート化や複数モデルの統合に便利です。
-- ✅ **章イベントグラフ駆動の翻案**  
-  原作の各章のイベントを自動抽出して構造化保存。脚本翻案はイベントグラフに基づいてコンテキストを正確に呼び出し、長文の情報損失を低減します。
-- ✅ **Skill ファイル化構成**  
-  ScriptAgent と ProductionAgent の核心プロンプトをMarkdown Skillファイルとして外部化。オンライン編集と迅速なチューニングが可能です。
+  nối センターでベンダーのTypeScriptロジックをtrực tiếp tả し、にphụ 。ソースコードのđổi やはkhông cần で、プライベートhóa やsố モデルのhợp にです。
+- ✅ **chương イベントグラフの**  
+  gốc tác vụ のcác chương のイベントをtự ra してtạo hóa lưu。sách はイベントグラフにcơ sở づいてコンテキストをchính にびra し、tài のtình thất をthấp します。
+- ✅ **Skill ファイルhóa tạo **  
+  ScriptAgent と ProductionAgent のプロンプトをMarkdown Skillファイルとしてngoài bộ hóa 。オンラインtập となチューニングがthể です。
 
 ---
 
-# 📦 応用シーン
+# 📦 hàm シーン
 
-- ショート動画コンテンツ制作
-- 小説の映像化実験
-- AI文学翻案ツール
-- 脚本開発とラピッドプロトタイピング
-- 動画素材生成
+- ショートvẽ コンテンツchép tác vụ 
+- nhỏ のhóa 
+- AItài ツール
+- sách とラピッドプロトタイピング
+- vẽ tạo
 
 ---
 
-# 🔰 使い方ガイド
+# 🔰 いphương ガイド
 
 ## クイックスタート
 
-1. アプリを起動しログイン（デフォルトアカウント：`admin` / `admin123`）。
-2. 設定センターでモデルベンダーを設定（テキスト/画像/動画モデル）。
-3. 新規プロジェクトを作成し原作をインポート、章イベント抽出を実行。
-4. ScriptAgent に入り、ストーリー骨格、翻案戦略、構造化脚本を生成。
-5. ProductionAgent に切り替え、無限キャンバス上で絵コンテ、素材、動画ノードを整理。
-6. 絵コンテ画像をノード化して微調整後、ワークベンチに戻し動画結合とエクスポートを完了。
+1. アプリをしログイン（デフォルトアカウント：`admin` / `admin123`）。
+2. nối センターでモデルベンダーをnối （テキスト/vẽ /vẽ モデル）。
+3. mới プロジェクトをtác vụ tạo しgốc tác vụ をインポート、chương イベントra をthi 。
+4. ScriptAgent にvào り、ストーリーkhung 、、tạo hóa sách をtạo。
+5. ProductionAgent にりえ、hạn キャンバスtrên でコンテ、、vẽ ノードをchỉnh lý 。
+6. コンテvẽ をノードhóa してchỉnh 、ワークベンチにしvẽ hợp とエクスポートを。
 
 ## 📺 ビデオチュートリアル
 
 https://www.bilibili.com/video/BV1oXD7BqEqJ
-[![Toonflow 12分でわかるAI動画クイックスタート](./videoCover.jpg)](https://www.bilibili.com/video/BV1oXD7BqEqJ)
+[![Toonflow 12phútでわかるAIvẽ クイックスタート](./videoCover.jpg)](https://www.bilibili.com/video/BV1oXD7BqEqJ)
 
-**Toonflow 12分でわかるAI動画クイックスタート**
-👉 [クリックして視聴](https://www.bilibili.com/video/BV1oXD7BqEqJ)
+**Toonflow 12phútでわかるAIvẽ クイックスタート**
+👉 [クリックして](https://www.bilibili.com/video/BV1oXD7BqEqJ)
 
-📱 スマホでWeChatスキャンして視聴
+📱 スマホでWeChatスキャンして
 
-<img src="./videoQR.png" alt="WeChatスキャンで視聴" width="150"/>
+<img src="./videoQR.png" alt="WeChatスキャンで" width="150"/>
 
 ---
 
-# 📸 デモスクリーンショットと動画
+# 📸 デモスクリーンショットとvẽ 
 
-以下のスクリーンショットと動画は、Toonflow を使って制作したAIショートドラマデモです。全体で約2時間で完成し、脚本生成、絵コンテ制作、編集を含みます。
+dưới のスクリーンショットとvẽ は、Toonflow をってchép tác vụ したAIショートドラマデモです。toàn thể で2でtạo し、sách tạo、コンテchép tác vụ 、tập をみます。
 
 <div align="center">
 <table>
@@ -201,117 +201,117 @@ https://www.bilibili.com/video/BV1oXD7BqEqJ
 </table>
 </div>
 
-## 🎬 デモ動画
+## 🎬 デモvẽ 
 
 <div align="center">
 
 https://github.com/user-attachments/assets/2d9fddac-dfdf-4640-b030-b09d7f7287e9
 
-再生できない場合は、[動画をダウンロード](./screenshot/demo.mp4) してください。
+sinh できないhợp は、[vẽ をダウンロード](./screenshot/demo.mp4) してください。
 
 </div>
 
-## デモ情報
+## デモtình 
 
-| 項目 | 詳細 |
+| mục  |  |
 | :--- | :--- |
-| 制作期間 | 約2時間 |
-| 動画モデル | Seedance 2.0 |
-| 画像モデル | GPT Image 2 |
-| 言語モデル | Claude Opus 4.6 |
-| 完成動画長 | 約2分（元素材3分、不要部分を約1分カット） |
+| chép tác vụ kỳ  | 2 |
+| vẽ モデル | Seedance 2.0 |
+| vẽ モデル | GPT Image 2 |
+| モデル | Claude Opus 4.6 |
+| tạo vẽ  | 2phút（3phút、không cần bộ phútを1phútカット） |
 
-## コスト明細
+## コストdẫn 
 
-| モデル種類 | 費用 |
+| モデル | hàm  |
 | :--- | :--- |
-| 言語モデル | 約 ¥10 |
-| 動画モデル（全量生成） | 約 ¥120 |
-| 画像モデル | ¥1未満 |
-| **合計** | **約 ¥130** |
+| モデル |  ¥10 |
+| vẽ モデル（toàn lượng tạo） |  ¥120 |
+| vẽ モデル | ¥1chưa  |
+| **hợp ** | ** ¥130** |
 
-> **声明**：デモの元解像度は1080×1882、公開版は480pに圧縮しています。著作権に関する問題があれば、お問い合わせいただければ削除対応いたします。
+> **thanh dẫn **：デモのgiải độ は1080×1882、bản は480pにしています。tác vụ にするがあれば、おいhợp わせいただければbỏ いたします。
 
 ---
 
 # 🚀 インストール
 
-## 前提条件
+## trước nhắc mục tệp 
 
-本ソフトウェアをインストールして使用する前に、以下を準備してください：
+sách ソフトウェアをインストールしてhàm するtrước に、dưới をしてください：
 
-- ✅ 大規模言語モデルAIサービスのAPIエンドポイント
-- ✅ Sora または 豆包 動画サービスのAPIエンドポイント
-- ✅ Nano Banana Pro 画像生成モデルサービスのエンドポイント
+- ✅ lớn mô モデルAIサービスのAPIエンドポイント
+- ✅ Sora または Doubao vẽ サービスのAPIエンドポイント
+- ✅ Nano Banana Pro vẽ tạoモデルサービスのエンドポイント
 
 ## ローカルインストール
 
 ### 1. ダウンロードとインストール
 
-| オペレーティングシステム | GitHub                                                       | 説明                   |
+| オペレーティングシステム | GitHub                                                       | dẫn                    |
 | :------: | :----------------------------------------------------------- | :--------------------- |
-| Windows  | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | 公式リリースインストーラ |
-|  Linux   | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | 公式リリースインストーラ |
-|  macOS   | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | 公式リリースインストーラ |
+| Windows  | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | thức リリースインストーラ |
+|  Linux   | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | thức リリースインストーラ |
+|  macOS   | [Release](https://github.com/HBAI-Ltd/Toonflow-app/releases) | thức リリースインストーラ |
 
 > [!CAUTION]
-> MacOS システムの場合は、設定→プライバシーとセキュリティ でセキュリティ設定を行ってください。証明書の問題で正常に開けない場合があります。
+> MacOS システムのhợp は、nối →プライバシーとセキュリティ でセキュリティnối をthi ってください。dẫn のでchính thường にけないhợp があります。
 >
-> 参考：知乎ドキュメント：[https://www.zhihu.com/question/433389276](https://www.zhihu.com/question/433389276)
+> tham chiếu：báo ドキュメント：[https://www.zhihu.com/question/433389276](https://www.zhihu.com/question/433389276)
 
-> Gitee OS 環境の制限および Release ファイルのアップロードサイズ制限のため、Gitee Release のダウンロードリンクは現在提供しておりません。
+> Gitee OS のchép hạn および Release ファイルのアップロードサイズchép hạn のため、Gitee Release のダウンロードリンクはở nhắc nhà しておりません。
 
-### 2. サービスの起動
+### 2. サービスの
 
-インストール完了後、プログラムを起動してサービスをご利用いただけます。
+インストール、プログラムをしてサービスをごhàm いただけます。
 
-> ⚠️ **初回ログイン**  
+> ⚠️ **trả ログイン**  
 > アカウント：`admin`  
 > パスワード：`admin123`
 
 ## Docker デプロイ
 
-### 前提条件
+### trước nhắc mục tệp 
 
-- [Docker](https://docs.docker.com/get-docker/) がインストール済み（バージョン20.10以上）
+- [Docker](https://docs.docker.com/get-docker/) がインストールみ（バージョン20.10trên ）
 
-### 方法1：オンラインデプロイ
+### phương thức 1：オンラインデプロイ
 
-準備中です。当面はローカルビルドをご利用ください。
+giữa です。khi mặt はローカルビルドをごhàm ください。
 
-### 方法2：ローカルビルド
+### phương thức 2：ローカルビルド
 
-ローカルのソースコードを使って直接ビルドします。開発者やリポジトリをクローン済みのユーザー向けです。事前にgitをインストールしておく必要があります：
+ローカルのソースコードをってtrực tiếp ビルドします。giả やリポジトリをクローンみのユーザーけです。việc trước にgitをインストールしておくbắt cần があります：
 
 ```shell
-# プロジェクトをクローン（既にある場合はスキップ）
+# プロジェクトをクローン（にあるhợp はスキップ）
 git clone https://github.com/HBAI-Ltd/Toonflow-app.git
 cd Toonflow-app
 
-# docker-compose でローカルビルド＆起動
+# docker-compose でローカルビルド＆
 yarn docker:local
 
-# または手動ビルド
+# またはtay ビルド
 docker build -t toonflow .
 docker run -d -p <ローカルポート>:10588 -v <ローカルデータパス>:/app/data toonflow
 
-# 該当ポートの /index.html にアクセス
-# 例：http://localhost:10588/index.html
+# khi ポートの /index.html にアクセス
+# lệ ：http://localhost:10588/index.html
 ```
 
-### サービスポート説明
+### サービスポートdẫn 
 
-| ポート   | 用途          | デプロイマッピング |
+| ポート   | hàm           | デプロイマッピング |
 | -------- | ------------- | ------------------ |
 | `10588`  | ソフトウェアUI | `10588:10588`      |
 
-**環境変数の説明：**
+**số のdẫn ：**
 
-| 変数       | 説明                             |
+| số        | dẫn                              |
 | ---------- | -------------------------------- |
-| `NODE_ENV` | 実行環境。`prod`は本番環境       |
-| `PORT`     | サービス待受ポート（デフォルト10588） |
-| `OSSURL`   | ファイルストレージアクセスURL（静的リソース用） |
+| `NODE_ENV` | thi 。`prod`はsách        |
+| `PORT`     | サービスポート（デフォルト10588） |
+| `OSSURL`   | ファイルストレージアクセスURL（ của リソースhàm ） |
 
 ---
 
@@ -319,15 +319,15 @@ docker run -d -p <ローカルポート>:10588 -v <ローカルデータパス>:
 
 ### クラウドサーバーデプロイ
 
-#### 一、サーバー環境要件
+#### 1 、サーバーcần tệp 
 
 - **OS**：Ubuntu 20.04+ / CentOS 7+
-- **Node.js**：24.x（推奨、最低23.11.1以上）
-- **メモリ**：2GB以上
+- **Node.js**：24.x（khuyến 、nhất thấp 23.11.1trên ）
+- **メモリ**：2GBtrên 
 
-#### 二、サーバーデプロイ
+#### 2、サーバーデプロイ
 
-##### 1. 環境インストール
+##### 1. インストール
 
 ```bash
 # Node.js のインストール
@@ -350,7 +350,7 @@ yarn install
 yarn build
 ```
 
-**Gitee からクローン（国内ユーザー向け）：**
+**Gitee からクローン（trong ユーザーけ）：**
 
 ```bash
 cd /opt
@@ -360,9 +360,9 @@ yarn install
 yarn build
 ```
 
-##### 3. PM2 の設定
+##### 3. PM2 のnối 
 
-`pm2.json` ファイルを作成：
+`pm2.json` ファイルをtác vụ tạo ：
 
 ```json
 {
@@ -378,17 +378,17 @@ yarn build
 }
 ```
 
-**環境変数の説明：**
+**số のdẫn ：**
 
-| 変数       | 説明                             |
+| số        | dẫn                              |
 | ---------- | -------------------------------- |
-| `NODE_ENV` | 実行環境。`prod`は本番環境       |
-| `PORT`     | サービス待受ポート               |
-| `OSSURL`   | ファイルストレージアクセスURL（静的リソース用） |
+| `NODE_ENV` | thi 。`prod`はsách        |
+| `PORT`     | サービスポート               |
+| `OSSURL`   | ファイルストレージアクセスURL（ của リソースhàm ） |
 
 ---
 
-##### 4. サービスの起動
+##### 4. サービスの
 
 ```bash
 pm2 start pm2.json
@@ -396,99 +396,99 @@ pm2 startup
 pm2 save
 ```
 
-##### 5. よく使うコマンド
+##### 5. よくうコマンド
 
 ```bash
-pm2 list              # プロセス一覧
-pm2 logs toonflow-app # ログ表示
-pm2 restart all       # サービス再起動
+pm2 list              # プロセス1 
+pm2 logs toonflow-app # ログbảng nhở 
+pm2 restart all       # サービス
 pm2 monit             # モニタリングパネル
 ```
 
-> ⚠️ **初回ログイン**  
+> ⚠️ **trả ログイン**  
 > アカウント：`admin`  
 > パスワード：`admin123`
 
 ##### 6. フロントエンドのデプロイ
 
-フロントエンドを個別にデプロイまたはカスタマイズする場合は、フロントエンドリポジトリを参照してください：
+フロントエンドをにデプロイまたはカスタマイズするhợp は、フロントエンドリポジトリをtham してください：
 
 - **GitHub**：[Toonflow-web](https://github.com/HBAI-Ltd/Toonflow-web)
 - **Gitee**：[Toonflow-web](https://gitee.com/HBAI-Ltd/Toonflow-web)
 
-> 💡 **説明**：本リポジトリにはコンパイル済みのフロントエンドリソースが組み込まれているため、一般ユーザーはフロントエンドを個別にデプロイする必要はありません。フロントエンドリポジトリは二次開発を行う開発者向けです。
+> 💡 **dẫn **：sách リポジトリにはコンパイルみのフロントエンドリソースがみまれているため、1 ユーザーはフロントエンドをにデプロイするbắt cần はありません。フロントエンドリポジトリは2lần をthi うgiả けです。
 
 ### クラウドプラットフォームデプロイ
 
-> 🎉 **公式新規認定コンピューティングパートナープラットフォーム —— 智星雲（AI Galaxy）**
+> 🎉 **thức mới nối コンピューティングパートナープラットフォーム —— （AI Galaxy）**
 >
-> **[智星雲（AI Galaxy）](https://www.ai-galaxy.com/)** は **Toonflow 公式認定の商用イメージプロバイダー**で、Toonflow AI ショートドラマ制作用の完全なイメージを合法的に搭載・配布・商用サポートしています。**すぐに使える、手動デプロイ不要**です。
+> **[（AI Galaxy）](https://www.ai-galaxy.com/)** は **Toonflow thức nối のcấp hàm イメージプロバイダー**で、Toonflow AI ショートドラマchép tác vụ hàm のtoàn なイメージをhợp thức  của に・nối ・cấp hàm サポートしています。**すぐにえる、tay デプロイkhông cần **です。
 >
-> - 🌐 公式サイト：[https://www.ai-galaxy.com](https://www.ai-galaxy.com)
-> - 📖 イメージデプロイ図解チュートリアル：[クリックして見る](https://mp.weixin.qq.com/s/lq9X1ovQ1_TKeXMOLgicKg?scene=1)
+> - 🌐 thức サイト：[https://www.ai-galaxy.com](https://www.ai-galaxy.com)
+> - 📖 イメージデプロイgiải チュートリアル：[クリックしてる](https://mp.weixin.qq.com/s/lq9X1ovQ1_TKeXMOLgicKg?scene=1)
 
 <details>
-<summary>📄 クリックしてテキスト版チュートリアルを展開</summary>
+<summary>📄 クリックしてテキストbản チュートリアルを</summary>
 
-#### 一、GPUレンタル段階のチュートリアル
+#### 1 、GPUレンタルđoạn のチュートリアル
 
-1. 智星雲 - コンピューティングマーケット - 4090 / 4090 Plus で「今すぐレンタル」をクリックし、レンタル詳細ページに入ります。
-   > 💡 動画のレンダリング中にインスタンスが期限切れになるのを防ぐため、「時間単位の自動更新」モードを有効にすることをお勧めします。
-2. イメージ選択：`windows10LTSCwin10_Toonflow` - インスタンスを作成。
-3. インスタンスの起動を30秒〜60秒待ち、接続方法を確認 - RDPログインファイルをダウンロード - パスワードをコピー - ダウンロードしたクラウド接続ファイルをダブルクリック。
-4. コピーしたパスワードを貼り付けてログインし、クラウドデスクトップに接続します。
-   > 💡 マウスをクラウドデスクトップの上端にしばらく置くと、デスクトップ切り替え操作バーが表示されます。「──」をクリックして自分のパソコンのデスクトップに切り替えるか、「□」をクリックして自分のパソコンのデスクトップに縮小配置し、操作ウィンドウとして使用できます。
+1.  - コンピューティングマーケット - 4090 / 4090 Plus で「すぐレンタル」をクリックし、レンタルページにvào ります。
+   > 💡 vẽ のレンダリングgiữa にインスタンスがkỳ hạn れになるのをぐため、「vị trí のtự cập nhật」モードをcó にすることをおめします。
+2. イメージ：`windows10LTSCwin10_Toonflow` - インスタンスをtác vụ tạo 。
+3. インスタンスのを30giây〜60giâyち、tiếp phương thức を - RDPログインファイルをダウンロード - パスワードをコピー - ダウンロードしたクラウドtiếp ファイルをダブルクリック。
+4. コピーしたパスワードをりけてログインし、クラウドデスクトップにtiếp します。
+   > 💡 マウスをクラウドデスクトップのtrên đầu にしばらくtrí くと、デスクトップりえthao tác vụ バーがbảng nhở されます。「──」をクリックしてtự phútのパソコンのデスクトップにりえるか、「□」をクリックしてtự phútのパソコンのデスクトップにnhỏ cấu hìnhし、thao tác vụ ウィンドウとしてhàm できます。
 
-#### 二、Toonflowの設定、ComfyUIの起動段階のチュートリアル
+#### 2、Toonflowのnối 、ComfyUIのđoạn のチュートリアル
 
-1. まずAgentが呼び出すモデルを設定します：デスクトップのToonflowを開く - モデルサービス - OpenAI標準インターフェース - APIキーとリクエストアドレスを入力。
-   デフォルトアカウント：`admin`　パスワード：`admin123`（ログイン後にパスワードを変更することをお勧めします）
-   > 💡 ここでは智星雲のAI大規模モデルTokenサービスを直接使用します。公式インターフェースで、安定・安全、最大6割引き（小説を脳本に変換した場合、約0.64元かかりました）。
-   - 智星雲モデル呼び出しTokenリクエストアドレス：`https://token.ai-galaxy.com/v1`
-   - 智星雲Tokenチャージ手順：Tokenマーケット - アカウント概要 - チャージ - 智星雲アカウント残高またはコンピューティングクーポンをTokenアカウントにチャージします。
-   - チャージ完了後、「Key管理」に入り - 新規API管理、名前は`Toonflow`など任意で構いません、確定してAPIキーをコピーします。
-2. 手順1に戻り、生成されたAPIキーとリクエストアドレスをToonflowのモデルサービスに貼り付け、入力後に空白部分をクリックすると、システムが「プロバイダー設定が更新されました」と表示します。
-   「手動追加」をクリックし、智星雲 - Tokenマーケットページに戻り、完全なモデル名をコピーします。
-   > 💡 1つのKeyで智星雲上のすべてのモデルを呼び出せます。使いたいものを選んでください。`deepseek-v4-pro`がおすすめです。
-   モデル名を完全にコピーしてToonflowに貼り付け、確認してモデル設定を完了します。
-3. 設定完了後、以下の2点を確認してください：
-   - モデルサービス内の3つのモデル呼び出しスイッチがオンになっているか
-   - Agent設定内で呼び出されているモデルが設定したものと一致しているか（一致しない場合はクリックして修正）
-4. ComfyUIを起動：クラウドデスクトップ - 絵世ランチャー - ワンクリック起動。
-5. 起動には約1〜2分かかります。起動完了後はページを開いたままにしておいてください。
+1. まずAgentがびra すモデルをnối します：デスクトップのToonflowをく - モデルサービス - OpenAIインターフェース - APIキーとリクエストアドレスをvào lực 。
+   デフォルトアカウント：`admin`　パスワード：`admin123`（ログインにパスワードをđổi することをおめします）
+   > 💡 ここではのAIlớn mô モデルTokenサービスをtrực tiếp hàm します。thức インターフェースで、an nối ・an toàn 、nhất lớn 6rời き（nhỏ をsách にしたhợp 、0.64かかりました）。
+   - モデルびra しTokenリクエストアドレス：`https://token.ai-galaxy.com/v1`
+   - Tokenチャージtay ：Tokenマーケット - アカウントcần  - チャージ - アカウントcao またはコンピューティングクーポンをTokenアカウントにチャージします。
+   - チャージ、「Keylý 」にvào り - mới APIlý 、tên trước は`Toonflow`などý でいません、nối してAPIキーをコピーします。
+2. tay 1にり、tạoされたAPIキーとリクエストアドレスをToonflowのモデルサービスにりけ、vào lực にrỗng bộ phútをクリックすると、システムが「プロバイダーnối がcập nhậtされました」とbảng nhở します。
+   「tay cộng 」をクリックし、 - Tokenマーケットページにり、toàn なモデルtên をコピーします。
+   > 💡 1つのKeyでtrên のすべてのモデルをびra せます。いたいものをんでください。`deepseek-v4-pro`がおすすめです。
+   モデルtên をtoàn にコピーしてToonflowにりけ、してモデルnối をします。
+3. nối 、dưới の2điểm をしてください：
+   - モデルサービスtrong の3つのモデルびra しスイッチがオンになっているか
+   - Agentnối trong でびra されているモデルがnối したものと1 しているか（1 しないhợp はクリックしてchính ）
+4. ComfyUIを：クラウドデスクトップ - ランチャー - ワンクリック。
+5. には1〜2phútかかります。はページをいたままにしておいてください。
 
 </details>
 
 ---
 
-# 🔧 開発フローガイド
+# 🔧 フローガイド
 
 > [!CAUTION]
-> 🚧 **PR 提出ルール** 🚧
+> 🚧 **PR nhắc ra ルール** 🚧
 >
-> ⛔ `master` ブランチへのPRは受け付けていません。✅  `develop` ブランチにPRを提出してください。
+> ⛔ `master` ブランチへのPRはけけていません。✅  `develop` ブランチにPRをnhắc ra してください。
 >
-> 開発者の皆様のToonflowへの共同参加を歓迎します。参加ご希望の方は、交流グループ内で主催者ACTまでご連絡ください。
+> giả ののToonflowへのcùng tham cộng をします。tham cộng ごのphương は、tác vụ グループtrong でchính giả ACTまでごください。
 
-## 🛠️ 技術スタック
+## 🛠️ スタック
 
-| カテゴリ     | 技術                                                                                      |
+| カテゴリ     |                                                                                       |
 | ------------ | ----------------------------------------------------------------------------------------- |
 | ランタイム   | Node.js 23.11.1+                                                                          |
-| 言語         | TypeScript 5.x                                                                            |
+|          | TypeScript 5.x                                                                            |
 | バックエンド | Express 5                                                                                 |
 | データベース | SQLite（better-sqlite3 / knex）                                                           |
-| AI統合       | Vercel AI SDK（OpenAI / Anthropic / Google / DeepSeek / 智谱 / MiniMax / 通义千问 / xAI） |
-| ローカル推論 | @huggingface/transformers（ONNX）                                                         |
-| リアルタイム通信 | Socket.IO                                                                             |
+| AIhợp        | Vercel AI SDK（OpenAI / Anthropic / Google / DeepSeek /  / MiniMax / thông nghĩa nghìnhỏi  / xAI） |
+| ローカルkhuyến  | @huggingface/transformers（ONNX）                                                         |
+| リアルタイムthông tin  | Socket.IO                                                                             |
 | デスクトップクライアント | Electron 40                                                                       |
-| 画像処理     | Sharp                                                                                     |
-| コンテナ化   | Docker                                                                                    |
+| vẽ lý      | Sharp                                                                                     |
+| コンテナhóa    | Docker                                                                                    |
 
-## 開発環境の準備
+## の
 
-- **Node.js**：バージョン23.11.1以上
-- **Yarn**：プロジェクトのパッケージマネージャーとして推奨
+- **Node.js**：バージョン23.11.1trên 
+- **Yarn**：プロジェクトのパッケージマネージャーとしてkhuyến 
 
 ## プロジェクトのクイックスタート
 
@@ -501,78 +501,78 @@ pm2 monit             # モニタリングパネル
    cd Toonflow-app
    ```
 
-   **Gitee からクローン（国内ユーザー向け）：**
+   **Gitee からクローン（trong ユーザーけ）：**
 
    ```bash
    git clone https://gitee.com/HBAI-Ltd/Toonflow-app.git
    cd Toonflow-app
    ```
 
-2. **依存関係のインストール**
+2. **phụ lưu のインストール**
 
-   プロジェクトルートで以下のコマンドを実行して依存関係をインストールしてください：
+   プロジェクトルートでdưới のコマンドをthi してphụ lưu をインストールしてください：
 
    ```bash
    yarn install
    ```
 
-3. **開発環境の起動**
+3. **の**
 
-   本プロジェクトは **バックエンドAPIサービス** と **フロントエンドページ** の2つの部分からなります。必要に応じて起動方法を選択してください：
+   sách プロジェクトは **バックエンドAPIサービス** と **フロントエンドページ** の2つのbộ phútからなります。bắt cần にじてphương thức をしてください：
 
-   - **方法1：バックエンドサービスのみ起動**
+   - **phương thức 1：バックエンドサービスのみ**
 
      ```bash
      yarn dev
      ```
 
-     > ⚠️ このコマンドはバックエンドAPIサービスのみ起動（ポート10588）し、**フロントエンドページは含みません**。`http://localhost:10588` に直接アクセスするとAPIインターフェースのみ呼び出せ、完全なWebインターフェースは表示されません。フロントエンドページも使用する場合は、フロントエンドプロジェクトを別途起動するか、下記のGUIモードを使用してください。
+     > ⚠️ このコマンドはバックエンドAPIサービスのみ（ポート10588）し、**フロントエンドページはみません**。`http://localhost:10588` にtrực tiếp アクセスするとAPIインターフェースのみびra せ、toàn なWebインターフェースはbảng nhở されません。フロントエンドページもhàm するhợp は、フロントエンドプロジェクトをするか、dưới のGUIモードをhàm してください。
 
-   - **方法2：Electron デスクトップクライアントの起動**
+   - **phương thức 2：Electron デスクトップクライアントの**
 
      ```bash
      yarn dev:gui
      ```
 
-     > このコマンドはバックエンドサービスとElectronデスクトップウィンドウを同時に起動します。組み込みのフロントエンドページが含まれており、追加設定なしで即座に使用できます。全機能を完全に体験したい開発者に適しています。
+     > このコマンドはバックエンドサービスとElectronデスクトップウィンドウをcùng にします。みみのフロントエンドページがまれており、cộng nối なしでにhàm できます。toàn thể をtoàn にthể したいgiả にしています。
 
-   - **方法3：本番モードでの起動**
+   - **phương thức 3：sách モードでの**
 
      ```bash
      yarn start
      ```
 
-     > 本番モードでコンパイル済みのサービスを直接実行します（事前に `yarn build` が必要です）。
+     > sách モードでコンパイルみのサービスをtrực tiếp thi します（việc trước に `yarn build` がbắt cần です）。
 
 4. **プロジェクトのパッケージング**
 
-   - TypeScriptファイルのコンパイルと生成：
+   - TypeScriptファイルのコンパイルとtạo：
 
      ```bash
      yarn build
      ```
 
-   - Windows プラットフォーム用実行可能プログラムのパッケージング：
+   - Windows プラットフォームhàm thi thể プログラムのパッケージング：
 
      ```bash
      yarn dist:win
      ```
 
-   - Mac プラットフォーム用実行可能プログラムのパッケージング：
+   - Mac プラットフォームhàm thi thể プログラムのパッケージング：
 
      ```bash
      yarn dist:mac
      ```
 
-   - Linux プラットフォーム用実行可能プログラムのパッケージング：
+   - Linux プラットフォームhàm thi thể プログラムのパッケージング：
 
      ```bash
      yarn dist:linux
      ```
 
-5. **コード品質チェック**
+5. **コードチェック**
 
-   - グローバルな構文と規約のチェック：
+   - グローバルなtài とのチェック：
 
      ```bash
      yarn lint
@@ -580,147 +580,147 @@ pm2 monit             # モニタリングパネル
 
 6. **AI デバッグパネル（オプション）**
 
-   AI SDKの可視化デバッグツールを起動し、AI呼び出しをデバッグしやすくします：
+   AI SDKのhóa デバッグツールをし、AIびra しをデバッグしやすくします：
 
    ```bash
    yarn debug:ai
    ```
 
-## フロントエンド開発
+## フロントエンド
 
-フロントエンドインターフェースを変更する場合は、フロントエンドリポジトリで開発を行ってください：
+フロントエンドインターフェースをđổi するhợp は、フロントエンドリポジトリでをthi ってください：
 
 - **GitHub**：[Toonflow-web](https://github.com/HBAI-Ltd/Toonflow-web)
 - **Gitee**：[Toonflow-web](https://gitee.com/HBAI-Ltd/Toonflow-web)
 
-フロントエンドをビルド後、`dist` ディレクトリの内容を本プロジェクトの `data/web` ディレクトリにコピーすれば統合完了です。
+フロントエンドをビルド、`dist` ディレクトリのnội dungをsách プロジェクトの `data/web` ディレクトリにコピーすればhợp です。
 
-## プロジェクト構造
+## プロジェクトtạo 
 
 ```
-📂 build/                    # ビルド成果物
+📂 build/                    # ビルドtạo quả 
 📂 data/                     # ランタイムデータ
-│  ├─ 📂 models/            # ローカル推論モデル（ONNX）
-│  ├─ 📂 oss/               # オブジェクトストレージ（素材/キャラクター/シーン）
-│  ├─ 📂 serve/             # 本番環境エントリ
+│  ├─ 📂 models/            # ローカルkhuyến モデル（ONNX）
+│  ├─ 📂 oss/               # オブジェクトストレージ（/キャラクター/シーン）
+│  ├─ 📂 serve/             # sách エントリ
 │  ├─ 📂 skills/            # Agent スキルプロンプト
-│  └─ 📂 web/               # フロントエンドビルド成果物（組み込み）
+│  └─ 📂 web/               # フロントエンドビルドtạo quả （みみ）
 📂 docs/                     # ドキュメントリソース
-📂 env/                      # 環境設定
-📂 scripts/                  # ビルドと補助スクリプト
+📂 env/                      # nối 
+📂 scripts/                  # ビルドとgiúp スクリプト
 📂 src/
 ├─ 📂 agents/               # AI Agent モジュール
 │  ├─ 📂 productionAgent/   # プロダクション Agent
-│  └─ 📂 scriptAgent/       # 脚本 Agent
-├─ 📂 lib/                  # 共通ライブラリ（DB初期化、レスポンスフォーマット）
+│  └─ 📂 scriptAgent/       # sách  Agent
+├─ 📂 lib/                  # thông ライブラリ（DBkỳ hóa 、レスポンスフォーマット）
 ├─ 📂 middleware/            # ミドルウェア
 ├─ 📂 routes/               # ルートモジュール
-│  ├─ 📂 agents/            # Agent メモリ管理
-│  ├─ 📂 artStyle/          # 画風管理
-│  ├─ 📂 assets/            # 素材管理
-│  ├─ 📂 assetsGenerate/    # 素材生成
-│  ├─ 📂 cornerScape/       # 絵コンテ管理
-│  ├─ 📂 general/           # 汎用インターフェース
-│  ├─ 📂 login/             # ログイン認証
+│  ├─ 📂 agents/            # Agent メモリlý 
+│  ├─ 📂 artStyle/          # vẽ lý 
+│  ├─ 📂 assets/            # lý 
+│  ├─ 📂 assetsGenerate/    # tạo
+│  ├─ 📂 cornerScape/       # コンテlý 
+│  ├─ 📂 general/           # hàm インターフェース
+│  ├─ 📂 login/             # ログイン
 │  ├─ 📂 migrate/           # データマイグレーション
-│  ├─ 📂 modelSelect/       # モデル選択
-│  ├─ 📂 novel/             # 小説管理
-│  ├─ 📂 other/             # その他機能
-│  ├─ 📂 production/        # 制作管理
-│  ├─ 📂 project/           # プロジェクト管理
-│  ├─ 📂 script/            # 脚本生成
-│  ├─ 📂 scriptAgent/       # 脚本 Agent インターフェース
-│  ├─ 📂 setting/           # システム設定
-│  ├─ 📂 task/              # タスク管理
+│  ├─ 📂 modelSelect/       # モデル
+│  ├─ 📂 novel/             # nhỏ lý 
+│  ├─ 📂 other/             # そのanh ấythể 
+│  ├─ 📂 production/        # chép tác vụ lý 
+│  ├─ 📂 project/           # プロジェクトlý 
+│  ├─ 📂 script/            # sách tạo
+│  ├─ 📂 scriptAgent/       # sách  Agent インターフェース
+│  ├─ 📂 setting/           # システムnối 
+│  ├─ 📂 task/              # タスクlý 
 │  └─ 📂 test/              # テストインターフェース
-├─ 📂 socket/               # WebSocket リアルタイム通信
-├─ 📂 types/                # TypeScript 型宣言
-├─ 📂 utils/                # ユーティリティ関数
+├─ 📂 socket/               # WebSocket リアルタイムthông tin 
+├─ 📂 types/                # TypeScript kiểu 
+├─ 📂 utils/                # ユーティリティsố 
 ├─ 📄 app.ts                # アプリケーションエントリ
-├─ 📄 core.ts               # コア初期化
-├─ 📄 env.ts                # 環境変数処理
-├─ 📄 err.ts                # エラー処理
+├─ 📄 core.ts               # コアkỳ hóa 
+├─ 📄 env.ts                # số lý 
+├─ 📄 err.ts                # エラーlý 
 ├─ 📄 logger.ts             # ログモジュール
-├─ 📄 router.ts             # ルート登録
-└─ 📄 utils.ts              # 汎用ツール
+├─ 📄 router.ts             # ルートđăng 
+└─ 📄 utils.ts              # hàm ツール
 📄 Dockerfile                # Docker ビルドファイル
-📄 electron-builder.yml      # Electron パッケージング設定
-📄 skillList.json            # スキル一覧
+📄 electron-builder.yml      # Electron パッケージングnối 
+📄 skillList.json            # スキル1 
 📄 LICENSE                   # ライセンス（Apache-2.0）
-📄 NOTICES.txt               # サードパーティ依存関係の声明
-📄 package.json              # プロジェクト設定
-📄 tsconfig.json             # TypeScript 設定
+📄 NOTICES.txt               # サードパーティphụ lưu のthanh dẫn 
+📄 package.json              # プロジェクトnối 
+📄 tsconfig.json             # TypeScript nối 
 ```
 
 ---
 
-# 🔗 関連リポジトリ
+# 🔗 リポジトリ
 
-| リポジトリ       | 説明                               | GitHub                                             | Gitee                                            |
+| リポジトリ       | dẫn                                | GitHub                                             | Gitee                                            |
 | ---------------- | ---------------------------------- | -------------------------------------------------- | ------------------------------------------------ |
-| **Toonflow-app** | 完全なクライアント（本リポジトリ、一般ユーザー向け） | [GitHub](https://github.com/HBAI-Ltd/Toonflow-app) | [Gitee](https://gitee.com/HBAI-Ltd/Toonflow-app) |
-| **Toonflow-web** | フロントエンドソース（フロントエンド開発者向け）       | [GitHub](https://github.com/HBAI-Ltd/Toonflow-web) | [Gitee](https://gitee.com/HBAI-Ltd/Toonflow-web) |
+| **Toonflow-app** | toàn なクライアント（sách リポジトリ、1 ユーザーけ） | [GitHub](https://github.com/HBAI-Ltd/Toonflow-app) | [Gitee](https://gitee.com/HBAI-Ltd/Toonflow-app) |
+| **Toonflow-web** | フロントエンドソース（フロントエンドgiả け）       | [GitHub](https://github.com/HBAI-Ltd/Toonflow-web) | [Gitee](https://gitee.com/HBAI-Ltd/Toonflow-web) |
 
-> 💡 **ヒント**：Toonflow をただ使いたいだけの場合は、本リポジトリのクライアントをダウンロードしてください。フロントエンドリポジトリは二次開発やフロントエンドのカスタマイズを行う開発者向けです。
+> 💡 **ヒント**：Toonflow をただいたいだけのhợp は、sách リポジトリのクライアントをダウンロードしてください。フロントエンドリポジトリは2lần やフロントエンドのカスタマイズをthi うgiả けです。
 
 ---
 
-# 👨‍👩‍👧‍👦 WeChat 交流グループ
+# 👨‍👩‍👧‍👦 WeChat tác vụ グループ
 
-グループ追加用アシスタント：
+グループcộng hàm アシスタント：
 
 <img src="./QR.png" alt="Toonflow QR" height="400"/>
 
-アイコンをクリックして Discord に参加することもできます：
+アイコンをクリックして Discord にtham cộng することもできます：
 
 [![Join our Discord](https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg)](https://discord.gg/HEjKmpNpAZ)
 
-または招待リンク： [https://discord.gg/HEjKmpNpAZ](https://discord.gg/HEjKmpNpAZ)
+またはリンク： [https://discord.gg/HEjKmpNpAZ](https://discord.gg/HEjKmpNpAZ)
 
 ---
 
-# 💌 お問い合わせ
+# 💌 おいhợp わせ
 
-📧 メール：[ltlctools@outlook.com](mailto:ltlctools@outlook.com?subject=Toonflow問い合わせ)
+📧 メール：[ltlctools@outlook.com](mailto:ltlctools@outlook.com?subject=Toonflowいhợp わせ)
 
 ---
 
 # 📜 ライセンス
 
-Toonflow は Apache-2.0 ライセンスのもとでオープンソース公開されており、補足的な商用利用規約が付帯しています。
+Toonflow は Apache-2.0 ライセンスのもとでオープンソースされており、 của なcấp hàm hàm がしています。
 
-ライセンス詳細：https://www.apache.org/licenses/LICENSE-2.0
+ライセンス：https://www.apache.org/licenses/LICENSE-2.0
 
-## 補足契約
+## 
 
-- 本ソフトウェアを製品として **2つ以上の独立した第三者** に配布する場合は、HBAI-Ltd の **書面による商用ライセンス** を取得する必要があります。
-- **5法人以下** が共同運営で内部利用し、外部にサービスを提供しない場合は内部利用とみなし、**ライセンスは不要** です。
-- Toonflow の識別表示や著作権情報を削除または変更してはなりません。
+- sách ソフトウェアをとして **2つtrên のlập したThứ 3giả ** にnối するhợp は、HBAI-Ltd の **mặt によるcấp hàm ライセンス** をxuất được するbắt cần があります。
+- **5thức ngườidưới ** がcùng でtrong bộ hàm し、ngoài bộ にサービスをnhắc nhà しないhợp はtrong bộ hàm とみなし、**ライセンスはkhông cần ** です。
+- Toonflow のbảng nhở やtác vụ tình をbỏ またはđổi してはなりません。
 
-## 永久無料のケース
+## のケース
 
-- ✅ Toonflow を使ってコンテンツを制作し、プラットフォームから収益を得る
-- ✅ 二次開発して自分のチーム内で使用する
-- ✅ 5法人以下が共同運営で内部利用する
-- ✅ 個人の学習、研究、非商用利用
+- ✅ Toonflow をってコンテンツをchép tác vụ し、プラットフォームからをđược る
+- ✅ 2lần してtự phútのチームtrong でhàm する
+- ✅ 5thức ngườidưới がcùng でtrong bộ hàm する
+- ✅ ngườiの、、phi cấp hàm hàm 
 
-## 商用ライセンス価格
+## cấp hàm ライセンスkhung 
 
-| 段階 | 年間売上 | 年会費 |
+| đoạn  | nămtrên  | nămsẽ  |
 |------|---------|--------|
-| 🌱 支援期 | < ¥10万 | **申請すれば無料ライセンス** |
-| 🚀 創業期 | ¥10–50万 | ¥5,000/年 |
-| 📈 成長期 | ¥50–150万 | ¥20,000/年 |
-| 🏢 規模期 | ¥150–500万 | ¥80,000/年 |
-| 🌐 エンタープライズ | > ¥500万 | 要相談 |
+| 🌱 kỳ  | < ¥10vạn | **すればライセンス** |
+| 🚀 kỳ  | ¥10–50vạn | ¥5,000/năm |
+| 📈 tạo kỳ  | ¥50–150vạn | ¥20,000/năm |
+| 🏢 mô kỳ  | ¥150–500vạn | ¥80,000/năm |
+| 🌐 エンタープライズ | > ¥500vạn | cần  |
 
-> **不遡及条項**：v1.0.8 リリース前に AGPL-3.0 に基づいて使用していたユーザーは、引き続き AGPL-3.0 に従うものとし、本契約の変更の影響を受けません。
+> **không mục **：v1.0.8 リリースtrước に AGPL-3.0 にcơ sở づいてhàm していたユーザーは、きき AGPL-3.0 にうものとし、sách のđổi のsáng をけません。
 
-完全な契約は [LICENSE](./LICENSE) ファイルを参照してください。
+toàn なは [LICENSE](./LICENSE) ファイルをtham してください。
 
 ---
 
-# ⭐️ スター履歴
+# ⭐️ スター
 
 [![Star History Rank](https://api.star-history.com/badge?repo=HBAI-Ltd/Toonflow-app)](https://www.star-history.com/#HBAI-Ltd/Toonflow-app)
 
@@ -729,67 +729,67 @@ Toonflow は Apache-2.0 ライセンスのもとでオープンソース公開�
 ---
 
 
-# 🙏 謝辞
+# 🙏 
 
-以下のオープンソースプロジェクトが Toonflow に強力なサポートを提供しています：
+dưới のオープンソースプロジェクトが Toonflow にlực なサポートをnhắc nhà しています：
 
-- [Express](https://expressjs.com/) - 高速でオープンな Node.js Web フレームワーク
-- [AI SDK](https://ai-sdk.dev/) - TypeScript 向け AI ツールキット
-- [Better-SQLite3](https://github.com/WiseLibs/better-sqlite3) - 高性能 SQLite3 バインディングライブラリ
-- [Sharp](https://sharp.pixelplumbing.com/) - 高性能 Node.js 画像処理ライブラリ
+- [Express](https://expressjs.com/) - cao でオープンな Node.js Web フレームワーク
+- [AI SDK](https://ai-sdk.dev/) - TypeScript け AI ツールキット
+- [Better-SQLite3](https://github.com/WiseLibs/better-sqlite3) - Hiệu năng cao SQLite3 バインディングライブラリ
+- [Sharp](https://sharp.pixelplumbing.com/) - Hiệu năng cao Node.js vẽ lý ライブラリ
 - [Axios](https://axios-http.com/) - Promise ベースの HTTP クライアント
 - [Zod](https://zod.dev/) - TypeScript ファーストのスキーマバリデーションライブラリ
-- [Socket.IO](https://socket.io/) - リアルタイム双方向イベント通信エンジン
-- [Electron](https://www.electronjs.org/) - クロスプラットフォームデスクトップアプリ開発フレームワーク
-- [Hugging Face Transformers](https://huggingface.co/docs/transformers.js) - ローカル ML 推論ライブラリ
+- [Socket.IO](https://socket.io/) - リアルタイムđôi phương イベントthông tin エンジン
+- [Electron](https://www.electronjs.org/) - クロスプラットフォームデスクトップアプリフレームワーク
+- [Hugging Face Transformers](https://huggingface.co/docs/transformers.js) - ローカル ML khuyến ライブラリ
 
-以下の組織・団体・個人が Toonflow をサポートしています：
+dưới の・thể ・ngườiが Toonflow をサポートしています：
 
 <table>
   <thead>
     <tr>
       <th align="center">ロゴ</th>
-      <th align="center">名称</th>
-      <th align="center">サポート方法</th>
-      <th>概要</th>
-      <th align="center">公式サイト</th>
+      <th align="center">tên</th>
+      <th align="center">サポートphương thức </th>
+      <th>cần </th>
+      <th align="center">thức サイト</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center"><img src="./sponsored/sophnet.png" alt="算能雲 ロゴ" width="48"></td>
-      <td align="center"><b>算能雲</b></td>
-      <td align="center">💻 計算リソーススポンサー</td>
-      <td>より速く、より安定し、より経済的なワンストップモデル推論APIサービスの提供を目指す</td>
-      <td align="center"><a href="https://www.sophnet.com/">公式サイト</a></td>
+      <td align="center"><img src="./sponsored/sophnet.png" alt="toán thể  ロゴ" width="48"></td>
+      <td align="center"><b>toán thể </b></td>
+      <td align="center">💻 toán リソーススポンサー</td>
+      <td>よりく、よりan nối し、より của なワンストップモデルkhuyến APIサービスのnhắc nhà をmục す</td>
+      <td align="center"><a href="https://www.sophnet.com/">thức サイト</a></td>
     </tr>
     <tr>
       <td align="center"><img src="./sponsored/atlascloud.png" alt="Atlas Cloud ロゴ" width="48"></td>
       <td align="center"><b>Atlas Cloud</b></td>
-      <td align="center">💻 計算リソーススポンサー</td>
-      <td>世界初の全モーダル推論プラットフォーム。対話、画像、動画、音声—すべて統一API。300以上のモデル、OpenAI互換。</td>
-      <td align="center"><a href="https://www.atlascloud.ai/">公式サイト</a></td>
+      <td align="center">💻 toán リソーススポンサー</td>
+      <td>giới のtoàn モーダルkhuyến プラットフォーム。、vẽ 、vẽ 、âm thanh —すべて1 API。300trên のモデル、OpenAI。</td>
+      <td align="center"><a href="https://www.atlascloud.ai/">thức サイト</a></td>
     </tr>
     <tr>
       <td align="center"><img src="./sponsored/hunyuan.webp" alt="Tencent Hunyuan 3D ロゴ" width="48"></td>
       <td align="center"><b>Tencent Hunyuan 3D</b></td>
-      <td align="center">🌐 ワールドモデル技術サポート</td>
-      <td>Tencent Hunyuan 3D AI 創作エンジンは、Hunyuan 3D 生成大モデル v2.5 をベースにした、業界初のワンストップ3DコンテンツAI創作プラットフォーム。テキストからの3D生成、画像からの3D生成、3Dアニメーション生成、テクスチャ生成などをサポートし、スケッチからの3D生成、3Dキャラクター生成、ローポリゴンモデル生成に強み。</td>
-      <td align="center"><a href="https://3d.hunyuan.tencent.com/">公式サイト</a></td>
+      <td align="center">🌐 ワールドモデルサポート</td>
+      <td>Tencent Hunyuan 3D AI tác vụ エンジンは、Hunyuan 3D tạolớn モデル v2.5 をベースにした、giới のワンストップ3DコンテンツAItác vụ プラットフォーム。テキストからの3Dtạo、vẽ からの3Dtạo、3Dアニメーションtạo、テクスチャtạoなどをサポートし、スケッチからの3Dtạo、3Dキャラクターtạo、ローポリゴンモデルtạoにみ。</td>
+      <td align="center"><a href="https://3d.hunyuan.tencent.com/">thức サイト</a></td>
     </tr>
     <tr>
-      <td align="center"><img src="./sponsored/ai-galaxy.png" alt="智星雲 ロゴ" width="48"></td>
-      <td align="center"><b>智星雲（AI Galaxy）</b></td>
-      <td align="center">💻 コンピューティング支援 <br/> 🖼️ イメージ支援</td>
-      <td>中国国内で著名な専門コンピューティングサービスブランドで、安価で安定したコンピューティングパワーを提供。清華・北京大学・復旦・浙江大学など千を超える985/211大学の研究室、中国科学院、5000社以上のAI企業にサービスを提供。</td>
-      <td align="center"><a href="https://www.ai-galaxy.com">公式サイト</a></td>
+      <td align="center"><img src="./sponsored/ai-galaxy.png" alt=" ロゴ" width="48"></td>
+      <td align="center"><b>（AI Galaxy）</b></td>
+      <td align="center">💻 コンピューティング <br/> 🖼️ イメージ</td>
+      <td>giữa trong でtên なコンピューティングサービスブランドで、an でan nối したコンピューティングパワーをnhắc nhà 。sạch ・lớn ・・lớn などnghìnをvượt える985/211lớn の、giữa 、5000trên のAIにサービスをnhắc nhà 。</td>
+      <td align="center"><a href="https://www.ai-galaxy.com">thức サイト</a></td>
     </tr>
   </tbody>
 </table>
 
-完全なサードパーティ依存関係リストは `NOTICES.txt` を参照してください。
+toàn なサードパーティphụ lưu リストは `NOTICES.txt` をtham してください。
 
-##### copyright © 北京愛阿科技有限公司
+##### copyright © có hạn 
 
 
 

@@ -56,6 +56,6 @@ export default router.post(
           models: JSON.stringify(existingModels),
         });
     }
-    res.status(200).send(success("更新成功"));
+    res.status(200).send(success("Cập nhật thành công"));
   },
 );

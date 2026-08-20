@@ -1,88 +1,88 @@
 ---
 name: director_planning_style
-description: 日式动画约束 — 定义90年代日式动画在色调体系、光影方案、质感方向、场景空间元素、乐器选择与环境音上的全局约束。适用于任何叙事类型。
+description: ngày thức động vẽ  — nối nghĩa 90nămngày thức động vẽ ở vật gọi thể dòng 、Ánh sángphương 、phương 、Bối cảnhrỗng gian 、thiết bị chọn lựa âm trên  của toàn cục 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 日式动画约束 · 90年代日式动画 · 技法参考
+# ngày thức động vẽ  · 90nămngày thức động vẽ  · thức tham chiếu
 
 ---
 
-## 一、色调体系与画面基调
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
 
-- **色调基底** — 全片以暖黄（C1）、樱花粉（C3）、天空蓝（C6）为基底色，整体色温偏暖（4800-5200K），饱和度中低（50-70%），呈现90年代手绘动画的温暖怀旧感。全片保持柔和暖色调基底，局部点缀冷色（浅蓝 C6、淡紫 C7）增加层次
-- **冷暖叙事对比** — 冷色（浅蓝 C6、淡紫 C7）作为叙事转折的视觉信号，用于夜晚或情绪转折段落局部点缀。冷暖切换应与故事弧线同步，而非随意混用
-- **色盘先行原则** — 段落规划需先绑定情绪场景（日常/心动/离别/重逢等），再确定主色+辅色与光影方案，避免"剧情对了但情绪不对色"
-- **禁用色域** — 高饱和荧光色、霓虹色、现代CG渲染色彩体系均与本风格不兼容
+- **vật gọi cơ sở ** — toàn （C1）、（C3）、ngàyrỗng （C6）cơ sở vật ，chỉnh thể vật （4800-5200K）， và độ giữa thấp （50-70%），90nămtay động vẽ  của cũ 。toàn lưu giữ  và vật gọi cơ sở ，cục bộ điểm tố vật （ C6、 C7）cộng tầng lần 
+- **việc đúng tỷ ** — vật （ C6、 C7）tác vụ việc chuyển  của trực quantin số ，hàm với Ban đêmhoặc tình xúc chuyển đoạn cục bộ điểm tố 。đổi hồi việc đường cùng bước ，phi ý hàm 
+- **vật đĩa trước thi gốc ** — đoạn lập kế hoạchcần trước ghép nốitình xúc Bối cảnh（ngày thường /động /khác /trùng ），nối chính vật +vật Ánh sángphương ，"kịch tình đúng nhưng tình xúc không đúng vật "
+- **hàm vật vực ** — cao  và ánh vật 、vật 、CGvật thể dòng sách Phong cáchkhông dung 
 
 ---
 
-## 二、光影方案体系
+## 2、Ánh sángphương thể dòng 
 
-- **光影即叙事** — 6 套光影方案对应不同情绪段落，导演规划阶段应在段落层面确定光影基调方向，而非逐镜指定
-- **光源角度** — 默认 30-45°斜侧光，模拟自然光效果
+- **Ánh sángviệc ** — 6 Ánh sángphương đúng hồi không cùng tình xúc đoạn ，Kế hoạch đạo diễnđoạn hồi ở đoạn tầng mặt nối Ánh sángcơ sở gọi phương ，phi quay nối 
+- **ánh nguồn nhân độ ** — Mặc định 30-45°ánh ，mô tự ánh hiệu quả 
 
-| 情绪段落 | 光影方向 | 色调倾向 | 适用阶段 |
+| tình xúc đoạn  | Ánh sángphương  | vật gọi  | hàm đoạn  |
 |---|---|---|---|
-| 日常温馨 | A·柔和漫射 | 暖黄底 + 均匀柔和光 | 全片 |
-| 心动瞬间 | B·暖调侧光 | 樱花粉 + 暖橙局部 | 升温段 |
-| 办公室/学校 | C·顶光+环境光 | 中性暖 + 柔和冷白 | 工作/学习段 |
-| 黄昏浪漫 | D·逆光暖调 | 琥珀暖主导 + 冷蓝背景 | 甜蜜段 |
-| 夜晚月色 | E·月光冷调 | 淡蓝主调 + 暖色局部点缀 | 夜晚段 |
-| 回忆/闪回 | F·柔焦暖光 | 暖黄主调 + 雾化效果 | 回忆段 |
+| ngày thường  | A· và  |  +  và ánh  | toàn  |
+| động gian  | B·gọi ánh  |  + cục bộ  | đoạn  |
+| /đối  | C·ánh +ánh  | giữa  +  và  | tác vụ /đoạn  |
+| Hoàng hôn | D·ánh gọi  | chính dẫn  + bối  | đoạn  |
+| Ban đêmthángvật  | E·thángánh gọi  | chính gọi  + vật cục bộ điểm tố  | Ban đêmđoạn  |
+| trả /trả  | F·ánh  | chính gọi  + hóa hiệu quả  | trả đoạn  |
 
-- **冷暖光分配** — 暖色调贯穿全片可用，根据场景需要灵活调整；冷色调（淡蓝主调）仅在夜晚或情绪转折后使用
-- **氛围方向映射** — 每场戏的氛围方向应能映射到上述光影方案（A-F）的某一方向，确保视觉一致性
-
----
-
-## 三、质感方向
-
-- **平涂纪实感** — 90年代手绘动画的核心：线条清晰流畅、上色均匀、光影层次分明
-- **清晰线稿 + 细腻上色** — 这是画面质感的锚点。不是模糊晕染，不是现代CG渲染
-- **平涂不等于简陋** — 本风格强调90年代手绘动画的质感表达（清晰线稿、平涂上色、光影层次），通过构图与情绪设计放大感染力，而非依赖复杂特效
-- **手绘不等于粗糙** — 90年代日式动画强调手绘质感的影像表达（自然光位、柔和色彩、细腻表情），通过镜头与情绪设计放大感染力，而非依赖奇观特效
+- **ánh phútnối ** — vật gọi toàn hàm ，dựa theoBối cảnhcần cần hoạt gọi chỉnh ；vật gọi （chính gọi ）chỉ ở Ban đêmhoặc tình xúc chuyển sau hàm 
+- **Không khíphương ** — trường  của Không khíphương hồi thể đến trên tả Ánh sángphương （A-F） của 1 phương ，lưu trực quan1 
 
 ---
 
-## 四、日式场景空间元素
+## 3、phương 
 
-90年代日式动画特有的场景元素及其视觉叙事功能：
-
-- **窗框/门框/走廊** — 天然的框架式构图道具，制造"看不透"的层次感与空间纵深
-- **教室/屋顶/街道** — 青春感的天然载体，景即情：教室窗边阳光 = 青春、黄昏街道长影 = 怀旧、居家暖光餐桌 = 家庭温暖
-- **樱花/落叶/雨幕** — 留白构图的天然载体，景即情：满树樱花 = 心动、落叶纷飞 = 离愁、雨中独行 = 孤寂
-- **夕阳/月色/路灯** — 日式动画的光源载体，夕阳 = 暖/浪漫（方案D）、月色 = 冷/孤寂（方案E）、路灯 = 夜晚日常
-- **段落间用场景空镜过渡** — 本风格有丰富的场景资产（不同时段/天候/天气变体），段落衔接建议用场景空镜做情绪缓冲，不要硬切
-- **转折点用视觉而非台词** — 优先使用画面手段（光影突变、景别跳切、空镜隐喻）而非依赖对白解释
+- **** — 90nămtay động vẽ  của ：đường mục sạch 、trên vật 、Ánh sángtầng lần phútdẫn 
+- **sạch đường  + trên vật ** — nàylà vẽ mặt  của điểm 。không là mô ，không là CG
+- **không với ** — sách Phong cáchgọi 90nămtay động vẽ  của bảng （sạch đường 、trên vật 、Ánh sángtầng lần ），thông quacấu ảnh tình xúc thiết tính mở lớn lực ，phi phụ thuộc lời hiệu 
+- **tay không với ** — 90nămngày thức động vẽ gọi tay  của sáng bảng （tự ánh vị trí 、 và vật 、bảng tình ），thông quaỐng kínhtình xúc thiết tính mở lớn lực ，phi phụ thuộc hiệu 
 
 ---
 
-## 五、日式动画乐器与环境音
+## 4、ngày thức Bối cảnhrỗng gian 
 
-90年代日式动画世界观下的声音元素约束：
+90nămngày thức động vẽ có  của Bối cảnhtrực quanviệc công thể ：
 
-### 乐器选择
+- **/cổng /chạy ** — ngày của thức cấu ảnh Đạo cụ，chép tạo "xem không " của tầng lần rỗng gian 
+- **//đạo ** —  của ngàyxuống thể ，bối tình ：ánh  = 、Hoàng hônđạo dài sáng  = cũ 、ánh  = 
+- **//** — lưu cấu ảnh  của ngàyxuống thể ，bối tình ：đầy  = động 、 = 、giữa thi  = 
+- **/thángvật /đường ** — ngày thức động vẽ  của ánh nguồn xuống thể ， = /（phương D）、thángvật  = /（phương E）、đường  = Ban đêmngày thường 
+- **đoạn gian hàm Bối cảnhrỗng quay ** — sách Phong cáchcó  của Bối cảnhTài nguyên（không cùng đoạn /ngày/ngàythể ），đoạn tiếp Khuyến nghịhàm Bối cảnhrỗng quay tình xúc ，không cần 
+- **Điểm bước ngoặthàm trực quanphi Lời thoại** — ưu tiên sử dụng vẽ mặt tay đoạn （Ánh sáng、Cỡ cảnh、rỗng quay ）phi phụ thuộc đúng giải 
 
-- **钢琴** — 日常/温馨/回忆段落的核心乐器，最能表现90年代动画的质感
-- **吉他** — 轻松/浪漫/街头段落，扫弦的温柔感适合日常氛围
-- **弦乐铺底** — 情感升华/离别段落，拉弦的细腻感适合情绪过渡
-- **八音盒/风铃** — 回忆/梦幻段落，清脆音色适合怀旧氛围
+---
 
-### 乐器组合策略
+## 5、ngày thức động vẽ thiết bị âm 
 
-| 情绪阶段 | 乐器组合 |
+90nămngày thức động vẽ giới dưới  của thanh âm ：
+
+### thiết bị chọn lựa 
+
+- **** — ngày thường //trả đoạn  của thiết bị ，nhất thể bảng 90nămđộng vẽ  của 
+- **anh ấy** — //đầu đoạn ， của hợp ngày thường Không khí
+- **** — tình /khác đoạn ， của hợp tình xúc 
+- **8âm /phong ** — trả /đoạn ，sạch giọng đọchợp cũ Không khí
+
+### thiết bị nhóm hợp 
+
+| tình xúc đoạn  | thiết bị nhóm hợp  |
 |---|---|
-| 平稳/开场/收尾 | 八音盒独奏 或 风铃独奏 |
-| 日常温馨 | 钢琴 + 轻吉他 |
-| 情绪升华/浪漫 | 弦乐 + 钢琴 |
-| 回忆/梦幻 | 八音盒 + 钢琴 |
+| /mở trường /nhận đuôi  | 8âm  hoặc  phong  |
+| ngày thường  |  + anh ấy |
+| tình xúc / |  +  |
+| trả / | 8âm  +  |
 
-### 日式环境音
+### ngày thức âm 
 
-- **典型环境音层次** — 蝉鸣虫唱 / 电车轨道声 / 风吹过树叶 / 雨滴檐廊 / 市井人声 / 鸟鸣 / 风声
-- **每场戏标注 1-2 个核心环境音**，帮助后续音效设计。环境音层次越丰富，日式场景越有沉浸感
-- **留白比配乐更重要** — 关键情感瞬间（对视、转身、离别）优先考虑去掉配乐，只留环境音（风声、蝉鸣、电车声），让观众自己感受情绪
-- **避免满配** — 全片配乐覆盖率建议不超过 50%。留白段落的"无声"与配乐段落形成呼吸感，突出真实情感
+- **kiểu âm tầng lần ** —  / đạo thanh  / phong  /  / ngườithanh  /  / phong thanh 
+- **trường biểu tâm  1-2 mục âm **，trợ giúp sau Âm hiệuthiết tính 。âm tầng lần ，ngày thức Bối cảnhcó 
+- **lưu tỷ nối đổi trùng cần ** — liên tình gian （đúng video 、chuyển 、khác ）trước đi bỏ nối ，chỉ lưu âm （phong thanh 、、thanh ），để tự mình tình xúc 
+- **đầy nối ** — toàn nối tỷ lệ Khuyến nghịkhông vượt  50%。lưu đoạn  của "không thanh "nối đoạn dạng tạo ，ra thật tình 
 
 ---

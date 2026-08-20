@@ -1,109 +1,109 @@
 ---
 name: director_planning_narrative
-description: 叙事手法技法 · 心理博弈 — 定义心理博弈类型在主题立意、情感节奏、场景情绪设计与声音方向上的叙事规划方法。适用于任何视觉风格。
+description: việc tay thức thức  · lý  — nối nghĩa lý Loạiở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của việc lập kế hoạchphương thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 叙事手法 · 心理博弈 · 技法参考
+# việc tay thức  · lý  · thức tham chiếu
 
 ---
 
-## 一、主题立意与情感内核
+## 1 、chính đề lập ý tình trong 
 
-### 心理博弈叙事要点
+### lý việc cần điểm 
 
-- **表面平静暗流涌动** — 心理博弈的核心魅力在于"表里不一"。每句看似平常的对话都有弦外之音，每个微笑都可能是精心计算的策略。主题立意应围绕"人与人之间隐形的攻防战"
-- **信息就是武器** — 心理博弈叙事的底层引擎是"信息不对称"。谁知道什么、谁不知道什么、谁假装不知道——信息的隐瞒、揣测与揭露构成叙事张力的核心
-- **多层认知博弈** — 最高级的心理博弈不是简单的欺骗，而是"认知套娃"：A以为自己在骗B → B其实早知道 → A知道B知道但假装不知道。层数越多，观众的智力快感越强
-- **离场感受建议方向** — 烧脑 / 后背发凉 / 恍然大悟 / 不寒而栗。避免"血腥""暴力"等纯感官方向
-- **人性的灰度** — 心理博弈叙事中没有绝对的好人和坏人。每个角色都有自己的逻辑、苦衷和底线。最好的博弈是"观众理解每一方的动机，但不知道该站哪一边"
-
----
-
-## 二、叙事结构与节奏规划
-
-### 心理博弈叙事要点
-
-- **信息操控是基本功** — 心理博弈叙事的核心任务是操控信息流。叙事规划阶段需明确：每个段落中观众知道什么、角色A知道什么、角色B知道什么。三者之间的信息差就是张力来源
-- **视角切换制造认知翻转** — 同一事件从不同角色视角呈现，每切换一次视角，观众对事件的理解就翻转一次。规划中应标注"视角切换点"和每次切换带来的认知更新
-- **反转需要铺垫** — 每一次反转都必须在前面埋下足够的线索。观众在反转时应感受到"早该想到的！"而非"这也太突然了"。铺垫与反转的比例建议 3:1（三份铺垫换一次反转）
-- **张力累积→短暂释放→更大的张力** — 心理博弈的节奏是螺旋上升的：每次博弈回合结束后有短暂的松弛，但下一回合的赌注更大、风险更高
-- **"暴露"节奏模型** — 心理博弈的核心节奏是角色"底牌"的逐步暴露：伪装 → 裂缝出现 → 对方察觉 → 反将一军 → 更深的伪装 → 更大的暴露。每一轮都比上一轮更接近真相
-- **观众的位置设计** — 明确每个段落中观众是"上帝视角"（知道双方底牌）还是"跟随视角"（只知道一方的信息）。两种位置制造完全不同的紧张感：上帝视角 = 看着角色走进陷阱的焦虑；跟随视角 = 与角色一起被骗的震惊
+- **bảng mặt động ** — lý  của lực ở với "bảng không 1 "。câu xem thường  của đúng lời đều có ngoài  của âm ，mục đều thể là tính toán của 。chính đề lập ý hồi khí "ngườingười của gian dạng  của "
+- **thông tinthì là thiết bị ** — lý việc  của tầng là "thông tinkhông đúng "。báo đạo sao、không báo đạo sao、giả không báo đạo ——thông tin của 、kiểm cấu tạo việc bức lực  của 
+- **nhiều tầng báo ** — tối đa cấp  của lý không là đơn  của ，là "báo "：Atự mình ở B → Bsớm báo đạo  → Abáo đạo Bbáo đạo nhưng giả không báo đạo 。tầng số nhiều ， của lực nhanh 
+- **trường Khuyến nghịphương ** —  / sau phát  / lớn  / không 。"""lực "thuần phương 
+- **người của độ ** — lý việc giữa chưa có đúng  của tốt người và xấu người。mục Nhân vậtđều có tự mình  của logic、 và đường 。nhất tốt  của là "lý giải 1 phương  của động máy ，nhưng không báo đạo trạm 1 "
 
 ---
 
-## 三、分场景情绪设计
+## 2、việc kết cấu tiết lập kế hoạch
 
-### 心理博弈叙事要点
+### lý việc cần điểm 
 
-- **情绪目标用博弈性词汇** — 不说"紧张"，说"笑着说话但掌心全是汗"。不说"害怕"，说"发现对方知道了但不知道对方知道多少"。博弈的情绪永远是多层的、矛盾的
-- **典型情绪段落与设计** —
+- **thông tinthao sát là cơ sở sách công ** — lý việc  của tác vụ là thao sát thông tin。việc lập kế hoạchđoạn cần dẫn ：mục đoạn giữa báo đạo sao、Nhân vậtAbáo đạo sao、Nhân vậtBbáo đạo sao。3giả  của gian  của thông tinthì là bức lực nguồn 
+- **video nhân đổi chép tạo báo chuyển ** — cùng 1 sự kiệntừ không cùng Nhân vậtvideo nhân ，đổi 1 lần video nhân ，đúng sự kiện của lý giải thì chuyển 1 lần 。lập kế hoạchgiữa hồi biểu tâm "video nhân đổi điểm " và lần đổi kèm  của báo cập nhật
+- **phụ chuyển cần cần ** — 1 lần phụ chuyển đều Bắt buộcở trước mặt dưới  của đường kiếm 。ở phụ chuyển hồi đến "sớm nghĩ đến  của ！"phi "nàycũng "。phụ chuyển  của Tỷ lệKhuyến nghị 3:1（3đổi 1 lần phụ chuyển ）
+- **bức lực →ngắn tạm mở →đổi lớn  của bức lực ** — lý  của tiết là trên  của ：lần trả hợp kết sau có ngắn tạm  của ，nhưng dưới 1 trả hợp  của tâm đổi lớn 、phong đổi cao 
+- **""tiết mô hình** — lý  của tiết là Nhân vật"" của bước ： → ra  → đúng phương  → phụ 1  → đổi  của  → đổi lớn  của 。1 đều tỷ trên 1 đổi tiếp thật 
+- ** của vị trí trí thiết tính ** — dẫn mục đoạn giữa là "trên video nhân "（báo đạo đôi phương ）còn là "video nhân "（chỉ báo đạo 1 phương  của thông tin）。2loại vị trí trí chép tạo toàn không cùng  của bức ：trên video nhân  = xem đang Nhân vậtchạy tiến  của ；video nhân  = Nhân vật1  của 
 
-| 段落类型 | 情绪方向 | 叙事手法 | 音乐建议 |
+---
+
+## 3、phútBối cảnhtình xúc thiết tính 
+
+### lý việc cần điểm 
+
+- **tình xúc mục biểu hàm từ ** — không hướng "bức "，hướng "đang hướng lời nhưng toàn là "。không hướng ""，hướng "phát đúng phương báo đạo nhưng không báo đạo đúng phương báo đạo nhiều ít "。 của tình xúc là nhiều tầng  của 、 của 
+- **kiểu tình xúc đoạn thiết tính ** —
+
+| đoạn Loại | tình xúc phương  | việc tay thức  | âm Khuyến nghị |
 |---|---|---|---|
-| 表面和平 | 客套 + 暗流 | 正常对话但每句话都有弦外之音 | 极轻衬底或无配乐，让对话张力自己运作 |
-| 试探交锋 | 紧张 + 智力快感 | 一来一回的对话中暗藏攻防，话中有话 | 低频暗流，节奏微妙加速 |
-| 裂缝出现 | 不安 + 警觉 | 某个细节暴露了，对方的表情一闪而过的变化 | 不协和音程一闪，随即恢复平静 |
-| 摊牌/反转 | 震惊 + 恍然 | 底牌翻开，之前所有的线索突然串联 | 突然静默，或单一低音持续 |
-| 僵持对峙 | 窒息 + 平衡 | 双方都知道对方知道了，但谁都不先动 | 完全无声，只有环境音和呼吸 |
-| 终局揭底 | 颠覆 + 唏嘘 | 最终真相比所有人以为的都更深一层 | 极简器乐或余音袅袅 |
+| bảng mặt  và  |  +  | chính thường đúng lời nhưng câu lời đều có ngoài  của âm  | hoặc không nối ，để đúng lời bức lực tự mình vận tác vụ  |
+| tra tác vụ  | bức  + lực nhanh  | 1 1 trả  của đúng lời giữa ，lời giữa có lời  | thấp tần ，tiết cộng  |
+| ra  | không an  + báo  | mục tiết ，đúng phương  của bảng tình 1  của hóa  | không giao  và âm trình 1 ，lời  |
+| /phụ chuyển  |  +  | mở ， của trước tất cả của đường kiếm kết  | ，hoặc đơn 1 thấp âm giữ  |
+| giữ đúng  |  +  | đôi phương đều báo đạo đúng phương báo đạo ，nhưng đều không trước động  | toàn không thanh ，chỉ có âm  và  |
+| cục  |  +  | nhất thật tỷ tất cảngười của đều đổi 1 tầng  | thiết bị hoặc âm  |
 
-- **"对话即战场"是叙事核心工具** — 心理博弈中对话不是信息传递，而是攻防武器：
-  - **主动问话** = 试探/进攻（想套出信息）
-  - **回避/转移话题** = 防御（不想暴露信息）
-  - **反问** = 反击（把压力推回给对方）
-  - **沉默** = 最强的牌（让对方自己焦虑暴露）
-- **空间即权力场** — 心理博弈场景中，谁占据空间的主动位置，谁就在博弈中占上风：坐在桌子另一端 = 对等博弈；站起来走动 = 施压；背对对方 = 自信/蔑视；被困在角落 = 劣势
-- **微表情是真话** — 心理博弈叙事的高级手法是"嘴在说谎但身体在说真话"。叙事规划中每个博弈段落应标注角色的"真实反应"（微表情、无意识小动作），这些是给观众的线索
+- **"đúng lời trường "là việc cụ ** — lý giữa đúng lời không là thông tintruyền ，là thiết bị ：
+  - **chính động hỏi lời ** = tra /tiến （nghĩ ra thông tin）
+  - **trả /chuyển lời đề ** = （không nghĩ thông tin）
+  - **phụ hỏi ** = phụ （đem nén lực khuyến trả cho đúng phương ）
+  - **** = nhất  của （để đúng phương tự mình ）
+- **rỗng gian thực lực trường ** — lý Bối cảnhgiữa ，liệu rỗng gian  của chính động vị trí trí ，thì ở giữa trên phong ：ở 1 đầu  = đúng ；trạm chạy động  = nén ；đúng đúng phương  = tự tin /video ；ở nhân  = 
+- **bảng tình là thật lời ** — lý việc  của cao cấp tay thức là "ở hướng nhưng thể ở hướng thật lời "。việc lập kế hoạchgiữa mục đoạn hồi biểu tâm Nhân vật của "thật phụ hồi "（bảng tình 、không ý trưng nhỏ động tác vụ ），nàynhững là cho  của đường kiếm 
 
 ---
 
-## 四、声音与音乐方向
+## 4、thanh âm âm phương 
 
-### 心理博弈叙事要点
+### lý việc cần điểm 
 
-- **沉默是最强的武器** — 心理博弈的关键对峙段落应优先去掉配乐，只留环境音和人物的呼吸/心跳。沉默中的对话比任何配乐都更紧张
-- **配乐制造认知暗示** — 心理博弈的配乐不是烘托气氛，而是引导观众的认知判断。某个角色出场时的配乐暗示"这个人有问题"；一段平静的对话配上不安的低音暗示"有陷阱"
-- **声音的欺骗性** — 配乐可以配合叙事"骗"观众：用温暖的配乐让观众以为某个角色是好人，在反转时配乐的变调本身就是"啊，原来如此"的叙事工具
-- **环境音即心理空间** — 密闭空间的回声 = 被困/无处可逃；嘈杂环境中的对话 = 隐秘/不方便说真话；空旷安静的空间 = 无处藏身/一切都被听到
-- **音乐情绪递进模型** —
+- **là nhất  của thiết bị ** — lý  của liên đúng đoạn hồi trước đi bỏ nối ，chỉ lưu âm  và người của /。giữa  của đúng lời tỷ nối đều đổi bức 
+- **nối chép tạo báo nhở ** — lý  của nối không là không ，là dẫn  của báo 。mục Nhân vậtra trường  của nối nhở "nàymục ngườicó hỏi đề "；1 đoạn  của đúng lời nối trên không an  của thấp âm nhở "có "
+- **thanh âm  của ** — nối nối hợp việc ""：hàm  của nối để mục Nhân vậtlà tốt người，ở phụ chuyển nối  của gọi sách thì là "，gốc như " của việc cụ 
+- **âm lý rỗng gian ** — mật rỗng gian  của trả thanh  = /không xử ；giữa  của đúng lời  = /không phương hướng thật lời ；rỗng an  của rỗng gian  = không xử /1 đều đến 
+- **âm tình xúc tiến mô hình** —
 
-| 情绪阶段 | 音乐策略 | 覆盖率 |
+| tình xúc đoạn  | âm  | tỷ lệ  |
 |---|---|---|
-| 表面和平 | 极轻衬底或无配乐 | 极低 |
-| 暗流涌动 | 低频不协和音，音量渐增 | 中低 |
-| 交锋升级 | 节奏感暗示，紧张加码 | 中 |
-| 摊牌/反转 | 突然静默或一个强音后寂静 | 极端 |
-| 终局 | 极简器乐，留余韵 | 低 |
+| bảng mặt  và  | hoặc không nối  | thấp  |
+| động  | thấp tần không giao  và âm ，âm lượng  | giữa thấp  |
+| tác vụ cấp  | tiết nhở ，bức cộng mã  | giữa  |
+| /phụ chuyển  | hoặc một âm sau  | đầu  |
+| cục  | thiết bị ，lưu  | thấp  |
 
-- **"心跳暴露"** — 在关键博弈段落，用角色的心跳声作为音效。心跳加速暗示角色在撒谎/紧张/即将被拆穿。但要克制使用，成为角色"说谎探测器"会降低悬念
-
----
-
-## 五、构图与景别叙事
-
-### 心理博弈叙事要点
-
-- **三大核心构图的叙事功能** —
-  - **对称构图** — 两人对坐/对立，传递"势均力敌/对峙/博弈平衡"
-  - **三角构图** — 三人博弈中的第三方（观察者/变数/裁判），打破二元对立增加复杂度
-  - **失衡构图** — 主体偏向一侧，另一侧留白或有威胁性元素，暗示"平衡被打破/有人在暗处"
-- **景别即信息权力** — 特写 = 观众被允许看到微表情（读心）；中景 = 观众只能看到肢体语言（猜测）；远景 = 观众只能看到位置关系（判断格局）。用景别控制观众的"读心权限"
-- **对话景别的攻防** — 对话中正反打的景别应随博弈态势变化：占上风的一方给近景（自信/从容）；劣势方给特写（紧张/微表情暴露）；势均力敌时双人中景
-- **空间纵深即博弈格局** — 利用空间纵深传递博弈关系：前景 = 当前说话者（明面）；中景 = 倾听者（观察/计算）；背景 = 第三方或隐藏的信息
-- **大特写的读心功能** — 大特写（瞳孔/嘴角/指尖）用于捕捉角色"说谎时的破绽"或"发现被骗时的一闪而过的变化"。这是给观众的线索，必须精准
-- **"不该看到的东西"** — 博弈叙事的高级构图技巧：让观众通过构图"不经意间"看到角色试图隐藏的东西（背后的手在发抖、桌下的拳头攥紧、眼神一瞬间的飘移）
+- **""** — ở liên đoạn ，hàm Nhân vật của thanh tác vụ Âm hiệu。cộng nhở Nhân vậtở /bức /。nhưng cần chép hàm ，tạo Nhân vật"hướng kiểm thiết bị "sẽ thấp 
 
 ---
 
-## 六、镜头运动与节奏
+## 5、cấu ảnh Cỡ cảnhviệc 
 
-### 心理博弈叙事要点
+### lý việc cần điểm 
 
-- **对峙段落绝对静止** — 心理博弈的核心对峙段落，镜头应当像"屏住呼吸"一样完全静止。60% 以上镜头为静止机位。任何运镜都会分散观众对微表情和对话潜台词的注意力
-- **缓推 = 逼近真相/施压** — 极缓的推近暗示"观众/角色正在靠近真相"或"一方在对另一方施加压力"。速度越慢，压迫感越强
-- **缓拉 = 揭示全局/发现** — 从局部缓慢拉远揭示角色没有注意到的全貌（有人在暗处听、证据就在身后），是"观众知道但角色不知道"的经典手法
-- **微妙偏移** — 静止画面中镜头极缓地偏向一侧，暗示"博弈的天平在倾斜"。偏向谁，谁就在失去优势
-- **快切用于反转瞬间** — 心理博弈中唯一允许快切的时刻是"底牌翻开"的反转瞬间：快速的景别跳切（全景→特写→大特写）模拟"恍然大悟"的心理冲击
-- **运镜即心理态势** — 静止 = 对峙/平衡；缓推 = 逼近/施压；缓拉 = 揭示/退让；偏移 = 天平倾斜；快切 = 真相揭露
+- **3lớn cấu ảnh  của việc công thể ** —
+  - **đúng cấu ảnh ** — 2ngườiđúng /đúng lập ，truyền "lực /đúng /"
+  - **3nhân cấu ảnh ** — 3ngườigiữa  của Thứ 3phương （giả /số /），mở 2đúng lập cộng lời độ 
+  - **thất cấu ảnh ** — chính thể 1 ，1 lưu hoặc có ，nhở "mở /có ngườiở xử "
+- **Cỡ cảnhthông tinthực lực ** — Đặc tả (close-up) = xem đến bảng tình （）；Trung cảnh (medium shot) = chỉ thể xem đến thể ngữ （kiểm ）；Viễn cảnh (extreme wide shot) = chỉ thể xem đến vị trí trí liên dòng （khung cục ）。hàm Cỡ cảnhsát chép  của "thực hạn "
+- **đúng lời Cỡ cảnh của ** — đúng lời giữa chính phụ mở  của Cỡ cảnhhồi thái hóa ：trên phong  của 1 phương cho Cận cảnh (close-up)（tự tin /từ dung ）；phương cho Đặc tả (close-up)（bức /bảng tình ）；lực đôi ngườiTrung cảnh (medium shot)
+- **rỗng gian khung cục ** — hàm rỗng gian truyền liên dòng ：trước bối  = hiện tạihướng lời giả （dẫn mặt ）；Trung cảnh (medium shot) = giả （/tính toán）；bối  = Thứ 3phương hoặc  của thông tin
+- **lớn Đặc tả (close-up) của công thể ** — lớn Đặc tả (close-up)（/nhân /）hàm với Nhân vật"hướng  của "hoặc "phát  của 1  của hóa "。nàylà cho  của đường kiếm ，Bắt buộc
+- **"không xem đến  của "** — việc  của cao cấp cấu ảnh ：để thông quacấu ảnh "không đã ý gian "xem đến Nhân vậttra ảnh  của （sau  của tay ở phát 、dưới  của đầu 、1 gian  của ）
+
+---
+
+## 6、Ống kínhvận động tiết 
+
+### lý việc cần điểm 
+
+- **đúng đoạn đúng Tĩnh (static)** — lý  của đúng đoạn ，Ống kínhhồi khi ""1 kiểu toàn Tĩnh (static)。60% trên Ống kínhTĩnh (static)máy vị trí 。Góc quayđều sẽ phútđúng bảng tình  và đúng lời Lời thoại của tâm ý lực 
+- **khuyến  = thật /nén ** —  của khuyến nhở "/Nhân vậtđang thật "hoặc "1 phương ở đúng 1 phương cộng nén lực "。độ chậm ，nén 
+- ** = nhở toàn cục /phát ** — từ cục bộ chậm Kéo lùi (pull back / dolly out)nhở Nhân vậtchưa có tâm ý đến  của toàn （có ngườiở xử 、chứng liệu thì ở sau ），là "báo đạo nhưng Nhân vậtkhông báo đạo " của đã tay thức 
+- **** — Tĩnh (static)vẽ mặt giữa Ống kínhđịa 1 ，nhở " của ngàyở "。，thì ở thất đi 
+- **nhanh hàm với phụ chuyển gian ** — lý giữa 1 nhanh  của là "mở " của phụ chuyển gian ：nhanh  của Cỡ cảnh（Toàn cảnh (wide shot)→Đặc tả (close-up)→lớn Đặc tả (close-up)）mô "lớn " của lý 
+- **Góc quaylý thái ** — Tĩnh (static) = đúng /；khuyến  = /nén ； = nhở /đăng để ； = ngày；nhanh  = thật 

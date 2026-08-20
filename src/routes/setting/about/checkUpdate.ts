@@ -13,7 +13,7 @@ const APP_VERSION: string = (() => {
   if (typeof __APP_VERSION__ !== "undefined") {
     return __APP_VERSION__;
   }
-  // 开发环境回退：从 package.json 读取
+  // Môi trường dev: đọc dự phòng từ package.json
   const pkgPath = path.resolve(process.cwd(), "package.json");
   const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf8"));
   return pkg.version;
@@ -31,11 +31,11 @@ export default router.post(
     const getUrl = url ?? "https://toonflow.oss-cn-beijing.aliyuncs.com/update.json";
 
     const versionInfo = await fetch(getUrl).then((res) => res.json());
-    if (!versionInfo) return res.status(400).send(error("无法获取版本信息"));
+    if (!versionInfo) return res.status(400).send(error("Không thể lấy thông tin phiên bản "));
     const { version: tagger, time, data } = versionInfo;
 
     const sourceData = data[source];
-    if (!sourceData) return res.status(400).send(error("无法获取该源的下载信息"));
+    if (!sourceData) return res.status(400).send(error("Không thể lấy thông tin tải xuống từ nguồn này"));
 
     const platformType: Record<string, string> = {
       win32: "windows",
@@ -48,23 +48,23 @@ export default router.post(
 
     const taggerList = tagger.split(".").map(Number);
     const currentVersionList = APP_VERSION.split(".").map(Number);
-    //对比Major
+    //So sánh Major version
     if (taggerList[0] > currentVersionList[0]) {
-      if (!installerItem) return res.status(400).send(error("该源暂无适用于当前系统的安装包"));
+      if (!installerItem) return res.status(400).send(error("Nguồn này tạm thời chưa có gói cài đặt phù hợp với hệ thống hiện tại"));
       return res
         .status(200)
         .send(success({ needUpdate: true, latestVersion: tagger, reinstall: true, time, url: installerItem.url, version: tagger }));
     }
-    //对比Minor
+    //So sánh Minor version
     if (taggerList[1] > currentVersionList[1]) {
-      if (!installerItem) return res.status(400).send(error("该源暂无适用于当前系统的安装包"));
+      if (!installerItem) return res.status(400).send(error("Nguồn này tạm thời chưa có gói cài đặt phù hợp với hệ thống hiện tại"));
       return res
         .status(200)
         .send(success({ needUpdate: true, latestVersion: tagger, reinstall: true, time, url: installerItem.url, version: tagger }));
     }
     //Patch
     if (taggerList[2] > currentVersionList[2]) {
-      if (!zipItem) return res.status(400).send(error("该源暂无增量更新包"));
+      if (!zipItem) return res.status(400).send(error("Nguồn này tạm thời chưa có gói cập nhật gia tăng"));
       return res.status(200).send(success({ needUpdate: true, latestVersion: tagger, reinstall: false, time, url: zipItem.url, version: tagger }));
     }
     return res.status(200).send(success({ needUpdate: false, latestVersion: tagger, reinstall: false, time, version: tagger }));

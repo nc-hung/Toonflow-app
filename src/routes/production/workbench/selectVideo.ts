@@ -16,6 +16,6 @@ export default router.post(
     await u.db("o_videoTrack").where("id", trackId).update({
       videoId: videoId,
     });
-    res.status(200).send(success({ message: "视频选择成功" }));
+    res.status(200).send(success({ message: "Chọn video thành công" }));
   },
 );

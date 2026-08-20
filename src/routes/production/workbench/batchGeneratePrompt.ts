@@ -25,19 +25,19 @@ export default router.post(
     ),
     mode: z.string(),
     model: z.string(),
-    concurrentCount: z.number().optional(), //并发数
+    concurrentCount: z.number().optional(), //nhất phát số 
   }),
   async (req, res) => {
     const { trackData, projectId, mode, model, concurrentCount = 5 } = req.body;
     try {
-      // 预加载公共数据
+      // tảiDữ liệu
       const [id, modelData] = model.split(/:(.+)/);
       const projectData = await u.db("o_project").select("*").where({ id: projectId }).first();
       const videoPrompt = await u.db("o_prompt").where("type", "videoPromptGeneration").first();
       let videoPromptGeneration = "" as string | undefined;
 
       const modelPromptData = await u.db("o_modelPrompt").where("vendorId", id).where("model", modelData).first();
-      //查询到 有绑定对应视频提示词
+      //Truy vấnđến  có ghép nốiđúng hồi VideoPrompt
       if (modelPromptData) {
         const modelPromptRoot = u.getPath(["modelPrompt"]);
         try {
@@ -47,7 +47,7 @@ export default router.post(
         } catch {}
       }
 
-      // 未查询到绑定，根据模型名称 + mode 自动匹配 modelPrompt/video/ 下的文件
+      // chưa Truy vấnđến ghép nối，Dựa theoMô hìnhtên + mode tự động khớp modelPrompt/video/ dưới  của Tệp
       if (!videoPromptGeneration) {
         const modelPromptRoot = u.getPath(["modelPrompt"]);
         const videoPromptDir = path.join(modelPromptRoot, "video");
@@ -56,16 +56,16 @@ export default router.post(
         let fileName: string | null = null;
 
         if (modelLower.includes("wan") && modelLower.includes("2.6")) {
-          // wan2.6 系列 => 单图首尾帧模式
+          // wan2.6 dòng hàng  => Đơn ảnhKhung đầu/cuốimô thức 
           fileName = "wan2.6Single-imageFirstFrameMode.md";
         } else if (/seedance.*2[.\-]0/i.test(modelLower)) {
-          // seedance 2.0 / 2-0 系列
+          // seedance 2.0 / 2-0 dòng hàng 
           fileName = "seedance2Multi-parameterMode.md";
         } else if (mode === "startEndRequired" || mode === "endFrameOptional" || mode === "startFrameOptional") {
-          // body.mode 为首尾帧相关 => 通用首尾帧模式
+          // body.mode Khung đầu/cuốiliên  => thông hàm Khung đầu/cuốimô thức 
           fileName = "universalFirstAndLastFrameMode.md";
         } else if (typeof mode === "string" && mode.startsWith('["') && mode.endsWith('"]')) {
-          // 其他 => 通用多参模式
+          // anh ấy => thông hàm nhiều tham mô thức 
           fileName = "universalMulti-parameterMode.md";
         }
         if (fileName) {
@@ -73,12 +73,12 @@ export default router.post(
             const fullPath = path.join(videoPromptDir, fileName);
             videoPromptGeneration = await fs.readFile(fullPath, "utf-8");
           } catch {
-            // 文件不存在则忽略，继续用备选
+            // Tệp không tồn tại，hàm chọn 
           }
         }
       }
 
-      //备选
+      //chọn 
       if (!videoPromptGeneration) {
         if (videoPrompt && videoPrompt.useData) {
           videoPromptGeneration = videoPrompt.useData;
@@ -87,7 +87,7 @@ export default router.post(
         }
       }
 
-      const artStyle = projectData?.artStyle || "无";
+      const artStyle = projectData?.artStyle || "không ";
       const visualManual = u.getArtPrompt(artStyle, "art_skills", "art_storyboard_video");
       await u
         .db("o_videoTrack")
@@ -95,22 +95,22 @@ export default router.post(
           "id",
           trackData.map((t: { trackId: number }) => t.trackId),
         )
-        .update({ state: "生成中" });
-      // 并发控制：每个 track 独立走 查询→拼装→AI调用→更新 流程
+        .update({ state: "Đang tạo" });
+      // nhất phát sát chép ：mục  track lập chạy  Truy vấn→ghép →AIgọi hàm →Cập nhật trình 
       const limit = pLimit(concurrentCount ?? 5);
       const tasks = trackData.map((track: { trackId: number; info: { id: number; sources: string }[] }) =>
         limit(async () => {
-          // 查询参数
+          // Truy vấntham số
           const images = await Promise.all(
             track.info.map(async (item: { id: number; sources: string }) => {
               if (item.sources === "storyboard") {
-                // 查询分镜主信息
+                // Truy vấnPhân cảnhchính thông tin
                 const storyboard = await u
                   .db("o_storyboard")
                   .where("o_storyboard.id", item.id)
                   .select("videoDesc", "prompt", "track", "duration", "shouldGenerateImage")
                   .first();
-                // 查询分镜关联的资产ID
+                // Truy vấnPhân cảnhliên kết  của Tài nguyênID
                 const assetRows = await u.db("o_assets2Storyboard").where("storyboardId", item.id).orderBy("rowid").select("assetId");
                 const associateAssetsIds = assetRows.map((row: any) => row.assetId);
                 return {
@@ -120,7 +120,7 @@ export default router.post(
                 };
               }
               if (item.sources === "assets") {
-                // 查询素材
+                // Truy vấn
                 const assetsData = await u
                   .db("o_assets")
                   .leftJoin("o_image", "o_image.id", "o_assets.imageId")
@@ -135,7 +135,7 @@ export default router.post(
             }),
           );
 
-          // 拆分 assets 和 storyboard
+          // phần  assets  và  storyboard
           const assets: any[] = [];
           const storyboard: any[] = [];
           for (const item of images) {
@@ -159,12 +159,12 @@ export default router.post(
           }
 
           const content = `
-          **模型名称**：${modelData},
-          **资产信息**（角色、场景、道具、音频):${assets
+          **Mô hìnhtên**：${modelData},
+          **Tài nguyênthông tin**（Nhân vật、Bối cảnh、Đạo cụ、Âm thanh):${assets
             .filter((i: any) => i.filePath)
             .map((i: any) => `[${i.id},${i.type},${i.name}]`)
             .join("，")},
-          **分镜信息**：${storyboard.map(
+          **Phân cảnhthông tin**：${storyboard.map(
             (i: any) => `<storyboardItem
   videoDesc='${i.videoDesc}'
   duration='${i.duration}'
@@ -189,7 +189,7 @@ export default router.post(
 
             await u.db("o_videoTrack").where({ id: track.trackId }).update({
               prompt: text,
-              state: "已完成",
+              state: "Đã hoàn thành",
             });
 
             return { trackId: track.trackId, text };
@@ -197,14 +197,14 @@ export default router.post(
             await u
               .db("o_videoTrack")
               .where({ id: track.trackId })
-              .update({ state: "生成失败", reason: u.error(e).message });
+              .update({ state: "Tạo thất bại", reason: u.error(e).message });
           }
         }),
       );
 
-      // 后台执行，不等待结果
+      // sau  đài thực thi，không kết quả
       Promise.all(tasks);
-      res.status(200).send(success("开始生成提示词"));
+      res.status(200).send(success("bắt đầuTạo prompt gợi ý"));
     } catch (e) {
       res.status(400).send(error(u.error(e).message));
     }

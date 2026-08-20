@@ -1,30 +1,30 @@
 import { serializeError } from "serialize-error";
 
-// 处理未捕获的 Promise 拒绝
+// Xử lý Promise Rejection chưa được  bắt
 process.on("unhandledRejection", (reason, promise) => {
-  console.error("[未处理的 Promise 拒绝]");
+  console.error("[Promise Rejection chưa được  xử lý]");
   if (reason instanceof Error) {
-    console.error("错误名称:", reason.name);
-    console.error("错误消息:", reason.message);
-    console.error("堆栈信息:", reason.stack);
-    console.error("序列化详情:", JSON.stringify(serializeError(reason), null, 2));
+    console.error("Tên lỗi:", reason.name);
+    console.error("Thông báo lỗi:", reason.message);
+    console.error("Thông tin Stack trace:", reason.stack);
+    console.error("Chi tiết tuần tự hóa:", JSON.stringify(serializeError(reason), null, 2));
   } else {
-    console.error("原因:", reason);
-    console.error("类型:", typeof reason);
+    console.error("Nguyên nhân:", reason);
+    console.error("Kiểu dữ liệu:", typeof reason);
     try {
       console.error("JSON:", JSON.stringify(reason, null, 2));
     } catch {
-      console.error("(无法序列化)");
+      console.error("(Không thể tuần tự hóa)");
     }
   }
   console.error("Promise:", promise);
 });
 
-// 处理未捕获的异常
+// Xử lý ngoại lệ Uncaught Exception
 process.on("uncaughtException", (error) => {
-  console.error("[未捕获的异常]");
-  console.error("错误名称:", error.name);
-  console.error("错误消息:", error.message);
-  console.error("堆栈信息:", error.stack);
-  console.error("序列化详情:", JSON.stringify(serializeError(error), null, 2));
+  console.error("[Ngoại lệ chưa được  bắt]");
+  console.error("Tên lỗi:", error.name);
+  console.error("Thông báo lỗi:", error.message);
+  console.error("Thông tin Stack trace:", error.stack);
+  console.error("Chi tiết tuần tự hóa:", JSON.stringify(serializeError(error), null, 2));
 });

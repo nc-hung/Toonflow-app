@@ -1,296 +1,296 @@
 ---
 name: liveaction_urban_storyboard_table
-description: 分镜表真人都市约束 — 定义真人都市风格在分镜表中的光影氛围规范、摄影质感、动作节奏、环境动态、运镜与转场禁忌，并针对Seedance 2.0做深度适配。适用于任何都市叙事类型。
+description: Bảng phân cảnhthật ngườiđều  — nối nghĩa thật ngườiđều Phong cáchở Bảng phân cảnhgiữa  của Ánh sáng & Không khí、sáng 、động tác vụ tiết 、động thái 、Góc quaychuyển trường ，nhất đúng Seedance 2.0độ nối 。hàm với đều việc Loại。
 metaData: director_skills, seedance2.0_adapted
 ---
 
-# 分镜表真人都市约束 · 真人实拍都市 · 技法参考
+# Bảng phân cảnhthật ngườiđều  · Người Thật Thực Tếđều  · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。本约束面向 Seedance 2.0 视频生成，所有光影、动作、空间描述均采用模型可执行的具象语言。不做抽象的情感概括，不写模型看不懂的渲染参数。
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。sách mặt  Seedance 2.0 videotạo，tất cảÁnh sáng、động tác vụ 、rỗng gian Mô tảhàm mô hìnhthực thi của cụ tượng ngữ 。không tượng  của tình quát ，không mô hìnhxem không  của tham số。
 
 ---
 
-## 二、Seedance 2.0 描述铁律
+## 2、Seedance 2.0 Mô tả
 
-> 真人都市分镜表中所有描述必须遵守以下翻译原则——将"导演意图"翻译为"AI可执行的物理指令"。
+> thật ngườiđều Bảng phân cảnhgiữa tất cảMô tảBắt buộcdưới gốc ——"đạo diễný ảnh ""AIthực thi của lý "。
 
-| 禁止的抽象表达 | Seedance 2.0 具象替换 |
+| Nghiêm cấm của tượng bảng  | Seedance 2.0 cụ tượng đổi  |
 |---|---|
-| 她很难过 | 眉眼低垂，目光涣散望向地面，嘴角自然下沉，右手无意识地摩挲左手腕 |
-| 阳光很好 | 午后阳光从左侧窗户45°斜入（约4500K暖白），在地面投下窗框的长方形光斑 |
-| 街道很热闹 | 临街商铺暖黄灯光全亮（约3000K），五位行人沿步行街缓步走动，其中一位推着婴儿车 |
-| 他转身离开 | 向右缓慢旋转约90度，面朝画面右侧，右脚先迈出约0.6米，左脚跟进，全程约2秒 |
-| 气氛很压抑 | 侧方硬窗光（冷白约5000K）单光源斜打，房间其余部分深暗但有微弱轮廓可见，光比约1:8 |
-| 风吹动窗帘 | 白色纱帘被窗外微风鼓起约15cm，随即回落，反复约2秒一个周期 |
+| cô ấyrất  | thấp ，mục ánh địa mặt ，nhân tự dưới ，phải tay không ý trưng địa trái tay  |
+| ánh rất tốt  | sau ánh từ trái dùng 45°vào （4500K），ở địa mặt dưới  của dài phương dạng ánh  |
+| đạo rất  | cấp ánh toàn （3000K），5vị trí thi ngườibước thi bước chạy động ，giữa 1 vị trí khuyến đang nhi  |
+| anh ấychuyển mở  | phải chậm chuyển 90độ ，mặt vẽ mặt phải ，phải trước ra 0.6，trái tiến ，toàn trình 2giây |
+| không rất nén  | phương ánh （5000K）đơn ánh nguồn mở ，gian bộ phútnhưng có thấy ，ánh tỷ 1:8 |
+| phong động  | vật ngoài phong 15cm，trả ，phụ lời 2giâymột kỳ  |
 
 ---
 
-## 三、光影与氛围——Seedance 2.0 物理光源描述
+## 3、Ánh sángKhông khí——Seedance 2.0 lý ánh nguồn Mô tả
 
-### 3.1 同场戏光影统一
+### 3.1 cùng trường Ánh sángthống 1 
 
-一场戏内不应出现两种以上核心光影方案，除非有叙事驱动的光源变化（如有人打开台灯、日出后天光亮过室内灯、从室内走到室外）。光源变化必须在分镜表中标注触发事件。
+1 trường trong không hồi ra 2loại trên Ánh sángphương ，bỏ phi có việc động  của ánh nguồn hóa （như có ngườimở mở đài 、ngày ra sau ngàyánh trong 、từ trong chạy đến ngoài ）。ánh nguồn hóa Bắt buộcở Bảng phân cảnhgiữa biểu tâm phát sự kiện。
 
-### 3.2 光源语句法（每个镜头必须包含）
-[光源] 主光：{光源类型}，{方向}，{色温值K}，{软硬}
-[光源] 辅光/环境光：{光源类型}，{方向}，{色温值K}
-[光比] 约1:{X}
-### 3.3 情绪 → 光源矩阵
+### 3.2 ánh nguồn ngữ câu thức （mục Ống kínhBắt buộcgói ）
+[ánh nguồn ] chính ánh ：{ánh nguồn Loại}，{phương }，{vật giá trị K}，{}
+[ánh nguồn ] ánh /ánh ：{ánh nguồn Loại}，{phương }，{vật giá trị K}
+[ánh tỷ ] 1:{X}
+### 3.3 tình xúc  → ánh nguồn 
 
-| 情绪 | 光源配方（Seedance 2.0 可直接填入） | 视觉关键词 |
+| tình xúc  | ánh nguồn nối phương （Seedance 2.0 trực tiếp vào ） | trực quanliên từ  |
 |---|---|---|
-| 职场克制 | 窗光冷白主光（5000-5500K）从落地窗方向侧入，屏幕冷光（6500K）补面。光比约1:3 | 中性偏冷，材质清晰 |
-| 日常松弛 | 大面积窗光漫射（5000K），窗帘柔化。光比约1:1.5低反差 | 通透、低反差、治愈 |
-| 温馨亲密 | 台灯暖光主光源（2800-3200K），暗部保留物体轮廓。光比约1:4 | 暖调包裹、私密 |
-| 市井烟火 | 多光源混杂——钠灯街灯暖黄（2000-2200K）为主，店铺冷白（4000K）局部对冲。光比约1:5 | 暖调主导、热闹 |
-| 雨夜孤独 | 湿路面反射街灯暖黄光斑（2800K），环境冷调（6000K天空漫射），窗玻璃雨痕散射。光比约1:6 | 冷暖共存、诗意孤独 |
-| 悬疑紧张 | 侧方硬窗光（冷白5000K）单光源，大光比约1:8，暗部深但有微弱轮廓。光比约1:8 | 压抑、不确定 |
-| 治愈新生 | 充足自然光漫射（5000-5500K），天空光+地面反射补光。光比约1:1.5 | 高调通透、希望 |
-| 深夜脆弱 | 单一暖光源——台灯/窗外路灯（2800-3200K）形成孤岛式照明，面部一侧亮一侧暗。光比约1:8 | 极简光源、私密脆弱 |
+| trường chép  | ánh chính ánh （5000-5500K）từ địa phương vào ，ánh （6500K）bổ mặt 。ánh tỷ 1:3 | giữa ，sạch  |
+| ngày thường  | lớn mặt ánh （5000K），hóa 。ánh tỷ 1:1.5thấp phụ  | thông 、thấp phụ 、 |
+| mật  | đài ánh chính ánh nguồn （2800-3200K），bộ lưu lưu thể 。ánh tỷ 1:4 | gọi gói 、mật  |
+|  | nhiều ánh nguồn ——（2000-2200K）chính ，（4000K）cục bộ đúng 。ánh tỷ 1:5 | gọi chính dẫn 、 |
+|  | đường mặt phụ ánh （2800K），gọi （6000Kngàyrỗng ），。ánh tỷ 1:6 | lưu 、ý  |
+| bức  | phương ánh （5000K）đơn ánh nguồn ，lớn ánh tỷ 1:8，bộ nhưng có 。ánh tỷ 1:8 | nén 、không nối  |
+| mới sinh  | sung tự ánh （5000-5500K），ngàyrỗng ánh +địa mặt phụ bổ ánh 。ánh tỷ 1:1.5 | cao gọi thông 、 |
+|  | đơn 1 ánh nguồn ——đài /ngoài đường （2800-3200K）dạng tạo thức dẫn ，mặt bộ 1 1 。ánh tỷ 1:8 | ánh nguồn 、mật  |
 
-### 3.4 冷暖色调与叙事阶段
+### 3.4 vật gọi việc đoạn 
 
-- **冷光主导**（5000K+）：职场克制、悬疑紧张、清冷独处、雨夜
-- **暖光主导**（2000-3500K）：温情亲密、市井烟火、居家日常、金色时刻
-- **冷暖共存**：过渡时刻（蓝调时刻+初亮暖灯）、雨夜（冷环境+暖光斑）
-- **光源变化 = 叙事信号**：窗外天空从日间冷白渐变至傍晚暖金=时间流逝；从办公室冷白走到街道暖黄街灯下=场景与情绪的切换
+- **ánh chính dẫn **（5000K+）：trường chép 、bức 、sạch xử 、
+- **ánh chính dẫn **（2000-3500K）：tình mật 、、ngày thường 、vật 
+- **lưu **：（gọi +）、（+ánh ）
+- **ánh nguồn hóa  = việc tin số **：ngoài ngàyrỗng từ ngày gian đến muộn =thời gian；từ chạy đến đạo dưới =Bối cảnhtình xúc  của đổi 
 
-### 3.5 Seedance 2.0 光影适配要点
+### 3.5 Seedance 2.0 Ánh sángnối cần điểm 
 
-- 色温数字帮助模型校准白平衡倾向：`色温约3200K` 优于 `暖光`
-- 光比数字帮助模型建立明暗意识：`光比约1:4` 优于 `柔和的阴影`
-- 光源必须有明确来源：`从画面左侧窗户45°斜入` 优于 `侧光`
-- 环境光的反射路径描述：`湿路面反射街灯暖黄光斑` 优于 `地面有暖色反光`
+- vật số chữ trợ giúp mô hìnhđối ：`vật 3200K` với  `ánh `
+- ánh tỷ số chữ trợ giúp mô hìnhtạo lập dẫn ý trưng ：`ánh tỷ 1:4` với  ` và  của sáng `
+- ánh nguồn Bắt buộccó dẫn nguồn ：`từ vẽ mặt trái dùng 45°vào ` với  `ánh `
+- ánh  của phụ đường dẫnMô tả：`đường mặt phụ ánh ` với  `địa mặt có vật phụ ánh `
 
 ---
 
-## 四、环境动态——让画面呼吸
+## 4、động thái ——để vẽ mặt 
 
-### 4.1 动态密度
+### 4.1 động thái mật độ 
 
-每 3-4 个镜头至少安排一个有环境动态的镜头。静态对话戏也不例外——至少有一个镜头里窗外的树叶在动、咖啡杯里的热气在升腾、窗帘被微风吹动。
+ 3-4 mục Ống kínhđến ít an sắp một có động thái  của Ống kính。thái đúng lời cũng không lệ ngoài ——đến ít có một Ống kínhngoài  của ở động 、 của ở 、phong động 。
 
-### 4.2 都市环境动态元素（Seedance 2.0 可执行）
+### 4.2 đều động thái （Seedance 2.0 thực thi）
 
-| 场景 | 可描述的环境动态 |
+| Bối cảnh | Mô tả của động thái  |
 |---|---|
-| 室内 | 窗帘被微风轻鼓约10cm后回落（约2秒周期）、咖啡杯口蒸汽缓缓上升、桌面上台灯照射范围的轻微蚊虫飞过、窗外车流灯光偶尔扫过天花板 |
-| 街道 | 行道树叶片簌簌晃动、远处行人在斑马线等待后走过、自行车慢速骑过画面中景、路边积水被车轮碾过激起涟漪 |
-| 咖啡厅/餐厅 | 咖啡机蒸汽升腾、窗边座位的光影随窗外云朵移动而明暗变化、吧台人员擦拭杯具的重复动作、门口风铃被推门带入的风吹响 |
-| 办公室 | 百叶窗条影随窗外光线角度缓慢移动、电脑屏幕保护程序切换、饮水机偶尔发出"咕噜"气泡声、打印机吐出纸张 |
-| 深夜场所 | 便利店的自动门反复开合、红绿灯在人行道上投下红/绿交替光影、远处偶尔驶过的车灯在天花板扫过一道光带 |
-| 天台 | 晾衣绳上的衣物被风吹动、远处城市天际线的灯光偶尔有一盏亮起或熄灭、天空中云朵缓慢移动 |
+| trong  | phong 10cmsau trả （2giâykỳ ）、cổng trên 、mặt trên đài khí  của 、ngoài ánh nhĩ ngày |
+| đạo  | thi đạo động 、xử thi ngườiở đường sau chạy 、tự thi chậm vẽ mặt Trung cảnh (medium shot)、đường kích  |
+| / | máy 、vị trí  của Ánh sángngoài động dẫn hóa 、đài ngườicụ  của trùng lời động tác vụ 、cổng cổng phong khuyến cổng kèm vào  của phong phản  |
+|  | trăm mục sáng ngoài ánh đường nhân độ chậm động 、lưu trình xếp đổi 、máy nhĩ phát ra ""thanh 、mở máy ra bức  |
+| trường nơi  |  của tự động cổng phụ lời mở hợp 、ở ngườithi đạo trên dưới /tác vụ Ánh sáng、xử nhĩ  của ở ngày1 đạo ánh kèm  |
+| ngàyđài  | trên  của phong động 、xử ngàyđường  của ánh nhĩ có 1 hoặc 、ngàyrỗng giữa chậm động  |
 
-### 4.3 Seedance 2.0 环境动态描述规范
+### 4.3 Seedance 2.0 động thái Mô tả
 
-- 动态必须有具体轨迹和速度：`叶片被风吹动，每秒约2-3次微幅晃动` 优于 `树在动`
-- 光源动态与空间光源逻辑一致：`云朵遮住太阳时，室内窗光面积缩小约40%，持续约3秒后恢复`
-- 禁止无来源的动态：没有风吹=窗帘不动。室内没有开窗=没有风
+- động thái Bắt buộccó cụ thể  và độ ：`phong động ，giây2-3lần động ` với  `ở động `
+- ánh nguồn động thái rỗng gian ánh nguồn logic1 ：`，trong ánh mặt nhỏ nhỏ 40%，giữ 3giâysau lời `
+- Nghiêm cấmkhông nguồn  của động thái ：chưa có phong =không động 。trong chưa có mở =chưa có phong 
 
 ---
 
-## 五、人物动作节奏——Seedance 2.0 物理逻辑具象化
+## 5、ngườiđộng tác vụ tiết ——Seedance 2.0 lý logiccụ tượng hóa 
 
-### 5.1 动作描述铁律
+### 5.1 động tác vụ Mô tả
 
-所有人物动作必须描述：**轨迹 + 速度/时长 + 身体部位协调 + 对周围物体的影响**。
+tất cảngườiđộng tác vụ Bắt buộcMô tả：** + độ /Thời lượng + thể bộ vị trí giao gọi  + đúng khí thể  của sáng phản **。
 
-### 5.2 日常动作具象库
+### 5.2 ngày thường động tác vụ cụ tượng kho 
 
-| 动作 | Seedance 2.0 可执行描述 |
+| động tác vụ  | Seedance 2.0 thực thiMô tả |
 |---|---|
-| 起身 | 双手撑住椅子扶手，膝盖向前移动，0.5秒后身体重心前移至双脚，再1秒后站直——全程约2秒，站直后停顿约0.5秒 |
-| 转头 | 头缓慢向右旋转约30度，视线从桌面文件移至窗外，旋转过程约1秒，到位后目光停在远处约1秒 |
-| 喝咖啡 | 右手持杯柄，杯口靠近嘴唇，倾斜杯子约15度，液体接触上唇，小口啜饮约1秒，杯子下降回原位约1秒 |
-| 走向窗前 | 从办公椅起身（约2秒），向画面右侧落地窗匀速行走约4步（约3米距离，耗时约3秒），停在距窗约0.5米处 |
-| 坐下 | 身体前倾微屈膝，臀部接触椅面，随椅面下压约2cm（弹簧/海绵形变），背部自然靠向椅背——全程约1.5秒 |
-| 放下物品 | 右手持咖啡杯从胸前高度下降至桌面，杯底与木质桌面接触发出轻微碰撞声，手指从杯柄松开——全程约1秒 |
-| 推门进入 | 右手握住门把手向下转动约30度，向内推开门约70度角，身体随门进入，右脚先跨过门槛——全程约2秒 |
-| 看手机 | 右手从桌面拿起手机（长约15cm），拇指点击屏幕下方唤醒，屏幕冷光映在面部右侧，眼睛微眯聚焦屏幕——全程约3秒 |
-| 穿衣/披外套 | 右手伸入右袖，左手后伸入左袖，双肩向后微展让外套贴合肩部，衣领自然翻出——全程约4秒 |
-| 拥抱 | A向前迈出约0.5米，双臂环绕B的肩背，双手在B背部轻轻交叠，面部贴近B的耳侧，保持约3秒 |
+|  | đôi tay tay ，trước động ，0.5giâysau thể trùng trước đến đôi ，1giâysau trạm trực ——toàn trình 2giây，trạm trực sau 0.5giây |
+| chuyển đầu  | đầu chậm phải chuyển 30độ ，video đường từ mặt tệpđến ngoài ，chuyển trình 1giây，đến vị trí sau mục ánh ở xử 1giây |
+|  | phải tay giữ ，cổng ，15độ ，thể tiếp trên ，nhỏ cổng 1giây，dưới trả gốc vị trí 1giây |
+| chạy trước  | từ （2giây），vẽ mặt phải địa thi chạy 4bước （3，3giây），ở 0.5xử  |
+| dưới  | thể trước ，bộ tiếp mặt ，mặt dưới nén 2cm（/dạng ），bộ tự ——toàn trình 1.5giây |
+| mở dưới  | phải tay giữ từ trước cao độ dưới đến mặt ，mặt tiếp phát ra thanh ，tay từ mở ——toàn trình 1giây |
+| khuyến cổng tiến vào  | phải tay cổng đem tay dưới chuyển động 30độ ，trong khuyến mở cổng 70độ nhân ，thể cổng tiến vào ，phải trước cổng ——toàn trình 2giây |
+| xem tay máy  | phải tay từ mặt lấy tay máy （dài 15cm），điểm dưới phương ，ánh ở mặt bộ phải ，——toàn trình 3giây |
+| /ngoài  | phải tay vào phải ，trái tay sau vào trái ，đôi sau để ngoài hợp bộ ，tự ra ——toàn trình 4giây |
+|  | Atrước ra 0.5，đôi Quay vòng (orbiting / surround)B của ，đôi tay ở Bbộ tác vụ ，mặt bộ B của ，lưu giữ 3giây |
 
-### 5.3 动作节奏与叙事场景
+### 5.3 động tác vụ tiết việc Bối cảnh
 
-- **日常叙事/文戏**：动作沉稳克制，每个微动作标注时长和轨迹。节奏舒缓——不是慢，是"不赶"
-- **情绪波动场景**：动作幅度和速度略微增加。人物可能在对话中不自觉地加快手指敲桌面的频率、呼吸带动肩膀起伏更明显
-- **冲突场景**：动作干脆利落，但仍有物理轨迹。击打/推搡须具体到"右手推在对方左肩前方，对方重心向后偏移约20cm"
-- 禁止：无叙事理由的快速动作堆砌、无物理逻辑的瞬移、"做了个手势"等含糊描述
+- **ngày thường việc /tài **：động tác vụ chép ，mục động tác vụ biểu tâm Thời lượng và 。tiết ——không là chậm ，là "không "
+- **tình xúc động Bối cảnh**：động tác vụ độ  và độ cộng 。ngườithể ở đúng lời giữa không tự địa cộng nhanh tay mặt  của tần tỷ lệ 、kèm động đổi dẫn 
+- **Bối cảnh**：động tác vụ ，nhưng có lý 。mở /khuyến buộc cụ thể đến "phải tay khuyến ở đúng phương trái trước phương ，đúng phương trùng sau 20cm"
+- Nghiêm cấm：không việc lý do  của nhanh động tác vụ 、không lý logic của 、"mục tay "Mô tả
 
-### 5.4 服饰动态
+### 5.4 phục động thái 
 
-真人服饰的动态是画面的天然资产——不是"布料模拟参数"，而是"风衣下摆被风吹起约20度角""围巾一端从肩头滑落""裙摆随步伐左右轻摆约10cm"。在分镜表画面描述中标注服饰的动态细节。
+thật ngườiphục  của động thái là vẽ mặt  của ngàyTài nguyên——không là "mô tham số"，là "phong dưới phong 20độ nhân ""khí 1 đầu từ đầu ""bước trái phải 10cm"。ở Bảng phân cảnhMô tả hình ảnhgiữa biểu tâm phục  của động thái tiết 。
 
 ---
 
-## 六、空间逻辑具象化——Seedance 2.0 空间坐标系统
+## 6、rỗng gian logiccụ tượng hóa ——Seedance 2.0 rỗng gian biểu dòng thống 
 
-### 6.1 每镜头必须声明的空间信息
-水平位置：画面左/中/右，或画面左侧三分之一处
-纵深位置：距镜头{数值}米，前景/中景/背景
-人物与场景的关系：距{固定物}{数值}米
-（若双人以上）人物A与B的相对距离和朝向
-### 6.2 站位衔接示例
-【片段A尾部】
-A站在落地窗前，距窗约0.5米，面朝窗外，位于画面中央偏右，距镜头约4米。
-窗外为午后城市天际线，阳光从画面右侧窗户斜入。
-A右手持咖啡杯于胸前，杯子距嘴唇约15cm。
+### 6.1 Ống kínhBắt buộcthanh dẫn  của rỗng gian thông tin
+vị trí trí ：vẽ mặt trái /giữa /phải ，hoặc vẽ mặt trái 3phút của 1 xử 
+vị trí trí ：Ống kính{số giá trị }，trước bối /Trung cảnh (medium shot)/bối 
+ngườiBối cảnh của liên dòng ：{nối }{số giá trị }
+（đôi ngườitrên ）ngườiAB của đúng  và 
+### 6.2 trạm vị trí tiếp Ví dụ
+【đoạn Ađuôi bộ 】
+Atrạm ở địa trước ，0.5，mặt ngoài ，vị trí với vẽ mặt giữa phải ，Ống kính4。
+ngoài sau ngàyđường ，ánh từ vẽ mặt phải dùng vào 。
+Aphải tay giữ với trước ，15cm。
 
-【片段B开头】
-A的咖啡杯刚从嘴边下降约10cm，杯子仍在胸前位置。A仍站在落地窗前（位置未变）。
-窗外天色已转为蓝调时刻——天空深蓝紫，城市建筑轮廓灯和街灯已亮起。
-室内台灯已开（画面左侧边桌），暖黄光（约3000K）照在A的左侧脸颊。
-### 6.3 空间变化必须具象
+【đoạn Bmở đầu 】
+A của từ dưới 10cm，ở trước vị trí trí 。Atrạm ở địa trước （vị trí trí chưa ）。
+ngoài ngàyvật đã chuyển gọi ——ngàyrỗng ，tạo  và đã 。
+trong đài đã mở （vẽ mặt trái ），ánh （3000K）ở A của trái 。
+### 6.3 rỗng gian hóa Bắt buộccụ tượng 
 
-| 抽象（禁止） | Seedance 2.0 具象 |
+| tượng （Nghiêm cấm） | Seedance 2.0 cụ tượng  |
 |---|---|
-| 她走近了 | A从画面背景（距镜头约5米、门框位置）向镜头方向匀速行走4步（约3米），停在距镜头约2米处——耗时约4秒 |
-| 两人面对面 | A位于画面中央偏左（距镜头约3米），B位于画面中央偏右（距镜头约3米），两人面对面，相距约0.8米 |
-| 从室内到室外 | A从室内（距镜头约3米）走向门口，推开门（门向内旋转约80度），右脚跨出门槛，进入室外街道——室外街灯暖黄光瞬间取代室内冷白荧光灯光 |
+| cô ấychạy  | Atừ vẽ mặt bối （Ống kính5、cổng vị trí trí ）Ống kínhphương thi chạy 4bước （3），ở Ống kính2xử ——4giây |
+| 2ngườimặt đúng mặt  | Avị trí với vẽ mặt giữa trái （Ống kính3），Bvị trí với vẽ mặt giữa phải （Ống kính3），2ngườimặt đúng mặt ，0.8 |
+| từ trong đến ngoài  | Atừ trong （Ống kính3）chạy cổng cổng ，khuyến mở cổng （cổng trong chuyển 80độ ），phải ra cổng ，tiến vào ngoài đạo ——ngoài ánh gian xuất trong ánh ánh  |
 
 ---
 
-## 七、运镜规范——Seedance 2.0 摄影机运动
+## 7、Góc quay——Seedance 2.0 sáng máy vận động 
 
-### 7.1 允许的运镜
+### 7.1  của Góc quay
 
-| 运镜 | Seedance 2.0 描述 | 适用场景 |
+| Góc quay | Seedance 2.0 Mô tả | hàm Bối cảnh |
 |---|---|---|
-| 固定 | 摄影机固定不动，画面静止 | 对话、日常、空镜留白、情绪凝视 |
-| 手持微晃 | 摄影机有轻微不规则晃动（幅度约±2cm），模拟手持拍摄的呼吸感 | 情绪波动、街头行走、亲密跟随、主观视角 |
-| 稳定器流动 | 摄影机平滑匀速移动，无晃动 | 城市漫游、人物登场、空间展示、过渡 |
-| 缓推 | 摄影机向主体缓慢推进，推进速率约每秒0.3米 | 情绪升温、真相逼近、注意力聚焦 |
-| 缓拉 | 摄影机向后缓慢拉远，拉远速率约每秒0.3米 | 离别、收束、揭示全貌 |
-| 跟拍 | 摄影机与人物保持约2米距离同步移动 | 行走跟随、城市追踪 |
-| 摇镜 | 摄影机原地水平/垂直旋转 | 视线转移、空间关系交代 |
+| nối  | sáng máy nối không động ，vẽ mặt Tĩnh (static) | đúng lời 、ngày thường 、rỗng quay lưu 、tình xúc video  |
+| tay giữ  | sáng máy có không động （độ ±2cm），mô tay giữ  của  | tình xúc động 、đầu thi chạy 、mật 、chính video nhân  |
+| nối thiết bị động  | sáng máy động ，không động  | 、ngườiđăng trường 、rỗng gian nhở 、 |
+| khuyến  | sáng máy chính thể chậm Đẩy tới (push in / dolly in)，Đẩy tới (push in / dolly in)tỷ lệ giây0.3 | tình xúc 、thật 、tâm ý lực  |
+|  | sáng máy sau chậm Kéo lùi (pull back / dolly out)，Kéo lùi (pull back / dolly out)tỷ lệ giây0.3 | khác 、nhận 、nhở toàn  |
+|  | sáng máy ngườilưu giữ 2cùng bước động  | thi chạy 、 |
+| Lia máy (pan) | sáng máy gốc địa /trực chuyển  | video đường chuyển 、rỗng gian liên dòng tác vụ  |
 
-### 7.2 禁用运镜
+### 7.2 hàm Góc quay
 
-- 无叙事目的的快速甩镜、急推急拉（推拉速率超过每秒1米）
-- 超过3秒的剧烈手持晃动（除非主观受击/眩晕叙事）
-- 无逻辑花式转场——划屏、旋转、百叶窗、翻页等特效转场
-- 摄影机无理由的360度旋转
+- không việc mục  của  của nhanh Lia nhanh (whip pan)、khuyến （khuyến tỷ lệ vượt giây1）
+- vượt 3giây của kịch tay giữ động （bỏ phi chính /việc ）
+- không logicthức chuyển trường ——、chuyển 、trăm 、hiệu chuyển trường 
+- sáng máy không lý do  của 360độ chuyển 
 
-### 7.3 真人都市运镜哲学
+### 7.3 thật ngườiđều Góc quay
 
-- 固定机位是第一选择——让观众看到真实的人在真实空间里自然地存在
-- 手持微晃在情绪段落使用——但晃动幅度不超过电影纪实风格的常规范围
-- 运动镜头的起幅和落幅必须平稳，运动过程匀速——禁止突然加速或急停
+- nối máy vị trí là Thứ 1 chọn lựa ——để xem đến thật  của ngườiở thật rỗng gian tự địa lưu ở 
+- tay giữ ở tình xúc đoạn hàm ——nhưng động độ không vượt sáng Phong cách của thường khí 
+- vận động Ống kính của  và Bắt buộc，vận động trình ——Nghiêm cấmcộng hoặc 
 
 ---
 
-## 八、转场规范
+## 8、chuyển trường 
 
-### 8.1 允许的转场方式
+### 8.1  của Cách thức chuyển cảnh
 
-| 转场 | 视觉执行 | 叙事功能 |
+| chuyển trường  | trực quanthực thi | việc công thể  |
 |---|---|---|
-| 硬切 | 直接切换 | 同场戏内镜头切换（默认） |
-| 光影匹配转场 | 两个场景在相近光影逻辑下切换 | 时间流逝、平行叙事。例：A处窗外的晨光 → B处窗外的晨光 |
-| 空间匹配转场 | 两个空间在构图或元素上呼应 | 场景跳转。例：办公室门关上的瞬间 → 公寓门打开的瞬间 |
-| 空镜过渡 | 插入场景空镜（3-5秒） | 情绪缓冲、章节划分、时间流逝暗示 |
-| 焦点转场 | 前镜焦点从主体移至背景，后镜从模糊背景中逐渐聚焦主体 | 空间切换、注意力的转移 |
+|  | trực tiếp đổi  | cùng trường trong Ống kínhđổi （Mặc định） |
+| Ánh sángkhớpchuyển trường  | 2mục Bối cảnhở Ánh sánglogicdưới đổi  | thời gian、thi việc 。lệ ：Axử ngoài  của ánh  → Bxử ngoài  của ánh  |
+| rỗng gian khớpchuyển trường  | 2mục rỗng gian ở cấu ảnh hoặc trên hồi  | Bối cảnhchuyển 。lệ ：cổng liên trên  của gian  → cổng mở mở  của gian  |
+| rỗng quay  | vào Bối cảnhrỗng quay （3-5giây） | tình xúc 、Chươngphút、thời giannhở  |
+| điểm chuyển trường  | trước quay điểm từ chính thể đến bối ，sau quay từ mô bối giữa chính thể  | rỗng gian đổi 、tâm ý lực  của chuyển  |
 
-### 8.2 禁止的转场
+### 8.2 Nghiêm cấm của chuyển trường 
 
-- 纯视觉特效转场（翻页、划屏、百叶窗、马赛克）
-- 无叙事逻辑的旋转/缩放转场
-- 同一场戏内使用超过两种转场方式
+- thuần trực quanhiệu chuyển trường （、、trăm 、）
+- không việc logic của chuyển /nhỏ mở chuyển trường 
+- cùng 1 trường trong hàm vượt 2loại Cách thức chuyển cảnh
 
 ---
 
-## 九、音画同步规划（Seedance 2.0 专属）
+## 9、âm vẽ cùng bước lập kế hoạch（Seedance 2.0 riêng biệt ）
 
-### 9.1 环境音标注规范
+### 9.1 âm biểu tâm 
 
-每场戏标注 1-2 个核心环境音，写在分镜表的环境音列：
+trường biểu tâm  1-2 mục âm ，ở Bảng phân cảnh của âm hàng ：
 
-| 场景 | 建议环境音 |
+| Bối cảnh | Khuyến nghịâm  |
 |---|---|
-| 办公室 | 键盘轻敲 / 空调低鸣 / 远处打印机 |
-| 咖啡厅 | 咖啡机蒸汽 / 杯具轻碰 / 隐约背景人声 |
-| 街道日间 | 车流胎噪 / 远处人声 / 行道树风过叶响 |
-| 街道雨夜 | 雨打车窗和路面 / 偶尔驶过的车溅水声 |
-| 居家夜间 | 冰箱低频嗡鸣 / 窗外偶尔的车声 / 时钟走动 |
-| 天台 | 风声 / 远处城市微弱嗡鸣 |
-| 地铁站 | 进站广播和刹车声 / 人流脚步 |
+|  | đĩa  / rỗng gọi thấp  / xử mở máy  |
+|  | máy  / cụ  / bối ngườithanh  |
+| đạo ngày gian  |  / xử ngườithanh  / thi đạo phong phản  |
+| đạo  | mở  và đường mặt  / nhĩ  của thanh  |
+| gian  | thấp tần  / ngoài nhĩ  của thanh  / chạy động  |
+| ngàyđài  | phong thanh  / xử  |
+| địa trạm  | tiến trạm  và thanh  / ngườibước  |
 
-### 9.2 音画同步标注
+### 9.2 âm vẽ cùng bước biểu tâm 
 
-在分镜表中对关键音画同步点做标注：
-- `t=2s` 咖啡杯放下时杯底与桌面接触的轻响声
-- `t=5s` 门推开的铰链轻微吱呀声——人物进入室内，室外街声被门隔绝瞬间变小
-- `t=8s` 窗外远处传来救护车警笛——人物抬头望向窗外约1秒
+ở Bảng phân cảnhgiữa đúng liên âm vẽ cùng bước điểm biểu tâm ：
+- `t=2s` mở dưới mặt tiếp  của phản thanh 
+- `t=5s` cổng khuyến mở  của thanh ——ngườitiến vào trong ，ngoài thanh cổng cách gian nhỏ 
+- `t=8s` ngoài xử truyền báo ——ngườiđầu ngoài 1giây
 
 ---
 
-## 十、Seedance 2.0 分镜卡片模板
+## 10、Seedance 2.0 Phân cảnhmô 
 
-每个镜头使用以下卡片格式，在分镜表中逐镜填写：
-【镜头 X】时长：{数值}s | 景别：{大特写/近景/中近景/中景/全景/大全景/空镜}
+mục Ống kínhhàm dưới khung thức ，ở Bảng phân cảnhgiữa quay ：
+【Ống kính X】Thời lượng：{số giá trị }s | Cỡ cảnh：{lớn Đặc tả (close-up)/Cận cảnh (close-up)/giữa Cận cảnh (close-up)/Trung cảnh (medium shot)/Toàn cảnh (wide shot)/lớn Toàn cảnh (wide shot)/rỗng quay }
 
-画面描述：
-{人物动态——含具体动作轨迹、时长、身体部位协调}
-{人物表情——含眼神方向、微表情细节}
-{光源逻辑——主光类型+方向+色温K+光比}
-{环境细节——含具体道具、材质表面、使用痕迹}
-{服饰动态——如有风吹动/动作连带的服饰表现}
+Mô tả hình ảnh：
+{ngườiđộng thái ——cụ thể động tác vụ 、Thời lượng、thể bộ vị trí giao gọi }
+{ngườibảng tình ——phương 、bảng tình tiết }
+{ánh nguồn logic——chính ánh Loại+phương +vật K+ánh tỷ }
+{tiết ——cụ thể Đạo cụ、bảng mặt 、hàm }
+{phục động thái ——như có phong động /động tác vụ kèm  của phục bảng }
 
-空间坐标：
-水平{画左/中/右，具体距边缘距离} | 纵深{距镜头数值米}
-{与场景固定物的关系距离}
-{若双人以上，人物间的相对距离和朝向}
+rỗng gian biểu ：
+{vẽ trái /giữa /phải ，cụ thể } | {Ống kínhsố giá trị }
+{Bối cảnhnối  của liên dòng }
+{đôi ngườitrên ，ngườigian  của đúng  và }
 
-运镜：{固定/手持微晃/缓推/缓拉/跟拍/摇镜}
-{运镜的具体速率和起止位置}
+Góc quay：{nối /tay giữ /khuyến ///Lia máy (pan)}
+{Góc quay của cụ thể tỷ lệ  và vị trí trí }
 
-转场：{硬切/空镜过渡/光影匹配/空间匹配——标注前后镜的衔接点}
+chuyển trường ：{/rỗng quay /Ánh sángkhớp/rỗng gian khớp——biểu tâm trước sau quay  của tiếp điểm }
 
-环境音：{核心环境音 1-2 个}
+âm ：{âm  1-2 mục }
 
-Seedance 2.0 关键锚定：
-角色锚定：@ImageX_{角色名} {造型描述}
-场景锚定：@ImageX {场景名} {空间描述}
-{道具锚定：@ImageX {道具名}——若有核心手持/交互道具}
+Seedance 2.0 liên nối ：
+Nhân vậtnối ：@ImageX_{Nhân vậttên } {tạo kiểu Mô tả}
+Bối cảnhnối ：@ImageX {Bối cảnhtên } {rỗng gian Mô tả}
+{Đạo cụnối ：@ImageX {Đạo cụtên }——có tay giữ /tác vụ Đạo cụ}
 ---
 
-## 十一、空镜使用规范
+## 101 、rỗng quay hàm 
 
-### 11.1 空镜不是"没东西拍"
+### 11.1 rỗng quay không là "chưa "
 
-空镜是情绪容器。每个空镜必须有叙事目的和具体的视觉内容：
+rỗng quay là tình xúc dung thiết bị 。mục rỗng quay Bắt buộccó việc mục  của  và cụ thể  của trực quannội dung：
 
-| 空镜类型 | 叙事目的 | 示例 |
+| rỗng quay Loại | việc mục  của  | Ví dụ |
 |---|---|---|
-| 场景建立 | 新空间首次出现——让观众看清楚这是什么地方 | 办公室大全景：工位排列、落地窗、窗外城市 |
-| 情绪缓冲 | 高情绪段落后的喘息 | 窗外雨滴沿玻璃滑落，速度约每秒2cm |
-| 时间流逝 | 暗示时间过去了 | 同一扇窗外的天空从午后湛蓝渐变至蓝调深紫 |
-| 隐喻留白 | 以物代情 | 桌上半杯没喝完的咖啡，杯口有口红印 |
-| 转场衔接 | 前后两个空间的自然过渡 | 楼梯间的日光灯管——前一场的办公室，下一场是天台 |
+| Bối cảnhtạo lập  | mới rỗng gian lần ra ——để xem sạch nàylà saođịa phương  | lớn Toàn cảnh (wide shot)：vị trí sắp hàng 、địa 、ngoài  |
+| tình xúc  | cao tình xúc đoạn sau  của  | ngoài ，độ giây2cm |
+| thời gian | nhở thời gianđi  | cùng 1 ngoài  của ngàyrỗng từ sau đến gọi  |
+| lưu  | tình  | trên nửa chưa  của ，cổng có cổng  |
+| chuyển trường tiếp  | trước sau 2mục rỗng gian  của tự  | gian  của ngày ánh ——trước 1 trường  của ，dưới 1 trường là ngàyđài  |
 
-### 11.2 空镜 Seedance 2.0 描述规范
+### 11.2 rỗng quay  Seedance 2.0 Mô tả
 
-空镜也必须遵循光源+质感+动态的描述铁律：午后窗光从右侧斜入（约4500K），在空荡荡的会议桌上投下百叶窗的条纹光斑，
-光斑随窗外云朵移动而缓慢变化宽度和位置，约5秒后完全变暗——一朵云挡住了太阳。
-桌面有细微划痕和会议留下的水杯圈痕。
+rỗng quay cũng Bắt buộcánh nguồn ++động thái  của Mô tả：sau ánh từ phải vào （4500K），ở rỗng  của sẽ thức trên dưới trăm  của mục ánh ，
+ánh ngoài động chậm hóa rộng độ  và vị trí trí ，5giâysau toàn ——1 。
+mặt có  và sẽ thức lưu dưới  của 。
 
 ---
 
-## 十二、分镜表质量自检清单
+## 102、Bảng phân cảnhlượng tự kiểm sạch đơn 
 
-每场戏的分镜表完成后，导演逐项自检：
+trường  của Bảng phân cảnhtạo sau ，đạo diễntự kiểm ：
 
-| 检查项 | 通过标准 |
+| kiểm tra  | thông quabiểu  |
 |---|---|
-| 光源可追溯 | 每个镜头能回答"光从哪儿来、什么色温" |
-| 动作可执行 | 每个动作有轨迹、时长、身体部位 |
-| 空间可定位 | 每个镜头标注了人物的水平和纵深位置 |
-| 站位移接 | 相邻镜头的同一个人位置/姿态可衔接 |
-| 环境有动态 | 每3-4个镜头至少1个有环境动态 |
-| 语气不空泛 | 无"她很美""气氛很好"等不可执行描述 |
-| CG术语清零 | 无PBR/SSR/AO/体积光/次世代等CG词汇 |
-| @reference完整 | 角色/场景/核心道具都标注了锚定引用 |
+| ánh nguồn  | mục Ống kínhthể trả "ánh từ nhi 、saovật " |
+| động tác vụ thực thi | mục động tác vụ có 、Thời lượng、thể bộ vị trí  |
+| rỗng gian nối vị trí  | mục Ống kínhbiểu tâm người của  và vị trí trí  |
+| trạm vị trí tiếp  | Ống kính của cùng một ngườivị trí trí /thái tiếp  |
+| có động thái  | 3-4mục Ống kínhđến ít 1mục có động thái  |
+| ngữ không rỗng  | không "cô ấyrất đẹp ""không rất tốt "không thực thiMô tả |
+| CGngữ sạch 0 | không PBR/SSR/AO/thể ánh /lần CGtừ  |
+| @referencechỉnh  | Nhân vật/Bối cảnh/Đạo cụđều biểu tâm nối hàm  |

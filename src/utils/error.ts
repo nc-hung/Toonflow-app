@@ -14,7 +14,7 @@ export interface NormalizedError {
 }
 
 export function normalizeError(error: unknown): NormalizedError {
-  // Axios 特殊处理
+  // Axios Xử lý
   if (isAxiosError(error)) {
     return {
       name: "AxiosError",
@@ -30,12 +30,12 @@ export function normalizeError(error: unknown): NormalizedError {
     };
   }
 
-  // 普通 Error，用 serialize-error 处理
+  // thông  Error，hàm  serialize-error Xử lý
   if (error instanceof Error) {
     const serialized = serializeError(error);
     return {
       name: serialized.name || "Error",
-      message: serialized.message || "未知错误",
+      message: serialized.message || "Lỗi không xác định",
       code: (serialized as any).code,
       stack: serialized.stack,
       cause: error.cause ? normalizeError(error.cause) : undefined,
@@ -43,7 +43,7 @@ export function normalizeError(error: unknown): NormalizedError {
     };
   }
 
-  // 非 Error
+  // phi  Error
   return {
     name: "UnknownError",
     message: String(error),
@@ -51,7 +51,7 @@ export function normalizeError(error: unknown): NormalizedError {
   };
 }
 
-// 提取自定义属性
+// trích xuấttùy chỉnh biệt 
 function extractMeta(obj: Record<string, unknown>): Record<string, unknown> | undefined {
   const standardKeys = ["name", "message", "stack", "cause"];
   const meta: Record<string, unknown> = {};

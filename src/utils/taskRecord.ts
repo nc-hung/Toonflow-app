@@ -1,16 +1,16 @@
 import db from "@/utils/db";
 
 const taskStateMap = {
-  "0": "进行中",
-  "1": "已完成",
-  "-1": "生成失败",
+  "0": "Đang thực hiện",
+  "1": "Đã hoàn thành",
+  "-1": "Tạo thất bại",
 };
 /**
- * 记录任务并返回结束函数
- * @param projectId  项目 ID
- * @param taskClass  任务分类
- * @param modelName   模型名称
- * @param opts       可选项：关联对象、任务描
+ * lục tác vụ nhất Trả vềkết thúchàm 
+ * @param projectId  Dự án ID
+ * @param taskClass  tác vụ phần loại 
+ * @param modelName   Mô hìnhtên
+ * @param opts       chọn ：liên kết đúng tượng 、tác vụ mô 
  */
 export default async function taskRecord(
   projectId: number,
@@ -29,7 +29,7 @@ export default async function taskRecord(
   } else if (typeof content === "string") {
     opteorContent = content;
   } else if (typeof content === "function") {
-    throw new Error("不支持的类型");
+    throw new Error("không hỗ trợ của loại");
   } else {
     try {
       opteorContent = JSON.stringify(content);
@@ -48,7 +48,7 @@ export default async function taskRecord(
     startTime: Date.now(),
   });
 
-  /** 任务成功时调用 done(1)，失败时调用 done(-1, '原因') */
+  /** tác vụ thành cônggọi hàm  done(1)，thất bạigọi hàm  done(-1, 'gốc ') */
   return async function done(state: 1 | -1, reason?: string) {
     await db("o_tasks")
       .where("id", id)

@@ -5,7 +5,7 @@ import { error, success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 新增资产
+// Thêm tài nguyên mới 
 export default router.post(
   "/",
   validateFields({
@@ -14,11 +14,11 @@ export default router.post(
   }),
   async (req, res) => {
     const { assetsId, audioIds } = req.body;
-    if (audioIds && audioIds.length > 1) return res.status(400).send(error("仅可绑定一个音色"));
+    if (audioIds && audioIds.length > 1) return res.status(400).send(error("chỉ ghép nốimột giọng đọc"));
     await u.db("o_assetsRole2Audio").where("assetsRoleId", assetsId).delete();
     if (audioIds && audioIds.length) {
       await u.db("o_assetsRole2Audio").insert({ assetsRoleId: assetsId, assetsAudioId: audioIds[0] });
     }
-    res.status(200).send(success({ message: "更新音频成功" }));
+    res.status(200).send(success({ message: "Cập nhậtÂm thanhthành công" }));
   },
 );

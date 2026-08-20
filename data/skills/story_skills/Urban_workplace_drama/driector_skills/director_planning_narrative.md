@@ -1,114 +1,114 @@
 ---
 name: director_planning_narrative
-description: 叙事手法技法 · 都市职场 — 定义都市职场类型在主题立意、博弈节奏、场景张力设计与声音方向上的叙事规划方法。适用于任何视觉风格。
+description: việc tay thức thức  · Đô Thị & Công Sở — nối nghĩa Đô Thị & Công SởLoạiở chính đề lập ý 、tiết 、Bối cảnhbức lực thiết tính thanh âm phương trên  của việc lập kế hoạchphương thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 叙事手法 · 都市职场 · 技法参考
+# việc tay thức  · Đô Thị & Công Sở · thức tham chiếu
 
 ---
 
-## 一、主题立意与职场内核
+## 1 、chính đề lập ý trường trong 
 
-### 都市职场叙事要点
+### Đô Thị & Công Sởviệc cần điểm 
 
-- **真实感是基石** — 职场叙事的第一要务是"可信"。观众会用自身经验验证每一个细节，任何失真都会导致出戏。场景、对话、人物行为都要经得起职场人的审视
-- **权力博弈的暗流** — 职场冲突不是街头打架，而是会议室里的话语权争夺、邮件抄送的政治学、一个眼神交换中的联盟与背叛。表面和气，暗流汹涌
-- **成长的代价** — 职场成长不是打怪升级，每一步向上都伴随代价：妥协原则、失去朋友、承受孤独、自我怀疑。成长弧线不是直线上升，而是螺旋前进
-- **离场感受建议方向** — 共鸣 / 反思 / 被激励 / 五味杂陈。避免"刺激""解压""爽"等与职场现实感不匹配的方向
-- **小人物的光** — 最动人的职场叙事不是"大佬翻手为云"，而是普通人在规则与压力之间，依然保持善良/专业/坚持的微小光芒
-
----
-
-## 二、叙事结构与博弈节奏
-
-### 都市职场叙事要点
-
-- **利益链驱动叙事** — 职场故事的推动力不是"感觉"而是"利益"。每个角色的行为都应有清晰的利益动机（升职、保位、资源、面子、安全感），动机越具体叙事越真实
-- **信息不对称制造张力** — 职场中"谁知道什么"决定权力格局。叙事应巧妙管理角色间和角色与观众间的信息差：观众知道背叛但主角不知 = 焦虑；观众和主角一起被蒙在鼓里 = 共情
-- **攻守转换** — 职场博弈的节奏是攻守转换：主角占上风→对手反击→主角被动→寻找突破口→翻盘。每次转换都应有明确的"转折事件"（一封邮件、一次泄密、一个决策）
-- **段落间用日常做呼吸** — 高强度博弈段落之间插入日常生活片段（通勤、吃饭、独处），让观众和角色一起"喘息"，同时展现职场人的真实生活质感
-- **阶段性胜负** — 不要等到最后才有结果。每个中间段落安排一次"小胜"或"小败"，让观众感受到进展与风险并存
-- **结尾留余味** — 职场叙事的结尾不宜太"圆满"。即使主角赢了，也应留下代价的痕迹（失去了谁、妥协了什么、回不去的关系），真实感来自"五味杂陈"
+- **thật là cơ sở ** — trường việc  của Thứ 1 cần vụ là "tin "。sẽ hàm tự đã chiếu chiếu chứng một tiết ，thất thật đều sẽ dẫn ra 。Bối cảnh、đúng lời 、ngườithi đều cần đã được trường người của video 
+- **thực lực  của ** — trường không là đầu mở ，là sẽ thức  của lời ngữ thực 、tệp gửi  của chính 、một tác vụ đổi giữa  của kết 。bảng mặt  và ，
+- **tạo dài  của ** — trường tạo dài không là mở cấp ，1 bước trên đều ：giao gốc 、thất đi 、、tự tôi。tạo dài đường không là trực đường trên ，là trước tiến 
+- **trường Khuyến nghịphương ** —  / phụ  / kích  / 5。"kích ""giải nén """trường không khớp của phương 
+- **nhỏ người của ánh ** — nhất động người của trường việc không là "lớn tay "，là thông ngườiở nén lực  của gian ，phụ lưu giữ /riêng /giữ  của nhỏ ánh 
 
 ---
 
-## 三、分场景张力设计
+## 2、việc kết cấu tiết 
 
-### 都市职场叙事要点
+### Đô Thị & Công Sởviệc cần điểm 
 
-- **张力用行为描述** — 不说"紧张"，说"笔帽被无意识地按了三下"。具象的行为细节比情绪标签更有说服力
-- **典型职场段落与设计** —
+- **động việc ** — trường việc  của khuyến động lực không là ""là ""。mục Nhân vật của thi đều hồi có sạch  của động máy （、lưu vị trí 、tài nguồn 、mặt 、an toàn ），động máy cụ thể việc thật 
+- **thông tinkhông đúng chép tạo bức lực ** — trường giữa "báo đạo sao"nối thực lực khung cục 。việc hồi lý Nhân vậtgian  và Nhân vậtgian  của thông tin：báo đạo nhưng chính nhân không báo  = ； và chính nhân 1 ở  = tình 
+- **chuyển đổi ** — trường  của tiết là chuyển đổi ：chính nhân trên phong →đúng tay phụ →chính nhân động →cổng →đĩa 。lần chuyển đổi đều hồi có dẫn  của "chuyển sự kiện"（1 tệp 、1 lần mật 、một quyết định）
+- **đoạn gian hàm ngày thường ** — cao độ đoạn  của gian vào ngày thường sinh hoạt đoạn （thông 、、xử ），để  và Nhân vật1 ""，cùng trường người của thật sinh hoạt 
+- **đoạn ** — không cần đến nhất sau có kết quả。mục giữa gian đoạn an sắp 1 lần "nhỏ "hoặc "nhỏ bại "，để đến tiến phong nhất lưu 
+- **kết đuôi lưu ** — trường việc  của kết đuôi không "đầy "。chính nhân ，cũng hồi lưu dưới  của （thất đi 、giao sao、trả không đi  của liên dòng ），thật tự "5"
 
-| 段落类型 | 情绪方向 | 叙事手法 | 音乐建议 |
+---
+
+## 3、phútBối cảnhbức lực thiết tính 
+
+### Đô Thị & Công Sởviệc cần điểm 
+
+- **bức lực hàm thi Mô tả** — không hướng "bức "，hướng "không ý trưng địa theo 3dưới "。cụ tượng  của thi tiết tỷ tình xúc biểu ký đổi có hướng phục lực 
+- **kiểu trường đoạn thiết tính ** —
+
+| đoạn Loại | tình xúc phương  | việc tay thức  | âm Khuyến nghị |
 |---|---|---|---|
-| 日常工作 | 平淡 + 真实 | 通勤、开会、敲键盘的碎片化日常 | 极低音量城市白噪音或无配乐 |
-| 暗涌博弈 | 表面平静 + 暗流 | 会议上的眼神交锋、邮件往来的画外音 | 低频节奏性底噪，渐强 |
-| 冲突爆发 | 对抗 + 压迫 | 正面对峙、摊牌、被揭露 | 配乐骤停或冷峻弦乐 |
-| 独处/崩溃 | 疲惫 + 真实 | 下班后独自在车里坐着、深夜洗脸 | 纯环境音（水声/城市远景）|
-| 转机/突破 | 冷静 + 坚定 | 发现关键信息、做出决定、回击 | 简洁节奏性配乐渐起 |
-| 和解/代价 | 释然 + 复杂 | 握手言和但眼神保留距离、升职后的孤独 | 温暖但克制的器乐 |
+| ngày thường tác vụ  |  + thật  | thông 、mở sẽ 、đĩa  của hóa ngày thường  | thấp âm lượng âm hoặc không nối  |
+|  | bảng mặt  +  | sẽ thức trên  của tác vụ 、tệp  của Lời bình / Lời dẫn (voiceover, VO) | thấp tần tiết ， |
+| phát  | đúng  + nén  | chính mặt đúng 、、 | nối hoặc  |
+| xử / |  + thật  | dưới sau tự ở đang 、 | thuần âm （thanh /Viễn cảnh (extreme wide shot)）|
+| chuyển máy / |  + nối  | phát liên thông tin、ra nối 、trả  | tiết nối  |
+|  và giải / |  + lời  | tay  và nhưng lưu lưu 、sau  của  | nhưng chép  của thiết bị  |
 
-- **社交距离是权力表达** — 用人物间的物理距离映射权力关系：
-  - **上级**：可以随意靠近下属（入侵空间）；下属保持距离（恭敬/恐惧）
-  - **平级博弈**：对坐/对立，保持一桌之隔（博弈距离）
-  - **亲密同盟**：并排坐/并肩走（同一方向 = 同一阵营）
-- **空间即权力** — 善用办公空间传递权力关系。例如：独立办公室 vs 开放工位 = 权力等级；会议室座位位置 = 话语权；电梯里的站位 = 社交等级
-- **镜头意图写"权力关系"而非"拍谁"** — "用仰拍是为了让观众感受到上级此刻对主角的压制力"优于"用仰拍拍上级说话"
+- **tác vụ là thực lực bảng ** — hàm ngườigian  của lý thực lực liên dòng ：
+  - **trên cấp **：ý dưới biệt （vào rỗng gian ）；dưới biệt lưu giữ （/）
+  - **cấp **：đúng /đúng lập ，lưu giữ 1  của cách （）
+  - **mật cùng **：nhất sắp /nhất chạy （cùng 1 phương  = cùng 1 ）
+- **rỗng gian thực lực ** — hàm rỗng gian truyền thực lực liên dòng 。lệ như ：lập  vs mở mở vị trí  = thực lực cấp ；sẽ thức vị trí vị trí trí  = lời ngữ thực ； của trạm vị trí  = tác vụ cấp 
+- **Ống kínhý ảnh "thực lực liên dòng "phi ""** — "hàm là để đến trên cấp đúng chính nhân  của nén chép lực "với "hàm trên cấp hướng lời "
 
 ---
 
-## 四、声音与音乐方向
+## 4、thanh âm âm phương 
 
-### 都市职场叙事要点
+### Đô Thị & Công Sởviệc cần điểm 
 
-- **都市白噪音是氛围底色** — 键盘敲击声、咖啡机、电梯嗡鸣、远处电话铃——这些声音构成职场的"气味"，让观众瞬间进入场景
-- **沉默是最高级的博弈** — 会议上突然的沉默、提问后的停顿、对视中的不说话——沉默在职场中是武器。关键博弈段落优先去掉配乐，只留环境音+沉默
-- **配乐极度克制** — 全片配乐覆盖率不超过 40%。职场叙事追求"真实感"，过多配乐会让画面显得像"励志广告"而非真实故事
-- **环境音区分场景** — 每个场景标注 1-2 个核心环境音，帮助区分空间：办公室（键盘+空调嗡鸣）、会议室（安静+翻纸声）、通勤路上（城市喧嚣）、深夜家中（冰箱嗡鸣+远处车声）
-- **音乐情绪模型** —
+- **đều âm là Không khívật ** — đĩa thanh 、máy 、、xử lời ——nàynhững thanh âm cấu tạo trường  của ""，để gian tiến vào Bối cảnh
+- **là tối đa cấp  của ** — sẽ thức trên  của 、nhắc hỏi sau  của 、đúng video giữa  của không hướng lời ——ở trường giữa là thiết bị 。liên đoạn trước đi bỏ nối ，chỉ lưu âm +
+- **nối độ chép ** — toàn nối tỷ lệ không vượt  40%。trường việc cầu "thật "，nhiều nối sẽ để vẽ mặt được "thông "phi thật việc 
+- **âm khu phútBối cảnh** — mục Bối cảnhbiểu tâm  1-2 mục âm ，trợ giúp khu phútrỗng gian ：（đĩa +rỗng gọi ）、sẽ thức （an +thanh ）、thông đường trên （）、giữa （+xử thanh ）
+- **âm tình xúc mô hình** —
 
-| 情绪阶段 | 音乐策略 | 覆盖率 |
+| tình xúc đoạn  | âm  | tỷ lệ  |
 |---|---|---|
-| 日常工作 | 无配乐，纯环境音 | 无 |
-| 暗涌博弈 | 低频节奏底噪 | 低 |
-| 冲突对峙 | 冷峻弦乐或全寂 | 中 |
-| 独处真实 | 纯环境音或极低钢琴 | 极低 |
-| 转机突破 | 简洁节奏性配乐 | 中 |
-| 结局余味 | 克制温暖器乐 | 中低 |
+| ngày thường tác vụ  | không nối ，thuần âm  | không  |
+|  | thấp tần tiết  | thấp  |
+| đúng  | hoặc toàn  | giữa  |
+| xử thật  | thuần âm hoặc thấp  | thấp  |
+| chuyển máy  | tiết nối  | giữa  |
+| kết cục  | chép thiết bị  | giữa thấp  |
 
-- **电话/消息提示音的叙事功能** — 手机震动声、消息通知音、电话铃声在职场叙事中可以是"命运转折"的触发器——一条消息改变整个局面。这类音效要给足辨识度
-
----
-
-## 五、构图与景别叙事
-
-### 都市职场叙事要点
-
-- **三大核心构图的叙事功能** —
-  - **权力对角线** — 将权力高位者置于画面上方/前方，弱势者下方/后方，对角线布局暗示不对等的权力关系
-  - **框架困局** — 门框/窗框/屏幕边框/格子间隔板框住人物，传递"被困在体制中"的压迫感
-  - **对称对坐** — 博弈双方对坐于画面两侧，对称构图暗示势均力敌的对峙（或表面平等暗藏杀机）
-- **中心构图的仪式感** — 中心构图留给关键"宣判"时刻：升职公告、裁员通知、最终决策。日常不用
-- **玻璃/反光的隔阂** — 职场充满玻璃（会议室、办公室门、电梯）。通过玻璃拍人物制造"看得见但触不到"的隔阂感，暗示职场人际的表面透明实则有壁
-- **竖向空间的压迫** — 高楼俯瞰、电梯升降、楼梯上下——纵向空间的移动在职场中直接映射"社会阶层的上下"
-- **景别即社交距离** —
-  - **远景/全景** — 空间全貌、人物在庞大机构中的渺小感
-  - **中景** — 正式社交距离，会议/对话的标准景别
-  - **近景** — 打破社交距离，压迫/亲密/对峙
-  - **特写** — 微表情捕捉：嘴角的克制微笑、眼神的闪躲、手指的不安
-- **大特写的心理功能** — 一支笔被折断、手机屏幕上的消息、签名时微颤的笔尖。大特写在职场中放大的是"压力的细节"
+- **lời /hủy nhắc nhở âm  của việc công thể ** — tay máy động thanh 、hủy thông báo âm 、lời thanh ở trường việc giữa là "vận chuyển " của phát thiết bị ——1 mục hủy sửa chỉnh mục cục mặt 。nàyloại Âm hiệucần cho trưng độ 
 
 ---
 
-## 六、镜头运动与节奏
+## 5、cấu ảnh Cỡ cảnhviệc 
 
-### 都市职场叙事要点
+### Đô Thị & Công Sởviệc cần điểm 
 
-- **冷静固定为主** — 65% 以上镜头应为三脚架固定机位，传递"冷静观察"的纪录片质感。职场叙事不需要华丽运镜，真实感来自克制
-- **纪实手持** — 跟随角色走动（走廊、通勤、急匆匆赶路）时用轻微手持，增加"身临其境"的真实感。晃动极度克制，几乎感觉不到
-- **缓推 = 压迫/审视** — 缓慢推向角色面部，模拟"被盯着看"的压迫感。适合被质问、被考验、做抉择的段落
-- **缓拉 = 孤立/全貌** — 从角色缓拉到全景，揭示角色在巨大办公空间中的渺小与孤独。适合独处、失败、深夜加班段落
-- **横移 = 扫视/并行** — 水平横移从一个角色移到另一个角色，建立空间关系。适合会议室扫视、开放办公区的群像
-- **运镜即叙事态度** — 静止 = 冷静观察；缓推 = 逼近/压迫；缓拉 = 抽离/反思；手持跟拍 = 真实参与；横移 = 扫描全局
-- **快切蒙太奇** — 职场叙事中快切仅用于"时间流逝蒙太奇"（日复一日的工作碎片、通宵赶项目的片段），不用于日常叙事
+- **3lớn cấu ảnh  của việc công thể ** —
+  - **thực lực đúng nhân đường ** — thực lực cao vị trí giả trí với vẽ mặt trên phương /trước phương ，giả dưới phương /sau phương ，đúng nhân đường cục nhở không đúng  của thực lực liên dòng 
+  - **cục ** — cổng ///khung gian cách người，truyền "ở thể chép giữa " của nén 
+  - **đúng đúng ** — đôi phương đúng với vẽ mặt 2，đúng cấu ảnh nhở lực  của đúng （hoặc bảng mặt máy ）
+- **giữa cấu ảnh  của thức ** — giữa cấu ảnh lưu cho liên ""：thông 、thông báo 、nhất quyết định。ngày thường không hàm 
+- **/phụ ánh  của cách ** — trường sung đầy （sẽ thức 、cổng 、）。thông quangườichép tạo "xem được thấy nhưng không đến " của cách ，nhở trường người của bảng mặt dẫn có 
+- **rỗng gian  của nén ** — cao 、Nâng / Hạ máy (crane up/down)、trên dưới ——rỗng gian  của động ở trường giữa trực tiếp "sẽ tầng  của trên dưới "
+- **Cỡ cảnhtác vụ ** —
+  - **Viễn cảnh (extreme wide shot)/Toàn cảnh (wide shot)** — rỗng gian toàn 、ngườiở lớn máy cấu giữa  của nhỏ 
+  - **Trung cảnh (medium shot)** — chính thức tác vụ ，sẽ thức /đúng lời  của biểu Cỡ cảnh
+  - **Cận cảnh (close-up)** — mở tác vụ ，nén /mật /đúng 
+  - **Đặc tả (close-up)** — bảng tình ：nhân  của chép 、 của 、tay  của không an 
+- **lớn Đặc tả (close-up) của lý công thể ** — 1 、tay máy trên  của hủy 、ký tên  của 。lớn Đặc tả (close-up)ở trường giữa mở lớn  của là "nén lực  của tiết "
+
+---
+
+## 6、Ống kínhvận động tiết 
+
+### Đô Thị & Công Sởviệc cần điểm 
+
+- **nối chính ** — 65% trên Ống kínhhồi 3nối máy vị trí ，truyền "" của lục 。trường việc không cần cần Góc quay，thật tự chép 
+- **tay giữ ** — Nhân vậtchạy động （chạy 、thông 、đường ）hàm tay giữ ，cộng "" của thật 。động độ chép ，mấy không đến 
+- **khuyến  = nén /video ** — chậm khuyến Nhân vậtmặt bộ ，mô "đang xem " của nén 。hợp hỏi 、chiếu 、lựa  của đoạn 
+- ** = lập /toàn ** — từ Nhân vậtđến Toàn cảnh (wide shot)，nhở Nhân vậtở lớn rỗng gian giữa  của nhỏ 。hợp xử 、thất bại、cộng đoạn 
+- ** = video /nhất thi ** — từ một Nhân vậtđến một Nhân vật，tạo lập rỗng gian liên dòng 。hợp sẽ thức video 、mở mở khu  của 
+- **Góc quayviệc thái độ ** — Tĩnh (static) = ；khuyến  = /nén ； = /phụ ；tay giữ  = thật tham ； = mô toàn cục 
+- **nhanh ** — trường việc giữa nhanh chỉ hàm với "thời gian"（ngày lời 1 ngày  của tác vụ 、thông dự án của đoạn ），không hàm với ngày thường việc 

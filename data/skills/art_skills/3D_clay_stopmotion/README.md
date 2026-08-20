@@ -1,33 +1,33 @@
-# 定格动画黏土风格说明
+# nối khung động vẽ Phong cáchGiải thích
 
-本风格专为"定格动画黏土质感"题材打造，所有美术提示词、规范和生成内容均严格限定于：
+sách Phong cáchriêng "nối khung động vẽ "đề mở tạo ，tất cảđẹp Prompt、 và tạonội dungkhung hạn nối với ：
 
-- **定格动画世界观**：以复古/奇幻生活为背景，涵盖木屋、森林、街道、咖啡馆、花园等，体现定格动画特有的生活气息。
-- **黏土质感**：所有角色、场景、道具均以定格黏土动画为标准，强调黏土肌理清晰度、手指压痕可见度、材质颗粒感。
-- **治愈怀旧美学**：在黏土质感基础上追求电影感氛围，画面色调温暖柔和，细节丰富，整体氛围温暖治愈、怀旧感人。
-- **情感表达**：适合展现温柔、治愈、浪漫的定格动画故事，强调手工质感下的情感表达。
+- **nối khung động vẽ giới **：lời /sinh hoạt bối ，、、đạo 、、，thể nối khung động vẽ có  của sinh hoạt 。
+- ****：tất cảNhân vật、Bối cảnh、Đạo cụnối khung động vẽ biểu ，gọi lý sạch độ 、tay nén thấy độ 、。
+- **cũ đẹp **：ở cơ sở trên cầu sáng Không khí，vẽ mặt vật gọi  và ，tiết ，chỉnh thể Không khí、cũ người。
+- **tình bảng **：hợp 、、 của nối khung động vẽ việc ，gọi tay dưới  của tình bảng 。
 
-## 适用范围
+## hàm khí 
 
-- 定格动画黏土题材的AI美术生成（角色、场景、道具、分镜等）
-- 需要极致黏土质感、细腻光影、温馨治愈氛围的视觉创作
+- nối khung động vẽ đề  của AIđẹp tạo（Nhân vật、Bối cảnh、Đạo cụ、Phân cảnh）
+- cần cần 、Ánh sáng、Không khí của trực quansáng tác vụ 
 
-## 严禁内容
+## nội dung
 
-- 现代3D动画风格、光滑塑料、CG渲染
-- 现代元素、现代建筑、现代服饰
-- 高饱和荧光色、霓虹色
-- 黑暗暴力、成人向内容
+- 3Dđộng vẽ Phong cách、ánh 、CG
+- 、tạo 、phục 
+- cao  và ánh vật 、vật 
+- lực 、tạo ngườinội dung
 
-## 风格体验
+## Phong cáchthể chiếu 
 
-在本风格下，您将体验到：
+ở sách Phong cáchdưới ，thể chiếu đến ：
 
-- 角色面容精致、气质温柔或清亮，服饰、造型均为定格黏土动画风格
-- 场景空间层次丰富，黏土肌理清晰，氛围真实且富有诗意
-- 道具、日常物品、环境细节均为复古/奇幻造型，手工质感细腻
-- 分镜与画面均以定格动画为基础，强调叙事与情感表达
+- Nhân vậtmặt dung 、hoặc sạch ，phục 、tạo kiểu nối khung động vẽ Phong cách
+- Bối cảnhrỗng gian tầng lần ，lý sạch ，Không khíthật và có ý 
+- Đạo cụ、ngày thường 、tiết lời /tạo kiểu ，tay 
+- Phân cảnhvẽ mặt nối khung động vẽ cơ sở ，gọi việc tình bảng 
 
 ---
 
-本风格仅适用于"定格动画黏土"相关项目。如需其他风格（如现代3D、CG、插画、现代等），请勿使用本套提示词。
+sách Phong cáchchỉ hàm với "nối khung động vẽ "liên dự án。như cần anh ấyPhong cách（như 3D、CG、vẽ 、），vui lòng hàm sách Prompt。

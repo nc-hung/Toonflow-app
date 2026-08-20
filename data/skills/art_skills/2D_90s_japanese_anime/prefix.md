@@ -1,117 +1,117 @@
-# 全局美学基础 · 90年代日式动画
+# toàn cục đẹp cơ sở  · 90nămngày thức động vẽ 
 
 ---
-必须严格、完整遵循下方全部风格约束与全局规则，并严格按提示词模板格式生成提示词；仅输出提示词正文，不得附加任何解释、说明、注释、标题或其他额外文本。
-## 一、风格基因
+Bắt buộckhung 、chỉnh dưới phương toàn bộPhong cáchtoàn cục ，nhất khung theo Promptmô khung thức tạoPrompt；chỉ tải ra Promptchính tài ，không được cộng giải 、Giải thích、tâm 、biểu đề hoặc anh ấybổ ngoài tài sách 。
+## 1 、Phong cáchcơ sở 
 
-| 维度 | 定义 |
+| độ  | nối nghĩa  |
 |---|---|
-| **一级风格** | 90年代日式动画（90s Anime Aesthetic） |
-| **二级风格** | 手绘平涂 · 电影感光影层次 |
-| **情感基调** | 怀旧治愈 · 温柔细腻 |
-| **质感锚词** | 清晰流畅线条、平涂上色、柔和暖调 |
+| **1 cấp Phong cách** | 90nămngày thức động vẽ （90s Anime Aesthetic） |
+| **2cấp Phong cách** | tay  · sáng Ánh sángtầng lần  |
+| **tình cơ sở gọi ** | cũ  ·  |
+| **từ ** | sạch đường mục 、trên vật 、 và gọi  |
 
 ---
 
-## 二、全局色彩盘（风格基线，不是硬锁）
+## 2、toàn cục vật đĩa （Phong cáchcơ sở đường ，không là ）
 
-> 目标：统一审美而非限制创作。除「硬约束色」外，其余颜色默认优先使用，可在合理范围内偏移。
+> mục biểu ：thống 1 đẹp phi hạn chép sáng tác vụ 。bỏ 「vật 」ngoài ，vật Mặc địnhưu tiên sử dụng ，ở hợp lý khí trong 。
 
-### 色彩使用层级
+### vật hàm tầng cấp 
 
-| 层级 | 约束强度 | 说明 |
+| tầng cấp  | độ  | Giải thích |
 |---|---|---|
-| L1 硬约束 | 高 | 仅锁定角色识别核心：肤色、发色、主服底色的审美方向 |
-| L2 软约束 | 中 | 场景色、配饰色、点缀色优先参考色盘，可按镜头与剧情微调 |
-| L3 例外机制 | 低 | 回忆/高潮/特殊场景可临时突破局部色彩，但需保留整体暖调逻辑 |
+| L1  | cao  | chỉ nối Nhân vậttrưng khác ：vật 、phát vật 、chính phục vật  của đẹp phương  |
+| L2  | giữa  | Bối cảnhvật 、nối vật 、điểm tố vật trước tham chiếuvật đĩa ，theo Ống kínhkịch tình gọi  |
+| L3 lệ ngoài máy chép  | thấp  | trả /cao /Bối cảnhcục bộ vật ，nhưng cần lưu lưu chỉnh thể gọi logic |
 
-| 序号 | 色名 | 色值 | 用途 |
+| xếp số  | vật tên  | vật giá trị  | hàm  |
 |---|---|---|---|
-| C1 | 暖黄 | #F5E6D0 | 肤色基底、暖光、夕阳 |
-| C2 | 樱花粉 | #F4D5D5 | 脸颊红晕、春日、浪漫 |
-| C3 | 天空蓝 | #87AEC9 | 天空、服装、冷调点缀 |
-| C4 | 深棕发 | #4A3728 | 发色、眼瞳 |
-| C5 | 高级灰 | #8A8A8A | 建筑、阴影、中性色 |
-| C6 | 淡紫 | #D0C4D6 | 夜晚、梦幻、回忆 |
-| C7 | 琥珀暖 | #C9A96E | 黄昏、灯光、温暖感 |
-| C8 | 橄榄绿 | #8A9A5B | 植物、自然、环境 |
-| C9 | 米白 | #F5F0E8 | 墙面、服装、背景 |
-| C10 | 暖橙 | #E8C890 | 夕阳、火光、温馨感 |
+| C1 |  | #F5E6D0 | vật cơ sở 、ánh 、 |
+| C2 |  | #F4D5D5 | 、ngày 、 |
+| C3 | ngàyrỗng  | #87AEC9 | ngàyrỗng 、phục 、gọi điểm tố  |
+| C4 | phát  | #4A3728 | phát vật 、 |
+| C5 | cao cấp  | #8A8A8A | tạo 、sáng 、giữa vật  |
+| C6 |  | #D0C4D6 | Ban đêm、、trả  |
+| C7 |  | #C9A96E | Hoàng hôn、ánh 、 |
+| C8 |  | #8A9A5B | 、tự 、 |
+| C9 |  | #F5F0E8 | mặt 、phục 、bối  |
+| C10 |  | #E8C890 | 、ánh 、 |
 
-### 硬约束色（默认锁定）
+### vật （Mặc địnhnối ）
 
-| 色项 | 对应色 | 规则 |
+| vật  | đúng hồi vật  |  |
 |---|---|---|
-| 肤色基准 | C1 暖黄 | 默认优先，允许小幅明度/暖度微调 |
-| 发色/瞳色基准 | C4 深棕发 | 默认优先，允许深棕/深褐轻微偏移 |
+| vật cơ sở  | C1  | Mặc địnhtrước ，nhỏ dẫn độ /độ gọi  |
+| phát vật /vật cơ sở  | C4 phát  | Mặc địnhtrước ，/ |
 
-### 软约束色（推荐优先）
+### vật （khuyến nghị trước ）
 
-> C2/C3/C5/C6/C7/C8/C9/C10 为推荐色域，用于服装、装饰、背景、暖光、环境等。可根据镜头氛围做同色相邻近调整。
+> C2/C3/C5/C6/C7/C8/C9/C10 khuyến nghị vật vực ，hàm với phục 、、bối 、ánh 、。dựa theoỐng kínhKhông khícùng vật gọi chỉnh 。
 
-### 情绪色盘（导演对齐版）
+### tình xúc vật đĩa （đạo diễnđúng bản ）
 
-| 情绪场景 | 主色 | 辅色 | 光效与对比建议 | 画面关键词 |
+| tình xúc Bối cảnh | chính vật  | vật  | ánh hiệu đúng tỷ Khuyến nghị | vẽ mặt liên từ  |
 |---|---|---|---|---|
-| 日常温馨 | C1 暖黄 | C9 米白 + C5 高级灰 | 均匀暖调，柔和对比 | 生活感、温暖、平静 |
-| 心动瞬间 | C2 樱花粉 | C1 暖黄 + C10 暖橙 | 中近景提暖，肤色微红 | 羞涩、靠近感、暧昧 |
-| 学校/教室 | C9 米白 | C5 高级灰 + C3 天空蓝 | 明暗层次清晰，中性为主 | 青春、日常、自然 |
-| 黄昏浪漫 | C7 琥珀暖 | C10 暖橙 + C2 樱花粉 | 逆光暖调，轮廓光 | 怀旧、浪漫、情感 |
-| 夜晚月色 | C3 天空蓝 | C6 淡紫 + C1 暖黄 | 冷调为主，暖色点缀 | 静谧、思考、独处 |
-| 回忆/闪回 | C1 暖黄 | C6 淡紫 + C5 高级灰 | 柔焦雾化，轻微褪色 | 怀旧、旧忆、梦幻 |
-| 离别感伤 | C5 高级灰 | C3 天空蓝 + C1 暖黄 | 降饱和，拉大冷暖反差 | 距离感、克制、静压 |
-| 重逢释怀 | C1 暖黄 | C7 琥珀暖 + C2 樱花粉 | 先冷后暖，面部暖光渐进 | 回温、释然、治愈 |
+| ngày thường  | C1  | C9  + C5 cao cấp  | gọi ， và đúng tỷ  | sinh hoạt 、、 |
+| động gian  | C2  | C1  + C10  | giữa Cận cảnh (close-up)nhắc ，vật  | 、、 |
+| đối / | C9  | C5 cao cấp  + C3 ngàyrỗng  | dẫn tầng lần sạch ，giữa chính  | 、ngày thường 、tự  |
+| Hoàng hôn | C7  | C10  + C2  | ánh gọi ，ánh  | cũ 、、tình  |
+| Ban đêmthángvật  | C3 ngàyrỗng  | C6  + C1  | gọi chính ，vật điểm tố  | 、、xử  |
+| trả /trả  | C1  | C6  + C5 cao cấp  | hóa ，vật  | cũ 、cũ 、 |
+| khác  | C5 cao cấp  | C3 ngàyrỗng  + C1  |  và ，lớn phụ  | 、chép 、nén  |
+| trùng  | C1  | C7  + C2  | trước sau ，mặt bộ ánh tiến  | trả 、、 |
 
-### 情绪色盘使用规则
+### tình xúc vật đĩa hàm 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| E1 | 每条提示词至少指定 1 个「情绪场景」并绑定主色+辅色组合 |
-| E2 | 单镜头主色不超过 2 个，避免颜色叙事失焦 |
-| E3 | 情绪切换时优先调整光比与色温，再调整饱和度 |
-| E4 | 治愈向默认遵循「暖底 + 冷暖对比」：暖色铺底，冷色用于背景/阴影 |
-| E5 | 若与剧情冲突，以情绪色盘优先于通用推荐色，但不得突破严禁项 |
+| E1 | mục Promptđến ít nối  1 mục 「tình xúc Bối cảnh」nhất ghép nốichính vật +vật nhóm hợp  |
+| E2 | đơn Ống kínhchính vật không vượt  2 mục ，vật việc thất  |
+| E3 | tình xúc đổi trước gọi chỉnh ánh tỷ vật ，gọi chỉnh  và độ  |
+| E4 | Mặc định「 + đúng tỷ 」：vật ，vật hàm với bối /sáng  |
+| E5 | kịch tình ，tình xúc vật đĩa trước với thông hàm khuyến nghị vật ，nhưng không được  |
 
-### 色温约束
+### vật 
 
-| 参数 | 值 | 说明 |
+| tham số | giá trị  | Giải thích |
 |---|---|---|
-| 整体色温 | 偏暖 4800-5200K（推荐） | 温暖怀旧主基调 |
-| 肤色色温 | 微暖 5000-5400K（推荐） | 暖黄但有生命感 |
-| 对比度 | 中等（建议保持） | 明暗层次清晰，但不过分强烈 |
-| 饱和度 | 中低 50-70%（建议区间） | 90年代动画高级色调 |
+| chỉnh thể vật  |  4800-5200K（khuyến nghị ） | cũ chính cơ sở gọi  |
+| vật vật  |  5000-5400K（khuyến nghị ） | nhưng có sinh  |
+| đúng tỷ độ  | giữa （Khuyến nghịlưu giữ ） | dẫn tầng lần sạch ，nhưng không phút |
+|  và độ  | giữa thấp  50-70%（Khuyến nghịkhu gian ） | 90nămđộng vẽ cao cấp vật gọi  |
 
-### 容差与例外
+### dung lệ ngoài 
 
-| 项目 | 建议容差 |
+| dự án | Khuyến nghịdung  |
 |---|---|
-| 色相偏移 | ±8° |
-| 饱和度偏移 | ±10% |
-| 明度偏移 | ±12% |
+| vật  | ±8° |
+|  và độ  | ±10% |
+| dẫn độ  | ±12% |
 
-> 例外场景：回忆、黄昏、情绪高潮镜头可使用更暖或更高饱和局部色块；但禁止高饱和荧光色与现代色彩语言入镜。
+> lệ ngoài Bối cảnh：trả 、Hoàng hôn、tình xúc cao Ống kínhhàm đổi hoặc đổi cao  và cục bộ vật ；nhưng Nghiêm cấmcao  và ánh vật vật ngữ vào quay 。
 
 ---
 
-## 三、全局约束规则
+## 3、toàn cục 
 
-### 必守规则（所有技能继承）
+### bắt （tất cảthể ）
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须包含「90年代日式动画风格」风格锚定词 |
-| R2 | 必须声明「手绘质感 + 平涂上色」 |
-| R3 | 面部必须使用「精细流畅线条 + 柔和暖色调」 |
-| R4 | 发丝必须使用「清晰流畅线条 + 自然阴影」 |
-| R5 | 光影必须声明「电影感光影层次」 |
+| R1 | Bắt buộcgói 「90nămngày thức động vẽ Phong cách」Phong cáchnối từ  |
+| R2 | Bắt buộcthanh dẫn 「tay  + trên vật 」 |
+| R3 | mặt bộ Bắt buộchàm 「đường mục  +  và vật gọi 」 |
+| R4 | phát Bắt buộchàm 「sạch đường mục  + tự sáng 」 |
+| R5 | Ánh sángBắt buộcthanh dẫn 「sáng Ánh sángtầng lần 」 |
 
-### 严禁项（所有技能继承）
+### （tất cảthể ）
 
-| 编号 | 严禁内容 |
+| chỉnh số  | nội dung |
 |---|---|
-| X1 | 严禁「现代日系动画风格/新海诚后期/MAPPA风格」 |
-| X2 | 严禁「3D渲染/CG动画/数字绘画」 |
-| X3 | 严禁「高饱和荧光色/霓虹色」 |
-| X4 | 严禁「面部变形/比例失调/肢体异常」倾向词 |
-| X5 | 严禁「过度阴影/重对比/暗调黑暗」 |
-| X6 | 严禁「现代元素/现代建筑/现代服饰」 |
+| X1 | 「ngày dòng động vẽ Phong cách/mới sau kỳ /MAPPAPhong cách」 |
+| X2 | 「3D/CGđộng vẽ /số chữ vẽ 」 |
+| X3 | 「cao  và ánh vật /vật 」 |
+| X4 | 「mặt bộ dạng /Tỷ lệthất gọi /thể bất thường 」từ  |
+| X5 | 「độ sáng /trùng đúng tỷ /gọi 」 |
+| X6 | 「/tạo /phục 」 |

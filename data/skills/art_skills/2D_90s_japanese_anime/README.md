@@ -1,33 +1,33 @@
-# 90年代日式动画风格说明
+# 90nămngày thức động vẽ Phong cáchGiải thích
 
-本风格专为"90年代日式动画质感"题材打造，所有美术提示词、规范和生成内容均严格限定于：
+sách Phong cáchriêng "90nămngày thức động vẽ "đề mở tạo ，tất cảđẹp Prompt、 và tạonội dungkhung hạn nối với ：
 
-- **90年代动画世界观**：以90年代日式生活为背景，涵盖学校、车站、街道、咖啡馆、住宅等，体现日式生活气息。
-- **手绘平涂质感**：所有角色、场景、道具均以90年代手绘动画为标准，强调线条清晰度、上色均匀度、光影层次感。
-- **怀旧治愈美学**：在平涂基础上追求电影感氛围，画面色调柔和温暖，细节丰富，整体氛围温暖治愈、怀旧感人。
-- **情感表达**：适合展现温柔、治愈、浪漫的日式恋爱故事，强调东方美学下的情感表达。
+- **90nămđộng vẽ giới **：90nămngày thức sinh hoạt bối ，đối 、trạm 、đạo 、、，thể ngày thức sinh hoạt 。
+- **tay **：tất cảNhân vật、Bối cảnh、Đạo cụ90nămtay động vẽ biểu ，gọi đường mục sạch độ 、trên vật độ 、Ánh sángtầng lần 。
+- **cũ đẹp **：ở cơ sở trên cầu sáng Không khí，vẽ mặt vật gọi  và ，tiết ，chỉnh thể Không khí、cũ người。
+- **tình bảng **：hợp 、、 của ngày thức việc ，gọi phương đẹp dưới  của tình bảng 。
 
-## 适用范围
+## hàm khí 
 
-- 90年代日式动画题材的AI美术生成（角色、场景、道具、分镜等）
-- 需要极致手绘质感、细腻线条、温馨治愈氛围的视觉创作
+- 90nămngày thức động vẽ đề  của AIđẹp tạo（Nhân vật、Bối cảnh、Đạo cụ、Phân cảnh）
+- cần cần tay 、đường mục 、Không khí của trực quansáng tác vụ 
 
-## 严禁内容
+## nội dung
 
-- 现代日系动画风格、3D渲染、CG动画
-- 现代元素、现代建筑、现代服饰
-- 高饱和荧光色、霓虹色
-- 过度阴影、黑暗暴力、成人向内容
+- ngày dòng động vẽ Phong cách、3D、CGđộng vẽ 
+- 、tạo 、phục 
+- cao  và ánh vật 、vật 
+- độ sáng 、lực 、tạo ngườinội dung
 
-## 风格体验
+## Phong cáchthể chiếu 
 
-在本风格下，您将体验到：
+ở sách Phong cáchdưới ，thể chiếu đến ：
 
-- 角色面容精致、气质温柔或清亮，服饰、妆容、发型均为90年代日式动画风格
-- 场景空间层次丰富，线条清晰流畅，氛围真实且富有诗意
-- 道具、日常物品、环境细节均为日式造型，工艺精细，质感细腻
-- 分镜与画面均以手绘平涂为基础，强调叙事与情感表达
+- Nhân vậtmặt dung 、hoặc sạch ，phục 、dung 、phát kiểu 90nămngày thức động vẽ Phong cách
+- Bối cảnhrỗng gian tầng lần ，đường mục sạch ，Không khíthật và có ý 
+- Đạo cụ、ngày thường 、tiết ngày thức tạo kiểu ，，
+- Phân cảnhvẽ mặt tay cơ sở ，gọi việc tình bảng 
 
 ---
 
-本风格仅适用于"90年代日式动画"相关项目。如需其他风格（如现代动画、CG、插画、现代等），请勿使用本套提示词。
+sách Phong cáchchỉ hàm với "90nămngày thức động vẽ "liên dự án。như cần anh ấyPhong cách（như động vẽ 、CG、vẽ 、），vui lòng hàm sách Prompt。

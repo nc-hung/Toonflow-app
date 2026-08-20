@@ -24,7 +24,7 @@ export default router.post(
   }),
   async (req, res) => {
     const { data, scriptId, projectId } = req.body;
-    if (!data.length) return res.status(400).send({ success: false, message: "数据不能为空" });
+    if (!data.length) return res.status(400).send({ success: false, message: "Dữ liệukhông thể rỗng " });
     for (const item of data) {
       const [id] = await u.db("o_storyboard").insert({
         prompt: item.prompt,
@@ -48,8 +48,8 @@ export default router.post(
       item.id = id;
     }
     const lastStoryboard = await u.db("o_storyboard").where("scriptId", scriptId);
-    if (!lastStoryboard || !lastStoryboard.length) return res.status(400).send(error("未查到分镜数据"));
-    //根据track分组
+    if (!lastStoryboard || !lastStoryboard.length) return res.status(400).send(error("chưa tra đến Phân cảnhDữ liệu"));
+    //Dựa theotrackphân nhóm
     const storyboardGroupByTrack: Record<string, number[]> = {};
     lastStoryboard.forEach((item: any) => {
       if (!storyboardGroupByTrack[item.track]) {
@@ -58,25 +58,25 @@ export default router.post(
       storyboardGroupByTrack[item.track].push(item.id);
     });
 
-    //循环：先查询数据库中是否已存在相同track名称的trackId，有则复用，没有则新建
+    //：trước  Truy vấnCơ sở dữ liệugiữa là không đã lưu ở cùng tracktên của trackId，có lời hàm ，chưa có mới  tạo 
     for (const track in storyboardGroupByTrack) {
       const storyboardIds = storyboardGroupByTrack[track] ?? [];
 
-      // 计算该track下所有分镜的duration总和
+      // tính toántrackdưới tất cảPhân cảnh của durationtổng  và 
       const trackDuration = lastStoryboard
         .filter((item: any) => item.track == track)
         .reduce((sum: number, item: any) => sum + Number(item.duration), 0);
 
-      // 查找该scriptId下是否已有相同track名称且已分配trackId的分镜记录
+      // tra scriptIddưới là không đã có cùng tracktênvà đã phần nối trackId của Phân cảnhlục 
       const existingStoryboard = await u.db("o_storyboard").where({ scriptId, track }).whereNotNull("trackId").first();
 
       let trackId: number;
       if (existingStoryboard?.trackId) {
-        // 已存在相同track名称的trackId，直接复用，并更新duration
+        // đã lưu ở cùng tracktên của trackId，trực tiếp lời hàm ，nhất Cập nhậtduration
         trackId = existingStoryboard.trackId;
         await u.db("o_videoTrack").where("id", trackId).update({ duration: trackDuration });
       } else {
-        // 不存在，新建videoTrack
+        // không tồn tại，mới  tạo videoTrack
         const newTrackId = Date.now()
         await u.db("o_videoTrack").insert({
           id: newTrackId,

@@ -46,10 +46,10 @@ export default router.post(
         modeData = JSON.parse(mode);
       } catch (e) {}
     }
-    //获取生成视频比例
+    //LấyTạo videotỷ lệ
     const ratio = await u.db("o_project").select("videoRatio").where("id", projectId).first();
-    const videoPath = `/${projectId}/video/${uuidv4()}.mp4`; //视频保存路径
-    //查询出图片数据
+    const videoPath = `/${projectId}/video/${uuidv4()}.mp4`; //Videolưuđường dẫn
+    //Truy vấnra Hình ảnhDữ liệu
     const images = await Promise.all(
       uploadData.map(async (item: UploadItem) => {
         if (item.sources === "storyboard") {
@@ -67,18 +67,18 @@ export default router.post(
         }
       }),
     );
-    //把images里面的图片转成base64格式
+    //đem imagesmặt  của Hình ảnhchuyển tạo base64định dạng
     const base64 = await Promise.all(
       images.map(async (item) => {
         if (!item) return null;
         return { base64: await u.oss.getImageBase64(item.path), type: item.sources == "audio" ? "audio" : "image" };
       }),
     );
-    //新增
+    //thêm mới 
     const [videoId] = await u.db("o_video").insert({
       filePath: videoPath,
       time: Date.now(),
-      state: "生成中",
+      state: "Đang tạo",
       scriptId,
       projectId,
       videoTrackId: trackId,
@@ -88,7 +88,7 @@ export default router.post(
       projectId,
       videoId,
       scriptId,
-      type: "视频",
+      type: "Video",
     };
     const aiVideo = u.Ai.Video(model);
     aiVideo
@@ -104,19 +104,19 @@ export default router.post(
         },
         {
           projectId,
-          taskClass: "视频生成",
-          describe: "根据提示词生成视频",
+          taskClass: "Videotạo",
+          describe: "Dựa theoPromptTạo video",
           relatedObjects: JSON.stringify(relatedObjects),
         },
       )
       .then(async () => await aiVideo.save(videoPath))
-      .then(async () => await u.db("o_video").where("id", videoId).update({ state: "生成成功" }))
+      .then(async () => await u.db("o_video").where("id", videoId).update({ state: "Tạo thành công" }))
       .catch(async (error: any) => {
         await u
           .db("o_video")
           .where("id", videoId)
           .update({
-            state: "生成失败",
+            state: "Tạo thất bại",
             errorReason: u.error(error).message,
           });
       });

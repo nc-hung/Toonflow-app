@@ -1,10 +1,10 @@
 /**
- * Toonflow官方中转平台 供应商适配
+ * Cổng Trung Chuyển Toonflow Chính Thức Nhà cung cấpAdapter 
  * @version 3.0
  */
 
 // ============================================================
-// 类型定义
+// Định nghĩa kiểu dữ liệu
 // ============================================================
 
 type VideoMode =
@@ -97,7 +97,7 @@ interface PollResult {
 }
 
 // ============================================================
-// 全局声明
+// Khai báo toàn cục
 // ============================================================
 
 declare const axios: any;
@@ -128,25 +128,25 @@ declare const exports: {
 };
 
 // ============================================================
-// 供应商配置
+// Nhà cung cấpCấu hình
 // ============================================================
 
 const vendor: VendorConfig = {
   id: "toonflow",
   version: "3.2",
   author: "Toonflow",
-  name: "Toonflow官方中转平台",
+  name: "Cổng Trung Chuyển Toonflow Chính Thức",
   description:
-    "## Toonflow官方中转平台\n\nToonflow官方中转平台，提供**文本、图像、视频、音频**等多模态生成能力的中转服务，支持接入多个大模型供应商，方便用户统一管理和调用不同供应商的生成能力。\n\n🔗 [前往中转平台](https://api.toonflow.net/)\n\n如果这个项目对你有帮助，可以考虑支持一下我们的开发工作 ☕",
+    "## Cổng Trung Chuyển Toonflow Chính Thức\n\nCổng Trung Chuyển Toonflow Chính Thức，nhắc nhà **văn bản  、hình ảnh、Video、Âm thanh**nhiều mô thái khả năng tạo  của giữa chuyển phục vụ ，hỗ trợtiếp vào nhiều mục lớn Mô hìnhNhà cung cấp，thuận tiện cho Người dùngthống nhất quản lý  và gọi hàm không cùng Nhà cung cấp của khả năng tạo 。\n\n🔗 [Truy cập Cổng Trung Chuyển](https://api.toonflow.net/)\n\nNếunàymục Dự ánhữu ích với bạn ，ủng hộ công sức phát triển của đội ngũ chúng tôi  ☕",
   icon: "",
-  inputs: [{ key: "apiKey", label: "API密钥", type: "password", required: true }],
+  inputs: [{ key: "apiKey", label: "Khóa API (API Key)", type: "password", required: true }],
   inputValues: {
     apiKey: "",
     baseUrl: "https://api.toonflow.net/v1",
   },
   models: [
     {
-      name: "Seedance-2.0 (支持真人)",
+      name: "Seedance-2.0 (Hỗ trợ người thật)",
       modelName: "Seedance 2.0",
       type: "video",
       mode: ["text", "startFrameOptional", ["imageReference:9", "videoReference:3", "audioReference:3"]],
@@ -154,7 +154,7 @@ const vendor: VendorConfig = {
       durationResolutionMap: [{ duration: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], resolution: ["480p", "720p"] }],
     },
     {
-      name: "Seedance 2.0 fast (支持真人)",
+      name: "Seedance 2.0 fast (Hỗ trợ người thật)",
       modelName: "Seedance 2.0 fast",
       type: "video",
       mode: ["text", "startFrameOptional", ["imageReference:9", "videoReference:3", "audioReference:3"]],
@@ -214,9 +214,9 @@ const vendor: VendorConfig = {
       mode: ["text", "singleImage", "multiReference"],
     },
     {
-      name: "全能图片G-2.0",
+      name: "Hình ảnh Đa năngG-2.0",
       type: "image",
-      modelName: "全能图片G-2.0",
+      modelName: "Hình ảnh Đa năngG-2.0",
       mode: ["text", "singleImage", "multiReference"],
     },
     // { name: "DeepSeek v4 pro", modelName: "deepseek-v4-pro", type: "text", think: false },
@@ -224,10 +224,10 @@ const vendor: VendorConfig = {
 };
 
 // ============================================================
-// 辅助工具
+// Công cụ bổ trợ
 // ============================================================
 
-// 从 markdown 内容中提取第一张图片
+// Trích xuất hình ảnh đầu tiên từ nội dung markdown
 function extractFirstImageFromMd(content: string) {
   const regex = /!\[([^\]]*)\]\((data:image\/[^;]+;base64,[A-Za-z0-9+/=]+|https?:\/\/[^\s)]+|\/\/[^\s)]+|[^\s)]+)\)/;
   const match = content.match(regex);
@@ -238,16 +238,16 @@ function extractFirstImageFromMd(content: string) {
 }
 
 // ============================================================
-// 适配器函数
+// Hàm Adapter
 // ============================================================
 
 const textRequest = (model: TextModel, think: boolean, thinkLevel: 0 | 1 | 2 | 3) => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu API Key");
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
   const lowerName = model.modelName.toLowerCase();
   if (lowerName.includes("deepseek")) {
-    logger("使用deepseek");
-    // DeepSeek 思考强度仅支持 high / max（low、medium 会被映射为 high，xhigh 会被映射为 max）
+    logger("sử dụng deepseek");
+    // Cường độ suy nghĩ DeepSeek hỗ trợ high / max (low, medium ánh xạ thành high, xhigh ánh xạ thành max)
     // thinkLevel: 0/1/2 → high, 3 → max
     const effortMap: Record<0 | 1 | 2 | 3, "high" | "max"> = {
       0: "high",
@@ -274,13 +274,13 @@ const textRequest = (model: TextModel, think: boolean, thinkLevel: 0 | 1 | 2 | 3
 };
 
 const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<string> => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu API Key");
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
   const baseUrl = vendor.inputValues.baseUrl;
   const lowerName = model.modelName.toLowerCase();
   const imageBase64List = (config.referenceList ?? []).map((r) => r.base64).filter(Boolean);
 
-  // Gemini / nano 系模型：走 chat/completions 接口，从返回的 markdown 中提取图片
+  // Gemini / nano dòng Mô hình：chạy  chat/completions cổng kết nối (endpoint) ，từ Trả về của  markdown giữa trích xuấtHình ảnh
   if (lowerName.includes("gemini") || lowerName.includes("nano")) {
     const imageConfigGoogle: Record<string, string> = {
       aspect_ratio: config.aspectRatio,
@@ -293,13 +293,13 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
         content: imageBase64List.map((b) => ({ type: "image_url", image_url: { url: b } })),
       });
     }
-    messages.push({ role: "user", content: config.prompt + "请直接输出图片" });
+    messages.push({ role: "user", content: config.prompt + "vui lòng trực tiếp xuất ra Hình ảnh" });
     const body = {
       model: model.modelName,
       messages,
       extra_body: { google: { image_config: imageConfigGoogle } },
     };
-    logger(`[imageRequest] 使用 gemini 适配器，模型: ${model.modelName}`);
+    logger(`[imageRequest] sử dụng  gemini Adapter thiết bị ，Mô hình: ${model.modelName}`);
     const response = await fetch(`${baseUrl}/chat/completions`, {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
@@ -307,16 +307,16 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
     });
     if (!response.ok) {
       const errorText = await response.text();
-      throw new Error(`请求失败，状态码: ${response.status}, 错误信息: ${errorText}`);
+      throw new Error(`Yêu cầu thất bại，trạng tháimã : ${response.status}, lỗithông tin: ${errorText}`);
     }
     const data = await response.json();
     const imageResult = extractFirstImageFromMd(data.choices[0].message.content);
-    if (!imageResult) throw new Error("未能从响应中提取图片");
+    if (!imageResult) throw new Error("chưa thể từ phản hồi giữa trích xuấtHình ảnh");
     if (imageResult.type === "base64") return imageResult.url;
     return await urlToBase64(imageResult.url);
   }
 
-  // 豆包 / seedream 系模型：走 images/generations 接口
+  // Doubao / seedream dòng Mô hình：chạy  images/generations cổng kết nối (endpoint) 
   if (lowerName.includes("doubao") || lowerName.includes("seedream")) {
     const effectiveSize = config.size === "1K" ? "2K" : config.size;
     const sizeMap: Record<string, Record<string, string>> = {
@@ -336,7 +336,7 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
       },
       ...(imageBase64List.length && { images: imageBase64List }),
     };
-    logger(`[imageRequest] 使用 doubao 适配器，模型: ${model.modelName}`);
+    logger(`[imageRequest] sử dụng  doubao Adapter thiết bị ，Mô hình: ${model.modelName}`);
     const response = await fetch(`${baseUrl}/image/generateImage`, {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
@@ -344,11 +344,11 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
     });
     if (!response.ok) {
       const errorText = await response.text();
-      throw new Error(`请求失败，状态码: ${response.status}, 错误信息: ${errorText}`);
+      throw new Error(`Yêu cầu thất bại，trạng tháimã : ${response.status}, lỗithông tin: ${errorText}`);
     }
     const data = await response.json();
     const taskId = data.data;
-    logger(`[imageRequest] 任务ID: ${taskId}`);
+    logger(`[imageRequest] ID tác vụ: ${taskId}`);
     const res = await pollTask(async () => {
       const queryResponse = await fetch(`${baseUrl}/image/getImageStatus`, {
         method: "POST",
@@ -359,7 +359,7 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
       });
       if (!queryResponse.ok) {
         const errorText = await queryResponse.text();
-        throw new Error(`轮询失败，状态码: ${queryResponse.status}, 错误信息: ${errorText}`);
+        throw new Error(`Truy vấn trạng thái thất bại，trạng tháimã : ${queryResponse.status}, lỗithông tin: ${errorText}`);
       }
       const queryData = await queryResponse.json();
       logger(queryData);
@@ -369,14 +369,14 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
         case "success":
           return { completed: true, data: queryData.data.data };
         case "failed":
-          return { completed: true, error: queryData?.data?.failReason ?? "视频生成失败" };
+          return { completed: true, error: queryData?.data?.failReason ?? "Videotạothất bại" };
         default:
           return { completed: false };
       }
     });
     return res.data!;
   }
-  if (lowerName.includes("gpt") || lowerName.includes("全能图片")) {
+  if (lowerName.includes("gpt") || lowerName.includes("Hình ảnh Đa năng")) {
     const normalizedSize = config.size === "1K" ? "1k" : config.size === "2K" ? "2k" : config.size === "4K" ? "4k" : config.size;
     const body: Record<string, any> = {
       model: model.modelName,
@@ -387,7 +387,7 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
         aspectRatio: config.aspectRatio,
       },
     };
-    logger(`[imageRequest] 使用 doubao 适配器，模型: ${model.modelName}`);
+    logger(`[imageRequest] sử dụng  doubao Adapter thiết bị ，Mô hình: ${model.modelName}`);
     const response = await fetch(`${baseUrl}/image/generateImage`, {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
@@ -395,11 +395,11 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
     });
     if (!response.ok) {
       const errorText = await response.text();
-      throw new Error(`请求失败，状态码: ${response.status}, 错误信息: ${errorText}`);
+      throw new Error(`Yêu cầu thất bại，trạng tháimã : ${response.status}, lỗithông tin: ${errorText}`);
     }
     const data = await response.json();
     const taskId = data.data;
-    logger(`[imageRequest] 任务ID: ${taskId}`);
+    logger(`[imageRequest] ID tác vụ: ${taskId}`);
     const res = await pollTask(async () => {
       const queryResponse = await fetch(`${baseUrl}/image/getImageStatus`, {
         method: "POST",
@@ -410,7 +410,7 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
       });
       if (!queryResponse.ok) {
         const errorText = await queryResponse.text();
-        throw new Error(`轮询失败，状态码: ${queryResponse.status}, 错误信息: ${errorText}`);
+        throw new Error(`Truy vấn trạng thái thất bại，trạng tháimã : ${queryResponse.status}, lỗithông tin: ${errorText}`);
       }
       const queryData = await queryResponse.json();
       logger(queryData);
@@ -420,7 +420,7 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
         case "success":
           return { completed: true, data: queryData.data.data };
         case "failed":
-          return { completed: true, error: queryData?.data?.failReason ?? "视频生成失败" };
+          return { completed: true, error: queryData?.data?.failReason ?? "Videotạothất bại" };
         default:
           return { completed: false };
       }
@@ -428,16 +428,16 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
     return res.data!;
   }
 
-  throw new Error(`不支持的图像模型: ${model.modelName}`);
+  throw new Error(`không hỗ trợ của Mô hình hình ảnh: ${model.modelName}`);
 };
 
 const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<string> => {
-  if (!vendor.inputValues.apiKey) throw new Error("缺少API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu API Key");
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
   const baseUrl = vendor.inputValues.baseUrl;
   const lowerName = model.modelName.toLowerCase();
 
-  // 当前激活的单一 VideoMode（取第一个非数组模式，或数组模式）
+  // hiện tạikích hoạt  của đơn 1  VideoMode（xuất Thứ một phi số nhóm mô thức ，hoặc số nhóm mô thức ）
   const activeMode = config.mode as string | string[];
   const imageRefs = (config.referenceList ?? []).filter((r) => r.type === "image").map((r) => r.base64);
   const videoRefs = (config.referenceList ?? []).filter((r) => r.type === "video").map((r) => r.base64);
@@ -447,11 +447,11 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       await zipImage(item, 3 * 1024 * 104);
     }
   }
-  // 构建模型专属 metadata
+  // cấu tạo Mô hìnhriêng biệt  metadata
   let metadata: Record<string, any> = {};
 
   if (lowerName.includes("wan")) {
-    // 万象系列
+    // vạntượng dòng hàng 
     if ((activeMode === "startEndRequired" || activeMode === "endFrameOptional" || activeMode === "startFrameOptional") && imageRefs.length >= 2) {
       if (imageRefs[0]) metadata.first_frame_url = imageRefs[0];
       if (imageRefs[1]) metadata.last_frame_url = imageRefs[1];
@@ -468,7 +468,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       images: imageRefs,
       metadata,
     };
-    logger(`[videoRequest] 提交万象视频任务，模型: ${model.modelName}`);
+    logger(`[videoRequest] nhắc tác vụ vạntượng Videotác vụ ，Mô hình: ${model.modelName}`);
     const response = await fetch(`${baseUrl}/video/generateVideo`, {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
@@ -476,11 +476,11 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
     });
     if (!response.ok) {
       const errorText = await response.text();
-      throw new Error(`请求失败，状态码: ${response.status}, 错误信息: ${errorText}`);
+      throw new Error(`Yêu cầu thất bại，trạng tháimã : ${response.status}, lỗithông tin: ${errorText}`);
     }
     const data = await response.json();
     const taskId = data.data;
-    logger(`[videoRequest] 万象任务ID: ${taskId}`);
+    logger(`[videoRequest] vạntượng ID tác vụ: ${taskId}`);
     const res = await pollTask(async () => {
       const queryResponse = await fetch(`${baseUrl}/video/getVideoStatus`, {
         method: "POST",
@@ -491,7 +491,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       });
       if (!queryResponse.ok) {
         const errorText = await queryResponse.text();
-        throw new Error(`轮询失败，状态码: ${queryResponse.status}, 错误信息: ${errorText}`);
+        throw new Error(`Truy vấn trạng thái thất bại，trạng tháimã : ${queryResponse.status}, lỗithông tin: ${errorText}`);
       }
       const queryData = await queryResponse.json();
       logger(queryData);
@@ -504,7 +504,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
           return { completed: true, data: queryData.data.data };
         case "FAILURE":
         case "failed":
-          return { completed: true, error: queryData?.data?.failReason ?? "视频生成失败" };
+          return { completed: true, error: queryData?.data?.failReason ?? "Videotạothất bại" };
         default:
           return { completed: false };
       }
@@ -514,7 +514,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
   }
 
   if (lowerName.includes("doubao") || lowerName.includes("seedance")) {
-    // 豆包/Seedance 系列
+    // Doubao/Seedance dòng hàng 
     metadata = {
       ...(typeof config.audio === "boolean" && { generate_audio: config.audio }),
       ratio: config.aspectRatio,
@@ -522,7 +522,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       resolution: config.resolution,
     };
     if (Array.isArray(activeMode)) {
-      // 多参考模式
+      // nhiều tham chiếumô thức 
       imageRefs.forEach((item) => {
         metadata.references.push({
           role: "reference_image",
@@ -572,7 +572,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       });
     }
   } else if (lowerName.includes("vidu")) {
-    // Vidu 系列
+    // Vidu dòng hàng 
     metadata = {
       aspect_ratio: config.aspectRatio,
       audio: config.audio ?? false,
@@ -588,14 +588,14 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       image_list: [],
     };
 
-    // 图片有效性检查函数
+    // Hình ảnhhợp lệkiểm tra hàm 
     const isValidImage = (imageUrl: any) => {
       return imageUrl && typeof imageUrl === "string" && imageUrl.trim().length > 0;
     };
 
     if (activeMode === "singleImage") {
       if (lowerName.includes("omni") || lowerName.includes("o1")) {
-        // 只在图片有效时才添加
+        // chỉ ở Hình ảnhhợp lệthêm
         if (isValidImage(imageRefs[0])) {
           metadata.image_list = [{ image_url: imageRefs[0] }];
         }
@@ -636,7 +636,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
     };
   }
 
-  // 公共请求体（非万象通用路径）
+  // vui lòng cầu thể （phi vạntượng thông hàm đường dẫn）
   const publicBody: Record<string, any> = {
     model: model.modelName,
     ...(imageRefs.length && lowerName.includes("vidu") ? { images: imageRefs } : {}),
@@ -646,7 +646,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
     metadata,
   };
 
-  logger(`[videoRequest] 提交视频任务，模型: ${model.modelName}`);
+  logger(`[videoRequest] nhắc tác vụ Videotác vụ ，Mô hình: ${model.modelName}`);
   const response = await fetch(`${baseUrl}/video/generateVideo`, {
     method: "POST",
     headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
@@ -654,11 +654,11 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
   });
   if (!response.ok) {
     const errorText = await response.text();
-    throw new Error(`请求失败，状态码: ${response.status}, 错误信息: ${errorText}`);
+    throw new Error(`Yêu cầu thất bại，trạng tháimã : ${response.status}, lỗithông tin: ${errorText}`);
   }
   const data = await response.json();
   const taskId = data.data;
-  logger(`[videoRequest] 任务ID: ${taskId}`);
+  logger(`[videoRequest] ID tác vụ: ${taskId}`);
 
   const res = await pollTask(async () => {
     const queryResponse = await fetch(`${baseUrl}/video/getVideoStatus`, {
@@ -670,7 +670,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
     });
     if (!queryResponse.ok) {
       const errorText = await queryResponse.text();
-      throw new Error(`轮询失败，状态码: ${queryResponse.status}, 错误信息: ${errorText}`);
+      throw new Error(`Truy vấn trạng thái thất bại，trạng tháimã : ${queryResponse.status}, lỗithông tin: ${errorText}`);
     }
     const queryData = await queryResponse.json();
     logger(queryData);
@@ -682,7 +682,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
         return { completed: true, data: queryData.data.data };
       case "FAILURE":
       case "failed":
-        return { completed: true, error: queryData?.data?.failReason ?? "视频生成失败" };
+        return { completed: true, error: queryData?.data?.failReason ?? "Videotạothất bại" };
       default:
         return { completed: false };
     }
@@ -708,14 +708,14 @@ const checkForUpdates = async (): Promise<{ hasUpdate: boolean; latestVersion: s
   });
   if (!res.ok) {
     const errorReason = await res.text();
-    throw new Error(`检查更新失败，${errorReason}`);
+    throw new Error(`kiểm tra Cập nhậtthất bại，${errorReason}`);
   }
   const { data } = await res.json();
   if (data?.hasUpdate && data?.latestVersion) {
     return {
       hasUpdate: data?.hasUpdate ?? false,
       latestVersion: data?.latestVersion ?? null,
-      notice: data?.notice ? data?.notice : "作者有点懒，没有填写更新内容",
+      notice: data?.notice ? data?.notice : "Tác giảcó điểm ，chưa có Cập nhậtnội dung",
     };
   }
   return { hasUpdate: false, latestVersion: "", notice: "" };
@@ -729,7 +729,7 @@ const updateVendor = async (): Promise<string> => {
   });
   if (!response.ok) {
     const errorReason = await response.text();
-    throw new Error(`请求失败: ${response.status} ${errorReason}`);
+    throw new Error(`Yêu cầu thất bại: ${response.status} ${errorReason}`);
   }
   const { data } = await response.json();
   logger(data);
@@ -737,7 +737,7 @@ const updateVendor = async (): Promise<string> => {
 };
 
 // ============================================================
-// 导出
+// Export
 // ============================================================
 
 exports.vendor = vendor;

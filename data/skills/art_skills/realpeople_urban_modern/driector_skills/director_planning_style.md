@@ -1,88 +1,88 @@
 ---
 name: director_planning_style
-description: 都市写实风格约束 — 定义真人都市写实在色调体系、光影方案、质感方向、场景空间元素、乐器选择与环境音上的全局约束。适用于任何叙事类型。
+description: đều Phong cách — nối nghĩa thật ngườiđều ở vật gọi thể dòng 、Ánh sángphương 、phương 、Bối cảnhrỗng gian 、thiết bị chọn lựa âm trên  của toàn cục 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 都市风格约束 · 真人都市写实 · 技法参考
+# đều Phong cách · thật ngườiđều  · thức tham chiếu
 
 ---
 
-## 一、色调体系与画面基调
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
 
-- **色调基底** — 全片以米白（C1）、暖肤色（C2）、高级灰（C6）为基底色，整体色温偏暖（5200-5800K），饱和度中低（40-60%），呈现温暖明亮的都市生活感
-- **冷暖叙事对比** — 暖色（琥珀暖 C7、奶油粉 C5、金属银 C8）作为情感升温与关系确认的视觉信号，冷色用于压力、误会、疏离等段落。冷暖切换应与情绪弧线同步
-- **冷暖分配策略** — 日常与工作段落以中性/微冷为主，亲密与和解段落释放暖色；避免全程高暖导致情绪层次塌陷
-- **色盘先行原则** — 段落规划先绑定情绪场景（相遇/暧昧/约会/争执/和解等），再确定主色+辅色与光影方案，避免“剧情对了但情绪不对色”
-- **禁用色域** — 高饱和荧光色、强霓虹污染、过度赛博色彩与本风格不兼容
+- **vật gọi cơ sở ** — toàn （C1）、vật （C2）、cao cấp （C6）cơ sở vật ，chỉnh thể vật （5200-5800K）， và độ giữa thấp （40-60%），dẫn  của đều sinh hoạt 
+- **việc đúng tỷ ** — vật （ C7、 C5、biệt  C8）tác vụ tình liên dòng  của trực quantin số ，vật hàm với nén lực 、sẽ 、đoạn 。đổi hồi tình xúc đường cùng bước 
+- **phútnối ** — ngày thường tác vụ đoạn giữa /chính ，mật  và giải đoạn mở vật ；toàn trình cao dẫn tình xúc tầng lần 
+- **vật đĩa trước thi gốc ** — đoạn lập kế hoạchtrước ghép nốitình xúc Bối cảnh（//sẽ /thực / và giải ），nối chính vật +vật Ánh sángphương ，“kịch tình đúng nhưng tình xúc không đúng vật ”
+- **hàm vật vực ** — cao  và ánh vật 、、độ vật sách Phong cáchkhông dung 
 
 
 ---
 
-## 二、光影方案体系
+## 2、Ánh sángphương thể dòng 
 
-- **光影即叙事** — 6 套光影方案对应不同情绪段落，导演规划阶段应在段落层面确定光影基调方向，而非逐镜指定
-- **光源角度** — 正给镜头默认 30° 斜射（较柔和），侧给镜头根据场景与人物关系微调
+- **Ánh sángviệc ** — 6 Ánh sángphương đúng hồi không cùng tình xúc đoạn ，Kế hoạch đạo diễnđoạn hồi ở đoạn tầng mặt nối Ánh sángcơ sở gọi phương ，phi quay nối 
+- **ánh nguồn nhân độ ** — chính cho Ống kínhMặc định 30° （ và ），cho Ống kínhdựa theoBối cảnhngườiliên dòng gọi 
 
-| 光影方案 | 方案名 | 色调倾向 | 适用情绪 |
+| Ánh sángphương  | phương tên  | vật gọi  | hàm tình xúc  |
 |---|---|---|---|
-| A | 自然漫射 | 米白底 + 均匀柔和光 | 日常通勤、生活流叙事 |
-| B | 暖调侧光 | 奶油暖 + 局部暖光 | 升温互动、居家松弛 |
-| C | 顶光环境混合 | 中性灰 + 柔和冷白 | 职场节奏、理性沟通 |
-| D | 窗光点光源 | 琥珀暖主导 + 冷蓝背景 | 夜晚暧昧、亲密推进 |
-| E | 街头霓虹晕光 | 冷色背景 + 暖色点缀 | 都市夜景、浪漫游走 |
-| F | 阴天漫射冷光 | 灰蓝主调 + 暖色局部 | 过渡段、低潮段 |
+| A | tự  |  +  và ánh  | ngày thường thông 、sinh hoạt việc  |
+| B | gọi ánh  |  + cục bộ ánh  | động 、 |
+| C | ánh hợp  | giữa  +  và  | trường tiết 、lý thông  |
+| D | ánh điểm ánh nguồn  | chính dẫn  + bối  | Ban đêm、mật Đẩy tới (push in / dolly in) |
+| E | đầu ánh  | vật bối  + vật điểm tố  | đều bối 、chạy  |
+| F | ngàyánh  | chính gọi  + vật cục bộ  | đoạn 、thấp đoạn  |
 
-- **冷暖光分配** — 暖色光可全片使用但需分层控制；冲突/疏离段落降低暖光占比，避免情绪与光色冲突
-- **氛围方向映射** — 每场戏氛围方向应映射到上述光影方案（A-F）的某一方向，确保视觉一致性
+- **ánh phútnối ** — vật ánh toàn hàm nhưng cần phúttầng sát chép ；/đoạn thấp ánh tỷ ，tình xúc ánh vật 
+- **Không khíphương ** — trường Không khíphương hồi đến trên tả Ánh sángphương （A-F） của 1 phương ，lưu trực quan1 
 
-## 三、质感方向
+## 3、phương 
 
-- **超清纪实感** — 真人写实摄影核心：皮肤纹理可见、发丝根根分明、材质细节清晰可信
-- **强对比度 + 极致细节** — 作为画面质感锚点。不是低对比小清新，不是重滤镜氛围化，而是可拍可落地的影视纪实感
-- **材质真实** — 服化道需具备现实可信度：西装面料、玻璃反射、金属器件、木质家具、电子屏幕高光都应符合都市实拍逻辑
-- **皮肤质感** — 保留真实毛孔与细微瑕疵，控制磨皮强度，追求“真实但好看”
-- **写实不等于平淡** — 通过构图、景别、运动节奏放大情绪感染力，而非依赖夸张特效与过度后期
-
----
-
-## 四、都市场景空间元素
-
-都市世界观特有的场景元素及其视觉叙事功能：
-
-- **窗框/玻璃/门洞** — 天然框架式构图道具，制造空间分层与人物关系距离感
-- **街道/地铁/电梯/写字楼走廊** — 都市节奏载体，通勤与停顿的切换可直接映射角色心理状态
-- **咖啡厅/办公室/居家客厅** — 情绪容器：咖啡厅偏试探，办公室偏克制，居家偏安全与松弛
-- **天气与时段作为转场** — 日转夜、晴转雨、黄昏入夜可用于段落情绪缓冲，避免硬切
-- **转折点用视觉而非解释** — 优先使用画面手段（景别突变、视线错位、空间阻隔）承接情绪转折，减少对白解释负担
+- **vượt sạch ** — thật ngườisáng ：lý thấy 、phát phútdẫn 、tiết sạch tin 
+- **đúng tỷ độ  + tiết ** — tác vụ vẽ mặt điểm 。không là thấp đúng tỷ nhỏ sạch mới ，không là trùng lọc quay Không khíhóa ，là địa  của sáng video 
+- **thật ** — phục hóa đạo cần cụ tin độ ：mặt 、phụ 、biệt thiết bị tệp 、cụ 、cao ánh đều hồi hợp đều logic
+- **** — lưu lưu thật ，sát chép độ ，cầu “thật nhưng tốt xem ”
+- **không với ** — thông quacấu ảnh 、Cỡ cảnh、vận động tiết mở lớn tình xúc lực ，phi phụ thuộc bức hiệu độ sau kỳ 
 
 ---
 
-## 五、都市乐器与环境音
+## 4、đều Bối cảnhrỗng gian 
 
-都市世界观下的声音元素约束：
+đều giới có  của Bối cảnhtrực quanviệc công thể ：
 
-### 乐器选择
+- **//cổng ** — ngàythức cấu ảnh Đạo cụ，chép tạo rỗng gian phúttầng ngườiliên dòng 
+- **đạo /địa //chữ chạy ** — đều tiết xuống thể ，thông  của đổi trực tiếp Nhân vậtlý trạng thái
+- **//** — tình xúc dung thiết bị ：tra ，chép ，an toàn 
+- **ngàyđoạn tác vụ chuyển trường ** — ngày chuyển 、chuyển 、Hoàng hônvào hàm với đoạn tình xúc ，
+- **Điểm bước ngoặthàm trực quanphi giải ** — ưu tiên sử dụng vẽ mặt tay đoạn （Cỡ cảnh、video đường sai vị trí 、rỗng gian cách ）tiếp tình xúc chuyển ，ít đúng giải 
 
-- **钢琴** — 日常、温馨、回忆段落核心乐器，最能体现都市生活质感
-- **吉他** — 轻松、街头、慢节奏浪漫段落的有效主导
-- **弦乐** — 情绪抬升与情感爆发段落的主力铺底
-- **Lo-fi/轻电子** — 年轻化、城市夜生活、节奏切换段落的风格增强器
-- **环境音优先级高** — 都市剧中真实环境声是沉浸感关键，配乐不应压过对白
+---
 
-### 乐器组合策略
+## 5、đều thiết bị âm 
 
-| 情绪阶段 | 乐器组合 |
+đều giới dưới  của thanh âm ：
+
+### thiết bị chọn lựa 
+
+- **** — ngày thường 、、trả đoạn thiết bị ，nhất thể thể đều sinh hoạt 
+- **anh ấy** — 、đầu 、chậm tiết đoạn  của hợp lệchính dẫn 
+- **** — tình xúc tình phát đoạn  của chính lực 
+- **Lo-fi/** — nămhóa 、sinh hoạt 、tiết đổi đoạn  của Phong cáchthiết bị 
+- **âm trước cấp cao ** — đều kịch giữa thật thanh là liên ，nối không hồi nén đúng 
+
+### thiết bị nhóm hợp 
+
+| tình xúc đoạn  | thiết bị nhóm hợp  |
 |---|---|
-| 平稳/开场/收尾 | 钢琴独奏 或 吉他独奏 |
-| 日常推进 | 钢琴 + 轻打击 |
-| 暧昧升温/浪漫 | 钢琴 + 弦乐 |
-| 情绪爆发/冲突 | 弦乐主导 + 低频铺底 |
-| 夜景/转场 | Lo-fi/轻电子 + 环境声 |
+| /mở trường /nhận đuôi  |  hoặc  anh ấy |
+| ngày thường Đẩy tới (push in / dolly in) |  + mở  |
+| / |  +  |
+| tình xúc phát / | chính dẫn  + thấp tần  |
+| bối /chuyển trường  | Lo-fi/ + thanh  |
 
-### 都市环境音
+### đều âm 
 
-- **典型环境音层次** — 车流声 / 地铁进站提示 / 电梯提示音 / 咖啡机声 / 键盘敲击 / 雨声 / 空调底噪 / 城市远景噪声
-- **每场戏标注 1-2 个核心环境音**，帮助后续音效设计。环境音层次越准确，都市写实质感越强
+- **kiểu âm tầng lần ** — thanh  / địa tiến trạm nhắc nhở  / nhắc nhở âm  / máy thanh  / đĩa  / thanh  / rỗng gọi  / Viễn cảnh (extreme wide shot)thanh 
+- **trường biểu tâm  1-2 mục âm **，trợ giúp sau Âm hiệuthiết tính 。âm tầng lần ，đều 
 
 ---

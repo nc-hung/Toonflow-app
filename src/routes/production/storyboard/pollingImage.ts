@@ -12,7 +12,7 @@ export default router.post(
   }),
   async (req, res) => {
     const { ids } = req.body;
-    const data = await u.db("o_storyboard").whereIn("id", ids).whereNot("state", "生成中").select("id", "state", "reason", "filePath", "prompt");
+    const data = await u.db("o_storyboard").whereIn("id", ids).whereNot("state", "Đang tạo").select("id", "state", "reason", "filePath", "prompt");
     const result = await Promise.all(
       data.map(async (item: any) => ({
         ...item,

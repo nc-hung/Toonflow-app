@@ -13,7 +13,7 @@ interface TextResData extends BaseConfig {
   manufacturer: "deepseek" | "openAi" | "doubao" | "other";
 }
 
-// 图像模型配置接口
+// Mô hình hình ảnhCấu hìnhcổng kết nối (endpoint) 
 interface ImageResData extends BaseConfig {
   manufacturer: "gemini" | "volcengine" | "kling" | "vidu" | "runninghub" | "apimart" | "other";
 }
@@ -30,9 +30,9 @@ type ResDataMap = {
 };
 
 const errorMessages: Record<AIType, string> = {
-  text: "文本模型配置不存在",
-  image: "图像模型配置不存在",
-  video: "视频模型配置不存在",
+  text: "Mô hình văn bản Cấu hìnhkhông tồn tại",
+  image: "Mô hình hình ảnhCấu hìnhkhông tồn tại",
+  video: "Mô hình videoCấu hìnhkhông tồn tại",
 };
 
 const needBaseURL: AIType[] = ["text", "video", "image"];

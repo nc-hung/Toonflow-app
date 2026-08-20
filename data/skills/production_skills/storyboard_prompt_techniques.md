@@ -1,184 +1,184 @@
 ---
 name: storyboard_prompt_techniques
 description: >-
-  通用分镜提示词技法参考。
-  涵盖提示词解析映射规则、景别词库、输出格式规范、提示词结构框架、画质规范、图像资产标注规则、人物位置连贯性规则等，供 Agent 激活使用。
+  thông hàm Phân cảnhPromptthức tham chiếu。
+  Promptgiải tích 、Cỡ cảnhtừ kho 、Định dạng đầu ra、Promptkết cấu 、vẽ 、hình ảnhTài nguyênbiểu tâm 、ngườivị trí trí ，nhà  Agent kích hoạt hàm 。
 ---
-# 分镜提示词 · 通用基础技法
+# Phân cảnhPrompt · thông hàm cơ sở thức 
 
-> 以下为分镜提示词生成的**通用基础规范**，适用于所有视觉风格。风格锚定词、情绪映射、光影词库、场景质感、美学禁止项等**风格相关内容**由风格专属技法（`director_storyboard`）定义。
-
----
-
-## 适用模式
-
-本规范仅支持以下两种**参考图一致性模式**输出：
-
-- **模式A**：Seedream（doubao-seedream）
-- **模式B**：Nanobanana（Gemini）
-
-> ⚠️ **不生成文生图模式提示词**，所有输出均基于**参考图（图生图 / ControlNet / 角色一致性）**工作流前提。
+> dưới Phân cảnhPrompttạo của **thông hàm cơ sở **，hàm với tất cảtrực quanPhong cách。Phong cáchnối từ 、tình xúc 、Ánh sángtừ kho 、Bối cảnh、đẹp Nghiêm cấm**Phong cáchliên nội dung**do Phong cáchriêng biệt thức （`director_storyboard`）nối nghĩa 。
 
 ---
 
-## 分镜表内容忠实性原则（最高优先级）
+## hàm mô thức 
 
-提示词生成是**格式转换**，不是**创意写作**。分镜表是提示词的**唯一内容来源**，所有画面信息必须忠实于分镜表对应行，仅在表达格式和措辞上适配图像生成模型的要求。
+sách chỉ hỗ trợdưới 2loại **tham chiếuảnh 1 mô thức **tải ra ：
 
-### 核心原则：画面描述是主干，不是素材
+- **mô thức A**：Seedream（doubao-seedream）
+- **mô thức B**：Nanobanana（Gemini）
 
-分镜表「画面描述」字段承载了镜头的全部视觉信息，是提示词正文的**主干内容**。风格词、画质词、光影词等修饰类词汇是**辅助装饰**，服务于画面描述。当二者在 token 预算上争夺空间时，**画面描述优先**，宁可缩减风格词也不可删减画面描述中的视觉元素。
+> ⚠️ **không tạoText-to-Imagemô thức Prompt**，tất cảtải ra cơ sở với **tham chiếuảnh （Image-to-Image / ControlNet / Nhân vật1 ）**Quy trình làm việctrước nhắc 。
 
-### 铁律
+---
 
-1. **画面描述完整保留**：分镜表「画面描述」字段中的所有视觉元素（主体、物件、空间关系、动态细节、镜头关系）必须在提示词正文中完整出现，**不得遗漏任何一项**
-2. **语义等价转换**：将分镜表字段转换为提示词时，只改变表达形式（中↔英、散文↔关键词、叙事语言↔视觉描述），**不改变语义**。例：分镜表写"建筑空间柱影深沉" → 提示词必须体现该空间柱影暗调，不可替换为"华丽建筑"等不同语义
-3. **禁止创意发散**：不添加分镜表未提及的装饰性视觉元素（如分镜表未写花瓣飘落，提示词不可自行添加）；不重新诠释场景氛围（分镜表写"冷傲轻蔑"不可改为"忧伤落寞"）
-4. **风格词从属于内容**：风格锚定词、画质锁定词、场景质感词等风格类词汇是**辅助修饰**，服务于分镜表已定义的画面内容，不得反客为主——当风格词与分镜表具体描述冲突时，以分镜表为准
-5. **逐字段回溯校验**：生成每条提示词后，须逐字段比对分镜表对应行，确认以下映射均已准确体现：
+## Bảng phân cảnhnội dunggốc （tối đa trước cấp ）
 
-| 分镜表字段 | 提示词中须体现 | 校验要点 |
+Prompttạolà **khung thức chuyển đổi **，không là **sáng ý tác vụ **。Bảng phân cảnhlà Prompt của **1 nội dungnguồn **，tất cảvẽ mặt thông tinBắt buộcvới Bảng phân cảnhđúng hồi thi ，chỉ ở bảng khung thức  và trên nối hình ảnhtạomô hình của Yêu cầu。
+
+### Nguyên Tắc Cốt Lõi：Mô tả hình ảnhlà chính ，không là 
+
+Bảng phân cảnh「Mô tả hình ảnh」chữ đoạn xuống Ống kính của toàn bộtrực quanthông tin，là Promptchính tài  của **chính nội dung**。Phong cáchtừ 、vẽ từ 、Ánh sángtừ loại từ là **giúp **，phục vụ với Mô tả hình ảnh。khi 2giả ở  token toán trên rỗng gian ，**Mô tả hình ảnhtrước **，nhỏ Phong cáchtừ cũng không xóa Mô tả hình ảnhgiữa  của trực quan。
+
+### 
+
+1. **Mô tả hình ảnhchỉnh lưu lưu **：Bảng phân cảnh「Mô tả hình ảnh」chữ đoạn giữa  của tất cảtrực quan（chính thể 、tệp 、rỗng gian liên dòng 、động thái tiết 、Ống kínhliên dòng ）Bắt buộcở Promptchính tài giữa chỉnh ra ，**không được 1 **
+2. **ngữ nghĩa chuyển đổi **：Bảng phân cảnhchữ đoạn chuyển đổi Prompt，chỉ sửa bảng dạng thức （giữa ↔、tài ↔liên từ 、việc ngữ ↔trực quanMô tả），**không sửa ngữ nghĩa **。lệ ：Bảng phân cảnh"tạo rỗng gian sáng " → PromptBắt buộcthể rỗng gian sáng gọi ，không đổi "tạo "không cùng ngữ nghĩa 
+3. **Nghiêm cấmsáng ý phát **：không thêmBảng phân cảnhchưa nhắc  của trực quan（như Bảng phân cảnhchưa ，Promptkhông tự thi thêm）；không trùng mới Bối cảnhKhông khí（Bảng phân cảnh""không sửa ""）
+4. **Phong cáchtừ từ biệt với nội dung**：Phong cáchnối từ 、vẽ nối từ 、Bối cảnhtừ Phong cáchloại từ là **giúp **，phục vụ với Bảng phân cảnhđã nối nghĩa  của vẽ mặt nội dung，không được phụ chính ——khi Phong cáchtừ Bảng phân cảnhcụ thể Mô tả，Bảng phân cảnh
+5. **chữ đoạn trả đối chiếu **：tạomục Promptsau ，buộc chữ đoạn tỷ đúng Bảng phân cảnhđúng hồi thi ，dưới đã thể ：
+
+| Bảng phân cảnhchữ đoạn  | Promptgiữa buộc thể  | đối chiếu cần điểm  |
 |-----------|---------------|--------|
-| 画面描述 | 提示词正文【画面】段的核心内容 | 所有视觉主体、空间关系、关键细节是否**零遗漏**保留 |
-| 场景 | 提示词正文【画面】段的环境锚定 | 场景类型是否一致 |
-| 景别 | 景别构图词 | 景别是否匹配（复合景别取首帧起始端） |
-| 角色动作 | 主体体态与朝向 | 动作语义是否一致、朝向是否显式标注 |
-| 情绪 | 情绪面容词 | 情绪基调是否一致 |
-| 光影氛围 | 提示词正文【光影】段 | 光源方向、色调倾向、明暗关系是否完整一致 |
+| Mô tả hình ảnh | Promptchính tài 【vẽ mặt 】đoạn  của nội dung | tất cảtrực quanchính thể 、rỗng gian liên dòng 、liên tiết là không **0**lưu lưu  |
+| Bối cảnh | Promptchính tài 【vẽ mặt 】đoạn  của nối  | Bối cảnhLoạilà không 1  |
+| Cỡ cảnh | Cỡ cảnhcấu ảnh từ  | Cỡ cảnhlà không khớp（lời hợp Cỡ cảnhxuất ban đầu đầu ） |
+| Hành động nhân vật | chính thể thể thái  | động tác vụ ngữ nghĩa là không 1 、là không thức biểu tâm  |
+| tình xúc  | tình xúc mặt dung từ  | tình xúc cơ sở gọi là không 1  |
+| Ánh sáng & Không khí | Promptchính tài 【Ánh sáng】đoạn  | ánh nguồn phương 、vật gọi 、dẫn liên dòng là không chỉnh 1  |
 
-> ⚠️ **校验不通过 = 提示词无效**，必须修正后再输出。最常见的失败模式：画面描述中的具体元素被风格模板词覆盖遗漏。
+> ⚠️ **đối chiếu không thông qua = Promptkhông hiệu **，Bắt buộcchính sau tải ra 。nhất thường thấy  của thất bạimô thức ：Mô tả hình ảnhgiữa  của cụ thể Phong cáchmô từ 。
 
 ---
 
-## 首帧识别原则
+## trưng khác gốc 
 
-分镜图是**视频的首帧参考**。模型应根据分镜表「画面描述」的语义自行判断该帧的视觉状态，不机械套用"预备态"模板。
+Hình ảnh phân cảnhlà **video của tham chiếu**。mô hìnhhồi dựa theoBảng phân cảnh「Mô tả hình ảnh」 của ngữ nghĩa tự thi  của trực quantrạng thái，không máy hàm "thái "mô 。
 
-**判断逻辑**：
+**logic**：
 
-| 画面描述类型 | 处理方式 | 示例 |
+| Mô tả hình ảnhLoại | xử lý cách thức | Ví dụ |
 |-------------|---------|------|
-| **静态瞬间**（停步仰望、站立凝视、侧头冷笑、伏案书写） | **直接按描述生成**，不做动作改写 | "角色停步仰望某物" → 提示词直接写"停步仰望某物" |
-| **连续动作过程**（走过长廊、挥剑斩下、转身离去） | 取动作**起始瞬间的凝固态**（非抽象预备态） | "挥剑斩下" → "剑已举至头顶，剑尖朝下，即将劈下的瞬间" |
-| **镜头运动**（缓推至中景、拉远至全景、淡入） | 取**起始端景别**作为首帧构图 | "远景→中景" → 首帧取"大远景" |
-| **过渡效果**（黑场淡入、叠化转场） | 保留描述但标注为开场状态 | "开场黑场淡入" → "画面自黑场浮现，开场大远景..." |
+| **thái gian **（bước 、trạm lập video 、đầu 、） | **tính trực tiếp theo Mô tảtạo**，không động tác vụ sửa  | "Nhân vậtbước " → Prompttrực tiếp "bước " |
+| **động tác vụ trình **（chạy dài 、dưới 、chuyển đi ） | xuất động tác vụ **ban đầu gian  của thái **（phi tượng thái ） | "dưới " → "đã đến đầu ，dưới ，dưới  của gian " |
+| **Ống kínhvận động **（khuyến đến Trung cảnh (medium shot)、Kéo lùi (pull back / dolly out)đến Toàn cảnh (wide shot)、vào ） | xuất **ban đầu đầu Cỡ cảnh**tác vụ cấu ảnh  | "Viễn cảnh (extreme wide shot)→Trung cảnh (medium shot)" → xuất "lớn Viễn cảnh (extreme wide shot)" |
+| **hiệu quả **（trường vào 、hóa chuyển trường ） | lưu lưu Mô tảnhưng biểu tâm mở trường trạng thái | "mở trường trường vào " → "vẽ mặt tự trường ，mở trường lớn Viễn cảnh (extreme wide shot)..." |
 
-**判断依据**：画面描述的主动词时态和叙事密度。
+**phụ liệu **：Mô tả hình ảnh của chính động từ thái  và việc mật độ 。
 
-> ❌ **错误做法**：把所有动作都改写成"即将发生"的预备态，导致动作语义被稀释
-> - 分镜表写"停步仰望" → 错误改写为"即将抬起头望向前方"（动作被削弱）
-> - 分镜表写"冷笑居高临下" → 错误改写为"嘴角即将扬起"（情绪被削弱）
+> ❌ **lỗithức **：đem tất cảđộng tác vụ đều sửa tạo "phát sinh " của thái ，dẫn động tác vụ ngữ nghĩa 
+> - Bảng phân cảnh"bước " → lỗisửa "đầu trước phương "（động tác vụ ）
+> - Bảng phân cảnh"cao dưới " → lỗisửa "nhân "（tình xúc ）
 >
-> ✅ **正确做法**：忠实分镜表的动作描述，仅在该动作确为连续过程时才取起始端
+> ✅ **chính thức **：Bảng phân cảnh của động tác vụ Mô tả，chỉ ở động tác vụ trình xuất ban đầu đầu 
 
 ---
 
-## 解析映射规则
+## giải tích 
 
-| 分镜字段 | 提示词对应处理 |
+| Phân cảnhchữ đoạn  | Promptđúng hồi xử lý  |
 |----------|----------------|
-| 画面描述 | **主干内容**：提示词正文【画面】段的核心信息来源。须完整保留画面描述中的**所有**可见主体、空间层次、关键细节、镜头关系，仅将叙事语言转换为视觉描述格式。严禁删减关键元素、替换为不同语义或自行添加画面描述中不存在的视觉元素 |
-| 场景 | 融入【画面】段作为环境锚定，叠加风格专属技法的场景质感约束词 |
-| 景别 | 镜头构图词（见下方景别词库），须与分镜表「景别」字段匹配。复合景别（如"远景→中景"）取**首帧起始端** |
-| 运镜 | 仅作分镜制作信息，不进入提示词，不输出运镜备注 |
-| 角色动作 | 基于分镜表「角色动作」字段，按"首帧识别原则"处理。必须保留动作语义内涵与 `｜朝向：` 显式标注 |
-| 情绪 | 基于分镜表「情绪」字段，从风格专属技法的情绪映射表中选取匹配的面容/眼神词。情绪基调须与分镜表一致 |
-| 光影氛围 | 基于分镜表「光影氛围」字段，**独立成段**写入【光影】段，完整保留光源方向、色调倾向、明暗关系、质感细节 |
-| 台词 | 不进入提示词，不输出 |
-| 音效 | 不进入提示词，不输出 |
-| 关联资产名称/ID | 仅用于内部参考图绑定，按"图像资产标注规则"处理 |
+| Mô tả hình ảnh | **chính nội dung**：Promptchính tài 【vẽ mặt 】đoạn  của thông tinnguồn 。buộc chỉnh lưu lưu Mô tả hình ảnhgiữa  của **tất cả**thấy chính thể 、rỗng gian tầng lần 、liên tiết 、Ống kínhliên dòng ，chỉ việc ngữ chuyển đổi trực quanMô tảkhung thức 。xóa liên 、đổi không cùng ngữ nghĩa hoặc tự thi thêmMô tả hình ảnhgiữa không lưu ở  của trực quan |
+| Bối cảnh | vào 【vẽ mặt 】đoạn tác vụ nối ，cộng Phong cáchriêng biệt thức  của Bối cảnhtừ  |
+| Cỡ cảnh | Ống kínhcấu ảnh từ （thấy dưới phương Cỡ cảnhtừ kho ），buộc Bảng phân cảnh「Cỡ cảnh」chữ đoạn khớp。lời hợp Cỡ cảnh（như "Viễn cảnh (extreme wide shot)→Trung cảnh (medium shot)"）xuất **ban đầu đầu ** |
+| Góc quay | chỉ tác vụ Phân cảnhchép tác vụ thông tin，không tiến vào Prompt，không tải ra Góc quaytâm  |
+| Hành động nhân vật | cơ sở với Bảng phân cảnh「Hành động nhân vật」chữ đoạn ，theo "trưng khác gốc "xử lý 。Bắt buộclưu lưu động tác vụ ngữ nghĩa trong  `｜：` thức biểu tâm  |
+| tình xúc  | cơ sở với Bảng phân cảnh「tình xúc 」chữ đoạn ，từ Phong cáchriêng biệt thức  của tình xúc bảng giữa chọn xuất khớp của mặt dung /từ 。tình xúc cơ sở gọi buộc Bảng phân cảnh1  |
+| Ánh sáng & Không khí | cơ sở với Bảng phân cảnh「Ánh sáng & Không khí」chữ đoạn ，**lập tạo đoạn **vào 【Ánh sáng】đoạn ，chỉnh lưu lưu ánh nguồn phương 、vật gọi 、dẫn liên dòng 、tiết  |
+| Lời thoại | không tiến vào Prompt，không tải ra  |
+| Âm hiệu | không tiến vào Prompt，không tải ra  |
+| Tên tài nguyên liên kết/ID | chỉ hàm với trong bộ tham chiếuảnh ghép nối，theo "hình ảnhTài nguyênbiểu tâm "xử lý  |
 
 ---
 
-## 景别词库（通用）
+## Cỡ cảnhtừ kho （thông hàm ）
 
-| 景别输入 | 模式B（Nanobanana）英文镜头词 | 模式A（Seedream）中文画面词 |
+| Cỡ cảnhtải vào  | mô thức B（Nanobanana）tài Ống kínhtừ  | mô thức A（Seedream）giữa tài vẽ mặt từ  |
 |----------|-------------------------------|---------------------------|
-| 大远景/大全景 | `extreme wide shot, establishing shot` | 大远景构图，环境全貌，人物渺小于场景 |
-| 远景/全景 | `wide shot, full shot, full body` | 全身入镜，远景构图，人景比例协调 |
-| 中景 | `medium shot, cowboy shot, knee shot` | 中景构图，人物膝盖以上入镜 |
-| 近景 | `medium close-up, upper body` | 近景构图，上半身入镜，背景虚化 |
-| 半身 | `half body shot, bust shot` | 半身构图，腰部以上入镜，浅景深 |
-| 特写 | `close-up, face focus` | 特写构图，面部或细节局部放大，背景深度虚化 |
-| 大特写 | `extreme close-up, macro detail` | 大特写，极度局部细节，虚化背景 |
-| 过肩镜 | `over the shoulder shot, two shot` | 过肩构图，前景人物后背虚化，远景人物清晰 |
+| lớn Viễn cảnh (extreme wide shot)/lớn Toàn cảnh (wide shot) | `extreme wide shot, establishing shot` | lớn Viễn cảnh (extreme wide shot)cấu ảnh ，toàn ，ngườinhỏ với Bối cảnh |
+| Viễn cảnh (extreme wide shot)/Toàn cảnh (wide shot) | `wide shot, full shot, full body` | toàn vào quay ，Viễn cảnh (extreme wide shot)cấu ảnh ，ngườibối Tỷ lệgiao gọi  |
+| Trung cảnh (medium shot) | `medium shot, cowboy shot, knee shot` | Trung cảnh (medium shot)cấu ảnh ，ngườitrên vào quay  |
+| Cận cảnh (close-up) | `medium close-up, upper body` | Cận cảnh (close-up)cấu ảnh ，trên nửa vào quay ，bối hóa  |
+| nửa  | `half body shot, bust shot` | nửa cấu ảnh ，bộ trên vào quay ，bối  |
+| Đặc tả (close-up) | `close-up, face focus` | Đặc tả (close-up)cấu ảnh ，mặt bộ hoặc tiết cục bộ mở lớn ，bối độ hóa  |
+| lớn Đặc tả (close-up) | `extreme close-up, macro detail` | lớn Đặc tả (close-up)，độ cục bộ tiết ，hóa bối  |
+| quay  | `over the shoulder shot, two shot` | cấu ảnh ，trước bối ngườisau hóa ，Viễn cảnh (extreme wide shot)ngườisạch  |
 
-**复合景别处理**：分镜表若写"远景→中景""中景→特写"等镜头运动，分镜图作为首帧参考，**取箭头左侧的起始景别**。
+**lời hợp Cỡ cảnhxử lý **：Bảng phân cảnh"Viễn cảnh (extreme wide shot)→Trung cảnh (medium shot)""Trung cảnh (medium shot)→Đặc tả (close-up)"Ống kínhvận động ，Hình ảnh phân cảnhtác vụ tham chiếu，**xuất đầu trái  của ban đầu Cỡ cảnh**。
 
 ---
 
-## 输出格式规范
+## Định Dạng Đầu Ra
 
-每条分镜**只输出一种模式的提示词正文**（二选一），不允许同条分镜同时输出模式A与模式B。
+mục Phân cảnh**chỉ tải ra 1 loại mô thức  của Promptchính tài **（2chọn 1 ），không cùng mục Phân cảnhcùng tải ra mô thức Amô thức B。
 
-**模式选择规则**：
+**mô thức chọn lựa **：
 
-| 条件 | 选择模式 |
+| mục tệp  | chọn lựa mô thức  |
 |------|----------|
-| 目标模型为 Seedream / 豆包系列 | 模式A（中文 Prompt） |
-| 目标模型为 Nanobanana / Gemini 系列 | 模式B（英文 JSON Prompt） |
-| 用户未指定模型 | 默认模式A，或询问用户确认 |
-| 批量生成 | 全程保持同一模式，不可中途切换 |
+| mục biểu mô hình Seedream / Doubaodòng hàng  | mô thức A（giữa tài  Prompt） |
+| mục biểu mô hình Nanobanana / Gemini dòng hàng  | mô thức B（tài  JSON Prompt） |
+| hàm dùng chưa nối mô hình | Mặc địnhmô thức A，hoặc vấn hỏi hàm dùng  |
+| lượng tạo | toàn trình lưu giữ cùng 1 mô thức ，không giữa đổi  |
 
-**输出内容规则**：
-- 选择模式A时：仅输出 `[Prompt]` 正文（无负向词，Seedream 不支持）
-- 选择模式B时：仅输出 `[JSON Prompt]` 正文（含 `"negative"` 字段）
-- 除提示词正文外，以下内容默认不输出：分镜标题、参考图绑定说明、台词备注、音效备注、约束检查、资产汇总
+**tải ra nội dung**：
+- chọn lựa mô thức A：chỉ tải ra  `[Prompt]` chính tài （không từ ，Seedream không hỗ trợ）
+- chọn lựa mô thức B：chỉ tải ra  `[JSON Prompt]` chính tài （ `"negative"` chữ đoạn ）
+- bỏ Promptchính tài ngoài ，dưới nội dungMặc địnhkhông tải ra ：Phân cảnhbiểu đề 、tham chiếuảnh ghép nốiGiải thích、Lời thoạitâm 、Âm hiệutâm 、kiểm tra 、Tài nguyêntổng 
 
 ---
 
-## 提示词结构框架（画面描述优先）
+## Promptkết cấu （Mô tả hình ảnhtrước ）
 
-### 结构总则
+### kết cấu tổng 
 
-提示词正文采用**三段式结构**，确保画面描述占据主干地位：
-
-```
-【画面】→ 承载分镜表「画面描述」+「场景」+「景别」+「角色动作」+「情绪」的完整视觉内容（主干，信息密度最高）
-【光影】→ 承载分镜表「光影氛围」的光源、色调、明暗关系（独立成段，避免被风格词挤压）
-【风格】→ 风格锚定词 + 画质锁定词 + 禁止项声明（辅助修饰，简短）
-```
-
-> **篇幅分配原则**：【画面】段为信息密度最高、篇幅最长的段落，须完整承载分镜表「画面描述」的所有视觉元素；【光影】段次之，独立承载光影氛围；【风格】段最短，仅放必要的风格锚定词与画质锁定词。三段顺序不可颠倒、长度不可倒置——若风格词篇幅超过画面段，即为失败产出。
-
-### 模式A：Seedream（API `reference_images`）
-
-机制：参考图通过 API 参数 `reference_images` 传入，prompt 内使用 `@图N` 直接绑定参考图。
-
-Prompt 结构：
+Promptchính tài hàm **3đoạn thức kết cấu **，lưu Mô tả hình ảnhliệu chính địa vị trí ：
 
 ```
-@图1 为{资产名称}{资产类型} @图2 为{资产名称}{资产类型} ... ,
-
-【画面】{场景锚定}，{景别构图词}，{画面描述完整转写——保留所有视觉元素、空间关系、主体动作、朝向、情绪}。
-
-【光影】{光源方向}，{色调倾向}，{明暗关系}，{质感细节}。
-
-【风格】{风格锚定词}，{画质锁定词}，禁止画外字幕、水印、UI 文字。
-
-保持 @图N 面部特征、发型、服饰与参考图完全一致。
+【vẽ mặt 】→ xuống Bảng phân cảnh「Mô tả hình ảnh」+「Bối cảnh」+「Cỡ cảnh」+「Hành động nhân vật」+「tình xúc 」 của chỉnh trực quannội dung（chính ，Mật độ thông tintối đa ）
+【Ánh sáng】→ xuống Bảng phân cảnh「Ánh sáng & Không khí」 của ánh nguồn 、vật gọi 、dẫn liên dòng （lập tạo đoạn ，Phong cáchtừ nén ）
+【Phong cách】→ Phong cáchnối từ  + vẽ nối từ  + Nghiêm cấmthanh dẫn （giúp ，ngắn ）
 ```
 
-**关键规则**：
-- 【画面】段须完整承载分镜表「画面描述」字段的所有信息，**不得删减**
-- 【画面】段中，角色/场景/道具名称**必须使用 `@图N` 替代**（不用文字名称）
-- 朝向信息须显式写入【画面】段（如"3/4正面朝右"）
-- 不再追加英文段"Based on the reference image... Generate a new scene..."（`@图N` 机制已承担参考图绑定功能，追加英文段会导致画面描述出现两份、容易冲突）
+> **bài phútnối gốc **：【vẽ mặt 】đoạn Mật độ thông tintối đa 、bài nhất dài  của đoạn ，buộc chỉnh xuống Bảng phân cảnh「Mô tả hình ảnh」 của tất cảtrực quan；【Ánh sáng】đoạn lần  của ，lập xuống Ánh sáng & Không khí；【Phong cách】đoạn nhất ngắn ，chỉ mở bắt cần  của Phong cáchnối từ vẽ nối từ 。3đoạn xếp không 、dài độ không trí ——Phong cáchtừ bài vượt vẽ mặt đoạn ，thất bạinguyên ra 。
 
-> `[风格锚定词]`、`[画质锁定词]` 的具体内容由**风格专属技法**定义。
+### mô thức A：Seedream（API `reference_images`）
 
-### 模式B：Nanobanana（多模态 + JSON）
+máy chép ：tham chiếuảnh thông qua API tham số `reference_images` truyền vào ，prompt trong hàm  `@ảnh N` trực tiếp ghép nốitham chiếuảnh 。
 
-机制：参考图与 prompt 一起作为多模态输入，prompt 使用结构化 JSON 约束角色一致性。
+Prompt kết cấu ：
 
-Prompt 结构（固定框架）：
+```
+@ảnh 1 {Tài nguyênTên}{Tài nguyênLoại} @ảnh 2 {Tài nguyênTên}{Tài nguyênLoại} ... ,
+
+【vẽ mặt 】{Bối cảnhnối }，{Cỡ cảnhcấu ảnh từ }，{Mô tả hình ảnhchỉnh chuyển ——lưu lưu tất cảtrực quan、rỗng gian liên dòng 、chính thể động tác vụ 、、tình xúc }。
+
+【Ánh sáng】{ánh nguồn phương }，{vật gọi }，{dẫn liên dòng }，{tiết }。
+
+【Phong cách】{Phong cáchnối từ }，{vẽ nối từ }，Nghiêm cấmvẽ ngoài chữ 、、UI tài chữ 。
+
+lưu giữ  @ảnh N mặt bộ 、phát kiểu 、phục tham chiếuảnh toàn 1 。
+```
+
+**liên **：
+- 【vẽ mặt 】đoạn buộc chỉnh xuống Bảng phân cảnh「Mô tả hình ảnh」chữ đoạn  của tất cảthông tin，**không được xóa **
+- 【vẽ mặt 】đoạn giữa ，Nhân vật/Bối cảnh/Đạo cụTên**Bắt buộchàm  `@ảnh N` **（không hàm tài chữ Tên）
+- thông tinbuộc thức vào 【vẽ mặt 】đoạn （như "3/4chính mặt phải "）
+- không cộng tài đoạn "Based on the reference image... Generate a new scene..."（`@ảnh N` máy chép đã tham chiếuảnh ghép nốicông thể ，cộng tài đoạn sẽ dẫn Mô tả hình ảnhra 2、dung ）
+
+> `[Phong cáchnối từ ]`、`[vẽ nối từ ]`  của cụ thể nội dungdo **Phong cáchriêng biệt thức **nối nghĩa 。
+
+### mô thức B：Nanobanana（nhiều mô thái  + JSON）
+
+máy chép ：tham chiếuảnh  prompt 1 tác vụ nhiều mô thái tải vào ，prompt hàm kết cấu hóa  JSON Nhân vật1 。
+
+Prompt kết cấu （nối ）：
 
 ```json
 {
   "role": "You are a cinematographer and storyboard artist. Maintain strict visual continuity across all shots.",
   "character_reference": [
-    { "image": 1, "ref": "@图1", "description": "[外貌关键描述: 发色/发型/服装/体型]" },
-    { "image": 2, "ref": "@图2", "description": "[外貌关键描述]" }
+    { "image": 1, "ref": "@ảnh 1", "description": "[ngoài liên Mô tả: phát vật /phát kiểu /phục /thể kiểu ]" },
+    { "image": 2, "ref": "@ảnh 2", "description": "[ngoài liên Mô tả]" }
   ],
   "continuity_rules": [
     "Same wardrobe, hairstyle, face features across ALL shots",
@@ -187,223 +187,223 @@ Prompt 结构（固定框架）：
     "Do NOT introduce new characters not in reference images"
   ],
   "shot": {
-    "scene_and_framing": "[场景锚定 + 景别构图词]",
-    "subject_and_action": "[主体动作 + 朝向 + 情绪 + 所有画面描述中的视觉元素，使用@图N替代角色/场景名]",
-    "lighting": "[光源方向 + 色调 + 明暗关系 + 质感]",
-    "style": "[风格锚定词 + 画质锁定词]"
+    "scene_and_framing": "[Bối cảnhnối  + Cỡ cảnhcấu ảnh từ ]",
+    "subject_and_action": "[chính thể động tác vụ  +  + tình xúc  + tất cảMô tả hình ảnhgiữa  của trực quan，hàm @ảnh NNhân vật/Bối cảnhtên ]",
+    "lighting": "[ánh nguồn phương  + vật gọi  + dẫn liên dòng  + ]",
+    "style": "[Phong cáchnối từ  + vẽ nối từ ]"
   },
-  "negative": "[负向词模板，含 no subtitles, no watermark, no UI text]（具体词条由风格专属技法定义）"
+  "negative": "[từ mô ， no subtitles, no watermark, no UI text]（cụ thể từ mục do Phong cáchriêng biệt thức nối nghĩa ）"
 }
 ```
 
-**关键规则**：
-- `shot` 字段拆分为 4 个子字段，强制画面描述独占 `scene_and_framing` 和 `subject_and_action` 两个位置，避免被风格词挤压
-- `subject_and_action` 是信息密度最高的字段，须完整承载分镜表「画面描述」+「角色动作」+「情绪」
-- 参考图作为图片输入，不是 URL 文本
-- 角色描述保持 1-2 句关键特征，避免冗长
+**liên **：
+- `shot` chữ đoạn phút 4 mục chữ đoạn ，chép Mô tả hình ảnh `scene_and_framing`  và  `subject_and_action` 2mục vị trí trí ，Phong cáchtừ nén 
+- `subject_and_action` là Mật độ thông tintối đa  của chữ đoạn ，buộc chỉnh xuống Bảng phân cảnh「Mô tả hình ảnh」+「Hành động nhân vật」+「tình xúc 」
+- tham chiếuảnh tác vụ hình ảnhtải vào ，không là  URL tài sách 
+- Nhân vậtMô tảlưu giữ  1-2 câu liên ，dài 
 
 ---
 
-## 通用语言与质量规范
+## thông hàm ngữ lượng 
 
-- 模式A（Seedream）优先中文自然语言段落
-- 模式B（Nanobanana）优先英文 JSON 结构化提示词
-- 提示词聚焦"内容表现 + 画质锐利"，避免模糊类词
-- 不使用会导致糊图的表达（见下方「画质降级禁用词」表）
-- 模式B 负向词按风格专属「负向词模板」输出，每条必须包含，不可省略；模式A 不输出负向词
-- 画质锁定词按风格专属「画质锁定词」模板输出，每条必须包含
-
----
-
-## 画外文字 vs 画内文字规则
-
-- **画外文字**（字幕、水印、标题卡、旁白叠字等 UI 层覆盖文字）→ **绝对禁止**，必须在【风格】段和负向词中声明禁止
-- **画内文字**（场景中自然存在的文字道具：角色提笔写字、书卷上的字迹、匾额牌匾、书信内容、路标、店铺招牌等）→ **属于场景道具**，当分镜画面描述中明确包含此类内容时，应在【画面】段正常描述其存在，不受禁止文字规则限制
-- **判断标准**：该文字是否存在于**故事世界内部**。匾额上的字 = 画内道具 ✅；画面底部的角色对白 = 画外字幕 ❌
+- mô thức A（Seedream）trước giữa tài tự ngữ đoạn 
+- mô thức B（Nanobanana）trước tài  JSON kết cấu hóa Prompt
+- Prompt"nội dungbảng  + vẽ "，mô loại từ 
+- không hàm sẽ dẫn ảnh  của bảng （thấy dưới phương 「vẽ cấp hàm từ 」bảng ）
+- mô thức B từ theo Phong cáchriêng biệt 「từ mô 」tải ra ，mục Bắt buộcgói ，không ；mô thức A không tải ra từ 
+- vẽ nối từ theo Phong cáchriêng biệt 「vẽ nối từ 」mô tải ra ，mục Bắt buộcgói 
 
 ---
 
-## 画质降级禁用词（所有风格通用）
+## vẽ ngoài tài chữ  vs vẽ trong tài chữ 
 
-| 禁用写法 | 模型行为 | 安全替代 |
+- **vẽ ngoài tài chữ **（chữ 、、biểu đề 、chữ  UI tầng tài chữ ）→ **đúng Nghiêm cấm**，Bắt buộcở 【Phong cách】đoạn  và từ giữa thanh dẫn Nghiêm cấm
+- **vẽ trong tài chữ **（Bối cảnhgiữa tự lưu ở  của tài chữ Đạo cụ：Nhân vậtnhắc chữ 、trên  của chữ 、bổ 、tin nội dung、đường biểu 、）→ **biệt với Bối cảnhĐạo cụ**，khi Phân cảnhMô tả hình ảnhgiữa dẫn gói loại nội dung，hồi ở 【vẽ mặt 】đoạn chính thường Mô tảlưu ở ，không Nghiêm cấmtài chữ hạn chép 
+- **biểu **：tài chữ là không lưu ở với **việc giới trong bộ **。bổ trên  của chữ  = vẽ trong Đạo cụ ✅；vẽ mặt bộ  của Nhân vậtđúng  = vẽ ngoài chữ  ❌
+
+---
+
+## vẽ cấp hàm từ （tất cảPhong cáchthông hàm ）
+
+| hàm thức  | mô hìnhthi  | an toàn  |
 |---------|---------|----------|
-| `film grain` / `胶片颗粒` | 全图加噪点变糊 | `subtle cinematic texture` / `轻微电影质感` |
-| `imperfect focus` / `失焦` | 全图失焦 | 直接删除 |
-| `edges not perfectly sharp` | 边缘变糊 | 直接删除 |
-| `slight natural deviation` | 整体降分辨率 | 直接删除 |
-| `not completely stable` | 画面模糊 | 直接删除 |
-| `blurry background`（滥用） | 主体跟着糊 | `background bokeh, subject in sharp focus` |
-| `hazy` / `foggy`（滥用） | 全图雾化 | 仅在空气透视需求时用，同时加 `subject sharp` |
-| `柔焦` / `朦胧感` | 降低整体锐度 | 直接删除 |
+| `film grain` / `` | toàn ảnh cộng điểm  | `subtle cinematic texture` / `sáng ` |
+| `imperfect focus` / `thất ` | toàn ảnh thất  | trực tiếp xóa |
+| `edges not perfectly sharp` |  | trực tiếp xóa |
+| `slight natural deviation` | chỉnh thể phúttỷ lệ  | trực tiếp xóa |
+| `not completely stable` | vẽ mặt mô  | trực tiếp xóa |
+| `blurry background`（hàm ） | chính thể đang  | `background bokeh, subject in sharp focus` |
+| `hazy` / `foggy`（hàm ） | toàn ảnh hóa  | chỉ ở rỗng video cần cầu hàm ，cùng cộng  `subject sharp` |
+| `` / `` | thấp chỉnh thể độ  | trực tiếp xóa |
 
-> **核心原则**：内容可以"不完美"（光线不均、构图非对称），画质必须锐利。
-
----
-
-## 批量处理规范
-
-用户输入多行分镜表时：
-
-1. **逐行顺序处理**，不跳行、不合并
-2. 每条分镜仅输出目标模式的提示词正文（Prompt 或 JSON Prompt）
-3. 若同一场景连续多镜，**场景质感词可复用**，但情绪/光线/景别/动作必须**按行独立处理**
-4. 关联资产名称相同的镜次，**一致性标注词必须一致**
-5. 不追加任何非提示词区块（如资产引用汇总、台词/音效备注、约束检查）
+> **Nguyên tắc cốt lõi**：nội dung"không đẹp "（ánh đường không 、cấu ảnh phi đúng ），vẽ Bắt buộc。
 
 ---
 
-## 图像资产标注规则
+## lượng xử lý 
 
-每条分镜的 `prompt` 字段必须以**图像资产标注**作为前缀，且**提示词正文中使用 `@图N` 直接替代对应的角色/场景/道具名称**，建立参考图与画面描述的直接绑定关系。标注按 `associateAssetsIds` 中资产的引用顺序，从 `@图1` 开始依次编号。
+hàm dùng tải vào nhiều thi Bảng phân cảnh：
 
-**格式**：`@图1 为{资产名称}{资产类型} @图2 为{资产名称}{资产类型} ... , 正文中使用@图N替代角色/场景名称的提示词`
+1. **thi xếp xử lý **，không thi 、không hợp nhất 
+2. mục Phân cảnhchỉ tải ra mục biểu mô thức  của Promptchính tài （Prompt hoặc  JSON Prompt）
+3. cùng 1 Bối cảnhnhiều quay ，**Bối cảnhtừ lời hàm **，nhưng tình xúc /ánh đường /Cỡ cảnh/động tác vụ Bắt buộc**theo thi lập xử lý **
+4. Tên tài nguyên liên kếtcùng  của quay lần ，**1 biểu tâm từ Bắt buộc1 **
+5. không cộng phi Promptkhu （như Tài nguyênhàm tổng 、Lời thoại/Âm hiệutâm 、kiểm tra ）
 
-**类型映射**：
+---
 
-| 资产 type | 标注类型词 |
+## hình ảnhTài nguyênbiểu tâm 
+
+mục Phân cảnh của  `prompt` chữ đoạn Bắt buộc**hình ảnhTài nguyênbiểu tâm **tác vụ trước tố ，và **Promptchính tài giữa hàm  `@ảnh N` trực tiếp đúng hồi  của Nhân vật/Bối cảnh/Đạo cụTên**，tạo lập tham chiếuảnh Mô tả hình ảnh của trực tiếp ghép nốiliên dòng 。biểu tâm theo  `associateAssetsIds` giữa Tài nguyên của hàm xếp ，từ  `@ảnh 1` mở ban đầu phụ lần chỉnh số 。
+
+**khung thức **：`@ảnh 1 {Tài nguyênTên}{Tài nguyênLoại} @ảnh 2 {Tài nguyênTên}{Tài nguyênLoại} ... , chính tài giữa hàm @ảnh NNhân vật/Bối cảnhTên của Prompt`
+
+**Loại**：
+
+| Tài nguyên type | biểu tâm Loạitừ  |
 |-----------|------------|
-| role      | 角色       |
-| tool      | 道具       |
-| scene     | 场景       |
-| clip      | 片段       |
+| role      | Nhân vật       |
+| tool      | Đạo cụ       |
+| scene     | Bối cảnh       |
+| clip      | đoạn        |
 
-**规则**：
-- 编号从 `@图1` 起，按 `associateAssetsIds` 数组顺序依次递增
-- 每个引用的资产 ID 对应一个标注项，**不可遗漏、不可多出**
-- 资产名称使用 assets 数据中该资产的 `name` 字段
-- 资产类型根据上方类型映射表填写
-- 标注部分与提示词正文之间用 `, ` 分隔
-- 衍生资产沿用其自身 `name` 和父资产的 `type`
-- **正文绑定（核心）**：提示词正文中，所有原本应出现角色名/场景名/道具名的位置，**必须替换为对应的 `@图N` 标记**，不再使用文字名称。这样参考图与画面中的视觉主体形成直接指向关系，避免资产名称与角色名称不一致导致的歧义（例如：当衍生资产的名称与原角色名不一致时，使用 `@图N` 可绕开名称歧义直接指向参考图）
-- 同一 `@图N` 在正文中可多次出现（如角色在前景和反射面中同时可见时）
+****：
+- chỉnh số từ  `@ảnh 1` ，theo  `associateAssetsIds` số nhóm xếp phụ lần 
+- mục hàm  của Tài nguyên ID đúng hồi một biểu tâm ，**không 、không nhiều ra **
+- Tài nguyênTênhàm  assets dữ liệugiữa Tài nguyên của  `name` chữ đoạn 
+- Tài nguyênLoạidựa theotrên phương Loạibảng 
+- biểu tâm bộ phútPromptchính tài  của gian hàm  `, ` phútcách 
+- sinh Tài nguyênhàm tự  `name`  và Tài nguyên của  `type`
+- **chính tài ghép nối（）**：Promptchính tài giữa ，tất cảgốc sách hồi ra Nhân vậttên /Bối cảnhtên /Đạo cụtên  của vị trí trí ，**Bắt buộcđổi đúng hồi  của  `@ảnh N` biểu **，không hàm tài chữ Tên。nàykiểu tham chiếuảnh vẽ mặt giữa  của trực quanchính thể dạng tạo trực tiếp liên dòng ，Tài nguyênTênNhân vậtTênkhông 1 dẫn  của nghĩa （lệ như ：khi sinh Tài nguyên của Têngốc Nhân vậttên không 1 ，hàm  `@ảnh N` mở Tênnghĩa trực tiếp tham chiếuảnh ）
+- cùng 1  `@ảnh N` ở chính tài giữa nhiều lần ra （như Nhân vậtở trước bối  và phụ mặt giữa cùng thấy ）
 
-**示例**（假设 `associateAssetsIds="[A, B, C]"` 对应 角色甲(role)、角色乙(role)、某场景(scene)）：
+**Ví dụ**（giả thiết  `associateAssetsIds="[A, B, C]"` đúng hồi  Nhân vật(role)、Nhân vật(role)、Bối cảnh(scene)）：
 
-❌ 错误（正文使用文字名称，与前缀标注脱节）：
+❌ lỗi（chính tài hàm tài chữ Tên，trước tố biểu tâm tiết ）：
 ```
-@图1 为角色甲角色 @图2 为角色乙角色 @图3 为某场景场景, 角色甲冷笑，居高临下看着跪地的角色乙，场景内柱影深沉……
+@ảnh 1 Nhân vậtNhân vật @ảnh 2 Nhân vậtNhân vật @ảnh 3 Bối cảnhBối cảnh, Nhân vật，cao dưới xem đang địa  của Nhân vật，Bối cảnhtrong sáng ……
 ```
 
-✅ 正确（正文使用 @图N 直接绑定参考图）：
+✅ chính （chính tài hàm  @ảnh N trực tiếp ghép nốitham chiếuảnh ）：
 ```
-@图1 为角色甲角色 @图2 为角色乙角色 @图3 为某场景场景,
+@ảnh 1 Nhân vậtNhân vật @ảnh 2 Nhân vậtNhân vật @ảnh 3 Bối cảnhBối cảnh,
 
-【画面】@图3 内，中景构图，@图1 身形挺立于画面左侧，3/4侧面朝右，嘴角微扬冷笑，居高临下俯视跪于画面右侧地面的@图2；@图2 俯身伏地，3/4背面朝左，双手撑地，肩背紧绷……
+【vẽ mặt 】@ảnh 3 trong ，Trung cảnh (medium shot)cấu ảnh ，@ảnh 1 dạng lập với vẽ mặt trái ，3/4mặt phải ，nhân ，cao dưới video với vẽ mặt phải địa mặt  của @ảnh 2；@ảnh 2 địa ，3/4mặt trái ，đôi tay địa ，……
 ```
 
 ---
 
-## 人物位置与朝向连贯性规则
+## ngườivị trí trí 
 
-生成每条 prompt 时，须遵守以下跨分镜人物位置与朝向一致性约束。
+tạomục  prompt ，buộc dưới Phân cảnhngườivị trí trí 1 。
 
-### 一、朝向获取规则（从分镜表获取人物面部朝向）
+### 1 、lấy（từ Bảng phân cảnhlấyngườimặt bộ ）
 
-分镜表的「角色动作」字段已包含 `｜朝向：` 显式标注，提示词生成时**优先直接提取**，并在 prompt 中**显式写入**对应朝向方位词（如 `facing right` / `面朝右`、`three-quarter view facing left` / `3/4侧面朝左`）。
+Bảng phân cảnh của 「Hành động nhân vật」chữ đoạn đã gói  `｜：` thức biểu tâm ，Prompttạo**trước trực tiếp trích xuất**，nhất ở  prompt giữa **thức vào **đúng hồi phương vị trí từ （như  `facing right` / `mặt phải `、`three-quarter view facing left` / `3/4mặt trái `）。
 
-**获取优先级**（高→低）：
+**lấytrước cấp **（cao →thấp ）：
 
-| 优先级 | 线索来源 | 处理逻辑 |
+| trước cấp  | đường kiếm nguồn  | xử lý logic |
 |--------|---------|----------|
-| **1** | **角色动作字段的 `｜朝向：` 标注** | 分镜表已显式标注 → **直接采用**，无需推断 |
-| 2 | **画面描述中的显式方位词** | 画面描述直接提及朝向（如"背对镜头""望向窗外""面朝观众"）→ 直接采用（仅当优先级1缺失时） |
-| 3 | **多角色空间关系（180° 视轴线）** | 对话/对峙/互动场景中，两角色面朝彼此：画面左侧角色面朝右，画面右侧角色面朝左。首次出场建立基准后全场景锁定 |
-| 4 | **景别暗示** | 过肩镜：前景人物背对/侧背对镜头，远景人物面朝镜头方向；特写/近景独白：默认 3/4 侧面 |
-| 5 | **情绪与叙事语义** | 孤独/沉思/回忆 → 侧面轮廓或3/4背面；对抗/质问 → 正面或3/4正面朝向对方；躲避/羞涩 → 微侧头避开对方 |
-| 6 | **场景空间逻辑** | 门口迎客 → 面朝门外；眺望风景 → 面朝风景方向；伏案书写 → 面朝桌面低头 |
+| **1** | **Hành động nhân vậtchữ đoạn  của  `｜：` biểu tâm ** | Bảng phân cảnhđã thức biểu tâm  → **trực tiếp hàm **，không cần khuyến  |
+| 2 | **Mô tả hình ảnhgiữa  của thức phương vị trí từ ** | Mô tả hình ảnhtrực tiếp nhắc （như "đúng Ống kính""ngoài ""mặt "）→ trực tiếp hàm （chỉ khi trước cấp 1thất ） |
+| 3 | **nhiều Nhân vậtrỗng gian liên dòng （180° video đường ）** | đúng lời /đúng /động Bối cảnhgiữa ，2Nhân vậtmặt ：vẽ mặt trái Nhân vậtmặt phải ，vẽ mặt phải Nhân vậtmặt trái 。lần ra trường tạo lập cơ sở sau toàn Bối cảnhnối  |
+| 4 | **Cỡ cảnhnhở ** | quay ：trước bối ngườiđúng /đúng Ống kính，Viễn cảnh (extreme wide shot)ngườimặt Ống kínhphương ；Đặc tả (close-up)/Cận cảnh (close-up)：Mặc định 3/4 mặt  |
+| 5 | **tình xúc việc ngữ nghĩa ** | //trả  → mặt hoặc 3/4mặt ；đúng /hỏi  → chính mặt hoặc 3/4chính mặt đúng phương ；/ → đầu mở đúng phương  |
+| 6 | **Bối cảnhrỗng gian logic** | cổng cổng  → mặt cổng ngoài ；phong bối  → mặt phong bối phương ； → mặt mặt thấp đầu  |
 
-> **常规情况下只需读取优先级1**，分镜表已在源头标注完成。优先级2~6仅作为分镜表标注缺失时的兜底推断。
+> **thường tình huống dưới chỉ cần xuất trước cấp 1**，Bảng phân cảnhđã ở nguồn đầu biểu tâm tạo 。trước cấp 2~6chỉ tác vụ Bảng phân cảnhbiểu tâm thất  của khuyến 。
 
-**获取步骤**：
-1. 读取分镜表当前行「角色动作」字段中 `｜朝向：` 后的标注内容
-2. 若标注存在且完整 → 直接采用，跳过后续优先级
-3. 若标注缺失（如空镜行）→ 按优先级2~6逐条推断
-4. 将获取到的朝向信息写入 prompt 中对应角色的描述位置
+**lấybước **：
+1. xuất Bảng phân cảnhhiện tạithi 「Hành động nhân vật」chữ đoạn giữa  `｜：` sau  của biểu tâm nội dung
+2. biểu tâm lưu ở và chỉnh  → trực tiếp hàm ，sau trước cấp 
+3. biểu tâm thất （như rỗng quay thi ）→ theo trước cấp 2~6mục khuyến 
+4. lấyđến  của thông tinvào  prompt giữa đúng hồi Nhân vật của Mô tảvị trí trí 
 
-**朝向词库**：
+**từ kho **：
 
-| 朝向类型 | 模式A（中文） | 模式B（英文） | 适用场景 |
+| Loại | mô thức A（giữa tài ） | mô thức B（tài ） | hàm Bối cảnh |
 |---------|-------------|-------------|---------|
-| 正面 | 正面面朝镜头 | facing camera, front view | 自我宣言、直接对抗观众视线 |
-| 3/4正面 | 3/4侧面微朝镜头 | three-quarter view facing camera | 对话主体、情感传递 |
-| 正侧面 | 正侧面轮廓 | profile view, side view | 独白、沉思、对峙剪影 |
-| 3/4背面 | 3/4侧背面 | three-quarter back view | 离去、疏离、回忆 |
-| 背面 | 背对镜头 | back view, from behind | 神秘登场、离别、遥望 |
-| 面朝左 | 面朝画面左侧 | facing left | 180°线右侧角色、朝左侧目标 |
-| 面朝右 | 面朝画面右侧 | facing right | 180°线左侧角色、朝右侧目标 |
-| 微低头 | 微微低头 | slightly looking down | 悲伤、内疚、沉思 |
-| 微仰头 | 微微仰头 | slightly looking up | 傲慢、仰望、期待 |
+| chính mặt  | chính mặt mặt Ống kính | facing camera, front view | tự tôi、trực tiếp đúng video đường  |
+| 3/4chính mặt  | 3/4mặt Ống kính | three-quarter view facing camera | đúng lời chính thể 、tình truyền  |
+| chính mặt  | chính mặt  | profile view, side view | 、、đúng sáng  |
+| 3/4mặt  | 3/4mặt  | three-quarter back view | đi 、、trả  |
+| mặt  | đúng Ống kính | back view, from behind | đăng trường 、khác 、 |
+| mặt trái  | mặt vẽ mặt trái  | facing left | 180°đường phải Nhân vật、trái mục biểu  |
+| mặt phải  | mặt vẽ mặt phải  | facing right | 180°đường trái Nhân vật、phải mục biểu  |
+| thấp đầu  | thấp đầu  | slightly looking down | 、trong 、 |
+| đầu  | đầu  | slightly looking up | chậm 、、kỳ  |
 
-> 朝向标注须同时包含**水平朝向**（面朝左/右/镜头）和**俯仰倾向**（如有），如"3/4侧面朝右，微微仰头"。
+> biểu tâm buộc cùng gói ****（mặt trái /phải /Ống kính） và ****（như có ），như "3/4mặt phải ，đầu "。
 
-### 二、位置与朝向锁定规则
+### 2、vị trí trí nối 
 
-- **画面位置锁定**：同一角色在同一场景内的多条分镜中，其画面左右位置（画面左侧 / 中央 / 右侧）须保持固定，不得无叙事理由地跳侧
-- **朝向守恒**：对话/对峙场景遵循 180° 视轴线——角色A面朝右则全场景保持面朝右，角色B面朝左则全场景保持面朝左；prompt 中须通过方位词（facing left / 面朝左、on the left side of frame / 画面左侧等）显式标注
-- **前后景层次一致**：若角色A在分镜N中处于前景、角色B处于中景，则同场景后续分镜中二者前后关系不应无理由反转
-- **位置变化须有动作衔接**：角色画面位置确需变化时（如角色走动、转身），前序分镜的 prompt 中须包含对应位移/转身动作描写，不可凭空跳位
-- **朝向变化须有动作衔接**：角色朝向确需变化时（如转头、回身），当前分镜的 prompt 中须包含转向动作描写（如"微微转头朝向画面左侧"），且该转向须与分镜表「角色动作」字段一致，不可凭空改向
-- **跨场景可重置**：切换到全新场景时允许重新分配画面位置与朝向，但新场景内部仍须保持一致
+- **vẽ mặt vị trí trí nối **：cùng 1 Nhân vậtở cùng 1 Bối cảnhtrong  của nhiều mục Phân cảnhgiữa ，vẽ mặt trái phải vị trí trí （vẽ mặt trái  / giữa  / phải ）buộc lưu giữ nối ，không được không việc lý do địa 
+- ****：đúng lời /đúng Bối cảnh 180° video đường ——Nhân vậtAmặt phải toàn Bối cảnhlưu giữ mặt phải ，Nhân vậtBmặt trái toàn Bối cảnhlưu giữ mặt trái ；prompt giữa buộc thông quaphương vị trí từ （facing left / mặt trái 、on the left side of frame / vẽ mặt trái ）thức biểu tâm 
+- **trước sau bối tầng lần 1 **：Nhân vậtAở Phân cảnhNgiữa xử với trước bối 、Nhân vậtBxử với Trung cảnh (medium shot)，cùng Bối cảnhsau Phân cảnhgiữa 2giả trước sau liên dòng không hồi không lý do phụ chuyển 
+- **vị trí trí hóa buộc có động tác vụ tiếp **：Nhân vậtvẽ mặt vị trí trí cần hóa （như Nhân vậtchạy động 、chuyển ），trước xếp Phân cảnh của  prompt giữa buộc gói đúng hồi vị trí /chuyển động tác vụ mô ，không rỗng vị trí 
+- **hóa buộc có động tác vụ tiếp **：Nhân vậtcần hóa （như chuyển đầu 、trả ），hiện tạiPhân cảnh của  prompt giữa buộc gói chuyển động tác vụ mô （như "chuyển đầu vẽ mặt trái "），và chuyển buộc Bảng phân cảnh「Hành động nhân vật」chữ đoạn 1 ，không rỗng sửa 
+- **Bối cảnhtrùng trí **：đổi đến toàn mới Bối cảnhtrùng mới phútnối vẽ mặt vị trí trí ，nhưng mới Bối cảnhtrong bộ buộc lưu giữ 1 
 
-### 三、反射面视觉关系
+### 3、phụ mặt trực quanliên dòng 
 
-当画面中存在反射介质（镜面、水面、光滑金属、窗玻璃、相机镜头等）时，须注意以下规则：
+khi vẽ mặt giữa lưu ở phụ （quay mặt 、mặt 、ánh biệt 、、máy Ống kính），buộc tâm ý dưới ：
 
-- **镜像翻转**：反射面中角色的左右朝向与实体相反（实体面朝右→镜像面朝左），prompt 中须显式标注反射体与实体的朝向关系（如"@图1 面朝右，水面倒影中@图1 面朝左"）
-- **反射面不改变位置基准**：角色的画面位置以实体为准，反射面中的映像不视为角色位置变化
-- **反射面内容与实体一致**：反射面中可见的角色服饰、发型、表情等必须与同帧实体一致，不可出现偏差
-- **反射面景深与清晰度**：根据反射面距离和材质，反射图像可适当降低清晰度（如水面波纹导致的模糊），但须在 prompt 中标注（如"水面倒影微微扭曲"）
-- **识别触发**：当分镜画面描述或场景资产中包含镜面、水面、湖面、溪流、玻璃、金属反光、相机/摄像等反射性元素时，自动触发本规则
+- **quay chuyển **：phụ mặt giữa Nhân vật của trái phải thể phụ （thể mặt phải →quay mặt trái ），prompt giữa buộc thức biểu tâm phụ thể thể  của liên dòng （như "@ảnh 1 mặt phải ，mặt sáng giữa @ảnh 1 mặt trái "）
+- **phụ mặt không sửa vị trí trí cơ sở **：Nhân vật của vẽ mặt vị trí trí thể ，phụ mặt giữa  của không video Nhân vậtvị trí trí hóa 
+- **phụ mặt nội dungthể 1 **：phụ mặt giữa thấy  của Nhân vậtphục 、phát kiểu 、bảng tình Bắt buộccùng thể 1 ，không ra 
+- **phụ mặt bối sạch độ **：dựa theophụ mặt  và ，phụ hình ảnhkhi thấp sạch độ （như mặt dẫn  của mô ），nhưng buộc ở  prompt giữa biểu tâm （như "mặt sáng "）
+- **trưng khác phát **：khi Phân cảnhMô tả hình ảnhhoặc Bối cảnhTài nguyêngiữa gói quay mặt 、mặt 、mặt 、、、biệt phụ ánh 、máy /phụ ，tự động phát sách 
 
 ---
 
-## 附：完整产出示例
+## ：chỉnh nguyên ra Ví dụ
 
-以下示范一条分镜从输入到输出的完整流程，供 Agent 参考。本示例使用抽象占位符（角色甲、某场景、道具X 等），实际应用时替换为分镜表的具体内容。
+dưới nhở 1 mục Phân cảnhtừ tải vào đến tải ra  của chỉnh trình ，nhà  Agent tham chiếu。sách Ví dụhàm tượng vị trí （Nhân vật、Bối cảnh、Đạo cụX ），hồi hàm đổi Bảng phân cảnh của cụ thể nội dung。
 
-### 输入（分镜表某行）
+### tải vào （Bảng phân cảnhthi ）
 
-| 字段 | 内容 |
+| chữ đoạn  | nội dung |
 |------|------|
-| 画面描述 | 开场黑场淡入，某场景出口大远景，人流涌动，醒目指示物立于画面右侧，角色甲背着道具X 独行人流中，镜头缓推至中景，他手攥道具Y 忽然停步仰望指示物，眼神紧张而笃定 |
-| 场景 | 某场景出口 |
-| 景别 | 远景→中景 |
-| 角色动作 | 背包步行前行→忽然停步→抬头仰望指示物→手攥道具Y 微紧｜朝向：3/4正面朝右 |
-| 情绪 | 局促与笃定并存 |
-| 光影氛围 | 左侧柔和晨光均匀铺洒，暖黄底色轻染地面，指示物受光清晰，人影逆光偏暗形成轮廓感 |
-| 关联资产ID | [a, b, c, d] → 角色甲(role)、道具X(tool)、道具Y(tool)、某场景出口(scene) |
+| Mô tả hình ảnh | mở trường trường vào ，Bối cảnhra cổng lớn Viễn cảnh (extreme wide shot)，ngườiđộng ，mục nhở lập với vẽ mặt phải ，Nhân vậtđang Đạo cụX thi ngườigiữa ，Ống kínhkhuyến đến Trung cảnh (medium shot)，anh ấytay Đạo cụY bước nhở ，bức nối  |
+| Bối cảnh | Bối cảnhra cổng  |
+| Cỡ cảnh | Viễn cảnh (extreme wide shot)→Trung cảnh (medium shot) |
+| Hành động nhân vật | gói bước thi trước thi →bước →đầu nhở →tay Đạo cụY ｜：3/4chính mặt phải  |
+| tình xúc  | cục nối nhất lưu  |
+| Ánh sáng & Không khí | trái  và ánh ，vật địa mặt ，nhở ánh sạch ，ngườisáng ánh dạng tạo  |
+| Mã ID tài nguyên liên kết | [a, b, c, d] → Nhân vật(role)、Đạo cụX(tool)、Đạo cụY(tool)、Bối cảnhra cổng (scene) |
 
-### 输出（模式A · Seedream）
+### tải ra （mô thức A · Seedream）
 
 ```
-@图1 为角色甲角色 @图2 为道具X 道具 @图3 为道具Y 道具 @图4 为某场景出口场景,
+@ảnh 1 Nhân vậtNhân vật @ảnh 2 Đạo cụX Đạo cụ @ảnh 3 Đạo cụY Đạo cụ @ảnh 4 Bối cảnhra cổng Bối cảnh,
 
-【画面】@图4，开场自黑场淡入，大远景构图，人流涌动穿行，画面右侧醒目立有指示物；@图1 背着@图2 独行于人流之中，手中紧攥@图3，身体3/4正面朝右，停步于人群之间，抬头仰望画面右侧的指示物，眼神紧张而笃定，面容局促中透着决意。
+【vẽ mặt 】@ảnh 4，mở trường tự trường vào ，lớn Viễn cảnh (extreme wide shot)cấu ảnh ，ngườiđộng thi ，vẽ mặt phải mục lập có nhở ；@ảnh 1 đang @ảnh 2 thi với người của giữa ，tay giữa @ảnh 3，thể 3/4chính mặt phải ，bước với người của gian ，đầu vẽ mặt phải  của nhở ，bức nối ，mặt dung cục giữa đang ý 。
 
-【光影】左侧柔和晨光均匀铺洒，暖黄底色轻染地面，指示物受光清晰明亮，周围人影逆光偏暗形成剪影轮廓，@图1 身形半受光半逆光，面部轮廓微亮。
+【Ánh sáng】trái  và ánh ，vật địa mặt ，nhở ánh sạch dẫn ，khí ngườisáng ánh dạng tạo sáng ，@ảnh 1 dạng nửa ánh nửa ánh ，mặt bộ 。
 
-【风格】{风格锚定词}，{画质锁定词}，禁止画外字幕、水印、UI 文字。
+【Phong cách】{Phong cáchnối từ }，{vẽ nối từ }，Nghiêm cấmvẽ ngoài chữ 、、UI tài chữ 。
 
-保持 @图1 面部特征、发型、服饰与参考图完全一致。
+lưu giữ  @ảnh 1 mặt bộ 、phát kiểu 、phục tham chiếuảnh toàn 1 。
 ```
 
-> 【风格】段中的 `{风格锚定词}` `{画质锁定词}` 由风格专属技法（`director_storyboard`）提供，本通用规范不写死具体词条。
+> 【Phong cách】đoạn giữa  của  `{Phong cáchnối từ }` `{vẽ nối từ }` do Phong cáchriêng biệt thức （`director_storyboard`）nhắc nhà ，sách thông hàm không cụ thể từ mục 。
 
-### 校验比对
+### đối chiếu tỷ đúng 
 
-| 分镜表字段 | 提示词体现位置 | 是否一致 |
+| Bảng phân cảnhchữ đoạn  | Promptthể vị trí trí  | là không 1  |
 |-----------|---------------|---------|
-| 开场黑场淡入 | 【画面】"开场自黑场淡入" | ✅ |
-| 某场景出口 | 【画面】"@图4" | ✅ |
-| 大远景（首帧起始端） | 【画面】"大远景构图" | ✅ |
-| 人流涌动 | 【画面】"人流涌动穿行" | ✅ |
-| 指示物在右侧 | 【画面】"画面右侧醒目立有指示物" | ✅ |
-| 角色甲背道具X 独行 | 【画面】"@图1 背着@图2 独行于人流之中" | ✅ |
-| 手攥道具Y | 【画面】"手中紧攥@图3" | ✅ |
-| 停步仰望指示物 | 【画面】"停步于人群之间，抬头仰望画面右侧的指示物" | ✅ |
-| 朝向3/4正面朝右 | 【画面】"身体3/4正面朝右" | ✅ |
-| 紧张而笃定 | 【画面】"眼神紧张而笃定" | ✅ |
-| 左侧晨光+暖黄底色 | 【光影】"左侧柔和晨光均匀铺洒，暖黄底色" | ✅ |
-| 人影逆光剪影 | 【光影】"人影逆光偏暗形成剪影轮廓" | ✅ |
+| mở trường trường vào  | 【vẽ mặt 】"mở trường tự trường vào " | ✅ |
+| Bối cảnhra cổng  | 【vẽ mặt 】"@ảnh 4" | ✅ |
+| lớn Viễn cảnh (extreme wide shot)（ban đầu đầu ） | 【vẽ mặt 】"lớn Viễn cảnh (extreme wide shot)cấu ảnh " | ✅ |
+| ngườiđộng  | 【vẽ mặt 】"ngườiđộng thi " | ✅ |
+| nhở ở phải  | 【vẽ mặt 】"vẽ mặt phải mục lập có nhở " | ✅ |
+| Nhân vậtĐạo cụX thi  | 【vẽ mặt 】"@ảnh 1 đang @ảnh 2 thi với người của giữa " | ✅ |
+| tay Đạo cụY | 【vẽ mặt 】"tay giữa @ảnh 3" | ✅ |
+| bước nhở  | 【vẽ mặt 】"bước với người của gian ，đầu vẽ mặt phải  của nhở " | ✅ |
+| 3/4chính mặt phải  | 【vẽ mặt 】"thể 3/4chính mặt phải " | ✅ |
+| bức nối  | 【vẽ mặt 】"bức nối " | ✅ |
+| trái ánh +vật  | 【Ánh sáng】"trái  và ánh ，vật " | ✅ |
+| ngườisáng ánh sáng  | 【Ánh sáng】"ngườisáng ánh dạng tạo sáng " | ✅ |
 
-**零遗漏，校验通过。**
+**0，đối chiếu thông qua。**

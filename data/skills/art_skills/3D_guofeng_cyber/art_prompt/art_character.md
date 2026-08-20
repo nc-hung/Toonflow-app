@@ -1,12 +1,12 @@
 ---
 name: art_character
-description: 3D超精致建模 通用角色四视图标准手册
+description: 3Dvượt tạo mô  thông hàm Nhân vật4video Iconsổ tay
 metaData: art_skills
 ---
 
 ---
 
-# 3D超精致建模 通用角色四视图标准手册
+# 3Dvượt tạo mô  thông hàm Nhân vật4video Iconsổ tay
 ---
 
-一位【年龄（数字）】的【性别】，【详细身份】，【20个字的避开同模描述，防止不同提示出现一种脸】，【10个字角色设定】，【性格】，【五官】、【气质】、【4个字角色标签】3D超精致建模，无表情，正对镜头，超特写。
+1 vị trí 【năm（số chữ ）】 của 【khác 】，【chi 】，【20mục chữ  của mở cùng mô Mô tả，không cùng nhắc nhở ra 1 loại 】，【10mục chữ Nhân vậtthiết nối 】，【khung 】，【5】、【】、【4mục chữ Nhân vậtbiểu ký 】3Dvượt tạo mô ，không bảng tình ，chính đúng Ống kính，vượt Đặc tả (close-up)。

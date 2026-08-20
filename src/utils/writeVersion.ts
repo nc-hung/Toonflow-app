@@ -8,7 +8,7 @@ const APP_VERSION: string = (() => {
   if (typeof __APP_VERSION__ !== "undefined") {
     return __APP_VERSION__;
   }
-  // 开发环境回退：从 package.json 读取
+  // Môi trường dev: đọc dự phòng từ package.json
   const pkgPath = path.resolve(process.cwd(), "package.json");
   const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf8"));
   return pkg.version;

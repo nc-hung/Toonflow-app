@@ -1,50 +1,50 @@
-# 青春成长 · 导演叙事手法技能包
+# Thanh Xuân & Trưởng Thành · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **青春成长** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **Thanh Xuân & Trưởng Thành** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **第一次的珍贵** — 青春叙事的核心魅力在于"第一次"：第一次心动、第一次失败、第一次告别、第一次为别人勇敢
-- **笨拙即真实** — 青春的表达方式就是笨拙的：说错话、做错事、错过又追回来。完美的青春不动人，慌张的才动人
-- **时间不可逆** — 青春叙事的底层情感是"再也回不去"，所有甜蜜和遗憾都因为不可重来而珍贵
-- **群像共振** — 青春不是一个人的事，朋友、对手、老师、家人构成的群像共振才是完整的青春
+- **Thứ 1 lần  của ** — việc  của lực ở với "Thứ 1 lần "：Thứ 1 lần động 、Thứ 1 lần thất bại、Thứ 1 lần thông khác 、Thứ 1 lần khác người
+- **thật ** —  của bảng cách thứcthì là  của ：hướng sai lời 、sai việc 、sai lại trả 。đẹp  của không động người，bức  của động người
+- **thời giankhông ** — việc  của tầng tình là "cũng trả không đi "，tất cả và đều không trùng 
+- **** — không là một người của việc ，、đúng tay 、、ngườicấu tạo  của là chỉnh  của 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Coming_of_age/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义青春成长在主题立意、情感节奏、场景情绪设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa Thanh Xuân & Trưởng Thànhở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与情感内核 | 第一次的珍贵、笨拙即真实、时间不可逆、群像共振 |
-| 叙事结构与节奏规划 | 碎片化叙事、情绪过山车、成长弧线、回忆与当下 |
-| 分场景情绪设计 | 六大典型青春段落设计、空间记忆绑定、季节叙事 |
-| 声音与音乐方向 | 青春音景、沉默的成长、音乐记忆锚点、环境即时代 |
-| 构图与景别叙事 | 群像与个体、距离变化叙事、空间的情感记忆 |
-| 镜头运动与节奏 | 活力与沉静交替、奔跑跟拍、回忆运镜、定格瞬间 |
+| chính đề lập ý tình trong  | Thứ 1 lần  của 、thật 、thời giankhông 、 |
+| việc kết cấu tiết lập kế hoạch | hóa việc 、tình xúc 、tạo dài đường 、trả khi dưới  |
+| phútBối cảnhtình xúc thiết tính  | 6lớn kiểu đoạn thiết tính 、rỗng gian ghép nối、tiết việc  |
+| thanh âm âm phương  | âm bối 、 của tạo dài 、âm điểm 、 |
+| cấu ảnh Cỡ cảnhviệc  | mục thể 、hóa việc 、rỗng gian  của tình  |
+| Ống kínhvận động tiết  | hoạt lực tác vụ 、、trả Góc quay、nối khung gian  |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义青春成长在分镜表中的景别情感映射、运镜活力感、时长把控、镜头合并与转场逻辑。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa Thanh Xuân & Trưởng Thànhở Bảng phân cảnhgiữa  của Cỡ cảnhtình 、Góc quayhoạt lực 、Thời lượngđem sát 、Ống kínhhợp nhất chuyển trường logic。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为青春情感节奏控制核心工具的定位说明 |
-| 景别选择 | 群像景别、特写捕捉微表情、远景的孤独与自由 |
-| 运镜节奏 | 活力跟拍、沉静凝视、回忆缓移、青春节奏感 |
-| 时长把控 | 日常碎片时长、情感段落拉长、沉默的分量 |
-| 镜头合并策略 | 日常碎片整合、群戏一镜涵盖、叙事密度 |
-| 一镜到底 | 校园穿越、奔跑追逐、告别长镜头 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ tình tiết sát chép cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | Cỡ cảnh、Đặc tả (close-up)bảng tình 、Viễn cảnh (extreme wide shot) của tự do  |
+| Góc quaytiết  | hoạt lực 、video 、trả 、tiết  |
+| Thời lượngđem sát  | ngày thường Thời lượng、tình đoạn dài 、 của phútlượng  |
+| Ống kínhhợp nhất  | ngày thường chỉnh hợp 、1 quay 、việc mật độ  |
+| 1 quay đến  | đối 、、thông khác dài Ống kính |

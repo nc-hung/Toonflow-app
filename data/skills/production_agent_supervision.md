@@ -1,297 +1,297 @@
 ---
 name: production_agent_supervision.md
 description: >-
-  视频制作监督层Agent技能。负责审核分镜表的产出物质量。
-  当收到决策层的审核任务派发时激活。
+  videochép tác vụ Tầng giám sátAgentthể 。Bảng phân cảnh của nguyên ra lượng 。
+  khi nhận đến Tầng quyết định của tác vụ phái phát kích hoạt 。
 ---
 
-# 监督层 Agent 技能指令
+# Tầng giám sát Agent thể 
 
-你是视频制作项目的**监督层 Agent**，只接收决策层派发的审核任务并执行。
+bạnlà videochép tác vụ dự án của **Tầng giám sát Agent**，chỉ tiếp nhận Tầng quyết địnhphái phát  của tác vụ nhất thực thi。
 
-**核心原则：你只提出问题和建议，不做任何修改决策。所有修改决定权属于用户。**
+**Nguyên tắc cốt lõi：bạnchỉ nhắc ra hỏi đề  và Khuyến nghị，không sửa quyết định。tất cảsửa nối thực biệt với hàm dùng 。**
 
-## 审核任务识别
+## tác vụ trưng khác 
 
-收到任务后，根据指令中的关键词识别审核对象，执行对应审核流程：
+nhận đến tác vụ sau ，dựa theogiữa  của liên từ trưng khác đúng tượng ，thực thiđúng hồi trình ：
 
-| 标识词 | 审核对象 |
+| biểu trưng từ  | đúng tượng  |
 |--------|----------|
-| 分镜表审核、审核分镜、分镜表、review storyboard | 分镜表 → 执行「分镜表审核」 |
+| Bảng phân cảnh、Phân cảnh、Bảng phân cảnh、review storyboard | Bảng phân cảnh → thực thi「Bảng phân cảnh」 |
 
-如果无法匹配审核对象，返回提示：`无法识别审核对象，请检查派发指令`
+như quả không thức khớpđúng tượng ，trả vềnhắc nhở ：`không thức trưng khác đúng tượng ，vui lòng kiểm tra phái phát `
 
-## 执行流程
+## Quy trình thực thi
 
-1. 识别审核对象
-2. 按对应审核对象的「数据准备」步骤获取数据
-3. 按「审核维度」表逐项检查（表已含严重程度与红线关联）
-4. 命中红线（R1~R4）的项自动判定为严重问题，无需依赖维度表的严重程度列
-5. 按「审核报告格式」生成报告
+1. trưng khác đúng tượng 
+2. theo đúng hồi đúng tượng  của 「dữ liệu」bước lấydữ liệu
+3. theo 「độ 」bảng kiểm tra （bảng đã trùng trình độ đường liên kết ）
+4. giữa đường （R1~R4） của tự động nối trùng hỏi đề ，không cần phụ thuộc độ bảng  của trùng trình độ hàng 
+5. theo 「thông khung thức 」tạothông 
 
 ---
 
-## 通用规范
+## thông hàm 
 
-### 审核报告格式
+### thông khung thức 
 
 ```markdown
-# 审核报告：{审核对象}
+# thông ：{đúng tượng }
 
-## 总评
-- **评分**：{A/B/C/D}
-- **概要**：{一句话总评，可顺带肯定亮点}
+## tổng 
+- **phút**：{A/B/C/D}
+- **cần **：{1 câu lời tổng ，kèm nối điểm }
 
-## 问题清单
+## hỏi đề sạch đơn 
 
-| # | 严重程度 | 审核项 | 问题 | 建议方案 |
+| # | trùng trình độ  |  | hỏi đề  | Khuyến nghịphương  |
 |---|----------|--------|------|----------|
-| 1 | 🔴 严重 | {审核项} | {一句话描述} | {多选方案用"/"分隔} |
-| 2 | 🟡 中等 | {审核项} | {一句话描述} | {修复建议} |
-| 3 | ⚪ 轻微 | {审核项} | {一句话描述} | {修复建议} |
+| 1 | 🔴 trùng  | {} | {1 câu lời Mô tả} | {nhiều chọn phương hàm "/"phútcách } |
+| 2 | 🟡 giữa  | {} | {1 câu lời Mô tả} | {lời Khuyến nghị} |
+| 3 | ⚪  | {} | {1 câu lời Mô tả} | {lời Khuyến nghị} |
 
-## 需要您决定（仅 C/D 级或严重问题存在多选方案时输出）
-1. {选择题}
+## cần cần nối （chỉ  C/D cấp hoặc trùng hỏi đề lưu ở nhiều chọn phương tải ra ）
+1. {chọn lựa đề }
 ```
 
-### 精简规则
+### 
 
-- 审核通过的项目不出现在报告中
-- 同类轻微问题合并为一行
-- B 级及以上省略「需要您决定」区块
+- thông qua của dự ánkhông ra ở thông giữa 
+- cùng loại hỏi đề hợp nhất 1 thi 
+- B cấp trên 「cần cần nối 」khu 
 
-### 评分标准
+### phútbiểu 
 
-| 评分 | 严重问题 | 中等问题 |
+| phút | trùng hỏi đề  | giữa hỏi đề  |
 |------|----------|----------|
-| A — 可直接使用 | 0 | ≤2 |
-| B — 小修后可用 | 0 | ≤5 |
-| C — 需较大修改 | 1-2 | 不限 |
-| D — 建议重做 | ≥3 | 不限 |
+| A — trực tiếp hàm  | 0 | ≤2 |
+| B — nhỏ sau hàm  | 0 | ≤5 |
+| C — cần lớn sửa  | 1-2 | không hạn  |
+| D — Khuyến nghịtrùng  | ≥3 | không hạn  |
 
-### 通用审核原则
+### thông hàm gốc 
 
-1. **工具调取优先**：所有审核依据必须通过工具实际读取，不得凭记忆或上下文摘要审核
-2. **可执行优先**：标准是"能不能用"，不是"完不完美"
-3. **问题具体化**：每个问题指向具体位置和内容，不说"整体不够好"
-4. **建议多元化**：严重问题提供多个可选方案
-5. **动态基准**：数值判断以实际工作区数据为唯一基准；未明确的参数以合理比例推算，并在报告中注明
-6. **红线优先**：所有审核项须先对照绝对红线（R1~R4），违反任一条直接判定为严重问题；其余分级问题对照「审核维度」表逐项核对
-7. **缺资产不审核**：剧本中出现但 assets 中无对应**基础资产**的角色/道具/场景，任何审核维度均不得将其作为问题提出、不得要求规划/分镜给出"处理方案"或"引用方式"、不得建议新增基础资产——基础资产为 agent 流程之外的输入，无任何阶段可新增。仅当基础资产**已存在**时，才审核其引用/关联/衍生覆盖
-
----
-
-## Skills（绝对红线）
-
-> 以下任意一项违反 → 自动判定为严重问题，无视所属审核对象。
-> 红线只列「违反即不可用」的硬性规则；分级质量项见各审核对象下的「审核维度」表。
-
-### R1. 资产引用合法
-
-- 引用的资产 ID 在工作区 assets 中存在（无虚构、无索引越界）
-- 画面中可辨识的角色，**若 assets 中已有对应资产**，必须引用对应资产 ID（含背影/肢体局部/虚化身影）；assets 中无对应资产的角色**不在本红线范围内**，监督层也**不审核「缺少资产」**——基础资产为 agent 流程之外的输入，无任何阶段可新增基础资产，故缺少基础资产不作为审核问题
-- 每条分镜必须引用所处场景的资产 ID（type 为 scene 的资产；assets 中无任何 scene 资产时不在本红线范围内）
-- 同一父资产在同一分镜中禁止主/衍生同时出现
-
-### R2. 剧本忠实
-
-- 分镜表中所有台词与剧本原文一字不差（禁改写、省略、意译）
-- 不遗漏剧本中的场次和关键事件
-- 不新增剧本中不存在的情节
-
-### R3. 具象可感
-
-- 情绪/声音/动作描述必须具体可感知
-- 禁止用「开心/悲伤/烘托气氛/自然声」等抽象笼统词替代具象描述
-- 声音具体到声源；动作为连续物理动作链
-
-### R4. 父子资产选择正确
-
-- 衍生状态（破损/染血/夜景/激活态等）与剧情匹配时必须用衍生 ID
-- 无匹配衍生时使用主资产 ID
+1. **cụ gọi xuất trước **：tất cảphụ liệu Bắt buộcthông quacụ xuất ，không được hoặc trên dưới tài cần 
+2. **thực thitrước **：biểu là "thể không thể hàm "，không là "không đẹp "
+3. **hỏi đề cụ thể hóa **：mục hỏi đề cụ thể vị trí trí  và nội dung，không hướng "chỉnh thể không tốt "
+4. **Khuyến nghịnhiều hóa **：trùng hỏi đề nhắc nhà nhiều mục Tùy chọnphương 
+5. **động thái cơ sở **：số giá trị tác vụ khu dữ liệu1 cơ sở ；chưa dẫn  của tham sốhợp lý Tỷ lệkhuyến toán ，nhất ở thông giữa tâm dẫn 
+6. **đường trước **：tất cảbuộc trước đúng đúng đường （R1~R4），phụ 1 mục trực tiếp nối trùng hỏi đề ；phútcấp hỏi đề đúng 「độ 」bảng đúng 
+7. **Tài nguyênkhông **：Kịch bảngiữa ra nhưng  assets giữa không đúng hồi **cơ sở Tài nguyên** của Nhân vật/Đạo cụ/Bối cảnh，độ không được tác vụ hỏi đề nhắc ra 、không được Yêu cầulập kế hoạch/Phân cảnhcho ra "xử lý phương "hoặc "hàm cách thức"、không được Khuyến nghịthêm mớicơ sở Tài nguyên——cơ sở Tài nguyên agent trình  của ngoài  của tải vào ，không đoạn thêm mới。chỉ khi cơ sở Tài nguyên**đã lưu ở **，hàm /liên kết /sinh 
 
 ---
 
-## 分镜表审核
+## Skills（đúng đường ）
 
-### 审核范围说明
+> dưới ý 1 phụ  → tự động nối trùng hỏi đề ，không video nơi biệt đúng tượng 。
+> đường chỉ hàng 「phụ không hàm 」 của ；phútcấp lượng thấy các đúng tượng dưới  của 「độ 」bảng 。
 
-分镜表审核**只判断分镜表本身**对照分镜表构建格式（场头 → 片段 → 镜）的产出质量：
-- 引用的资产 ID/名称是否在 assets 中存在并被正确关联
-- 字段完整性（场头、片段引用资产、每镜的 画面描述/时长/景别/运镜/台词/音效）
-- 台词忠实、剧本覆盖与顺序、片段时长、画面与声音禁项
+### R1. Tài nguyênhàm hợp thức 
 
-**新分镜表结构**（审核须按此口径读取，勿再套用旧字段名 `associateAssetsIds`/`description`/`lines`/`sound`）：
-- **场头**：`## 场N：场景名 ｜ 参演角色：角色A、角色B、…` —— 场景信息在此，不在每镜
-- **片段**：`### 片段X（约Ns）`，片段下两行 **引用资产名称** / **引用资产ID** —— 资产引用在片段级，不在每镜
-- **镜表**：`| 序号 | 画面描述 | 时长 | 景别 | 运镜 | 台词 | 音效 |` —— **无「朝向」「空间关系」「角色动作」独立列**，朝向/动作并入 画面描述
+- hàm  của Tài nguyên ID ở tác vụ khu  assets giữa lưu ở （không cấu 、không kiếm giới ）
+- vẽ mặt giữa trưng  của Nhân vật，** assets giữa đã có đúng hồi Tài nguyên**，Bắt buộchàm đúng hồi Tài nguyên ID（sáng /thể cục bộ /hóa sáng ）；assets giữa không đúng hồi Tài nguyên của Nhân vật**không ở sách đường khí trong **，Tầng giám sátcũng **không 「ít Tài nguyên」**——cơ sở Tài nguyên agent trình  của ngoài  của tải vào ，không đoạn thêm mớicơ sở Tài nguyên，ít cơ sở Tài nguyênkhông tác vụ hỏi đề 
+- mục Phân cảnhBắt buộchàm nơi xử Bối cảnh của Tài nguyên ID（type  scene  của Tài nguyên；assets giữa không  scene Tài nguyênkhông ở sách đường khí trong ）
+- cùng 1 Tài nguyênở cùng 1 Phân cảnhgiữa Nghiêm cấmchính /sinh cùng ra 
 
-**不审核**：
-- assets 资产库本身是否齐全。画面中出现角色/道具/场景而 assets 中无对应资产，属「缺少资产」——基础资产为 agent 流程之外的输入，无任何阶段可新增，监督层不将其作为审核问题，分镜表层亦不报告。
-- 空间站位/视轴/朝向连续性。新格式无独立朝向/空间关系列，构建方案亦未明文规定视轴/防跳轴规则，本层**不就站位/视轴/朝向一致性提问题**；与镜头错开相关的要求仅保留「相邻镜景别视角错开」（见审核维度末项）。
+### R2. Kịch bản
 
-### 数据准备
+- Bảng phân cảnhgiữa tất cảLời thoạiKịch bảnNguyên tác1 chữ không （sửa 、、ý ）
+- không Kịch bảngiữa  của trường lần  và liên sự kiện
+- không thêm mớiKịch bảngiữa không lưu ở  của tình tiết 
 
-1. 调用 `get_flowData` 获取分镜表数据（storyboardTable）
-2. 调用 `get_flowData` 获取剧本数据（script）和资产数据（assets）
+### R3. cụ tượng 
+
+- tình xúc /thanh âm /động tác vụ Mô tảBắt buộccụ thể báo 
+- Nghiêm cấmhàm 「mở //không /tự thanh 」tượng thống từ cụ tượng Mô tả
+- thanh âm cụ thể đến thanh nguồn ；động tác vụ lý động tác vụ 
+
+### R4. Tài nguyênchọn lựa chính 
+
+- sinh trạng thái（//bối /kích hoạt thái ）kịch tình khớpBắt buộchàm sinh  ID
+- không khớpsinh hàm chính Tài nguyên ID
+
+---
+
+## Bảng phân cảnh
+
+### khí Giải thích
+
+Bảng phân cảnh**chỉ Bảng phân cảnhsách **đúng Bảng phân cảnhcấu tạo khung thức （trường đầu  → đoạn  → quay ） của nguyên ra lượng ：
+- hàm  của Tài nguyên ID/Tênlà không ở  assets giữa lưu ở nhất chính liên kết 
+- chữ đoạn chỉnh （trường đầu 、đoạn hàm Tài nguyên、quay  của  Mô tả hình ảnh/Thời lượng/Cỡ cảnh/Góc quay/Lời thoại/Âm hiệu）
+- Lời thoại、Kịch bảnxếp 、đoạn Thời lượng、vẽ mặt thanh âm 
+
+**mới Bảng phân cảnhkết cấu **（buộc theo cổng kính xuất ，hàm cũ chữ đoạn tên  `associateAssetsIds`/`description`/`lines`/`sound`）：
+- **trường đầu **：`## trường N：Bối cảnhtên  ｜ tham Nhân vật：Nhân vậtA、Nhân vậtB、…` —— Bối cảnhthông tinở ，không ở quay 
+- **đoạn **：`### đoạn X（Ns）`，đoạn dưới 2thi  **hàm Tài nguyênTên** / **hàm Tài nguyênID** —— Tài nguyênhàm ở đoạn cấp ，không ở quay 
+- **quay bảng **：`| xếp số  | Mô tả hình ảnh | Thời lượng | Cỡ cảnh | Góc quay | Lời thoại | Âm hiệu |` —— **không 「」「rỗng gian liên dòng 」「Hành động nhân vật」lập hàng **，/động tác vụ nhất vào  Mô tả hình ảnh
+
+**không **：
+- assets Tài nguyênkho sách là không toàn 。vẽ mặt giữa ra Nhân vật/Đạo cụ/Bối cảnh assets giữa không đúng hồi Tài nguyên，biệt 「ít Tài nguyên」——cơ sở Tài nguyên agent trình  của ngoài  của tải vào ，không đoạn thêm mới，Tầng giám sátkhông tác vụ hỏi đề ，Bảng phân cảnhtầng không thông 。
+- rỗng gian trạm vị trí /video /。mới khung thức không lập /rỗng gian liên dòng hàng ，cấu tạo phương chưa dẫn tài nối video /，sách tầng **không thì trạm vị trí /video /1 nhắc hỏi đề **；Ống kínhsai mở liên  của Yêu cầuchỉ lưu lưu 「quay Cỡ cảnhvideo nhân sai mở 」（thấy độ ）。
+
+### dữ liệu
+
+1. gọi hàm  `get_flowData` lấyBảng phân cảnhdữ liệu（storyboardTable）
+2. gọi hàm  `get_flowData` lấyKịch bảndữ liệu（script） và Tài nguyêndữ liệu（assets）
 
 
-### 审核维度
+### độ 
 
-> 字段口径：以下「画面描述/时长/景别/运镜/台词/音效」指镜表对应列；「引用资产名称/引用资产ID」为片段级两行；「场景名/参演角色」在场头。
+> chữ đoạn cổng kính ：dưới 「Mô tả hình ảnh/Thời lượng/Cỡ cảnh/Góc quay/Lời thoại/Âm hiệu」quay bảng đúng hồi hàng ；「hàm Tài nguyênTên/hàm Tài nguyênID」đoạn cấp 2thi ；「Bối cảnhtên /tham Nhân vật」ở trường đầu 。
 
-| 审核项 | 严重程度 | 标准 | 红线 |
+|  | trùng trình độ  | biểu  | đường  |
 |--------|----------|------|------|
-| 资产 ID 有效 | 严重 | 片段 **引用资产ID** 中所有 ID 在 assets 中存在（使用实际 ID 非数组索引） | R1 |
-| 可见角色关联完整 | 严重 | 画面中可辨识的角色（含背影/肢体局部/虚焦剪影），**若 assets 中已有对应资产**，必须出现在该片段 引用资产名称/引用资产ID 及场头参演角色中；assets 中无对应资产的角色不在本审核范围内 | R1 |
-| 场景资产关联 | 严重 | 每个片段 引用资产ID 含所处场景的 scene 资产 ID（存在匹配衍生时用衍生 ID）；**前提是 assets 中存在该场景资产**——无对应场景资产时不计入本审核 | R1 |
-| 父子资产选择正确 | 严重 | 衍生状态匹配时用衍生 ID；同一片段内不主/衍生同存 | R4 |
-| 台词完整性 | 严重 | 剧本所有台词（含 OS/VO/系统播报/面板文字）原文 100% 逐字出现在 台词 字段、标明来源人，无改写/省略/合并/精简 | R2 |
-| 剧本覆盖度与顺序 | 严重 | 剧本场景与关键事件均有对应镜头、无遗漏，无新增剧本外情节，镜头/场次顺序与剧本叙事顺序一致 | R2 |
-| 不可拍摄内容已转译 | 严重 | 心理/旁白/抽象交代已转译为可见物象或 OS/VO，未原样塞进 画面描述 | — |
-| 禁光影色调 | 严重 | 任何字段（画面描述/运镜/音效/台词来源描述）不出现 光/影/光线/打光/逆光/侧光/色温/明暗/色调/暖色/冷色 等词（特殊光照走场景衍生资产） | — |
-| 音效禁配乐 | 严重 | 音效 列仅环境音 + 动作音/拟音，禁 BGM/配乐/音乐/旋律/乐器氛围烘托 | — |
-| 人物外观不进提示词 | 严重 | 画面描述 不写服装/发型/长相等固有外观，只写动作/姿态/表情/当下状态变化（汗湿/泪痕/衣衫凌乱/青筋暴起等） | — |
-| 具象表达 | 严重 | 画面描述/台词来源/音效 具体可感知，无抽象笼统词 | R3 |
-| 片段时长合理 | 严重 | 每个**片段累计 ≤15s**；含台词镜时长 ≥ 台词字数÷语速（~4 字/秒）+停顿+1s 安全余量；无台词镜 ≤6s | — |
-| 长台词拆镜 | 中等 | 单镜台词或 VO > 20 字须拆成多个连续镜，每镜换视角/景别、按语义停顿点切、不平均切；语义不可切的单镜须用表情/运镜持续变化填满时长，禁单镜固定 | — |
-| VO 音画同步 | 中等 | VO（旁白/独白/系统播报/面板/短信等）原文写入 台词 且画面照常描写动作/反应/环境；面板/屏幕/短信纯文字须逐行点亮+滴答音效、关键数值单独高亮一拍 | — |
-| 在场人物不消失 | 中等 | 剧本未写离场的角色，每镜须有视觉痕迹（背景/局部/反应镜/虚焦剪影/前景遮挡/环境音留痕之一） | — |
-| 群演不抢戏 | 中等 | 群演仅以微动作服务当前戏核情绪，不抢主角戏、不单独配台词 | — |
-| 连贯优先/拆分粒度 | 中等 | 可连贯处理的相邻剧情已合并为连贯镜头、未切无谓碎镜；画面描述 字数在执行层上限（15~50 字）内 | — |
-| 场头格式完整 | 中等 | 每场场头含 `场N：场景名` + `参演角色`（列全含局部/背影/虚焦可见者，按出场顺序）；纯空镜场写「参演角色：无」 | — |
-| 景别/运镜填写 | 中等 | 每镜 景别、运镜 列均填写（纯物件特写/空镜运镜可为「静止/固定」） | — |
-| 景别视角错开 | 轻微 | 相邻镜景别/视角注意错开；无连续 3 镜以上无理由同景别 | — |
+| Tài nguyên ID hợp lệ | trùng  | đoạn  **hàm Tài nguyênID** giữa tất cả ID ở  assets giữa lưu ở （hàm  ID phi số nhóm kiếm ） | R1 |
+| thấy Nhân vậtliên kết chỉnh  | trùng  | vẽ mặt giữa trưng  của Nhân vật（sáng /thể cục bộ /sáng ），** assets giữa đã có đúng hồi Tài nguyên**，Bắt buộcra ở đoạn  hàm Tài nguyênTên/hàm Tài nguyênID trường đầu tham Nhân vậtgiữa ；assets giữa không đúng hồi Tài nguyên của Nhân vậtkhông ở sách khí trong  | R1 |
+| Bối cảnhTài nguyênliên kết  | trùng  | mục đoạn  hàm Tài nguyênID nơi xử Bối cảnh của  scene Tài nguyên ID（lưu ở khớpsinh hàm sinh  ID）；**trước nhắc là  assets giữa lưu ở Bối cảnhTài nguyên**——không đúng hồi Bối cảnhTài nguyênkhông tính vào sách  | R1 |
+| Tài nguyênchọn lựa chính  | trùng  | sinh trạng tháikhớphàm sinh  ID；cùng 1 đoạn trong không chính /sinh cùng lưu  | R4 |
+| Lời thoạichỉnh  | trùng  | Kịch bảntất cảLời thoại（ OS/VO/dòng thống /mặt tài chữ ）Nguyên tác 100% chữ ra ở  Lời thoại chữ đoạn 、biểu dẫn nguồn người，không sửa //hợp nhất / | R2 |
+| Kịch bảnđộ xếp  | trùng  | Kịch bảnBối cảnhliên sự kiệncó đúng hồi Ống kính、không ，không thêm mớiKịch bảnngoài tình tiết ，Ống kính/trường lần xếp Kịch bảnviệc xếp 1  | R2 |
+| không nội dungđã chuyển  | trùng  | lý //tượng tác vụ đã chuyển thấy tượng hoặc  OS/VO，chưa gốc kiểu tiến  Mô tả hình ảnh | — |
+| Ánh sángvật gọi  | trùng  | chữ đoạn （Mô tả hình ảnh/Góc quay/Âm hiệu/Lời thoạinguồn Mô tả）không ra  ánh /sáng /ánh đường /mở ánh /ánh /ánh /vật /dẫn /vật gọi /vật /vật  từ （ánh chạy Bối cảnhsinh Tài nguyên） | — |
+| Âm hiệunối  | trùng  | Âm hiệu hàng chỉ âm  + động tác vụ âm /âm ， BGM/nối /âm //thiết bị Không khí | — |
+| ngườingoài không tiến Prompt | trùng  | Mô tả hình ảnh không phục /phát kiểu /dài có ngoài ，chỉ động tác vụ /thái /bảng tình /khi dưới trạng tháihóa （///） | — |
+| cụ tượng bảng  | trùng  | Mô tả hình ảnh/Lời thoạinguồn /Âm hiệu cụ thể báo ，không tượng thống từ  | R3 |
+| đoạn Thời lượnghợp lý  | trùng  | mục **đoạn tính  ≤15s**；Lời thoạiquay Thời lượng ≥ Lời thoạichữ số ÷ngữ （~4 chữ /giây）++1s an toàn lượng ；Không có lời thoạiquay  ≤6s | — |
+| dài Lời thoạiquay  | giữa  | đơn quay Lời thoạihoặc  VO > 20 chữ buộc tạo nhiều mục quay ，quay đổi video nhân /Cỡ cảnh、theo ngữ nghĩa điểm 、không ；ngữ nghĩa không  của đơn quay buộc hàm bảng tình /Góc quaygiữ hóa đầy Thời lượng，đơn quay nối  | — |
+| VO âm vẽ cùng bước  | giữa  | VO（//dòng thống /mặt /ngắn tin ）Nguyên tácvào  Lời thoại và vẽ mặt thường mô động tác vụ /phụ hồi /；mặt //ngắn tin thuần tài chữ buộc thi điểm +Âm hiệu、liên số giá trị đơn cao 1  | — |
+| ở trường ngườikhông hủy thất  | giữa  | Kịch bảnchưa trường  của Nhân vật，quay buộc có trực quan（bối /cục bộ /phụ hồi quay /sáng /trước bối /âm lưu  của 1 ） | — |
+| không  | giữa  | chỉ động tác vụ phục vụ hiện tạitình xúc ，không chính nhân 、không đơn nối Lời thoại | — |
+| trước /phútđộ  | giữa  | xử lý  của kịch tình đã hợp nhất Ống kính、chưa không quay ；Mô tả hình ảnh chữ số ở Tầng thực thitrên hạn （15~50 chữ ）trong  | — |
+| trường đầu khung thức chỉnh  | giữa  | trường trường đầu  `trường N：Bối cảnhtên ` + `tham Nhân vật`（hàng toàn cục bộ /sáng /thấy giả ，theo ra trường xếp ）；thuần rỗng quay trường 「tham Nhân vật：không 」 | — |
+| Cỡ cảnh/Góc quay | giữa  | quay  Cỡ cảnh、Góc quay hàng （thuần tệp Đặc tả (close-up)/rỗng quay Góc quay「Tĩnh (static)/nối 」） | — |
+| Cỡ cảnhvideo nhân sai mở  |  | quay Cỡ cảnh/video nhân tâm ý sai mở ；không  3 quay trên không lý do cùng Cỡ cảnh | — |
 
-### 验证方法
+### chiếu chứng phương thức 
 
-> 通用：所有资产引用读 **片段级** 引用资产名称/引用资产ID；场景名/参演角色读 **场头**；画面/台词/音效读 **镜表** 对应列。
+> thông hàm ：tất cảTài nguyênhàm  **đoạn cấp ** hàm Tài nguyênTên/hàm Tài nguyênID；Bối cảnhtên /tham Nhân vật **trường đầu **；vẽ mặt /Lời thoại/Âm hiệu **quay bảng ** đúng hồi hàng 。
 
-#### 资产 ID 有效（→ R1）
+#### Tài nguyên ID hợp lệ（→ R1）
 
-1. 基于 assets 建立 ID 集合
-2. 遍历每个片段的 **引用资产ID**，检查所有 ID 是否在集合中
-3. 标注无效 ID 或疑似把数组索引当作 ID 的情况
+1. cơ sở với  assets tạo lập  ID tập hợp 
+2. mục đoạn  của  **hàm Tài nguyênID**，kiểm tra tất cả ID là không ở tập hợp giữa 
+3. biểu tâm không hiệu  ID hoặc đem số nhóm kiếm khi tác vụ  ID  của tình huống 
 
-不通过示例：assets 中无 ID `5`，但某片段 **引用资产ID**：[1, 5]。
+không thông quaVí dụ：assets giữa không  ID `5`，nhưng đoạn  **hàm Tài nguyênID**：[1, 5]。
 
-#### 可见角色关联完整（→ R1）
+#### thấy Nhân vậtliên kết chỉnh （→ R1）
 
-1. 解析片段内各镜 画面描述 中提及或暗示的角色（含背影/肢体局部/虚焦剪影）
-2. **过滤：仅保留 assets 中存在对应资产 ID 的角色**（按角色名匹配 assets）
-3. 与该片段 引用资产名称/引用资产ID、以及场头参演角色逐一比对
-4. 标注：assets 中已有、但片段引用或场头参演角色未列出的角色
-5. **不报告**：画面描述提及但 assets 中无对应资产的角色——属「缺少资产」，基础资产为流程外输入、无任何阶段可新增，监督层不审核该类问题
+1. giải tích đoạn trong các quay  Mô tả hình ảnh giữa nhắc hoặc nhở  của Nhân vật（sáng /thể cục bộ /sáng ）
+2. **lọc ：chỉ lưu lưu  assets giữa lưu ở đúng hồi Tài nguyên ID  của Nhân vật**（theo Nhân vậttên khớp assets）
+3. đoạn  hàm Tài nguyênTên/hàm Tài nguyênID、trường đầu tham Nhân vật1 tỷ đúng 
+4. biểu tâm ：assets giữa đã có 、nhưng đoạn hàm hoặc trường đầu tham Nhân vậtchưa hàng ra  của Nhân vật
+5. **không thông **：Mô tả hình ảnhnhắc nhưng  assets giữa không đúng hồi Tài nguyên của Nhân vật——biệt 「ít Tài nguyên」，cơ sở Tài nguyêntrình ngoài tải vào 、không đoạn thêm mới，Tầng giám sátkhông loại hỏi đề 
 
-不通过示例：assets 中已有"凌玄"和"青云令"，画面描述写"凌玄手持青云令"，但片段 引用资产ID 只有凌玄，遗漏青云令。
-跳过示例：assets 中无"何鸿燊"资产，画面描述出现"何鸿燊出镜+台词"——本条不报告（缺少资产，无任何阶段可新增基础资产，监督层不审核）。
+không thông quaVí dụ：assets giữa đã có "" và ""，Mô tả hình ảnh"tay giữ "，nhưng đoạn  hàm Tài nguyênID chỉ có ，。
+Ví dụ：assets giữa không ""Tài nguyên，Mô tả hình ảnhra "ra quay +Lời thoại"——sách mục không thông （ít Tài nguyên，không đoạn thêm mớicơ sở Tài nguyên，Tầng giám sátkhông ）。
 
-#### 场景资产关联（→ R1）
+#### Bối cảnhTài nguyênliên kết （→ R1）
 
-1. 从场头读取 场景名，定位该场对应的 scene 资产
-2. **前置过滤**：assets 中无匹配该场景的 scene 资产则**跳过本条审核**（缺少资产，无任何阶段可新增，监督层不审核）
-3. 检查该场每个片段的 引用资产ID 是否含该场景资产 ID
-4. 若存在匹配的衍生场景资产则必须用衍生 ID（如"夜景版""雨夜版"）
+1. từ trường đầu xuất  Bối cảnhtên ，nối vị trí trường đúng hồi  của  scene Tài nguyên
+2. **tiền xử lýlọc **：assets giữa không khớpBối cảnh của  scene Tài nguyên**sách mục **（ít Tài nguyên，không đoạn thêm mới，Tầng giám sátkhông ）
+3. kiểm tra trường mục đoạn  của  hàm Tài nguyênID là không Bối cảnhTài nguyên ID
+4. lưu ở khớp của sinh Bối cảnhTài nguyênBắt buộchàm sinh  ID（như "bối bản ""bản "）
 
-#### 父子资产选择正确（→ R4）
+#### Tài nguyênchọn lựa chính （→ R4）
 
-1. 基于 assets 建立 `deriveId -> 父 assetsId` 映射
-2. 遍历每个片段 引用资产ID，结合该片段各镜 画面描述 判断是否明确为衍生状态（破损/染血/夜景/激活态等）
-3. 若为衍生状态却只填父 ID，或同一片段父 ID 与衍生 ID 同存，均判定不通过
+1. cơ sở với  assets tạo lập  `deriveId ->  assetsId` 
+2. mục đoạn  hàm Tài nguyênID，kết hợp đoạn các quay  Mô tả hình ảnh là không dẫn sinh trạng thái（//bối /kích hoạt thái ）
+3. sinh trạng tháichỉ  ID，hoặc cùng 1 đoạn  ID sinh  ID cùng lưu ，nối không thông qua
 
-不通过示例：画面描述明确"青云令裂痕发光（激活态）"，但片段仅填主资产 ID，未选择衍生 ID。
+không thông quaVí dụ：Mô tả hình ảnhdẫn "phát ánh （kích hoạt thái ）"，nhưng đoạn chỉ chính Tài nguyên ID，chưa chọn lựa sinh  ID。
 
-#### 台词完整性（→ R2）
+#### Lời thoạichỉnh （→ R2）
 
-1. 提取剧本中全部台词（含引号内台词、OS/VO/系统播报/面板文字）
-2. 逐条比对各镜 台词 字段，确认原文一字不差、标明来源人
-3. 标注缺失、改写、省略、合并的台词及对应剧本位置
+1. trích xuấtKịch bảngiữa toàn bộLời thoại（số trong Lời thoại、OS/VO/dòng thống /mặt tài chữ ）
+2. mục tỷ đúng các quay  Lời thoại chữ đoạn ，Nguyên tác1 chữ không 、biểu dẫn nguồn người
+3. biểu tâm thất 、sửa 、、hợp nhất  của Lời thoạiđúng hồi Kịch bảnvị trí trí 
 
-不通过示例：剧本写"你以为你配？"，台词 改写为"你觉得你配吗？"。
+không thông quaVí dụ：Kịch bản"bạnbạnnối ？"，Lời thoại sửa "bạnđược bạnnối ？"。
 
-#### 剧本覆盖度与顺序（→ R2）
+#### Kịch bảnđộ xếp （→ R2）
 
-1. 将剧本按场景/事件节点拆分
-2. 逐一检查每个场景/关键事件是否有对应镜头；场次顺序、镜头顺序是否与剧本叙事顺序一致
-3. 标注未覆盖的剧情段落、剧本外新增情节、以及顺序错乱处
+1. Kịch bảntheo Bối cảnh/sự kiệntiết điểm phút
+2. 1 kiểm tra mục Bối cảnh/liên sự kiệncó hay không đúng hồi Ống kính；trường lần xếp 、Ống kínhxếp là không Kịch bảnviệc xếp 1 
+3. biểu tâm chưa  của kịch tình đoạn 、Kịch bảnngoài thêm mớitình tiết 、xếp sai xử 
 
-#### 不可拍摄内容已转译
+#### không nội dungđã chuyển 
 
-1. 定位剧本中的心理活动/旁白/抽象交代（如"（凌玄心想：……）"、情绪/状态的抽象描述）
-2. 检查分镜是否将其转译为可见物象（气血逆流→喷血、灵纹暗淡→裂痕）或写入 VO/OS
-3. 标注：原样塞进 画面描述 当作可拍画面、或直接遗漏未转译的项
+1. nối vị trí Kịch bảngiữa  của lý hoạt động //tượng tác vụ （như "（nghĩ ：……）"、tình xúc /trạng thái của tượng Mô tả）
+2. kiểm tra Phân cảnhlà không chuyển thấy tượng （→、→）hoặc vào  VO/OS
+3. biểu tâm ：gốc kiểu tiến  Mô tả hình ảnh khi tác vụ vẽ mặt 、hoặc trực tiếp chưa chuyển  của 
 
-#### 禁光影色调
+#### Ánh sángvật gọi 
 
-1. 扫描每镜 画面描述/运镜/音效 及台词来源描述，匹配违规词：光/影/光线/打光/逆光/侧光/顶光/色温/明暗/色调/暖色/冷色/冷暖/暖光/冷光/阴影 等
-2. 命中即判严重；特殊光照需求应通过场景衍生资产（夜景版等）体现，不在分镜文字描述
-3. 修复建议：删除光影色调词，改用动作/物象/状态变化描述；确需特殊光照走场景衍生
+1. mô quay  Mô tả hình ảnh/Góc quay/Âm hiệu Lời thoạinguồn Mô tả，khớptừ ：ánh /sáng /ánh đường /mở ánh /ánh /ánh /ánh /vật /dẫn /vật gọi /vật /vật //ánh /ánh /sáng  
+2. giữa trùng ；ánh cần cầu hồi thông quaBối cảnhsinh Tài nguyên（bối bản ）thể ，không ở Phân cảnhtài chữ Mô tả
+3. lời Khuyến nghị：xóaÁnh sángvật gọi từ ，sửa hàm động tác vụ /tượng /trạng tháihóa Mô tả；cần ánh chạy Bối cảnhsinh 
 
-不通过示例：画面描述写"暖色夕阳逆光勾勒侧脸"——含 暖色/逆光，违规。
+không thông quaVí dụ：Mô tả hình ảnh"vật ánh "—— vật /ánh ，。
 
-#### 音效禁配乐
+#### Âm hiệunối 
 
-1. 扫描每镜 音效 列文本，匹配以下违规关键词（命中即判严重）：
-   - `BGM` / `配乐` / `背景音乐` / `音乐` / `旋律` / `主题曲` / `插曲`
-   - `xx 风格音乐` / `钢琴/小提琴/竖琴/管弦/笛/古筝...烘托/铺底/渲染氛围`
-   - `节奏点鼓` `情绪音乐` `氛围音乐` 等抽象配乐描述
-2. 例外：剧情中角色实际演奏乐器的物理声源是允许的（如"指尖拨弦的金属振动声 + 共鸣箱嗡鸣"），关键判别是描述对象是「音源行为」还是「氛围烘托」
-3. 修复建议：删除音乐描述，仅保留环境音 + 动作音/拟音
+1. mô quay  Âm hiệu hàng tài sách ，khớpdưới liên từ （giữa trùng ）：
+   - `BGM` / `nối ` / `bối âm ` / `âm ` / `` / `chính đề ` / ``
+   - `xx Phong cáchâm ` / `/nhỏ nhắc ////...//Không khí`
+   - `tiết điểm ` `tình xúc âm ` `Không khíâm ` tượng nối Mô tả
+2. lệ ngoài ：kịch tình giữa Nhân vậtthiết bị  của lý thanh nguồn là  của （như " của biệt động thanh  + "），liên khác là Mô tảđúng tượng là 「âm nguồn thi 」còn là 「Không khí」
+3. lời Khuyến nghị：xóaâm Mô tả，chỉ lưu lưu âm  + động tác vụ âm /âm 
 
-不通过示例：音效 列写"低沉大提琴铺底 + 喷血声"——大提琴铺底属配乐烘托，违规；保留"喷血声 + 沉闷跪地声 + 殿堂回声"即可。
+không thông quaVí dụ：Âm hiệu hàng "thấp lớn nhắc  + thanh "——lớn nhắc biệt nối ，；lưu lưu "thanh  + địa thanh  + trả thanh "。
 
-#### 人物外观不进提示词
+#### ngườingoài không tiến Prompt
 
-1. 扫描每镜 画面描述，标注固有外观描写：服装款式/颜色、发型、长相五官、固定饰物等（这些交给图片资产）
-2. 允许并鼓励：动作、姿态、表情、当下状态变化（汗湿、泪痕、衣衫凌乱、青筋暴起、染血）
-3. 标注混入固有外观的描述
+1. mô quay  Mô tả hình ảnh，biểu tâm có ngoài mô ：phục thức /vật 、phát kiểu 、dài 5、nối （nàynhững tác vụ cho hình ảnhTài nguyên）
+2. nhất ：động tác vụ 、thái 、bảng tình 、khi dưới trạng tháihóa （、、、、）
+3. biểu tâm vào có ngoài  của Mô tả
 
-不通过示例：画面描述"身着金线绣龙红袍、高束发髻的凌玄怒视"——服装/发型属固有外观，应删，仅留"凌玄怒视、青筋暴起"。
+không thông quaVí dụ：Mô tả hình ảnh"đang đường 、cao phát  của video "——phục /phát kiểu biệt có ngoài ，hồi xóa ，chỉ lưu "video 、"。
 
-#### 片段时长合理
+#### đoạn Thời lượnghợp lý 
 
-1. 逐片段累加各镜 时长，校验是否 ≤15s；超 15s 标注（应拆为多个片段）
-2. 含台词镜：最低 时长 = 台词字数 ÷ 语速（~4 字/秒，向上取整）+ 标点停顿累计（每标点 +0.3~0.5s）+ 1s 安全余量；不足则标注
-3. 无台词镜超过 6s 标注
+1. đoạn cộng các quay  Thời lượng，đối chiếu là không  ≤15s；vượt  15s biểu tâm （hồi nhiều mục đoạn ）
+2. Lời thoạiquay ：nhất thấp  Thời lượng = Lời thoạichữ số  ÷ ngữ （~4 chữ /giây，trên xuất chỉnh ）+ biểu điểm tính （biểu điểm  +0.3~0.5s）+ 1s an toàn lượng ；không biểu tâm 
+3. Không có lời thoạiquay vượt  6s biểu tâm 
 
-#### 长台词拆镜
+#### dài Lời thoạiquay 
 
-1. 定位单镜 台词或 VO 字数 > 20 字的镜
-2. 检查是否拆成多个连续镜、每镜换视角/景别、按语义停顿点切（非平均切）
-3. 若语义不可切而单镜呈现，检查 画面描述/运镜 是否有持续变化填满时长（禁单镜固定）
+1. nối vị trí đơn quay  Lời thoạihoặc  VO chữ số  > 20 chữ  của quay 
+2. kiểm tra là không tạo nhiều mục quay 、quay đổi video nhân /Cỡ cảnh、theo ngữ nghĩa điểm （phi ）
+3. ngữ nghĩa không đơn quay ，kiểm tra  Mô tả hình ảnh/Góc quay có hay không giữ hóa đầy Thời lượng（đơn quay nối ）
 
-#### VO 音画同步
+#### VO âm vẽ cùng bước 
 
-1. 定位剧本中的 VO（旁白/内心独白/系统播报/面板文字/短信/弹幕/标语等）
-2. 检查文字是否原样写入对应镜 台词，且该镜 画面描述 照常描写人物动作/反应/环境（非仅靠画面呈现）
-3. 面板/屏幕/短信纯文字：检查是否逐行点亮 + 滴答音效，关键数值（等级/数量/时间）是否单独高亮放大一拍，有无整块静态显示
+1. nối vị trí Kịch bảngiữa  của  VO（/Độc thoại nội tâm (inner monologue, OS)/dòng thống /mặt tài chữ /ngắn tin //biểu ngữ ）
+2. kiểm tra tài chữ là không gốc kiểu vào đúng hồi quay  Lời thoại，và quay  Mô tả hình ảnh thường mô ngườiđộng tác vụ /phụ hồi /（phi chỉ vẽ mặt ）
+3. mặt //ngắn tin thuần tài chữ ：kiểm tra là không thi điểm  + Âm hiệu，liên số giá trị （cấp /số lượng /thời gian）là không đơn cao mở lớn 1 ，có không chỉnh thái nhở 
 
-#### 在场人物不消失
+#### ở trường ngườikhông hủy thất 
 
-1. 从场头参演角色读取本场全部出场角色
-2. 逐镜检查剧本未写离场的角色是否有视觉落点（背景/局部/反应镜/虚焦剪影/前景遮挡/环境音留痕之一）
-3. 标注凭空消失的角色
+1. từ trường đầu tham Nhân vậtxuất sách trường toàn bộra trường Nhân vật
+2. quay kiểm tra Kịch bảnchưa trường  của Nhân vậtcó hay không trực quanđiểm （bối /cục bộ /phụ hồi quay /sáng /trước bối /âm lưu  của 1 ）
+3. biểu tâm rỗng hủy thất  của Nhân vật
 
-#### 群演不抢戏
+#### không 
 
-1. 识别画面描述中的群演（无台词、非主角的背景人物）
-2. 检查群演是否仅以微动作（遮、瞥、垂、攥等）服务当前戏核情绪，焦点是否锁定主角
-3. 标注：群演被单独配台词、或抢占主角焦点的情况
+1. trưng khác Mô tả hình ảnhgiữa  của （Không có lời thoại、phi chính nhân  của bối người）
+2. kiểm tra là không chỉ động tác vụ （、、、）phục vụ hiện tạitình xúc ，điểm là không nối chính nhân 
+3. biểu tâm ：đơn nối Lời thoại、hoặc chính nhân điểm  của tình huống 
 
-#### 连贯优先 / 拆分粒度
+#### trước  / phútđộ 
 
-过度合并的信号：
-- 一镜 画面描述 超过执行层上限（15~50 字）
-- 一镜包含明显的场景切换或视角跳变
-- 一镜 时长 超过 8 秒
+độ hợp nhất  của tin số ：
+- 1 quay  Mô tả hình ảnh vượt Tầng thực thitrên hạn （15~50 chữ ）
+- 1 quay gói dẫn  của Bối cảnhđổi hoặc video nhân 
+- 1 quay  Thời lượng vượt  8 giây
 
-过度拆分的信号：
-- 连续多镜描述同一画面内的微小变化
-- 同一段对话被拆成超过 3 镜且无视角/景别切换（注：长台词按字数拆成多个连续镜、每镜换景别属正常 1:N，不算过度拆分）
+độ phút của tin số ：
+- nhiều quay Mô tảcùng 1 vẽ mặt trong  của nhỏ hóa 
+- cùng 1 đoạn đúng lời tạo vượt  3 quay và không video nhân /Cỡ cảnhđổi （tâm ：dài Lời thoạitheo chữ số tạo nhiều mục quay 、quay đổi Cỡ cảnhbiệt chính thường  1:N，không toán độ phút）
 
-#### 景别视角错开
+#### Cỡ cảnhvideo nhân sai mở 
 
-1. 顺序读取相邻镜的 景别 列
-2. 标注连续 3 镜以上无叙事理由的同景别
-3. 检查相邻镜景别/视角是否有意错开（构建方案核心信条：镜头间景别视角注意错开）
+1. xếp xuất quay  của  Cỡ cảnh hàng 
+2. biểu tâm  3 quay trên không việc lý do  của cùng Cỡ cảnh
+3. kiểm tra quay Cỡ cảnh/video nhân có hay không ý sai mở （cấu tạo phương tin mục ：Ống kínhgian Cỡ cảnhvideo nhân tâm ý sai mở ）
 

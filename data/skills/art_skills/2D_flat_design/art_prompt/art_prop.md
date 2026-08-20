@@ -1,133 +1,133 @@
-# 道具图像生成 · 扁平风约束手册
+# Đạo cụhình ảnhtạo · phong sổ tay
 
 ---
 
-## 一、道具设计原则
+## 1 、Đạo cụthiết tính gốc 
 
-1. **功能可读** — 道具用途一目了然，造型服务于功能
-2. **色块极简** — 材质纹理必须色块区分，禁止复杂细节
-3. **年代一致** — 所有道具必须符合古风世界观，禁止现代元素
-4. **尺度明确** — 通过参照物或标注暗示道具真实尺寸
-5. **纯道具独立展示** — 画面中只能出现道具本身，严禁出现任何人物、手部、肢体，道具不可处于被持有/佩戴/握持状态，必须以静物陈列方式独立呈现
-
----
-
-## 二、道具分类与美学约束
-
-### 2.1 兵器类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 剑/刀/弓/枪/扇 | {兵器类型}，扁平古风兵器 |
-| 材质 | 纯色色块、线条勾勒 | 扁平剑、线条兵器、solid color sword |
-| 装饰 | 线条雕花、色块装饰 | 线条装饰、扁平雕花 |
-| 光泽 | 无光泽、纯色填充 | 无光泽、扁平兵器、matte sword |
-| 提示词 | 扁平古风{兵器}，纯色兵器，线条装饰 | — |
-
-### 2.2 饰品类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 簪/钗/璎珞/玉佩/手镯/耳坠 | {饰品类型}，扁平古风首饰 |
-| 材质 | 纯色色块、单色填充 | 扁平首饰、色块首饰、solid color jewelry |
-| 工艺 | 简洁线条、极简工艺 | 扁平工艺、线条首饰 |
-| 光泽 | 无光泽、无反光 | 无光泽、扁平首饰、matte finish |
-| 提示词 | 扁平古风{饰品}，{材质}，简洁工艺，线条首饰 | — |
-
-### 2.3 生活器物类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 茶具/酒具/香炉/棋盘/书卷/灯笼 | {器物类型}，扁平古风器物 |
-| 材质 | 纯色色块、线条勾勒 | 扁平器物、色块器物、solid color object |
-| 质感 | 色块区分、无纹理 | 扁平质感、无纹理、flat texture |
-| 风格 | 素雅/华贵按场景切换 | 扁平素雅 / 扁平华贵 |
-| 提示词 | 扁平古风{器物}，{材质}色块，线条清晰 | — |
-
-### 2.4 信物/关键道具类
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 信物/令牌/卷轴/药瓶/玉印 | {道具类型}，扁平古风道具 |
-| 特殊性 | 扁平化造型、简洁辨识度 | 扁平造型、简洁道具 |
-| 状态 | 可添加扁平做旧 | 扁平旧物 / 扁平新物 |
-| 提示词 | 扁平古风{道具}，{材质}色块，扁平状态，简洁造型 | — |
+1. **công thể ** — Đạo cụhàm 1 mục ，tạo kiểu phục vụ với công thể 
+2. **vật ** — lý Bắt buộcvật khu phút，Nghiêm cấmlời tiết 
+3. **năm1 ** — tất cảĐạo cụBắt buộchợp phong giới ，Nghiêm cấm
+4. **độ dẫn ** — thông quatham hoặc biểu tâm nhở Đạo cụthật kích thước
+5. **thuần Đạo cụlập nhở ** — vẽ mặt giữa chỉ thể ra Đạo cụsách ，ra người、tay bộ 、thể ，Đạo cụkhông xử với giữ có //giữ trạng thái，Bắt buộchàng cách thứclập 
 
 ---
 
-## 三、多角度设定图规范
+## 2、Đạo cụphútloại đẹp 
 
-### 视图定义
+### 2.1 thiết bị loại 
 
-| 位置 | 视图 | 角度 | 要求 | 提示词 |
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | //// | {thiết bị Loại}，phong thiết bị  |
+|  | thuần vật vật 、đường mục  | 、đường mục thiết bị 、solid color sword |
+|  | đường mục 、vật  | đường mục 、 |
+| ánh  | không ánh 、thuần vật sung  | không ánh 、thiết bị 、matte sword |
+| Prompt | phong {thiết bị }，thuần vật thiết bị ，đường mục  | — |
+
+### 2.2 loại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | ////tay / | {Loại}，phong  |
+|  | thuần vật vật 、đơn vật sung  | 、vật 、solid color jewelry |
+|  | đường mục 、 | 、đường mục  |
+| ánh  | không ánh 、không phụ ánh  | không ánh 、、matte finish |
+| Prompt | phong {}，{}，，đường mục  | — |
+
+### 2.3 sinh hoạt thiết bị loại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | cụ /cụ //đĩa // | {thiết bị Loại}，phong thiết bị  |
+|  | thuần vật vật 、đường mục  | thiết bị 、vật thiết bị 、solid color object |
+|  | vật khu phút、không lý  | 、không lý 、flat texture |
+| Phong cách | /theo Bối cảnhđổi  |  /  |
+| Prompt | phong {thiết bị }，{}vật ，đường mục sạch  | — |
+
+### 2.4 tin /liên Đạo cụloại 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | tin //// | {Đạo cụLoại}，phong Đạo cụ |
+|  | hóa tạo kiểu 、trưng độ  | tạo kiểu 、Đạo cụ |
+| trạng thái | thêmcũ  | cũ  / mới  |
+| Prompt | phong {Đạo cụ}，{}vật ，trạng thái，tạo kiểu  | — |
+
+---
+
+## 3、nhiều nhân độ thiết nối ảnh 
+
+### video ảnh nối nghĩa 
+
+| vị trí trí  | video ảnh  | nhân độ  | Yêu cầu | Prompt |
 |---|---|---|---|---|
-| 左上 | 正面图 | 正面 0° | 道具完整正面形态 | front view |
-| 右上 | 侧面图 | 侧面 90° | 厚度/轮廓/结构清晰 | side view |
-| 左下 | 背面图 | 背面 180° | 道具背部结构/装饰 | back view |
-| 右下 | 细节特写 | 局部放大 | 线条/色块细节 | detail closeup |
+| trái trên  | chính mặt ảnh  | chính mặt  0° | Đạo cụchỉnh chính mặt dạng thái  | front view |
+| phải trên  | mặt ảnh  | mặt  90° | dày độ //kết cấu sạch  | side view |
+| trái dưới  | mặt ảnh  | mặt  180° | Đạo cụbộ kết cấu / | back view |
+| phải dưới  | tiết Đặc tả (close-up) | cục bộ mở lớn  | đường mục /vật tiết  | detail closeup |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面四宫格（2×2），上下左右四视角 |
-| 背景 | 纯净中性灰 #E8E8E8 |
-| 光线 | 无光影，纯平涂色块 |
-| 比例 | 每格道具占格内主体 70%+ |
-| 投影 | 无投影、纯平面 |
-| 画面比例 | 建议 1:1 |
+| cục  | cùng 1 vẽ mặt 4khung （2×2），trên dưới trái phải 4video nhân  |
+| bối  | thuần giữa  #E8E8E8 |
+| ánh đường  | không Ánh sáng，thuần vật  |
+| Tỷ lệ | khung Đạo cụkhung trong chính thể  70%+ |
+| sáng  | không sáng 、thuần mặt  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 1:1 |
 
 ---
 
-## 四、材质渲染约束
+## 4、
 
-| 材质 | 渲染要求 | 提示词 |
+|  | Yêu cầu | Prompt |
 |---|---|---|
-| 金属 | 纯色填充、无反光 | 扁平金属、纯色金属、solid metal |
-| 玉石 | 纯色填充、无通透 | 扁平玉石、纯色玉石、solid jade |
-| 木质 | 纯色填充、无木纹 | 扁平木质、纯色木质、solid wood |
-| 瓷器 | 纯色填充、无釉面 | 扁平瓷器、纯色瓷器、solid porcelain |
-| 布/纸 | 纯色填充、无纤维 | 扁平布料、纯色布料、solid fabric |
-| 宝石 | 纯色填充、无折射 | 扁平宝石、纯色宝石、solid gem |
+| biệt  | thuần vật sung 、không phụ ánh  | biệt 、thuần vật biệt 、solid metal |
+|  | thuần vật sung 、không thông  | 、thuần vật 、solid jade |
+|  | thuần vật sung 、không  | 、thuần vật 、solid wood |
+| thiết bị  | thuần vật sung 、không mặt  | thiết bị 、thuần vật thiết bị 、solid porcelain |
+| / | thuần vật sung 、không  | 、thuần vật 、solid fabric |
+|  | thuần vật sung 、không  | 、thuần vật 、solid gem |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 
 ```
-扁平古风道具设定图，
+phong Đạo cụthiết nối ảnh ，
 2d flat design，vector art，flat illustration，
 minimalist，clean lines，solid colors，
-{道具类型}，{材质描述}，{工艺/装饰描述}，{状态描述}，
-纯道具静物展示，道具独立陈列，无人持有，无人佩戴，
-同一画面四宫格（2×2）：左上正面图+右上侧面图+左下背面图+右下细节特写，
-纯净中性灰背景，无光影，无渐变，
-线条清晰，色块分明，{材质光泽描述}
-图中不要有任何文字，
-画面中不能出现任何人物、手部、手指、肢体，道具不可处于被握持或佩戴状态
+{Đạo cụLoại}，{Mô tả}，{/Mô tả}，{trạng tháiMô tả}，
+thuần Đạo cụnhở ，Đạo cụlập hàng ，không ngườigiữ có ，không người，
+cùng 1 vẽ mặt 4khung （2×2）：trái trên chính mặt ảnh +phải trên mặt ảnh +trái dưới mặt ảnh +phải dưới tiết Đặc tả (close-up)，
+thuần giữa bối ，không Ánh sáng，không ，
+đường mục sạch ，vật phútdẫn ，{ánh Mô tả}
+ảnh giữa không cần có tài chữ ，
+vẽ mặt giữa không thể ra người、tay bộ 、tay 、thể ，Đạo cụkhông xử với giữ hoặc trạng thái
 ```
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须指定「纯净中性灰背景」 |
-| R2 | 必须明确道具材质与工艺（扁平化表述） |
-| R3 | 道具造型必须符合古风世界观 |
+| R1 | Bắt buộcnối 「thuần giữa bối 」 |
+| R2 | Bắt buộcdẫn Đạo cụ（hóa bảng tả ） |
+| R3 | Đạo cụtạo kiểu Bắt buộchợp phong giới  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 复杂场景背景 |
-| X2 | 道具与人物同画面（本环节为纯道具图） |
-| X3 | 出现任何人物形象，包括全身、半身、局部（手、手指、手臂等肢体） |
-| X4 | 道具处于被持有、握持、佩戴、使用中的状态 |
-| X5 | 出现暗示人物存在的元素（如手持痕迹、佩戴视角、使用姿态） |
-| X6 | 添加渐变/阴影/高光/立体感效果 |
-| X7 | 材质过于复杂、色块区分不清 |
-| X8 | 现代元素、非古风设计 |
+| X1 | lời Bối cảnhbối  |
+| X2 | Đạo cụngườicùng vẽ mặt （sách tiết thuần Đạo cụảnh ） |
+| X3 | ra ngườidạng tượng ，gói quát toàn 、nửa 、cục bộ （tay 、tay 、tay thể ） |
+| X4 | Đạo cụxử với giữ có 、giữ 、、hàm giữa  của trạng thái |
+| X5 | ra nhở ngườilưu ở  của （như tay giữ 、video nhân 、hàm thái ） |
+| X6 | thêm/sáng /cao ánh /lập thể hiệu quả  |
+| X7 | với lời 、vật khu phútkhông sạch  |
+| X8 | 、phi phong thiết tính  |

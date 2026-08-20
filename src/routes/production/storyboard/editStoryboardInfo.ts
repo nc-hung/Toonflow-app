@@ -19,6 +19,6 @@ export default router.post(
       prompt,
       videoDesc,
     });
-    res.status(200).send(success({ message: "更新提示词成功" }));
+    res.status(200).send(success({ message: "Cập nhật prompt thành công" }));
   },
 );

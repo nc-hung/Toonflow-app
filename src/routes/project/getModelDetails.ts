@@ -16,7 +16,7 @@ export default router.post(
     const [id, modelName] = data ? data.modelName.split(/:(.+)/) : [];
     const models = await u.vendor.getModelList(id);
     const model = models.find((m) => m.modelName === modelName);
-    if (!model) return res.status(400).send(error("未找到模型"));
+    if (!model) return res.status(400).send(error("Không tìm thấy mô hình"));
     res.status(200).send(success(model));
   },
 );

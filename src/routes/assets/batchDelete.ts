@@ -6,7 +6,7 @@ import { validateFields } from "@/middleware/middleware";
 import { id } from "zod/locales";
 const router = express.Router();
 
-// 批量删除资产
+// Xóa hàng loạt tài nguyên
 export default router.post(
   "/",
   validateFields({
@@ -15,6 +15,6 @@ export default router.post(
   async (req, res) => {
     const { id } = req.body;
     await u.db("o_assets").whereIn("id", id).delete();
-    res.status(200).send(success({ message: "删除资产成功" }));
+    res.status(200).send(success({ message: "Xóa tài nguyên thành công" }));
   },
 );

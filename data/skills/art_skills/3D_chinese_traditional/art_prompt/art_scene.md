@@ -1,158 +1,158 @@
 ---
 name: art_scene
-description: 场景图生成 · 约束手册
+description: Bối cảnhảnh tạo · sổ tay
 metaData: art_skills
 ---
 
-# 场景图生成 · 约束手册
+# Bối cảnhảnh tạo · sổ tay
 
 ---
 
-## 一、场景美学原则
+## 1 、Bối cảnhđẹp gốc 
 
-1. **空间叙事** — 场景承载情绪与叙事功能，不是纯背景板
-2. **层次纵深** — 所有场景必须具备前/中/后景，杜绝扁平
-3. **质感至上** — 木质/石质/布料/水面等材质纹理必须超清晰
-4. **3D为锚** — 一切画面以3D渲染为标准，拒绝平面贴图/3D渲染/CG动画质感；追求体积光、环境光遮蔽、景深虚化等电影渲染效果
+1. **rỗng gian việc ** — Bối cảnhxuống tình xúc việc công thể ，không là thuần bối 
+2. **tầng lần ** — tất cảBối cảnhBắt buộccụ trước /giữa /sau bối ，
+3. **đến trên ** — ///mặt lý Bắt buộcvượt sạch 
+4. **3D** — 1 vẽ mặt 3Dbiểu ，mặt ảnh /3D/CGđộng vẽ ；cầu thể ánh 、ánh 、bối hóa sáng hiệu quả 
 
 ---
 
-## 二、季节色调映射
+## 2、tiết vật gọi 
 
-| 季节 | 主色调 | 辅色调 | 提示词 |
+| tiết  | chính vật gọi  | vật gọi  | Prompt |
 |---|---|---|---|
-| 春 | 青绿 + 朱红 | 月白、藤黄 | 春色青翠、桃花灼灼 |
-| 夏 | 青绿 + 靛蓝 | 月白、青绿 | 夏荷碧绿、浓荫蔽日 |
-| 秋 | 赭石 + 金黄 | 朱红、赭石 | 秋枫赤红、金叶飘零 |
-| 冬 | 月白 + 靛蓝 | 墨黑、青绿 | 冬雪素白、枯枝霜挂 |
+|  |  +  | tháng、 | vật 、 |
+|  |  +  | tháng、 | 、ngày  |
+|  |  +  | 、 | 、0 |
+|  | tháng +  | 、 | 、 |
 
 ---
 
-## 三、室内场景
+## 3、trong Bối cảnh
 
-### 空间规范
+### rỗng gian 
 
-| 维度 | 约束 | 提示词 |
+| độ  |  | Prompt |
 |---|---|---|
-| 风格 | 古代宅邸/宫殿/书房/闺阁，明清至唐宋 | 古代{朝代}风格 |
-| 材质 | 木质为主、石/玉/绢/纱为辅 | 檀木家具、玉石屏风、绢纱帷幔 |
-| 色调 | 中国传统色调 + 月白纱幔 + 朱红木漆 | 暖木色调、素雅陈设 |
-| 纵深 | 前/中/后景层次 | 前景{元素}、中景{元素}、后景{元素} |
-| 质感 | 木纹/布料垂感/瓷器光泽可辨 | 纹理清晰、材质质感精细 |
-| 光照 | 自然光源为主（窗光/烛光），体积光，环境光遮蔽 | 自然光漫射、烛光摇曳、体积光 |
-| 镜头感 | 景深虚化前后景、镜头暗角、色散微痕 | depth of field、lens vignette、chromatic aberration |
-| 瑕疵感 | 木面有使用痕迹、石面有风化纹、布料有自然褶皱 | 岁月痕迹、自然磨损、布料自然垂褶 |
+| Phong cách | ///，dẫn sạch đến  | {}Phong cách |
+|  | chính 、/// | cụ 、phong 、 |
+| vật gọi  | giữa truyền thống vật gọi  + tháng +  | vật gọi 、thiết  |
+|  | trước /giữa /sau bối tầng lần  | trước bối {}、Trung cảnh (medium shot){}、sau bối {} |
+|  | //thiết bị ánh  | lý sạch 、 |
+| ánh  | tự ánh nguồn chính （ánh /ánh ），thể ánh ，ánh  | tự ánh 、ánh 、thể ánh  |
+| Ống kính | bối hóa trước sau bối 、Ống kínhnhân 、vật  | depth of field、lens vignette、chromatic aberration |
+|  | mặt có hàm 、mặt có phong hóa 、có tự  | tháng、tự 、tự  |
 
-### 室内类型速查
+### trong Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 闺阁/卧房 | 纱帐、梳妆台、铜镜、花瓶 | 温馨私密、纱幔轻垂 |
-| 书房/书斋 | 书架、卷轴、笔墨、棋盘 | 幽静雅致、墨香四溢 |
-| 大殿/正厅 | 高柱、匾额、帷幕、烛台 | 庄严华美、气势恢宏 |
-| 庭院回廊 | 廊柱、石栏、花木、灯笼 | 曲径通幽、灯影摇曳 |
-| 厨房/膳堂 | 灶台、蒸笼、食器 | 烟火气息、温馨日常 |
+| / | 、đài 、quay 、 | mật 、 |
+| / | 、、、đĩa  | 、4 |
+| lớn /chính  | cao 、bổ 、、đài  | đẹp 、 |
+| trả  | 、、、 | kính thông 、sáng  |
+| / | đài 、、thiết bị  | 、ngày thường  |
 
 ---
 
-## 四、室外场景
+## 4、ngoài Bối cảnh
 
-### 空间规范
+### rỗng gian 
 
-| 维度 | 约束 | 提示词 |
+| độ  |  | Prompt |
 |---|---|---|
-| 类型 | 庭院/山林/溪畔/古桥/集市 | {场景}，{季节}，{时间} |
-| 天候 | 晴/阴/薄雾/细雨/飞雪 | 薄雾弥漫、细雨如丝 |
-| 植被 | 梅/竹/松/桃花/柳/荷（须符合季节） | 桃花灼灼、翠竹成林 |
-| 水体 | 溪/湖/瀑布需有光影反射 | 溪水潺潺、湖面如镜 |
-| 建筑 | 飞檐斗拱、青瓦白墙、石桥木亭 | 飞檐翘角、石拱桥 |
-| 空气感 | 必须有空气透视，体积光，远景模糊 | 远山如黛、空气透视、体积光 |
-| 光照 | 自然光为唯一光源，日光/月光需有体积光与散射 | 自然光照、体积光、景深虚化 |
-| 镜头感 | 景深虚化、镜头暗角、色散、光斑散景 | depth of field、bokeh、lens flare、vignette |
-| 瑕疵感 | 石面青苔/风化、木面开裂/包浆、瓦片残缺/苔痕 | 青苔斑驳、风化痕迹、岁月包浆 |
+| Loại | ////tập  | {Bối cảnh}，{tiết }，{thời gian} |
+| ngày | //mỏng // | mỏng 、như  |
+|  | /////（buộc hợp tiết ） | 、tạo  |
+| thể  | //cần có Ánh sángphụ  | 、mặt như quay  |
+| tạo  | 、、 | nhân 、 |
+| rỗng  | Bắt buộccó rỗng video ，thể ánh ，Viễn cảnh (extreme wide shot)mô  | như 、rỗng video 、thể ánh  |
+| ánh  | tự ánh 1 ánh nguồn ，ngày ánh /thángánh cần có thể ánh  | tự ánh 、thể ánh 、bối hóa  |
+| Ống kính | bối hóa 、Ống kínhnhân 、vật 、ánh bối  | depth of field、bokeh、lens flare、vignette |
+|  | mặt /phong hóa 、mặt mở /gói 、/ | 、phong hóa 、thánggói  |
 
-### 室外类型速查
+### ngoài Loạitra 
 
-| 类型 | 核心元素 | 氛围词 |
+| Loại |  | Không khítừ  |
 |---|---|---|
-| 庭院花园 | 假山、池塘、花木、石径 | 花影扶疏、曲径通幽 |
-| 山林竹海 | 古木、竹林、山石、云雾 | 层峦叠嶂、云雾缥缈 |
-| 溪畔湖边 | 溪流、卵石、垂柳、荷花 | 溪水潺潺、柳影婆娑 |
-| 古桥长亭 | 石拱桥、长亭、柳树 | 长亭古道、杨柳依依 |
-| 集市街道 | 酒旗、摊贩、灯笼 | 热闹市井、烟火人间 |
-| 屋顶天台 | 瓦片、飞檐、夜空 | 月下独酌、清风徐来 |
+|  | giả 、、、kính  | sáng 、kính thông  |
+|  | 、、、 | tầng 、 |
+|  | 、、、 | 、sáng  |
+| dài  | 、dài 、 | dài đạo 、phụ phụ  |
+| tập đạo  | 、、 | 、ngườigian  |
+| ngàyđài  | 、、rỗng  | thángdưới 、sạch phong  |
 
 ---
 
-## 五、主视图规范
+## 5、chính video ảnh 
 
-### 视图定义
+### video ảnh nối nghĩa 
 
-> 单画面主视图，从场景中最具代表性的角度拍摄，承载空间叙事与构图重心。
+> đơn vẽ mặt chính video ảnh ，từ Bối cảnhgiữa nhất cụ bảng  của nhân độ ，xuống rỗng gian việc cấu ảnh trùng 。
 
-| 项目 | 约束 | 提示词 |
+| dự án |  | Prompt |
 |---|---|---|
-| 视角 | 自然观察视角，构图最能体现场景主体与纵深 | hero shot、representative angle |
-| 视点高度 | 默认人眼平视高度，特殊场景可俯/仰 | eye level（默认） |
-| 构图 | 主体居中或符合三分法，前/中/后景层次清晰 | balanced composition |
+| video nhân  | tự video nhân ，cấu ảnh nhất thể thể Bối cảnhchính thể  | hero shot、representative angle |
+| video điểm cao độ  | Mặc địnhngườivideo cao độ ，Bối cảnh/ | eye level（Mặc định） |
+| cấu ảnh  | chính thể giữa hoặc hợp 3phútthức ，trước /giữa /sau bối tầng lần sạch  | balanced composition |
 
-### 画面规范
+### vẽ mặt 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 单画面（非拼图、非多视图、非分屏） |
-| 人物 | **严禁出现任何人物、人影、人体轮廓** |
-| 一致性 | 风格/材质/色调/光线统一 |
-| 光线 | 单一光源逻辑，光影方向一致 |
-| 画面比例 | 默认 16:9（或按调用方设定） |
+| cục  | đơn vẽ mặt （phi ghép ảnh 、phi nhiều video ảnh 、phi phút） |
+| người | **ra người、ngườisáng 、ngườithể ** |
+| 1  | Phong cách//vật gọi /ánh đường thống 1  |
+| ánh đường  | đơn 1 ánh nguồn logic，Ánh sángphương 1  |
+| vẽ mặt Tỷ lệ | Mặc định 16:9（hoặc theo gọi hàm phương thiết nối ） |
 
 ---
 
-## 六、提示词模板
+## 6、Promptmô 
 
-古风场景主视图概念图，
-3D渲染风格，高精度建模，PBR材质，国风3D，电影级光影，
+phong Bối cảnhchính video ảnh ảnh ，
+3DPhong cách，cao độ tạo mô ，PBR，phong 3D，sáng cấp Ánh sáng，
 3D rendered, volumetric lighting,
 depth of field, natural lens vignette, subtle chromatic aberration, bokeh,
-3D渲染质感，体积光，自然光照，物理光影，
+3D，thể ánh ，tự ánh ，lý Ánh sáng，
 scene design sheet, environment concept art, no people, no characters, no human figures,
-{室内/室外}，{场景类型}，{朝代风格}，{季节+时间},
-前景：{元素}, 中景：{元素}, 后景：{元素},
-{色调描述}, {天候/氛围元素},
-{材质描述}, 空气透视, 纹理细节超清晰,
-材质自然磨损痕迹，岁月包浆，青苔风化，布料自然垂褶，
-体积光，环境光遮蔽，自然光漫射，柔和光影，
-单画面构图，自然观察视角，构图能代表场景主体并展示前/中/后景层次，
-画面中无任何人物
-图中不要有任何文字
+{trong /ngoài }，{Bối cảnhLoại}，{Phong cách}，{tiết +thời gian},
+trước bối ：{}, Trung cảnh (medium shot)：{}, sau bối ：{},
+{vật gọi Mô tả}, {ngày/Không khí},
+{Mô tả}, rỗng video , lý tiết vượt sạch ,
+tự ，thánggói ，phong hóa ，tự ，
+thể ánh ，ánh ，tự ánh ， và Ánh sáng，
+đơn vẽ mặt cấu ảnh ，tự video nhân ，cấu ảnh thể bảng Bối cảnhchính thể nhất nhở trước /giữa /sau bối tầng lần ，
+vẽ mặt giữa không người
+ảnh giữa không cần có tài chữ 
 
 ---
 
-## 七、约束规则
+## 7、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 场景必须有「前中后景层次」 |
-| R2 | 室外必须包含「空气透视」 |
-| R3 | 场景图必须为「单画面主视图」，不得拼接多视图/分屏/网格 |
-| R4 | 构图须能代表场景主体并展示前/中/后景层次 |
-| R5 | 场景图中**严禁出现任何人物** |
-| R6 | 必须包含3D渲染关键词（3D rendered / volumetric lighting / PBR materials） |
-| R7 | 必须包含镜头光学特征（depth of field / lens vignette / bokeh 至少一项） |
-| R8 | 材质必须带有自然磨损/岁月痕迹，禁止全新无瑕的"CG 感" |
+| R1 | Bối cảnhBắt buộccó 「trước giữa sau bối tầng lần 」 |
+| R2 | ngoài Bắt buộcgói 「rỗng video 」 |
+| R3 | Bối cảnhảnh Bắt buộc「đơn vẽ mặt chính video ảnh 」，không được ghép tiếp nhiều video ảnh /phút/mạng khung  |
+| R4 | cấu ảnh buộc thể bảng Bối cảnhchính thể nhất nhở trước /giữa /sau bối tầng lần  |
+| R5 | Bối cảnhảnh giữa **ra người** |
+| R6 | Bắt buộcgói 3Dliên từ （3D rendered / volumetric lighting / PBR materials） |
+| R7 | Bắt buộcgói Ống kínhánh （depth of field / lens vignette / bokeh đến ít 1 ） |
+| R8 | Bắt buộckèm có tự /tháng，Nghiêm cấmtoàn mới không  của "CG " |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 背景纯白/纯黑/无场景 |
-| X2 | 极端天候（暴风雨/雷电/暴雪，除非剧情需要） |
-| X3 | 场景无纵深/无层次 |
-| X4 | 植被/天候与季节矛盾 |
-| X5 | 出现任何人物、人影、人体剪影或人体轮廓 |
-| X6 | 画面被拼接成多视图/网格/分屏布局 |
-| X7 | 低精度建模/粗糙贴图/塑料质感（禁用 low-poly、rough modeling 等词） |
-| X8 | 材质过于干净完美、无任何使用痕迹与岁月感（避免"塑料感"） |
-| X9 | 光照过于均匀平坦、无景深虚化、无镜头光学特征 |
+| X1 | bối thuần /thuần /không Bối cảnh |
+| X2 | đầu ngày（phong //，bỏ phi kịch tình cần cần ） |
+| X3 | Bối cảnhkhông /không tầng lần  |
+| X4 | /ngàytiết  |
+| X5 | ra người、ngườisáng 、ngườithể sáng hoặc ngườithể  |
+| X6 | vẽ mặt ghép tiếp tạo nhiều video ảnh /mạng khung /phútcục  |
+| X7 | thấp độ tạo mô /ảnh /（hàm  low-poly、rough modeling từ ） |
+| X8 | với đẹp 、không hàm tháng（""） |
+| X9 | ánh với 、không bối hóa 、không Ống kínhánh  |

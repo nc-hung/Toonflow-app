@@ -1,84 +1,84 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 喜剧搞笑 — 定义喜剧搞笑在分镜表中的景别策略、运镜节奏、时长把控、笑点分镜设计、多人调度与转场手法。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · kịch  — nối nghĩa kịch ở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaytiết 、Thời lượngđem sát 、điểm Phân cảnhthiết tính 、nhiều ngườiđiều phốichuyển trường tay thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 喜剧搞笑 · 技法参考
+# Bảng phân cảnhviệc tay thức  · kịch  · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供喜剧搞笑叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **反应镜头是喜剧王牌** — 笑点发生后必须紧跟一个"反应镜头"（旁观者的表情/当事人的石化），用近景捕捉。没有反应镜头的笑点是哑炮
-- **全景暴露信息** — 喜剧中全景的核心功能是"让观众看到角色看不到的荒谬"：身后的人、背景的异常、即将发生的灾难。全景 = 给观众上帝视角
-- **中景承载对话** — 角色互动/碰撞的主力景别，保持足够信息量让观众看到肢体语言和表情
-- **特写定格尴尬** — 特写在喜剧中放大尴尬细节：写错的字、错放的东西、僵住的笑容。停留短暂（1-2s）但冲击力足够
-- **定场镜头要有喜感种子** — 喜剧的定场镜头可以在看似正常的场景中埋入一个"不对"的细节（背景有人在做奇怪的事/标语写错了），为后续笑点做铺垫
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà kịch việc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **固定机位为主** — 60% 以上镜头固定，冷静旁观的视角让荒谬更突出
-- **急推 = 反应放大** — 笑点后快速推向反应者面部，放大震惊/石化/难以置信。是喜剧分镜中使用最高频的运镜
-- **甩镜 = 揭示荒谬** — 从A迅速甩到B，用速度本身传递"什么？！"的惊讶感
-- **跟拍失控** — 角色陷入混乱时（追逐、逃跑、手忙脚乱）用手持跟拍，摇晃感传递"一切失控"
-- **缓推 = 发现细节** — 缓慢推向一个荒谬的细节，给观众"等等让我看清楚……哈！"的发现式笑点
-- **运镜不抢戏** — 喜剧运镜的原则是"不抢角色的戏"。运镜越简洁越好，花哨运镜会分散对笑点的注意力
-
----
-
-## 四、时长把控
-
-- **铺垫给足时长** — 铺垫镜头 3-4s，让观众充分建立预期。铺垫不够充分，包袱就不响
-- **包袱精准节拍** — 抖包袱的镜头 1.5-2s，干脆利落。笑点的冲击力在于"突然"，拖了就不好笑
-- **反应镜头 2-3s** — 给旁观者/当事人的反应足够的"定格"时间，让观众消化笑点
-- **留白笑点** — 笑点后留 1-2s 的"空白"（角色沉默/空气凝固），给观众笑的时间。如果立刻推进叙事，笑声会被剪断
-- **黄金 6 秒规则** — 喜剧节奏要求单镜头通常不超过 4s（比其他类型更快），只有铺垫和真情段落可以到 5-6s
-- **三遍法则的时长递进** — 同一个笑点重复三遍时：第一遍正常时长→第二遍稍短（观众已知预期）→第三遍最短或最长（打破模式）
+- **phụ hồi Ống kínhlà kịch ** — điểm phát sinh sau Bắt buộcmột "phụ hồi Ống kính"（giả  của bảng tình /khi việc người của hóa ），hàm Cận cảnh (close-up)。chưa có phụ hồi Ống kính của điểm là 
+- **Toàn cảnh (wide shot)thông tin** — kịch giữa Toàn cảnh (wide shot) của công thể là "để xem đến Nhân vậtxem không đến  của "：sau  của người、bối  của bất thường 、phát sinh  của 。Toàn cảnh (wide shot) = cho trên video nhân 
+- **Trung cảnh (medium shot)xuống đúng lời ** — Nhân vậtđộng / của chính lực Cỡ cảnh，lưu giữ thông tinlượng để xem đến thể ngữ  và bảng tình 
+- **Đặc tả (close-up)nối khung ** — Đặc tả (close-up)ở kịch giữa mở lớn tiết ：sai  của chữ 、sai mở  của 、 của dung 。lưu ngắn tạm （1-2s）nhưng lực 
+- **nối trường Ống kínhcần có loại ** — kịch  của nối trường Ống kínhở xem chính thường  của Bối cảnhgiữa vào một "không đúng " của tiết （bối có ngườiở  của việc /biểu ngữ sai ），sau điểm 
 
 ---
 
-## 五、笑点分镜设计
+## 3、Góc quaytiết 
 
-- **铺垫→包袱的镜头结构** — 铺垫镜头（中景/近景，角色认真做某事）→ 包袱镜头（全景揭示荒谬/特写放大错误/近景反应石化）。两个镜头构成一个笑点单元
-- **视觉笑点不需要台词** — 纯画面笑点（角色踩到东西、背景有荒谬事件、道具放错位置）用全景或带运镜的中景呈现，不依赖对白
-- **信息差笑点** — 观众知道但角色不知道的信息制造期待感笑点。分镜上：全景给观众信息→切回角色中景/近景（角色浑然不知）→灾难发生
-- **连锁反应笑点** — 一个小失误引发多米诺骨牌式连锁崩塌。分镜用快速硬切串联每个"倒塌"环节（2s/镜），节奏越来越快
-- **能一镜拍完的喜剧场面不要拆** — 一个长镜头中角色从正常逐渐走向失控，全过程一镜到底比碎切更有"不可挽回"的喜感
-
----
-
-## 六、多人喜剧调度
-
-- **群戏反应链** — 笑点发生后依次切每个旁观者的反应：A惊呆→B偷笑→C假装没看见→D比当事人更尴尬。反应链本身就是笑点的延续
-- **角色碰撞用对切** — 性格反差大的两个角色对话用正反打对切，节奏加快（每句 1.5-2s），碰撞感通过剪辑速度外化
-- **旁观者是最好的笑点放大器** — 分镜中始终保留一个"旁观者位"：一个路人、一个不相关的角色、一只宠物——他们的反应帮助观众"确认"这件事确实很荒谬
-- **群体失控用全景** — 多人同时陷入混乱时用全景一镜呈现，让观众同时看到所有荒谬。全景的信息量爆炸本身就是喜感
+- **nối máy vị trí chính ** — 60% trên Ống kínhnối ， của video nhân để đổi ra 
+- **khuyến  = phụ hồi mở lớn ** — điểm sau nhanh khuyến phụ hồi giả mặt bộ ，mở lớn /hóa /trí tin 。là kịch Phân cảnhgiữa hàm tối đa tần  của Góc quay
+- **Lia nhanh (whip pan) = nhở ** — từ Ađến B，hàm độ sách truyền "sao？！" của 
+- **thất sát ** — Nhân vậtvào （、、tay ）hàm tay giữ ，truyền "1 thất sát "
+- **khuyến  = phát tiết ** — chậm khuyến một  của tiết ，cho "để tôixem sạch ……！" của phát thức điểm 
+- **Góc quaykhông ** — kịch Góc quay của gốc là "không Nhân vật của "。Góc quaytốt ，Góc quaysẽ phútđúng điểm  của tâm ý lực 
 
 ---
 
-## 七、台词与节奏
+## 4、Thời lượngđem sát 
 
-- **台词节拍决定笑点** — 喜剧台词的笑点在于节拍：铺垫语速正常→包袱前微停顿（0.5s）→包袱一句话干脆落地。停顿是笑点的"引线"
-- **吐槽要快** — 吐槽/回怼的台词必须在上一句话结束后 0.5s 内接上，快速反击才有爽感。分镜中吐槽镜头不给额外铺垫，直接硬切近景
-- **沉默的喜感** — 荒谬的事发生后角色集体沉默 2-3s，比任何台词都好笑。沉默中角色的微表情（假装没事/石化/缓慢转头）是笑点本体
-- **重复的力量** — 同一句话/同一个动作重复三遍，第三遍变化（说错/做错/自己都笑了）。分镜中三遍用相同景别+相同构图，第三遍打破
-- **旁白的吐槽功能** — 喜剧中旁白可以充当"毒舌吐槽者"，用冷静的语气描述荒谬的画面。旁白配远景或全景效果最佳
+- **cho Thời lượng** — Ống kính 3-4s，để sung phúttạo lập kỳ 。không sung phút，gói thì không phản 
+- **gói tiết ** — gói  của Ống kính 1.5-2s，。điểm  của lực ở với ""，thì không tốt 
+- **phụ hồi Ống kính 2-3s** — cho giả /khi việc người của phụ hồi  của "nối khung "thời gian，để hủy hóa điểm 
+- **lưu điểm ** — điểm sau lưu  1-2s  của "rỗng "（Nhân vật/rỗng ），cho  của thời gian。như quả lập Đẩy tới (push in / dolly in)việc ，thanh sẽ 
+- ** 6 giây** — kịch tiết Yêu cầuđơn Ống kínhthông thường không vượt  4s（tỷ anh ấyLoạiđổi nhanh ），chỉ có  và thật tình đoạn đến  5-6s
+- **3thức  của Thời lượngtiến ** — cùng một điểm trùng lời 3：Thứ 1 chính thường Thời lượng→Thứ 2ngắn （đã báo kỳ ）→Thứ 3nhất ngắn hoặc nhất dài （mở mô thức ）
 
 ---
 
-## 八、转场设计
+## 5、điểm Phân cảnhthiết tính 
 
-- **荒谬对比切** — 从一个极端直接硬切到另一个极端（角色说"绝不可能"→下一镜角色正在做这件事），硬切本身就是笑点
-- **假正经转场** — 用正式/庄重的转场方式（淡入淡出、字幕卡"三小时后"）来过渡荒谬内容，反差出喜感
-- **同场景内快速硬切** — 喜剧的场景内剪辑节奏偏快，硬切为主，不拖泥带水
-- **反差蒙太奇** — 角色口述的"美好计划"与实际执行的"灾难现场"交替剪辑，理想vs现实的反差构成持续喜感
-- **打破第四面墙** — 角色突然看向镜头/对观众说话的瞬间用正面近景+突然静止，制造"你看到了吧？"的共谋感
+- **→gói  của Ống kínhkết cấu ** — Ống kính（Trung cảnh (medium shot)/Cận cảnh (close-up)，Nhân vậtthật việc ）→ gói Ống kính（Toàn cảnh (wide shot)nhở /Đặc tả (close-up)mở lớn lỗi/Cận cảnh (close-up)phụ hồi hóa ）。2mục Ống kínhcấu tạo một điểm đơn 
+- **trực quanđiểm không cần cần Lời thoại** — thuần vẽ mặt điểm （Nhân vậtđến 、bối có sự kiện、Đạo cụmở sai vị trí trí ）hàm Toàn cảnh (wide shot)hoặc kèm Góc quay của Trung cảnh (medium shot)，không phụ thuộc đúng 
+- **thông tinđiểm ** — báo đạo nhưng Nhân vậtkhông báo đạo  của thông tinchép tạo kỳ điểm 。Phân cảnhtrên ：Toàn cảnh (wide shot)cho thông tin→trả Nhân vậtTrung cảnh (medium shot)/Cận cảnh (close-up)（Nhân vậtkhông báo ）→phát sinh 
+- **phụ hồi điểm ** — một nhỏ thất phát nhiều thức 。Phân cảnhhàm nhanh kết mục ""tiết （2s/quay ），tiết nhanh 
+- **thể 1 quay  của kịch trường mặt không cần ** — một dài Ống kínhgiữa Nhân vậttừ chính thường chạy thất sát ，toàn trình 1 quay đến tỷ đổi có "không trả " của 
+
+---
+
+## 6、nhiều ngườikịch điều phối
+
+- **phụ hồi ** — điểm phát sinh sau phụ lần mục giả  của phụ hồi ：A→B→Cgiả chưa xem thấy →Dtỷ khi việc ngườiđổi 。phụ hồi sách thì là điểm  của trì 
+- **Nhân vậthàm đúng ** — khung phụ lớn  của 2mục Nhân vậtđúng lời hàm chính phụ mở đúng ，tiết cộng nhanh （câu  1.5-2s），thông quasửa độ ngoài hóa 
+- **giả là nhất tốt  của điểm mở lớn thiết bị ** — Phân cảnhgiữa ban đầu lưu lưu một "giả vị trí "：một đường người、một không liên  của Nhân vật、1 chỉ ——anh ấy của phụ hồi trợ giúp ""nàytệp việc rất 
+- **thể thất sát hàm Toàn cảnh (wide shot)** — nhiều ngườicùng vào hàm Toàn cảnh (wide shot)1 quay ，để cùng xem đến tất cả。Toàn cảnh (wide shot) của thông tinlượng sách thì là 
+
+---
+
+## 7、Lời thoạitiết 
+
+- **Lời thoạitiết nối điểm ** — kịch Lời thoại của điểm ở với tiết ：ngữ chính thường →gói trước （0.5s）→gói 1 câu lời địa 。là điểm  của "đường "
+- **cần nhanh ** — /trả  của Lời thoạiBắt buộcở trên 1 câu lời kết sau  0.5s trong tiếp trên ，nhanh phụ có 。Phân cảnhgiữa Ống kínhkhông cho bổ ngoài ，trực tiếp Cận cảnh (close-up)
+- ** của ** —  của việc phát sinh sau Nhân vậttập thể  2-3s，tỷ Lời thoạiđều tốt 。giữa Nhân vật của bảng tình （giả chưa việc /hóa /chậm chuyển đầu ）là điểm sách thể 
+- **trùng lời  của lực lượng ** — cùng 1 câu lời /cùng một động tác vụ trùng lời 3，Thứ 3hóa （hướng sai /sai /tự mình đều ）。Phân cảnhgiữa 3hàm cùng Cỡ cảnh+cùng cấu ảnh ，Thứ 3mở 
+- ** của công thể ** — kịch giữa sung khi "giả "，hàm  của ngữ Mô tả của vẽ mặt 。nối Viễn cảnh (extreme wide shot)hoặc Toàn cảnh (wide shot)hiệu quả nhất 
+
+---
+
+## 8、chuyển trường thiết tính 
+
+- **đúng tỷ ** — từ một đầu trực tiếp đến một đầu （Nhân vậthướng "không thể "→dưới 1 quay Nhân vậtđang nàytệp việc ），sách thì là điểm 
+- **giả chính đã chuyển trường ** — hàm chính thức /trùng  của Cách thức chuyển cảnh（vào ra 、chữ "3giờsau "）nội dung，phụ ra 
+- **cùng Bối cảnhtrong nhanh ** — kịch  của Bối cảnhtrong sửa tiết nhanh ，chính ，không kèm 
+- **phụ ** — Nhân vậtcổng tả  của "đẹp tốt tính "thực thi của "trường "tác vụ sửa ，lý nghĩ vs của phụ cấu tạo giữ 
+- **mở Thứ 4mặt ** — Nhân vậtxem Ống kính/đúng hướng lời  của gian hàm chính mặt Cận cảnh (close-up)+Tĩnh (static)，chép tạo "bạnxem đến ？" của 

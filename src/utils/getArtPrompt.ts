@@ -3,10 +3,10 @@ import path from "path";
 import getPath from "./getPath";
 
 /**
- * 传入一个指定路径参数（风格名称），以及一个指定文件名，递归获取该文件并返回其内容
- * @param styleName - 风格目录名，例如 "chinese_sweet_romance"
- * @param fileName  - 目标文件名（不含 .md 后缀），例如 "art_character"、"prefix"
- * @returns 文件内容字符串，未找到时返回空字符串
+ * truyền vào một nối đường dẫntham số（phong cáchtên），một nối Tệptên ，LấyTệpnhất Trả vềnội dung
+ * @param styleName - phong cáchthư mụctên ，lệ như  "chinese_sweet_romance"
+ * @param fileName  - mục biểu Tệptên （không  .md sau  tố ），lệ như  "art_character"、"prefix"
+ * @returns Tệpnội dungchuỗi ký tự，không tìm thấyTrả vềrỗng chuỗi ký tự
  */
 export function getArtPrompt(styleName: string, source: string, fileName: string): string {
   const baseDir = getPath(["skills", source, styleName]);
@@ -15,7 +15,7 @@ export function getArtPrompt(styleName: string, source: string, fileName: string
     return "";
   }
 
-  // 获取 prefix.md 内容
+  // Lấy prefix.md nội dung
   const prefixFile = findFileRecursive(baseDir, "prefix.md");
   const prefixContent = prefixFile ? fs.readFileSync(prefixFile, "utf-8") : "";
 
@@ -30,9 +30,9 @@ export function getArtPrompt(styleName: string, source: string, fileName: string
   return prefixContent ? `${prefixContent}\n${fileContent}` : fileContent;
 }
 /**
- * 传入风格目录名，获取该风格下所有 .md 文件内容，按文件名映射返回
- * @param styleName - 风格目录名，例如 "chinese_sweet_romance"
- * @returns Record<文件名(不含后缀), 文件内容>
+ * truyền vào phong cáchthư mụctên ，Lấyphong cáchdưới tất cả .md Tệpnội dung，theo Tệptên Trả về
+ * @param styleName - phong cáchthư mụctên ，lệ như  "chinese_sweet_romance"
+ * @returns Record<Tệptên (không sau  tố ), Tệpnội dung>
  */
 export function getAllArtPrompts(styleName: string, source: string): Record<string, string> {
   const baseDir = getPath(["skills", source, styleName]);
@@ -47,7 +47,7 @@ export function getAllArtPrompts(styleName: string, source: string): Record<stri
 }
 
 /**
- * 递归查找指定文件名的文件，返回第一个匹配的完整路径
+ * tra nối Tệptên  của Tệp，Trả vềThứ một khớp của chỉnh đường dẫn
  */
 function findFileRecursive(dir: string, targetName: string): string | null {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -69,7 +69,7 @@ function findFileRecursive(dir: string, targetName: string): string | null {
 }
 
 /**
- * 递归收集目录下所有 .md 文件内容
+ * nhận tập thư mụcdưới tất cả .md Tệpnội dung
  */
 function collectMdFiles(dir: string, result: Record<string, string>): void {
   const entries = fs.readdirSync(dir, { withFileTypes: true });

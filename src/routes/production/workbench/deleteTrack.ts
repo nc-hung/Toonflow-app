@@ -16,6 +16,6 @@ export default router.post(
     await u.db("o_storyboard").where("trackId", id).update({
       trackId: null,
     });
-    res.status(200).send(success({ message: "视频段删除成功" }));
+    res.status(200).send(success({ message: "Xóa đoạn video thành công" }));
   },
 );

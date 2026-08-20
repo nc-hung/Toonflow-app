@@ -1,108 +1,108 @@
 ---
 name: director_planning_narrative
-description: 叙事手法技法 · 青春成长 — 定义青春成长类型在主题立意、情感节奏、场景情绪设计与声音方向上的叙事规划方法。适用于任何视觉风格。
+description: việc tay thức thức  · Thanh Xuân & Trưởng Thành — nối nghĩa Thanh Xuân & Trưởng ThànhLoạiở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của việc lập kế hoạchphương thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 叙事手法 · 青春成长 · 技法参考
+# việc tay thức  · Thanh Xuân & Trưởng Thành · thức tham chiếu
 
 ---
 
-## 一、主题立意与情感内核
+## 1 、chính đề lập ý tình trong 
 
-### 青春成长叙事要点
+### Thanh Xuân & Trưởng Thànhviệc cần điểm 
 
-- **第一次的珍贵** — 青春叙事的核心魅力在于"第一次"的冲击力：第一次心动、第一次失败、第一次说再见、第一次为别人挺身而出。主题立意应围绕"人生中第一次经历某种情感"的鲜烈与慌张
-- **笨拙即真实** — 青春的表达方式本质上就是笨拙的。说错的话、做错的事、错过又拼命追回来的勇气——完美的青春不动人，手忙脚乱的才动人
-- **时间不可逆是底层情感** — 青春叙事的所有甜蜜和遗憾都有一个共同的底色："再也回不去了"。这种不可逆转感让每一个微小的瞬间都有了重量
-- **离场感受建议方向** — 怀念 / 释然 / 微笑中泛泪 / 想回到那一天。避免"爽感""逆袭"等功利化方向
-- **成长的疼痛** — 青春叙事不能只有甜蜜。真正的成长来自疼痛：友谊的裂缝、理想的破灭、第一次意识到"世界不是我想的那样"。甜蜜是表层，疼痛才是成长的发动机
-
----
-
-## 二、叙事结构与节奏规划
-
-### 青春成长叙事要点
-
-- **碎片化叙事是自然形态** — 青春的记忆本就是碎片化的：课间的一句话、放学路上的夕阳、某天突然下的雨。叙事结构可以接受更碎片化的段落组织，用情绪线而非事件线串联
-- **情绪过山车** — 青春的情绪变化是剧烈的：上一秒笑到肚子疼，下一秒眼眶就红了。段落间的情绪切换可以比其他类型更急促，这本身就是青春的质感
-- **成长弧线不是直线** — 角色的成长不是"不懂→懂了"的直线，而是"以为懂了→被打脸→真的懂了"的曲折。每次以为长大了，都会发现还差得远
-- **回忆与当下的双线** — 青春叙事常用"现在回望过去"的双线结构。回忆线充满鲜活细节，当下线负责赋予这些细节"再也回不去"的重量
-- **群像的交汇与分离** — 青春群像的核心叙事模型是"相聚→共同经历→各奔东西"。最催泪的不是分离本身，而是"我们曾经以为会永远在一起"
-- **"那一天"模型** — 青春叙事中每个重要转折应绑定到一个具体的"那一天"：那天下了很大的雨、那天是运动会、那天放学特别早。具体的时间锚点让回忆有了触感
+- **Thứ 1 lần  của ** — việc  của lực ở với "Thứ 1 lần " của lực ：Thứ 1 lần động 、Thứ 1 lần thất bại、Thứ 1 lần hướng thấy 、Thứ 1 lần khác ngườira 。chính đề lập ý hồi khí "ngườisinh giữa Thứ 1 lần đã loại tình " của bức 
+- **thật ** —  của bảng cách thứcsách trên thì là  của 。hướng sai  của lời 、sai  của việc 、sai lại ghép trả  của ——đẹp  của không động người，tay  của động người
+- **thời giankhông là tầng tình ** — việc  của tất cả và đều có một cùng  của vật ："cũng trả không đi "。nàyloại không chuyển để một nhỏ  của gian đều có trùng lượng 
+- **trường Khuyến nghịphương ** —  /  / giữa  / nghĩ trả đến 1 ngày。""""công hóa phương 
+- **tạo dài  của ** — việc không thể chỉ có 。thật chính  của tạo dài tự ： của 、lý nghĩ  của 、Thứ 1 lần ý trưng đến "giới không là tôinghĩ  của kiểu "。là bảng tầng ，là tạo dài  của phát động máy 
 
 ---
 
-## 三、分场景情绪设计
+## 2、việc kết cấu tiết lập kế hoạch
 
-### 青春成长叙事要点
+### Thanh Xuân & Trưởng Thànhviệc cần điểm 
 
-- **情绪目标用青春体感词** — 不说"开心"，说"笑到弯腰然后突然对视愣住"。不说"难过"，说"走出校门才敢掉眼泪"。青春的情绪永远是混合的、矛盾的
-- **典型情绪段落与设计** —
+- **hóa việc là tự dạng thái ** —  của sách thì là hóa  của ：gian  của 1 câu lời 、mở đường trên  của 、ngàydưới  của 。việc kết cấu tiếp đổi hóa  của đoạn nhóm ，hàm tình xúc đường phi sự kiệnđường kết 
+- **tình xúc ** —  của tình xúc hóa là kịch  của ：trên 1 giâyđến ，dưới 1 giâythì 。đoạn gian  của tình xúc đổi tỷ anh ấyLoạiđổi ，nàysách thì là  của 
+- **tạo dài đường không là trực đường ** — Nhân vật của tạo dài không là "không →" của trực đường ，là "→mở →thật  của " của 。lần dài lớn ，đều sẽ phát còn được 
+- **trả khi dưới  của đôi đường ** — việc thường hàm "ở trả đi " của đôi đường kết cấu 。trả đường sung đầy hoạt tiết ，khi dưới đường nàynhững tiết "cũng trả không đi " của trùng lượng 
+- ** của tác vụ phút** —  của việc mô hìnhlà "→cùng đã →các "。nhất  của không là phútsách ，là "tôiđã sẽ ở 1 "
+- **"1 ngày"mô hình** — việc giữa mục trùng cần chuyển hồi ghép nốiđến một cụ thể  của "1 ngày"：ngàydưới rất lớn  của 、ngàylà vận động sẽ 、ngàymở khác sớm 。cụ thể  của thời gianđiểm để trả có 
 
-| 段落类型 | 情绪方向 | 叙事手法 | 音乐建议 |
+---
+
+## 3、phútBối cảnhtình xúc thiết tính 
+
+### Thanh Xuân & Trưởng Thànhviệc cần điểm 
+
+- **tình xúc mục biểu hàm thể từ ** — không hướng "mở "，hướng "đến sau đúng video "。không hướng ""，hướng "chạy ra đối cổng bỏ "。 của tình xúc là hợp  của 、 của 
+- **kiểu tình xúc đoạn thiết tính ** —
+
+| đoạn Loại | tình xúc phương  | việc tay thức  | âm Khuyến nghị |
 |---|---|---|---|
-| 日常欢闹 | 活力 + 无忧 | 群戏嬉闹、碎片化日常、快节奏剪辑 | 轻快节奏，吉他/口哨/手拍 |
-| 暗恋萌芽 | 心动 + 紧张 | 偷看、刻意走同一条路、碰到手指的触电 | 轻柔旋律，节奏暗示心跳 |
-| 友谊考验 | 委屈 + 倔强 | 误解、冷战、一个人吃午饭、假装没事 | 减少配乐，环境音凸显孤立 |
-| 拼搏/比赛 | 紧张 + 热血 | 倒计时压力、团队配合、最后一搏 | 鼓点渐强，节奏加速 |
-| 告别/毕业 | 不舍 + 释然 | 清空抽屉、最后一次一起走、签名本 | 从热闹渐变安静，最后只剩一个声音 |
-| 回望/成长 | 怀念 + 温暖 | 多年后重回旧地、翻开旧物、恍然如昨 | 温暖器乐缓入，带一丝苍凉 |
+| ngày thường  | hoạt lực  + không  | 、hóa ngày thường 、nhanh tiết sửa  | nhanh tiết ，anh ấy/cổng /tay  |
+|  | động  + bức  | xem 、ý chạy cùng 1 mục đường 、đến tay  của  | ，tiết nhở  |
+| chiếu  |  +  | giải 、、một người、giả chưa việc  | ít nối ，âm lập  |
+| ghép /tỷ  | bức  +  | tính nén lực 、nối hợp 、nhất sau 1  | điểm ，tiết cộng  |
+| thông khác / | không  +  | xóa sạch、nhất sau 1 lần 1 chạy 、ký tên sách  | từ an ，nhất sau chỉ một thanh âm  |
+| trả /tạo dài  |  +  | nhiều nămsau trùng trả cũ địa 、mở cũ 、như  | thiết bị vào ，kèm 1  |
 
-- **"空间记忆绑定"是叙事核心工具** — 青春叙事中特定空间应与特定情感绑定，反复出现形成情感共鸣：
-  - **教室/操场**：日常/集体记忆/归属感
-  - **回家的路**：暗恋/独处/心事的空间
-  - **秘密基地**（天台/树下/旧仓库）：友谊/承诺/只属于我们的空间
-- **季节即情绪** — 善用季节变化传递时间流逝与情绪转换：春 = 萌芽/初见；夏 = 热烈/冲突；秋 = 离别/成熟；冬 = 沉淀/回望
-- **"旁边的人"视角** — 青春叙事的高级手法是"从旁边的人看到主角的变化"——老师在窗外看到的背影、朋友偷偷注意到的神情变化、家长发现孩子不再需要接送
+- **"rỗng gian ghép nối"là việc cụ ** — việc giữa nối rỗng gian hồi nối tình ghép nối，phụ lời ra dạng tạo tình ：
+  - **/thao trường **：ngày thường /tập thể /biệt 
+  - **trả  của đường **：/xử /việc  của rỗng gian 
+  - **mật cơ sở địa **（ngàyđài /dưới /cũ kho ）：//chỉ biệt với tôi của rỗng gian 
+- **tiết tình xúc ** — hàm tiết hóa truyền thời giantình xúc chuyển đổi ： = /thấy ； = /； = khác /tạo ； = /trả 
+- **" của người"video nhân ** — việc  của cao cấp tay thức là "từ  của ngườixem đến chính nhân  của hóa "——ở ngoài xem đến  của sáng 、tâm ý đến  của tình hóa 、dài phát không cần cần tiếp gửi 
 
 ---
 
-## 四、声音与音乐方向
+## 4、thanh âm âm phương 
 
-### 青春成长叙事要点
+### Thanh Xuân & Trưởng Thànhviệc cần điểm 
 
-- **青春有自己的音景** — 上课铃、球鞋在地板上的摩擦、翻书声、远处操场的哨声、自行车链条的咔哒。这些声音构成"青春的声音质感"，每场戏应标注 1-2 个标志性青春音效
-- **音乐是记忆锚点** — 青春叙事中的主题音乐有特殊功能：当同一段旋律在不同段落响起，观众会自动调出之前的情感记忆。建议在关键段落使用同一主题的不同编排
-- **沉默的成长** — 角色真正"长大"的瞬间往往是沉默的：不再争辩、不再追赶、站在原地目送。这些成长节点应去掉配乐，只留环境音
-- **环境音即时代** — 用环境音传递时代背景：教室的广播体操音乐、街边小店的流行歌、夏天的蝉鸣。声音比画面更能唤起时代共鸣
-- **音乐情绪递进模型** —
+- **có tự mình  của âm bối ** — trên 、ở địa trên  của 、thanh 、xử thao trường  của thanh 、tự thi mục  của 。nàynhững thanh âm cấu tạo " của thanh âm "，trường hồi biểu tâm  1-2 mục biểu Âm hiệu
+- **âm là điểm ** — việc giữa  của chính đề âm có công thể ：khi cùng 1 đoạn ở không cùng đoạn phản ，sẽ tự động gọi ra  của trước  của tình 。Khuyến nghịở liên đoạn hàm cùng 1 chính đề  của không cùng chỉnh sắp 
+- ** của tạo dài ** — Nhân vậtthật chính "dài lớn " của gian là  của ：không 、không 、trạm ở gốc địa mục gửi 。nàynhững tạo dài tiết điểm hồi đi bỏ nối ，chỉ lưu âm 
+- **âm ** — hàm âm truyền bối ： của thể thao âm 、nhỏ  của thi 、ngày của 。thanh âm tỷ vẽ mặt đổi thể 
+- **âm tình xúc tiến mô hình** —
 
-| 情绪阶段 | 音乐策略 | 覆盖率 |
+| tình xúc đoạn  | âm  | tỷ lệ  |
 |---|---|---|
-| 日常欢闹 | 轻快节奏，活力器乐 | 中高 |
-| 暗涌心事 | 轻柔旋律，低音量 | 中低 |
-| 冲突爆发 | 音乐骤停或急促节奏 | 极端 |
-| 和解回暖 | 主题旋律温暖变奏 | 中 |
-| 告别离场 | 从群体合奏渐变为单一器乐 | 中→低 |
+| ngày thường  | nhanh tiết ，hoạt lực thiết bị  | giữa cao  |
+| việc  | ，thấp âm lượng  | giữa thấp  |
+| phát  | âm hoặc tiết  | đầu  |
+|  và giải trả  | chính đề  | giữa  |
+| thông khác trường  | từ thể hợp đơn 1 thiết bị  | giữa →thấp  |
 
-- **笑声与哭声的距离** — 青春叙事中最动人的音效处理是"笑声突然变成抽泣"或"哭着哭着笑出来"。情绪的快速切换不需要配乐辅助，自然的人声就够了
-
----
-
-## 五、构图与景别叙事
-
-### 青春成长叙事要点
-
-- **三大核心构图的叙事功能** —
-  - **群像构图** — 多人同框/并排/围坐，传递"我们在一起"的归属感与集体记忆
-  - **前后景构图** — 一人在前一人在后，传递"看着你但你不知道"的暗恋/注视
-  - **对称构图** — 两人并排走路/坐在同一条长椅上，传递"平等的陪伴"
-- **景别随关系变化** — 人物初识时景别偏远偏散（各自在画面不同位置）；关系升温后景别收紧（同框/近景）；分离时景别再次拉远（各自的远景对切）
-- **空间的情感记忆** — 同一个空间在不同段落反复出现时，构图应有微妙变化来传递情感变化：同一条放学路，从两人并排到一人独走；同一个教室座位，从满到空
-- **远景的双重功能** — 青春叙事中远景既可以传递"自由/广阔"（操场奔跑、天台眺望），也可以传递"渺小/孤独"（一个人走在放学后空荡的街道）
-- **大特写的青春功能** — 大特写用于捕捉青春中稍纵即逝的微表情：偷笑的嘴角、红了的耳尖、眨掉泪水的睫毛
-- **"那一天"的视角锚定** — 回忆段落的构图可以刻意采用"记忆中的视角"：不完美的角度、局部遮挡、仿佛是从某个位置偷偷看到的
+- **thanh thanh  của ** — việc giữa nhất động người của Âm hiệuxử lý là "thanh tạo "hoặc "đang đang ra "。tình xúc  của nhanh đổi không cần cần nối giúp ，tự  của ngườithanh thì 
 
 ---
 
-## 六、镜头运动与节奏
+## 5、cấu ảnh Cỡ cảnhviệc 
 
-### 青春成长叙事要点
+### Thanh Xuân & Trưởng Thànhviệc cần điểm 
 
-- **动静交替是青春节奏** — 青春叙事的镜头节奏应在"活力动态"与"沉静凝视"之间频繁切换。跑动→突然停下→回头，这种节奏本身就是青春
-- **跟拍奔跑 = 青春的标志运镜** — 跟随角色奔跑（追公交/追人/赛跑/冲刺）是青春叙事最有辨识度的运镜。跟拍时保持微微不稳，传递"拼命向前"的生命力
-- **缓推 = 发现/注意到** — "注意到了那个人"的心理暗示，适合暗恋、发现朋友在哭、注意到某个变化
-- **缓拉 = 离开/长大** — "从这个地方/这个人身边离开"的心理暗示，适合告别、毕业、意识到一切已经不同
-- **静止凝视 = 成长瞬间** — 角色真正长大的瞬间，镜头应该停下来，静静地看。不推不拉不摇，只是看着这个人在这一刻变了
-- **运镜即情感温度** — 晃动跟拍 = 活力/混乱；平稳缓移 = 温暖/日常；静止 = 沉思/成长；缓慢拉远 = 告别/释然
+- **3lớn cấu ảnh  của việc công thể ** —
+  - **cấu ảnh ** — nhiều ngườicùng /nhất sắp /khí ，truyền "tôiở 1 " của biệt tập thể 
+  - **trước sau bối cấu ảnh ** — 1 ngườiở trước 1 ngườiở sau ，truyền "xem đang bạnnhưng bạnkhông báo đạo " của /tâm video 
+  - **đúng cấu ảnh ** — 2ngườinhất sắp chạy đường /ở cùng 1 mục dài trên ，truyền " của "
+- **Cỡ cảnhliên dòng hóa ** — ngườitrưng Cỡ cảnh（các tự ở vẽ mặt không cùng vị trí trí ）；liên dòng sau Cỡ cảnhnhận （cùng /Cận cảnh (close-up)）；phútCỡ cảnhlần Kéo lùi (pull back / dolly out)（các tự  của Viễn cảnh (extreme wide shot)đúng ）
+- **rỗng gian  của tình ** — cùng một rỗng gian ở không cùng đoạn phụ lời ra ，cấu ảnh hồi có hóa truyền tình hóa ：cùng 1 mục mở đường ，từ 2ngườinhất sắp đến 1 ngườichạy ；cùng một vị trí ，từ đầy đến rỗng 
+- **Viễn cảnh (extreme wide shot) của đôi trùng công thể ** — việc giữa Viễn cảnh (extreme wide shot)truyền "tự do /"（thao trường 、ngàyđài ），cũng truyền "nhỏ /"（một ngườichạy ở mở sau rỗng  của đạo ）
+- **lớn Đặc tả (close-up) của công thể ** — lớn Đặc tả (close-up)hàm với giữa  của bảng tình ： của nhân 、 của 、bỏ  của 
+- **"1 ngày" của video nhân nối ** — trả đoạn  của cấu ảnh ý hàm "giữa  của video nhân "：không đẹp  của nhân độ 、cục bộ 、là từ mục vị trí trí xem đến  của 
+
+---
+
+## 6、Ống kínhvận động tiết 
+
+### Thanh Xuân & Trưởng Thànhviệc cần điểm 
+
+- **động tác vụ là tiết ** — việc  của Ống kínhtiết hồi ở "hoạt lực động thái ""video " của gian tần đổi 。động →dưới →trả đầu ，nàyloại tiết sách thì là 
+- ** =  của biểu Góc quay** — Nhân vật（tác vụ /người//）là việc nhất có trưng độ  của Góc quay。lưu giữ không ，truyền "ghép trước " của sinh lực 
+- **khuyến  = phát /tâm ý đến ** — "tâm ý đến mục người" của lý nhở ，hợp 、phát ở 、tâm ý đến mục hóa 
+- ** = mở /dài lớn ** — "từ nàymục địa phương /nàymục ngườimở " của lý nhở ，hợp thông khác 、、ý trưng đến 1 đã đã không cùng 
+- **Tĩnh (static)video  = tạo dài gian ** — Nhân vậtthật chính dài lớn  của gian ，Ống kínhhồi dưới ，địa xem 。không khuyến không không ，chỉ là xem đang nàymục ngườiở này1 
+- **Góc quaytình độ ** — động  = hoạt lực /； = /ngày thường ；Tĩnh (static) = /tạo dài ；chậm Kéo lùi (pull back / dolly out) = thông khác /

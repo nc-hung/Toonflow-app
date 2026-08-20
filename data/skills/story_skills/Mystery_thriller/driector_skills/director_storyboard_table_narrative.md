@@ -1,92 +1,92 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 悬疑推理 — 定义悬疑推理在分镜表中的景别策略、运镜逻辑、时长操控、线索镜头设计、信息揭示策略与转场手法。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · khuyến lý  — nối nghĩa khuyến lý ở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaylogic、Thời lượngthao sát 、đường kiếm Ống kínhthiết tính 、thông tinnhở chuyển trường tay thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 悬疑推理 · 技法参考
+# Bảng phân cảnhviệc tay thức  · khuyến lý  · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供悬疑推理叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **景别即信息量** — 悬疑分镜中景别的核心逻辑是"让观众看到多少信息"。每个镜头先问：这里要让观众知道什么？要隐藏什么？
-- **选择性特写** — 用特写强制引导观众关注某个细节（一把钥匙、一个表情、一行字），但要警惕：过于明显的特写等于直接"画箭头"，观众会猜到是线索。最好的线索特写是"有理由的"（角色在看/在用）
-- **遮蔽性中景** — 中景在悬疑中的核心价值是"展示够多但藏住关键"。人物中景交代了动作但看不清微表情；空间中景展示了房间但遮住了角落
-- **反转全景** — 全景是悬疑中最有力的反转工具：从局部切到全景，突然揭示"房间里还有别人""地上有血迹""窗户是开着的"。全景的信息量爆炸适合放在反转瞬间
-- **定场镜头的悬念植入** — 定场不只是交代环境，要在定场镜头中植入一个"不对"的细节（远处窗户有人影、院子里多了一把椅子）。最多 1-2 个镜头完成定场+悬念种子
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà khuyến lý việc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **默认稳定但不死板** — 50% 镜头静止机位，但关键段落可引入轻微不稳定感（微幅手持、极缓横移）暗示"有什么不对"
-- **缓推 = 发现/逼近** — 缓慢推向某个物体或人物，暗示"观众即将看到重要的东西"。缓推速度越慢，悬念越强
-- **缓拉 = 揭示/全貌** — 从局部缓拉到全景，揭示被遮蔽的信息。是悬疑中最经典的"反转运镜"
-- **横移 = 扫描/搜索** — 缓慢横移模拟"扫视空间"，适合调查场景。观众跟随镜头一起"搜索"，参与感增强
-- **突然静止 = 发现冲击** — 运动中的镜头突然停下来，制造"冻结"感。用于主角突然看到了不该看到的东西
-- **窥视运镜** — 从遮挡物后方缓推，前景保留遮挡物边缘，模拟"有人在暗处观察"的第三视角
-
----
-
-## 四、时长把控
-
-- **悬念镜头拉长** — 悬疑中关键的"发现"镜头可比正常时长多 1-2s，给观众"意识到"的时间。角色盯着某物 3s 比 1s 更令人不安
-- **日常镜头正常** — 日常/假象段落的镜头时长保持正常（2-4s），不要用异常时长打破伪装
-- **反转前的拉伸** — 反转镜头前的最后一个镜头应适当拉长（4-5s），制造"暴风雨前的寂静"
-- **反转瞬间极短或极长** — 反转揭示镜头要么极短（1-1.5s 闪切，冲击感）要么极长（5-6s 缓揭，恐惧蔓延感），不要用中间值
-- **黄金 6 秒规则依然适用** — 除非有运镜或新信息持续输入，单镜头不超过 6s。悬疑的"慢"不是镜头长，是段落节奏的起伏
-- **沉默倒计时** — 无台词无动作的纯静默镜头在悬疑中是强力工具，但不超过 4s，否则观众会以为是技术故障
+- **Cỡ cảnhthông tinlượng ** — Phân cảnhgiữa Cỡ cảnh của logiclà "để xem đến nhiều ít thông tin"。mục Ống kínhtrước hỏi ：nàycần để báo đạo sao？cần sao？
+- **chọn lựa Đặc tả (close-up)** — hàm Đặc tả (close-up)chép dẫn liên tâm mục tiết （1 đem 、một bảng tình 、1 thi chữ ），nhưng cần báo ：với dẫn  của Đặc tả (close-up)với trực tiếp "vẽ đầu "，sẽ đến là đường kiếm 。nhất tốt  của đường kiếm Đặc tả (close-up)là "có lý do  của "（Nhân vậtở xem /ở hàm ）
+- **Trung cảnh (medium shot)** — Trung cảnh (medium shot)ở giữa  của giá trị là "nhở nhiều nhưng liên "。ngườiTrung cảnh (medium shot)tác vụ động tác vụ nhưng xem không sạch bảng tình ；rỗng gian Trung cảnh (medium shot)nhở gian nhưng nhân 
+- **phụ chuyển Toàn cảnh (wide shot)** — Toàn cảnh (wide shot)là giữa nhất có lực  của phụ chuyển cụ ：từ cục bộ đến Toàn cảnh (wide shot)，nhở "gian còn có khác người""địa trên có ""dùng là mở đang  của "。Toàn cảnh (wide shot) của thông tinlượng hợp mở ở phụ chuyển gian 
+- **nối trường Ống kính của vào ** — nối trường không chỉ là tác vụ ，cần ở nối trường Ống kínhgiữa vào một "không đúng " của tiết （xử dùng có ngườisáng 、nhiều 1 đem ）。nhất nhiều  1-2 mục Ống kínhtạo nối trường +loại 
 
 ---
 
-## 五、线索镜头设计
+## 3、Góc quaytiết 
 
-- **伏笔镜头不加标注** — 埋设线索的镜头在分镜表中不要用特殊标记（避免"注意！这是线索！"的AI感），让线索镜头看起来和普通镜头一样自然
-- **线索出现三原则** — ①有叙事理由出现（角色在用/在看/在经过）；②不在画面正中（放边缘或前景）；③不给异常时长（正常节奏带过）
-- **重要线索至少出现两次** — 第一次"无意经过"，第二次"被发现意义"。两次之间间隔足够远，让观众第一次忽略
-- **闪回镜头要变质感** — 回忆/闪回镜头在分镜中需标注与当下叙事的视觉区分（不同色温、不同景别倾向、不同运镜速度），让观众一眼辨别时间线
-- **道具连续性** — 悬疑分镜中道具位置的变化本身是叙事：杯子换了位置、花瓶被移动过、照片少了一张。在分镜描述中精确交代关键道具的状态
-
----
-
-## 六、信息揭示策略
-
-- **小揭示用对白，大揭示用画面** — 次要信息可以通过角色对话交代，但核心反转必须用镜头语言（全景揭示、特写聚焦、闪回拼接）完成
-- **揭示节奏：先给角色后给观众** — 反转镜头的经典节奏：先拍角色表情变化（震惊/恐惧）→再切到角色所见（观众才知道原因）。角色的反应为观众"预热"情绪
-- **或反过来：先给观众后给角色** — 观众先看到真相（背后有人），角色浑然不知——制造"快回头啊！"的焦虑感。这种手法的分镜需要用全景或过肩镜头让观众看到角色视线之外的信息
-- **反转后给回看时间** — 大反转之后不要立刻推进叙事，留 1-2 个镜头给观众消化（角色怔住、空镜、沉默），让信息量沉淀
+- **Mặc địnhnối nhưng không ** — 50% Ống kínhTĩnh (static)máy vị trí ，nhưng liên đoạn vào không nối （tay giữ 、）nhở "có saokhông đúng "
+- **khuyến  = phát /** — chậm khuyến mục thể hoặc người，nhở "xem đến trùng cần  của "。khuyến độ chậm ，
+- ** = nhở /toàn ** — từ cục bộ đến Toàn cảnh (wide shot)，nhở  của thông tin。là giữa nhất đã  của "phụ chuyển Góc quay"
+- ** = mô /tìm kiếm ** — chậm mô "video rỗng gian "，hợp gọi tra Bối cảnh。Ống kính1 "tìm kiếm "，tham 
+- **Tĩnh (static) = phát ** — vận động giữa  của Ống kínhdưới ，chép tạo "kết "。hàm với chính nhân xem đến không xem đến  của 
+- **video Góc quay** — từ sau phương khuyến ，trước bối lưu lưu ，mô "có ngườiở xử " của Thứ 3video nhân 
 
 ---
 
-## 七、人物行为设计
+## 4、Thời lượngđem sát 
 
-- **可疑行为要有日常外衣** — 角色的可疑行为在分镜中不能太明显。"反复看手表"比"鬼鬼祟祟张望"更好——前者可能无辜，后者太刻意
-- **微表情是核心线索载体** — 悬疑中人物的微表情（瞳孔微缩、嘴角一闪而过的变化、手指轻扣桌面）比大幅度表演更有价值。分镜中涉及线索性表情时用近景/特写捕捉
-- **多义性动作** — 设计的人物动作应允许多种解读：角色擦手可能是洗完手、也可能是擦去什么痕迹。分镜不要通过额外信息"解释"动作含义，让观众自己判断
-- **单镜头动作不超过两个** — "低头看信 + 迅速折起"可以，"低头看信 + 折起 + 塞进口袋 + 环顾四周"会使关键动作淹没在信息中
-
----
-
-## 八、台词与留白
-
-- **未说完的话是最好的悬念** — "其实那天晚上……算了。"角色欲言又止比说出来更令人不安。分镜中给这类台词配近景+沉默留白（2-3s）
-- **一句台词对应一个镜头** — 避免单镜头内多句对白，尤其是包含关键信息的对白。切换说话者时切镜头
-- **歧义台词用表情辅助** — 有双重含义的台词（明面正常、暗面可疑）配合角色微妙表情，分镜中用近景确保观众能捕捉到表情细节
-- **旁白/内心独白要克制** — 悬疑叙事优先用画面叙事，旁白只在必须交代内心推理过程时使用。旁白镜头配中远景或空镜，避免近景嘴不动的违和感
+- **Ống kínhdài ** — giữa liên  của "phát "Ống kínhtỷ chính thường Thời lượngnhiều  1-2s，cho "ý trưng đến " của thời gian。Nhân vậtđang  3s tỷ  1s đổi ngườikhông an 
+- **ngày thường Ống kínhchính thường ** — ngày thường /giả tượng đoạn  của Ống kínhThời lượnglưu giữ chính thường （2-4s），không cần hàm bất thường Thời lượngmở 
+- **phụ chuyển trước  của ** — phụ chuyển Ống kínhtrước  của nhất sau một Ống kínhhồi khi dài （4-5s），chép tạo "phong trước  của "
+- **phụ chuyển gian ngắn hoặc dài ** — phụ chuyển nhở Ống kínhcần saongắn （1-1.5s ，）cần saodài （5-6s ，trì ），không cần hàm giữa gian giá trị 
+- ** 6 giâyphụ hàm ** — bỏ phi có Góc quayhoặc mới thông tingiữ tải vào ，đơn Ống kínhkhông vượt  6s。 của "chậm "không là Ống kínhdài ，là đoạn tiết  của 
+- **tính ** — Không có lời thoạikhông động tác vụ  của thuần Ống kínhở giữa là lực cụ ，nhưng không vượt  4s，không sẽ là 
 
 ---
 
-## 九、转场设计
+## 5、đường kiếm Ống kínhthiết tính 
 
-- **同场景内用硬切** — 同一场景内镜头间硬切，保持紧凑
-- **场景切换用黑屏/闪白** — 悬疑中场景转换用短黑屏（0.5-1s）制造"中断感"，比空镜过渡更符合悬疑节奏
-- **闪回用匹配剪辑** — 当下画面与回忆画面用相似构图/动作做匹配剪辑切入，强化因果联系（当下看到一把刀→闪回到那把刀出现的场景）
-- **时间跳跃用字幕标注** — 打乱时间线的叙事在转场时需要明确的时间标记（"三天前""同一时刻"），避免观众迷失
-- **段落间用"悬念尾钩"** — 每个段落结尾留一个未解悬念镜头再转场，保持跨段落的牵引力
+- **Ống kínhkhông cộng biểu tâm ** — thiết đường kiếm  của Ống kínhở Bảng phân cảnhgiữa không cần hàm biểu （"tâm ý ！nàylà đường kiếm ！" của AI），để đường kiếm Ống kínhxem  và thông Ống kính1 kiểu tự 
+- **đường kiếm ra 3gốc ** — ①có việc lý do ra （Nhân vậtở hàm /ở xem /ở đã ）；②không ở vẽ mặt chính giữa （mở hoặc trước bối ）；③không cho bất thường Thời lượng（chính thường tiết kèm ）
+- **trùng cần đường kiếm đến ít ra 2lần ** — Thứ 1 lần "không ý đã "，Thứ 2lần "phát ý nghĩa "。2lần  của gian gian cách ，để Thứ 1 lần 
+- **trả Ống kínhcần ** — trả /trả Ống kínhở Phân cảnhgiữa cần biểu tâm khi dưới việc  của trực quankhu phút（không cùng vật 、không cùng Cỡ cảnh、không cùng Góc quayđộ ），để 1 khác thời gianđường 
+- **Đạo cụ** — Phân cảnhgiữa Đạo cụvị trí trí  của hóa sách là việc ：đổi vị trí trí 、động 、ít 1 bức 。ở Phân cảnhMô tảgiữa tác vụ liên Đạo cụ của trạng thái
+
+---
+
+## 6、thông tinnhở 
+
+- **nhỏ nhở hàm đúng ，lớn nhở hàm vẽ mặt ** — lần cần thông tinthông quaNhân vậtđúng lời tác vụ ，nhưng phụ chuyển Bắt buộchàm Ống kínhngữ （Toàn cảnh (wide shot)nhở 、Đặc tả (close-up)、trả ghép tiếp ）tạo 
+- **nhở tiết ：trước cho Nhân vậtsau cho ** — phụ chuyển Ống kính của đã tiết ：trước Nhân vậtbảng tình hóa （/）→đến Nhân vậtnơi thấy （báo đạo gốc ）。Nhân vật của phụ hồi ""tình xúc 
+- **hoặc phụ ：trước cho sau cho Nhân vật** — trước xem đến thật （sau có người），Nhân vậtkhông báo ——chép tạo "nhanh trả đầu ！" của 。nàyloại tay thức  của Phân cảnhcần cần hàm Toàn cảnh (wide shot)hoặc Ống kínhđể xem đến Nhân vậtvideo đường  của ngoài  của thông tin
+- **phụ chuyển sau cho trả xem thời gian** — lớn phụ chuyển  của sau không cần lập Đẩy tới (push in / dolly in)việc ，lưu  1-2 mục Ống kínhcho hủy hóa （Nhân vật、rỗng quay 、），để thông tinlượng 
+
+---
+
+## 7、ngườithi thiết tính 
+
+- **thi cần có ngày thường ngoài ** — Nhân vật của thi ở Phân cảnhgiữa không thể dẫn 。"phụ lời xem tay bảng "tỷ "bức "đổi tốt ——trước giả thể không ，sau giả ý 
+- **bảng tình là đường kiếm xuống thể ** — giữa người của bảng tình （nhỏ 、nhân 1  của hóa 、tay mặt ）tỷ lớn độ bảng đổi có giá trị 。Phân cảnhgiữa đường kiếm bảng tình hàm Cận cảnh (close-up)/Đặc tả (close-up)
+- **nhiều nghĩa động tác vụ ** — thiết tính  của ngườiđộng tác vụ hồi nhiều loại giải ：Nhân vậttay thể là tay 、cũng thể là đi sao。Phân cảnhkhông cần thông quabổ ngoài thông tin"giải "động tác vụ nghĩa ，để tự mình 
+- **đơn Ống kínhđộng tác vụ không vượt 2mục ** — "thấp đầu xem tin  + "，"thấp đầu xem tin  +  + tiến cổng  + 4"sẽ liên động tác vụ chưa ở thông tingiữa 
+
+---
+
+## 8、Lời thoạilưu 
+
+- **chưa hướng  của lời là nhất tốt  của ** — "ngàymuộn trên ……toán 。"Nhân vậtlại tỷ hướng ra đổi ngườikhông an 。Phân cảnhgiữa cho nàyloại Lời thoạinối Cận cảnh (close-up)+lưu （2-3s）
+- **1 câu Lời thoạiđúng hồi một Ống kính** — đơn Ống kínhtrong nhiều câu đúng ，là gói liên thông tin của đúng 。đổi hướng lời giả Ống kính
+- **nghĩa Lời thoạihàm bảng tình giúp ** — có đôi trùng nghĩa  của Lời thoại（dẫn mặt chính thường 、mặt ）nối hợp Nhân vậtbảng tình ，Phân cảnhgiữa hàm Cận cảnh (close-up)lưu thể đến bảng tình tiết 
+- **/Độc thoại nội tâm (inner monologue, OS)cần chép ** — việc trước hàm vẽ mặt việc ，chỉ ở Bắt buộctác vụ trong khuyến lý trình hàm 。Ống kínhnối giữa Viễn cảnh (extreme wide shot)hoặc rỗng quay ，Cận cảnh (close-up)không động  của  và 
+
+---
+
+## 9、chuyển trường thiết tính 
+
+- **cùng Bối cảnhtrong hàm ** — cùng 1 Bối cảnhtrong Ống kínhgian ，lưu giữ 
+- **Bối cảnhđổi hàm /** — giữa Bối cảnhchuyển đổi hàm ngắn （0.5-1s）chép tạo "giữa "，tỷ rỗng quay đổi hợp tiết 
+- **trả hàm khớpsửa ** — khi dưới vẽ mặt trả vẽ mặt hàm cấu ảnh /động tác vụ khớpsửa vào ，hóa quả kết dòng （khi dưới xem đến 1 đem →trả đến đem ra  của Bối cảnh）
+- **thời gianhàm chữ biểu tâm ** — mở thời gianđường  của việc ở chuyển trường cần cần dẫn  của thời gianbiểu （"3ngàytrước ""cùng 1 "），thất 
+- **đoạn gian hàm "đuôi hook "** — mục đoạn kết đuôi lưu một chưa giải Ống kínhchuyển trường ，lưu giữ đoạn  của lực 

@@ -6,7 +6,7 @@ import { error, success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 删除视觉手册
+// Xóatrực quansổ tay
 export default router.post(
   "/",
   validateFields({
@@ -16,9 +16,9 @@ export default router.post(
     try {
       const { name } = req.body as { name: string };
 
-      // 安全校验：不允许包含路径分隔符、纯数字，防止越级删除或误删项目目录
+      // an toàn đối chiếu ：không gói đường dẫnngăn cách、thuần số chữ ，cấp Xóahoặc xóa Dự ánthư mục
       if (name.includes("/") || name.includes("\\") || name === "." || name === ".." || /^\d+$/.test(name)) {
-        res.status(400).send(error("名称不能包含路径分隔符或为纯数字"));
+        res.status(400).send(error("tênkhông thể gói đường dẫnngăn cáchhoặc thuần số chữ "));
         return;
       }
 
@@ -27,15 +27,15 @@ export default router.post(
       try {
         const stat = await fs.stat(artPromptsDir);
         if (!stat.isDirectory()) {
-          throw new Error(`${artPromptsDir} 不是文件夹`);
+          throw new Error(`${artPromptsDir} không là thư mục tệp `);
         }
         await fs.rm(artPromptsDir, { recursive: true, force: true });
       } catch (e) {
-        console.error("[删除视觉手册] 删除失败:", artPromptsDir, e);
+        console.error("[Xóatrực quansổ tay] Xóathất bại:", artPromptsDir, e);
       }
-      res.status(200).send(success({ message: "删除成功" }));
+      res.status(200).send(success({ message: "Xóa thành công" }));
     } catch (err) {
-      res.status(500).send(error(u.error(err).message || "删除失败"));
+      res.status(500).send(error(u.error(err).message || "Xóathất bại"));
     }
   },
 );

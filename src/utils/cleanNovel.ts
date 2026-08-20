@@ -7,16 +7,16 @@ export interface EventType {
   event: string;
 }
 
-/*  文本数据清洗
- * @param textData 需要清洗的文本
- * @param windowSize 每组数量 默认5
- * @param overlap 交叠数量 默认1
- * @returns {totalCharacter:所有人物角色卡,totalEvent:所有事件}
+/*  Làm sạch dữ liệu văn bản 
+ * @param textData Văn bản  cần  làm  sạch
+ * @param windowSize Số lượng mỗi nhóm, mặc định 5
+ * @param overlap Số lượng gối đầu, mặc định 1
+ * @returns {totalCharacter: Tất cả thẻ nhân vật, totalEvent: Tất cả sự kiện}
  */
 
 class CleanNovel {
   emitter: EventEmitter;
-  /** 最大并发数 */
+  /** Số tác vụ đồng thời tối đa */
   concurrency: number;
 
   constructor(concurrency: number = 5) {
@@ -40,13 +40,13 @@ class CleanNovel {
           {
             role: "user",
             content:
-              "请根据以下小说章节数：" +
+              "Vui lòng dựa vào số thứ tự chương tiểu thuyết: " +
               novel.chapterIndex +
-              "小说章节券：" +
+              ", quyển: " +
               novel.reel +
-              "小说章节名称：" +
+              ", tên chương: " +
               novel.chapter +
-              "、小说章节内容生成事件摘要：\n" +
+              ", và nội dung chương để tạo tóm tắt sự kiện:\n" +
               novel.chapterData!,
           },
         ],
@@ -63,7 +63,7 @@ class CleanNovel {
   async start(allChapters: o_novel[], projectId: number): Promise<EventType[]> {
     const totalEvent: EventType[] = [];
 
-    // 并发控制：通过信号量限制同时执行的任务数
+    // Kiểm soát đồng thời: giới hạn số lượng tác vụ thực thi cùng lúc
     let running = 0;
     let index = 0;
     const results: Promise<void>[] = [];
@@ -80,7 +80,7 @@ class CleanNovel {
       });
     };
 
-    // 启动最多 concurrency 个并发任务
+    // Khởi chạy tối đa concurrency tác vụ đồng thời
     const workers = Array.from({ length: Math.min(this.concurrency, allChapters.length) }, () => runNext());
 
     await Promise.all(workers);

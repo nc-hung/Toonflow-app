@@ -25,6 +25,6 @@ export default router.post(
       label: name,
       prompt,
     });
-    res.status(200).send(success("艺术风格添加成功"));
+    res.status(200).send(success("Thêm phong cách mỹ thuật thành công"));
   },
 );

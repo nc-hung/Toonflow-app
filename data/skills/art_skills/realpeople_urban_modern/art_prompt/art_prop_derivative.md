@@ -1,113 +1,113 @@
-# 道具衍生状态生成 · 约束手册（真人都市版）
+# Đạo cụsinh trạng tháitạo · sổ tay（thật ngườiđều bản ）
 
 ---
 
-## 一、衍生原则
+## 1 、sinh gốc 
 
-1. **造型锚定** — 道具核心造型/轮廓在所有状态中可识别
-2. **状态可读** — 状态差异必须一目了然，观众能立即区分
-3. **叙事服务** — 每种状态变体服务于特定剧情节点
-4. **渐进退化** — 损伤/老化状态应有合理的物理逻辑
-
----
-
-## 二、状态类型
-
-### 2.1 使用状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 崭新 | 完好无损、光泽如新 | 所有道具 | 崭新、完好无损、光泽如新 |
-| 日常使用 | 微磨损、自然痕迹 | 电子产品/生活用品 | 日常使用痕迹、自然磨损 |
-| 陈旧 | 明显使用痕迹、老化 | 皮革制品/织物 | 使用痕迹、自然老化 |
-
-### 2.2 损伤状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 微损 | 小划痕/小裂纹 | 手机/笔记本 | 细微划痕、轻微裂纹 |
-| 破损 | 明显裂缝/断裂 | 电子产品/玻璃品 | 裂缝明显、碎裂 |
-| 残片 | 仅剩部分/碎片 | 玻璃/陶瓷品 | 残片、碎片 |
-
-### 2.3 特殊状态
-
-| 状态 | 描述 | 适用道具 | 提示词 |
-|---|---|---|---|
-| 污渍 | 污渍附着 | 所有道具 | 污渍、脏污 |
-| 水渍 | 水渍、湿润反光 | 纸品/织物 | 水渍、湿润痕迹 |
-| 划痕 | 明显划痕 | 金属/玻璃 | 明显划痕、刮痕 |
-| 磨损 | 表面磨损 | 皮革/织物 | 磨损痕迹、老化 |
-| 破损屏幕 | 屏幕碎裂 | 电子产品 | 屏幕碎裂、裂痕 |
+1. **tạo kiểu nối ** — Đạo cụtạo kiểu /ở tất cảtrạng tháigiữa trưng khác 
+2. **trạng thái** — trạng tháibất Bắt buộc1 mục ，thể lập khu phút
+3. **việc phục vụ ** — loại trạng tháithể phục vụ với nối kịch tình tiết điểm 
+4. **tiến đăng hóa ** — /hóa trạng tháihồi có hợp lý  của lý logic
 
 ---
 
-## 三、状态变体画面规范
+## 2、trạng tháiLoại
 
-### 单状态图
+### 2.1 hàm trạng thái
 
-| 项目 | 约束 |
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+| mới  | tốt không 、ánh như mới  | tất cảĐạo cụ | mới 、tốt không 、ánh như mới  |
+| ngày thường hàm  | 、tự  | nguyên /sinh hoạt hàm  | ngày thường hàm 、tự  |
+| cũ  | dẫn hàm 、hóa  | chép / | hàm 、tự hóa  |
+
+### 2.2 trạng thái
+
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+|  | nhỏ /nhỏ  | tay máy /sách  | 、 |
+|  | dẫn / | nguyên / | dẫn 、 |
+|  | chỉ bộ phút/ | / | 、 |
+
+### 2.3 trạng thái
+
+| trạng thái | Mô tả | hàm Đạo cụ | Prompt |
+|---|---|---|---|
+|  | đang  | tất cảĐạo cụ | 、 |
+|  | 、phụ ánh  | / | 、 |
+|  | dẫn  | biệt / | dẫn 、 |
+|  | bảng mặt  | / | 、hóa  |
+|  |  | nguyên  | 、 |
+
+---
+
+## 3、trạng tháithể vẽ mặt 
+
+### đơn trạng tháiảnh 
+
+| dự án |  |
 |---|---|
-| 背景 | 纯净中性灰 #E8E8E8（与设定图一致） |
-| 光线 | 均匀照明，无硬阴影 |
-| 角度 | 与原设定图正面图一致 |
-| 比例 | 道具占画面主体 70%+ |
+| bối  | thuần giữa  #E8E8E8（thiết nối ảnh 1 ） |
+| ánh đường  | dẫn ，không sáng  |
+| nhân độ  | gốc thiết nối ảnh chính mặt ảnh 1  |
+| Tỷ lệ | Đạo cụvẽ mặt chính thể  70%+ |
 
-### 状态对比图
+### trạng tháiđúng tỷ ảnh 
 
-| 项目 | 约束 |
+| dự án |  |
 |---|---|
-| 布局 | 同一画面并排展示 2-3 种状态 |
-| 标注 | 每种状态下方标注状态名 |
-| 一致性 | 角度/光线/背景完全一致，仅状态不同 |
+| cục  | cùng 1 vẽ mặt nhất sắp nhở  2-3 loại trạng thái |
+| biểu tâm  | loại trạng tháidưới phương biểu tâm trạng tháitên  |
+| 1  | nhân độ /ánh đường /bối toàn 1 ，chỉ trạng tháikhông cùng  |
 
 ---
 
-## 四、材质状态变化规则
+## 4、trạng tháihóa 
 
-| 材质 | 崭新 → 日常 | 日常 → 陈旧 | 损伤表现 |
+|  | mới  → ngày thường  | ngày thường  → cũ  | bảng  |
 |---|---|---|---|
-| 金属 | 亮光泽 → 微划痕 | 划痕 → 氧化斑点 | 凹陷/弯曲/断裂 |
-| 玻璃 | 透明 → 微划痕 | 划痕 → 明显裂纹 | 碎裂/缺口 |
-| 塑料 | 新光泽 → 微磨损 | 磨损 → 褪色 | 裂纹/变形 |
-| 皮革 | 光滑 → 微皱 | 皱折 → 裂纹 | 撕裂/磨损 |
-| 织物 | 崭新 → 微皱 | 皱折 → 褪色 | 撕裂/污渍 |
+| biệt  | ánh  →  |  → hóa điểm  | // |
+|  | dẫn  →  |  → dẫn  | /cổng  |
+|  | mới ánh  →  |  → vật  | /dạng  |
+|  | ánh  →  |  →  | / |
+|  | mới  →  |  → vật  | / |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 
-### 单状态变体
+### đơn trạng tháithể 
 
 ```
 
-基于{道具名}设定图，真人写实摄影风格，自然光线，极致细节，
-{道具类型}，{材质描述}，
-当前状态：{状态名}，{状态视觉描述}，
-{材质表面变化描述}，
-同一画面四宫格（2×2）：左上正面图+右上侧面图+左下背面图+右下细节特写，
-纯净中性灰背景，均匀柔光，无硬阴影，
-材质纹理超清晰，质感写实，状态细节可辨
+cơ sở với {Đạo cụtên }thiết nối ảnh ，thật ngườisáng Phong cách，tự ánh đường ，tiết ，
+{Đạo cụLoại}，{Mô tả}，
+hiện tạitrạng thái：{trạng tháitên }，{trạng tháitrực quanMô tả}，
+{bảng mặt hóa Mô tả}，
+cùng 1 vẽ mặt 4khung （2×2）：trái trên chính mặt ảnh +phải trên mặt ảnh +trái dưới mặt ảnh +phải dưới tiết Đặc tả (close-up)，
+thuần giữa bối ，ánh ，không sáng ，
+lý vượt sạch ，，trạng tháitiết 
 
 ```
 
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 道具核心造型/轮廓在所有状态中可识别 |
-| R2 | 状态变化须符合物理逻辑 |
-| R3 | 必须使用四宫格（2×2）布局 |
-| R4 | 必须指定「纯净中性灰背景」，均匀柔光，无硬阴影 |
+| R1 | Đạo cụtạo kiểu /ở tất cảtrạng tháigiữa trưng khác  |
+| R2 | trạng tháihóa buộc hợp lý logic |
+| R3 | Bắt buộchàm 4khung （2×2）cục  |
+| R4 | Bắt buộcnối 「thuần giữa bối 」，ánh ，không sáng  |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 状态变化后道具不可识别 |
-| X2 | 违反物理逻辑的损伤（如金属生锈） |
-| X3 | 过度损坏导致无法识别 |
+| X1 | trạng tháihóa sau Đạo cụkhông trưng khác  |
+| X2 | phụ lý logic của （như biệt sinh ） |
+| X3 | độ xấu dẫn không thức trưng khác  |

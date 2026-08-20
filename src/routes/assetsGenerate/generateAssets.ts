@@ -19,46 +19,46 @@ interface AssetTypeConfig {
 
 const assetTypeConfig: Record<AssetType, AssetTypeConfig> = {
   role: {
-    label: "角色",
-    taskClass: "角色图生成",
+    label: "Nhân vật",
+    taskClass: "Nhân vậtảnh tạo",
     dir: "role",
-    promptTitle: "角色标准四视图",
-    promptEnd: "人物角色四视图",
+    promptTitle: "Nhân vậtTiêu chuẩn4video ảnh ",
+    promptEnd: "ngườiNhân vật4video ảnh ",
   },
   scene: {
-    label: "场景",
-    taskClass: "场景图生成",
+    label: "Bối cảnh",
+    taskClass: "Bối cảnhảnh tạo",
     dir: "scene",
-    promptTitle: "标准场景图",
-    promptEnd: "标准场景图",
+    promptTitle: "Tiêu chuẩnBối cảnhảnh ",
+    promptEnd: "Tiêu chuẩnBối cảnhảnh ",
   },
   tool: {
-    label: "道具",
-    taskClass: "道具图生成",
+    label: "Đạo cụ",
+    taskClass: "Đạo cụảnh tạo",
     dir: "props",
-    promptTitle: "标准道具图",
-    promptEnd: "标准道具图",
+    promptTitle: "Tiêu chuẩnĐạo cụảnh ",
+    promptEnd: "Tiêu chuẩnĐạo cụảnh ",
   },
 };
 
-// ─── 构建生成提示词 ──────────────────────────────────────────
+// ─── cấu tạo Tạo prompt gợi ý ──────────────────────────────────────────
 
 function buildPrompt(cfg: AssetTypeConfig, artStyle: string, name: string, prompt: string): string {
   return `
-    请根据以下参数生成${cfg.promptTitle}：
+    vui lòng Dựa theodưới tham sốtạo${cfg.promptTitle}：
 
-    **基础参数：**
-    - 画风风格: ${artStyle || "未指定"}
+    **cơ sở tham số：**
+    - vẽ phong phong cách: ${artStyle || "chưa nối "}
 
-    **${cfg.label}设定：**
-    - 名称:${name},
-    - 提示词:${prompt},
+    **${cfg.label}thiết nối ：**
+    - tên:${name},
+    - Prompt:${prompt},
 
-    请严格按照系统规范生成${cfg.promptEnd}。
+    vui lòng khung theo dòng thống tạo${cfg.promptEnd}。
   `;
 }
 
-// ─── 生成资产图片 ────────────────────────────────────────────
+// ─── Tạo tài nguyênHình ảnh ────────────────────────────────────────────
 
 const requestSchema = {
   projectId: z.number(),
@@ -74,27 +74,27 @@ const requestSchema = {
 export default router.post("/", validateFields(requestSchema), async (req, res) => {
   const { projectId, model, resolution, id, type, name, prompt, base64 } = req.body;
 
-  // 1. 查询项目 & 获取类型配置
+  // 1. Truy vấnDự án & LấyloạiCấu hình
   const project = await u.db("o_project").where("id", projectId).select("artStyle", "type", "intro").first();
-  if (!project) return res.status(500).send(success({ message: "项目为空" }));
+  if (!project) return res.status(500).send(success({ message: "Dự ánrỗng " }));
 
   const cfg = assetTypeConfig[type as AssetType];
-  if (!cfg) return res.status(400).send(error("不支持的类型"));
+  if (!cfg) return res.status(400).send(error("không hỗ trợ của loại"));
 
-  // 2. 创建图片占位记录
+  // 2. sáng tạo Hình ảnhvị trí lục 
   const [imageId] = await u.db("o_image").insert({
     type,
-    state: "生成中",
+    state: "Đang tạo",
     assetsId: id,
     model: model.split(/:(.+)/)[1],
     resolution,
   });
   await u.db("o_assets").where("id", id).update({ imageId });
 
-  // 3. 准备生成参数
+  // 3. tạotham số
   const imagePath = `/${projectId}/${cfg.dir}/${uuidv4()}.jpg`;
   const userPrompt = buildPrompt(cfg, project.artStyle!, name, prompt);
-  const describe = `生成${cfg.label}图，名称：${name}，提示词：${prompt}`;
+  const describe = `tạo${cfg.label}ảnh ，tên：${name}，Prompt：${prompt}`;
   const relatedObjects = { id, projectId, type: cfg.label };
 
   try {
@@ -114,15 +114,15 @@ export default router.post("/", validateFields(requestSchema), async (req, res) 
       },
     );
     aiImage.save(imagePath);
-    // 5. 更新记录 & 返回结果
+    // 5. Cập nhậtlục  & Trả vềkết quả
     const imageData = await u.db("o_image").where("id", imageId).select("*").first();
-    if (!imageData) return res.status(500).send("资产已被删除");
-    if (imageData.state === "生成失败") return;
+    if (!imageData) return res.status(500).send("Tài nguyênđã Xóa");
+    if (imageData.state === "Tạo thất bại") return;
     await u
       .db("o_image")
       .where("id", imageId)
       .update({
-        state: "已完成",
+        state: "Đã hoàn thành",
         filePath: imagePath,
         type,
         model: model.split(/:(.+)/)[1],
@@ -137,7 +137,7 @@ export default router.post("/", validateFields(requestSchema), async (req, res) 
     await u
       .db("o_image")
       .where("id", imageId)
-      .update({ state: "生成失败", errorReason: u.error(e).message });
-    return res.status(400).send(error(u.error(e).message || "图片生成失败"));
+      .update({ state: "Tạo thất bại", errorReason: u.error(e).message });
+    return res.status(400).send(error(u.error(e).message || "Hình ảnhTạo thất bại"));
   }
 });

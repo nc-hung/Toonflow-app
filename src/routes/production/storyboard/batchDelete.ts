@@ -13,9 +13,9 @@ export default router.post(
   }),
   async (req, res) => {
     const { ids, projectId } = req.body;
-    if (!ids.length) return res.status(400).send(error("请先选择分镜"));
+    if (!ids.length) return res.status(400).send(error("vui lòng trước  chọn lựa Phân cảnh"));
     const storyboardDataList = await u.db("o_storyboard").whereIn("id", ids).where("projectId", projectId).select("id", "track", "trackId", "flowId");
-    if (!storyboardDataList.length) return res.status(400).send(error("当前选择分镜不存在"));
+    if (!storyboardDataList.length) return res.status(400).send(error("hiện tạichọn lựa Phân cảnhkhông tồn tại"));
     const flowIds = storyboardDataList.map((i) => i.flowId);
     const storyBoardIds = storyboardDataList.map((i) => i.id);
     if (flowIds.length)
@@ -26,6 +26,6 @@ export default router.post(
 
     await u.db("o_storyboard").whereIn("id", storyBoardIds).delete();
     await u.db("o_assets2Storyboard").whereIn("storyboardId", storyBoardIds).delete();
-    res.status(200).send(success({ message: "视频删除成功" }));
+    res.status(200).send(success({ message: "Xóa video thành công" }));
   },
 );

@@ -1,194 +1,194 @@
 ---
 name: liveaction_urban_prop
-description: 真人都市道具图像生成 · 约束手册
+description: thật ngườiđều Đạo cụhình ảnhtạo · sổ tay
 metaData: liveaction_urban_art_skills
 ---
 
-# 真人都市道具图像生成 · 约束手册
+# thật ngườiđều Đạo cụhình ảnhtạo · sổ tay
 
 ---
 
-## 一、道具设计原则
+## 1 、Đạo cụthiết tính gốc 
 
-> 真人都市的道具不是"被建模的物体"，而是"被使用过的物品"——它在某个人手里待过、在某个桌面上放过、在某个口袋里装过。摄影机拍下的是它的此刻。
+> thật ngườiđều  của Đạo cụkhông là "tạo mô  của thể "，là "hàm  của "——nó ở mục ngườitay 、ở mục mặt trên mở 、ở mục cổng 。sáng máy dưới  của là nó  của 。
 
-1. **物品即叙事** — 每一件道具都是一个微型的叙事容器。咖啡杯上的口红印暗示刚才有人在喝、手机壳的磨损暗示用了很久、雨伞的折痕暗示被反复开合
-2. **使用痕迹优先于完美品相** — 真人都市的道具必须有"被用过"的证据。全新的、刚拆封的、样板级别的道具一律不出现
-3. **中国当代都市真实物品** — 道具必须是中国都市生活中真实存在的物品：支付宝/微信支付界面、国产手机品牌、中文包装、中国式外卖餐盒——拒绝无国别的架空物品
-4. **材质即真实** — 不是PBR参数渲染出的材质，而是摄影机拍下的真实材质行为：不锈钢的反光、陶瓷的釉面、纸制品的吸光、塑料的注塑纹理
-5. **单视图静物摄影** — 道具以单张静物产品摄影方式独立呈现，非多角度建模展示，非2×2四宫格
-
----
-
-## 二、道具分类与美学约束
-
-### 2.1 通讯与电子设备
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 智能手机/笔记本电脑/平板/无线耳机/智能手表/充电宝/数据线 | {设备类型}，当代都市日常电子设备 |
-| 外观细节 | 屏幕显示中文界面（微信对话/消息弹窗/导航地图/外卖APP）、机身正常使用痕迹（边角轻微磕碰、屏幕细微划痕）、保护壳自然泛旧 | 中文界面显示屏、机身日常使用痕迹、边角轻微磕碰、保护壳自然泛旧 |
-| 材质质感 | 阳极氧化铝中框/玻璃面板/塑料背板，材质反光真实自然，非渲染高光 | 阳极氧化铝质感、玻璃面板自然反光、真实而非CG的材质光泽 |
-| 状态感 | 正常使用中的设备——非全新出厂、非严重损坏 | 日常使用状态、有生活感的使用痕迹、非样品机 |
-| 提示词 | 真人都市{设备}，实物产品摄影，中文界面显示，日常使用痕迹 | — |
-
-### 2.2 餐饮道具
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 咖啡杯/外卖餐盒/奶茶杯/便当盒/保温杯/玻璃水杯/餐具/便利店包装 | {餐饮道具类型}，中国当代都市日常餐饮器皿 |
-| 外观细节 | 杯口残留口红印/水汽凝结/茶渍/食物残余痕迹、外卖包装有中文品牌标识、纸质杯套自然褶皱、保温杯杯底有磨损 | 杯口自然残留痕迹、水汽凝结、中式外卖包装、品牌中文标识、使用后的自然状态 |
-| 材质质感 | 纸杯哑光纸面/陶瓷釉面光泽/不锈钢拉丝/塑料透明餐盒、材质在自然光下的真实表现 | 纸杯表面自然质感、陶瓷釉面微反光、不锈钢拉丝肌理、真实材质而非渲染 |
-| 提示词 | 真人都市{餐饮道具}，实物产品摄影，使用后的自然状态，中国当代日常餐饮 | — |
-
-### 2.3 办公与学习用品
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 笔记本/签字笔/文件夹/便利贴/订书机/工牌/文具袋/台灯/书架/教材 | {办公学习用品类型}，都市日常办公/学习用具 |
-| 外观细节 | 笔记本封面有翻折痕迹/书页有折角和标注/笔身有握持磨损/便利贴边角卷起/工牌卡套有划痕 | 封面翻折痕迹、书页自然折角、握持处磨损、贴纸边角卷翘、卡套表面划痕 |
-| 材质质感 | 纸张纤维纹理/皮革封面肌理/塑料笔杆注塑纹理/金属夹子的电镀光泽 | 纸张自然纹理、皮革真实肌理、塑料注塑质感、自然金属光泽 |
-| 提示词 | 真人都市{办公学习用品}，实物产品摄影，日常使用痕迹，真实材质质感 | — |
-
-### 2.4 随身与出行物品
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 背包/钥匙/雨伞/钱包/地铁卡/共享单车APP界面/身份证/门禁卡/驾照 | {物品类型}，都市日常随身出行物品 |
-| 外观细节 | 皮质钱包自然磨损/钥匙有划痕/雨伞伞面有折痕和雨渍/背包肩带有使用后的变形/卡面边角磨损 | 皮质自然老化、金属钥匙划痕、伞面折痕与残留雨渍、肩带自然变形、卡面使用磨损 |
-| 材质质感 | 皮革/帆布/尼龙/金属/塑料，经日常使用后的真实质感 | 皮革使用后的包浆、帆布自然泛旧、金属氧化痕迹、真实使用质感 |
-| 提示词 | 真人都市{随身物品}，实物产品摄影，日常携带磨损，使用过的真实物品 | — |
-
-### 2.5 饰品与个人配件
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 耳饰/项链/手链/戒指/手表/发夹/眼镜/墨镜/丝巾/围巾 | {饰品配件类型}，当代都市日常个人饰品 |
-| 外观细节 | 银饰轻微氧化/金属表面微划痕/皮质表带弯折痕迹/眼镜鼻托有使用痕迹/丝巾有自然褶皱 | 银饰自然轻微氧化、日常佩戴微划痕、表带弯折自然、镜腿使用痕迹 |
-| 材质质感 | 金属/皮质/织物/板材/珍珠/亚克力，饰品级工艺但在使用中留下了真实痕迹 | 金属微哑光泽、皮质弯折纹理、织物自然毛感、珍珠温润光泽 |
-| 提示词 | 真人都市{饰品}，实物产品摄影，日常佩戴痕迹，真实材质细节 | — |
-
-### 2.6 居家生活杂件
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 遥控器/药盒/眼镜盒/相框/盆栽/烛台/牙刷杯/毛巾/拖鞋/钥匙托盘 | {居家物品类型}，中国当代都市家居日常用品 |
-| 外观细节 | 药盒标签中文说明、遥控器按键有磨损/缝隙有灰尘、相框有落尘、盆栽叶片有黄尖、毛巾有软化起毛 | 中文药品标签、按键日常磨损、自然落尘感、叶片自然枯尖、毛巾使用起毛 |
-| 材质质感 | 塑料/木质/陶瓷/织物/玻璃，家庭环境中的真实材质状态 | 塑料使用油光、木质自然纹路、陶瓷釉面、织物柔软质感 |
-| 提示词 | 真人都市{居家物品}，实物产品摄影，家庭使用痕迹，真实的居家物品状态 | — |
-
-### 2.7 信物与关键道具
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 旧照片/信件/明信片/车票/戒指/挂坠/日记本/录音笔/存折/病历/钥匙扣 | {信物类型}，承载剧情记忆的关键物品 |
-| 外观细节 | 纸张泛黄/字迹微洇/照片边缘卷翘/金属褪色/皮面磨损——年代感与情感痕迹清晰可见 | 纸张自然泛黄、手写字迹墨水微洇、照片边缘卷翘、金属褪色包浆、被反复翻阅的磨损 |
-| 特殊性 | 必须有"被某人珍视/翻阅/携带过"的视觉证据，而非空白道具 | 被反复接触的磨损区域、被翻阅的痕迹、贴身携带的证据 |
-| 状态感 | 旧物感——但不是刻意做旧的，而是"放了很久"的自然老去 | 岁月自然旧化、时光留下的痕迹、非人为刻意做旧 |
-| 提示词 | 真人都市{信物}，实物产品摄影，岁月留下的自然痕迹，承载记忆的物品 | — |
-
-### 2.8 医药与健康物品
-
-| 项目 | 约束 | 提示词 |
-|---|---|---|
-| 类型 | 药盒/药瓶/体温计/创可贴/口罩/消毒液/病历本/体检报告/眼药水/保温杯 | {医药健康物品类型}，中国当代都市日常健康用品 |
-| 外观细节 | 中文药品说明和包装、口罩有佩戴褶皱、体温计有使用痕迹、药盒铝箔板有取药后的空缺 | 中文药品包装标签、口罩使用后的褶皱、开过的药盒、使用过的真实状态 |
-| 材质质感 | 纸盒/塑料瓶/铝箔/玻璃/无纺布，医疗相关的真实材质 | 纸盒质感、塑料药瓶、铝箔反光、无纺布纹理 |
-| 提示词 | 真人都市{医药用品}，实物产品摄影，日常使用状态，中国当代家庭常用 | — |
+1. **việc ** — 1 tệp Đạo cụđều là một kiểu  của việc dung thiết bị 。trên  của cổng nhở có ngườiở 、tay máy  của nhở hàm rất 、 của nhở phụ lời mở hợp 
+2. **hàm trước với đẹp ** — thật ngườiđều  của Đạo cụBắt buộccó "hàm " của chứng liệu 。toàn mới  của 、 của 、kiểu cấp khác  của Đạo cụ1 không ra 
+3. **giữa khi đều thật ** — Đạo cụBắt buộclà giữa đều sinh hoạt giữa thật lưu ở  của ：/tin giới mặt 、nguyên tay máy 、giữa tài gói 、giữa thức ngoài ——không khác  của rỗng 
+4. **thật ** — không là PBRtham sốra  của ，là sáng máy dưới  của thật thi ：không  của phụ ánh 、 của mặt 、chép  của ánh 、 của tâm lý 
+5. **đơn video ảnh sáng ** — Đạo cụđơn bức nguyên sáng cách thứclập ，phi nhiều nhân độ tạo mô nhở ，phi 2×24khung 
 
 ---
 
-## 三、单视图静物摄影规范
+## 2、Đạo cụphútloại đẹp 
 
-> 真人都市道具仅需单张静物产品摄影，非多角度建模展示。以下为单视图摄影的完整规范。
+### 2.1 thông thiết 
 
-### 画面构成
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | thể tay máy /sách //không đường máy /thể tay bảng /sung /dữ liệuđường  | {thiết Loại}，khi đều ngày thường thiết  |
+| ngoài tiết  | nhở giữa tài giới mặt （tin đúng lời /hủy /dẫn địa ảnh /ngoài APP）、máy chính thường hàm （nhân 、）、lưu tự cũ  | giữa tài giới mặt nhở 、máy ngày thường hàm 、nhân 、lưu tự cũ  |
+|  | hóa giữa /mặt /，phụ ánh thật tự ，phi cao ánh  | hóa 、mặt tự phụ ánh 、thật phi CG của ánh  |
+| trạng thái | chính thường hàm giữa  của thiết ——phi toàn mới ra 、phi trùng xấu  | ngày thường hàm trạng thái、có sinh hoạt  của hàm 、phi kiểu máy  |
+| Prompt | thật ngườiđều {thiết }，nguyên sáng ，giữa tài giới mặt nhở ，ngày thường hàm  | — |
 
-| 项目 | 摄影要求 |
+### 2.2 Đạo cụ
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | /ngoài //khi /lưu //cụ /gói  | {Đạo cụLoại}，giữa khi đều ngày thường thiết bị  |
+| ngoài tiết  | cổng lưu cổng /kết //、ngoài gói có giữa tài biểu trưng 、tự 、lưu có  | cổng tự lưu 、kết 、giữa thức ngoài gói 、giữa tài biểu trưng 、hàm sau  của tự trạng thái |
+|  | ánh mặt /mặt ánh /không /dẫn 、ở tự ánh dưới  của thật bảng  | bảng mặt tự 、mặt phụ ánh 、không lý 、thật phi  |
+| Prompt | thật ngườiđều {Đạo cụ}，nguyên sáng ，hàm sau  của tự trạng thái，giữa khi ngày thường  | — |
+
+### 2.3 hàm 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | sách /ký chữ /tệpthư mục //máy //tài cụ /đài // | {hàm Loại}，đều ngày thường /hàm cụ  |
+| ngoài tiết  | sách mặt có /có nhân  và biểu tâm /có giữ /nhân /có  | mặt 、tự nhân 、giữ xử 、nhân 、bảng mặt  |
+|  | bức lý /mặt lý /tâm lý /biệt thư mục  của ánh  | bức tự lý 、thật lý 、tâm 、tự biệt ánh  |
+| Prompt | thật ngườiđều {hàm }，nguyên sáng ，ngày thường hàm ，thật  | — |
+
+### 2.4 ra thi 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | gói ///gói /địa /đơn APPgiới mặt /chứng /cổng / | {Loại}，đều ngày thường ra thi  |
+| ngoài tiết  | gói tự /có /mặt có  và /gói kèm có hàm sau  của dạng /mặt nhân  | tự hóa 、biệt 、mặt lưu 、kèm tự dạng 、mặt hàm  |
+|  | ///biệt /，đã ngày thường hàm sau  của thật  | hàm sau  của gói 、tự cũ 、biệt hóa 、thật hàm  |
+| Prompt | thật ngườiđều {}，nguyên sáng ，ngày thường kèm ，hàm  của thật  | — |
+
+### 2.5 mục ngườinối tệp 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | //tay //tay bảng /phát thư mục /quay /quay //khí  | {nối tệp Loại}，khi đều ngày thường mục người |
+| ngoài tiết  | hóa /biệt bảng mặt /bảng kèm /quay có hàm /có tự  | tự hóa 、ngày thường 、bảng kèm tự 、quay hàm  |
+|  | biệt /////lực ，cấp nhưng ở hàm giữa lưu dưới thật  | biệt ánh 、lý 、tự 、ánh  |
+| Prompt | thật ngườiđều {}，nguyên sáng ，ngày thường ，thật tiết  | — |
+
+### 2.6 sinh hoạt tệp 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | sát thiết bị //quay ///đài /làm ///đĩa  | {Loại}，giữa khi đều ngày thường hàm  |
+| ngoài tiết  | biểu ký giữa tài Giải thích、sát thiết bị theo có /có 、có 、có 、có hóa  | giữa tài biểu ký 、theo ngày thường 、tự 、tự 、hàm  |
+|  | ////，giữa  của thật trạng thái | hàm ánh 、tự đường 、mặt 、 |
+| Prompt | thật ngườiđều {}，nguyên sáng ，hàm ，thật  của trạng thái | — |
+
+### 2.7 tin liên Đạo cụ
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | cũ /tin tệp /dẫn tin ////ngày sách /lục âm /lưu // | {tin Loại}，xuống kịch tình  của liên  |
+| ngoài tiết  | bức /chữ //biệt vật /mặt ——nămtình sạch thấy  | bức tự 、tay chữ 、、biệt vật gói 、phụ lời  của  |
+|  | Bắt buộccó "ngườivideo //kèm " của trực quanchứng liệu ，phi rỗng Đạo cụ | phụ lời tiếp  của khu vực 、 của 、kèm  của chứng liệu  |
+| trạng thái | cũ ——nhưng không là ý cũ  của ，là "mở rất " của tự đi  | thángtự cũ hóa 、ánh lưu dưới  của 、phi ngườiý cũ  |
+| Prompt | thật ngườiđều {tin }，nguyên sáng ，thánglưu dưới  của tự ，xuống  của  | — |
+
+### 2.8 
+
+| dự án |  | Prompt |
+|---|---|---|
+| Loại | //thể tính /sáng /cổng /hủy /sách /thể kiểm thông //lưu  | {Loại}，giữa khi đều ngày thường hàm  |
+| ngoài tiết  | giữa tài Giải thích và gói 、cổng có 、thể tính có hàm 、có xuất sau  của rỗng  | giữa tài gói biểu ký 、cổng hàm sau  của 、mở  của 、hàm  của thật trạng thái |
+|  | ////không ，liên  của thật  | 、、phụ ánh 、không lý  |
+| Prompt | thật ngườiđều {hàm }，nguyên sáng ，ngày thường hàm trạng thái，giữa khi thường hàm  | — |
+
+---
+
+## 3、đơn video ảnh sáng 
+
+> thật ngườiđều Đạo cụchỉ cần đơn bức nguyên sáng ，phi nhiều nhân độ tạo mô nhở 。dưới đơn video ảnh sáng  của chỉnh 。
+
+### vẽ mặt cấu tạo 
+
+| dự án | sáng Yêu cầu |
 |---|---|
-| 道具呈现 | 道具居中或偏三分线位置独立陈列，完整入画，无裁切 |
-| 背景 | 素灰无缝背景纸 #B0B0B0（哑光），或纯白桌面/台面（浅木纹/米白桌面），根据道具属性选择。无多余物体、无装饰、无文字 |
-| 光线 | 自然窗光或单灯柔光。窗光45°侧入（明亮柔和带自然阴影）、或柔光箱顶+侧补（产品摄影级均匀光线）。光影柔和、方向明确、无硬阴影 |
-| 景深 | 浅景深（f/2.8-f/5.6），道具主体清晰锐利，前后微虚化突出主体 |
-| 投影 | 道具底部与承载面之间的自然接触阴影——真实的而非抠图或悬浮。阴影柔软、方向与主光源一致 |
-| 画面比例 | 建议 1:1 正方形或 4:3，适配单件道具展示 |
+| Đạo cụ | Đạo cụgiữa hoặc 3phútđường vị trí trí lập hàng ，chỉnh vào vẽ ，không  |
+| bối  | không bối  #B0B0B0（ánh ），hoặc thuần mặt /đài mặt （/mặt ），dựa theoĐạo cụbiệt chọn lựa 。không nhiều thể 、không 、không tài chữ  |
+| ánh đường  | tự ánh hoặc đơn ánh 。ánh 45°vào （dẫn  và kèm tự sáng ）、hoặc ánh +bổ （nguyên sáng cấp ánh đường ）。Ánh sáng và 、phương dẫn 、không sáng  |
+| bối  | bối （f/2.8-f/5.6），Đạo cụchính thể sạch ，trước sau hóa ra chính thể  |
+| sáng  | Đạo cụbộ xuống mặt  của gian  của tự tiếp sáng ——thật  của phi ảnh hoặc 。sáng 、phương chính ánh nguồn 1  |
+| vẽ mặt Tỷ lệ | Khuyến nghị 1:1 chính phương dạng hoặc  4:3，nối đơn tệp Đạo cụnhở  |
 
-### 道具状态准则
+### Đạo cụtrạng thái
 
-| 维度 | 要求 |
+| độ  | Yêu cầu |
 |---|---|
-| 使用痕迹 | 必须有"被使用过"的视觉证据——非全新未拆封、非样板品相 |
-| 中国辨识度 | 中文标识/中国品牌/中国式包装/当代中国日常——拒绝无国别架空物品 |
-| 材质真实感 | 非渲染质感——是摄影机拍下的真实材料行为（光的反射、漫射、透射） |
-| 尺度感 | 通过材质纹理密度、工艺细节暗示实物尺寸，无需参照物 |
+| hàm  | Bắt buộccó "hàm " của trực quanchứng liệu ——phi toàn mới chưa 、phi kiểu  |
+| giữa trưng độ  | giữa tài biểu trưng /giữa /giữa thức gói /khi giữa ngày thường ——không khác rỗng  |
+| thật  | phi ——là sáng máy dưới  của thật thi （ánh  của phụ 、、） |
+| độ  | thông qualý mật độ 、tiết nhở kích thước，không cần tham  |
 
 ---
 
-## 四、材质与表面——摄影机下的真实物体
+## 4、bảng mặt ——sáng máy dưới  của thật thể 
 
-> 以下是摄影机对城市日常物品表面行为的描述，不是渲染参数。
+> dưới là sáng máy đúng ngày thường bảng mặt thi  của Mô tả，không là tham số。
 
-| 材质 | 在摄影机下的真实表现 | 提示词 |
+|  | ở sáng máy dưới  của thật bảng  | Prompt |
 |---|---|---|
-| 金属（不锈钢/铝合金） | 拉丝肌理可见、边缘高光锐利但不死白、反射周围的柔和环境色、表面有指纹和微划痕 | 金属拉丝肌理、自然环境反射、表面微划痕与指纹痕迹、非渲染的光泽 |
-| 玻璃 | 通透但有微弱的自身颜色（玻璃断面呈淡绿）、表面有指印或水渍、边缘倒角有光折射 | 玻璃自然通透、表面真实指印/水渍、边缘光折射、非CG完美透明 |
-| 陶瓷 | 釉面柔和反光（非镜面）、表面有细微开片/划痕、杯口杯底有使用磨损 | 陶瓷釉面柔和反光、细微使用划痕、杯底自然磨损 |
-| 塑料 | 注塑纹理/合模线可见、表面有细微划痕、哑光塑料的漫反射质感 | 注塑纹理清晰、合模线自然可见、表面细微使用划痕 |
-| 纸质 | 纤维粗糙度可见、折痕自然（非刻意）、印刷文字微洇、边缘有翻阅磨损 | 纸质纤维纹理、自然折痕、印刷文字真实质感、边缘自然磨损 |
-| 织物（棉/麻/帆布） | 编织纹理可见、表面有起毛/起球、折痕与使用褶皱、颜色有细微不均 | 织物编织纹理、自然起毛起球、使用后的真实褶皱 |
-| 皮革 | 天然纹理/毛孔可见、弯折处有使用痕迹、边缘有自然磨损、五金件有氧化 | 皮革天然纹理、弯折使用痕迹、五金件轻微氧化、真实使用包浆 |
-| 木质 | 木纹自然、表面有划痕/磕碰、漆面有使用磨损、颜色微变 | 木纹自然清晰、表面使用磕碰痕迹、漆面日常磨损 |
+| biệt （không /hợp ） | lý thấy 、cao ánh nhưng không 、phụ khí  của  và vật 、bảng mặt có  và  | biệt lý 、tự phụ 、bảng mặt 、phi  của ánh  |
+|  | thông nhưng có  của tự vật （mặt ）、bảng mặt có hoặc 、nhân có ánh  | tự thông 、bảng mặt thật /、ánh 、phi CGđẹp dẫn  |
+|  | mặt  và phụ ánh （phi quay mặt ）、bảng mặt có mở /、cổng có hàm  | mặt  và phụ ánh 、hàm 、tự  |
+|  | tâm lý /hợp mô đường thấy 、bảng mặt có 、ánh  của phụ  | tâm lý sạch 、hợp mô đường tự thấy 、bảng mặt hàm  |
+|  | độ thấy 、tự （phi ý ）、làm tài chữ 、có  | lý 、tự 、làm tài chữ thật 、tự  |
+| （//） | chỉnh lý thấy 、bảng mặt có /、hàm 、vật có không  | chỉnh lý 、tự 、hàm sau  của thật  |
+|  | ngàylý /thấy 、xử có hàm 、có tự 、5tệp có hóa  | ngàylý 、hàm 、5tệp hóa 、thật hàm gói  |
+|  | tự 、bảng mặt có /、mặt có hàm 、vật  | tự sạch 、bảng mặt hàm 、mặt ngày thường  |
 
 ---
 
-## 五、提示词模板
+## 5、Promptmô 
 
-真人都市道具实物产品摄影，单张静物展示，非3D渲染非CG非建模，
-{道具类型}，{材质描述}，{外观细节——使用痕迹、中文标识、日常状态}，
-道具独立展示，{背景描述：素灰背景纸 #B0B0B0 / 浅木纹桌面 / 米白台面}，
-{光源描述：自然窗光45°侧入 / 柔光箱顶光+侧补光}，浅景深 f/2.8-f/5.6，柔和自然阴影，
-{材质真实质感描述：金属拉丝/玻璃通透/陶瓷釉面/纸质纹理/皮革肌理/织物编织}，
-日常使用痕迹可见、非全新样板品相、中国当代都市日常物品，
-画面干净无文字无水印无签名无边框，
-真人写实摄影画质、35mm全画幅摄影质感
+thật ngườiđều Đạo cụnguyên sáng ，đơn bức nhở ，phi 3Dphi CGphi tạo mô ，
+{Đạo cụLoại}，{Mô tả}，{ngoài tiết ——hàm 、giữa tài biểu trưng 、ngày thường trạng thái}，
+Đạo cụlập nhở ，{bối Mô tả：bối  #B0B0B0 / mặt  / đài mặt }，
+{ánh nguồn Mô tả：tự ánh 45°vào  / ánh ánh +bổ ánh }，bối  f/2.8-f/5.6， và tự sáng ，
+{thật Mô tả：biệt /thông /mặt /lý /lý /chỉnh }，
+ngày thường hàm thấy 、phi toàn mới kiểu 、giữa khi đều ngày thường ，
+vẽ mặt không tài chữ không không ký tên không ，
+thật ngườisáng vẽ 、35mmtoàn vẽ sáng 
 
-### 负面规避提示词
+### mặt Prompt
 
 3D render, 3D modeling, CGI, Unreal Engine, Blender, PBR material, 8K modeling, game engine, cartoon, anime, 2D, illustration, hand drawn,
 brand new, unboxed, pristine, showroom, sample product, perfect condition, unused,
 floating, shadowless, cut out, white background isolation, clipping path,
 multiple views, grid layout, four views, turnaround, orthographic view, blueprint,
-古风, 古代, 仙侠, 武侠, 民国, 赛博朋克, 科幻, 西方奇幻, 中世纪, 非中国物品,
+phong , , , , dân , , , phương , giữa , phi giữa ,
 person, hand, finger, holding, wearing, using, interacting,
 text on image, watermark, signature, logo, border, frame
 
 ---
 
-## 六、约束规则
+## 6、
 
-### 必守
+### bắt 
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| R1 | 必须是「单张静物摄影」——单视图、非多角度、非2×2四宫格、非建模展示 |
-| R2 | 必须指定「素灰背景纸 #B0B0B0」或「浅木纹桌面/米白台面」等真实桌面，禁止复杂场景 |
-| R3 | 必须指定光源逻辑——窗光或柔光箱，光影方向明确、投影自然 |
-| R4 | 道具必须有「使用痕迹」——非全新、非样板品相、非未拆封 |
-| R5 | 道具必须具备中国当代都市辨识度——中文标识/中国品牌/中国式包装 |
-| R6 | 必须声明「实物产品摄影 + 非3D渲染非CG」核心锚定 |
-| R7 | 材质必须描述为摄影机下的真实表现，而非渲染参数 |
+| R1 | Bắt buộclà 「đơn bức sáng 」——đơn video ảnh 、phi nhiều nhân độ 、phi 2×24khung 、phi tạo mô nhở  |
+| R2 | Bắt buộcnối 「bối  #B0B0B0」hoặc 「mặt /đài mặt 」thật mặt ，Nghiêm cấmlời Bối cảnh |
+| R3 | Bắt buộcnối ánh nguồn logic——ánh hoặc ánh ，Ánh sángphương dẫn 、sáng tự  |
+| R4 | Đạo cụBắt buộccó 「hàm 」——phi toàn mới 、phi kiểu 、phi chưa  |
+| R5 | Đạo cụBắt buộccụ giữa khi đều trưng độ ——giữa tài biểu trưng /giữa /giữa thức gói  |
+| R6 | Bắt buộcthanh dẫn 「nguyên sáng  + phi 3Dphi CG」nối  |
+| R7 | Bắt buộcMô tảsáng máy dưới  của thật bảng ，phi tham số |
 
-### 严禁
+### 
 
-| 编号 | 严禁 |
+| chỉnh số  |  |
 |---|---|
-| X1 | 严禁「3D渲染 / 3D建模 / CG / UE引擎 / Blender / PBR材质」等一切CG术语 |
-| X2 | 严禁「2D手绘 / 插画 / 动画 / 二次元」等非摄影媒介 |
-| X3 | 严禁「多角度 / 四视图 / 2×2网格 / 正交视图 / turnaround / blueprint」——仅单张 |
-| X4 | 严禁「全新未拆封 / 样板品相 / 无使用痕迹 / 完美品相」的道具 |
-| X5 | 严禁「古风/古代/仙侠/武侠/民国/赛博朋克/科幻/西方奇幻/架空」等非当代都市物品 |
-| X6 | 严禁「无中国辨识度的架空物品 / 全英文包装 / 非中国品牌」 |
-| X7 | 严禁「出现人物/手部/手指/肢体/义体」 |
-| X8 | 严禁「道具被持有/握持/佩戴/使用中/与人物互动」的状态 |
-| X9 | 严禁「悬浮/抠图白底/无投影/无承载面」——物品必须放在真实表面上 |
-| X10 | 严禁「水印 / 文字 / LOGO / 签名 / 边框 / AI生成痕迹」 |
+| X1 | 「3D / 3Dtạo mô  / CG / UE / Blender / PBR」1 CGngữ  |
+| X2 | 「2Dtay  / vẽ  / động vẽ  / 2lần 」phi sáng  |
+| X3 | 「nhiều nhân độ  / 4video ảnh  / 2×2mạng khung  / chính tác vụ video ảnh  / turnaround / blueprint」——chỉ đơn bức  |
+| X4 | 「toàn mới chưa  / kiểu  / không hàm  / đẹp 」 của Đạo cụ |
+| X5 | 「phong ////dân ///phương /rỗng 」phi khi đều  |
+| X6 | 「không giữa trưng độ  của rỗng  / toàn tài gói  / phi giữa 」 |
+| X7 | 「ra người/tay bộ /tay /thể /nghĩa thể 」 |
+| X8 | 「Đạo cụgiữ có /giữ //hàm giữa /ngườiđộng 」 của trạng thái |
+| X9 | 「/ảnh /không sáng /không xuống mặt 」——Bắt buộcmở ở thật bảng mặt trên  |
+| X10 | 「 / tài chữ  / LOGO / ký tên  /  / AItạo」 |

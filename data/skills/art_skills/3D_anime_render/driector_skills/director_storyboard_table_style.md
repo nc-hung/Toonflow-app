@@ -1,45 +1,45 @@
 ---
 name: director_storyboard_table_style
-description: 分镜表3D动画渲染约束 — 定义3D卡通渲染在分镜表中的光影氛围规范、光源角度、动作节奏、环境动态、运镜禁忌与转场禁忌。适用于任何叙事类型。
+description: Bảng phân cảnh3Dđộng vẽ  — nối nghĩa 3Dthông ở Bảng phân cảnhgiữa  của Ánh sáng & Không khí、ánh nguồn nhân độ 、động tác vụ tiết 、động thái 、Góc quaychuyển trường 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 分镜表3D动画渲染约束 · 3D卡通渲染 · 技法参考
+# Bảng phân cảnh3Dđộng vẽ  · 3Dthông  · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。以下仅提供 3D 卡通渲染风格在分镜表层面的约束规范。
-
----
-
-## 二、光影与氛围
-
-- **同场戏光影统一** — 一场戏内不应出现两种以上光影方案，除非有明确的叙事转折（如关台灯→月光冷辉）
-- **情绪色盘绑定** — 每场戏至少绑定 1 个情绪场景（如相遇心动/日常温馨/离别感伤），并在镜头组内保持主色+辅色连续性
-- **光源角度规范** — 默认 45° 侧逆光，模拟黄昏霞光效果。描述光影时须区分正给/侧给的角度差异
-- **冷暖色调与叙事阶段匹配** — 前半段（日常/工作/学习）保持暖色调，冷色调（冷蓝 + 暖色对比）在夜晚或情绪转折后使用
-- **光影转场是高级手段** — 从自然光（A）渐变到室内暖光（B）= 日转夜的时间流逝。在分镜表中标注光影变化点
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。dưới chỉ nhắc nhà  3D thông Phong cáchở Bảng phân cảnhtầng mặt  của Quy chuẩn ràng buộc。
 
 ---
 
-## 三、环境动态
+## 2、Ánh sángKhông khí
 
-- **环境动态增加画面呼吸感** — 树叶飘动、云层流动、车流经过、雨滴落下、灯光闪烁。每 3-4 个镜头至少安排一个有环境动态的镜头，避免画面"死"掉
-- **都市环境元素优先** — 环境动态应选用都市世界观内的元素：树叶飘动、云层流动、车流经过、霓虹闪烁、窗帘飘动，禁止出现与 3D 动画风格不兼容的元素
-
----
-
-## 四、3D 动画动作节奏
-
-- **动作要自然** — 所有人物动作默认自然节奏。起身、转身、抬手都应标注"自然"或"轻缓"
-- **甜宠互动用暗示** — 目光交汇、手指轻微触碰、递东西时的指尖接触。不要在分镜表里写大幅度双人交互，拆成暗示性的局部镜头
-- **3D 动画流畅感** — 3D 动画特有的"帧间流畅"风格，动作应连贯自然，避免生硬跳帧
+- **cùng trường Ánh sángthống 1 ** — 1 trường trong không hồi ra 2loại trên Ánh sángphương ，bỏ phi có dẫn  của việc chuyển （như liên đài →thángánh ）
+- **tình xúc vật đĩa ghép nối** — trường đến ít ghép nối 1 mục tình xúc Bối cảnh（như động /ngày thường /khác ），nhất ở Ống kínhnhóm trong lưu giữ chính vật +vật 
+- **ánh nguồn nhân độ ** — Mặc định 45° ánh ，mô Hoàng hônánh hiệu quả 。Mô tảÁnh sángbuộc khu phútchính cho /cho  của nhân độ bất 
+- **vật gọi việc đoạn khớp** — trước nửa đoạn （ngày thường /tác vụ /）lưu giữ vật gọi ，vật gọi （ + vật đúng tỷ ）ở Ban đêmhoặc tình xúc chuyển sau hàm 
+- **Ánh sángchuyển trường là cao cấp tay đoạn ** — từ tự ánh （A）đến trong ánh （B）= ngày chuyển  của thời gian。ở Bảng phân cảnhgiữa biểu tâm Ánh sánghóa điểm 
 
 ---
 
-## 五、运镜禁忌
+## 3、động thái 
 
-- **禁用快速运镜** — 甩镜、急推、快速切换与 3D 卡通渲染的气质冲突（除非是转场或强调）
-- **禁用花式转场** — 划屏、旋转、百叶窗等与本风格不兼容
+- **động thái cộng vẽ mặt ** — động 、tầng động 、đã 、dưới 、ánh 。 3-4 mục Ống kínhđến ít an sắp một có động thái  của Ống kính，vẽ mặt ""bỏ 
+- **đều trước ** — động thái hồi chọn hàm đều giới trong  của ：động 、tầng động 、đã 、、động ，Nghiêm cấmra  3D động vẽ Phong cáchkhông dung  của 
+
+---
+
+## 4、3D động vẽ động tác vụ tiết 
+
+- **động tác vụ cần tự ** — tất cảngườiđộng tác vụ Mặc địnhtự tiết 。、chuyển 、tay đều hồi biểu tâm "tự "hoặc ""
+- **động hàm nhở ** — mục ánh tác vụ 、tay 、 của tiếp 。không cần ở Bảng phân cảnhlớn độ đôi ngườitác vụ ，tạo nhở  của cục bộ Ống kính
+- **3D động vẽ ** — 3D động vẽ có  của "gian "Phong cách，động tác vụ hồi tự ，sinh 
+
+---
+
+## 5、Góc quay
+
+- **hàm nhanh Góc quay** — Lia nhanh (whip pan)、khuyến 、nhanh đổi  3D thông  của （bỏ phi là chuyển trường hoặc gọi ）
+- **hàm thức chuyển trường ** — 、chuyển 、trăm sách Phong cáchkhông dung 

@@ -4,7 +4,7 @@ export type ChatMessageStatus = 'pending' | 'streaming' | 'complete' | 'stop' | 
 export type AttachmentType = 'image' | 'video' | 'audio' | 'pdf' | 'doc' | 'ppt' | 'txt';
 export type ChatComment = 'good' | 'bad' | '';
 
-// 基础内容接口
+// Interface nội dung cơ bản 
 export interface ChatBaseContent<T extends string, D> {
   type: T;
   data: D;
@@ -14,7 +14,7 @@ export interface ChatBaseContent<T extends string, D> {
   ext?: Record<string, any>;
 }
 
-// 内容类型定义
+// Định nghĩa loại nội dung
 export type TextContent = ChatBaseContent<'text', string>;
 export type MarkdownContent = ChatBaseContent<'markdown', string>;
 export type ImageContent = ChatBaseContent<'image', { name?: string; url?: string; width?: number; height?: number }>;
@@ -25,12 +25,12 @@ export type AttachmentContent = ChatBaseContent<'attachment', { fileType: Attach
 export type ToolCallContent = ChatBaseContent<'toolcall', { toolCallId: string; toolCallName: string; eventType?: ToolCallEventType; parentMessageId?: string; args?: string; chunk?: string; result?: string }>;
 export type ActivityContent<T = Record<string, any>> = ChatBaseContent<'activity', { activityType: string; messageId?: string; content: T; deltaInfo?: { fromIndex: number; toIndex: number } }>;
 
-// 聚合内容类型
+// Loại nội dung tổng hợp
 export type AIMessageContent = TextContent | MarkdownContent | ImageContent | ThinkingContent | SearchContent | SuggestionContent | ReasoningContent | ToolCallContent | ActivityContent;
 export type ReasoningContent = ChatBaseContent<'reasoning', AIMessageContent[]>;
 export type UserMessageContent = TextContent | AttachmentContent;
 
-// 消息类型定义
+// Định nghĩa loại tin nhắn
 export interface ChatBaseMessage {
   id: string;
   status?: ChatMessageStatus;

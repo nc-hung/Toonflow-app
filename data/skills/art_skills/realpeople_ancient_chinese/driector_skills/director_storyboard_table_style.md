@@ -1,45 +1,45 @@
 ---
 name: director_storyboard_table_style
-description: 分镜表古风约束 — 定义真人古风写实在分镜表中的光影氛围规范、光源角度、动作节奏、环境动态、运镜禁忌与转场禁忌。适用于任何叙事类型。
+description: Bảng phân cảnhphong  — nối nghĩa thật ngườiphong ở Bảng phân cảnhgiữa  của Ánh sáng & Không khí、ánh nguồn nhân độ 、động tác vụ tiết 、động thái 、Góc quaychuyển trường 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 分镜表古风约束 · 真人古风写实 · 技法参考
+# Bảng phân cảnhphong  · thật ngườiphong  · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。以下仅提供真人古风写实风格在分镜表层面的约束规范。
-
----
-
-## 二、光影与氛围
-
-- **同场戏光影统一** — 一场戏内不应出现两种以上光影方案，除非有明确的叙事转折（如烛光被吹灭→月光冷辉）
-- **情绪色盘绑定** — 每场戏至少绑定 1 个情绪场景（如初见心动/分离误会/重逢释怀），并在镜头组内保持主色+辅色连续性
-- **光源角度规范** — 正给镜头光源默认 38.5° 斜射（非笼统的 45°），侧给镜头根据画面需要调整。描述光影时须区分正给/侧给的角度差异
-- **冷暖色调与叙事阶段匹配** — 悲戚/孤绝/被弃段落严格使用冷光（青黛冷白），禁用暖橙/琥珀；暖色调（暖橙+冷蓝背景对比）仅在情感回暖后使用
-- **光影转场是高级手段** — 从窗纱透光（E）渐变到烛光暖影（C）= 日转夜的时间流逝。在分镜表中标注光影变化点
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。dưới chỉ nhắc nhà thật ngườiphong Phong cáchở Bảng phân cảnhtầng mặt  của Quy chuẩn ràng buộc。
 
 ---
 
-## 三、环境动态
+## 2、Ánh sángKhông khí
 
-- **环境动态增加画面呼吸感** — 花瓣飘落、烟雾升腾、水波荡漾、纱帘飘动。每 3-4 个镜头至少安排一个有环境动态的镜头，避免画面"死"掉
-- **古风环境元素优先** — 环境动态应选用古风世界观内的元素：落花、飞絮、轻烟、流水、风过竹林、烛火摇曳，禁止出现现代元素
-
----
-
-## 四、古风动作节奏
-
-- **古风动作要慢** — 所有人物动作默认慢速。起身、转身、抬手都应标注"缓慢"
-- **服饰动态** — 古风服饰（宽袖、裙摆、披帛）的飘动是天然的动态资产，可在画面描述中加入衣袂/裙摆的动态，增加画面的"活"感
-- **仪态约束** — 古风人物的举止应符合时代气质：行走稳缓、举手投足含蓄内敛、不出现现代化的肢体语言（如耸肩、摊手）
+- **cùng trường Ánh sángthống 1 ** — 1 trường trong không hồi ra 2loại trên Ánh sángphương ，bỏ phi có dẫn  của việc chuyển （như ánh →thángánh ）
+- **tình xúc vật đĩa ghép nối** — trường đến ít ghép nối 1 mục tình xúc Bối cảnh（như thấy động /phútsẽ /trùng ），nhất ở Ống kínhnhóm trong lưu giữ chính vật +vật 
+- **ánh nguồn nhân độ ** — chính cho Ống kínhánh nguồn Mặc định 38.5° （phi thống  của  45°），cho Ống kínhdựa theovẽ mặt cần cần gọi chỉnh 。Mô tảÁnh sángbuộc khu phútchính cho /cho  của nhân độ bất 
+- **vật gọi việc đoạn khớp** — //đoạn khung hàm ánh （），hàm /；vật gọi （+bối đúng tỷ ）chỉ ở tình trả sau hàm 
+- **Ánh sángchuyển trường là cao cấp tay đoạn ** — từ ánh （E）đến ánh sáng （C）= ngày chuyển  của thời gian。ở Bảng phân cảnhgiữa biểu tâm Ánh sánghóa điểm 
 
 ---
 
-## 五、运镜禁忌
+## 3、động thái 
 
-- **禁用快速运镜** — 甩镜、急推、手持晃动与真人古风写实的气质冲突
-- **禁用花式转场** — 划屏、旋转、百叶窗等与本风格不兼容
+- **động thái cộng vẽ mặt ** — 、、、động 。 3-4 mục Ống kínhđến ít an sắp một có động thái  của Ống kính，vẽ mặt ""bỏ 
+- **phong trước ** — động thái hồi chọn hàm phong giới trong  của ：、、、、phong 、，Nghiêm cấmra 
+
+---
+
+## 4、phong động tác vụ tiết 
+
+- **phong động tác vụ cần chậm ** — tất cảngườiđộng tác vụ Mặc địnhchậm 。、chuyển 、tay đều hồi biểu tâm "chậm "
+- **phục động thái ** — phong phục （rộng 、、） của động là ngày của động thái Tài nguyên，ở Mô tả hình ảnhgiữa cộng vào / của động thái ，cộng vẽ mặt  của "hoạt "
+- **thái ** — phong người của hồi hợp ：thi chạy 、tay trong 、không ra hóa  của thể ngữ （như 、tay ）
+
+---
+
+## 5、Góc quay
+
+- **hàm nhanh Góc quay** — Lia nhanh (whip pan)、khuyến 、tay giữ động thật ngườiphong  của 
+- **hàm thức chuyển trường ** — 、chuyển 、trăm sách Phong cáchkhông dung 

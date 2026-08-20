@@ -4,16 +4,16 @@ import path from "node:path";
 import sharp from "sharp";
 
 /**
- * 图片缩放选项
+ * Hình ảnhnhỏ mở chọn 
  */
 export interface ResizeOptions {
-  /** 最大宽度（默认 256 */
+  /** nhất lớn chiều rộng（Mặc định 256 */
   width?: number;
-  /** 最大高度（默认 256 */
+  /** nhất lớn chiều cao（Mặc định 256 */
   height?: number;
-  /** 缩放策略，默认等比缩放不超出边界 */
+  /** nhỏ mở ，Mặc địnhtỷ nhỏ mở không vượt ra giới  */
   fit?: keyof sharp.FitEnum;
-  /** 是否禁止放大（默认 true） */
+  /** là không mở lớn （Mặc định true） */
   withoutEnlargement?: boolean;
 }
 
@@ -25,10 +25,10 @@ const defaultResizeOptions: Required<ResizeOptions> = {
 };
 
 /**
- * 将图片缩放后写入目标路径（自动创建父目录）。
- * @param srcPath 源图片绝对路径
- * @param dstPath 目标图片绝对路径
- * @param opts 缩放选项
+ * Hình ảnhnhỏ mở sau  vào mục biểu đường dẫn（tự động sáng tạo thư mục）。
+ * @param srcPath nguồn Hình ảnhđúng đường dẫn
+ * @param dstPath mục biểu Hình ảnhđúng đường dẫn
+ * @param opts nhỏ mở chọn 
  */
 export async function resizeImage(srcPath: string, dstPath: string, opts?: ResizeOptions): Promise<void> {
   const { width, height, fit, withoutEnlargement } = { ...defaultResizeOptions, ...opts };
@@ -37,41 +37,41 @@ export async function resizeImage(srcPath: string, dstPath: string, opts?: Resiz
 }
 
 /**
- * 缩略图自定义尺寸选项
+ * nhỏ ảnh tùy chỉnh kích thướcchọn 
  */
 export type ThumbnailSize =
   | { type: "dimensions"; width: number; height: number }
   | { type: "percentage"; value: number };
 
 /**
- * 生成缩略图。
- * - 若缩略图已存在，直接返回其路径。
- * - 若不存在，生成后返回目标路径；生成失败返回 null。
+ * tạonhỏ ảnh 。
+ * - nhỏ ảnh đã lưu ở ，trực tiếp Trả vềđường dẫn。
+ * - không tồn tại，tạosau  Trả vềmục biểu đường dẫn；Tạo thất bạiTrả về null。
  *
- * @param originalPath 原图绝对路径
- * @param thumbnailPath 缩略图绝对路径
- * @param size 可选的自定义尺寸：固定宽高 或 百分比（默认 256x256 inside）
- * @returns 缩略图路径，失败返回 null
+ * @param originalPath gốc ảnh đúng đường dẫn
+ * @param thumbnailPath nhỏ ảnh đúng đường dẫn
+ * @param size chọn  của tùy chỉnh kích thước：nối rộng cao  hoặc  trăm phần tỷ （Mặc định 256x256 inside）
+ * @returns nhỏ ảnh đường dẫn，thất bạiTrả về null
  */
 export async function ensureThumbnail(
   originalPath: string,
   thumbnailPath: string,
   size?: ThumbnailSize,
 ): Promise<string | null> {
-  // 小图已存在，直接返回
+  // nhỏ ảnh đã lưu ở ，trực tiếp Trả về
   if (fss.existsSync(thumbnailPath)) {
     return thumbnailPath;
   }
-  // 原图不存在，无法生成
+  // gốc ảnh không tồn tại，không thức tạo
   if (!fss.existsSync(originalPath)) {
     return null;
   }
   try {
     if (size?.type === "percentage") {
-      // 百分比缩放：先获取原图尺寸，再等比计算目标尺寸
+      // trăm phần tỷ nhỏ mở ：trước  Lấygốc ảnh kích thước，tỷ tính toánmục biểu kích thước
       const meta = await sharp(originalPath).metadata();
       if (!meta.width || !meta.height) {
-        console.warn("[image] 无法获取原图尺寸:", originalPath);
+        console.warn("[image] không thức Lấygốc ảnh kích thước:", originalPath);
         return null;
       }
       const pct = size.value / 100;
@@ -79,19 +79,19 @@ export async function ensureThumbnail(
       const h = Math.round(meta.height * pct);
       await resizeImage(originalPath, thumbnailPath, { width: w, height: h });
     } else if (size?.type === "dimensions") {
-      // 固定宽高：等比缩放适配到指定边界
+      // nối rộng cao ：tỷ nhỏ mở Adapter đến nối giới 
       await resizeImage(originalPath, thumbnailPath, {
         width: size.width,
         height: size.height,
       });
     } else {
-      // 默认 256x256 inside
+      // Mặc định 256x256 inside
       await resizeImage(originalPath, thumbnailPath);
     }
-    console.info(`[${thumbnailPath}] 小图生成成功`);
+    console.info(`[${thumbnailPath}] nhỏ ảnh Tạo thành công`);
     return thumbnailPath;
   } catch (e) {
-    console.warn("[image] 生成缩略图失败:", e);
+    console.warn("[image] tạonhỏ ảnh thất bại:", e);
     return null;
   }
 }

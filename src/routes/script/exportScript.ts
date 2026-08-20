@@ -15,7 +15,7 @@ export default router.post(
     const { id } = req.body;
     const scripts = await u.db("o_script").whereIn("id", id);
     const textList = scripts.map((s) => ({ name: s.name, text: s.content }));
-    //压缩为zip文件
+    //Nén thànhzipTệp
     const zipStream = new compressing.zip.Stream();
     textList.forEach((item) => {
       zipStream.addEntry(Buffer.from(item.text!), { relativePath: `${item.name}.txt` });

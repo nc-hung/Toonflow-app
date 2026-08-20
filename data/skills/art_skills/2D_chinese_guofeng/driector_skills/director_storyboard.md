@@ -1,153 +1,153 @@
 ---
 name: director_storyboard
-description: 导演分镜提示词技法 · 国风二次元新国潮
+description: đạo diễnPhân cảnhPromptthức  · Anime Cổ Phong Tân Quốc Triều (2D)
 metaData: director_skills
 ---
 
-# 分镜提示词 · 国风二次元新国潮 · 风格专属技法
+# Phân cảnhPrompt · Anime Cổ Phong Tân Quốc Triều (2D) · Phong cáchriêng biệt thức 
 
 ---
 
-## 适用范围
+## hàm khí 
 
-本 Skill 专用于**国风二次元新国潮**风格的分镜提示词生成。
+sách  Skill riêng hàm với **Anime Cổ Phong Tân Quốc Triều (2D)**Phong cách của Phân cảnhPrompttạo。
 
 ---
 
-## 情绪 → 面容/眼神词映射
+## tình xúc  → mặt dung /từ 
 
-| 情绪输入 | 面容词 | 眼神词 | 微表情补充 |
+| tình xúc tải vào  | mặt dung từ  | từ  | bảng tình Bổ sung  |
 |----------|--------|--------|-----------|
-| 温柔 / 深情 | 神情温柔，眉目含情 | 眼神专注柔和，目光温暖 | 嘴角微扬，表情治愈 |
-| 坚定 / 勇敢 | 神情认真，目光清亮 | 眼神坚定，目光向前 | 下巴微抬，表情果敢 |
-| 羞涩 / 腼腆 | 脸颊泛红，眼神躲闪 | 眼神羞涩，目光低垂 | 嘴角轻抿，表情可爱 |
-| 凌厉 / 肃杀 | 神情冷峻，目光如刀 | 眼神锐利，目光坚定 | 下颌收紧，表情威严 |
-| 喜悦 / 欢快 | 表情灿烂，眼睛弯月 | 眼神明亮，目光灵动 | 脸颊微红，表情生动 |
-| 忧伤 / 哀婉 | 神情哀婉，眼神黯淡 | 眼神含泪，目光低垂 | 嘴角下沉，表情哀伤 |
-| 惊讶 / 惊喜 | 眼睛微睁，表情生动 | 眼神明亮，目光聚焦 | 嘴巴微张，表情意外 |
-| 沉思 / 内省 | 神情淡淡，目光悠远 | 眼神放空，目光失焦 | 表情平静，气质内敛 |
-| 疲惫 / 倦怠 | 眼神朦胧，表情柔和 | 目光略显疲惫，眼神柔和 | 微微打哈欠，表情慵懒 |
-| 期待 / 盼望 | 眼神发光，表情鲜活 | 眼神期待，目光闪烁 | 嘴角上扬，表情生动 |
+|  / tình  | tình ，mục tình  | riêng tâm  và ，mục ánh  | nhân ，bảng tình  |
+| nối  /  | tình thật ，mục ánh sạch  | nối ，mục ánh trước  | dưới ，bảng tình quả  |
+|  /  | ， | ，mục ánh thấp  | nhân ，bảng tình  |
+|  /  | tình ，mục ánh như  | ，mục ánh nối  | dưới nhận ，bảng tình  |
+|  / nhanh  | bảng tình ，tháng | dẫn ，mục ánh động  | ，bảng tình sinh động  |
+|  /  | tình ， | ，mục ánh thấp  | nhân dưới ，bảng tình  |
+|  /  | ，bảng tình sinh động  | dẫn ，mục ánh  | bức ，bảng tình ý ngoài  |
+|  / trong  | tình ，mục ánh  | mở rỗng ，mục ánh thất  | bảng tình ，trong  |
+|  /  | ，bảng tình  và  | mục ánh ， và  | mở ，bảng tình  |
+| kỳ  /  | phát ánh ，bảng tình hoạt  | kỳ ，mục ánh  | nhân trên ，bảng tình sinh động  |
 
 ---
 
-## 光影氛围词库（国风二次元新国潮）
+## Ánh sáng & Không khítừ kho （Anime Cổ Phong Tân Quốc Triều (2D)）
 
-### 时间段光线
+### thời gianđoạn ánh đường 
 
-| 时间段 | 主光词 | 色调词 | 气氛词 |
+| thời gianđoạn  | chính ánh từ  | vật gọi từ  | không từ  |
 |--------|--------|--------|--------|
-| 清晨 | 柔和晨光，暖色侧射 | 月白 + 青绿 | 薄雾弥漫，空气清新 |
-| 正午 | 明亮阳光，直射柔光 | 朱红 + 金黄高光 | 光影清晰，色彩鲜明 |
-| 傍晚/黄昏 | 逆光剪影，暖色渐变 | 朱红 + 靛蓝渐变 | 夕阳余晖，轮廓光 |
-| 夜间 | 冷色背景 + 暖光点缀 | 靛蓝主调 + 暖黄光点 | 宁静温馨，灯光柔和 |
-| 雨天 | 漫射冷光，无主光源 | 青绿 + 月白 | 空气湿润，低对比 |
+| Sáng sớm |  và ánh ，vật  | tháng +  | mỏng ，rỗng sạch mới  |
+| chính  | dẫn ánh ，trực ánh  |  + cao ánh  | Ánh sángsạch ，vật dẫn  |
+| muộn /Hoàng hôn | ánh sáng ，vật  |  +  | ，ánh  |
+| gian  | vật bối  + ánh điểm tố  | chính gọi  + ánh điểm  | ，ánh  và  |
+| ngày | ánh ，không chính ánh nguồn  |  + tháng | rỗng ，thấp đúng tỷ  |
 
-### 情绪光影
+### tình xúc Ánh sáng
 
-| 情绪基调 | 光线类型 | 补充约束 |
+| tình xúc cơ sở gọi  | ánh đường Loại | Bổ sung  |
 |----------|----------|----------|
-| 仙侠飘逸 | 柔光漫射，飘逸动态 | 青绿色调，景深虚化，赛璐璐平涂 |
-| 宫廷华贵 | 暖光照明，局部高光 | 朱红色调，高光强调，景深层次 |
-| 少女日常 | 局部柔光，柔和阴影 | 胭脂色调，近景特写，清新氛围 |
-| 武侠肃杀 | 冷调阴影，硬光对比 | 靛蓝 + 墨黑，低饱和度，紧张氛围 |
-| 月夜诗意 | 月光照明，冷暖对比 | 靛蓝背景，暖光点缀，唯美氛围 |
+|  | ánh ，động thái  | vật gọi ，bối hóa ， |
+|  | ánh dẫn ，cục bộ cao ánh  | vật gọi ，cao ánh gọi ，bối tầng lần  |
+| ít nữ ngày thường  | cục bộ ánh ， và sáng  | vật gọi ，Cận cảnh (close-up)Đặc tả (close-up)，sạch mới Không khí |
+|  | gọi sáng ，ánh đúng tỷ  |  + ，thấp  và độ ，bức Không khí |
+| thángý  | thángánh dẫn ，đúng tỷ  | bối ，ánh điểm tố ，đẹp Không khí |
 
 ---
 
-## 场景质感约束词（按场景类型）
+## Bối cảnhtừ （theo Bối cảnhLoại）
 
-| 场景类型 | 必加约束词 |
+| Bối cảnhLoại | bắt cộng từ  |
 |----------|-----------|
-| 仙侠场景 | 云雾缭绕、飞檐亭台、飘逸衣袂、青绿山水、赛璐璐平涂 |
-| 宫廷场景 | 朱红宫墙、金顶琉璃、雕梁画栋、汉白玉栏杆、新国潮装饰 |
-| 闺阁室内 | 屏风格扇、雕花窗棂、纱幔帐帘、古典家具、细腻笔触 |
-| 武侠场景 | 竹林/雪地/山崖、冷色调、氛围压抑、线条凌厉、新国潮风格 |
-| 节日庆典 | 灯笼/彩带/烟花、高饱和暖色、氛围热闹、人群熙攘 |
-| 夜晚街景 | 灯笼/街灯/店铺、暖光点缀、冷色背景、倒影反射、日式渲染 |
+| Bối cảnh | 、đài 、、、 |
+| Bối cảnh | 、、vẽ 、、mới  |
+| trong  | Phong cách、、、cụ 、 |
+| Bối cảnh | /địa /、vật gọi 、Không khínén 、đường mục 、mới Phong cách |
+| tiết ngày  | /kèm /、cao  và vật 、Không khí、người |
+| Ban đêmbối  | //、ánh điểm tố 、vật bối 、sáng phụ 、ngày thức  |
 
 ---
 
-## 固定风格锚定词（所有输出必须包含）
+## nối Phong cáchnối từ （tất cảtải ra Bắt buộcgói ）
 
-**国风二次元锚定（必选）：**
+**phong 2lần nối （bắt chọn ）：**
 
-国风二次元，新国潮美学，日式动画渲染，赛璐璐平涂，细腻笔触
+phong 2lần ，mới đẹp ，ngày thức động vẽ ，，
 
-**人物质感（含人物镜头时必选）：**
+**người（ngườiỐng kínhbắt chọn ）：**
 
-二次元国风造型，线条清晰，赛璐璐上色，服饰细节精致，光影层次丰富
+2lần phong tạo kiểu ，đường mục sạch ，trên vật ，phục tiết ，Ánh sángtầng lần 
 
-**场景质感（含场景镜头时必选）：**
+**Bối cảnh（Bối cảnhỐng kínhbắt chọn ）：**
 
-国风二次元场景，传统建筑细节丰富，日式渲染技术，光影质感细腻
+phong 2lần Bối cảnh，truyền thống tạo tiết ，ngày thức ，Ánh sáng
 
-**一致性锚定（参考图模式必选）：**
+**1 nối （tham chiếuảnh mô thức bắt chọn ）：**
 
-保持人物造型与参考图一致，保持场景风格与参考图一致，保持光影色彩基调统一
+lưu giữ ngườitạo kiểu tham chiếuảnh 1 ，lưu giữ Bối cảnhPhong cáchtham chiếuảnh 1 ，lưu giữ Ánh sángvật cơ sở gọi thống 1 
 
-**风格收尾（固定）：**
+**Phong cáchnhận đuôi （nối ）：**
 
-国风二次元电影质感，东方古韵，新国潮风格，日式动画渲染技法
+phong 2lần sáng ，phương ，mới Phong cách，ngày thức động vẽ thức 
 
-**画质锁定词（所有输出必须包含，置于风格收尾之后）：**
+**vẽ nối từ （tất cảtải ra Bắt buộcgói ，trí với Phong cáchnhận đuôi  của sau ）：**
 
-模式A（中文）——默认（画面无画内文字需求时）：
-国风二次元高清渲染，高细节，细腻线条，赛璐璐平涂感，电影质感，画面无字幕、无水印、无标题叠字
+mô thức A（giữa tài ）——Mặc định（vẽ mặt không vẽ trong tài chữ cần cầu ）：
+phong 2lần cao sạch ，cao tiết ，đường mục ，，sáng ，vẽ mặt không chữ 、không 、không biểu đề chữ 
 
-模式A（中文）——画内文字场景（画面描述中含牌匾/对联/书籍等道具文字时）：
-国风二次元高清渲染，高细节，细腻线条，赛璐璐平涂感，电影质感，画面无字幕、无水印、无标题叠字，牌匾/对联等场景道具上的文字清晰可辨
+mô thức A（giữa tài ）——vẽ trong tài chữ Bối cảnh（Mô tả hình ảnhgiữa /đúng kết /Đạo cụtài chữ ）：
+phong 2lần cao sạch ，cao tiết ，đường mục ，，sáng ，vẽ mặt không chữ 、không 、không biểu đề chữ ，/đúng kết Bối cảnhĐạo cụtrên  của tài chữ sạch 
 
-模式B（英文）——默认：
+mô thức B（tài ）——Mặc định：
 Chinese style anime, neo-chic aesthetic, Japanese animation rendering technique, cel shading, fine brushstrokes, cinematic quality, high detail, no subtitles, no captions, no watermark, no title overlay
 
-模式B（英文）——画内文字场景：
+mô thức B（tài ）——vẽ trong tài chữ Bối cảnh：
 Chinese style anime, neo-chic aesthetic, Japanese animation rendering technique, cel shading, fine brushstrokes, cinematic quality, high detail, no subtitles, no captions, no watermark, no title overlay, legible text on in-scene props such as plaques and couplets
 
-**负向词模板（模式B 必须包含，置于提示词末尾）：**
+**từ mô （mô thức B Bắt buộcgói ，trí với Promptđuôi ）：**
 
-> ⚠️ Seedream（模式A）**不支持负向提示词**，负向词仅适用于模式B。模式A 通过正向词中的质感锚定和画质锁定来保证画面质量。
+> ⚠️ Seedream（mô thức A）**không hỗ trợPrompt**，từ chỉ hàm với mô thức B。mô thức A thông quachính từ giữa  của nối  và vẽ nối lưu chứng vẽ mặt lượng 。
 
-模式B（英文）：
+mô thức B（tài ）：
 no photorealistic, no realistic photography, no 3D render, no low-poly, no rough modeling, no plastic texture, no harsh lines, no western fantasy, no cyberpunk, no sci-fi, no modern elements, no cartoon style without anime quality, no subtitles, no captions, no watermark, no title overlay, no UI text
 
 ---
 
-## 美学禁止项（生成时严格规避）
+## đẹp Nghiêm cấm（tạokhung ）
 
-以下词汇/风格不得出现于输出提示词中：
+dưới từ /Phong cáchkhông được ra với tải ra Promptgiữa ：
 
-- ❌ 写实摄影/3D写实渲染/照片级真实感词
-- ❌ 高饱和荧光色/霓虹色/数码感强
-- ❌ 西方奇幻/赛博朋克/过度现代元素
-- ❌ 粗劣线条/模糊画质/低精度建模
-- ❌ 卡通/动漫/二次元风格但无精致感
-- ❌ 扁平设计/无二次元纵深感
-- ❌ 色彩混乱/光影错误/透视错误
-- ❌ 现代建筑/现代服饰元素
+- ❌ sáng /3D/cấp thật từ 
+- ❌ cao  và ánh vật /vật /số mã 
+- ❌ phương //độ 
+- ❌ đường mục /mô vẽ /thấp độ tạo mô 
+- ❌ thông /động /2lần Phong cáchnhưng không 
+- ❌ thiết tính /không 2lần 
+- ❌ vật /Ánh sánglỗi/video lỗi
+- ❌ tạo /phục 
 
-> 💡 **例外**：某些现代渲染技术（如体积光、景深虚化）可以合理使用，但应保持国风二次元美学基调。
+> 💡 **lệ ngoài **：những （như thể ánh 、bối hóa ）hợp lý hàm ，nhưng hồi lưu giữ phong 2lần đẹp cơ sở gọi 。
 
 ---
 
-## 完整生成示例
+## chỉnh tạoVí dụ
 
-> 以下为同一输入分别使用模式A和模式B的对照展示，实际使用时**仅输出其中一种**。
+> dưới cùng 1 tải vào phútkhác hàm mô thức A và mô thức B của đúng nhở ，hàm **chỉ tải ra giữa 1 loại **。
 
-### 输入（分镜表行数据）
+### tải vào （Bảng phân cảnhthi dữ liệu）
 
-| 序号 | 画面描述 | 场景 | 关联资产名称 | 时长 | 景别 | 运镜 | 角色动作 | 情绪 | 光影氛围 |
+| xếp số  | Mô tả hình ảnh | Bối cảnh | Tên tài nguyên liên kết | Thời lượng | Cỡ cảnh | Góc quay | Hành động nhân vật | tình xúc  | Ánh sáng & Không khí |
 |------|---------|------|-------------|------|------|------|---------|------|----------|
-| 1 | 古装少女站在宫殿前，手持花枝，眼神温柔 | 宫殿 | 古装少女 | 6s | 中景 | 缓推 | 侧身持花，眼神温柔 | 温婉 / 典雅 | 暖光照明 |
+| 1 | ít nữ trạm ở trước ，tay giữ ， |  | ít nữ  | 6s | Trung cảnh (medium shot) | khuyến  | giữ ， |  /  | ánh dẫn  |
 
-### 示例输出A（模式A · Seedream）
+### Ví dụtải ra A（mô thức A · Seedream）
 
 [Prompt]
-国风二次元，新国潮美学，日式动画渲染，赛璐璐平涂，细腻笔触，二次元国风造型，线条清晰，赛璐璐上色，服饰细节精致，光影层次丰富，中景构图，古装少女站在宫殿前，手持花枝侧身而立，神情温柔，眼神温柔，朱红宫墙背景，金黄高光点缀，体积光氛围，景深虚化，国风二次元电影质感，东方古韵，新国潮风格，日式动画渲染技法，国风二次元高清渲染，高细节，细腻线条，赛璐璐平涂感，电影质感，画面无字幕、无水印、无标题叠字。
-Based on the reference image of 古装少女，maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing in front of palace at dusk, holding flower branch. Keep visual style identical to reference.
+phong 2lần ，mới đẹp ，ngày thức động vẽ ，，，2lần phong tạo kiểu ，đường mục sạch ，trên vật ，phục tiết ，Ánh sángtầng lần ，Trung cảnh (medium shot)cấu ảnh ，ít nữ trạm ở trước ，tay giữ lập ，tình ，，bối ，cao ánh điểm tố ，thể ánh Không khí，bối hóa ，phong 2lần sáng ，phương ，mới Phong cách，ngày thức động vẽ thức ，phong 2lần cao sạch ，cao tiết ，đường mục ，，sáng ，vẽ mặt không chữ 、không 、không biểu đề chữ 。
+Based on the reference image of ít nữ ，maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing in front of palace at dusk, holding flower branch. Keep visual style identical to reference.
 
 
-### 示例输出B（模式B · Nanobanana）
+### Ví dụtải ra B（mô thức B · Nanobanana）
 
 ```xml
 <role>
@@ -155,7 +155,7 @@ You are an anime storyboard artist.
 Maintain strict visual continuity across all shots.
 </role>
 <character_reference>
-Image [1]: 古装少女 — 国风二次元造型，典雅服饰，新国潮美学
+Image [1]: ít nữ  — phong 2lần tạo kiểu ，phục ，mới đẹp 
 </character_reference>
 <continuity_rules>
 - Same outfit, hairstyle, face features across ALL shots
@@ -171,21 +171,21 @@ no photorealistic, no realistic photography, no 3D render, no low-poly, no rough
 </negative>
 ```
 
-## 快速参考卡
+## nhanh tham chiếu
 
-### 情绪 → 画面词速查
+### tình xúc  → vẽ mặt từ tra 
 
-| 情绪 | 面容关键词 | 光线匹配 |
+| tình xúc  | mặt dung liên từ  | ánh đường khớp |
 |------|-----------|---------|
-| 温柔 | 神情温柔，眼神专注 | 柔光漫射 + 暖光 |
-| 坚定 | 神情认真，目光清亮 | 暖光侧射 + 清晰轮廓 |
-| 羞涩 | 脸颊泛红，眼神躲闪 | 暖光侧射 + 腮红 |
-| 凌厉 | 神情冷峻，目光如刀 | 冷调阴影 + 硬光 |
-| 喜悦 | 表情灿烂，眼睛弯月 | 暖光照明 + 高饱和 |
-| 忧伤 | 神情哀婉，眼神黯淡 | 冷调阴影 + 低对比 |
-| 疲惫 | 眼神朦胧，表情柔和 | 柔和光线 + 低对比 |
-| 沉思 | 神情淡淡，目光悠远 | 体积光 + 雾气 |
-| 期待 | 眼神发光，表情鲜活 | 暖光侧射 + 高亮 |
+|  | tình ，riêng tâm  | ánh  + ánh  |
+| nối  | tình thật ，mục ánh sạch  | ánh  + sạch  |
+|  | ， | ánh  +  |
+|  | tình ，mục ánh như  | gọi sáng  + ánh  |
+|  | bảng tình ，tháng | ánh dẫn  + cao  và  |
+|  | tình ， | gọi sáng  + thấp đúng tỷ  |
+|  | ，bảng tình  và  |  và ánh đường  + thấp đúng tỷ  |
+|  | tình ，mục ánh  | thể ánh  +  |
+| kỳ  | phát ánh ，bảng tình hoạt  | ánh  + cao  |
 
 
 

@@ -1,50 +1,50 @@
-# 家庭温情 · 导演叙事手法技能包
+# Gia Đình Ấm Áp · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **家庭温情** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **Gia Đình Ấm Áp** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **平凡即伟大** — 家庭叙事的力量不在戏剧性事件，而在日复一日的陪伴、妥协与无条件的爱
-- **爱在嘴边却说不出** — 中国式家庭情感表达的核心矛盾：最深的爱用最笨拙的方式表达——一碗汤、一件外套、一句"路上小心"
-- **代际回响** — 当孩子做了父母同样的动作、说了同样的话，代际间的情感传递才真正完成
-- **日常的神圣** — 一家人吃饭、一起看电视、接孩子放学——这些日常场景在家庭叙事中拥有仪式般的神圣感
+- **lớn ** — việc  của lực lượng không ở kịch sự kiện，ở ngày lời 1 ngày  của 、giao không mục tệp  của 
+- **ở hướng không ra ** — giữa thức tình bảng  của ：nhất  của hàm nhất  của cách thứcbảng ——1 、1 tệp ngoài 、1 câu "đường trên nhỏ "
+- **trả phản ** — khi cùng kiểu  của động tác vụ 、hướng cùng kiểu  của lời ，gian  của tình truyền thật chính tạo 
+- **ngày thường  của ** — 1 người、1 xem video 、tiếp mở ——nàynhững ngày thường Bối cảnhở việc giữa có thức  của 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Family_warmth/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义家庭温情在主题立意、情感节奏、场景情绪设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa Gia Đình Ấm Ápở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与情感内核 | 平凡即伟大、笨拙的爱、代际回响、日常神圣 |
-| 叙事结构与节奏规划 | 日常流叙事、情感暗线、代际对照、危机与回归 |
-| 分场景情绪设计 | 六大典型家庭段落设计、空间归属叙事、物件传情 |
-| 声音与音乐方向 | 家的音景、沉默的亲情、音乐克制、生活声即配乐 |
-| 构图与景别叙事 | 家庭空间关系、餐桌构图、距离即关系、门框叙事 |
-| 镜头运动与节奏 | 安稳缓移、旁观者凝视、日常跟随、静止的温度 |
+| chính đề lập ý tình trong  | lớn 、 của 、trả phản 、ngày thường  |
+| việc kết cấu tiết lập kế hoạch | ngày thường việc 、tình đường 、đúng 、máy trả  |
+| phútBối cảnhtình xúc thiết tính  | 6lớn kiểu đoạn thiết tính 、rỗng gian biệt việc 、tệp truyền tình  |
+| thanh âm âm phương  |  của âm bối 、 của tình 、âm chép 、sinh hoạt thanh nối  |
+| cấu ảnh Cỡ cảnhviệc  | rỗng gian liên dòng 、cấu ảnh 、liên dòng 、cổng việc  |
+| Ống kínhvận động tiết  | an 、giả video 、ngày thường 、Tĩnh (static) của độ  |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义家庭温情在分镜表中的景别温度控制、运镜安稳感、时长把控、镜头合并与转场逻辑。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa Gia Đình Ấm Ápở Bảng phân cảnhgiữa  của Cỡ cảnhđộ sát chép 、Góc quayan 、Thời lượngđem sát 、Ống kínhhợp nhất chuyển trường logic。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为家庭情感温度控制核心工具的定位说明 |
-| 景别选择 | 日常景别、细节特写的温度、远景的守望 |
-| 运镜节奏 | 安稳缓移、旁观者视角、日常跟随、静止凝视 |
-| 时长把控 | 日常镜头时长、沉默时长、细节停留、呼吸节奏 |
-| 镜头合并策略 | 日常流连续、餐桌一镜、生活动线整合 |
-| 一镜到底 | 家庭空间穿行、日常动线、等待与归来 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ tình độ sát chép cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | ngày thường Cỡ cảnh、tiết Đặc tả (close-up) của độ 、Viễn cảnh (extreme wide shot) của  |
+| Góc quaytiết  | an 、giả video nhân 、ngày thường 、Tĩnh (static)video  |
+| Thời lượngđem sát  | ngày thường Ống kínhThời lượng、Thời lượng、tiết lưu 、tiết  |
+| Ống kínhhợp nhất  | ngày thường 、1 quay 、sinh hoạt động đường chỉnh hợp  |
+| 1 quay đến  | rỗng gian thi 、ngày thường động đường 、 |

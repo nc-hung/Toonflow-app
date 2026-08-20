@@ -1,86 +1,86 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 都市职场 — 定义都市职场在分镜表中的景别策略、运镜节奏、时长把控、对话分镜设计、独处段落与转场手法。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · Đô Thị & Công Sở — nối nghĩa Đô Thị & Công Sởở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaytiết 、Thời lượngđem sát 、đúng lời Phân cảnhthiết tính 、xử đoạn chuyển trường tay thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 都市职场 · 技法参考
+# Bảng phân cảnhviệc tay thức  · Đô Thị & Công Sở · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供都市职场叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **景别即社交距离** — 职场分镜中景别的核心逻辑是"人与人的距离感"。正式场合用中景（社交距离），对峙/亲密时才进近景
-- **中景是主力景别** — 职场叙事中中景使用频率最高（40-50%），因为职场本身就是"保持适当距离"的社交场域
-- **近景打破距离** — 近景在职场中暗示"距离被打破"：可能是信任（私下交心），也可能是压迫（上级逼近）。每次使用近景都意味着关系发生了变化
-- **特写捕捉潜台词** — 职场中人人带面具，真实情绪藏在微表情里。特写的核心功能是"揭穿面具"：克制微笑下的紧张、点头认同时的不屑、签字时的犹豫
-- **定场镜头交代权力空间** — 职场定场不只是"这是一间办公室"，要交代空间中的权力暗示：谁坐在主位、谁靠近门口、空间是开放的还是封闭的。1-2 个镜头搞定
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà Đô Thị & Công Sởviệc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **固定机位为主** — 65% 以上镜头固定，传递冷静客观的观察视角
-- **纪实手持** — 跟随角色行走/通勤时用极微手持，增加真实感但晃动几乎不可察
-- **缓推 = 压迫/审视** — 缓推向角色面部，适合被质问、做决定、承受压力的段落
-- **缓拉 = 孤立/全局** — 从角色拉到全景，揭示个体在庞大体系中的渺小
-- **横移 = 扫视群像** — 水平横移扫过多个角色或工位，建立群体关系和空间全貌
-- **运镜即态度** — 固定 = 冷静旁观；缓推 = 逼迫/关注；缓拉 = 抽离/孤立；手持 = 真实参与
-
----
-
-## 四、时长把控
-
-- **对话镜头标准节奏** — 有台词的镜头 2-4s，一句一切，保持对话的节奏感和信息清晰度
-- **沉默博弈拉长** — 对峙/博弈中的沉默镜头给 3-4s，让沉默本身成为武器。观众能感受到"没说出口的话"
-- **日常碎片快节奏** — 通勤、打字、喝咖啡等日常片段每个 1.5-2s 即可，快速碎片化传递日常节奏
-- **独处镜头给时长** — 独自在车里坐着、深夜洗脸、站在窗前——这些"真实瞬间"给 4-5s，让观众感受角色卸下面具后的疲惫
-- **黄金 6 秒规则** — 单镜头不超过 6s。职场叙事的力量在于信息密度而非时长，宁可多切一个角度也不要死撑一个镜头
-- **蒙太奇碎片** — 时间流逝段落的碎片镜头每个 1-1.5s，快速叠加传递"日复一日"的压迫感
+- **Cỡ cảnhtác vụ ** — trường Phân cảnhgiữa Cỡ cảnh của logiclà "ngườingười của "。chính thức trường hợp hàm Trung cảnh (medium shot)（tác vụ ），đúng /mật tiến Cận cảnh (close-up)
+- **Trung cảnh (medium shot)là chính lực Cỡ cảnh** — trường việc giữa Trung cảnh (medium shot)hàm tần tỷ lệ tối đa （40-50%），trường sách thì là "lưu giữ khi " của tác vụ trường vực 
+- **Cận cảnh (close-up)mở ** — Cận cảnh (close-up)ở trường giữa nhở "mở "：thể là tin （dưới tác vụ ），cũng thể là nén （trên cấp ）。lần hàm Cận cảnh (close-up)đều ý đang liên dòng phát sinh hóa 
+- **Đặc tả (close-up)Lời thoại** — trường giữa ngườingườikèm mặt cụ ，thật tình xúc ở bảng tình 。Đặc tả (close-up) của công thể là "mặt cụ "：chép dưới  của bức 、điểm đầu cùng  của không 、ký chữ  của 
+- **nối trường Ống kínhtác vụ thực lực rỗng gian ** — trường nối trường không chỉ là "nàylà 1 gian "，cần tác vụ rỗng gian giữa  của thực lực nhở ：ở chính vị trí 、cổng cổng 、rỗng gian là mở mở  của còn là  của 。1-2 mục Ống kínhnối 
 
 ---
 
-## 五、对话分镜设计
+## 3、Góc quaytiết 
 
-- **权力位对切** — 对话分镜中谁在画面上方/下方暗示权力关系。仰拍上级+俯拍下属是经典权力对切
-- **过肩镜头的权力暗示** — 过肩镜头中"谁的肩膀"出现在前景 = 谁拥有当前话语权。被压制的角色用对方肩膀做前景遮挡
-- **三角关系构图** — 三人博弈场景用三角构图，三人分处画面三个位置。随着立场转变，三角构图动态调整
-- **潜台词用表情镜头** — 话中有话的台词后，切一个 1-2s 的听者反应镜头（近景/特写），让观众从听者的微表情中读出潜台词
-- **会议室全景→近景递进** — 会议段落从全景（全局）开始，随着冲突升级逐渐递进到近景/特写（聚焦对抗双方），景别递进映射张力递进
-- **能一镜交代的不拆两镜** — 一个带横移的镜头如果能同时展示说话者和听者的反应，就不要拆成正反打两个镜头
-
----
-
-## 六、独处段落
-
-- **下班后的真实** — 在电梯里靠墙闭眼、独自开车回家的沉默、回到家瘫在沙发上——这些段落是职场叙事最珍贵的"真实时刻"，用中远景+固定机位，给足时长
-- **独自崩溃的克制** — 职场人的崩溃不是嚎啕大哭，是洗手间里的深呼吸、红眼眶、手扶额头。用近景捕捉克制的崩溃，比夸张表演更有共鸣
-- **深夜反思** — 深夜独处的反思/回顾用远景+环境空镜搭配，窗外的城市灯火暗示"这座城市里有无数个同样疲惫的人"
-- **通勤段落的叙事功能** — 通勤不是过渡而是叙事：地铁里的疲惫面孔、堵车时的无奈、走入公司前的深呼吸——这些"切换人格"的瞬间是职场人最真实的仪式
+- **nối máy vị trí chính ** — 65% trên Ống kínhnối ，truyền  của video nhân 
+- **tay giữ ** — Nhân vậtthi chạy /thông hàm tay giữ ，cộng thật nhưng động mấy không 
+- **khuyến  = nén /video ** — khuyến Nhân vậtmặt bộ ，hợp hỏi 、nối 、nén lực  của đoạn 
+- ** = lập /toàn cục ** — từ Nhân vậtđến Toàn cảnh (wide shot)，nhở mục thể ở lớn thể dòng giữa  của nhỏ 
+- ** = video ** — nhiều mục Nhân vậthoặc vị trí ，tạo lập thể liên dòng  và rỗng gian toàn 
+- **Góc quaythái độ ** — nối  = ；khuyến  = /liên tâm ； = /lập ；tay giữ  = thật tham 
 
 ---
 
-## 七、台词与潜台词
+## 4、Thời lượngđem sát 
 
-- **话中有话是常态** — 职场台词很少是字面意思。"这个方案还可以再优化"= 否定；"我尊重你的决定"= 不同意但不想吵。分镜要用表情镜头帮助观众解读潜台词
-- **沉默的攻防** — 问完问题后的沉默、提议后等待回应的沉默——沉默在职场对话中是"逼迫对方先开口"的策略。给沉默 2-3s 的独立镜头
-- **一句台词一个镜头** — 关键博弈台词独占一个镜头，不与其他对白共享。给这句话配近景+听者反应
-- **旁白/内心独白极少** — 职场叙事靠"言行不一"的反差叙事（嘴上说"没事"脸上写着"有事"），不靠旁白解释内心。旁白仅在必须补充信息时使用
-- **群体对话的焦点管理** — 多人会议中不需要每个人说话都切镜头。用全景/中景展示全局，只在关键发言时切近景聚焦
+- **đúng lời Ống kínhbiểu tiết ** — có Lời thoại của Ống kính 2-4s，1 câu 1 ，lưu giữ đúng lời  của tiết  và thông tinsạch độ 
+- **dài ** — đúng /giữa  của Ống kínhcho  3-4s，để sách tạo thiết bị 。thể đến "chưa hướng ra cổng  của lời "
+- **ngày thường nhanh tiết ** — thông 、mở chữ 、ngày thường đoạn mục  1.5-2s ，nhanh hóa truyền ngày thường tiết 
+- **xử Ống kínhcho Thời lượng** — tự ở đang 、、trạm ở trước ——nàynhững "thật gian "cho  4-5s，để Nhân vậtdưới mặt cụ sau  của 
+- ** 6 giây** — đơn Ống kínhkhông vượt  6s。trường việc  của lực lượng ở với Mật độ thông tinphi Thời lượng，nhiều một nhân độ cũng không cần một Ống kính
+- **** — thời gianđoạn  của Ống kínhmục  1-1.5s，nhanh cộng truyền "ngày lời 1 ngày " của nén 
 
 ---
 
-## 八、转场设计
+## 5、đúng lời Phân cảnhthiết tính 
 
-- **同场景内用硬切** — 同一会议室/办公室内镜头间硬切，保持节奏干净
-- **日常流转用碎片蒙太奇** — 日复一日的职场日常用快速碎片蒙太奇（闹钟→通勤→打卡→开会→加班→回家），每个碎片 1-1.5s
-- **空间对比转场** — 从繁忙的办公室硬切到深夜安静的家，用空间反差传递"两个世界"的割裂感
-- **时间跳跃用字幕或空镜** — 时间跨度较大时用字幕标注（"三个月后"）或用季节/天气变化的空镜暗示
-- **段落间用通勤过渡** — 通勤段落是职场叙事天然的段落分隔器：上班通勤 = 新段落开始；下班通勤 = 段落收束
-- **手机屏幕转场** — 消息通知/邮件/新闻推送作为转场触发器，画面聚焦手机屏幕→新信息→引入新段落
+- **thực lực vị trí đúng ** — đúng lời Phân cảnhgiữa ở vẽ mặt trên phương /dưới phương nhở thực lực liên dòng 。trên cấp +dưới biệt là đã thực lực đúng 
+- **Ống kính của thực lực nhở ** — Ống kínhgiữa " của "ra ở trước bối  = có hiện tạilời ngữ thực 。nén chép  của Nhân vậthàm đúng phương trước bối 
+- **3nhân liên dòng cấu ảnh ** — 3ngườiBối cảnhhàm 3nhân cấu ảnh ，3ngườiphútxử vẽ mặt 3mục vị trí trí 。đang lập trường chuyển ，3nhân cấu ảnh động thái gọi chỉnh 
+- **Lời thoạihàm bảng tình Ống kính** — lời giữa có lời  của Lời thoạisau ，một  1-2s  của giả phụ hồi Ống kính（Cận cảnh (close-up)/Đặc tả (close-up)），để từ giả  của bảng tình giữa ra Lời thoại
+- **sẽ thức Toàn cảnh (wide shot)→Cận cảnh (close-up)tiến ** — sẽ thức đoạn từ Toàn cảnh (wide shot)（toàn cục ）mở ban đầu ，đang cấp tiến đến Cận cảnh (close-up)/Đặc tả (close-up)（đúng đôi phương ），Cỡ cảnhtiến bức lực tiến 
+- **thể 1 quay tác vụ  của không 2quay ** — một kèm  của Ống kínhnhư quả thể cùng nhở hướng lời giả  và giả  của phụ hồi ，thì không cần tạo chính phụ mở 2mục Ống kính
+
+---
+
+## 6、xử đoạn 
+
+- **dưới sau  của thật ** — ở 、tự mở trả  của 、trả đến ở phát trên ——nàynhững đoạn là trường việc nhất  của "thật "，hàm giữa Viễn cảnh (extreme wide shot)+nối máy vị trí ，cho Thời lượng
+- **tự  của chép ** — trường người của không là lớn ，là tay gian  của 、、tay bổ đầu 。hàm Cận cảnh (close-up)chép  của ，tỷ bức bảng đổi có 
+- **phụ ** — xử  của phụ /trả hàm Viễn cảnh (extreme wide shot)+rỗng quay nối ，ngoài  của nhở "nàycó không số mục cùng kiểu  của người"
+- **thông đoạn  của việc công thể ** — thông không là là việc ：địa  của mặt 、 của không 、chạy vào trước  của ——nàynhững "đổi ngườikhung " của gian là trường ngườinhất thật  của thức 
+
+---
+
+## 7、Lời thoạiLời thoại
+
+- **lời giữa có lời là thường thái ** — trường Lời thoạirất ít là chữ mặt ý 。"nàymục phương còn tối ưu"= không nối ；"tôitrùng bạn của nối "= không cùng ý nhưng không nghĩ 。Phân cảnhcần hàm bảng tình Ống kínhtrợ giúp giải Lời thoại
+- ** của ** — hỏi hỏi đề sau  của 、nhắc thức sau trả hồi  của ——ở trường đúng lời giữa là "đúng phương trước mở cổng " của 。cho  2-3s  của lập Ống kính
+- **1 câu Lời thoạimột Ống kính** — liên Lời thoạimột Ống kính，không anh ấyđúng 。cho nàycâu lời nối Cận cảnh (close-up)+giả phụ hồi 
+- **/Độc thoại nội tâm (inner monologue, OS)ít ** — trường việc "thi không 1 " của phụ việc （trên hướng "chưa việc "trên đang "có việc "），không giải trong 。chỉ ở Bắt buộcBổ sung thông tinhàm 
+- **thể đúng lời  của điểm lý ** — nhiều ngườisẽ thức giữa không cần cần mục ngườihướng lời đều Ống kính。hàm Toàn cảnh (wide shot)/Trung cảnh (medium shot)nhở toàn cục ，chỉ ở liên phát Cận cảnh (close-up)
+
+---
+
+## 8、chuyển trường thiết tính 
+
+- **cùng Bối cảnhtrong hàm ** — cùng 1 sẽ thức /trong Ống kínhgian ，lưu giữ tiết 
+- **ngày thường chuyển hàm ** — ngày lời 1 ngày  của trường ngày thường hàm nhanh （→thông →mở →mở sẽ →cộng →trả ），mục  1-1.5s
+- **rỗng gian đúng tỷ chuyển trường ** — từ  của đến an  của ，hàm rỗng gian phụ truyền "2mục giới " của rời 
+- **thời gianhàm chữ hoặc rỗng quay ** — thời gianđộ lớn hàm chữ biểu tâm （"3mục thángsau "）hoặc hàm tiết /ngàyhóa  của rỗng quay nhở 
+- **đoạn gian hàm thông ** — thông đoạn là trường việc ngày của đoạn phútcách thiết bị ：trên thông  = mới đoạn mở ban đầu ；dưới thông  = đoạn nhận 
+- **tay máy chuyển trường ** — hủy thông báo /tệp /mới khuyến gửi tác vụ chuyển trường phát thiết bị ，vẽ mặt tay máy →mới thông tin→vào mới đoạn 

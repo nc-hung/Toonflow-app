@@ -1,84 +1,84 @@
 ---
 name: director_planning_style
-description: 粘土约束 — 定义定格动画黏土在色调体系、光影方案、质感方向、场景空间元素、乐器选择与环境音上的全局约束。适用于任何叙事类型。
+description:  — nối nghĩa nối khung động vẽ ở vật gọi thể dòng 、Ánh sángphương 、phương 、Bối cảnhrỗng gian 、thiết bị chọn lựa âm trên  của toàn cục 。hàm với việc Loại。
 metaData: director_skills
 ---
 
-# 粘土约束 · 定格动画黏土 · 技法参考
+#  · nối khung động vẽ  · thức tham chiếu
 
 ---
 
-## 一、色调体系与画面基调
+## 1 、vật gọi thể dòng vẽ mặt cơ sở gọi 
 
-- **色调基底** — 全片以奶油黄（C1）、陶土红（C4）、天空蓝（C6）为基底色，整体色温偏暖（4500-5000K），饱和度中低（60-75%），呈现复古定格动画的温暖怀旧感
-- **暖调贯穿全片** — 全片保持暖调基底，局部点缀冷色（淡紫 C7、薄荷绿 C8）增加层次感。冷暖切换应与故事弧线同步，而非随意混用
-- **色盘先行原则** — 段落规划需先绑定情绪场景（相遇/日常/冒险/离别等），再确定主色+辅色与光影方案，避免"剧情对了但情绪不对色"
-- **禁用色域** — 高饱和荧光色、霓虹色、暗黑色彩体系均与本风格不兼容
+- **vật gọi cơ sở ** — toàn （C1）、（C4）、ngàyrỗng （C6）cơ sở vật ，chỉnh thể vật （4500-5000K）， và độ giữa thấp （60-75%），lời nối khung động vẽ  của cũ 
+- **gọi toàn ** — toàn lưu giữ gọi cơ sở ，cục bộ điểm tố vật （ C7、mỏng  C8）cộng tầng lần 。đổi hồi việc đường cùng bước ，phi ý hàm 
+- **vật đĩa trước thi gốc ** — đoạn lập kế hoạchcần trước ghép nốitình xúc Bối cảnh（/ngày thường //khác ），nối chính vật +vật Ánh sángphương ，"kịch tình đúng nhưng tình xúc không đúng vật "
+- **hàm vật vực ** — cao  và ánh vật 、vật 、vật thể dòng sách Phong cáchkhông dung 
 
 ---
 
-## 二、光影方案体系
+## 2、Ánh sángphương thể dòng 
 
-- **光影即叙事** — 6 套光影方案对应不同情绪段落，导演规划阶段应在段落层面确定光影基调方向，而非逐镜指定
-- **光源角度** — 默认 30-45° 侧光，模拟小剧场灯光效果
+- **Ánh sángviệc ** — 6 Ánh sángphương đúng hồi không cùng tình xúc đoạn ，Kế hoạch đạo diễnđoạn hồi ở đoạn tầng mặt nối Ánh sángcơ sở gọi phương ，phi quay nối 
+- **ánh nguồn nhân độ ** — Mặc định 30-45° ánh ，mô nhỏ kịch trường ánh hiệu quả 
 
-| 光影方案 | 方案名 | 色调倾向 | 适用情绪 |
+| Ánh sángphương  | phương tên  | vật gọi  | hàm tình xúc  |
 |---|---|---|---|
-| A | 柔光漫射 | 奶油黄底 + 均匀柔和光 | 日常温馨 |
-| B | 奇幻暖光 | 琥珀暖 + 魔法光点 | 奇幻登场 |
-| C | 暖调侧光 | 暖黄主调 + 局部暖光 | 室内日常 |
-| D | 日光漫射 | 自然暖调 + 阴影层次 | 户外自然 |
-| E | 月光冷调 | 淡蓝主调 + 暖色点缀 | 夜晚梦境 |
-| F | 柔焦暖光 | 暖黄主调 + 雾化效果 | 回忆/闪回 |
+| A | ánh  |  +  và ánh  | ngày thường  |
+| B | ánh  |  + thức ánh điểm  | đăng trường  |
+| C | gọi ánh  | chính gọi  + cục bộ ánh  | trong ngày thường  |
+| D | ngày ánh  | tự gọi  + sáng tầng lần  | dùng ngoài tự  |
+| E | thángánh gọi  | chính gọi  + vật điểm tố  | Ban đêm |
+| F | ánh  | chính gọi  + hóa hiệu quả  | trả /trả  |
 
-- **暖色调贯穿全片** — 根据场景需要灵活调整，冷色调（淡蓝+暖色对比）仅在夜晚/梦境段落使用
-- **氛围方向映射** — 每场戏的氛围方向应能映射到上述光影方案（A-F）的某一方向，确保视觉一致性
-
----
-
-## 三、质感方向
-
-- **定格黏土肌理纪实感** — 定格动画黏土写实的核心：手指压痕可见、黏土褶皱清晰、材质颗粒感明显
-- **黏土肌理 + 细腻光影** — 这是画面质感的锚点。不是光滑塑料，不是现代CG渲染，是定格动画的手工质感
-- **材质真实** — 所有服化道的材质必须可信：黏土的颗粒感、布料的褶皱、木质的纹理、金属的光泽。禁止"塑料感"和"光滑CG感"
-- **黏土不等于粗糙** — 本风格强调定格动画的黏土质感表达（清晰肌理、手指压痕、黏土褶皱），通过光影与动作设计放大感染力，而非依赖复杂特效
+- **vật gọi toàn ** — dựa theoBối cảnhcần cần hoạt gọi chỉnh ，vật gọi （+vật đúng tỷ ）chỉ ở Ban đêm/đoạn hàm 
+- **Không khíphương ** — trường  của Không khíphương hồi thể đến trên tả Ánh sángphương （A-F） của 1 phương ，lưu trực quan1 
 
 ---
 
-## 四、粘土风场景空间元素
+## 3、phương 
 
-粘土风世界观特有的场景元素及其视觉叙事功能：
-
-- **微缩场景/小道具** — 天然的框架式构图道具，小比例场景制造"可爱微缩世界"的独特层次感与空间纵深
-- **暖色室内/手工道具** — 留白构图的天然载体，手工质感道具增加"真实触感"：木桌 = 家的温暖、花盆 = 生活气息、书本 = 知识/成长
-- **灯光/窗光/烛光** — 粘土风世界的光源载体，暖黄灯光 = 温馨/安全（方案A/C）、月光 = 梦幻/冷调（方案E）、窗光 = 日常/自然（方案D）
-- **段落间用场景空镜过渡** — 本风格有丰富的场景资产（不同时段/天候变体），段落衔接建议用场景空镜做情绪缓冲，不要硬切
-- **转折点用视觉而非台词** — 优先使用画面手段（光影变化、景别跳切、空镜隐喻）配合动作设计，而非依赖对白解释
+- **nối khung lý ** — nối khung động vẽ  của ：tay nén thấy 、sạch 、dẫn 
+- **lý  + Ánh sáng** — nàylà vẽ mặt  của điểm 。không là ánh ，không là CG，là nối khung động vẽ  của tay 
+- **thật ** — tất cảphục hóa đạo  của Bắt buộctin ： của 、 của 、 của lý 、biệt  của ánh 。Nghiêm cấm"" và "ánh CG"
+- **không với ** — sách Phong cáchgọi nối khung động vẽ  của bảng （sạch lý 、tay nén 、），thông quaÁnh sángđộng tác vụ thiết tính mở lớn lực ，phi phụ thuộc lời hiệu 
 
 ---
 
-## 五、粘土风乐器与环境音
+## 4、phong Bối cảnhrỗng gian 
 
-粘土风世界观下的声音元素约束：
+phong giới có  của Bối cảnhtrực quanviệc công thể ：
 
-### 乐器选择
+- **nhỏ Bối cảnh/nhỏ Đạo cụ** — ngày của thức cấu ảnh Đạo cụ，nhỏ Tỷ lệBối cảnhchép tạo "nhỏ giới " của tầng lần rỗng gian 
+- **vật trong /tay Đạo cụ** — lưu cấu ảnh  của ngàyxuống thể ，tay Đạo cụcộng "thật "： =  của 、 = sinh hoạt 、sách  = báo trưng /tạo dài 
+- **ánh /ánh /ánh ** — phong giới  của ánh nguồn xuống thể ，ánh  = /an toàn （phương A/C）、thángánh  = /gọi （phương E）、ánh  = ngày thường /tự （phương D）
+- **đoạn gian hàm Bối cảnhrỗng quay ** — sách Phong cáchcó  của Bối cảnhTài nguyên（không cùng đoạn /ngàythể ），đoạn tiếp Khuyến nghịhàm Bối cảnhrỗng quay tình xúc ，không cần 
+- **Điểm bước ngoặthàm trực quanphi Lời thoại** — ưu tiên sử dụng vẽ mặt tay đoạn （Ánh sánghóa 、Cỡ cảnh、rỗng quay ）nối hợp động tác vụ thiết tính ，phi phụ thuộc đúng giải 
 
-- **八音盒/音乐盒** — 日常/温馨/回忆段落的核心乐器，最能表现定格动画的质感
-- **手风琴** — 轻松/浪漫/街头段落，扫弦的温柔感适合日常氛围
-- **弦乐铺底** — 情感升华/离别段落，拉弦的细腻感适合情绪过渡
-- **木琴/钟琴** — 奇幻/魔法段落，清脆音色适合梦幻氛围
-- 弦乐铺底可增加电影感但不宜喧宾夺主
+---
 
-### 乐器组合策略
+## 5、phong thiết bị âm 
 
-| 情绪阶段 | 乐器组合 |
+phong giới dưới  của thanh âm ：
+
+### thiết bị chọn lựa 
+
+- **8âm /âm ** — ngày thường //trả đoạn  của thiết bị ，nhất thể bảng nối khung động vẽ  của 
+- **tay phong ** — //đầu đoạn ， của hợp ngày thường Không khí
+- **** — tình /khác đoạn ， của hợp tình xúc 
+- **/** — /thức đoạn ，sạch giọng đọchợp Không khí
+- cộng sáng nhưng không chính 
+
+### thiết bị nhóm hợp 
+
+| tình xúc đoạn  | thiết bị nhóm hợp  |
 |---|---|
-| 平稳/开场/收尾 | 木琴独奏 或 钟琴独奏 |
-| 日常温馨 | 音乐盒 + 手风琴 |
-| 情绪升华/浪漫 | 弦乐 + 音乐盒 |
-| 情感平稳 | 音乐盒独奏 |
+| /mở trường /nhận đuôi  |  hoặc   |
+| ngày thường  | âm  + tay phong  |
+| tình xúc / |  + âm  |
+| tình  | âm  |
 
-### 粘土风环境音
+### phong âm 
 
-- **典型环境音层次** — 脚步声（黏土质感） / 翻书声 / 餐具碰撞 / 风声 / 钟表滴答声 / 衣料摩擦
-- **每场戏标注 1-2 个核心环境音**，帮助后续音效设计。环境音层次越丰富，粘土风场景越有沉浸感
+- **kiểu âm tầng lần ** — bước thanh （） / thanh  / cụ  / phong thanh  / bảng thanh  / 
+- **trường biểu tâm  1-2 mục âm **，trợ giúp sau Âm hiệuthiết tính 。âm tầng lần ，phong Bối cảnhcó 

@@ -5,7 +5,7 @@ import { success } from "@/lib/responseFormat";
 import { validateFields } from "@/middleware/middleware";
 const router = express.Router();
 
-// 更新原文数据
+// Cập nhật dữ liệu nguyên tác
 export default router.post(
   "/",
   validateFields({
@@ -27,6 +27,6 @@ export default router.post(
       event: event,
     });
 
-    res.status(200).send(success({ message: "更新原文成功" }));
+    res.status(200).send(success({ message: "Cập nhật nguyên tác thành công" }));
   },
 );

@@ -1,61 +1,61 @@
-# 古风仙侠 · 导演叙事手法技能包
+# phong  · đạo diễnviệc tay thức thể gói 
 
-## 简介
+## 
 
-本技能包为 **古风仙侠** 类型故事提供一套完整的导演叙事手法参考，涵盖从宏观叙事规划到微观分镜执行的全流程指导。适用于任何视觉风格。
+sách thể gói  **phong ** Loạiviệc nhắc nhà 1 chỉnh  của đạo diễnviệc tay thức tham chiếu，từ việc lập kế hoạchđến Phân cảnhthực thi của toàn trình dẫn 。hàm với trực quanPhong cách。
 
-## 核心理念
+## lý 
 
-- **意境先行** — 仙侠叙事的灵魂是"意在画外"，一山一水一云雾都是情感表达
-- **天地人合一** — 角色情绪与天象、自然融为一体：悲则风起、怒则雷鸣、悟则天光乍现
-- **宿命与抉择** — 叙事张力来自"命定"与"逆天"的拉扯，越不可违抗的宿命，抗争越动人
-- **留白即大道** — 最深的道、最浓的情，都不靠说——靠一壶酒、一柄剑、一场雪中的沉默
+- **ý trước thi ** — việc  của là "ý ở vẽ ngoài "，1 1 1 đều là tình bảng 
+- **ngàyđịa ngườihợp 1 ** — Nhân vậttình xúc ngàytượng 、tự 1 thể ：phong 、、ngàyánh 
+- **lựa ** — việc bức lực tự "nối ""ngày" của ，không  của ，động người
+- **lưu lớn đạo ** — nhất  của đạo 、nhất  của tình ，đều không hướng ——1 、1 、1 trường giữa  của 
 
-## 文件结构
+## tệpkết cấu 
 
 ```
 Xianxia_fantasy/
-├── README.md                                          ← 本文件
+├── README.md                                          ← sách tệp
 └── driector_skills/
-    ├── director_planning_narrative.md                 ← 叙事规划手法
-    └── director_storyboard_table_narrative.md         ← 分镜表叙事手法
+    ├── director_planning_narrative.md                 ← việc lập kế hoạchtay thức 
+    └── director_storyboard_table_narrative.md         ← Bảng phân cảnhviệc tay thức 
 ```
 
-## 技能文件说明
+## thể tệpGiải thích
 
-### 1. 叙事规划手法 (`director_planning_narrative.md`)
+### 1. việc lập kế hoạchtay thức  (`director_planning_narrative.md`)
 
-导演在 **叙事规划阶段** 使用的技法参考，定义古风仙侠在主题立意、宿命节奏、场景意境设计与声音方向上的整体规划方法。
+đạo diễnở  **việc lập kế hoạchđoạn ** hàm  của thức tham chiếu，nối nghĩa phong ở chính đề lập ý 、tiết 、Bối cảnhý thiết tính thanh âm phương trên  của chỉnh thể lập kế hoạchphương thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 主题立意与仙侠内核 | 天道与人心、宿命与抉择、孤独求道、大爱与小情 |
-| 叙事结构与宿命节奏 | 命运伏笔、三世因果、悟道递进、劫难弧线 |
-| 分场景意境设计 | 六大典型仙侠段落设计、天人感应叙事、空间修行隐喻 |
-| 声音与音乐方向 | 古乐留白、天籁与寂静、梵音/箫笛情绪递进 |
-| 构图与景别叙事 | 山水写意/云雾留白/纵深仙境、景别的境界表达 |
-| 镜头运动与节奏 | 御风运镜、天地缓摇、入定静止、意念快切 |
+| chính đề lập ý trong  | ngàyđạo người、lựa 、cầu đạo 、lớn nhỏ tình  |
+| việc kết cấu tiết  | vận 、3quả 、đạo tiến 、đường  |
+| phútBối cảnhý thiết tính  | 6lớn kiểu đoạn thiết tính 、ngàyngườihồi việc 、rỗng gian thi  |
+| thanh âm âm phương  | lưu 、ngày、âm /tình xúc tiến  |
+| cấu ảnh Cỡ cảnhviệc  | ý /lưu /、Cỡ cảnh của giới bảng  |
+| Ống kínhvận động tiết  | phong Góc quay、ngàyđịa 、vào nối Tĩnh (static)、ý nhanh  |
 
-### 2. 分镜表叙事手法 (`director_storyboard_table_narrative.md`)
+### 2. Bảng phân cảnhviệc tay thức  (`director_storyboard_table_narrative.md`)
 
-导演在 **分镜表制作阶段** 使用的技法参考，定义古风仙侠在分镜表中的景别策略、运镜节奏、时长把控、仙术战斗分镜与转场手法。
+đạo diễnở  **Bảng phân cảnhchép tác vụ đoạn ** hàm  của thức tham chiếu，nối nghĩa phong ở Bảng phân cảnhgiữa  của Cỡ cảnh、Góc quaytiết 、Thời lượngđem sát 、Phân cảnhchuyển trường tay thức 。
 
-| 章节 | 内容概要 |
+| Chương | nội dungcần  |
 |---|---|
-| 分镜表定位 | 分镜表作为意境再现核心工具的定位说明 |
-| 景别选择 | 山水远景价值、写意中景、灵韵特写 |
-| 运镜节奏 | 御风跟拍、云游缓摇、入定静止、剑气快推 |
-| 时长把控 | 意境镜头的从容、战斗的收放、悟道的留白 |
-| 仙术战斗设计 | 写意优先、力量与意境并重、天象呼应 |
-| 人物关系叙事 | 师徒传承、道侣羁绊、宿敌对镜 |
-| 台词与留白 | 言简意深、诗化台词、大段沉默的修行感 |
-| 转场设计 | 云雾转场/水墨淡化/四季流转/梦境切入 |
+| Bảng phân cảnhnối vị trí  | Bảng phân cảnhtác vụ ý cụ  của nối vị trí Giải thích |
+| Cỡ cảnhchọn lựa  | Viễn cảnh (extreme wide shot)giá trị 、ý Trung cảnh (medium shot)、Đặc tả (close-up) |
+| Góc quaytiết  | phong 、、vào nối Tĩnh (static)、nhanh khuyến  |
+| Thời lượngđem sát  | ý Ống kính của từ dung 、 của nhận mở 、đạo  của lưu  |
+| thiết tính  | ý trước 、lực lượng ý nhất trùng 、ngàytượng hồi  |
+| ngườiliên dòng việc  | truyền 、đạo 、đúng quay  |
+| Lời thoạilưu  | ý 、hóa Lời thoại、lớn đoạn  của thi  |
+| chuyển trường thiết tính  | chuyển trường /hóa /4chuyển /vào  |
 
-## 使用方式
+## hàm cách thức
 
-本技能包作为 ToonFlow 导演 AI 的叙事手法参考，在故事创作流程中自动加载，指导：
+sách thể gói tác vụ  ToonFlow đạo diễn AI  của việc tay thức tham chiếu，ở việc sáng tác vụ trình giữa tự động cộng xuống ，dẫn ：
 
-1. **叙事规划** — 确定仙侠内核、宿命节奏曲线、场景意境与音乐方向
-2. **分镜表生成** — 根据叙事规划输出具体的景别、运镜、时长与转场方案
+1. **việc lập kế hoạch** — nối trong 、tiết đường 、Bối cảnhý âm phương 
+2. **Bảng phân cảnhtạo** — dựa theoviệc lập kế hoạchtải ra cụ thể  của Cỡ cảnh、Góc quay、Thời lượngchuyển trường phương 
 
-两个文件分工明确、逐层递进，从"为什么这样拍"到"具体怎么拍"形成完整闭环。
+2mục tệpphútdẫn 、tầng tiến ，từ "saonàykiểu "đến "cụ thể sao"dạng tạo chỉnh 。

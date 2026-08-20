@@ -1,88 +1,88 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 青春成长 — 定义青春成长在分镜表中的景别情感映射、运镜活力感、时长把控、镜头合并与转场逻辑。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · Thanh Xuân & Trưởng Thành — nối nghĩa Thanh Xuân & Trưởng Thànhở Bảng phân cảnhgiữa  của Cỡ cảnhtình 、Góc quayhoạt lực 、Thời lượngđem sát 、Ống kínhhợp nhất chuyển trường logic。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 青春成长 · 技法参考
+# Bảng phân cảnhviệc tay thức  · Thanh Xuân & Trưởng Thành · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供青春成长叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **群像景别优先** — 青春叙事的大量段落是群戏（课堂/课间/聚会/比赛）。全景和中景是群戏的主力，确保多人同框传递"在一起"的归属感
-- **特写捕捉微表情** — 青春中大量情感是通过微表情传递的（偷笑、眼眶泛红、紧张咽口水）。在关键情感节点安排特写，捕捉这些稍纵即逝的瞬间
-- **远景的自由与孤独** — 远景在青春叙事中有双重功能：操场奔跑的远景 = 自由/活力；放学后空街的远景 = 孤独/思考。根据情绪目标选择
-- **大特写要有青春感** — 大特写（红了的耳尖/紧攥的手/眨掉泪水的睫毛）用于捕捉青春中"嘴上没说但身体诚实"的瞬间
-- **定场用生活化镜头** — 青春叙事的定场不需要宏大空镜，一个贴着便利贴的课桌、挂着球衣的椅背、堆满试卷的角落就够了
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà Thanh Xuân & Trưởng Thànhviệc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **动静交替** — 50% 静止机位 + 30% 跟拍/缓推 + 20% 手持微晃。青春叙事的运镜节奏本身就应该有"一会儿活蹦乱跳一会儿安静下来"的质感
-- **跟拍奔跑** — 追随角色跑动的跟拍是青春叙事的标志运镜。保持微微不稳，传递生命力。适合追人、赶路、比赛冲刺
-- **缓推 = 注意到/发现** — 观众（和角色）注意到某人/某事的心理暗示。适合暗恋发现、注意到朋友的异常、看到毕业栏
-- **缓拉 = 离开/放手** — 从角色/场景缓慢退开，适合告别、毕业、独自走开
-- **手持微晃 = 日常真实感** — 日常群戏段落用轻微手持晃动，增加"在场感"和"随手记录"的纪实质感
-
----
-
-## 四、时长把控
-
-- **日常碎片 2-3s** — 欢闹日常的碎片镜头节奏快，每个镜头 2-3s，用数量和节奏传递"每一天都飞快过去"
-- **情感段落拉长 4-5s** — 心动、争吵、和解等情感段落镜头时长应比日常多 50%，给情绪发酵的时间
-- **沉默镜头 3-4s** — 无台词的成长顿悟镜头（角色站在原地看着别人走远）需要足够时长让观众感受到"这一刻他/她长大了"
-- **远景/空镜 4-6s** — 季节空镜、校园空镜用于标记时间流逝，给足时长让观众"感受到时间在走"
-- **对话近景 3-4s** — 青春对话节奏偏快，但关键对白（表白/争吵/道歉）应适当放慢
-- **黄金法则：碎片堆出厚度** — 青春叙事的情感厚度不来自单个长镜头，而来自大量碎片的累积。宁可多几个 2-3s 的碎片，不要一个拖沓的长镜头
+- **Cỡ cảnhtrước ** — việc  của lớn lượng đoạn là （/gian /sẽ /tỷ ）。Toàn cảnh (wide shot) và Trung cảnh (medium shot)là  của chính lực ，lưu nhiều ngườicùng truyền "ở 1 " của biệt 
+- **Đặc tả (close-up)bảng tình ** — giữa lớn lượng tình là thông quabảng tình truyền  của （、、bức cổng ）。ở liên tình tiết điểm an sắp Đặc tả (close-up)，nàynhững  của gian 
+- **Viễn cảnh (extreme wide shot) của tự do ** — Viễn cảnh (extreme wide shot)ở việc giữa có đôi trùng công thể ：thao trường  của Viễn cảnh (extreme wide shot) = tự do /hoạt lực ；mở sau rỗng  của Viễn cảnh (extreme wide shot) = /。dựa theotình xúc mục biểu chọn lựa 
+- **lớn Đặc tả (close-up)cần có ** — lớn Đặc tả (close-up)（ của / của tay /bỏ  của ）hàm với giữa "trên chưa hướng nhưng thể " của gian 
+- **nối trường hàm sinh hoạt hóa Ống kính** — việc  của nối trường không cần cần lớn rỗng quay ，một đang  của 、đang  của 、đầy tra  của nhân thì 
 
 ---
 
-## 五、镜头合并策略（去 AI 感）
+## 3、Góc quaytiết 
 
-- **日常碎片保留碎切** — 与其他类型不同，青春叙事中日常欢闹段落的碎切（快速切换的日常片段）本身就是叙事手法，不需要强行合并
-- **情感段落一镜完成** — 关键情感段落（告白/争吵/和解）应尽量用完整的长镜头而非碎切，给情绪连续发展的空间
-- **群戏一镜涵盖** — 多人同场的群戏能用一个带运镜的镜头涵盖的，不拆成逐个人物的碎切。保持"我们在一起"的整体感
-- **导演思维检验** — 写完分镜后自检：日常段落是否有碎片感（有 = 对）？情感段落是否有连续感（有 = 对）？两者节奏有反差（有 = 对）？
-
----
-
-## 六、一镜到底（长镜头合并）
-
-- **适用条件** — 角色在校园中穿行、追逐奔跑、从一个空间到另一个空间的心情转换。青春叙事中长镜头的价值是"跟着这个人经历这一刻"
-- **典型场景** — 角色穿越走廊跑向操场、追着公交车跑、走过毕业后空荡荡的教室、在人群中寻找某个人
-- **标注方式** — 在运镜字段写明完整路径（如"一镜到底：跟拍角色从教室冲出→穿过走廊→推开门到操场→落幅角色停住回头"），画面描述中交代起幅和落幅
-- **时长放宽** — 因持续跟随和信息更新，可突破单镜 6s 上限，但不超过 12s
-- **情绪连续性** — 长镜头内的情绪应有变化弧线（从着急到释然/从开心到失落），不要让长镜头成为情绪的平坦段
+- **động tác vụ ** — 50% Tĩnh (static)máy vị trí  + 30% /khuyến  + 20% tay giữ 。việc  của Góc quaytiết sách thì hồi có "1 sẽ nhi hoạt 1 sẽ nhi an dưới " của 
+- **** — Nhân vậtđộng  của là việc  của biểu Góc quay。lưu giữ không ，truyền sinh lực 。hợp người、đường 、tỷ 
+- **khuyến  = tâm ý đến /phát ** — （ và Nhân vật）tâm ý đến người/việc  của lý nhở 。hợp phát 、tâm ý đến  của bất thường 、xem đến 
+- ** = mở /mở tay ** — từ Nhân vật/Bối cảnhchậm đăng mở ，hợp thông khác 、、tự chạy mở 
+- **tay giữ  = ngày thường thật ** — ngày thường đoạn hàm tay giữ động ，cộng "ở trường " và "tay lục " của 
 
 ---
 
-## 七、人物互动设计
+## 4、Thời lượngđem sát 
 
-- **群戏互动要有层次** — 多人嬉闹场景中每个人应有各自的小动作/小表情，不要所有人做同一个反应。层次感 = 真实感
-- **青春互动用笨拙** — 碰到手缩回来、想说话又闭嘴、故意走另一条路又偷看——青春的互动核心是"想靠近但不知道怎么办"
-- **身体距离即关系** — 分镜表中标注人物间的距离变化：陌生时隔着一个座位、熟悉后并肩而坐、吵架后各站一边、和好后又靠在一起
-
----
-
-## 八、台词与留白
-
-- **青春台词宜短宜碎** — 青春中的对话是碎片化的：半句话被打断、话说一半改口、嘴上说"没事"但表情出卖一切
-- **重要的话说不出口** — 青春叙事中最有力的台词往往是"没能说出口的话"。用沉默、转身、假装没事来替代直白表达
-- **群戏的叠音** — 青春群戏中多人同时说话、互相打断、七嘴八舌——不追求每句话都听清，混乱本身就是青春的声音
+- **ngày thường  2-3s** — ngày thường  của Ống kínhtiết nhanh ，mục Ống kính 2-3s，hàm số lượng  và tiết truyền "1 ngàyđều nhanh đi "
+- **tình đoạn dài  4-5s** — động 、、 và giải tình đoạn Ống kínhThời lượnghồi tỷ ngày thường nhiều  50%，cho tình xúc phát  của thời gian
+- **Ống kính 3-4s** — Không có lời thoại của tạo dài Ống kính（Nhân vậttrạm ở gốc địa xem đang khác ngườichạy ）cần cần Thời lượngđể đến "này1 anh ấy/cô ấydài lớn "
+- **Viễn cảnh (extreme wide shot)/rỗng quay  4-6s** — tiết rỗng quay 、đối rỗng quay hàm với biểu thời gian，cho Thời lượngđể "đến thời gianở chạy "
+- **đúng lời Cận cảnh (close-up) 3-4s** — đúng lời tiết nhanh ，nhưng liên đúng （bảng //đạo ）hồi khi mở chậm 
+- **thức ：ra dày độ ** — việc  của tình dày độ không tự đơn mục dài Ống kính，tự lớn lượng  của 。nhiều mấy mục  2-3s  của ，không cần một  của dài Ống kính
 
 ---
 
-## 九、转场设计
+## 5、Ống kínhhợp nhất （đi  AI ）
 
-- **日常段落用快切蒙太奇** — 表达"每一天都差不多但每一天都珍贵"的日常段落，用快速硬切的碎片蒙太奇：上课→课间→放学→上课→课间……
-- **情感转折用空镜过渡** — 情绪发生重大变化时，插入一个季节/校园空镜做情绪缓冲
-- **时间跨度用对比转场** — 同一个场景、同一个角度，但细节变了（黑板内容不同/座位上的人换了/树叶的颜色变了），用硬切的对比传递时间流逝
-- **默认硬切** — 同场戏内镜头间用硬切，保持青春的明快感
+- **ngày thường lưu lưu ** — anh ấyLoạikhông cùng ，việc giữa ngày thường đoạn  của （nhanh đổi  của ngày thường đoạn ）sách thì là việc tay thức ，không cần cần thi hợp nhất 
+- **tình đoạn 1 quay tạo ** — liên tình đoạn （thông // và giải ）hồi lượng hàm chỉnh  của dài Ống kínhphi ，cho tình xúc phát  của rỗng gian 
+- **1 quay ** — nhiều ngườicùng trường  của thể hàm một kèm Góc quay của Ống kính của ，không tạo mục người của 。lưu giữ "tôiở 1 " của chỉnh thể 
+- **đạo diễnkiểm chiếu ** — Phân cảnhsau tự kiểm ：ngày thường đoạn có hay không （có  = đúng ）？tình đoạn có hay không （có  = đúng ）？2giả tiết có phụ （có  = đúng ）？
+
+---
+
+## 6、1 quay đến （dài Ống kínhhợp nhất ）
+
+- **hàm mục tệp ** — Nhân vậtở đối giữa thi 、、từ một rỗng gian đến một rỗng gian  của tình chuyển đổi 。việc giữa dài Ống kính của giá trị là "đang nàymục ngườiđã này1 "
+- **kiểu Bối cảnh** — Nhân vậtchạy thao trường 、đang tác vụ 、chạy sau rỗng  của 、ở ngườigiữa mục người
+- **biểu tâm cách thức** — ở Góc quaychữ đoạn dẫn chỉnh đường dẫn（như "1 quay đến ：Nhân vậttừ ra →chạy →khuyến mở cổng đến thao trường →Nhân vậttrả đầu "），Mô tả hình ảnhgiữa tác vụ  và 
+- **Thời lượngmở rộng ** — giữ  và thông tincập nhật，đơn quay  6s trên hạn ，nhưng không vượt  12s
+- **tình xúc ** — dài Ống kínhtrong  của tình xúc hồi có hóa đường （từ đang đến /từ mở đến thất ），không cần để dài Ống kínhtạo tình xúc  của đoạn 
+
+---
+
+## 7、ngườiđộng thiết tính 
+
+- **động cần có tầng lần ** — nhiều ngườiBối cảnhgiữa mục ngườihồi có các tự  của nhỏ động tác vụ /nhỏ bảng tình ，không cần tất cảngườicùng một phụ hồi 。tầng lần  = thật 
+- **động hàm ** — đến tay nhỏ trả 、nghĩ hướng lời lại 、ý chạy 1 mục đường lại xem —— của động là "nghĩ nhưng không báo đạo sao"
+- **thể liên dòng ** — Bảng phân cảnhgiữa biểu tâm ngườigian  của hóa ：sinh cách đang một vị trí 、sau nhất 、sau các trạm 1 、 và tốt sau lại ở 1 
+
+---
+
+## 8、Lời thoạilưu 
+
+- **Lời thoạingắn ** — giữa  của đúng lời là hóa  của ：nửa câu lời mở 、lời hướng 1 nửa sửa cổng 、trên hướng "chưa việc "nhưng bảng tình ra 1 
+- **trùng cần  của lời hướng không ra cổng ** — việc giữa nhất có lực  của Lời thoạilà "chưa thể hướng ra cổng  của lời "。hàm 、chuyển 、giả chưa việc trực bảng 
+- ** của âm ** — giữa nhiều ngườicùng hướng lời 、mở 、78——không cầu câu lời đều sạch ，sách thì là  của thanh âm 
+
+---
+
+## 9、chuyển trường thiết tính 
+
+- **ngày thường đoạn hàm nhanh ** — bảng "1 ngàyđều không nhiều nhưng 1 ngàyđều " của ngày thường đoạn ，hàm nhanh  của ：trên →gian →mở →trên →gian ……
+- **tình chuyển hàm rỗng quay ** — tình xúc phát sinh trùng lớn hóa ，vào một tiết /đối rỗng quay tình xúc 
+- **thời gianđộ hàm đúng tỷ chuyển trường ** — cùng một Bối cảnh、cùng một nhân độ ，nhưng tiết （nội dungkhông cùng /vị trí trên  của ngườiđổi / của vật ），hàm  của đúng tỷ truyền thời gian
+- **Mặc định** — cùng trường trong Ống kínhgian hàm ，lưu giữ  của dẫn nhanh 

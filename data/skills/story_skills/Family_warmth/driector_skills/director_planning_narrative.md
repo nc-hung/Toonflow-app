@@ -1,108 +1,108 @@
 ---
 name: director_planning_narrative
-description: 叙事手法技法 · 家庭温情 — 定义家庭温情类型在主题立意、情感节奏、场景情绪设计与声音方向上的叙事规划方法。适用于任何视觉风格。
+description: việc tay thức thức  · Gia Đình Ấm Áp — nối nghĩa Gia Đình Ấm ÁpLoạiở chính đề lập ý 、tình tiết 、Bối cảnhtình xúc thiết tính thanh âm phương trên  của việc lập kế hoạchphương thức 。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 叙事手法 · 家庭温情 · 技法参考
+# việc tay thức  · Gia Đình Ấm Áp · thức tham chiếu
 
 ---
 
-## 一、主题立意与情感内核
+## 1 、chính đề lập ý tình trong 
 
-### 家庭温情叙事要点
+### Gia Đình Ấm Ápviệc cần điểm 
 
-- **平凡即伟大** — 家庭叙事的力量不在于戏剧性的大事件，而在于日复一日的陪伴、妥协与无条件的爱。主题立意应聚焦于"那些看似平淡却构成生命底色的日常"
-- **爱在嘴边却说不出** — 家庭情感表达的核心矛盾：最深的爱用最笨拙的方式传递。父亲不说"我爱你"但每天早起做早餐；母亲嘴上唠叨但行李箱里塞满吃的。立意应围绕"不说出口的爱"
-- **代际回响** — 家庭叙事最动人的瞬间是"代际重复"：当孩子无意间做了父母年轻时同样的动作、说了同样的话。这种回响赋予家庭叙事"时间的厚度"
-- **离场感受建议方向** — 温暖 / 想家 / 眼眶一热 / 想给家人打个电话。避免"催泪""苦情"等刻意煽情方向
-- **日常的神圣** — 一家人围坐吃饭、一起看电视说闲话、接孩子放学——这些日常场景在家庭叙事中不是"过场"，而是最有叙事价值的核心段落。它们的重复本身就是"幸福"的定义
-
----
-
-## 二、叙事结构与节奏规划
-
-### 家庭温情叙事要点
-
-- **日常流是基本功** — 家庭叙事的节奏应接近"生活的节奏"：缓慢、重复、带有规律性。早起→做饭→出门→归来→吃饭→休息，这种日常循环本身就是叙事结构
-- **情感暗线** — 表面上是日常琐碎，底下应有一条情感暗线在缓慢推进（渐行渐远的亲密/正在老去的父母/即将离家的孩子）。暗线不用明说，观众能感受到
-- **代际对照** — 两代人的故事线可以形成对照：父亲当年的选择 vs 孩子此刻的选择；母亲年轻时的梦想 vs 女儿现在的追求。对照中既有传承也有冲突
-- **危机与回归** — 家庭叙事的高潮通常不是"冲突爆发"，而是"差一点就散了但最终回归"。分离的威胁让团聚变得珍贵
-- **转折点用行动而非言语** — 家庭矛盾的和解不靠道歉的台词，靠一个行动：默默端来一杯水、把对方爱吃的菜放到面前、雨天去车站接人。行动比千言万语更有家庭叙事的质感
-- **"最后一餐"模型** — 家庭叙事的催泪点往往是"最后一次"的日常：出嫁前最后一顿家常饭、搬家前最后一次在老房子里吃饭、父母送孩子离家。"最后一次"赋予日常以不可承受的重量
+- **lớn ** — việc  của lực lượng không ở với kịch  của lớn sự kiện，ở với ngày lời 1 ngày  của 、giao không mục tệp  của 。chính đề lập ý hồi với "những xem cấu tạo sinh vật  của ngày thường "
+- **ở hướng không ra ** — tình bảng  của ：nhất  của hàm nhất  của cách thứctruyền 。không hướng "tôibạn"nhưng ngàysớm sớm ；trên nhưng thi đầy  của 。lập ý hồi khí "không hướng ra cổng  của "
+- **trả phản ** — việc nhất động người của gian là "trùng lời "：khi không ý gian nămcùng kiểu  của động tác vụ 、hướng cùng kiểu  của lời 。nàyloại trả phản việc "thời gian của dày độ "
+- **trường Khuyến nghịphương ** —  / nghĩ  / 1  / nghĩ cho ngườimở mục lời 。"""tình "ý tình phương 
+- **ngày thường  của ** — 1 ngườikhí 、1 xem video hướng lời 、tiếp mở ——nàynhững ngày thường Bối cảnhở việc giữa không là "trường "，là nhất có việc giá trị  của đoạn 。nó  của trùng lời sách thì là "" của nối nghĩa 
 
 ---
 
-## 三、分场景情绪设计
+## 2、việc kết cấu tiết lập kế hoạch
 
-### 家庭温情叙事要点
+### Gia Đình Ấm Ápviệc cần điểm 
 
-- **情绪目标用生活体感词** — 不说"温暖"，说"喝了一口热汤从胃暖到心"。不说"思念"，说"翻到旧照片拿起来又放下"。家庭情绪永远是具象的、可触摸的
-- **典型情绪段落与设计** —
+- **ngày thường là cơ sở sách công ** — việc  của tiết hồi tiếp "sinh hoạt  của tiết "：chậm 、trùng lời 、kèm có 。sớm →→ra cổng →→→，nàyloại ngày thường sách thì là việc kết cấu 
+- **tình đường ** — bảng mặt trên là ngày thường ，dưới hồi có 1 mục tình đường ở chậm Đẩy tới (push in / dolly in)（thi  của mật /đang đi  của / của ）。đường không hàm dẫn hướng ，thể đến 
+- **đúng ** — 2người của việc đường dạng tạo đúng ：khi năm của chọn lựa  vs  của chọn lựa ；năm của nghĩ  vs nữ nhi ở  của cầu 。đúng giữa có truyền cũng có 
+- **máy trả ** — việc  của cao thông thường không là "phát "，là "1 điểm thì nhưng nhất trả "。phút của để được 
+- **Điểm bước ngoặthàm thi động phi ngữ ** —  của  và giải không đạo  của Lời thoại，một thi động ：đầu 1 、đem đúng phương  của mở đến mặt trước 、ngàyđi trạm tiếp người。thi động tỷ nghìnvạnngữ đổi có việc  của 
+- **"nhất sau 1 "mô hình** — việc  của điểm là "nhất sau 1 lần " của ngày thường ：ra trước nhất sau 1 thường 、trước nhất sau 1 lần ở 、gửi 。"nhất sau 1 lần "ngày thường không  của trùng lượng 
 
-| 段落类型 | 情绪方向 | 叙事手法 | 音乐建议 |
+---
+
+## 3、phútBối cảnhtình xúc thiết tính 
+
+### Gia Đình Ấm Ápviệc cần điểm 
+
+- **tình xúc mục biểu hàm sinh hoạt thể từ ** — không hướng ""，hướng "1 cổng từ đến "。không hướng ""，hướng "đến cũ lấy lại mở dưới "。tình xúc là cụ tượng  của 、 của 
+- **kiểu tình xúc đoạn thiết tính ** —
+
+| đoạn Loại | tình xúc phương  | việc tay thức  | âm Khuyến nghị |
 |---|---|---|---|
-| 日常团聚 | 温馨 + 安心 | 吃饭/聊天/做家务，节奏平稳，细节丰富 | 极轻衬底或纯生活音 |
-| 笨拙关心 | 感动 + 心酸 | 不善表达的关心：塞钱/备伞/偷偷打电话 | 无配乐，让行动自己说话 |
-| 代际冲突 | 委屈 + 不解 | 各说各话、冷战、一个转身摔门 | 突然安静，只留呼吸和门声 |
-| 分离/送别 | 不舍 + 克制 | 车站/门口/机场，嘴上说没事但手没松开 | 极简单一器乐或纯环境音 |
-| 和解/回归 | 释然 + 感恩 | 一个拥抱/一顿饭/一句"回来了啊" | 温暖器乐缓缓渐入 |
-| 传承/回响 | 时间的温柔 | 孩子做了父母同样的事，代际情感闭合 | 主题旋律温暖变奏 |
+| ngày thường  |  + an  | /ngày/vụ ，tiết ，tiết  | hoặc thuần sinh hoạt âm  |
+| liên  | động  +  | không bảng  của liên ：//mở lời  | không nối ，để thi động tự mình hướng lời  |
+|  |  + không giải  | các hướng các lời 、、một chuyển cổng  | an ，chỉ lưu  và cổng thanh  |
+| phút/gửi khác  | không  + chép  | trạm /cổng cổng /máy trường ，trên hướng chưa việc nhưng tay chưa mở  | đơn 1 thiết bị hoặc thuần âm  |
+|  và giải /trả  |  +  | một /1 /1 câu "trả " | thiết bị vào  |
+| truyền /trả phản  | thời gian của  | cùng kiểu  của việc ，tình hợp  | chính đề  |
 
-- **"物件传情"是叙事核心工具** — 家庭叙事中情感传递高度依赖具体物件：
-  - **食物**：一碗汤/一盘菜/一个便当 = 最直接的爱的表达
-  - **旧物**：老照片/旧衣服/孩子小时候的画 = 时间的温度
-  - **钥匙/门**：给钥匙 = 这是你的家；留着门 = 永远等你回来
-- **空间即归属** — 家庭叙事中"家"这个空间本身就是最重要的角色。厨房 = 爱的生产地；客厅 = 家人的交集点；孩子的房间 = 独立与牵挂；老房子 = 记忆的容器
-- **"旁观者"视角的温柔** — 家庭叙事的高级手法是"旁观者看到了当事人没看到的"：孩子没看到母亲在身后偷偷抹泪、父亲没看到孩子在门缝里看着他
+- **"tệp truyền tình "là việc cụ ** — việc giữa tình truyền cao độ phụ thuộc cụ thể tệp ：
+  - ****：1 /1 đĩa /một khi  = nhất trực tiếp  của  của bảng 
+  - **cũ **：/cũ phục /giờ của vẽ  = thời gian của độ 
+  - **/cổng **：cho  = nàylà bạn của ；lưu đang cổng  = bạntrả 
+- **rỗng gian biệt ** — việc giữa ""nàymục rỗng gian sách thì là nhất trùng cần  của Nhân vật。 =  của sinh nguyên địa ； = người của tác vụ tập điểm ； của gian  = lập ； =  của dung thiết bị 
+- **"giả "video nhân  của ** — việc  của cao cấp tay thức là "giả xem đến khi việc ngườichưa xem đến  của "：chưa xem đến ở sau 、chưa xem đến ở cổng xem đang anh ấy
 
 ---
 
-## 四、声音与音乐方向
+## 4、thanh âm âm phương 
 
-### 家庭温情叙事要点
+### Gia Đình Ấm Ápviệc cần điểm 
 
-- **家有自己的音景** — 锅铲翻炒声、水壶烧开的咕嘟声、拖鞋在地板上的啪嗒声、电视机的模糊声——这些声音构成"家的声音"，每场戏标注 1-2 个标志性家庭音效
-- **生活声即配乐** — 家庭叙事中最有力的"配乐"往往是生活声本身：切菜的节奏、洗碗的水声、缝纫机的哒哒声。这些声音不需要配乐覆盖，它们本身就是家的旋律
-- **沉默的亲情** — 家人之间最深的情感往往在沉默中：父子一起坐着不说话、母女各做各的事但待在同一个空间。关键亲情段落应去掉配乐，只留生活环境音
-- **配乐极度克制** — 家庭温情配乐覆盖率建议不超过 40%。过度配乐会让温情变成煽情，克制的配乐让观众自己感动
-- **音乐情绪递进模型** —
+- **có tự mình  của âm bối ** — thanh 、mở  của thanh 、ở địa trên  của thanh 、video máy  của mô thanh ——nàynhững thanh âm cấu tạo " của thanh âm "，trường biểu tâm  1-2 mục biểu Âm hiệu
+- **sinh hoạt thanh nối ** — việc giữa nhất có lực  của "nối "là sinh hoạt thanh sách ： của tiết 、 của thanh 、máy  của thanh 。nàynhững thanh âm không cần cần nối ，nó sách thì là  của 
+- ** của tình ** — người của gian nhất  của tình ở giữa ：1 đang không hướng lời 、nữ các các  của việc nhưng ở cùng một rỗng gian 。liên tình đoạn hồi đi bỏ nối ，chỉ lưu sinh hoạt âm 
+- **nối độ chép ** — Gia Đình Ấm Ápnối tỷ lệ Khuyến nghịkhông vượt  40%。độ nối sẽ để tình tạo tình ，chép  của nối để tự mình động 
+- **âm tình xúc tiến mô hình** —
 
-| 情绪阶段 | 音乐策略 | 覆盖率 |
+| tình xúc đoạn  | âm  | tỷ lệ  |
 |---|---|---|
-| 日常平稳 | 纯生活音或极轻衬底 | 极低 |
-| 暗流涌动 | 单一器乐低音量 | 低 |
-| 冲突爆发 | 突然全场安静 | 无 |
-| 和解回暖 | 温暖器乐缓缓渐入 | 中 |
-| 代际回响 | 主题旋律完整呈现 | 中高 |
+| ngày thường  | thuần sinh hoạt âm hoặc  | thấp  |
+| động  | đơn 1 thiết bị thấp âm lượng  | thấp  |
+| phát  | toàn trường an  | không  |
+|  và giải trả  | thiết bị vào  | giữa  |
+| trả phản  | chính đề chỉnh  | giữa cao  |
 
-- **"回家"的声音** — 家庭叙事中最有仪式感的音效是"回家的声音"：钥匙开门声、进门喊一声"我回来了"、拖鞋放好的声音。这些声音每次出现都在重复"家还在"的安心感
-
----
-
-## 五、构图与景别叙事
-
-### 家庭温情叙事要点
-
-- **三大核心构图的叙事功能** —
-  - **多人同框** — 一家人在同一画面中（吃饭/坐沙发/合影），传递"我们是一家人"的归属感
-  - **前后景分层** — 一人在前做事/一人在后默默注视，传递"看不见的关心"
-  - **门框/窗框构图** — 从门框里看到的家人 = 被保护的空间/即将离开的空间/回忆中的画面
-- **餐桌是核心叙事空间** — 家庭叙事中餐桌出现频率最高。餐桌构图的微妙变化映射家庭关系：满座 = 团圆；空了一个位置 = 缺失；只有两个人 = 相依为命
-- **距离即关系** — 家人间的物理距离映射情感距离：挤在一起 = 亲密/安心；各坐一方 = 冷战/疏远；一人站着一人坐着 = 权力/关心的不对等
-- **远景的守望** — 家庭叙事中远景的核心功能是"守望"：站在门口目送的身影、窗边等待归来的剪影、远处越走越远的背影
-- **大特写的亲情功能** — 大特写用于捕捉家庭中"说不出口"的情感细节：母亲颤抖的嘴唇、父亲握紧又松开的手、孩子偷偷红了的眼眶
-- **空间的时间层次** — 同一个家庭空间（客厅/厨房/孩子的房间）在不同段落反复出现时，通过微妙的细节变化传递时间流逝：墙上的照片多了/少了、家具旧了、曾经的玩具变成了课本
+- **"trả " của thanh âm ** — việc giữa nhất có thức  của Âm hiệulà "trả  của thanh âm "：mở cổng thanh 、tiến cổng 1 thanh "tôitrả "、mở tốt  của thanh âm 。nàynhững thanh âm lần ra đều ở trùng lời "còn ở " của an 
 
 ---
 
-## 六、镜头运动与节奏
+## 5、cấu ảnh Cỡ cảnhviệc 
 
-### 家庭温情叙事要点
+### Gia Đình Ấm Ápviệc cần điểm 
 
-- **安稳缓移为主** — 家庭叙事的镜头运动应传达"安稳/安心"的感觉。缓慢、平稳、不急不躁。70% 以上镜头为静止或极缓运动
-- **缓推 = 注意到/走近** — "观众注意到了一个温暖的细节"的心理暗示，适合发现角色偷偷做的好事、注意到桌上留的饭、看到门口摆好的鞋
-- **缓拉 = 离开/目送** — "观众/角色退开"的心理暗示，适合送别、离家、从家庭场景退出
-- **旁观者凝视** — 家庭叙事中大量镜头应有"旁观者安静注视"的感觉。镜头不参与、不干扰，只是默默地看着这一家人——像一个温柔的见证者
-- **日常跟随** — 跟随角色在家中的日常动线（从厨房到餐厅端菜、从门口到客厅放东西），用缓慢的跟移传递生活的节奏感
-- **运镜即家的温度** — 静止 = 安稳/陪伴；缓推 = 靠近/关注；缓拉 = 离别/目送；缓慢跟移 = 日常/陪伴；摇镜扫过家人 = 清点幸福
+- **3lớn cấu ảnh  của việc công thể ** —
+  - **nhiều ngườicùng ** — 1 ngườiở cùng 1 vẽ mặt giữa （/phát /hợp sáng ），truyền "tôilà 1 người" của biệt 
+  - **trước sau bối phúttầng ** — 1 ngườiở trước việc /1 ngườiở sau tâm video ，truyền "xem không thấy  của liên "
+  - **cổng /cấu ảnh ** — từ cổng xem đến  của người = lưu  của rỗng gian /mở  của rỗng gian /trả giữa  của vẽ mặt 
+- **là việc rỗng gian ** — việc giữa ra tần tỷ lệ tối đa 。cấu ảnh  của hóa liên dòng ：đầy  = ；rỗng một vị trí trí  = thất ；chỉ có 2mục người = phụ 
+- **liên dòng ** — ngườigian  của lý tình ：ở 1  = mật /an ；các 1 phương  = /；1 ngườitrạm đang 1 ngườiđang  = thực lực /liên  của không đúng 
+- **Viễn cảnh (extreme wide shot) của ** — việc giữa Viễn cảnh (extreme wide shot) của công thể là ""：trạm ở cổng cổng mục gửi  của sáng 、 của sáng 、xử chạy  của sáng 
+- **lớn Đặc tả (close-up) của tình công thể ** — lớn Đặc tả (close-up)hàm với giữa "hướng không ra cổng " của tình tiết ： của 、lại mở  của tay 、 của 
+- **rỗng gian  của thời giantầng lần ** — cùng một rỗng gian （// của gian ）ở không cùng đoạn phụ lời ra ，thông qua của tiết hóa truyền thời gian：trên  của nhiều /ít 、cụ cũ 、đã  của cụ tạo sách 
+
+---
+
+## 6、Ống kínhvận động tiết 
+
+### Gia Đình Ấm Ápviệc cần điểm 
+
+- **an chính ** — việc  của Ống kínhvận động hồi truyền "an /an " của 。chậm 、、không không 。70% trên Ống kínhTĩnh (static)hoặc vận động 
+- **khuyến  = tâm ý đến /chạy ** — "tâm ý đến một  của tiết " của lý nhở ，hợp phát Nhân vật của tốt việc 、tâm ý đến trên lưu  của 、xem đến cổng cổng tốt  của 
+- ** = mở /mục gửi ** — "/Nhân vậtđăng mở " của lý nhở ，hợp gửi khác 、、từ Bối cảnhđăng ra 
+- **giả video ** — việc giữa lớn lượng Ống kínhhồi có "giả an tâm video " của 。Ống kínhkhông tham 、không ，chỉ là địa xem đang này1 người——một  của thấy chứng giả 
+- **ngày thường ** — Nhân vậtở giữa  của ngày thường động đường （từ đến đầu 、từ cổng cổng đến mở ），hàm chậm  của truyền sinh hoạt  của tiết 
+- **Góc quay của độ ** — Tĩnh (static) = an /；khuyến  = /liên tâm ； = khác /mục gửi ；chậm  = ngày thường /；Lia máy (pan)người = sạch điểm 

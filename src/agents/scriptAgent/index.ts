@@ -25,17 +25,17 @@ export interface AgentContext {
 function buildMemPrompt(mem: Awaited<ReturnType<Memory["get"]>>): string {
   let memoryContext = "";
   if (mem.rag.length) {
-    memoryContext += `[相关记忆]\n${mem.rag.map((r) => r.content).join("\n")}`;
+    memoryContext += `[Ký ức liên quan]\n${mem.rag.map((r) => r.content).join("\n")}`;
   }
   if (mem.summaries.length) {
     if (memoryContext) memoryContext += "\n\n";
-    memoryContext += `[历史摘要]\n${mem.summaries.map((s, i) => `${i + 1}. ${s.content}`).join("\n")}`;
+    memoryContext += `[Tóm tắt lịch sử]\n${mem.summaries.map((s, i) => `${i + 1}. ${s.content}`).join("\n")}`;
   }
   if (mem.shortTerm.length) {
     if (memoryContext) memoryContext += "\n\n";
-    memoryContext += `[近期对话]\n${mem.shortTerm.map((m) => `${m.role}: ${m.content}`).join("\n")}`;
+    memoryContext += `[Hội thoại gần đây]\n${mem.shortTerm.map((m) => `${m.role}: ${m.content}`).join("\n")}`;
   }
-  return `## Memory\n以下是你对用户的记忆，可作为参考但不要主动提及：\n${memoryContext}`;
+  return `## Memory\nDưới đây là ký ức của bạn về người dùng，Có thể dùng tham khảo nhưng không cần  chủ động nhắc lại：\n${memoryContext}`;
 }
 
 export async function runDecisionAI(ctx: AgentContext) {
@@ -53,13 +53,13 @@ export async function runDecisionAI(ctx: AgentContext) {
   const novelData = await u.db("o_novel").where("projectId", resTool.data.projectId).select("chapterIndex");
 
   const projectInfo = [
-    "## 项目信息",
-    `小说名称：${projectData?.name ?? "未知"}`,
-    `小说类型：${projectData?.type ?? "未知"}`,
-    `小说简介：${projectData?.intro ?? "无"}`,
-    `目标改编影视视觉手册|画风：${projectData?.artStyle ?? "无"}`,
-    `目标改编视频画幅：${projectData?.videoRatio ?? "16:9"}`,
-    `章节数量：${novelData.length}章`,
+    "## Thông tin dự án",
+    `Tên tiểu thuyết：${projectData?.name ?? "Chưa rõ"}`,
+    `Thể loại tiểu thuyết：${projectData?.type ?? "Chưa rõ"}`,
+    `tiểu thuyết：${projectData?.intro ?? "không "}`,
+    `mục biểu sửa chỉnh sáng video trực quansổ tay|vẽ phong ：${projectData?.artStyle ?? "không "}`,
+    `mục biểu sửa chỉnh Videovẽ ：${projectData?.videoRatio ?? "16:9"}`,
+    `chươngsố lượng：${novelData.length}chương `,
   ].join("\n");
 
   const { fullStream } = await u.Ai.Text("scriptAgent:decisionAgent", ctx.thinkConfig.think, ctx.thinkConfig.thinlLevel).stream({
@@ -128,30 +128,30 @@ function createSubAgent(parentCtx: AgentContext) {
       });
     }
 
-    parentCtx.msg = resTool.newMessage("assistant", "视频策划");
+    parentCtx.msg = resTool.newMessage("assistant", "Kế hoạch Video");
     return fullResponse;
   }
 
   const promptInput = z
     .object({
-      prompt: z.string().describe("交给子Agent的任务简约描述，100字以内"),
+      prompt: z.string().describe("tác vụ cho Agent của tác vụ mô tả，100chữ trong "),
     })
     .toJSONSchema();
 
   const run_sub_agent_storySkeleton = tool({
-    description: "运行执行subAgent来完成故事骨架相关任务",
+    description: "chạy thực thisubAgenthoàn thànhKhung cốt truyệnliên tác vụ ",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "script_execution_skeleton.md");
       const systemPrompt = await fs.promises.readFile(skill, "utf-8");
 
-      const formatPrompt = "\n你必须使用如下XML格式写入工作区：\n<storySkeleton>故事骨架内容</storySkeleton>";
+      const formatPrompt = "\nbạnbắt buộc sử dụng như dưới XMLđịnh dạngvào công việc khu ：\n<storySkeleton>Khung cốt truyệnnội dung</storySkeleton>";
 
       return runAgent({
         key: "scriptAgent:storySkeletonAgent",
         prompt,
         system: systemPrompt + formatPrompt,
-        name: "编剧",
+        name: "chỉnh kịch ",
         memoryKey: "assistant:execution:storySkeleton",
         messages: [{ role: "user", content: prompt + formatPrompt }],
       });
@@ -159,19 +159,19 @@ function createSubAgent(parentCtx: AgentContext) {
   });
 
   const run_sub_agent_adaptationStrategy = tool({
-    description: "运行执行subAgent来完成改编策略相关任务",
+    description: "chạy thực thisubAgenthoàn thànhChiến lược chuyển thểliên tác vụ ",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "script_execution_adaptation.md");
       const systemPrompt = await fs.promises.readFile(skill, "utf-8");
 
-      const formatPrompt = "\n你必须使用如下XML格式写入工作区：\n<adaptationStrategy>改编策略内容</adaptationStrategy>";
+      const formatPrompt = "\nbạnbắt buộc sử dụng như dưới XMLđịnh dạngvào công việc khu ：\n<adaptationStrategy>Chiến lược chuyển thểnội dung</adaptationStrategy>";
 
       return runAgent({
         key: "scriptAgent:adaptationStrategyAgent",
         prompt,
         system: systemPrompt + formatPrompt,
-        name: "编剧",
+        name: "chỉnh kịch ",
         memoryKey: "assistant:execution:adaptationStrategy",
         messages: [{ role: "user", content: prompt + formatPrompt }],
       });
@@ -179,37 +179,37 @@ function createSubAgent(parentCtx: AgentContext) {
   });
 
   const run_sub_agent_script = tool({
-    description: "运行执行subAgent来完成剧本相关任务",
+    description: "chạy thực thisubAgenthoàn thànhKịch bản liên tác vụ ",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "script_execution_script.md");
       const systemPrompt = await fs.promises.readFile(skill, "utf-8");
 
       const scriptList = await u.db("o_script").where("projectId", resTool.data.projectId).select("id", "name");
-      const scriptPrompt = ["## 可用剧本(ID:名称)", scriptList.map((s: any) => `${s.id}:${(s.name || "").replace(/[,:]/g, "")}`).join(","), ""].join(
+      const scriptPrompt = ["## hàm Kịch bản (ID:tên)", scriptList.map((s: any) => `${s.id}:${(s.name || "").replace(/[,:]/g, "")}`).join(","), ""].join(
         "\n",
       );
 
       const novelData = await u.db("o_novel").where("projectId", resTool.data.projectId).select("chapterIndex");
 
-      const formatPrompt = `\n你必须使用如下XML格式写入工作区：\nXML不得添加任何额外标签<scriptItem name="剧本名称">剧本内容</scriptItem><scriptItem name="剧本名称">剧本内容</scriptItem><scriptItem name="剧本名称">剧本内容</scriptItem>`;
+      const formatPrompt = `\nbạnbắt buộc sử dụng như dưới XMLđịnh dạngvào công việc khu ：\nXMLkhông được  thêmbổ ngoài biểu ký <scriptItem name="Tên kịch bản ">Nội dung kịch bản </scriptItem><scriptItem name="Tên kịch bản ">Nội dung kịch bản </scriptItem><scriptItem name="Tên kịch bản ">Nội dung kịch bản </scriptItem>`;
 
       return runAgent({
         key: "scriptAgent:scriptAgent",
         prompt,
         system: systemPrompt + formatPrompt,
         messages: [
-          { role: "assistant", content: scriptPrompt + `章节数量：${novelData.length}章` },
+          { role: "assistant", content: scriptPrompt + `chươngsố lượng：${novelData.length}chương ` },
           { role: "user", content: prompt + formatPrompt },
         ],
-        name: "编剧",
+        name: "chỉnh kịch ",
         memoryKey: "assistant:execution:script",
       });
     },
   });
 
   const run_supervision_agent = tool({
-    description: "运行监督层subAgent执行独立任务，完成后返回结果",
+    description: "chạy Tầng giám sát & kiểm duyệtsubAgentthực thilập tác vụ ，hoàn thànhsau  Trả vềkết quả",
     inputSchema: jsonSchema<{ prompt: string }>(promptInput),
     execute: async ({ prompt }) => {
       const skill = path.join(u.getPath("skills"), "script_agent_supervision.md");
@@ -219,7 +219,7 @@ function createSubAgent(parentCtx: AgentContext) {
         key: "scriptAgent:supervisionAgent",
         prompt,
         system: systemPrompt,
-        name: "编辑",
+        name: "chỉnh sửa",
         memoryKey: "assistant:supervision",
       });
     },
@@ -255,12 +255,12 @@ async function consumeFullStream(
       }
       if (chunk.type === "reasoning-start") {
         thinkTime = Date.now();
-        thinking = msg.thinking("思考中...");
+        thinking = msg.thinking("Đang suy nghĩ...");
       } else if (chunk.type === "reasoning-delta") {
         thinking?.append(chunk.text);
       } else if (chunk.type === "reasoning-end") {
         thinkTime = Date.now() - thinkTime;
-        thinking?.updateTitle(`思考完毕（${(thinkTime / 1000).toFixed(1)} 秒）`);
+        thinking?.updateTitle(`Hoàn thành suy nghĩ (${(thinkTime / 1000).toFixed(1)}  giây)`);
         thinking?.complete();
         thinking = null;
       } else if (chunk.type === "text-delta") {

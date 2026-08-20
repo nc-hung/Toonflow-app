@@ -1,153 +1,153 @@
-# 全局美学基础 · 真人都市
+# toàn cục đẹp cơ sở  · thật ngườiđều 
 
 ---
-必须严格、完整遵循下方全部风格约束与全局规则，并严格按提示词模板格式生成提示词；仅输出提示词正文，不得附加任何解释、说明、注释、标题或其他额外文本。
+Bắt buộckhung 、chỉnh dưới phương toàn bộPhong cáchtoàn cục ，nhất khung theo Promptmô khung thức tạoPrompt；chỉ tải ra Promptchính tài ，không được cộng giải 、Giải thích、tâm 、biểu đề hoặc anh ấybổ ngoài tài sách 。
 
-## 一、风格基因
+## 1 、Phong cáchcơ sở 
 
-| 维度 | 定义 |
+| độ  | nối nghĩa  |
 |---|---|
-| **一级风格** | 真人都市（Live-Action Urban）——以真人摄影机为唯一成像媒介的当代中国都市视觉体系 |
-| **二级风格** | 都市剧情片摄影美学 · 院线级真人实拍影像品质 |
-| **影像血统** | 手持摄影的呼吸感、自然光的偶发性、面孔的真实在场——追随王家卫的夜色、是枝裕和的日常、达内兄弟的贴近、娄烨的都市漫游 |
-| **情感基调** | 不刻意煽情，不回避脆弱；在日常的褶皱里找到诗，在城市的噪音里听见孤独；温情但不甜腻，克制但不冷漠 |
-| **质感锚词** | 真人皮肤毛孔可见、面料垂坠与摩擦痕迹、玻璃反射中的多层空间、日光穿过百叶窗的条纹、雨后地面的倒影、未被精心布置的生活现场 |
+| **1 cấp Phong cách** | thật ngườiđều （Live-Action Urban）——thật ngườisáng máy 1 tạo  của khi giữa đều trực quanthể dòng  |
+| **2cấp Phong cách** | đều kịch tình sáng đẹp  · đường cấp Người Thật Thực Tếsáng  |
+| **sáng thống ** | tay giữ sáng  của 、tự ánh  của phát 、mặt  của thật ở trường —— của vật 、là  và  của ngày thường 、trong  của 、 của đều  |
+| **tình cơ sở gọi ** | không ý tình ，không trả ；ở ngày thường  của đến ，ở  của âm thấy ；tình nhưng không ，chép nhưng không  |
+| **từ ** | thật ngườithấy 、mặt 、phụ giữa  của nhiều tầng rỗng gian 、ngày ánh trăm  của mục 、sau địa mặt  của sáng 、chưa trí  của sinh hoạt trường  |
 
 ---
 
-## 二、摄影机语法（替代"渲染引擎"）
+## 2、sáng máy ngữ thức （""）
 
-> 真人都市不依赖渲染管线。画面品质取决于摄影机的选择、镜头的性格、光线的调度。以下为"摄影机语法"核心参数。
+> thật ngườiđều không phụ thuộc đường 。vẽ mặt xuất với sáng máy  của chọn lựa 、Ống kính của khung 、ánh đường  của điều phối。dưới "sáng máy ngữ thức "tham số。
 
-### 2.1 画幅与格式
+### 2.1 vẽ khung thức 
 
-| 参数 | 基准值 | 美学意图 |
+| tham số | cơ sở giá trị  | đẹp ý ảnh  |
 |---|---|---|
-| 画幅比 | 1.85:1（宽银幕）或 16:9 | 都市横向空间感，人物与环境的共存关系；竖幅（9:16）仅限手机叙事语境 |
-| 影像格式 | 35mm胶片质感 / 全画幅数字摄影 | 浅景深能力、自然的暗角过渡、微妙的颗粒结构 |
-| 色彩科学 | ARRI Alexa / Sony Venice 类电影色彩科学 | 肤色还原自然、高光滚降柔和、暗部不压死且有层次 |
+| vẽ tỷ  | 1.85:1（rộng ）hoặc  16:9 | đều rỗng gian ，người của lưu liên dòng ；（9:16）chỉ hạn tay máy việc ngữ  |
+| sáng khung thức  | 35mm / toàn vẽ số chữ sáng  | bối thể lực 、tự  của nhân 、 của kết cấu  |
+| vật  | ARRI Alexa / Sony Venice loại sáng vật  | vật còn gốc tự 、cao ánh  và 、bộ không nén và có tầng lần  |
 
-### 2.2 镜头性格
+### 2.2 Ống kínhkhung 
 
-| 焦段 | 叙事性格 | 典型应用 |
+| đoạn  | việc khung  | kiểu hồi hàm  |
 |---|---|---|
-| 24-28mm（广角） | 环境吞噬人物、空间疏离感、城市宏大与个体渺小 | 都市空镜、人群中的孤独、建筑与人的关系 |
-| 35mm（小广角） | 主观视点、身临其境、纪实感 | 街头跟随、室内对话、日常行走 |
-| 50mm（标准） | 人眼等价、客观注视、不美化不扭曲 | 人物肖像、双人对话、情感凝视 |
-| 85mm（中长焦） | 压缩空间、拉近情感距离、背景虚化突出人物 | 特写、偷窥视角、街对面远远望见 |
-| 135mm+（长焦） | 极端压缩、窥视感、将人物从环境中剥离 | 城市中隔离的个体、远眺、情绪的物理距离 |
+| 24-28mm（nhân ） | người、rỗng gian 、lớn mục thể nhỏ  | đều rỗng quay 、ngườigiữa  của 、tạo người của liên dòng  |
+| 35mm（nhỏ nhân ） | chính video điểm 、、 | đầu 、trong đúng lời 、ngày thường thi chạy  |
+| 50mm（biểu ） | người、tâm video 、không đẹp hóa không  | người、đôi ngườiđúng lời 、tình video  |
+| 85mm（giữa dài ） | nén nhỏ rỗng gian 、tình 、bối hóa ra người | Đặc tả (close-up)、video nhân 、đúng mặt thấy  |
+| 135mm+（dài ） | đầu nén nhỏ 、video 、ngườitừ giữa  | giữa cách  của mục thể 、、tình xúc  của lý  |
 
-### 2.3 机位与运动
+### 2.3 máy vị trí vận động 
 
-| 手法 | 视觉心理 | 使用场景 |
+| tay thức  | trực quanlý  | hàm Bối cảnh |
 |---|---|---|
-| 固定机位 | 冷静、观察、让时间自己说话 | 日常场景、对话、空镜留白 |
-| 手持微晃 | 在场感、呼吸感、主观介入 | 情绪波动、街头行走、亲密跟随 |
-| 斯坦尼康/稳定器 | 优雅流动、都市漫游的诗意 | 重要场景过渡、人物登场、空间展示 |
-| 俯拍 | 命运感、渺小、上帝视角 | 城市俯瞰、结局回望、人物困境 |
-| 仰拍 | 压迫或崇高 | 摩天大楼的压迫、人物的力量感 |
-| 焦点偏移（Rack Focus） | 注意力的转移、关系的改变 | 人物对视时焦点的游移、揭示隐藏信息 |
+| nối máy vị trí  | 、、để thời giantự mình hướng lời  | ngày thường Bối cảnh、đúng lời 、rỗng quay lưu  |
+| tay giữ  | ở trường 、、chính vào  | tình xúc động 、đầu thi chạy 、mật  |
+| /nối thiết bị  | động 、đều  của ý  | trùng cần Bối cảnh、ngườiđăng trường 、rỗng gian nhở  |
+|  | vận 、nhỏ 、trên video nhân  | 、kết cục trả 、người |
+|  | nén hoặc cao  | ngàylớn  của nén 、người của lực lượng  |
+| điểm （Rack Focus） | tâm ý lực  của chuyển 、liên dòng  của sửa  | ngườiđúng video điểm  của 、nhở thông tin |
 
 ---
 
-## 三、城市色谱——光与材料的真实色彩
+## 3、vật ——ánh  của thật vật 
 
-> 真人都市的色彩来自中国城市真实的光与材料，不是引擎色板。以下色盘提取自：写字楼玻璃幕墙的反光、老小区水泥墙的岁月、街灯下的雨夜、便利店的荧光。
+> thật ngườiđều  của vật tự giữa thật  của ánh ，không là vật 。dưới vật đĩa trích xuấttự ：chữ  của phụ ánh 、nhỏ khu  của tháng、dưới  của 、 của ánh 。
 
-### 3.1 城市光源色谱
+### 3.1 ánh nguồn vật 
 
-| 光源 | 色温（K） | 光色描述 | 都市场域 |
+| ánh nguồn  | vật （K） | ánh vật Mô tả | đều trường vực  |
 |---|---|---|---|
-| 晨光（日出后1h） | 3500-4500 | 低角度暖金漫射，空气中有薄雾质感的扩散光 | 空荡的早班地铁、环卫工的街道、早餐摊的热气 |
-| 上午天光 | 5500-6000 | 冷白清澈，阴影锐利，建筑表面材质感最强 | 写字楼玻璃反射、街面干净的反光、通勤人流 |
-| 正午顶光 | 6000-6500 | 冷硬强光，阴影短而浓重，人物眼眶/下颌出现深影 | 写字楼天井、裸露的街道——需谨慎使用 |
-| 金色时刻（日落前1h） | 2800-3500 | 最珍贵的暖调，长阴影，所有材质都镀上金边 | 一切温情与回忆段落的首选光源 |
-| 蓝调时刻（日落后20min） | 8000-10000 | 天空呈深邃蓝紫，城市灯光尚弱于天光，冷谧诗意 | 独处、过渡、内心独白、尾声 |
-| 高压钠灯（老旧街灯） | 2000-2200 | 标志性的暖橙黄，城市夜晚的体温 | 老城区巷弄、深夜独行、回忆质感 |
-| LED街灯 | 4000-5000 | 冷白或微蓝，现代城市的冷静面孔 | 新城区、高架桥下、写字楼周边夜色 |
-| 便利店/地铁荧光灯 | 4000-6500 | 冷漠但安全的白光，深夜城市的孤岛 | 深夜便利店、末班地铁、值班室 |
-| 屏幕光（手机/电脑/广告屏） | 变化 | 冷蓝或暖白面光，照亮人物一侧脸颊，孤独的陪伴者 | 独处时刻、失眠、信息时代的疏离 |
-| 车灯光束 | 3000（卤素暖）/ 6000（LED冷） | 移动的点光源，光束穿过雨雾时产生体积效果 | 街道夜景、追车、擦肩而过 |
+| ánh （ngày ra sau 1h） | 3500-4500 | thấp nhân độ ，rỗng giữa có mỏng  của ánh  | rỗng  của sớm địa 、 của đạo 、sớm  của  |
+| trên ngàyánh  | 5500-6000 | sạch ，sáng ，tạo bảng mặt nhất  | chữ phụ 、mặt  của phụ ánh 、thông người |
+| chính ánh  | 6000-6500 | ánh ，sáng ngắn trùng ，người/dưới ra sáng  | chữ ngày、 của đạo ——cần hàm  |
+| vật （ngày trước 1h） | 2800-3500 | nhất  của gọi ，dài sáng ，tất cảđều trên  | 1 tình trả đoạn  của chọn ánh nguồn  |
+| gọi （ngày sau 20min） | 8000-10000 | ngàyrỗng ，ánh với ngàyánh ，ý  | xử 、、Độc thoại nội tâm (inner monologue, OS)、đuôi thanh  |
+| cao nén （cũ ） | 2000-2200 | biểu  của ，Ban đêm của thể  | khu 、thi 、trả  |
+| LED | 4000-5000 | hoặc ， của mặt  | mới khu 、cao dưới 、chữ vật  |
+| /địa ánh  | 4000-6500 | nhưng an toàn  của ánh ， của  | 、địa 、giá trị  |
+| ánh （tay máy //thông ） | hóa  | hoặc mặt ánh ，người1 ， của giả  | xử 、thất 、thông tin của  |
+| ánh  | 3000（）/ 6000（LED） | động  của điểm ánh nguồn ，ánh nguyên sinh thể hiệu quả  | đạo bối 、、 |
 
-### 3.2 城市材料色谱
+### 3.2 vật 
 
-| 材料 | 色域 | 在城市中的位置 |
+|  | vật vực  | ở giữa  của vị trí trí  |
 |---|---|---|
-| 玻璃幕墙 | 青灰 → 深蓝 → 天空反射的金/橙 | CBD天际线、写字楼、商场 |
-| 混凝土/水泥 | 米灰 → 冷灰 → 雨后深灰，带水渍与青苔斑痕 | 老小区外立面、桥梁、地下通道 |
-| 红砖 | 赭红 → 暗砖红，风化后偏灰棕 | 老城区民居、校园旧楼、创意园区 |
-| 沥青路面 | 深灰近黑，雨后呈镜面反射质感 | 一切城市道路 |
-| 不锈钢/铝合金 | 冷银灰，带拉丝或镜面反射 | 写字楼大堂、地铁车厢、公交站台 |
-| 行道树绿 | 春新绿 → 夏深绿 → 秋焦糖/金黄 | 街道、公园、小区 |
-| 白墙（室内） | 暖白偏米黄（老房） / 冷白偏蓝（新装） | 出租屋、办公室、医院 |
+|  |  →  → ngàyrỗng phụ  của / | CBDngàyđường 、chữ 、cấp trường  |
+| / |  →  → sau ，kèm  | nhỏ khu ngoài lập mặt 、、địa dưới thông đạo  |
+|  |  → ，phong hóa sau  | khu dân 、đối cũ 、sáng ý khu  |
+| đường mặt  | ，sau quay mặt phụ  | 1 đạo đường  |
+| không /hợp  | ，kèm hoặc quay mặt phụ  | chữ lớn 、địa 、tác vụ trạm đài  |
+| thi đạo  | mới  →  → / | đạo 、、nhỏ khu  |
+| （trong ） | （） / （mới ） | ra 、、 |
 
-### 3.3 叙事情绪色盘
+### 3.3 việc tình xúc vật đĩa 
 
-> 不再按"主色/辅色"机械分配，而是按"光的情绪"来定义场景的视觉温度。
+> không theo "chính vật /vật "máy phútnối ，là theo "ánh  của tình xúc "nối nghĩa Bối cảnh của trực quanđộ 。
 
-| 情绪场景 | 光的配方 | 色温走向 | 视觉关键词 |
+| tình xúc Bối cảnh | ánh  của nối phương  | vật chạy  | trực quanliên từ  |
 |---|---|---|---|
-| 清晨启程 | 晨光45°斜入 + 薄雾漫射 | 冷底暖光（3600K日光 + 环境5500K天光） | 通透、希望、安静、蓄势 |
-| 职场日常 | 窗光为主 + 屏幕冷光补面 | 中性偏冷（5000K基准） | 秩序、专注、克制、疏离 |
-| 午后松弛 | 窗光大面积漫射 + 窗帘柔化 | 暖白（4500K） | 慵懒、治愈、日常的诗意 |
-| 暧昧靠近 | 暖光源侧光（台灯/烛光/夕照）+ 暗部保留细节 | 极暖（2800-3200K） | 温度、距离消融、未说出口的话 |
-| 市井烟火 | 多光源混杂（街灯暖+店铺冷白+车灯扫过） | 暖调主导（3000K暖 + 局部冷对冲） | 热闹、真实、人情、拥挤中的温暖 |
-| 雨夜独行 | 湿地面反射街灯 + 雨幕散射 + 远处霓虹虚化 | 冷基底（6000K） + 暖光斑（2800K）点缀 | 孤独、沉思、城市与个体的关系 |
-| 深夜脆弱 | 单光源（台灯/手机屏/窗外路灯）孤岛式照明 | 点暖（3000K）沉入深暗（无光处纯黑） | 脆弱、真实、卸下伪装、一个人的时刻 |
-| 冲突对峙 | 硬光侧打 + 深阴影 + 冷暖光对冲（一边窗光冷/一边室内暖） | 分裂（冷/暖双色温不融合） | 张力、对抗、关系的断裂 |
-| 告别时刻 | 逆光（人物剪影化）+ 长阴影 + 蓝调时刻天空 | 冷（天空8000K）+ 暖（街灯2800K）告别式冷暖共存 | 不舍、释然、一个篇章的结束 |
+| Sáng sớmđộng trình  | ánh 45°vào  + mỏng  | ánh （3600Kngày ánh  + 5500Kngàyánh ） | thông 、、an 、 |
+| trường ngày thường  | ánh chính  + ánh bổ mặt  | giữa （5000Kcơ sở ） | xếp 、riêng tâm 、chép 、 |
+| sau  | ánh lớn mặt  + hóa  | （4500K） | 、、ngày thường  của ý  |
+|  | ánh nguồn ánh （đài /ánh /）+ bộ lưu lưu tiết  | （2800-3200K） | độ 、hủy 、chưa hướng ra cổng  của lời  |
+|  | nhiều ánh nguồn （++） | gọi chính dẫn （3000K + cục bộ đúng ） | 、thật 、ngườitình 、giữa  của  |
+| thi  | địa mặt phụ  +  + xử hóa  | cơ sở （6000K） + ánh （2800K）điểm tố  | 、、mục thể  của liên dòng  |
+|  | đơn ánh nguồn （đài /tay máy /ngoài đường ）thức dẫn  | điểm （3000K）vào （không ánh xử thuần ） | 、thật 、dưới 、một người của  |
+| đúng  | ánh mở  + sáng  + ánh đúng （1 ánh /1 trong ） | phút（/đôi vật không hợp ） | bức lực 、đúng 、liên dòng  của  |
+| thông khác  | ánh （ngườisáng hóa ）+ dài sáng  + gọi ngàyrỗng  | （ngàyrỗng 8000K）+ （2800K）thông khác thức lưu  | không 、、một bài chương  của kết  |
 
 ---
 
-## 四、全局约束规则
+## 4、toàn cục 
 
-### 4.1 影像真实性约束（必守）
+### 4.1 sáng thật （bắt ）
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| P1 | 必须以「真人摄影 / 真人实拍 / 真人电影剧照」为生成锚——画面必须读作"摄影机拍下的"，而非"计算机生成的" |
-| P2 | 必须指定一个具体的光源逻辑：这场戏的光从哪里来？（窗/灯/天空/屏幕）光源方向、色温、软硬须自洽 |
-| P3 | 必须保留人物皮肤的真实质感——毛孔、细纹、痣、自然肤色不均——杜绝塑料磨皮与AI感假面 |
-| P4 | 发丝必须呈现自然状态——被风吹乱、被雨打湿、扎起后散落的碎发——杜绝建模感整齐发块 |
-| P5 | 服饰必须体现"穿过"的痕迹——面料褶皱、轻微起球、领口自然变形、裤脚磨损——杜绝全新样板衣感 |
-| P6 | 场景必须有"被使用过"的证据——桌面物品自然散落、墙面有生活痕迹、地面不完美——杜绝样板间 |
-| P7 | 人物必须处于自然体态——真实的站姿（重心偏一侧）、不刻意的表情（非全脸对称笑容）、日常的手部动作 |
-| P8 | 必须指定一个具体的当代中国都市空间——拒绝"generic city"或任何无国别标识的架空都市 |
+| P1 | Bắt buộc「thật ngườisáng  / Người Thật Thực Tế / thật ngườisáng kịch 」tạo——vẽ mặt Bắt buộctác vụ "sáng máy dưới  của "，phi "tính toánmáy tạo của " |
+| P2 | Bắt buộcnối một cụ thể  của ánh nguồn logic：nàytrường  của ánh từ ？（//ngàyrỗng /）ánh nguồn phương 、vật 、buộc tự  |
+| P3 | Bắt buộclưu lưu người của thật ——、、、tự vật không ——AIgiả mặt  |
+| P4 | phát Bắt buộctự trạng thái——phong 、mở 、sau  của phát ——tạo mô chỉnh phát  |
+| P5 | phục Bắt buộcthể "" của ——mặt 、、cổng tự dạng 、——toàn mới kiểu  |
+| P6 | Bối cảnhBắt buộccó "hàm " của chứng liệu ——mặt tự 、mặt có sinh hoạt 、địa mặt không đẹp ——kiểu gian  |
+| P7 | ngườiBắt buộcxử với tự thể thái ——thật  của trạm （trùng 1 ）、không ý  của bảng tình （phi toàn đúng dung ）、ngày thường  của tay bộ động tác vụ  |
+| P8 | Bắt buộcnối một cụ thể  của khi giữa đều rỗng gian ——"generic city"hoặc không khác biểu trưng  của rỗng đều  |
 
-### 4.2 摄影品质约束（必守）
+### 4.2 sáng （bắt ）
 
-| 编号 | 规则 |
+| chỉnh số  |  |
 |---|---|
-| Q1 | 必须声明一种摄影机的"在场方式"：固定注视 / 手持呼吸 / 稳定器流动 / 长焦窥视 |
-| Q2 | 景深必须具有叙事意图——浅景深突出情绪、深景深强调环境、焦点偏移引导注意力 |
-| Q3 | 高光不得过曝死白，暗部不得死黑无层次——保留高光滚落和阴影细节是电影感的基础 |
-| Q4 | 必须声明画面的颗粒质感偏好：35mm胶片颗粒（细腻不规则）/ 数字摄影干净锐利（默认） |
-| Q5 | 色彩调性必须与情绪场景匹配——温暖不溢色、冷冽不灰败、霓虹不廉价 |
+| Q1 | Bắt buộcthanh dẫn 1 loại sáng máy  của "ở trường cách thức"：nối tâm video  / tay giữ  / nối thiết bị động  / dài video  |
+| Q2 | bối Bắt buộccụ có việc ý ảnh ——bối ra tình xúc 、bối gọi 、điểm dẫn tâm ý lực  |
+| Q3 | cao ánh không được ，bộ không được không tầng lần ——lưu lưu cao ánh  và sáng tiết là sáng  của cơ sở  |
+| Q4 | Bắt buộcthanh dẫn vẽ mặt  của tốt ：35mm（không ）/ số chữ sáng （Mặc định） |
+| Q5 | vật gọi Bắt buộctình xúc Bối cảnhkhớp——không vật 、không bại 、không  |
 
-### 4.3 严禁项（优先级最高，不可覆盖）
+### 4.3 （trước cấp tối đa ，không ）
 
-| 编号 | 严禁内容 |
+| chỉnh số  | nội dung |
 |---|---|
-| X1 | 严禁「3D渲染 / CG / UE / Blender / 次世代建模 / PBR材质 / 体积光 / 环境光遮蔽（AO）」等一切CG术语——本风格用光与摄影机说话，不用渲染引擎 |
-| X2 | 严禁「2D手绘 / 插画 / 动画 / 二次元 / 漫画 / 平面风格」等一切非摄影媒介 |
-| X3 | 严禁「古风 / 古装 / 汉服 / 仙侠 / 武侠 / 民国 / 古代建筑」等一切非当代中国都市元素 |
-| X4 | 严禁「赛博朋克 / 科幻 / 星际 / 西方奇幻 / 中世纪 / 蒸汽朋克 / 异世界」等一切非当代世界观 |
-| X5 | 严禁「荧光色 / 霓虹溢色 / 死亡芭比粉 / 电子合成色 / 高饱和廉价色调」 |
-| X6 | 严禁「过度磨皮 / 塑料假人感 / 零毛孔蜡像脸 / AI感假面 / 对称僵笑」 |
-| X7 | 严禁「肢体畸形 / 手指融合 / 五官崩坏 / 人体结构错误 / 恐怖谷效应」 |
-| X8 | 严禁「低分辨率 / 模糊 / 噪点爆炸 / 严重伪影 / 抠图白边 / 拼接断层」 |
-| X9 | 严禁「暴力血腥 / 恐怖惊悚 / 暴露 / 性暗示 / 低俗 / 擦边 / 违法内容」 |
-| X10 | 严禁「水印 / 文字 / 签名 / LOGO / 边框 / UI元素 / 生成工具痕迹」 |
+| X1 | 「3D / CG / UE / Blender / lần tạo mô  / PBR / thể ánh  / ánh （AO）」1 CGngữ ——sách Phong cáchhàm ánh sáng máy hướng lời ，không hàm  |
+| X2 | 「2Dtay  / vẽ  / động vẽ  / 2lần  / vẽ  / mặt Phong cách」1 phi sáng  |
+| X3 | 「phong  /  / phục  /  /  / dân  / tạo 」1 phi khi giữa đều  |
+| X4 | 「 /  /  / phương  / giữa  /  / bất giới 」1 phi khi giới  |
+| X5 | 「ánh vật  / vật  / tỷ  / hợp tạo vật  / cao  và vật gọi 」 |
+| X6 | 「độ  / giả người / 0 / AIgiả mặt  / đúng 」 |
+| X7 | 「thể dạng  / tay hợp  / 5xấu  / ngườithể kết cấu lỗi / hiệu hồi 」 |
+| X8 | 「thấp phúttỷ lệ  / mô  / điểm  / trùng sáng  / ảnh  / ghép tiếp tầng 」 |
+| X9 | 「lực  / Kinh Dị Siêu Nhiên /  / nhở  / thấp  /  / thức nội dung」 |
+| X10 | 「 / tài chữ  / ký tên  / LOGO /  / UI / tạocụ 」 |
 
-### 4.4 风格越界判定
+### 4.4 Phong cáchgiới nối 
 
-> 当你生成的画面出现以下任一信号，说明已经偏离真人都市风格：
+> khi bạntạo của vẽ mặt ra dưới 1 tin số ，Giải thíchđã đã thật ngườiđều Phong cách：
 
-| 越界信号 | 说明 |
+| giới tin số  | Giải thích |
 |---|---|
-| 人物皮肤像硅胶 | 磨皮过度，失去真人质感——立即停用"光滑""完美肌肤"类词汇 |
-| 光源来源不明 | 画面亮但说不清光从哪来——补全光源逻辑，拒绝"全局均匀亮" |
-| 建筑没有中文标识 | 城市失去中国辨识度——加入店招、路牌、公交站等明确的中国都市符号 |
-| 画面过于干净 | 场景像刚装修完——加入生活痕迹 |
-| 人物站姿像模特 | 体态僵硬对称——给一个自然的身体重心偏移 |
-| 色彩像滤镜APP | 色调统一但廉价——回归光源色温驱动，不要"滤镜套用" |
+| người | độ ，thất đi thật người——lập hàm "ánh ""đẹp "loại từ  |
+| ánh nguồn nguồn không dẫn  | vẽ mặt nhưng hướng không sạch ánh từ ——bổ toàn ánh nguồn logic，"toàn cục " |
+| tạo chưa có giữa tài biểu trưng  | thất đi giữa trưng độ ——cộng vào 、đường 、tác vụ trạm dẫn  của giữa đều số  |
+| vẽ mặt với  | Bối cảnh——cộng vào sinh hoạt  |
+| ngườitrạm mô  | thể thái đúng ——cho một tự  của thể trùng  |
+| vật lọc quay APP | vật gọi thống 1 nhưng ——trả ánh nguồn vật động ，không cần "lọc quay hàm " |

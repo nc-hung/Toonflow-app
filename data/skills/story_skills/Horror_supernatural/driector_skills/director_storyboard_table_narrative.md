@@ -1,88 +1,88 @@
 ---
 name: director_storyboard_table_narrative
-description: 分镜表叙事手法 · 恐怖灵异 — 定义恐怖灵异在分镜表中的景别控制、运镜恐惧构建、时长张力、镜头合并与转场逻辑。适用于任何视觉风格。
+description: Bảng phân cảnhviệc tay thức  · bất  — nối nghĩa bất ở Bảng phân cảnhgiữa  của Cỡ cảnhsát chép 、Góc quaycấu tạo 、Thời lượngbức lực 、Ống kínhhợp nhất chuyển trường logic。hàm với trực quanPhong cách。
 metaData: director_skills
 ---
 
-# 分镜表叙事手法 · 恐怖灵异 · 技法参考
+# Bảng phân cảnhviệc tay thức  · bất  · thức tham chiếu
 
 ---
 
-## 一、分镜表定位
+## 1 、Bảng phân cảnhnối vị trí 
 
-分镜表是导演将剧本转化为镜头语言的核心工具。表单字段由导演根据项目需要自行设定（分镜号、景别、运镜、时长、人物、事件、台词、光影、情绪、转场等），以下仅提供恐怖灵异叙事类型下的技法参考。
-
----
-
-## 二、景别选择
-
-- **景别即信息控制** — 恐怖叙事中景别选择的核心逻辑是"控制观众知道多少"。特写 = 角色视野受限（观众也不知道周围有什么）；远景 = 角色暴露在未知中（观众看到危险但角色不知道）
-- **特写的封闭恐惧** — 特写/大特写让画面之外全部变成"未知区域"，观众会本能地焦虑"画面外有什么"。恐惧积累段落多用特写限制信息
-- **远景的暴露恐惧** — 远景让角色显得渺小、孤立、暴露，适合"威胁已经在附近但角色不知道"的段落
-- **避免中景的安全感** — 中景是最"安全"的景别（信息适中、距离适中），恐怖叙事中应减少中景使用，多用特写和远景的极端切换制造不安
-- **定场镜头要制造不安** — 定场不只是交代环境，要在定场镜头中就埋入"不对劲"——画面边缘的模糊形状、不该亮的窗户、静得过分的空间
+Bảng phân cảnhlà đạo diễnKịch bảnchuyển hóa Ống kínhngữ  của cụ 。bảng đơn chữ đoạn do đạo diễndựa theodự áncần cần tự thi thiết nối （Phân cảnhsố 、Cỡ cảnh、Góc quay、Thời lượng、người、sự kiện、Lời thoại、Ánh sáng、tình xúc 、chuyển trường ），dưới chỉ nhắc nhà bất việc Loạidưới  của thức tham chiếu。
 
 ---
 
-## 三、运镜节奏
+## 2、Cỡ cảnhchọn lựa 
 
-- **默认静止，静止即压迫** — 70% 以上镜头应为静止机位。恐怖叙事中静止不是"没有运镜"，而是主动制造"被困在这个视角"的窒息感
-- **极缓推 = 逼近** — 比正常缓推慢一半的速度，暗示"有东西在慢慢靠近"或"你不得不看清这个东西"
-- **缓拉 = 揭示恐怖全貌** — 从角色或局部缓慢拉开，揭示角色没看到的恐怖真相（身后有人、房间被破坏、周围全是异常）
-- **突然停止** — 正在运动的镜头突然静止，暗示"有什么东西让一切停下来了"，极强的心理冲击
-- **微幅呼吸抖动** — 极其微妙的画面起伏，模拟主观视角的"偷窥者"存在感。不是手持摇晃，是观众潜意识感知到"有人在看"
-
----
-
-## 四、时长把控
-
-- **恐惧镜头拉长** — 不安/恐惧段落的镜头时长应比正常多 50%。让观众"被迫"停留在令人不安的画面上，等待可能发生的恐怖事件
-- **寂静镜头给足时间** — 无声镜头（环境音真空）至少 3-4s，让寂静的压迫感充分作用于观众
-- **惊吓瞬间极短** — Jump Scare 类镜头控制在 1-1.5s，快到来不及反应就切走，留下恐惧余波
-- **特写停留 3-4s** — 恐惧表情的特写需要比正常更长的停留，让观众"感染"角色的恐惧
-- **远景/空镜 5-7s** — 恐怖氛围的远景和空镜需要更长时间，让观众有时间在画面中"搜索"异常
-- **黄金法则：恐惧来自等待** — 观众知道要发生可怕的事但不知道什么时候发生，等待的每一秒都在放大恐惧
+- **Cỡ cảnhthông tinsát chép ** — việc giữa Cỡ cảnhchọn lựa  của logiclà "sát chép báo đạo nhiều ít "。Đặc tả (close-up) = Nhân vậtvideo hạn （cũng không báo đạo khí có sao）；Viễn cảnh (extreme wide shot) = Nhân vậtở chưa báo giữa （xem đến nhưng Nhân vậtkhông báo đạo ）
+- **Đặc tả (close-up) của ** — Đặc tả (close-up)/lớn Đặc tả (close-up)để vẽ mặt  của ngoài toàn bộtạo "chưa báo khu vực "，sẽ sách thể địa "vẽ mặt ngoài có sao"。đoạn nhiều hàm Đặc tả (close-up)hạn chép thông tin
+- **Viễn cảnh (extreme wide shot) của ** — Viễn cảnh (extreme wide shot)để Nhân vậtđược nhỏ 、lập 、，hợp "đã đã ở nhưng Nhân vậtkhông báo đạo " của đoạn 
+- **Trung cảnh (medium shot) của an toàn ** — Trung cảnh (medium shot)là nhất "an toàn " của Cỡ cảnh（thông tingiữa 、giữa ），việc giữa hồi ít Trung cảnh (medium shot)hàm ，nhiều hàm Đặc tả (close-up) và Viễn cảnh (extreme wide shot) của đầu đổi chép tạo không an 
+- **nối trường Ống kínhcần chép tạo không an ** — nối trường không chỉ là tác vụ ，cần ở nối trường Ống kínhgiữa thì vào "không đúng "——vẽ mặt  của mô dạng trạng 、không  của dùng 、được phút của rỗng gian 
 
 ---
 
-## 五、镜头合并策略（去 AI 感）
+## 3、Góc quaytiết 
 
-- **连续不安感不能断** — 连续制造不安氛围的镜头应尽量合并为长镜头，一旦切断（硬切到新角度），不安的积累就会被重置
-- **环境探索一镜完成** — 角色探索未知空间（进入黑暗房间、走过长廊）应尽量用一镜到底，碎切会破坏"与角色一起经历"的沉浸恐惧
-- **叙事密度优先** — 每个镜头必须推进恐惧或叙事，纯装饰性的氛围镜头应合并到有叙事功能的镜头中
-- **导演思维检验** — 写完分镜后自检：恐怖氛围是连续的还是被碎切打断的？如果一个导演会用长镜头一气呵成的段落，不要拆成碎片
-
----
-
-## 六、一镜到底（长镜头合并）
-
-- **适用条件** — 角色探索未知空间、追逐/逃跑、从安全到恐惧的渐变过程。恐怖叙事中长镜头的价值是"不给观众喘息的机会"
-- **典型场景** — 角色独自走过黑暗走廊、开门探索房间、从正常空间进入异常空间、追逐逃亡
-- **标注方式** — 在运镜字段写明完整路径（如"一镜到底：跟移角色穿过走廊→缓推进入房间→落幅角色背影静止"），画面描述中交代起幅和落幅
-- **时长放宽** — 恐怖长镜头因持续制造压迫感，可突破单镜 6s 上限，但不超过 15s
-- **窒息感控制** — 一镜到底的时间越长，观众"等待恐怖发生"的焦虑越强。长镜头本身就是恐惧制造器
+- **Mặc địnhTĩnh (static)，Tĩnh (static)nén ** — 70% trên Ống kínhhồi Tĩnh (static)máy vị trí 。việc giữa Tĩnh (static)không là "chưa có Góc quay"，là chính động chép tạo "ở nàymục video nhân " của 
+- **khuyến  = ** — tỷ chính thường khuyến chậm 1 nửa  của độ ，nhở "có ở chậm chậm "hoặc "bạnkhông được không xem sạch nàymục "
+- ** = nhở toàn ** — từ Nhân vậthoặc cục bộ chậm mở ，nhở Nhân vậtchưa xem đến  của thật （sau có người、gian xấu 、khí toàn là bất thường ）
+- **** — đang vận động  của Ống kínhTĩnh (static)，nhở "có saođể 1 dưới "， của lý 
+- **động ** —  của vẽ mặt ，mô chính video nhân  của "giả "lưu ở 。không là tay giữ ，là ý trưng báo đến "có ngườiở xem "
 
 ---
 
-## 七、人物互动设计
+## 4、Thời lượngđem sát 
 
-- **单人戏是恐怖主场** — 恐怖叙事中最有效的段落往往是角色独处。分镜表中单人镜头的比例应高于群戏
-- **恐惧反应比恐惧源更重要** — 角色看到了什么不重要，角色的反应才重要。分镜表应优先安排"角色恐惧反应"的镜头，而非"恐怖事物本体"的镜头
-- **动作克制** — 恐惧中的人不会大幅度动作，而是僵住/缩起来/缓慢后退。分镜表中避免写"角色尖叫着跑开"，写"角色僵住，手指无意识地攥紧"
-
----
-
-## 八、台词与留白
-
-- **少说多怕** — 恐怖段落的台词应极少。角色越说话越有"控制感"，沉默才让恐惧蔓延
-- **碎片化台词** — 恐惧中的台词应是碎片式的：半句话、叫不出口的名字、压低的"别动"。完整的句子会破坏恐惧氛围
-- **观众知道角色不知道** — 最好的恐怖留白是"观众已经看到了但角色还在正常说话"，用角色的不知情反衬恐怖
+- **Ống kínhdài ** — không an /đoạn  của Ống kínhThời lượnghồi tỷ chính thường nhiều  50%。để ""lưu ở ngườikhông an  của vẽ mặt trên ，thể phát sinh  của sự kiện
+- **Ống kínhcho thời gian** — không thanh Ống kính（âm thật rỗng ）đến ít  3-4s，để  của nén sung phúttác vụ hàm với 
+- **gian ngắn ** — Jump Scare loại Ống kínhsát chép ở  1-1.5s，nhanh đến không phụ hồi thì chạy ，lưu dưới 
+- **Đặc tả (close-up)lưu  3-4s** — bảng tình  của Đặc tả (close-up)cần cần tỷ chính thường đổi dài  của lưu ，để ""Nhân vật của 
+- **Viễn cảnh (extreme wide shot)/rỗng quay  5-7s** — Không khí của Viễn cảnh (extreme wide shot) và rỗng quay cần cần đổi dài thời gian，để có thời gianở vẽ mặt giữa "tìm kiếm "bất thường 
+- **thức ：tự ** — báo đạo cần phát sinh  của việc nhưng không báo đạo saophát sinh ， của 1 giâyđều ở mở lớn 
 
 ---
 
-## 九、转场设计
+## 5、Ống kínhhợp nhất （đi  AI ）
 
-- **默认硬切** — 同场戏内镜头间用硬切，干净利落，保持紧张感
-- **恐怖段落间不给缓冲** — 与其他类型不同，恐怖叙事中段落间的转场应尽量不给观众"休息"的空间，除非是刻意安排的"假性安全"
-- **黑屏的恐惧** — 恐怖叙事中可使用短暂黑屏（0.5-1s）作为转场，黑屏期间观众什么都看不见 = 最大的恐惧。但不可滥用
-- **声音先行转场** — 画面还在上一个场景，声音已经是下一个场景的异常音效。用声音"入侵"画面，制造恐惧的渗透感
+- **không an không thể ** — chép tạo không an Không khí của Ống kínhhồi lượng hợp nhất dài Ống kính，1 （đến mới nhân độ ），không an  của thì sẽ trùng trí 
+- **kiếm 1 quay tạo ** — Nhân vậtkiếm chưa báo rỗng gian （tiến vào gian 、chạy dài ）hồi lượng hàm 1 quay đến ，sẽ xấu "Nhân vật1 đã " của 
+- **việc mật độ trước ** — mục Ống kínhBắt buộcĐẩy tới (push in / dolly in)hoặc việc ，thuần  của Không khíỐng kínhhồi hợp nhất đến có việc công thể  của Ống kínhgiữa 
+- **đạo diễnkiểm chiếu ** — Phân cảnhsau tự kiểm ：Không khílà  của còn là mở  của ？như quả một đạo diễnsẽ hàm dài Ống kính1 tạo  của đoạn ，không cần tạo 
+
+---
+
+## 6、1 quay đến （dài Ống kínhhợp nhất ）
+
+- **hàm mục tệp ** — Nhân vậtkiếm chưa báo rỗng gian 、/、từ an toàn đến  của trình 。việc giữa dài Ống kính của giá trị là "không cho  của máy sẽ "
+- **kiểu Bối cảnh** — Nhân vậttự chạy chạy 、mở cổng kiếm gian 、từ chính thường rỗng gian tiến vào bất thường rỗng gian 、
+- **biểu tâm cách thức** — ở Góc quaychữ đoạn dẫn chỉnh đường dẫn（như "1 quay đến ：Nhân vậtchạy →Đẩy tới (push in / dolly in)vào gian →Nhân vậtsáng Tĩnh (static)"），Mô tả hình ảnhgiữa tác vụ  và 
+- **Thời lượngmở rộng ** — dài Ống kínhgiữ chép tạo nén ，đơn quay  6s trên hạn ，nhưng không vượt  15s
+- **sát chép ** — 1 quay đến  của thời giandài ，"phát sinh " của 。dài Ống kínhsách thì là chép tạo thiết bị 
+
+---
+
+## 7、ngườiđộng thiết tính 
+
+- **đơn ngườilà chính trường ** — việc giữa nhất hợp lệ của đoạn là Nhân vậtxử 。Bảng phân cảnhgiữa đơn ngườiỐng kính của Tỷ lệhồi cao với 
+- **phụ hồi tỷ nguồn đổi trùng cần ** — Nhân vậtxem đến saokhông trùng cần ，Nhân vật của phụ hồi trùng cần 。Bảng phân cảnhhồi trước an sắp "Nhân vậtphụ hồi " của Ống kính，phi "việc sách thể " của Ống kính
+- **động tác vụ chép ** — giữa  của ngườikhông sẽ lớn độ động tác vụ ，là /nhỏ /chậm sau đăng 。Bảng phân cảnhgiữa "Nhân vậtđang mở "，"Nhân vật，tay không ý trưng địa "
+
+---
+
+## 8、Lời thoạilưu 
+
+- **ít hướng nhiều ** — đoạn  của Lời thoạihồi ít 。Nhân vậthướng lời có "sát chép "，để trì 
+- **hóa Lời thoại** — giữa  của Lời thoạihồi là thức  của ：nửa câu lời 、không ra cổng  của tên chữ 、nén thấp  của "khác động "。chỉnh  của câu sẽ xấu Không khí
+- **báo đạo Nhân vậtkhông báo đạo ** — nhất tốt  của lưu là "đã đã xem đến nhưng Nhân vậtcòn ở chính thường hướng lời "，hàm Nhân vật của không báo tình phụ 
+
+---
+
+## 9、chuyển trường thiết tính 
+
+- **Mặc định** — cùng trường trong Ống kínhgian hàm ，，lưu giữ bức 
+- **đoạn gian không cho ** — anh ấyLoạikhông cùng ，việc giữa đoạn gian  của chuyển trường hồi lượng không cho "" của rỗng gian ，bỏ phi là ý an sắp  của "giả an toàn "
+- ** của ** — việc giữa hàm ngắn tạm （0.5-1s）tác vụ chuyển trường ，kỳ gian saođều xem không thấy  = nhất lớn  của 。nhưng không hàm 
+- **thanh âm trước thi chuyển trường ** — vẽ mặt còn ở trên một Bối cảnh，thanh âm đã đã là dưới một Bối cảnh của bất thường Âm hiệu。hàm thanh âm "vào "vẽ mặt ，chép tạo  của 
