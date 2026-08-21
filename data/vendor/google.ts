@@ -171,7 +171,7 @@ const vendor: VendorConfig = {
       mode: ["text", "singleImage", "startEndRequired"],
       audio: false,
       durationResolutionMap: [
-        { duration: [5, 6, 8], resolution: ["720p", "1080p"] },
+        { duration: [4, 6, 8], resolution: ["720p", "1080p"] },
       ],
     },
     {
@@ -181,7 +181,7 @@ const vendor: VendorConfig = {
       mode: ["text", "singleImage"],
       audio: false,
       durationResolutionMap: [
-        { duration: [5, 6, 8], resolution: ["720p", "1080p"] },
+        { duration: [4, 6, 8], resolution: ["720p", "1080p"] },
       ],
     },
   ],
@@ -301,7 +301,12 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
     modelName = "veo-3.1-generate-preview";
   }
 
-  logger(`[Google Veo] Bắt đầu tạo video với mô hình: ${modelName}, thời lượng: ${config.duration}s`);
+  let dur = Number(config.duration) || 6;
+  if (dur !== 4 && dur !== 6 && dur !== 8) {
+    dur = dur <= 4 ? 4 : dur <= 6 ? 6 : 8;
+  }
+
+  logger(`[Google Veo] Bắt đầu tạo video với mô hình: ${modelName}, thời lượng: ${dur}s`);
 
   const submitUrl = `${baseUrl}/v1beta/models/${modelName}:predictLongRunning?key=${apiKey}`;
   const instance: Record<string, any> = { prompt: config.prompt };
@@ -320,8 +325,7 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
       instances: [instance],
       parameters: {
         aspectRatio: config.aspectRatio || "16:9",
-        durationSeconds: config.duration || 5,
-        personGeneration: "allow_adult",
+        durationSeconds: dur,
       }
     }),
   });
