@@ -1,4 +1,4 @@
-# Thanh Xuân & Trưởng Thành · đạo diễnviệc tay thức thể gói 
+# Thanh Xuân & Trưởng Thành · Sổ tay Đạo diễn Thể loại
 
 ## 
 

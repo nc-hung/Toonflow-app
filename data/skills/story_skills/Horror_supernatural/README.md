@@ -1,4 +1,4 @@
-# bất  · đạo diễnviệc tay thức thể gói 
+# Kinh Dị & Siêu Nhiên · Sổ tay Đạo diễn Thể loại
 
 ## 
 

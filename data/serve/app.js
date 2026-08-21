@@ -251797,30 +251797,49 @@ var require_dist10 = __commonJS({
 });
 
 // src/utils/ai.ts
+async function getFallbackModelName() {
+  try {
+    const vendors = await utils_default.db("o_vendorConfig").where("enable", 1);
+    for (const v of vendors) {
+      const models = await utils_default.vendor.getModelList(v.id);
+      const textModel = models.find((m) => m.type === "text");
+      if (textModel) {
+        return `${v.id}:${textModel.modelName}`;
+      }
+    }
+    for (const vId of ["google", "deepseek", "openai", "toonflow", "atlascloud"]) {
+      const v = await utils_default.db("o_vendorConfig").where("id", vId).first();
+      if (v) {
+        const inputVals = JSON.parse(v.inputValues || "{}");
+        if (inputVals.apiKey && inputVals.apiKey.trim()) {
+          const models = await utils_default.vendor.getModelList(vId);
+          const textModel = models.find((m) => m.type === "text");
+          if (textModel) {
+            return `${vId}:${textModel.modelName}`;
+          }
+        }
+      }
+    }
+  } catch {
+  }
+  return null;
+}
 async function resolveModelName(value) {
   if (AiTypeValues.includes(value)) {
     const agentUseModeVal = await utils_default.db("o_setting").where("key", "agentUseMode").first();
     if (agentUseModeVal?.value == "1") {
-      const agentDeployData2 = await utils_default.db("o_agentDeploy").where("key", value).first();
-      if (!agentDeployData2?.modelName) throw new Error(`Trong ch\u1EBF \u0111\u1ED9 c\u1EA5u h\xECnh n\xE2ng cao, kh\xF4ng t\xECm th\u1EA5y c\u1EA5u h\xECnh m\xF4 h\xECnh t\u01B0\u01A1ng \u1EE9ng ${value}`);
-      return agentDeployData2?.modelName;
+      const agentDeployData = await utils_default.db("o_agentDeploy").where("key", value).first();
+      if (agentDeployData?.modelName) return agentDeployData.modelName;
+      const fallback2 = await getFallbackModelName();
+      if (fallback2) return fallback2;
+      throw new Error(`Trong ch\u1EBF \u0111\u1ED9 c\u1EA5u h\xECnh n\xE2ng cao, ch\u01B0a c\u1EA5u h\xECnh m\xF4 h\xECnh cho [${value}]. Vui l\xF2ng v\xE0o C\xE0i \u0111\u1EB7t -> C\u1EA5u h\xECnh Agent.`);
     }
-    if (agentUseModeVal?.value == "0") {
-      const [mainly] = value.split(/:(.+)/);
-      const mainlyData = await utils_default.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`Trong ch\u1EBF \u0111\u1ED9 c\u1EA5u h\xECnh c\u01A1 b\u1EA3n , kh\xF4ng t\xECm th\u1EA5y c\u1EA5u h\xECnh tri\u1EC3n khai ${value}`);
-      return mainlyData?.modelName;
-    }
-    const agentDeployData = await utils_default.db("o_agentDeploy").where("key", value).first();
-    let modelName = null;
-    if (!agentDeployData?.modelName) {
-      const [mainly] = agentDeployData.key.split(/:(.+)/);
-      const mainlyData = await utils_default.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`Kh\xF4ng t\xECm th\u1EA5y c\u1EA5u h\xECnh tri\u1EC3n khai ${value}`);
-      modelName = mainlyData.modelName;
-    }
-    modelName = agentDeployData?.modelName || modelName;
-    return modelName;
+    const [mainly] = value.split(/:(.+)/);
+    const mainlyData = await utils_default.db("o_agentDeploy").where("key", mainly).first();
+    if (mainlyData?.modelName) return mainlyData.modelName;
+    const fallback = await getFallbackModelName();
+    if (fallback) return fallback;
+    throw new Error(`Ch\u01B0a c\u1EA5u h\xECnh m\xF4 h\xECnh AI cho [${mainlyData?.name || value}]. Vui l\xF2ng v\xE0o m\u1EE5c "C\xE0i \u0111\u1EB7t ToonFlow -> C\u1EA5u h\xECnh Agent" \u0111\u1EC3 ch\u1ECDn Nh\xE0 cung c\u1EA5p v\xE0 M\xF4 h\xECnh.`);
   }
   return value;
 }
@@ -251828,24 +251847,12 @@ async function getModelConfig(value) {
   if (AiTypeValues.includes(value)) {
     const agentUseModeVal = await utils_default.db("o_setting").where("key", "agentUseMode").first();
     if (agentUseModeVal?.value == "1") {
-      const agentDeployData2 = await utils_default.db("o_agentDeploy").where("key", value).first();
-      if (!agentDeployData2?.modelName) throw new Error(`Trong ch\u1EBF \u0111\u1ED9 c\u1EA5u h\xECnh n\xE2ng cao, kh\xF4ng t\xECm th\u1EA5y c\u1EA5u h\xECnh m\xF4 h\xECnh t\u01B0\u01A1ng \u1EE9ng ${value}`);
-      return agentDeployData2;
+      const agentDeployData = await utils_default.db("o_agentDeploy").where("key", value).first();
+      if (agentDeployData?.modelName) return agentDeployData;
     }
-    if (agentUseModeVal?.value == "0") {
-      const [mainly] = value.split(/:(.+)/);
-      const mainlyData = await utils_default.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`Trong ch\u1EBF \u0111\u1ED9 c\u1EA5u h\xECnh c\u01A1 b\u1EA3n , kh\xF4ng t\xECm th\u1EA5y c\u1EA5u h\xECnh tri\u1EC3n khai ${value}`);
-      return mainlyData;
-    }
-    const agentDeployData = await utils_default.db("o_agentDeploy").where("key", value).first();
-    if (!agentDeployData?.modelName) {
-      const [mainly] = agentDeployData.key.split(/:(.+)/);
-      const mainlyData = await utils_default.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`Kh\xF4ng t\xECm th\u1EA5y c\u1EA5u h\xECnh tri\u1EC3n khai ${value}`);
-      return mainlyData;
-    }
-    return agentDeployData;
+    const [mainly] = value.split(/:(.+)/);
+    const mainlyData = await utils_default.db("o_agentDeploy").where("key", mainly).first();
+    return mainlyData || null;
   }
   return null;
 }

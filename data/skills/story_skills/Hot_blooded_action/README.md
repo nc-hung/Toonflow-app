@@ -1,4 +1,4 @@
-# Thiếu niên · đạo diễnviệc tay thức thể gói 
+# Hành Động & Nhiệt Huyết · Sổ tay Đạo diễn Thể loại
 
 ## 
 

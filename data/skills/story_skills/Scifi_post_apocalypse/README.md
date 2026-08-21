@@ -1,4 +1,4 @@
-# Khoa Học Viễn Tưởng / Tận Thế · đạo diễnviệc tay thức thể gói 
+# Khoa Học Viễn Tưởng · Tận Thế & Tương Lai
 
 ## 
 

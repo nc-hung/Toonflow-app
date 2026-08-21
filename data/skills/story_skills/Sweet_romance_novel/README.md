@@ -1,4 +1,4 @@
-# Ngôn Tình Ngọt Ngào · đạo diễnviệc tay thức thể gói 
+# Ngôn Tình Ngọt Ngào · Sổ tay Đạo diễn Thể loại
 
 ## 
 

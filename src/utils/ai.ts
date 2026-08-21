@@ -43,69 +43,68 @@ const AiTypeValues: AiType[] = [
   "productionAgent:storyboardTableAgent",
   "universalAi",
 ];
+async function getFallbackModelName(): Promise<`${string}:${string}` | null> {
+  try {
+    const vendors = await u.db("o_vendorConfig").where("enable", 1);
+    for (const v of vendors) {
+      const models = await u.vendor.getModelList(v.id);
+      const textModel = models.find((m: any) => m.type === "text");
+      if (textModel) {
+        return `${v.id}:${textModel.modelName}` as `${string}:${string}`;
+      }
+    }
+    for (const vId of ["google", "deepseek", "openai", "toonflow", "atlascloud"]) {
+      const v = await u.db("o_vendorConfig").where("id", vId).first();
+      if (v) {
+        const inputVals = JSON.parse(v.inputValues || "{}");
+        if (inputVals.apiKey && inputVals.apiKey.trim()) {
+          const models = await u.vendor.getModelList(vId);
+          const textModel = models.find((m: any) => m.type === "text");
+          if (textModel) {
+            return `${vId}:${textModel.modelName}` as `${string}:${string}`;
+          }
+        }
+      }
+    }
+  } catch {}
+  return null;
+}
+
 async function resolveModelName(value: AiType | `${string}:${string}`): Promise<`${string}:${string}`> {
   if (AiTypeValues.includes(value as AiType)) {
     const agentUseModeVal = await u.db("o_setting").where("key", "agentUseMode").first();
 
-    // Quy trình bình thường
     // Cấu hình nâng cao
     if (agentUseModeVal?.value == "1") {
       const agentDeployData = await u.db("o_agentDeploy").where("key", value).first();
-      if (!agentDeployData?.modelName) throw new Error(`Trong chế độ cấu hình nâng cao, không tìm thấy cấu hình mô hình tương ứng ${value}`);
-      return agentDeployData?.modelName as `${number}:${string}`;
-    }
-    // Cấu hình cơ bản 
-    if (agentUseModeVal?.value == "0") {
-      const [mainly] = value!.split(/:(.+)/);
-      const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`Trong chế độ cấu hình cơ bản , không tìm thấy cấu hình triển khai ${value}`);
-      return mainlyData?.modelName as `${number}:${string}`;
+      if (agentDeployData?.modelName) return agentDeployData.modelName as `${string}:${string}`;
+      const fallback = await getFallbackModelName();
+      if (fallback) return fallback;
+      throw new Error(`Trong chế độ cấu hình nâng cao, chưa cấu hình mô hình cho [${value}]. Vui lòng vào Cài đặt -> Cấu hình Agent.`);
     }
 
-    //chưa tra đến agentUseModeVal giữ gốc Kiểm tra
-    const agentDeployData = await u.db("o_agentDeploy").where("key", value).first();
-    let modelName = null;
-
-    if (!agentDeployData?.modelName) {
-      const [mainly] = agentDeployData!.key!.split(/:(.+)/);
-      const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`Không tìm thấy cấu hình triển khai ${value}`);
-      modelName = mainlyData.modelName;
-    }
-    modelName = agentDeployData?.modelName || modelName;
-    return modelName as `${number}:${string}`;
+    // Cấu hình cơ bản
+    const [mainly] = value!.split(/:(.+)/);
+    const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
+    if (mainlyData?.modelName) return mainlyData.modelName as `${string}:${string}`;
+    
+    const fallback = await getFallbackModelName();
+    if (fallback) return fallback;
+    throw new Error(`Chưa cấu hình mô hình AI cho [${mainlyData?.name || value}]. Vui lòng vào mục "Cài đặt ToonFlow -> Cấu hình Agent" để chọn Nhà cung cấp và Mô hình.`);
   }
-  return value as `${number}:${string}`;
+  return value as `${string}:${string}`;
 }
 
 async function getModelConfig(value: AiType | `${string}:${string}`) {
   if (AiTypeValues.includes(value as AiType)) {
     const agentUseModeVal = await u.db("o_setting").where("key", "agentUseMode").first();
-    // Quy trình bình thường
-    // Cấu hình nâng cao
     if (agentUseModeVal?.value == "1") {
       const agentDeployData = await u.db("o_agentDeploy").where("key", value).first();
-      if (!agentDeployData?.modelName) throw new Error(`Trong chế độ cấu hình nâng cao, không tìm thấy cấu hình mô hình tương ứng ${value}`);
-      return agentDeployData;
+      if (agentDeployData?.modelName) return agentDeployData;
     }
-    // Cấu hình cơ bản 
-    if (agentUseModeVal?.value == "0") {
-      const [mainly] = value!.split(/:(.+)/);
-      const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`Trong chế độ cấu hình cơ bản , không tìm thấy cấu hình triển khai ${value}`);
-      return mainlyData;
-    }
-
-    // Không tìm thấy agentUseModelVal, duy trì quy trình gốc
-    const agentDeployData = await u.db("o_agentDeploy").where("key", value).first();
-
-    if (!agentDeployData?.modelName) {
-      const [mainly] = agentDeployData!.key!.split(/:(.+)/);
-      const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
-      if (!mainlyData?.modelName) throw new Error(`Không tìm thấy cấu hình triển khai ${value}`);
-      return mainlyData;
-    }
-    return agentDeployData;
+    const [mainly] = value!.split(/:(.+)/);
+    const mainlyData = await u.db("o_agentDeploy").where("key", mainly).first();
+    return mainlyData || null;
   }
   return null;
 }

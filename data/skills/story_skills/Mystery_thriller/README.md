@@ -1,4 +1,4 @@
-# khuyến lý  · đạo diễnviệc tay thức thể gói 
+# Hồi Hộp & Trinh Thám · Sổ tay Đạo diễn Thể loại
 
 ## 
 

@@ -1,4 +1,4 @@
-# Sử Thi Lịch Sử · đạo diễnviệc tay thức thể gói 
+# Sử Thi & Lịch Sử · Sổ tay Đạo diễn Thể loại
 
 ## 
 

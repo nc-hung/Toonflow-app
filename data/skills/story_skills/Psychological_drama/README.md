@@ -1,4 +1,4 @@
-# lý  · đạo diễnviệc tay thức thể gói 
+# Đấu Trí & Tâm Lý · Sổ tay Đạo diễn Thể loại
 
 ## 
 
