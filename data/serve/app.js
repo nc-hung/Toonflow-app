@@ -72119,9 +72119,17 @@ var init_getPath = __esm({
     getPath_default = (fileName) => {
       let basePath;
       if (typeof process.versions?.electron !== "undefined") {
-        const { app: app2 } = require("electron");
-        const userDataDir = app2.getPath("userData");
-        basePath = import_path2.default.join(userDataDir, "data");
+        try {
+          const { app: app2 } = require("electron");
+          if (app2 && app2.isPackaged) {
+            const userDataDir = app2.getPath("userData");
+            basePath = import_path2.default.join(userDataDir, "data");
+          } else {
+            basePath = import_path2.default.join(process.cwd(), "data");
+          }
+        } catch {
+          basePath = import_path2.default.join(process.cwd(), "data");
+        }
       } else {
         basePath = import_path2.default.join(process.cwd(), "data");
       }
@@ -97917,22 +97925,29 @@ var init_fixDB = __esm({
       await addColumn("o_assets", "audioBindState", "integer");
       await addColumn("o_modelPrompt", "fileName", "string");
       await addColumn("o_modelPrompt", "path", "string");
-      const vendorDataSelect = await utils_default.db("o_vendorConfig").whereIn("id", ["deepseek", "atlascloud"]).select("*");
-      if (!vendorDataSelect.find((i) => i.id == "deepseek")) {
-        await utils_default.db("o_vendorConfig").insert({
-          id: "deepseek",
-          inputValues: "{}",
-          models: "[]",
-          enable: 0
-        });
-      }
-      if (!vendorDataSelect.find((i) => i.id == "atlascloud")) {
-        await utils_default.db("o_vendorConfig").insert({
-          id: "atlascloud",
-          inputValues: "{}",
-          models: "[]",
-          enable: 0
-        });
+      const allDefaultVendors = [
+        "toonflow",
+        "volcengine",
+        "openai",
+        "minimax",
+        "grsai",
+        "klingai",
+        "volcengineSd2",
+        "vidu",
+        "null",
+        "deepseek",
+        "atlascloud"
+      ];
+      for (const vId of allDefaultVendors) {
+        const exists = await utils_default.db("o_vendorConfig").where("id", vId).first();
+        if (!exists) {
+          await utils_default.db("o_vendorConfig").insert({
+            id: vId,
+            inputValues: "{}",
+            models: "[]",
+            enable: vId === "deepseek" ? 1 : 0
+          });
+        }
       }
       const existAudioPrompt = await db_default("o_prompt").where("type", "audioBindPrompt").first();
       if (!existAudioPrompt)
@@ -252228,7 +252243,10 @@ function writeCode(id, tsCode) {
 }
 function getCode(id) {
   const rootDir = utils_default.getPath("vendor");
-  const targetFile = import_path7.default.join(rootDir, `${id}.ts`);
+  let targetFile = import_path7.default.join(rootDir, `${id}.ts`);
+  if (!import_fs5.default.existsSync(targetFile)) {
+    targetFile = import_path7.default.join(process.cwd(), "data", "vendor", `${id}.ts`);
+  }
   if (!import_fs5.default.existsSync(targetFile)) return "";
   return import_fs5.default.readFileSync(targetFile, "utf-8");
 }
@@ -270406,23 +270424,27 @@ var init_getVendorList = __esm({
       const data = await utils_default.db("o_vendorConfig").select("*");
       const list2 = (await Promise.all(
         data.map(async (item) => {
-          const vendor = utils_default.vendor.getVendor(item.id);
-          if (!vendor) {
-            await utils_default.db("o_vendorConfig").where("id", item.id).delete();
+          try {
+            const vendor = utils_default.vendor.getVendor(item.id);
+            if (!vendor) {
+              console.warn(`[getVendorList] Vendor not found: ${item.id}`);
+              return null;
+            }
+            return {
+              ...item,
+              inputValues: JSON.parse(item.inputValues ?? "{}"),
+              models: await utils_default.vendor.getModelList(item.id),
+              code: utils_default.vendor.getCode(item.id),
+              description: vendor.description ?? "",
+              inputs: vendor.inputs,
+              author: vendor.author,
+              name: vendor.name,
+              version: vendor.version ?? "1.0"
+            };
+          } catch (e) {
+            console.error(`[getVendorList] Error parsing vendor ${item.id}:`, e.message);
             return null;
           }
-          ;
-          return {
-            ...item,
-            inputValues: JSON.parse(item.inputValues ?? "{}"),
-            models: await utils_default.vendor.getModelList(item.id),
-            code: utils_default.vendor.getCode(item.id),
-            description: vendor.description ?? "",
-            inputs: vendor.inputs,
-            author: vendor.author,
-            name: vendor.name,
-            version: vendor.version ?? "1.0"
-          };
         })
       )).filter((i) => Boolean(i));
       list2.sort((a, b) => a.id === "toonflow" ? -1 : b.id === "toonflow" ? 1 : 0);

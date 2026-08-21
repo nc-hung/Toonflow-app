@@ -14,7 +14,10 @@ export function writeCode(id: string | number, tsCode: string) {
 
 export function getCode(id: string): string {
   const rootDir = u.getPath("vendor");
-  const targetFile = path.join(rootDir, `${id}.ts`);
+  let targetFile = path.join(rootDir, `${id}.ts`);
+  if (!fs.existsSync(targetFile)) {
+    targetFile = path.join(process.cwd(), "data", "vendor", `${id}.ts`);
+  }
   if (!fs.existsSync(targetFile)) return "";
   return fs.readFileSync(targetFile, "utf-8");
 }

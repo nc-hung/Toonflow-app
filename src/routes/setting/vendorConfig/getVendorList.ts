@@ -9,22 +9,27 @@ export default router.post("/", async (req, res) => {
   const list = (
     await Promise.all(
       data.map(async (item) => {
-        const vendor = u.vendor.getVendor(item.id!);
-        if (!vendor) {
-          await u.db("o_vendorConfig").where("id", item.id).delete();
-          return null
-        };
-        return {
-          ...item,
-          inputValues: JSON.parse(item.inputValues ?? "{}"),
-          models: await u.vendor.getModelList(item.id!),
-          code: u.vendor.getCode(item.id!),
-          description: vendor.description ?? "",
-          inputs: vendor.inputs,
-          author: vendor.author,
-          name: vendor.name,
-          version: vendor.version ?? "1.0",
-        };
+        try {
+          const vendor = u.vendor.getVendor(item.id!);
+          if (!vendor) {
+            console.warn(`[getVendorList] Vendor not found: ${item.id}`);
+            return null;
+          }
+          return {
+            ...item,
+            inputValues: JSON.parse(item.inputValues ?? "{}"),
+            models: await u.vendor.getModelList(item.id!),
+            code: u.vendor.getCode(item.id!),
+            description: vendor.description ?? "",
+            inputs: vendor.inputs,
+            author: vendor.author,
+            name: vendor.name,
+            version: vendor.version ?? "1.0",
+          };
+        } catch (e: any) {
+          console.error(`[getVendorList] Error parsing vendor ${item.id}:`, e.message);
+          return null;
+        }
       }),
     )
   ).filter((i) => Boolean(i));
