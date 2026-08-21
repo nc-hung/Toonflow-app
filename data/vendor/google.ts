@@ -115,7 +115,7 @@ const vendor: VendorConfig = {
   version: "2.0",
   author: "Toonflow",
   name: "Google (Gemini / Imagen / Veo)",
-  description: "Trọn bộ hệ sinh thái Google AI: Gemini (Văn bản & Suy luận), Imagen 3 (Tạo hình ảnh chân thực chất lượng cao) và Google Veo 2 (Sinh video độ phân giải cao).",
+  description: "Trọn bộ hệ sinh thái Google AI: Gemini 3.7 (Văn bản & Suy luận), Imagen 3.0 (Tạo hình ảnh chân thực chất lượng cao) và Google Veo 2 (Sinh video độ phân giải cao).",
   icon: "",
   inputs: [
     { key: "apiKey", label: "Google API Key", type: "password", required: true, placeholder: "Lấy khóa API tại Google AI Studio (aistudio.google.com)" },
@@ -137,26 +137,20 @@ const vendor: VendorConfig = {
     { name: "Gemini 1.5 Pro", modelName: "gemini-1.5-pro", type: "text", think: false },
     { name: "Gemini 1.5 Flash", modelName: "gemini-1.5-flash", type: "text", think: false },
 
-    // 2. Mô hình Tạo hình ảnh (Image Generation - Imagen 3)
+    // 2. Mô hình Tạo hình ảnh (Image Generation - Google Imagen 3)
     {
-      name: "Google Imagen 3.0 Pro",
+      name: "Google Imagen 3.0 Pro (Khuyên dùng)",
       modelName: "imagen-3.0-generate-002",
       type: "image",
       mode: ["text", "singleImage", "multiReference"],
-      associationSkills: "Hỗ trợ vẽ theo phong cách chân thực, anime và nghệ thuật",
+      associationSkills: "Chất lượng hình ảnh điện ảnh siêu nét",
     },
     {
-      name: "Google Imagen 3.0 Fast",
+      name: "Google Imagen 3.0 Fast (Tốc độ cao)",
       modelName: "imagen-3.0-fast-generate-001",
       type: "image",
       mode: ["text", "singleImage", "multiReference"],
-      associationSkills: "Tốc độ sinh ảnh cực nhanh",
-    },
-    {
-      name: "Google Imagen 3.0",
-      modelName: "imagen-3.0",
-      type: "image",
-      mode: ["text", "singleImage"],
+      associationSkills: "Tốc độ sinh ảnh nhanh",
     },
 
     // 3. Mô hình Tạo video (Video Generation - Google Veo)
@@ -208,16 +202,20 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
   const baseUrl = getBaseUrl();
 
-  logger(`[Google Imagen] Bắt đầu tạo hình ảnh với mô hình: ${model.modelName}`);
+  let modelName = model.modelName;
+  if (modelName === "imagen-3.0" || !modelName) {
+    modelName = "imagen-3.0-generate-002";
+  }
 
-  // Chuẩn hóa tỷ lệ khung hình
+  logger(`[Google Imagen] Bắt đầu tạo hình ảnh với mô hình: ${modelName}`);
+
   let ratio = "1:1";
   if (config.aspectRatio === "16:9" || config.aspectRatio === "9:16" || config.aspectRatio === "4:3" || config.aspectRatio === "3:4" || config.aspectRatio === "1:1") {
     ratio = config.aspectRatio;
   }
 
-  // Thử endpoint predict trước (Imagen 3 API chuẩn)
-  const predictUrl = `${baseUrl}/v1beta/models/${model.modelName}:predict?key=${apiKey}`;
+  // 1. Thử endpoint predict (Google AI Studio REST API)
+  const predictUrl = `${baseUrl}/v1beta/models/${modelName}:predict?key=${apiKey}`;
   const requestBody = {
     instances: [
       { prompt: config.prompt }
@@ -225,6 +223,7 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
     parameters: {
       sampleCount: 1,
       aspectRatio: ratio,
+      personGeneration: "ALLOW_ADULT",
       outputMimeType: "image/jpeg"
     }
   };
@@ -232,48 +231,58 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
   try {
     const resp = await fetch(predictUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "x-goog-api-key": apiKey
+      },
       body: JSON.stringify(requestBody),
     });
 
-    if (resp.ok) {
-      const data = await resp.json();
-      const b64 = data.predictions?.[0]?.bytesBase64Encoded;
-      if (b64) {
-        logger("[Google Imagen] Tạo ảnh thành công qua predict API!");
-        return `data:image/jpeg;base64,${b64}`;
-      }
+    const data = await resp.json();
+    if (resp.ok && data.predictions && data.predictions[0]?.bytesBase64Encoded) {
+      logger("[Google Imagen] Tạo ảnh thành công qua predict API!");
+      return `data:image/jpeg;base64,${data.predictions[0].bytesBase64Encoded}`;
+    }
+    if (data.error?.message) {
+      logger(`[Google Imagen] Predict trả về lỗi: ${data.error.message}, thử fallback...`);
     }
   } catch (e: any) {
-    logger(`[Google Imagen] Predict API lỗi, thử endpoint fallback: ${e.message}`);
+    logger(`[Google Imagen] Lỗi kết nối predict: ${e.message}`);
   }
 
-  // Fallback endpoint: generateImages
-  const fallbackUrl = `${baseUrl}/v1beta/models/${model.modelName}:generateImages?key=${apiKey}`;
-  const fallbackResp = await fetch(fallbackUrl, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      prompt: config.prompt,
-      numberOfImages: 1,
-      aspectRatio: ratio,
-      outputMimeType: "image/jpeg"
-    }),
-  });
+  // 2. Thử endpoint fallback generateImages
+  const fallbackUrl = `${baseUrl}/v1beta/models/${modelName}:generateImages?key=${apiKey}`;
+  try {
+    const fallbackResp = await fetch(fallbackUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-goog-api-key": apiKey
+      },
+      body: JSON.stringify({
+        prompt: config.prompt,
+        numberOfImages: 1,
+        aspectRatio: ratio,
+        outputMimeType: "image/jpeg"
+      }),
+    });
 
-  if (!fallbackResp.ok) {
-    const errText = await fallbackResp.text();
-    throw new Error(`Google Imagen tạo ảnh thất bại: ${errText}`);
+    const fbData = await fallbackResp.json();
+    if (fallbackResp.ok) {
+      const imgBytes = fbData.generatedImages?.[0]?.image?.imageBytes || fbData.predictions?.[0]?.bytesBase64Encoded;
+      if (imgBytes) {
+        logger("[Google Imagen] Tạo ảnh thành công qua generateImages API!");
+        return `data:image/jpeg;base64,${imgBytes}`;
+      }
+    }
+    if (fbData.error?.message) {
+      throw new Error(`Google Imagen: ${fbData.error.message}`);
+    }
+  } catch (e: any) {
+    throw new Error(`Google Imagen tạo ảnh thất bại: ${e.message}`);
   }
 
-  const fbData = await fallbackResp.json();
-  const imgBytes = fbData.generatedImages?.[0]?.image?.imageBytes || fbData.predictions?.[0]?.bytesBase64Encoded;
-  if (!imgBytes) {
-    throw new Error("Google Imagen không trả về dữ liệu hình ảnh");
-  }
-
-  logger("[Google Imagen] Tạo ảnh thành công!");
-  return `data:image/jpeg;base64,${imgBytes}`;
+  throw new Error("Google Imagen không trả về dữ liệu hình ảnh hợp lệ. Vui lòng kiểm tra quyền truy cập Imagen của API Key.");
 };
 
 const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<string> => {
