@@ -127,11 +127,12 @@ const vendor: VendorConfig = {
   },
   models: [
     // 1. Mô hình Văn bản & Suy luận (Text & Reasoning)
-    { name: "Gemini 2.5 Flash", modelName: "gemini-2.5-flash", type: "text", think: true },
-    { name: "Gemini 2.5 Pro", modelName: "gemini-2.5-pro", type: "text", think: true },
-    { name: "Gemini 2.0 Flash", modelName: "gemini-2.0-flash", type: "text", think: false },
-    { name: "Gemini 2.0 Flash Lite", modelName: "gemini-2.0-flash-lite", type: "text", think: false },
+    { name: "Gemini 3.1 Pro Preview", modelName: "gemini-3.1-pro-preview", type: "text", think: true },
+    { name: "Gemini 3.0 Pro Preview", modelName: "gemini-3.0-pro-preview", type: "text", think: true },
+    { name: "Gemini 3.0 Flash Preview", modelName: "gemini-3.0-flash-preview", type: "text", think: true },
+    { name: "Gemini 2.0 Flash (Khuyên dùng)", modelName: "gemini-2.0-flash", type: "text", think: false },
     { name: "Gemini 2.0 Flash Thinking", modelName: "gemini-2.0-flash-thinking-exp-01-21", type: "text", think: true },
+    { name: "Gemini 2.0 Flash Lite", modelName: "gemini-2.0-flash-lite", type: "text", think: false },
     { name: "Gemini 2.0 Pro Experimental", modelName: "gemini-2.0-pro-exp-02-05", type: "text", think: false },
     { name: "Gemini 1.5 Pro", modelName: "gemini-1.5-pro", type: "text", think: false },
     { name: "Gemini 1.5 Flash", modelName: "gemini-1.5-flash", type: "text", think: false },
