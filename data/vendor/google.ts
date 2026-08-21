@@ -391,8 +391,12 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
 const ttsRequest = async (config: TTSConfig, model: TTSModel): Promise<string> => {
   return "";
 };
-const checkForUpdates = async (): Promise<{ hasUpdate: boolean; latestVersion: string; notice: string }>;
-const updateVendor = async (): Promise<string>;
+const checkForUpdates = async (): Promise<{ hasUpdate: boolean; latestVersion: string; notice: string }> => {
+  return { hasUpdate: false, latestVersion: "2.0", notice: "" };
+};
+const updateVendor = async (): Promise<string> => {
+  return "";
+};
 // ============================================================
 // Export
 // ============================================================
@@ -401,4 +405,6 @@ exports.textRequest = textRequest;
 exports.imageRequest = imageRequest;
 exports.videoRequest = videoRequest;
 exports.ttsRequest = ttsRequest;
+exports.checkForUpdates = checkForUpdates;
+exports.updateVendor = updateVendor;
 export {};
