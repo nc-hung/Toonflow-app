@@ -108,6 +108,7 @@ export default async (knex: Knex): Promise<void> => {
     "null",
     "deepseek",
     "atlascloud",
+    "google",
   ];
   for (const vId of allDefaultVendors) {
     const exists = await u.db("o_vendorConfig").where("id", vId).first();
