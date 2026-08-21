@@ -115,11 +115,11 @@ const vendor: VendorConfig = {
   version: "2.0",
   author: "Toonflow",
   name: "Google (Gemini / Imagen / Veo)",
-  description: "Trọn bộ hệ sinh thái Google AI: Gemini 3.7 (Văn bản & Suy luận), Imagen 3.0 (Tạo hình ảnh chân thực chất lượng cao) và Google Veo 2 (Sinh video độ phân giải cao).",
+  description: "Trọn bộ hệ sinh thái Google AI chính thức: Gemini 3.7 (Văn bản & Suy luận), Gemini 3.1 Image / Nano Banana (Tạo hình ảnh sắc nét) và Google Veo 3.1 (Sinh video độ nét cao).",
   icon: "",
   inputs: [
     { key: "apiKey", label: "Google API Key", type: "password", required: true, placeholder: "Lấy khóa API tại Google AI Studio (aistudio.google.com)" },
-    { key: "baseUrl", label: "Địa chỉ yêu cầu (Tùy chọn)", type: "url", required: false, placeholder: "Mặc định để trống (dùng https://generativelanguage.googleapis.com)" },
+    { key: "baseUrl", label: "Địa chỉ yêu cầu (Tùy chọn)", type: "url", required: false, placeholder: "Mặc định: https://generativelanguage.googleapis.com" },
   ],
   inputValues: {
     apiKey: "",
@@ -128,35 +128,45 @@ const vendor: VendorConfig = {
   models: [
     // 1. Mô hình Văn bản & Suy luận (Text & Reasoning)
     { name: "Gemini 3.7 Flash (Khuyên dùng)", modelName: "gemini-3.7-flash", type: "text", think: true },
-    { name: "Gemini 3.7 Pro", modelName: "gemini-3.7-pro", type: "text", think: true },
     { name: "Gemini 3.6 Flash", modelName: "gemini-3.6-flash", type: "text", think: false },
-    { name: "Gemini 3.6 Pro", modelName: "gemini-3.6-pro", type: "text", think: true },
+    { name: "Gemini 3.5 Flash", modelName: "gemini-3.5-flash", type: "text", think: false },
     { name: "Gemini 3.1 Pro Preview", modelName: "gemini-3.1-pro-preview", type: "text", think: true },
-    { name: "Gemini 3.0 Flash", modelName: "gemini-3.0-flash", type: "text", think: false },
-    { name: "Gemini 3.0 Pro", modelName: "gemini-3.0-pro", type: "text", think: true },
-    { name: "Gemini 1.5 Pro", modelName: "gemini-1.5-pro", type: "text", think: false },
-    { name: "Gemini 1.5 Flash", modelName: "gemini-1.5-flash", type: "text", think: false },
+    { name: "Gemini 2.5 Flash", modelName: "gemini-2.5-flash", type: "text", think: true },
 
-    // 2. Mô hình Tạo hình ảnh (Image Generation - Google Imagen 3)
+    // 2. Mô hình Tạo hình ảnh (Image Generation)
     {
-      name: "Google Imagen 3.0 Pro (Khuyên dùng)",
-      modelName: "imagen-3.0-generate-002",
+      name: "Google Gemini 3.1 Flash Image (Khuyên dùng - Nhanh & Đẹp)",
+      modelName: "gemini-3.1-flash-image",
       type: "image",
       mode: ["text", "singleImage", "multiReference"],
-      associationSkills: "Chất lượng hình ảnh điện ảnh siêu nét",
+      associationSkills: "Sinh hình ảnh thế hệ mới nhất của Google, độ chi tiết cao",
     },
     {
-      name: "Google Imagen 3.0 Fast (Tốc độ cao)",
-      modelName: "imagen-3.0-fast-generate-001",
+      name: "Google Gemini 3.0 Pro Image (Chuyên nghiệp)",
+      modelName: "gemini-3-pro-image",
       type: "image",
       mode: ["text", "singleImage", "multiReference"],
-      associationSkills: "Tốc độ sinh ảnh nhanh",
+      associationSkills: "Chất lượng hình ảnh điện ảnh chi tiết cao",
+    },
+    {
+      name: "Google Nano Banana Pro",
+      modelName: "nano-banana-pro-preview",
+      type: "image",
+      mode: ["text", "singleImage", "multiReference"],
+      associationSkills: "Giữ nhận diện nhân vật và phong cách nhất quán",
+    },
+    {
+      name: "Google Gemini 2.5 Flash Image",
+      modelName: "gemini-2.5-flash-image",
+      type: "image",
+      mode: ["text", "singleImage", "multiReference"],
+      associationSkills: "Tốc độ sinh ảnh nhanh và ổn định",
     },
 
     // 3. Mô hình Tạo video (Video Generation - Google Veo)
     {
-      name: "Google Veo 2.0 Pro",
-      modelName: "veo-2.0-generate-001",
+      name: "Google Veo 3.1 Pro",
+      modelName: "veo-3.1-generate-preview",
       type: "video",
       mode: ["text", "singleImage", "startEndRequired"],
       audio: false,
@@ -165,8 +175,8 @@ const vendor: VendorConfig = {
       ],
     },
     {
-      name: "Google Veo 2.0 Fast",
-      modelName: "veo-2.0-fast-generate-001",
+      name: "Google Veo 3.1 Fast",
+      modelName: "veo-3.1-fast-generate-preview",
       type: "video",
       mode: ["text", "singleImage"],
       audio: false,
@@ -202,87 +212,83 @@ const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<str
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
   const baseUrl = getBaseUrl();
 
+  // Normalize modelName if old invalid model was selected
   let modelName = model.modelName;
-  if (modelName === "imagen-3.0" || !modelName) {
-    modelName = "imagen-3.0-generate-002";
+  if (!modelName || modelName.includes("imagen-3.0") || modelName === "imagen-3.0") {
+    modelName = "gemini-3.1-flash-image";
   }
 
-  logger(`[Google Imagen] Bắt đầu tạo hình ảnh với mô hình: ${modelName}`);
+  logger(`[Google Image] Bắt đầu tạo hình ảnh với mô hình: ${modelName}`);
 
-  let ratio = "1:1";
-  if (config.aspectRatio === "16:9" || config.aspectRatio === "9:16" || config.aspectRatio === "4:3" || config.aspectRatio === "3:4" || config.aspectRatio === "1:1") {
-    ratio = config.aspectRatio;
+  // Gọi Google Generative Language generateContent API với responseModalities: IMAGE
+  const generateUrl = `${baseUrl}/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
+
+  // Chuẩn bị nội dung prompt và ảnh tham chiếu nếu có
+  const parts: any[] = [];
+  if (config.imageBase64 && config.imageBase64.length > 0) {
+    for (const b64 of config.imageBase64) {
+      if (b64) {
+        const cleanB64 = b64.replace(/^data:image\/\w+;base64,/, "");
+        parts.push({
+          inlineData: {
+            mimeType: "image/jpeg",
+            data: cleanB64,
+          }
+        });
+      }
+    }
   }
 
-  // 1. Thử endpoint predict (Google AI Studio REST API)
-  const predictUrl = `${baseUrl}/v1beta/models/${modelName}:predict?key=${apiKey}`;
+  let promptText = config.prompt;
+  if (config.aspectRatio) {
+    promptText += ` --aspect-ratio ${config.aspectRatio}`;
+  }
+  parts.push({ text: promptText });
+
   const requestBody = {
-    instances: [
-      { prompt: config.prompt }
+    contents: [
+      { parts }
     ],
-    parameters: {
-      sampleCount: 1,
-      aspectRatio: ratio,
-      personGeneration: "ALLOW_ADULT",
-      outputMimeType: "image/jpeg"
+    generationConfig: {
+      responseModalities: ["IMAGE", "TEXT"]
     }
   };
 
-  try {
-    const resp = await fetch(predictUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-goog-api-key": apiKey
-      },
-      body: JSON.stringify(requestBody),
-    });
+  const resp = await fetch(generateUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-goog-api-key": apiKey,
+    },
+    body: JSON.stringify(requestBody),
+  });
 
-    const data = await resp.json();
-    if (resp.ok && data.predictions && data.predictions[0]?.bytesBase64Encoded) {
-      logger("[Google Imagen] Tạo ảnh thành công qua predict API!");
-      return `data:image/jpeg;base64,${data.predictions[0].bytesBase64Encoded}`;
-    }
-    if (data.error?.message) {
-      logger(`[Google Imagen] Predict trả về lỗi: ${data.error.message}, thử fallback...`);
-    }
-  } catch (e: any) {
-    logger(`[Google Imagen] Lỗi kết nối predict: ${e.message}`);
+  const resText = await resp.text();
+  let data: any = {};
+  try {
+    data = JSON.parse(resText);
+  } catch {
+    throw new Error(`Google API trả về phản hồi không hợp lệ: ${resText.slice(0, 150)}`);
   }
 
-  // 2. Thử endpoint fallback generateImages
-  const fallbackUrl = `${baseUrl}/v1beta/models/${modelName}:generateImages?key=${apiKey}`;
-  try {
-    const fallbackResp = await fetch(fallbackUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-goog-api-key": apiKey
-      },
-      body: JSON.stringify({
-        prompt: config.prompt,
-        numberOfImages: 1,
-        aspectRatio: ratio,
-        outputMimeType: "image/jpeg"
-      }),
-    });
+  if (!resp.ok) {
+    const errMsg = data.error?.message || `Mã lỗi ${resp.status}`;
+    throw new Error(`Google tạo ảnh thất bại: ${errMsg}`);
+  }
 
-    const fbData = await fallbackResp.json();
-    if (fallbackResp.ok) {
-      const imgBytes = fbData.generatedImages?.[0]?.image?.imageBytes || fbData.predictions?.[0]?.bytesBase64Encoded;
-      if (imgBytes) {
-        logger("[Google Imagen] Tạo ảnh thành công qua generateImages API!");
-        return `data:image/jpeg;base64,${imgBytes}`;
+  const candidates = data.candidates || [];
+  if (candidates.length > 0) {
+    const candidateParts = candidates[0].content?.parts || [];
+    for (const p of candidateParts) {
+      if (p.inlineData?.data) {
+        const mime = p.inlineData.mimeType || "image/jpeg";
+        logger("[Google Image] Tạo ảnh thành công!");
+        return `data:${mime};base64,${p.inlineData.data}`;
       }
     }
-    if (fbData.error?.message) {
-      throw new Error(`Google Imagen: ${fbData.error.message}`);
-    }
-  } catch (e: any) {
-    throw new Error(`Google Imagen tạo ảnh thất bại: ${e.message}`);
   }
 
-  throw new Error("Google Imagen không trả về dữ liệu hình ảnh hợp lệ. Vui lòng kiểm tra quyền truy cập Imagen của API Key.");
+  throw new Error("Google không trả về dữ liệu hình ảnh (có thể do vi phạm chính sách an toàn nội dung)");
 };
 
 const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<string> => {
@@ -290,9 +296,14 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
   const baseUrl = getBaseUrl();
 
-  logger(`[Google Veo] Bắt đầu tạo video với mô hình: ${model.modelName}, thời lượng: ${config.duration}s`);
+  let modelName = model.modelName;
+  if (!modelName || modelName.includes("veo-2.0")) {
+    modelName = "veo-3.1-generate-preview";
+  }
 
-  const submitUrl = `${baseUrl}/v1beta/models/${model.modelName}:predictLongRunning?key=${apiKey}`;
+  logger(`[Google Veo] Bắt đầu tạo video với mô hình: ${modelName}, thời lượng: ${config.duration}s`);
+
+  const submitUrl = `${baseUrl}/v1beta/models/${modelName}:predictLongRunning?key=${apiKey}`;
   const instance: Record<string, any> = { prompt: config.prompt };
   if (config.imageBase64 && config.imageBase64[0]) {
     const rawB64 = config.imageBase64[0].replace(/^data:image\/\w+;base64,/, "");
@@ -301,7 +312,10 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
 
   const submitResp = await fetch(submitUrl, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "x-goog-api-key": apiKey
+    },
     body: JSON.stringify({
       instances: [instance],
       parameters: {
@@ -312,12 +326,19 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
     }),
   });
 
+  const submitText = await submitResp.text();
+  let submitData: any = {};
+  try {
+    submitData = JSON.parse(submitText);
+  } catch {
+    throw new Error(`Google Veo trả về phản hồi không hợp lệ: ${submitText.slice(0, 150)}`);
+  }
+
   if (!submitResp.ok) {
-    const errText = await submitResp.text();
+    const errText = submitData.error?.message || `Mã lỗi ${submitResp.status}`;
     throw new Error(`Google Veo gửi tác vụ thất bại: ${errText}`);
   }
 
-  const submitData = await submitResp.json();
   const operationName = submitData.name;
   if (!operationName) {
     throw new Error("Google Veo không trả về mã tác vụ (Operation ID)");
@@ -329,12 +350,17 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
   const pollResult = await pollTask(
     async () => {
       const pollUrl = `${baseUrl}/v1beta/${operationName}?key=${apiKey}`;
-      const pResp = await fetch(pollUrl);
-      if (!pResp.ok) {
-        const pErr = await pResp.text();
-        throw new Error(`Truy vấn trạng thái Veo thất bại: ${pErr}`);
+      const pResp = await fetch(pollUrl, {
+        headers: { "x-goog-api-key": apiKey }
+      });
+      const pText = await pResp.text();
+      let pData: any = {};
+      try {
+        pData = JSON.parse(pText);
+      } catch {
+        return { completed: false };
       }
-      const pData = await pResp.json();
+
       if (pData.error) {
         return { completed: true, error: pData.error.message || JSON.stringify(pData.error) };
       }
@@ -365,12 +391,8 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
 const ttsRequest = async (config: TTSConfig, model: TTSModel): Promise<string> => {
   return "";
 };
-const checkForUpdates = async (): Promise<{ hasUpdate: boolean; latestVersion: string; notice: string }> => {
-  return { hasUpdate: false, latestVersion: "2.0", notice: "" };
-};
-const updateVendor = async (): Promise<string> => {
-  return "";
-};
+const checkForUpdates = async (): Promise<{ hasUpdate: boolean; latestVersion: string; notice: string }>;
+const updateVendor = async (): Promise<string>;
 // ============================================================
 // Export
 // ============================================================
@@ -379,6 +401,4 @@ exports.textRequest = textRequest;
 exports.imageRequest = imageRequest;
 exports.videoRequest = videoRequest;
 exports.ttsRequest = ttsRequest;
-exports.checkForUpdates = checkForUpdates;
-exports.updateVendor = updateVendor;
 export {};
