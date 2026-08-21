@@ -125,12 +125,12 @@ const vendor: VendorConfig = {
     apiKey: "",
     baseUrl: "https://api.openai.com/v1",
   },
-  models: [
-    { name: "GPT-4o", modelName: "gpt-4o", type: "text", think: false },
-    { name: "GPT-4.1", modelName: "gpt-4.1", type: "text", think: false },
-    { name: "GPT-5.1", modelName: "gpt-5.1", type: "text", think: false },
-    { name: "GPT-5.2", modelName: "gpt-5.2", type: "text", think: false },
-    { name: "GPT-5.4", modelName: "gpt-5.4", type: "text", think: false },
+    models: [
+    { name: "GPT-4o (Khuyên dùng)", modelName: "gpt-4o", type: "text", think: false },
+    { name: "GPT-4o Mini", modelName: "gpt-4o-mini", type: "text", think: false },
+    { name: "o1 (Suy luận chuyên sâu)", modelName: "o1", type: "text", think: true },
+    { name: "o3-mini (Tư duy tốc độ cao)", modelName: "o3-mini", type: "text", think: true },
+    { name: "GPT-4.5 Preview", modelName: "gpt-4.5-preview", type: "text", think: false },
   ],
 };
 // ============================================================

@@ -143,21 +143,18 @@ const vendor: VendorConfig = {
     { key: "baseUrl", label: "Địa chỉ yêu cầu", type: "url", required: true, placeholder: "Ví dụ: https://api.minimaxi.com" },
   ],
   inputValues: { apiKey: "", baseUrl: "https://api.minimaxi.com" },
-  models: [
-    // Mô hình văn bản 
-    { name: "MiniMax-M2.7 (Bản suy luận (Reasoning))", modelName: "MiniMax-M2.7", type: "text", think: true },
-    { name: "MiniMax-M2.7 Bản tốc độ cao (Bản suy luận (Reasoning))", modelName: "MiniMax-M2.7-highspeed", type: "text", think: true },
-    { name: "MiniMax-M2.5 (Bản suy luận (Reasoning))", modelName: "MiniMax-M2.5", type: "text", think: true },
-    { name: "MiniMax-M2.5 Bản tốc độ cao (Bản suy luận (Reasoning))", modelName: "MiniMax-M2.5-highspeed", type: "text", think: true },
-    { name: "MiniMax-M2.1 (Bản Lập trình)", modelName: "MiniMax-M2.1", type: "text", think: true },
-    { name: "MiniMax-M2.1 Bản tốc độ cao (Bản Lập trình)", modelName: "MiniMax-M2.1-highspeed", type: "text", think: true },
-    { name: "MiniMax-M2 (Bản Agent)", modelName: "MiniMax-M2", type: "text", think: false },
-    // Mô hình hình ảnh
-    { name: "Hailuo hình ảnhV1", modelName: "image-01", type: "image", mode: ["text", "singleImage"] },
-    { name: "Hailuo hình ảnhV1 Livebản ", modelName: "image-01-live", type: "image", mode: ["text", "singleImage"], associationSkills: "Hỗ trợ phong cách vẽ tùy chỉnh" },
-    // Mô hình video
+    models: [
+    // Mô hình Văn bản & Suy luận
+    { name: "MiniMax-M2.7 (Bản Suy Luận - Khuyên dùng)", modelName: "MiniMax-M2.7", type: "text", think: true },
+    { name: "MiniMax-M2.7 Tốc độ cao", modelName: "MiniMax-M2.7-highspeed", type: "text", think: true },
+
+    // Mô hình Tạo hình ảnh (Hailuo Image)
+    { name: "Hailuo Image 01 Live (Khuyên dùng)", modelName: "image-01-live", type: "image", mode: ["text", "singleImage"], associationSkills: "Hỗ trợ phong cách vẽ tùy chỉnh" },
+    { name: "Hailuo Image 01", modelName: "image-01", type: "image", mode: ["text", "singleImage"] },
+
+    // Mô hình Tạo Video (Hailuo Video)
     {
-      name: "Hailuo 2.3",
+      name: "Hailuo Video 2.3 (Khuyên dùng)",
       modelName: "MiniMax-Hailuo-2.3",
       type: "video",
       mode: ["text", "singleImage"],
@@ -168,7 +165,7 @@ const vendor: VendorConfig = {
       ],
     },
     {
-      name: "Hailuo 2.3Bản tốc độ cao",
+      name: "Hailuo Video 2.3 Tốc độ cao",
       modelName: "MiniMax-Hailuo-2.3-Fast",
       type: "video",
       mode: ["text", "singleImage"],
@@ -179,15 +176,12 @@ const vendor: VendorConfig = {
       ],
     },
     {
-      name: "Hailuo 02",
+      name: "Hailuo Video 02",
       modelName: "MiniMax-Hailuo-02",
       type: "video",
       mode: ["text", "singleImage", "startEndRequired"],
       audio: false,
-      durationResolutionMap: [
-        { duration: [6], resolution: ["512P", "768P", "1080P"] },
-        { duration: [10], resolution: ["512P", "768P"] },
-      ],
+      durationResolutionMap: [{ duration: [6], resolution: ["768P", "1080P"] }],
     },
   ],
 };

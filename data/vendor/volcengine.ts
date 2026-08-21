@@ -146,49 +146,22 @@ const vendor: VendorConfig = {
     apiKey: "",
     baseUrl: "https://ark.cn-beijing.volces.com/api/v3",
   },
-  models: [
-    // ===================== Mô hình văn bản  - Khuyến nghị =====================
-    { name: "Doubao-Seed-2.0-Pro", modelName: "doubao-seed-2-0-pro-260215", type: "text", think: true },
+    models: [
+    // === Mô hình Văn bản & Suy luận ===
+    { name: "Doubao-Seed-2.0-Pro (Khuyên dùng)", modelName: "doubao-seed-2-0-pro-260215", type: "text", think: true },
     { name: "Doubao-Seed-2.0-Lite", modelName: "doubao-seed-2-0-lite-260215", type: "text", think: true },
-    { name: "Doubao-Seed-2.0-Mini", modelName: "doubao-seed-2-0-mini-260215", type: "text", think: true },
-    { name: "Doubao-Seed-2.0-Code-Preview", modelName: "doubao-seed-2-0-code-preview-260215", type: "text", think: true },
-    { name: "Doubao-Seed-Character", modelName: "doubao-seed-character-251128", type: "text", think: false },
-    // ===================== Mô hình văn bản  - Phiên bản  cũ  =====================
-    { name: "Doubao-Seed-1.8", modelName: "doubao-seed-1-8-251228", type: "text", think: true },
-    { name: "Doubao-Seed-Code-Preview", modelName: "doubao-seed-code-preview-251028", type: "text", think: true },
-    { name: "Doubao-Seed-1.6-Lite", modelName: "doubao-seed-1-6-lite-251015", type: "text", think: true },
-    { name: "Doubao-Seed-1.6-Flash(0828)", modelName: "doubao-seed-1-6-flash-250828", type: "text", think: true },
-    { name: "Doubao-Seed-1.6-Vision", modelName: "doubao-seed-1-6-vision-250815", type: "text", think: true },
-    { name: "Doubao-Seed-1.6(1015)", modelName: "doubao-seed-1-6-251015", type: "text", think: true },
-    { name: "Doubao-Seed-1.6(0615)", modelName: "doubao-seed-1-6-250615", type: "text", think: true },
-    { name: "Doubao-Seed-1.6-Flash(0615)", modelName: "doubao-seed-1-6-flash-250615", type: "text", think: true },
-    { name: "Doubao-Seed-Translation", modelName: "doubao-seed-translation-250915", type: "text", think: false },
-    { name: "Doubao-1.5-Pro-32K", modelName: "doubao-1-5-pro-32k-250115", type: "text", think: false },
-    { name: "Doubao-1.5-Pro-32K-Character(0715)", modelName: "doubao-1-5-pro-32k-character-250715", type: "text", think: false },
-    { name: "Doubao-1.5-Pro-32K-Character(0228)", modelName: "doubao-1-5-pro-32k-character-250228", type: "text", think: false },
-    { name: "Doubao-1.5-Lite-32K", modelName: "doubao-1-5-lite-32k-250115", type: "text", think: false },
-    { name: "Doubao-1.5-Vision-Pro-32K", modelName: "doubao-1-5-vision-pro-32k-250115", type: "text", think: false },
-    // ===================== Mô hình văn bản  - Bên thứ ba (Volcengine Ark) =====================
-    { name: "GLM-4-7", modelName: "glm-4-7-251222", type: "text", think: true },
-    { name: "DeepSeek-V3-2", modelName: "deepseek-v3-2-251201", type: "text", think: true },
-    { name: "DeepSeek-V3-1-Terminus", modelName: "deepseek-v3-1-terminus", type: "text", think: true },
-    { name: "DeepSeek-V3(0324)", modelName: "deepseek-v3-250324", type: "text", think: false },
-    { name: "DeepSeek-R1(0528)", modelName: "deepseek-r1-250528", type: "text", think: true },
-    { name: "Qwen3-32B", modelName: "qwen3-32b-20250429", type: "text", think: false },
-    { name: "Qwen3-14B", modelName: "qwen3-14b-20250429", type: "text", think: false },
-    { name: "Qwen3-8B", modelName: "qwen3-8b-20250429", type: "text", think: false },
-    { name: "Qwen3-0.6B", modelName: "qwen3-0-6b-20250429", type: "text", think: false },
-    { name: "Qwen2.5-72B", modelName: "qwen2-5-72b-20240919", type: "text", think: false },
-    { name: "GLM-4.5-Air", modelName: "glm-4-5-air", type: "text", think: false },
-    // ===================== Hình ảnhtạoMô hình =====================
+    { name: "DeepSeek-V3", modelName: "deepseek-v3-250324", type: "text", think: false },
+    { name: "DeepSeek-R1 (Suy luận)", modelName: "deepseek-r1-250528", type: "text", think: true },
+
+    // === Mô hình Tạo hình ảnh (Seedream) ===
     {
-      name: "Seedream-5.0",
+      name: "Seedream-5.0 (Khuyên dùng - Flagship)",
       modelName: "doubao-seedream-5-0-260128",
       type: "image",
       mode: ["text", "singleImage", "multiReference"],
     },
     {
-      name: "Seedream-5.0-Lite",
+      name: "Seedream-5.0-Lite (Tốc độ cao)",
       modelName: "doubao-seedream-5-0-lite-260128",
       type: "image",
       mode: ["text", "singleImage", "multiReference"],
@@ -199,21 +172,10 @@ const vendor: VendorConfig = {
       type: "image",
       mode: ["text", "singleImage", "multiReference"],
     },
+
+    // === Mô hình Tạo Video (Seedance) ===
     {
-      name: "Seedream-4.0",
-      modelName: "doubao-seedream-4-0-250828",
-      type: "image",
-      mode: ["text", "singleImage", "multiReference"],
-    },
-    {
-      name: "Seedream-3.0-T2I",
-      modelName: "doubao-seedream-3-0-t2i-250415",
-      type: "image",
-      mode: ["text"],
-    },
-    // ===================== VideotạoMô hình =====================
-    {
-      name: "Seedance-2.0(Đồng bộ Âm thanh & Hình ảnh)",
+      name: "Seedance-2.0 (Đồng bộ Âm thanh & Hình ảnh - Số 1)",
       modelName: "doubao-seedance-2-0-260128",
       type: "video",
       mode: ["text", "startFrameOptional", ["imageReference:9", "videoReference:3", "audioReference:3"]],
@@ -221,7 +183,7 @@ const vendor: VendorConfig = {
       durationResolutionMap: [{ duration: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], resolution: ["480p", "720p"] }],
     },
     {
-      name: "Seedance-2.0-Fast(Đồng bộ Âm thanh & Hình ảnh)",
+      name: "Seedance-2.0-Fast (Đồng bộ Âm thanh & Hình ảnh)",
       modelName: "doubao-seedance-2-0-fast-260128",
       type: "video",
       mode: ["text", "startFrameOptional", ["imageReference:9", "videoReference:3", "audioReference:3"]],
@@ -229,44 +191,12 @@ const vendor: VendorConfig = {
       durationResolutionMap: [{ duration: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], resolution: ["480p", "720p"] }],
     },
     {
-      name: "Seedance-1.5-Pro(Đồng bộ Âm thanh & Hình ảnh)",
+      name: "Seedance-1.5-Pro (Đồng bộ Âm thanh & Hình ảnh)",
       modelName: "doubao-seedance-1-5-pro-251215",
       type: "video",
       mode: ["text", "startFrameOptional"],
       audio: "optional",
       durationResolutionMap: [{ duration: [4, 5, 6, 7, 8, 9, 10, 11, 12], resolution: ["480p", "720p", "1080p"] }],
-    },
-    {
-      name: "Seedance-1.0-Pro",
-      modelName: "doubao-seedance-1-0-pro-250528",
-      type: "video",
-      mode: ["text", "startFrameOptional"],
-      audio: false,
-      durationResolutionMap: [{ duration: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], resolution: ["480p", "720p", "1080p"] }],
-    },
-    {
-      name: "Seedance-1.0-Pro-Fast",
-      modelName: "doubao-seedance-1-0-pro-fast-251015",
-      type: "video",
-      mode: ["text", "singleImage"],
-      audio: false,
-      durationResolutionMap: [{ duration: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], resolution: ["480p", "720p", "1080p"] }],
-    },
-    {
-      name: "Seedance-1.0-Lite-T2V",
-      modelName: "doubao-seedance-1-0-lite-t2v-250428",
-      type: "video",
-      mode: ["text"],
-      audio: false,
-      durationResolutionMap: [{ duration: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], resolution: ["480p", "720p", "1080p"] }],
-    },
-    {
-      name: "Seedance-1.0-Lite-I2V",
-      modelName: "doubao-seedance-1-0-lite-i2v-250428",
-      type: "video",
-      mode: ["startFrameOptional", ["imageReference:4"]],
-      audio: false,
-      durationResolutionMap: [{ duration: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], resolution: ["480p", "720p", "1080p"] }],
     },
   ],
 };
