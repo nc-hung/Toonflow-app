@@ -97645,6 +97645,12 @@ Quy t\u1EAFc gh\xE9p n\u1ED1i:
                 inputValues: "{}",
                 models: "[]",
                 enable: 0
+              },
+              {
+                id: "anthropic",
+                inputValues: "{}",
+                models: "[]",
+                enable: 0
               }
             ]);
           }
@@ -97943,7 +97949,8 @@ var init_fixDB = __esm({
         "null",
         "deepseek",
         "atlascloud",
-        "google"
+        "google",
+        "anthropic"
       ];
       for (const vId of allDefaultVendors) {
         const exists = await utils_default.db("o_vendorConfig").where("id", vId).first();

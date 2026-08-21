@@ -1,5 +1,5 @@
 /**
- * Toonflow AI Nhà cung cấp Template - Google Gemini
+ * Toonflow AI Nhà cung cấp Template - Anthropic Claude
  * @version 2.0
  */
 // ============================================================
@@ -111,44 +111,39 @@ declare const exports: {
 // Cấu hình Nhà cung cấp
 // ============================================================
 const vendor: VendorConfig = {
-  id: "google",
+  id: "anthropic",
   version: "2.0",
   author: "Toonflow",
-  name: "Google Gemini AI",
-  description: "Cung cấp các dòng mô hình Google Gemini siêu nhanh, hỗ trợ suy nghĩ (Thinking), hiểu ngữ cảnh siêu dài và đa phương thức.",
+  name: "Anthropic Claude",
+  description: "Dòng mô hình Claude hàng đầu về viết kịch bản, lý luận và sáng tạo nội dung nghệ thuật.",
   icon: "",
   inputs: [
-    { key: "apiKey", label: "Google API Key", type: "password", required: true, placeholder: "Lấy khóa API tại Google AI Studio (aistudio.google.com)" },
-    { key: "baseUrl", label: "Địa chỉ yêu cầu (Tùy chọn)", type: "url", required: false, placeholder: "Mặc định để trống hoặc dùng proxy nếu cần" },
+    { key: "apiKey", label: "Anthropic API Key", type: "password", required: true, placeholder: "Khóa API từ Anthropic Console (console.anthropic.com)" },
+    { key: "baseUrl", label: "Địa chỉ yêu cầu (Tùy chọn)", type: "url", required: false, placeholder: "Mặc định để trống hoặc dùng proxy nếu có" },
   ],
   inputValues: {
     apiKey: "",
     baseUrl: "",
   },
   models: [
-    { name: "Gemini 2.5 Flash", modelName: "gemini-2.5-flash", type: "text", think: true },
-    { name: "Gemini 2.5 Pro", modelName: "gemini-2.5-pro", type: "text", think: true },
-    { name: "Gemini 2.0 Flash", modelName: "gemini-2.0-flash", type: "text", think: false },
-    { name: "Gemini 2.0 Flash Lite", modelName: "gemini-2.0-flash-lite", type: "text", think: false },
-    { name: "Gemini 2.0 Flash Thinking", modelName: "gemini-2.0-flash-thinking-exp-01-21", type: "text", think: true },
-    { name: "Gemini 2.0 Pro Experimental", modelName: "gemini-2.0-pro-exp-02-05", type: "text", think: false },
-    { name: "Gemini 1.5 Pro", modelName: "gemini-1.5-pro", type: "text", think: false },
-    { name: "Gemini 1.5 Flash", modelName: "gemini-1.5-flash", type: "text", think: false },
-    { name: "Gemini 1.5 Flash-8B", modelName: "gemini-1.5-flash-8b", type: "text", think: false },
+    { name: "Claude 3.7 Sonnet (Suy luận kết hợp)", modelName: "claude-3-7-sonnet-20250219", type: "text", think: true },
+    { name: "Claude 3.5 Sonnet", modelName: "claude-3-5-sonnet-20241022", type: "text", think: false },
+    { name: "Claude 3.5 Haiku", modelName: "claude-3-5-haiku-20241022", type: "text", think: false },
+    { name: "Claude 3 Opus", modelName: "claude-3-opus-20240229", type: "text", think: false },
   ],
 };
 // ============================================================
 // Hàm Adapter
 // ============================================================
 const textRequest = (model: TextModel, think: boolean, thinkLevel: 0 | 1 | 2 | 3) => {
-  if (!vendor.inputValues.apiKey) throw new Error("Thiếu Google API Key");
+  if (!vendor.inputValues.apiKey) throw new Error("Thiếu Anthropic API Key");
   const apiKey = vendor.inputValues.apiKey.replace(/^Bearer\s+/i, "");
   const options: Record<string, any> = { apiKey };
   if (vendor.inputValues.baseUrl && vendor.inputValues.baseUrl.trim()) {
     options.baseURL = vendor.inputValues.baseUrl.trim();
   }
-  const google = createGoogleGenerativeAI(options);
-  return google(model.modelName);
+  const anthropic = createAnthropic(options);
+  return anthropic(model.modelName);
 };
 const imageRequest = async (config: ImageConfig, model: ImageModel): Promise<string> => {
   return "";
