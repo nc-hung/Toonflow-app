@@ -52,6 +52,11 @@ export default router.post(
       } catch (e) {}
     }
 
+    if (!model || !model.trim()) {
+      res.status(400).send({ code: 400, msg: "Vui lòng chọn Mô hình Video trên thanh công cụ trước khi tạo video." });
+      return;
+    }
+
     // LấyTạo videotỷ lệ
     const ratio = await u.db("o_project").select("videoRatio").where("id", projectId).first();
 

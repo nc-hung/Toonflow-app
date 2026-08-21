@@ -47,6 +47,10 @@ export default router.post(
       } catch (e) {}
     }
     //LấyTạo videotỷ lệ
+    if (!model || !model.trim()) {
+      res.status(400).send({ code: 400, msg: "Vui lòng chọn Mô hình Video trên thanh công cụ trước khi tạo video." });
+      return;
+    }
     const ratio = await u.db("o_project").select("videoRatio").where("id", projectId).first();
     const videoPath = `/${projectId}/video/${uuidv4()}.mp4`; //Videolưuđường dẫn
     //Truy vấnra Hình ảnhDữ liệu

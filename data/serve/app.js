@@ -251857,12 +251857,18 @@ async function getModelConfig(value) {
   return null;
 }
 async function getVendorTemplateFn(fnName, modelName) {
+  if (!modelName || typeof modelName !== "string" || !modelName.trim()) {
+    throw new Error("Vui l\xF2ng ch\u1ECDn M\xF4 h\xECnh tr\xEAn thanh c\xF4ng c\u1EE5 tr\u01B0\u1EDBc khi th\u1EF1c hi\u1EC7n t\xE1c v\u1EE5.");
+  }
   const [id, name28] = modelName.split(/:(.+)/);
+  if (!id || !name28) {
+    throw new Error("M\xF4 h\xECnh \u0111\u01B0\u1EE3c ch\u1ECDn kh\xF4ng h\u1EE3p l\u1EC7, vui l\xF2ng ch\u1ECDn l\u1EA1i m\xF4 h\xECnh.");
+  }
   const vendorConfigData = await utils_default.db("o_vendorConfig").where("id", id).first();
-  if (!vendorConfigData) throw new Error(`Kh\xF4ng t\xECm th\u1EA5y c\u1EA5u h\xECnh nh\xE0 cung c\u1EA5p id=${id}`);
+  if (!vendorConfigData) throw new Error(`Kh\xF4ng t\xECm th\u1EA5y c\u1EA5u h\xECnh nh\xE0 cung c\u1EA5p ${id}`);
   const modelList = await utils_default.vendor.getModelList(id);
   const selectedModel = modelList.find((i) => i.modelName == name28);
-  if (!selectedModel) throw new Error(`Kh\xF4ng t\xECm th\u1EA5y m\xF4 h\xECnh ${name28} id=${id}`);
+  if (!selectedModel) throw new Error(`Kh\xF4ng t\xECm th\u1EA5y m\xF4 h\xECnh ${name28} trong nh\xE0 cung c\u1EA5p ${id}`);
   const code = utils_default.vendor.getCode(id);
   const jsCode = (0, import_sucrase.transform)(code, { transforms: ["typescript"] }).code;
   const running = utils_default.vm(jsCode);
@@ -256576,6 +256582,10 @@ var init_batchGenerateVideo = __esm({
           } catch (e) {
           }
         }
+        if (!model || !model.trim()) {
+          res.status(400).send({ code: 400, msg: "Vui l\xF2ng ch\u1ECDn M\xF4 h\xECnh Video tr\xEAn thanh c\xF4ng c\u1EE5 tr\u01B0\u1EDBc khi t\u1EA1o video." });
+          return;
+        }
         const ratio = await utils_default.db("o_project").select("videoRatio").where("id", projectId).first();
         const tasks = await Promise.all(
           trackData.map(async (track) => {
@@ -256801,6 +256811,10 @@ var init_generateVideo = __esm({
             modeData = JSON.parse(mode);
           } catch (e) {
           }
+        }
+        if (!model || !model.trim()) {
+          res.status(400).send({ code: 400, msg: "Vui l\xF2ng ch\u1ECDn M\xF4 h\xECnh Video tr\xEAn thanh c\xF4ng c\u1EE5 tr\u01B0\u1EDBc khi t\u1EA1o video." });
+          return;
         }
         const ratio = await utils_default.db("o_project").select("videoRatio").where("id", projectId).first();
         const videoPath = `/${projectId}/video/${v4_default()}.mp4`;

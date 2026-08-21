@@ -115,12 +115,18 @@ async function getVendorTemplateFn(
 ): Promise<(think?: boolean, thinkLevel?: 0 | 1 | 2 | 3) => any>;
 async function getVendorTemplateFn(fnName: Exclude<FnName, "textRequest">, modelName: `${string}:${string}`): Promise<(input: any) => any>;
 async function getVendorTemplateFn(fnName: FnName, modelName: `${string}:${string}`): Promise<any> {
+  if (!modelName || typeof modelName !== "string" || !modelName.trim()) {
+    throw new Error("Vui lòng chọn Mô hình trên thanh công cụ trước khi thực hiện tác vụ.");
+  }
   const [id, name] = modelName.split(/:(.+)/);
+  if (!id || !name) {
+    throw new Error("Mô hình được chọn không hợp lệ, vui lòng chọn lại mô hình.");
+  }
   const vendorConfigData = await u.db("o_vendorConfig").where("id", id).first();
-  if (!vendorConfigData) throw new Error(`Không tìm thấy cấu hình nhà cung cấp id=${id}`);
+  if (!vendorConfigData) throw new Error(`Không tìm thấy cấu hình nhà cung cấp ${id}`);
   const modelList = await u.vendor.getModelList(id);
   const selectedModel = modelList.find((i: any) => i.modelName == name);
-  if (!selectedModel) throw new Error(`Không tìm thấy mô hình ${name} id=${id}`);
+  if (!selectedModel) throw new Error(`Không tìm thấy mô hình ${name} trong nhà cung cấp ${id}`);
   const code = u.vendor.getCode(id);
   const jsCode = transform(code, { transforms: ["typescript"] }).code;
   const running = u.vm(jsCode);
