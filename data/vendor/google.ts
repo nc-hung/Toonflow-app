@@ -63,6 +63,8 @@ interface VideoConfig {
   aspectRatio: "16:9" | "9:16";
   prompt: string;
   imageBase64?: string[];
+  // Vendor version >= 2.0 nhận ảnh tham chiếu qua referenceList (bản cũ dùng imageBase64)
+  referenceList?: { type: string; base64: string }[];
   audio?: boolean;
   mode: VideoMode[];
 }
@@ -310,9 +312,18 @@ const videoRequest = async (config: VideoConfig, model: VideoModel): Promise<str
 
   const submitUrl = `${baseUrl}/v1beta/models/${modelName}:predictLongRunning?key=${apiKey}`;
   const instance: Record<string, any> = { prompt: config.prompt };
+  // Lấy ảnh đầu vào: ưu tiên imageBase64 (bản cũ), fallback sang referenceList (vendor v>=2.0)
+  let inputImageB64: string | undefined;
   if (config.imageBase64 && config.imageBase64[0]) {
-    const rawB64 = config.imageBase64[0].replace(/^data:image\/\w+;base64,/, "");
+    inputImageB64 = config.imageBase64[0];
+  } else if (config.referenceList && config.referenceList.length > 0) {
+    const imgRef = config.referenceList.find((r) => r && r.type === "image" && r.base64);
+    inputImageB64 = imgRef?.base64;
+  }
+  if (inputImageB64) {
+    const rawB64 = inputImageB64.replace(/^data:image\/\w+;base64,/, "");
     instance.image = { bytesBase64Encoded: rawB64 };
+    logger("[Google Veo] Đã đính kèm ảnh đầu vào (image-to-video)");
   }
 
   const submitResp = await fetch(submitUrl, {
