@@ -25,8 +25,32 @@ const ASSET_DIR: Record<string, string> = {
   audio: "giong-noi", // giọng đọc
 };
 
-// Xuất toàn bộ tài nguyên của một dự án: kịch bản, hình ảnh nhân vật/bối cảnh/đạo cụ,
-// phân cảnh (storyboard), video, tiểu thuyết gốc và tệp mô tả project.json -> đóng gói zip
+// In JSON dễ đọc; nếu là chuỗi JSON thì parse rồi format lại, không thì trả nguyên văn
+function prettyJson(value: unknown): string {
+  if (value == null) return "";
+  if (typeof value === "string") {
+    try {
+      return JSON.stringify(JSON.parse(value), null, 2);
+    } catch {
+      return value;
+    }
+  }
+  try {
+    return JSON.stringify(value, null, 2);
+  } catch {
+    return String(value);
+  }
+}
+
+// Xuất toàn bộ tài nguyên của một dự án thành gói .zip:
+//   kich-ban/          kịch bản (.txt)
+//   nhan-vat|boi-canh|dao-cu|giong-noi/  ảnh nhân vật/bối cảnh/đạo cụ + mô tả (.txt)
+//   phan-canh/         ảnh phân cảnh (storyboard) + mô tả (.txt)
+//   video/             video (.mp4) + prompt tạo video (.txt)
+//   map-flow/          sơ đồ luồng tạo ảnh (o_imageFlow, .json)
+//   dao-dien/          hướng dẫn đạo diễn + thông tin dự án (.txt)
+//   tieu-thuyet/       nội dung tiểu thuyết gốc theo chương (.txt)
+//   project.json       tệp kê khai toàn bộ nội dung gói xuất
 export default router.post(
   "/",
   validateFields({
@@ -46,41 +70,92 @@ export default router.post(
       const scripts = await u
         .db("o_script")
         .where("projectId", projectId)
-        .select("id", "name", "content", "createTime");
+        .select("id", "name", "content", "extractState", "errorReason", "createTime");
 
-      // 3) Tài nguyên (nhân vật/bối cảnh/đạo cụ/giọng) kèm đường dẫn tệp ảnh
+      // 3) Tài nguyên (nhân vật/bối cảnh/đạo cụ/giọng)
       const assets = await u
         .db("o_assets")
-        .leftJoin("o_image", "o_assets.imageId", "o_image.id")
-        .where("o_assets.projectId", projectId)
-        .select(
-          "o_assets.id",
-          "o_assets.name",
-          "o_assets.type",
-          "o_assets.describe",
-          "o_assets.prompt",
-          "o_image.filePath",
-        );
+        .where("projectId", projectId)
+        .select("id", "name", "type", "describe", "prompt", "remark", "imageId", "flowId", "audioBindState", "promptState");
+
+      // Ảnh của tài nguyên: ưu tiên ảnh đang chọn (imageId); nếu ảnh đó lỗi/không có
+      // tệp thì lấy tạm bất kỳ ảnh nào đã hoàn thành cùng assetsId (fallback bền vững)
+      const imageIds = assets.map((a) => a.imageId).filter((x): x is number => x != null);
+      const primaryImages = imageIds.length
+        ? await u.db("o_image").whereIn("id", imageIds).select("id", "filePath", "state")
+        : [];
+      const primaryById = new Map<number, any>();
+      for (const im of primaryImages) primaryById.set(im.id as number, im);
+
+      const assetIds = assets.map((a) => a.id).filter((x): x is number => x != null);
+      const completedImages = assetIds.length
+        ? await u
+            .db("o_image")
+            .whereIn("assetsId", assetIds)
+            .whereNotNull("filePath")
+            .select("id", "filePath", "assetsId", "state")
+        : [];
+      const completedByAsset = new Map<number, any>();
+      for (const im of completedImages) {
+        const aid = im.assetsId as number;
+        if (aid != null && !completedByAsset.has(aid)) completedByAsset.set(aid, im);
+      }
+      const resolveAssetImage = (a: any): string | null => {
+        const primary = a.imageId != null ? primaryById.get(a.imageId) : null;
+        if (primary && primary.filePath) return primary.filePath;
+        const fb = completedByAsset.get(a.id);
+        return fb ? fb.filePath : null;
+      };
 
       // 4) Phân cảnh (storyboard)
       const storyboards = await u
         .db("o_storyboard")
         .where("projectId", projectId)
-        .select("id", "index", "filePath", "prompt", "videoDesc", "scriptId");
+        .orderBy("index", "asc")
+        .select("id", "index", "filePath", "prompt", "videoDesc", "duration", "state", "scriptId", "flowId");
 
-      // 5) Video
+      // 5) Video + prompt tạo video (o_videoTrack)
       const videos = await u
         .db("o_video")
         .where("projectId", projectId)
-        .select("id", "filePath", "state", "time", "scriptId");
+        .select("id", "filePath", "state", "errorReason", "time", "scriptId", "videoTrackId");
+      const videoTracks = await u
+        .db("o_videoTrack")
+        .where("projectId", projectId)
+        .select("id", "prompt", "duration", "state", "reason", "scriptId", "selectVideoId");
+      const trackById = new Map<number, any>();
+      for (const t of videoTracks) trackById.set(t.id as number, t);
 
       // 6) Tiểu thuyết gốc
       const novels = await u
         .db("o_novel")
         .where("projectId", projectId)
-        .select("id", "chapter", "chapterData", "reel", "chapterIndex");
+        .orderBy("chapterIndex", "asc")
+        .select("id", "chapter", "chapterData", "reel", "chapterIndex", "event", "eventState");
 
-      const zipStream = new compressing.zip.Stream();
+      // 7) Sơ đồ luồng tạo ảnh (map flow): o_imageFlow không có projectId, liên kết qua
+      // flowId của storyboard và tài nguyên. Gom tất cả flowId thuộc dự án rồi tải về.
+      const flowLabels = new Map<number, string>();
+      for (const sb of storyboards) {
+        if (sb.flowId != null && !flowLabels.has(sb.flowId)) {
+          flowLabels.set(sb.flowId, safeName(`phan-canh-${sb.index != null ? sb.index : sb.id}`, `flow-${sb.flowId}`));
+        }
+      }
+      for (const a of assets) {
+        if (a.flowId != null && !flowLabels.has(a.flowId)) {
+          flowLabels.set(a.flowId, safeName(a.name, `${a.type || "asset"}-${a.id}`));
+        }
+      }
+      const flowIds = [...flowLabels.keys()];
+      const flows = flowIds.length
+        ? await u.db("o_imageFlow").whereIn("id", flowIds).select("id", "flowData")
+        : [];
+
+      // LƯU Ý: compressing.zip.Stream tự "chốt" (finalize) gói zip ngay khi hàng đợi
+      // entry trống ở một nhịp async. Vì vậy PHẢI đọc hết tệp từ OSS TRƯỚC, gom vào
+      // mảng entries, rồi thêm tất cả một lượt (đồng bộ) và pipe. Tuyệt đối không await
+      // xen giữa các lần addEntry (nếu không zip chỉ chứa entry đầu tiên).
+      const entries: Array<{ path: string; buf: Buffer }> = [];
       const missing: string[] = []; // tệp có trong DB nhưng không đọc được trên đĩa
       const used = new Set<string>(); // chống trùng tên trong cùng thư mục
 
@@ -93,7 +168,13 @@ export default router.post(
         return rel;
       };
 
-      // Đọc 1 tệp từ OSS và thêm vào zip; nếu thiếu thì bỏ qua và ghi nhận
+      const addText = (dir: string, base: string, content: string): string => {
+        const rel = uniquePath(dir, base, ".txt");
+        entries.push({ path: rel, buf: Buffer.from(content ?? "", "utf8") });
+        return rel;
+      };
+
+      // Đọc 1 tệp từ OSS và gom vào danh sách entries; nếu thiếu thì bỏ qua và ghi nhận
       const addOssFile = async (
         filePath: string | null | undefined,
         dir: string,
@@ -104,7 +185,7 @@ export default router.post(
           const buf = await u.oss.getFile(filePath);
           const ext = path.extname(filePath) || "";
           const rel = uniquePath(dir, baseName, ext);
-          zipStream.addEntry(buf, { relativePath: rel });
+          entries.push({ path: rel, buf });
           return rel;
         } catch (e) {
           missing.push(filePath);
@@ -115,32 +196,145 @@ export default router.post(
       // --- Kịch bản -> tệp .txt ---
       const scriptManifest = scripts.map((s) => {
         const rel = uniquePath("kich-ban", safeName(s.name, `kich-ban-${s.id}`), ".txt");
-        zipStream.addEntry(Buffer.from(s.content ?? "", "utf8"), { relativePath: rel });
-        return { id: s.id, name: s.name, file: rel };
+        entries.push({ path: rel, buf: Buffer.from(s.content ?? "", "utf8") });
+        return { id: s.id, name: s.name, extractState: s.extractState, file: rel };
       });
 
-      // --- Tài nguyên hình ảnh (nhân vật, bối cảnh, đạo cụ, giọng) ---
+      // --- Tài nguyên hình ảnh (nhân vật, bối cảnh, đạo cụ, giọng) + mô tả ---
       const assetManifest: Array<Record<string, any>> = [];
       for (const a of assets) {
         const dir = ASSET_DIR[a.type as string] || "tai-nguyen-khac";
-        const file = await addOssFile(a.filePath, dir, safeName(a.name, `${a.type || "asset"}-${a.id}`));
-        assetManifest.push({ id: a.id, name: a.name, type: a.type, prompt: a.prompt, describe: a.describe, file });
+        const base = safeName(a.name, `${a.type || "asset"}-${a.id}`);
+        const filePath = resolveAssetImage(a);
+        const file = await addOssFile(filePath, dir, base);
+        // Ghi mô tả/prompt của tài nguyên thành tệp .txt cạnh ảnh
+        const descParts = [
+          `Tên: ${a.name ?? ""}`,
+          `Loại: ${a.type ?? ""}`,
+          a.describe ? `\nMô tả:\n${a.describe}` : "",
+          a.prompt ? `\nPrompt:\n${a.prompt}` : "",
+          a.remark ? `\nGhi chú:\n${a.remark}` : "",
+        ].filter(Boolean);
+        const descFile = addText(dir, `${base}-mo-ta`, descParts.join("\n"));
+        assetManifest.push({
+          id: a.id,
+          name: a.name,
+          type: a.type,
+          prompt: a.prompt,
+          describe: a.describe,
+          image: file,
+          desc: descFile,
+        });
       }
 
-      // --- Phân cảnh (storyboard) ---
+      // --- Phân cảnh (storyboard) + mô tả ---
       const storyboardManifest: Array<Record<string, any>> = [];
       for (const sb of storyboards) {
-        const base = safeName(sb.index != null ? `phan-canh-${sb.index}` : `phan-canh-${sb.id}`, `phan-canh-${sb.id}`);
+        const idx = sb.index != null ? sb.index : sb.id;
+        const base = safeName(`phan-canh-${idx}`, `phan-canh-${sb.id}`);
         const file = await addOssFile(sb.filePath, "phan-canh", base);
-        storyboardManifest.push({ id: sb.id, index: sb.index, prompt: sb.prompt, videoDesc: sb.videoDesc, file });
+        const descParts = [
+          `Phân cảnh #${idx}`,
+          sb.duration != null ? `Thời lượng: ${sb.duration}s` : "",
+          sb.prompt ? `\nPrompt tạo ảnh:\n${sb.prompt}` : "",
+          sb.videoDesc ? `\nMô tả video:\n${sb.videoDesc}` : "",
+        ].filter(Boolean);
+        const descFile = addText("phan-canh", `${base}-mo-ta`, descParts.join("\n"));
+        storyboardManifest.push({
+          id: sb.id,
+          index: sb.index,
+          prompt: sb.prompt,
+          videoDesc: sb.videoDesc,
+          state: sb.state,
+          image: file,
+          desc: descFile,
+        });
       }
 
-      // --- Video ---
+      // --- Video (.mp4) + prompt tạo video ---
       const videoManifest: Array<Record<string, any>> = [];
       for (const v of videos) {
         const file = await addOssFile(v.filePath, "video", `video-${v.id}`);
-        videoManifest.push({ id: v.id, state: v.state, time: v.time, file });
+        const track = v.videoTrackId != null ? trackById.get(v.videoTrackId) : null;
+        if (track && track.prompt) {
+          addText("video", `video-${v.id}-prompt`, track.prompt);
+        }
+        videoManifest.push({
+          id: v.id,
+          state: v.state,
+          errorReason: v.errorReason,
+          time: v.time,
+          prompt: track ? track.prompt : null,
+          file,
+        });
       }
+      // Prompt của các track chưa có video khớp (vẫn giữ lại để không mất dữ liệu)
+      const matchedTrackIds = new Set<number>(
+        videos.map((v) => v.videoTrackId).filter((x): x is number => x != null),
+      );
+      for (const t of videoTracks) {
+        if (!matchedTrackIds.has(t.id as number) && t.prompt) {
+          addText("video", `track-${t.id}-prompt`, t.prompt);
+        }
+      }
+
+      // --- Map flow (sơ đồ luồng tạo ảnh) -> .json ---
+      const flowManifest: Array<Record<string, any>> = [];
+      for (const f of flows) {
+        const label = flowLabels.get(f.id as number) || `flow-${f.id}`;
+        const rel = uniquePath("map-flow", safeName(label, `flow-${f.id}`), ".json");
+        entries.push({ path: rel, buf: Buffer.from(prettyJson(f.flowData), "utf8") });
+        flowManifest.push({ id: f.id, label, file: rel });
+      }
+
+      // --- Hướng dẫn đạo diễn + thông tin dự án ---
+      const infoLines = [
+        `Dự án: ${project.name ?? ""}`,
+        project.intro ? `Giới thiệu: ${project.intro}` : "",
+        project.artStyle ? `Phong cách: ${project.artStyle}` : "",
+        project.videoRatio ? `Tỉ lệ video: ${project.videoRatio}` : "",
+        project.imageModel ? `Mô hình ảnh: ${project.imageModel}` : "",
+        project.videoModel ? `Mô hình video: ${project.videoModel}` : "",
+        project.directorManual ? `\n=== Hướng dẫn đạo diễn ===\n${project.directorManual}` : "",
+      ].filter(Boolean);
+      const directorFile = addText("dao-dien", "huong-dan-dao-dien", infoLines.join("\n"));
+
+      // --- Tiểu thuyết gốc -> .txt theo chương ---
+      const novelManifest: Array<Record<string, any>> = [];
+      for (const n of novels) {
+        const idx = n.chapterIndex != null ? n.chapterIndex : n.id;
+        const base = safeName(n.chapter ? `chuong-${idx}-${n.chapter}` : `chuong-${idx}`, `chuong-${idx}`);
+        const body = [
+          n.chapter ? `Chương: ${n.chapter}` : "",
+          n.reel != null ? `Reel: ${n.reel}` : "",
+          n.chapterData ? `\n${n.chapterData}` : "",
+        ]
+          .filter(Boolean)
+          .join("\n");
+        const file = body ? addText("tieu-thuyet", base, body) : null;
+        novelManifest.push({ id: n.id, chapter: n.chapter, chapterIndex: n.chapterIndex, file });
+      }
+
+      // --- README mô tả cấu trúc gói ---
+      const readme = [
+        `Gói xuất dự án: ${project.name ?? projectId}`,
+        "",
+        "Cấu trúc thư mục:",
+        "  kich-ban/     Kịch bản (.txt)",
+        "  nhan-vat/     Ảnh + mô tả nhân vật",
+        "  boi-canh/     Ảnh + mô tả bối cảnh",
+        "  dao-cu/       Ảnh + mô tả đạo cụ",
+        "  giong-noi/    Tài nguyên giọng đọc",
+        "  phan-canh/    Ảnh phân cảnh (storyboard) + mô tả",
+        "  video/        Video (.mp4) + prompt tạo video",
+        "  map-flow/     Sơ đồ luồng tạo ảnh (.json)",
+        "  dao-dien/     Hướng dẫn đạo diễn + thông tin dự án",
+        "  tieu-thuyet/  Nội dung tiểu thuyết gốc theo chương",
+        "  project.json  Bảng kê khai toàn bộ nội dung",
+        "",
+        "Ghi chú: các tệp thiếu (ảnh/video tạo lỗi) được liệt kê trong project.json > missingFiles.",
+      ].join("\n");
+      entries.push({ path: "README.txt", buf: Buffer.from(readme, "utf8") });
 
       // --- project.json: tệp kê khai toàn bộ nội dung gói xuất ---
       const manifest = {
@@ -151,16 +345,23 @@ export default router.post(
           assets: assetManifest.length,
           storyboards: storyboardManifest.length,
           videos: videoManifest.length,
-          novels: novels.length,
+          flows: flowManifest.length,
+          novels: novelManifest.length,
         },
         scripts: scriptManifest,
         assets: assetManifest,
         storyboards: storyboardManifest,
         videos: videoManifest,
-        novels,
+        flows: flowManifest,
+        director: { file: directorFile },
+        novels: novelManifest,
         missingFiles: missing, // tệp được tham chiếu trong DB nhưng không tồn tại trên đĩa
       };
-      zipStream.addEntry(Buffer.from(JSON.stringify(manifest, null, 2), "utf8"), { relativePath: "project.json" });
+      entries.push({ path: "project.json", buf: Buffer.from(JSON.stringify(manifest, null, 2), "utf8") });
+
+      // --- Thêm TẤT CẢ entry một lượt (đồng bộ) rồi pipe: xem lưu ý ở trên ---
+      const zipStream = new compressing.zip.Stream();
+      for (const e of entries) zipStream.addEntry(e.buf, { relativePath: e.path });
 
       // --- Tên tệp tải về (ASCII an toàn + filename* UTF-8 cho tên tiếng Việt) ---
       const slug = safeName(project.name, `project-${projectId}`).replace(/\s+/g, "-");
