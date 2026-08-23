@@ -11,8 +11,12 @@ const vendorData = rawVendorData as Record<string, string>;
 export default async (knex: Knex): Promise<void> => {
   const addColumn = async (table: string, column: string, type: string) => {
     if (!(await knex.schema.hasTable(table))) return;
+    if (!(await knex.schema.hasColumn(table, column))) {
+      await knex.schema.alterTable(table, (t) => (t as any)[type](column));
+    }
+  };
 
-  // Đồng bộ hóa tên và mô tả tiếng Việt cho tất cả Agent đã tạo trước  đó
+  // Đồng bộ hóa tên và mô tả tiếng Việt cho tất cả Agent đã tạo trước  đó (chạy một lần)
   const agentTranslations: Record<string, { name: string; desc: string }> = {
     "scriptAgent": { name: "Agent Kịch bản ", desc: "Dùng để đọc nguyên tác tạo khung cốt truyện, chiến lược chuyển thể; khuyến nghị dùng mô hình có khả năng hiểu và tạo văn bản  mạnh mẽ" },
     "productionAgent": { name: "Agent Sản xuất", desc: "Điều phối và quản lý quy trình sản xuất; khuyến nghị dùng mô hình có tư duy logic và quản lý tác vụ tốt" },
@@ -42,11 +46,6 @@ export default async (knex: Knex): Promise<void> => {
   await db("o_prompt").where("type", "videoPromptGeneration").update({ name: "Tạo Prompt Video" });
   await db("o_prompt").where("type", "audioBindPrompt").update({ name: "Ghép nối giọng đọc" });
 
-    if (!(await knex.schema.hasColumn(table, column))) {
-      await knex.schema.alterTable(table, (t) => (t as any)[type](column));
-    }
-  };
-
   const dropColumn = async (table: string, column: string) => {
     if (!(await knex.schema.hasTable(table))) return;
     if (await knex.schema.hasColumn(table, column)) {
@@ -71,19 +70,19 @@ export default async (knex: Knex): Promise<void> => {
     extractState: -1,
     errorReason: "Thất bại do phần mềm thoát",
   });
-  await db("o_assets").where("promptState", "Đang tạo").orWhere("promptState", "Đang tạo").update({
+  await db("o_assets").where("promptState", "Đang tạo").update({
     promptState: "Tạo thất bại",
     promptErrorReason: "Thất bại do phần mềm thoát",
   });
-  await db("o_image").where("state", "Đang tạo").orWhere("state", "Đang tạo").update({
+  await db("o_image").where("state", "Đang tạo").update({
     state: "Tạo thất bại",
     errorReason: "Thất bại do phần mềm thoát",
   });
-  await db("o_storyboard").where("state", "Đang tạo").orWhere("state", "Đang tạo").update({
+  await db("o_storyboard").where("state", "Đang tạo").update({
     state: "Tạo thất bại",
     reason: "Thất bại do phần mềm thoát",
   });
-  await db("o_video").where("state", "Đang tạo").orWhere("state", "Đang tạo").update({
+  await db("o_video").where("state", "Đang tạo").update({
     state: "Tạo thất bại",
     errorReason: "Thất bại do phần mềm thoát",
   });
@@ -96,6 +95,26 @@ export default async (knex: Knex): Promise<void> => {
   await addColumn("o_assets", "audioBindState", "integer");
   await addColumn("o_modelPrompt", "fileName", "string");
   await addColumn("o_modelPrompt", "path", "string");
+  // Bổ sung cột o_video cho bản  cài cũ (bảng đã tồn tại nên initDB không thể alter)
+  await addColumn("o_video", "time", "integer");
+  await addColumn("o_video", "scriptId", "integer");
+  await addColumn("o_video", "projectId", "integer");
+  await addColumn("o_video", "videoTrackId", "integer");
+  // Bổ sung cột o_videoTrack cho bản  cài cũ: bảng từng tồn tại ở phiên bản trước với ít cột hơn,
+  // initDB chỉ tạo bảng khi vắng mặt nên không thể vá bảng cũ đã tồn tại (addColumn idempotent).
+  await addColumn("o_videoTrack", "videoId", "integer");
+  await addColumn("o_videoTrack", "projectId", "integer");
+  await addColumn("o_videoTrack", "scriptId", "integer");
+  await addColumn("o_videoTrack", "state", "text");
+  await addColumn("o_videoTrack", "reason", "text");
+  await addColumn("o_videoTrack", "prompt", "text");
+  await addColumn("o_videoTrack", "selectVideoId", "integer");
+  await addColumn("o_videoTrack", "duration", "integer");
+  // Khôi phục trạng thái treo do thoát ứng dụng bất thường (đặt SAU addColumn để chắc chắn cột "state"/"reason" tồn tại trên bản cài cũ)
+  await db("o_videoTrack").where("state", "Đang tạo").update({
+    state: "Tạo thất bại",
+    reason: "Thất bại do phần mềm thoát",
+  });
   const allDefaultVendors = [
     "toonflow",
     "volcengine",

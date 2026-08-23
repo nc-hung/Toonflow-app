@@ -15,6 +15,7 @@ import jwt from "jsonwebtoken";
 import socketInit from "@/socket/index";
 import { isEletron } from "@/utils/getPath";
 import { ensureThumbnail, ThumbnailSize } from "@/utils/image";
+import { EXPORT_PROJECT_CLIENT_JS, serveInjectedIndex } from "@/lib/exportProjectInject";
 
 const app = express();
 const server = http.createServer(app);
@@ -140,10 +141,16 @@ export default async function startServe(randomPort: Boolean = false) {
   console.log("Thư mục tệp:", assetsDir);
   app.use("/assets", express.static(assetsDir, { acceptRanges: false }));
 
-  // data/web thái mạng trạm 
+  // data/web thái mạng trạm
   const webDir = u.getPath("web");
   if (fs.existsSync(webDir)) {
     console.log("thái mạng trạm thư mục:", webDir);
+    // Script chèn nút "Tải xuống dự án" (phục vụ không cần token -> phải đặt trước
+    // middleware xác thực; đặt trước express.static để index.html được chèn thẻ script).
+    app.get("/inject/export-project.js", (_req, res) => {
+      res.type("application/javascript").send(EXPORT_PROJECT_CLIENT_JS);
+    });
+    app.get(["/", "/index.html"], serveInjectedIndex(webDir));
     app.use(express.static(webDir, { acceptRanges: false }));
   } else {
     console.warn("thái mạng trạm thư mụckhông tồn tại:", webDir);

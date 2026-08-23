@@ -502,22 +502,35 @@ export default async (knex: Knex, forceInit: boolean = false): Promise<void> => 
         table.unique(["id"]);
       },
     },
-    // bản g video
+    // bản g video (khớp schema thực tế: gắn với track thay vì storyboard)
     {
       name: "o_video",
       builder: (table) => {
         table.integer("id").notNullable();
-        table.integer("storyboardId").unsigned().references("id").inTable("o_storyboard");
-        table.text("prompt");
         table.text("filePath");
-        table.text("state");
         table.text("errorReason");
-        table.text("model");
-        table.text("resolution");
-        table.integer("duration");
-        table.text("ratio");
+        table.integer("time");
+        table.integer("scriptId");
+        table.integer("projectId");
+        table.integer("videoTrackId");
+        table.text("state");
         table.primary(["id"]);
-        table.unique(["id"]);
+      },
+    },
+    // bản g track video (mỗi phân đoạn có thể sinh nhiều video ứng viên)
+    {
+      name: "o_videoTrack",
+      builder: (table) => {
+        table.integer("id").notNullable();
+        table.integer("videoId");
+        table.integer("projectId");
+        table.integer("scriptId");
+        table.text("state");
+        table.text("reason");
+        table.text("prompt");
+        table.integer("selectVideoId");
+        table.integer("duration");
+        table.primary(["id"]);
       },
     },
     // bản g cấu hình nhà cung cấp AI
