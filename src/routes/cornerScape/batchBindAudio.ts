@@ -25,18 +25,18 @@ export default router.post(
       .andWhere("projectId", projectId)
       .select("id", "name", "describe");
 
-    if (!audioData.length) return res.status(400).send(error("tạm thời chưa cóThiết lậpÂm thanh，vui lòng trước  trước  Tài nguyêngiữa tải lênÂm thanh"));
+    if (!audioData.length) return res.status(400).send(error("Hiện chưa thiết lập âm thanh nào, vui lòng tải lên âm thanh trong mục Tài nguyên trước"));
 
     const batchSize = concurrentCount ?? 1;
 
     async function processAsset(asset: (typeof assetsData)[number]) {
       try {
         const resultTool = tool({
-          description: "khớphoàn thànhsau  bắt buộc gọi hàm cụ nhắc tác vụ kết quả",
+          description: "Sau khi khớp xong, bắt buộc phải gọi công cụ này để báo cáo kết quả tác vụ",
           inputSchema: jsonSchema<{ id: number; audioId: number }>(
             z
               .object({
-                audioId: z.number().nullable().optional().describe("Tài nguyênkhớp của Âm thanhIDdanh sách，không hợp khớpTrả vềrỗng số nhóm "),
+                audioId: z.number().nullable().optional().describe("ID của âm thanh khớp với tài nguyên này; nếu không có âm thanh nào phù hợp thì trả về null"),
               })
               .toJSONSchema(),
           ),
@@ -44,11 +44,11 @@ export default router.post(
             await u.db("o_assetsRole2Audio").where("assetsRoleId", asset.id).delete();
             if (result?.audioId) await u.db("o_assetsRole2Audio").insert({ assetsRoleId: asset.id, assetsAudioId: result.audioId });
             await u.db("o_assets").where("id", asset.id).update("audioBindState", "Đã hoàn thành");
-            return "Không cần  phản hồi thêm cho người dùng";
+            return "Không cần phản hồi thêm cho người dùng";
           },
         });
 
-        const audioList = audioData.map((i) => `- ID:${i.id} | tên:${i.name} | mô tả:${i.describe ?? "không "}`).join("\n");
+        const audioList = audioData.map((i) => `- ID:${i.id} | tên:${i.name} | mô tả:${i.describe ?? "không có"}`).join("\n");
         const promptData = await u.db("o_prompt").where("type", "audioBindPrompt").first();
         let audioBindPrompt = "" as string | undefined;
         if (promptData && promptData.useData) {
@@ -67,11 +67,11 @@ export default router.post(
             {
               role: "user",
               content: `
-                ## chọn Âm thanhdanh sách
+                ## Danh sách âm thanh để chọn
                 ${audioList}
-                ## khớpTài nguyên
-                - ID:${asset.id} | tên:${asset.name} | mô tả:${asset.describe ?? "không "} | loại：${asset.type}
-                vui lòng từ chọn Âm thanhdanh sáchgiữa Tài nguyênchọn ra một nhất hợp Nhân vậtthiết nối  của giọng đọc，nhất gọi hàm  resultTool nhắc tác vụ kết quả。
+                ## Tài nguyên cần khớp
+                - ID:${asset.id} | tên:${asset.name} | mô tả:${asset.describe ?? "không có"} | loại:${asset.type}
+                Vui lòng chọn từ danh sách âm thanh trên một giọng đọc phù hợp nhất với thiết lập nhân vật của tài nguyên này, sau đó gọi hàm resultTool để báo cáo kết quả tác vụ.
            `,
             },
           ],
@@ -79,7 +79,7 @@ export default router.post(
         });
       } catch (e) {
         await u.db("o_assets").where("id", asset.id).update("audioBindState", "Tạo thất bại");
-        console.error(`[bindAudio] Tài nguyên ${asset.id} Xử lýthất bại:`, e);
+        console.error(`[bindAudio] Tài nguyên ${asset.id} xử lý thất bại:`, e);
       }
     }
 

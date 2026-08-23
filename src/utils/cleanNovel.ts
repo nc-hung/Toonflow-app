@@ -35,7 +35,7 @@ class CleanNovel {
         eventExtraction = promptData?.data ?? undefined;
       }
       const resData = await u.Ai.Text("universalAi").invoke({
-        system: eventExtraction ? JSON.stringify(eventExtraction) : (prompt as string),
+        system: eventExtraction ?? (prompt as string),
         messages: [
           {
             role: "user",

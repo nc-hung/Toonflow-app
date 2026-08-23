@@ -25,19 +25,19 @@ export default router.post(
     ),
     mode: z.string(),
     model: z.string(),
-    concurrentCount: z.number().optional(), //nhất phát số 
+    concurrentCount: z.number().optional(), // số lượng xử lý đồng thời
   }),
   async (req, res) => {
     const { trackData, projectId, mode, model, concurrentCount = 5 } = req.body;
     try {
-      // tảiDữ liệu
+      // Tải dữ liệu
       const [id, modelData] = model.split(/:(.+)/);
       const projectData = await u.db("o_project").select("*").where({ id: projectId }).first();
       const videoPrompt = await u.db("o_prompt").where("type", "videoPromptGeneration").first();
       let videoPromptGeneration = "" as string | undefined;
 
       const modelPromptData = await u.db("o_modelPrompt").where("vendorId", id).where("model", modelData).first();
-      //Truy vấnđến  có ghép nốiđúng hồi VideoPrompt
+      // Truy vấn xem có VideoPrompt khớp tương ứng hay không
       if (modelPromptData) {
         const modelPromptRoot = u.getPath(["modelPrompt"]);
         try {
@@ -47,7 +47,7 @@ export default router.post(
         } catch {}
       }
 
-      // chưa Truy vấnđến ghép nối，Dựa theoMô hìnhtên + mode tự động khớp modelPrompt/video/ dưới  của Tệp
+      // Nếu chưa truy vấn được cấu hình khớp, dựa theo tên mô hình + mode để tự động khớp tệp trong thư mục modelPrompt/video/
       if (!videoPromptGeneration) {
         const modelPromptRoot = u.getPath(["modelPrompt"]);
         const videoPromptDir = path.join(modelPromptRoot, "video");
@@ -56,16 +56,16 @@ export default router.post(
         let fileName: string | null = null;
 
         if (modelLower.includes("wan") && modelLower.includes("2.6")) {
-          // wan2.6 dòng hàng  => Đơn ảnhKhung đầu/cuốimô thức 
+          // Dòng wan2.6 => chế độ khung đầu/cuối đơn ảnh
           fileName = "wan2.6Single-imageFirstFrameMode.md";
         } else if (/seedance.*2[.\-]0/i.test(modelLower)) {
-          // seedance 2.0 / 2-0 dòng hàng 
+          // Dòng seedance 2.0 / 2-0
           fileName = "seedance2Multi-parameterMode.md";
         } else if (mode === "startEndRequired" || mode === "endFrameOptional" || mode === "startFrameOptional") {
-          // body.mode Khung đầu/cuốiliên  => thông hàm Khung đầu/cuốimô thức 
+          // body.mode liên quan đến khung đầu/cuối => chế độ khung đầu/cuối thông dụng
           fileName = "universalFirstAndLastFrameMode.md";
         } else if (typeof mode === "string" && mode.startsWith('["') && mode.endsWith('"]')) {
-          // anh ấy => thông hàm nhiều tham mô thức 
+          // mode dạng mảng chuỗi JSON => chế độ đa tham số thông dụng
           fileName = "universalMulti-parameterMode.md";
         }
         if (fileName) {
@@ -73,12 +73,12 @@ export default router.post(
             const fullPath = path.join(videoPromptDir, fileName);
             videoPromptGeneration = await fs.readFile(fullPath, "utf-8");
           } catch {
-            // Tệp không tồn tại，hàm chọn 
+            // Tệp không tồn tại, dùng phương án dự phòng
           }
         }
       }
 
-      //chọn 
+      // Phương án dự phòng
       if (!videoPromptGeneration) {
         if (videoPrompt && videoPrompt.useData) {
           videoPromptGeneration = videoPrompt.useData;
@@ -87,7 +87,7 @@ export default router.post(
         }
       }
 
-      const artStyle = projectData?.artStyle || "không ";
+      const artStyle = projectData?.artStyle || "không có";
       const visualManual = u.getArtPrompt(artStyle, "art_skills", "art_storyboard_video");
       await u
         .db("o_videoTrack")
@@ -96,21 +96,21 @@ export default router.post(
           trackData.map((t: { trackId: number }) => t.trackId),
         )
         .update({ state: "Đang tạo" });
-      // nhất phát sát chép ：mục  track lập chạy  Truy vấn→ghép →AIgọi hàm →Cập nhật trình 
+      // Xử lý đồng thời theo lô: mỗi track thực hiện độc lập Truy vấn → Ghép nội dung → Gọi AI → Cập nhật tiến trình
       const limit = pLimit(concurrentCount ?? 5);
       const tasks = trackData.map((track: { trackId: number; info: { id: number; sources: string }[] }) =>
         limit(async () => {
-          // Truy vấntham số
+          // Truy vấn tham số
           const images = await Promise.all(
             track.info.map(async (item: { id: number; sources: string }) => {
               if (item.sources === "storyboard") {
-                // Truy vấnPhân cảnhchính thông tin
+                // Truy vấn thông tin chính của phân cảnh
                 const storyboard = await u
                   .db("o_storyboard")
                   .where("o_storyboard.id", item.id)
                   .select("videoDesc", "prompt", "track", "duration", "shouldGenerateImage")
                   .first();
-                // Truy vấnPhân cảnhliên kết  của Tài nguyênID
+                // Truy vấn ID tài nguyên liên kết với phân cảnh
                 const assetRows = await u.db("o_assets2Storyboard").where("storyboardId", item.id).orderBy("rowid").select("assetId");
                 const associateAssetsIds = assetRows.map((row: any) => row.assetId);
                 return {
@@ -120,7 +120,7 @@ export default router.post(
                 };
               }
               if (item.sources === "assets") {
-                // Truy vấn
+                // Truy vấn thông tin tài nguyên
                 const assetsData = await u
                   .db("o_assets")
                   .leftJoin("o_image", "o_image.id", "o_assets.imageId")
@@ -135,7 +135,7 @@ export default router.post(
             }),
           );
 
-          // phần  assets  và  storyboard
+          // Tách riêng assets và storyboard
           const assets: any[] = [];
           const storyboard: any[] = [];
           for (const item of images) {
@@ -159,12 +159,12 @@ export default router.post(
           }
 
           const content = `
-          **Mô hìnhtên**：${modelData},
-          **Tài nguyênthông tin**（Nhân vật、Bối cảnh、Đạo cụ、Âm thanh):${assets
+          **Tên mô hình**: ${modelData},
+          **Thông tin tài nguyên** (Nhân vật, Bối cảnh, Đạo cụ, Âm thanh): ${assets
             .filter((i: any) => i.filePath)
             .map((i: any) => `[${i.id},${i.type},${i.name}]`)
-            .join("，")},
-          **Phân cảnhthông tin**：${storyboard.map(
+            .join(", ")},
+          **Thông tin phân cảnh**: ${storyboard.map(
             (i: any) => `<storyboardItem
   videoDesc='${i.videoDesc}'
   duration='${i.duration}'
@@ -202,9 +202,9 @@ export default router.post(
         }),
       );
 
-      // sau  đài thực thi，không kết quả
+      // Thực thi ở nền, không chờ kết quả
       Promise.all(tasks);
-      res.status(200).send(success("bắt đầuTạo prompt gợi ý"));
+      res.status(200).send(success("Đã bắt đầu tạo prompt gợi ý"));
     } catch (e) {
       res.status(400).send(error(u.error(e).message));
     }

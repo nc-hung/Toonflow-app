@@ -305,7 +305,7 @@ async function createSubAgent(parentCtx: AgentContext) {
       const systemPrompt = await fs.promises.readFile(skill, "utf-8");
 
       const addPrompt =
-        "\nbạnbắt buộc sử dụng như dưới XMLđịnh dạngvào công việc khu ：\n```\n<storyboardItem videoDesc='Videomô tả' prompt=Promptnội dung track='phân nhóm' shouldGenerateImage='true/false' duration='Videokhuyến nghị thời gian' associateAssetsIds='[Phân cảnhnơi cần  của Tài nguyênIDdanh sách]'></storyboardItem>\n```";
+        "\nBạn bắt buộc phải sử dụng đúng định dạng XML như sau trong kết quả:\n```\n<storyboardItem videoDesc='Mô tả video' prompt='Nội dung prompt' track='Phân nhóm' shouldGenerateImage='true/false' duration='Thời lượng video đề xuất' associateAssetsIds='[Danh sách ID tài nguyên cần dùng cho phân cảnh này]'></storyboardItem>\n```";
 
       return runAgent({
         key: "productionAgent:storyboardPanelAgent",

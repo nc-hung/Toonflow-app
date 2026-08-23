@@ -1,193 +1,193 @@
 ---
 name: storyboard_table_techniques
 description: >-
-  thông hàm Bảng phân cảnhthức tham chiếu。
-  Phân cảnhphútgốc 、nối trường Ống kínhhợp nhất 、trực quan、chữ đoạn 、chuyển trường Phân cảnhthiết tính thông hàm thức ，nhà  Agent kích hoạt hàm 。
+  Tài liệu tham chiếu kỹ thuật chung cho việc dựng Bảng phân cảnh.
+  Bao gồm nguyên tắc phân cảnh, hợp nhất ống kính nối cảnh, logic trực quan, các trường dữ liệu và kỹ thuật chuyển cảnh khi thiết kế Bảng phân cảnh — dùng chung cho mọi Agent liên quan.
 ---
-# Bảng phân cảnhthông hàm thức 
+# Kỹ thuật chung cho Bảng phân cảnh
 
-sách tài liệu Bảng phân cảnhthiết tính  của thông hàm thức tham chiếu，hàm với tất cảcần cần cấu tạo Bảng phân cảnh của  Agent Bối cảnh。
-
----
-
-## Phân cảnhphútgốc 
-
-**mới Phân cảnh**：Bối cảnh/địa điểm đổi 、thời gian、Ống kínhchính thể đổi 、Cỡ cảnhdẫn hóa 、trùng cần động tác vụ tiết điểm 
-
-**không cần mới **：cùng vẽ mặt trong đúng lời 、bảng tình hoặc nhỏ động tác vụ 
-
-độ ：một lập vẽ mặt  = 1 mục Phân cảnh， 50~100 chữ Kịch bảnđúng hồi  1~2 mục Phân cảnh。/chuyển trường như có dẫn mô cũng đơn phút。
+Tài liệu này là tham chiếu kỹ thuật chung cho việc thiết kế Bảng phân cảnh, dùng cho ngữ cảnh (context) của mọi Agent cần xây dựng Bảng phân cảnh.
 
 ---
 
-## nối trường Ống kínhhợp nhất （）
+## Nguyên tắc phân cảnh
 
-**nối trường Ống kính**：mục mới Bối cảnh/đoạn  của nối trường nhất nhiều  1~2 mục Ống kínhtạo ，Nghiêm cấmtạo  3 mục trên 。
-- khuyến nghị thức ：1 mục kèm khuyến  của Viễn cảnh (extreme wide shot)（nối trường +chính thể vào 1 quay tạo ），hoặc  1 mục lớn Viễn cảnh (extreme wide shot)nối trường  + 1 mục Toàn cảnh (wide shot)vào chính thể 
-- Nghiêm cấmthức ：trước rỗng quay →cục bộ tiết →ngườiđến  của 3đoạn thức 
+**Cần tách cảnh (shot) mới khi**: bối cảnh/địa điểm thay đổi, thời gian thay đổi, chủ thể của ống kính thay đổi, cỡ cảnh thay đổi rõ rệt, hoặc xuất hiện một nút hành động quan trọng.
 
-**Ống kínhhợp nhất tự kiểm **：
-- thể 1 quay tác vụ  của không 2quay ——như quả một kèm Góc quay của Ống kínhthể cùng tạo nối trường +vào ，không cần tạo 2mục 
-- Mô tảcùng 1 rỗng gian không cùng cục bộ  của Ống kính（cổng →→）hồi hợp nhất một Ống kính，hàm Mô tả hình ảnhnhiều tầng rỗng gian 
-- thuần Ống kính（chỉ nhở tiết không việc Đẩy tới (push in / dolly in)）hồi hợp nhất đến có việc công thể  của Ống kínhgiữa 
-- **đạo diễnkiểm chiếu **：sau tự kiểm ——như quả một thật ngườiđạo diễnsẽ đem  2~3 mục Ống kínhhợp tạo  1 mục ，Giải thíchđược ，hồi hợp nhất 
+**Không cần tách cảnh mới khi**: vẫn trong cùng một khung hình, chỉ có đối thoại, biểu cảm hoặc động tác nhỏ thay đổi.
 
-**1 quay đến **：khi Ống kính của gian lưu ở **động tác vụ hóa 、Bối cảnhđộ hóa （cùng Bối cảnhtrong vị trí ）、hoặc nhân độ **，ở  `cameraMove` hoặc  `description` giữa biểu tâm 「1 quay đến 」，nhiều mục Ống kínhhợp một Góc quaydài Ống kính。
-- **hàm Bối cảnh**：Nhân vậtthi chạy rỗng gian 、động tác vụ từ Ađiểm đến Bđiểm 、Quay vòng (orbiting / surround)Nhân vậtnhở 、nối trường khuyến đến chính thể Đặc tả (close-up)
-- **biểu tâm cách thức**：ở  `cameraMove` giữa dẫn Góc quayđường dẫn（như "1 quay đến ：khuyến Viễn cảnh (extreme wide shot)→đến trong →Toàn cảnh (wide shot)"），ở  `description` giữa Mô tả và  của vẽ mặt nội dung
-- **Thời lượngmở rộng **：1 quay đến Ống kínhthông tinlượng giữ cập nhật，đơn quay  6s trên hạn ，nhưng không vượt  12s
-- **phong nhắc nhở **：1 quay đến sẽ nhắc cao vẽ mặt tạo của độ （Yêu cầucao ），chỉ ở việc nhận dẫn lớn với hàm ，không hàm 
-
-** 6 giây**：Không có lời thoạiỐng kínhtính vượt  6s chưa ra mới thông tin（Lời thoại/động tác vụ /chính thể hóa ），tâm ý lực 。nối trường +loại Ống kínhtâm ý ，hợp nhất nén nhỏ cũng không cần 
+Mật độ tham chiếu: một khung hình độc lập = 1 cảnh quay; trung bình mỗi 50~100 chữ kịch bản tương ứng 1~2 cảnh quay. Nếu có mô tả chuyển cảnh/chuyển trường thì tính riêng.
 
 ---
 
-## trực quan（Phân cảnhthiết tính toàn trình ）
+## Hợp nhất ống kính nối cảnh
 
-**① động tác vụ **：Ống kínhgian Nhân vật của vị trí trí 、động tác vụ Tiến độ、Bắt buộclý logic1 。trên 1 quay tay đến nửa rỗng →dưới 1 quay Bắt buộctừ nửa rỗng trạng tháitiếp ，không thể nhận trả 。
+**Ống kính nối cảnh (establishing shot)**: mỗi khi vào một bối cảnh/đoạn mới, chỉ được tạo tối đa 1~2 cảnh quay nối cảnh, nghiêm cấm tạo quá 3 cảnh quay.
+- Cách khuyến nghị: 1 cảnh đại viễn cảnh (extreme wide shot) kèm động tác đẩy máy (kết hợp nối cảnh + đưa chủ thể vào khung trong cùng một cú máy), hoặc 1 cảnh đại viễn cảnh để nối trường + 1 cảnh toàn cảnh (wide shot) để đưa chủ thể vào khung.
+- Cách bị cấm: cảnh trống mở đầu → chi tiết cục bộ → nhân vật xuất hiện, kiểu chia làm 3 đoạn tách rời.
 
-**② Cỡ cảnhtiến thức **：Cỡ cảnhđổi tiến hoặc tiến mở ——
-- tiến ：Viễn cảnh (extreme wide shot)→Toàn cảnh (wide shot)→Trung cảnh (medium shot)→Cận cảnh (close-up)→Đặc tả (close-up)（tình xúc nhận ）
-- tiến mở ：Đặc tả (close-up)→Cận cảnh (close-up)→Trung cảnh (medium shot)→Viễn cảnh (extreme wide shot)（tình xúc mở ）
-- Nghiêm cấmkhông việc lý do  của cùng Cỡ cảnh（ 3 quay trên cùng Cỡ cảnh = trực quan）
+**Tự kiểm tra khi hợp nhất ống kính**:
+- Việc có thể hoàn thành trong 1 cú máy thì không tách thành 2 cú máy — nếu một chuyển động máy quay có thể vừa nối cảnh vừa đưa chủ thể vào khung, không cần tách thành 2 cảnh quay riêng.
+- Các cảnh quay mô tả những khu vực khác nhau trong cùng một không gian (ví dụ: cổng → sân → cửa) nên hợp nhất thành một cảnh quay duy nhất, dùng trường Mô tả hình ảnh để thể hiện nhiều tầng không gian.
+- Các cảnh quay thuần chuyển động máy quay (chỉ nâng/hạ hoặc đẩy máy mà không có nội dung mới) nên được gộp vào cảnh quay có nội dung thực chất kế tiếp.
+- **Kiểm tra theo góc nhìn đạo diễn**: tự hỏi ở bước cuối cùng — nếu một đạo diễn thực thụ sẽ gộp 2~3 cảnh quay này thành 1 và có thể giải thích được lý do, thì nên gộp lại.
 
-**③ video **：180độ đường gốc ——đúng lời /đúng Bối cảnhgiữa Nhân vậtvẽ mặt vị trí trí toàn nối cùng ，không được 
+**Một cú máy dài (long take)**: khi sự khác biệt giữa các cảnh quay chỉ nằm ở **chuyển động liên tục, thay đổi vị trí trong cùng bối cảnh, hoặc thay đổi khoảng cách với nhân vật**, hãy thể hiện điều đó bằng cụm "một cú máy dài" trong `cameraMove` hoặc `description`, gộp nhiều cảnh quay thành một chuyển động máy quay dài liên tục.
+- **Bối cảnh áp dụng**: nhân vật di chuyển qua không gian, hành động kéo dài từ điểm A đến điểm B, máy quay xoay vòng quanh (orbiting/surround) nhân vật, hoặc nối cảnh rồi đẩy máy (push in) tới cận cảnh đặc tả chủ thể.
+- **Cách thể hiện**: trong `cameraMove` ghi rõ lộ trình chuyển động máy quay (ví dụ: "một cú máy dài: đẩy máy từ đại viễn cảnh → tiến vào bên trong → toàn cảnh"), trong `description` mô tả nội dung hình ảnh xuất hiện dọc theo lộ trình đó.
+- **Mở rộng thời lượng**: cảnh quay dạng một cú máy dài cần liên tục cập nhật lượng thông tin mới; thời lượng một cảnh quay có thể vượt mức 6s thông thường, nhưng không được vượt quá 12s.
+- **Lưu ý về mức độ**: một cú máy dài sẽ nâng cao độ khó khi tạo hình ảnh (yêu cầu AI cao hơn), chỉ nên dùng khi thực sự cần thiết cho kịch tình, không lạm dụng.
 
-**④ rỗng gian logic**：đúng lời đôi phương mặt ，thao tác vụ mặt ，tâm video phương mặt phương 。Nghiêm cấmkhông khác mặt Ống kính
-
-**⑤ thông tinsát chép ý trưng **：quay buộc ý trưng đến "báo đạo sao、không báo đạo sao"——
-- cho tay không cho  = ；trước thanh sau vẽ  = kỳ ；chỉ cho sáng  = ；toàn nhở  = cao 
-
-**⑥ tiết mật độ **：đơn Ống kínhđộng tác vụ /sự kiệnsố lượng buộc Thời lượngkhớp，vào nhiều nội dung——
-- 1 mục lý động tác vụ  = 1 ，1 lần Góc quay = 1 ，1 câu ngắn Lời thoại（≤10 chữ ）= 1 
-- 2~3s Ống kính：nhất nhiều  1 ；4~6s Ống kính：nhất nhiều  2 ；7s+ Ống kính：nhất nhiều  3 
-
-**⑦ đầu đuôi an toàn khu **：quay  của trước  0.5s  và sau  0.5s an toàn khu ，không mở liên động tác vụ hoặc Lời thoạiban đầu điểm 。trước  0.5s hàm với tạo lập hoặc chính thể thái ，sau  0.5s hàm với động tác vụ tự nhận 。
+**Quy tắc 6 giây**: cảnh quay không có lời thoại nếu vượt quá 6 giây mà không xuất hiện thông tin mới (lời thoại/động tác/thay đổi chủ thể) sẽ làm loãng sự tập trung của người xem. Đặc biệt lưu ý với các cảnh quay dạng nối cảnh — nên rút gọn/nén lại, không kéo dài không cần thiết.
 
 ---
 
-## chữ đoạn 
+## Logic trực quan (áp dụng xuyên suốt quá trình thiết kế Bảng phân cảnh)
 
-**description**（Mô tả hình ảnh）：1 câu lời Mô tảvẽ mặt nội dung（15~50 chữ ），gói thấy  của **chính thể  + động tác vụ /trạng thái + rỗng gian **，không lý hoạt động 。cần thể rỗng gian tầng lần （trước bối /Trung cảnh (medium shot)/bối đến ít 2tầng ）。như "trước bối ，Trung cảnh (medium shot)""tạo dưới ，mở lượng bại ，xử vào vật "
+**① Logic hành động liên tục**: vị trí nhân vật và tiến độ động tác giữa các cảnh quay phải nhất quán về mặt logic. Nếu cảnh quay trước kết thúc khi tay đưa đến nửa chừng → thì cảnh quay sau phải tiếp nối từ đúng trạng thái nửa chừng đó, không được nhảy cóc hay lặp lại động tác.
 
-> **🚫 Nghiêm cấmÁnh sáng/vật gọi Mô tả**：description tất cảchữ đoạn đều **không được **ra  `ánh `/`sáng `/`vật `/`vật gọi `/`vật `/`vật `/`ánh `/`dẫn `/`cao đúng tỷ ` Ánh sángloại từ 。Ánh sángtoàn do Ống kínhnơi hàm  của Bối cảnhTài nguyênảnh tự động ——bối /ngày/ánh ánh cần cầu vui lòng thông quahàm đúng hồi **Bối cảnhsinh **（bối bản /ngàybản /ánh bản ）bảng 。như Ví dụgiữa Nguyên tác"dưới "biệt ，hồi xóa đi 。
+**② Tiến triển cỡ cảnh có trật tự**: cỡ cảnh nên thay đổi theo hướng thu hẹp dần hoặc mở rộng dần —
+- Thu hẹp dần: Đại viễn cảnh → Toàn cảnh → Trung cảnh → Cận cảnh → Đặc tả (dùng khi cảm xúc dâng cao, hội tụ)
+- Mở rộng dần: Đặc tả → Cận cảnh → Trung cảnh → Toàn cảnh → Đại viễn cảnh (dùng khi cảm xúc lắng xuống, mở rộng)
+- Nghiêm cấm giữ nguyên cùng một cỡ cảnh liên tục mà không có lý do (từ 3 cảnh quay trở lên cùng một cỡ cảnh = vi phạm logic trực quan).
 
-**shotSize**（Cỡ cảnh）：
+**③ Trục quay (180°-line)**: tuân thủ nguyên tắc trục 180 độ — vị trí trong khung hình của các nhân vật đối thoại/đối diện nhau trong cùng bối cảnh phải nhất quán xuyên suốt, không được đảo lộn (nhảy trục).
 
-| Cỡ cảnh | Giải thích | việc ngữ nghĩa  |
+**④ Logic không gian**: hướng nhìn của hai bên đối thoại, hướng thao tác và hướng ánh mắt hướng về trung tâm phải khớp với nhau. Nghiêm cấm các cảnh quay có hướng mặt mâu thuẫn nhau.
+
+**⑤ Kiểm soát lượng thông tin qua cách để lộ**: mỗi cảnh quay cần cân nhắc rõ "để lộ cái gì, giấu cái gì" —
+- Chỉ cho thấy tay, giấu mặt = tạo bí ẩn; nghe âm thanh trước, thấy hình sau = tạo hồi hộp; chỉ cho thấy bóng lưng = giữ kín danh tính; để lộ toàn bộ = đẩy cao trào.
+
+**⑥ Mật độ chi tiết**: số lượng động tác/sự kiện trong một cảnh quay phải khớp với thời lượng, tránh nhồi nhét quá nhiều nội dung —
+- 1 động tác chính = 1 đơn vị, 1 lần chuyển động máy quay = 1 đơn vị, 1 câu thoại ngắn (≤10 chữ) = 1 đơn vị
+- Cảnh quay 2~3s: tối đa 1 đơn vị; cảnh quay 4~6s: tối đa 2 đơn vị; cảnh quay 7s+: tối đa 3 đơn vị.
+
+**⑦ Vùng an toàn đầu-cuối**: 0.5s đầu và 0.5s cuối của mỗi cảnh quay là vùng an toàn, không đặt điểm bắt đầu của động tác quan trọng hoặc lời thoại vào đó. 0.5s đầu dùng để thiết lập bố cục/trạng thái ban đầu của chủ thể, 0.5s cuối dùng để động tác được hoàn tất một cách tự nhiên.
+
+---
+
+## Các trường dữ liệu
+
+**description** (Mô tả hình ảnh): một câu mô tả nội dung khung hình (15~50 chữ), bao gồm **chủ thể + động tác/trạng thái + không gian**, không chứa nội dung về chuyển động máy quay. Cần thể hiện tối thiểu 2 tầng không gian (tiền cảnh/trung cảnh/hậu cảnh). Ví dụ: "Tiền cảnh là bàn trà, trung cảnh là nhân vật đang ngồi"; "Cửa gỗ đổ sập, mảnh vụn văng tung tóe, lộ ra bóng người phía sau".
+
+> **🚫 Nghiêm cấm mô tả ánh sáng/nguồn sáng**: mọi câu trong trường description đều **không được** xuất hiện các từ thuộc nhóm ánh sáng như `ánh sáng`/`đèn`/`nguồn sáng`/`chiếu sáng`/`tỏa sáng`/`ánh nắng`/`độ tương phản cao`. Ánh sáng hoàn toàn do Tài nguyên Bối cảnh mà cảnh quay tham chiếu tự động thể hiện — mọi yêu cầu về bối cảnh/ngày-đêm/ánh sáng cần được đáp ứng thông qua việc tham chiếu đúng **Tài nguyên Bối cảnh phái sinh** phù hợp (bản ban đêm/bản ban ngày/bản có đèn...). Nếu trong ví dụ có xuất hiện các từ này, hãy loại bỏ khi viết mô tả thực tế.
+
+**shotSize** (Cỡ cảnh):
+
+| Cỡ cảnh | Giải thích | Ngữ nghĩa sử dụng |
 |------|------|---------|
-| lớn Viễn cảnh (extreme wide shot) | toàn  | nối trường  /  / nhỏ  |
-| Viễn cảnh (extreme wide shot) | Bối cảnhngườiliên dòng  | rỗng gian liên dòng  / Không khí |
-| Toàn cảnh (wide shot) | ngườitoàn  | Nhân vậtđăng trường  / toàn  |
-| Trung cảnh (medium shot) | trên  | ngày thường việc  / đúng lời  |
-| Cận cảnh (close-up) | bộ trên  | tình truyền  / đúng lời trùng điểm  |
-| Đặc tả (close-up) | mặt bộ hoặc tệp cục bộ  | tình xúc hóa  / liên Đạo cụ |
-| lớn Đặc tả (close-up) | cục bộ  | tình xúc  / nối gian （hàm ，toàn  2~3 lần ） |
+| Đại viễn cảnh (extreme wide shot) | Bao quát toàn bộ khung cảnh | Nối cảnh / thiết lập bối cảnh / tạo cảm giác nhỏ bé |
+| Viễn cảnh (extreme wide shot) | Thể hiện mối liên hệ giữa nhân vật và bối cảnh | Thiết lập liên hệ không gian / tạo không khí |
+| Toàn cảnh (wide shot) | Toàn thân nhân vật trong khung hình | Nhân vật xuất hiện / thể hiện toàn bộ hành động |
+| Trung cảnh (medium shot) | Từ phần thân trên trở lên | Hoạt động thường ngày / đối thoại |
+| Cận cảnh (close-up) | Phần thân trên (từ ngực trở lên) | Truyền tải cảm xúc / đối thoại trọng tâm |
+| Đặc tả (close-up) | Khuôn mặt hoặc một chi tiết cục bộ | Khắc họa cảm xúc / liên kết đạo cụ |
+| Đại đặc tả (close-up) | Một chi tiết cực nhỏ, cục bộ | Đẩy cảm xúc lên cao trào / chêm giữa các cảnh (hạn chế dùng, toàn phim tối đa 2~3 lần) |
 
-**cameraMove**（Góc quay）：không Góc quay `Tĩnh (static)`。Góc quaybuộc biểu tâm điểm phương 。
+**cameraMove** (Chuyển động máy quay): không dùng giá trị `Tĩnh (static)`. Chuyển động máy quay phải thể hiện rõ mục đích và hướng chuyển động.
 
-| Góc quay | Giải thích | việc ngữ nghĩa  |
+| Chuyển động máy quay | Giải thích | Ngữ nghĩa sử dụng |
 |------|------|---------|
-| khuyến  | từ đến ，gọi chính thể  | tình xúc tiến  / phát  / video  |
-|  | từ đến ，nhở  | tình xúc  / nhở toàn  / khác  |
-|  | nối vị trí trí chuyển video  | tác vụ  / tìm kiếm  |
-|  | chính thể động  |  /  |
-|  | từ trên dưới  |  / nhỏ  / toàn cục  |
-|  | từ dưới trên  | hóa  / nén  |
+| Đẩy tới (push in / dolly in) | Từ xa tiến lại gần, làm nổi bật chủ thể | Đẩy cảm xúc lên cao / bộc lộ chi tiết / tập trung thị giác |
+| Kéo lùi (pull back / dolly out) | Từ gần lùi ra xa, mở rộng khung nhìn | Cảm xúc lắng dịu / hé lộ toàn cảnh / kết thúc phân đoạn |
+| Lia máy (pan) | Máy quay xoay/dịch chuyển ngang để đổi vị trí khung hình | Thể hiện hành động / tìm kiếm bằng ánh mắt |
+| Theo dõi (tracking / follow shot) | Máy quay bám theo chủ thể đang di chuyển | Rượt đuổi / di chuyển cùng nhân vật |
+| Cần cẩu xuống (crane down / tilt down) | Máy quay hạ dần từ trên xuống dưới | Góc nhìn bao quát / tạo cảm giác nhỏ bé / thể hiện toàn cục |
+| Cần cẩu lên (crane up / tilt up) | Máy quay nâng dần từ dưới lên trên | Tôn vinh nhân vật (anh hùng hóa) / tạo cảm giác áp bức, choáng ngợp |
 
-**action**（Hành động nhân vật）：vẽ mặt giữa Nhân vật/chính thể  của cụ thể động tác vụ Mô tả（5~40 chữ ），không Hành động nhân vật `rỗng quay `。khung thức  `(tiếp Giải thích)động tác vụ Mô tả`。Yêu cầu：
-- **tiếp Giải thíchtrí với mở đầu **：hàm nửa nhân quát số gói ，trí với động tác vụ Mô tảnhất trước mặt 。quay  `(mở bài )`；anh ấyỐng kính `(tiếp trên quay :tiếp động tác vụ )`，như  `(tiếp trên quay :khuyến ~nối khung )`、`(tiếp trên quay :tay nửa trạng thái→trên )`
-- **động tác vụ thức **：lý động tác vụ  + độ tiết （"phải tay →→"），Nghiêm cấmchỉ thái thái 。nhiều Nhân vậtcác tự động tác vụ hàm  `;` phútcách ，theo Tên tài nguyên liên kếtxếp sắp hàng ，như  `phải tay cổng →trái ;video đường phương `
-- **sách hàng không /rỗng gian liên dòng **：rỗng gian liên dòng đã lập hàng （`orientation` / `spatialRelation`），không ở  action trong trùng lời biểu tâm ， `|`  markdown bảng khung hàng phútcách 
+**action** (Hành động nhân vật): mô tả cụ thể động tác của nhân vật/chủ thể trong khung hình (5~40 chữ), không được để giá trị `rỗng`. Định dạng: `(chú thích nối cảnh)mô tả động tác`. Yêu cầu:
+- **Chú thích nối cảnh đặt ở đầu câu**: bao gồm cả cảnh quay đầu tiên, đặt trước phần mô tả động tác. Cảnh quay mở đầu ghi `(mở cảnh)`; các cảnh quay khác ghi `(nối tiếp cảnh trước: tiếp nối động tác nào)`, ví dụ `(nối tiếp cảnh trước: đẩy máy đến khung cận cảnh)`, `(nối tiếp cảnh trước: tay đang ở trạng thái nửa chừng → đưa lên hoàn toàn)`.
+- **Định dạng động tác**: mô tả động tác chính + độ chi tiết (ví dụ "tay phải đưa ra → nắm lấy → kéo về"), nghiêm cấm chỉ mô tả trạng thái tĩnh. Nếu có nhiều nhân vật, mỗi nhân vật một động tác riêng, phân cách bằng dấu `;`, sắp xếp theo thứ tự Tên tài nguyên liên kết, ví dụ `tay phải đẩy cổng → bước vào ;ánh mắt nhìn về phía trước`.
+- **Không lặp lại hướng nhìn/quan hệ không gian**: hướng nhìn và quan hệ không gian đã được thể hiện ở các trường riêng (`orientation` / `spatialRelation`), không lặp lại trong action; dấu `|` dùng để phân tách các cột trong bảng markdown.
 
-**orientation**（）：lập hàng ，vẽ mặt giữa Nhân vậtmặt bộ biểu tâm 。khung thức ：
-- nhiều Nhân vậttheo  `associateAssetsNames` xếp hàng ra ，hàm  `;` phútcách ：`Nhân vậtA-3/4chính mặt phải ;Nhân vậtB-3/4chính mặt trái `
-- đơn Nhân vậtNhân vậttên ：`mặt phải `
-- rỗng quay thuần tệp Đặc tả (close-up) `—`
-- buộc hợp  180° video đường （cùng Bối cảnhtrong nối ，hóa buộc ở  `action` giữa cho ra chuyển /chuyển đầu tiếp động tác vụ nhất cùng bước cập nhậtsách hàng ），cụ thể xuất giá trị thấy dưới phương tham chiếubảng 
+**orientation** (Hướng mặt): trường độc lập, thể hiện hướng khuôn mặt của nhân vật trong khung hình. Định dạng:
+- Nhiều nhân vật: liệt kê theo thứ tự trong `associateAssetsNames`, phân cách bằng `;`: `Nhân vật A-3/4 chính diện hướng phải;Nhân vật B-3/4 chính diện hướng trái`
+- Một nhân vật: chỉ ghi tên hướng: `hướng phải`
+- Cảnh quay trống hoặc thuần đặc tả chi tiết: ghi `—`
+- Bắt buộc tuân thủ trục quay 180° (khi nối cảnh trong cùng bối cảnh, nếu hướng thay đổi thì phải thể hiện rõ trong `action` bằng động tác xoay người/đổi hướng, đồng bộ đúng thời điểm chuyển). Danh sách giá trị cụ thể xem bảng tham chiếu bên dưới.
 
-**spatialRelation**（rỗng gian liên dòng ）：lập hàng ，nhiều Nhân vậtvẽ mặt giữa các Nhân vậtđúng trạm vị trí 。khung thức ：
-- theo  `associateAssetsNames` xếp hàng ra ，hàm  `、` phútcách ：`Nhân vậtA(vị trí trí )、Nhân vậtB(vị trí trí )`
-- vị trí trí xuất giá trị thấy dưới phương rỗng gian liên dòng tham chiếubảng （9 trạm vị trí ）
-- đơn Nhân vậtỐng kínhchỉ 1  `Nhân vật(vị trí trí )` hoặc  `—`；thuần tệp Đặc tả (close-up)、rỗng quay  `—`
-- buộc 、Cỡ cảnh、Góc quaytự （phải  của Nhân vậttâm video /động mục biểu hồi vị trí với phải trạm vị trí ）；cùng trường cùng nhóm Nhân vậttrạm vị trí buộc nối ，chạy vị trí buộc ở  `action` giữa cho ra tiếp động tác vụ nhất cùng bước cập nhậtsách hàng 
+**spatialRelation** (Quan hệ không gian): trường độc lập, thể hiện vị trí đứng tương đối giữa các nhân vật trong khung hình. Định dạng:
+- Liệt kê theo thứ tự trong `associateAssetsNames`, phân cách bằng `、`: `Nhân vật A(vị trí)、Nhân vật B(vị trí)`
+- Danh sách giá trị vị trí xem bảng tham chiếu quan hệ không gian bên dưới (9 vị trí)
+- Cảnh quay chỉ có 1 nhân vật: ghi `Nhân vật(vị trí)` hoặc `—`; cảnh quay thuần đặc tả, cảnh trống: ghi `—`
+- Vị trí phải khớp với hướng mặt, cỡ cảnh, chuyển động máy quay (vị trí của nhân vật cần khớp với hướng ánh mắt/mục tiêu di chuyển của họ); trong cùng một trường/nhóm cảnh, vị trí đứng của nhân vật phải nối tiếp liên tục — nếu vị trí thay đổi thì phải thể hiện động tác di chuyển tương ứng trong `action`, đồng bộ đúng thời điểm chuyển.
 
-**chỉnh chữ đoạn Ví dụ**（5 người）：
-- `action`：`(mở bài )Viễn cảnh (extreme wide shot)khuyến người，5ngườitrạm vị trí ——trái 、trái ;video đường vật `
-- `orientation`：`-3/4chính mặt phải ;-3/4chính mặt trái ;lưu -3/4chính mặt trái ;-3/4chính mặt trái ;an -chính mặt `
-- `spatialRelation`：`(trái trước )、an (phải trước )、(trái sau )、lưu (giữa sau )、(phải sau )`
+**Ví dụ các trường phối hợp** (5 người):
+- `action`: `(mở cảnh)Đại viễn cảnh đẩy máy vào nhóm nhân vật, 5 người lần lượt vào vị trí — người đứng ngoài cùng bên trái bước sang trái ;ánh mắt cả nhóm hướng về vật thể chung`
+- `orientation`: `Nhân vật A-3/4 chính diện hướng phải;Nhân vật B-3/4 chính diện hướng trái;Nhân vật C-3/4 chính diện hướng trái;Nhân vật D-3/4 chính diện hướng trái;Nhân vật E-chính diện`
+- `spatialRelation`: `Nhân vật A(trái trước)、Nhân vật E(phải trước)、Nhân vật C(trái sau)、Nhân vật B(giữa sau)、Nhân vật D(phải sau)`
 
-**tham chiếubảng **（orientation hàng hàm ）：
+**Bảng tham chiếu** (dùng cho trường orientation):
 
-| xuất giá trị  | nghĩa  | kiểu Bối cảnh |
+| Giá trị | Ý nghĩa | Kiểu bối cảnh áp dụng |
 |---------|------|---------|
-| mặt phải  | mặt vẽ mặt phải  | 180°đường trái Nhân vật、phải mục biểu  |
-| mặt trái  | mặt vẽ mặt trái  | 180°đường phải Nhân vật、trái mục biểu  |
-| chính mặt  | chính đúng Ống kính | tự 、、trực video  |
-| 3/4chính mặt phải  | 3/4mặt phải Ống kính | đúng lời chính thể （vẽ mặt trái Nhân vật） |
-| 3/4chính mặt trái  | 3/4mặt trái Ống kính | đúng lời chính thể （vẽ mặt phải Nhân vật） |
-| chính mặt phải  | chính mặt phải  | 、 |
-| chính mặt trái  | chính mặt trái  | 、 |
-| 3/4mặt phải  | 3/4mặt phải  | 、đi  |
-| 3/4mặt trái  | 3/4mặt trái  | 、đi  |
-| mặt  | đúng Ống kính | đăng trường 、khác 、 |
+| hướng phải | Mặt nhân vật quay về phía bên phải khung hình | Nhân vật đứng bên trái theo trục 180°, đối tượng/mục tiêu ở phía bên phải |
+| hướng trái | Mặt nhân vật quay về phía bên trái khung hình | Nhân vật đứng bên phải theo trục 180°, đối tượng/mục tiêu ở phía bên trái |
+| chính diện | Mặt hướng thẳng vào ống kính | Tự giới thiệu, độc thoại, nhìn thẳng vào máy quay |
+| 3/4 chính diện phải | Mặt nghiêng 3/4 hướng phải, phần lớn khuôn mặt vẫn hướng về ống kính | Nhân vật là chủ thể chính trong cảnh đối thoại (đối tượng đứng bên trái khung hình) |
+| 3/4 chính diện trái | Mặt nghiêng 3/4 hướng trái, phần lớn khuôn mặt vẫn hướng về ống kính | Nhân vật là chủ thể chính trong cảnh đối thoại (đối tượng đứng bên phải khung hình) |
+| nghiêng hẳn phải | Mặt quay hẳn 90° sang phải, chỉ thấy diện mạo nghiêng | Đối đầu, quan sát, dõi theo |
+| nghiêng hẳn trái | Mặt quay hẳn 90° sang trái, chỉ thấy diện mạo nghiêng | Đối đầu, quan sát, dõi theo |
+| 3/4 sau phải | Mặt nghiêng ra sau bên phải, phần lớn thấy gáy/lưng | Nhân vật rời đi, bị bỏ lại phía sau |
+| 3/4 sau trái | Mặt nghiêng ra sau bên trái, phần lớn thấy gáy/lưng | Nhân vật rời đi, bị bỏ lại phía sau |
+| quay lưng | Chỉ thấy sau lưng, không thấy mặt | Nhân vật xuất hiện lần đầu (giữ bí ẩn), tạo khoảng cách, rời đi |
 
-> cộng ：`mặt phải đầu `、`3/4chính mặt trái thấp đầu `。
+> Có thể kết hợp thêm trạng thái cúi/ngẩng đầu, ví dụ: `hướng phải, ngẩng đầu`、`3/4 chính diện trái, cúi đầu`.
 
-**rỗng gian liên dòng tham chiếubảng **（spatialRelation hàng hàm ，nhiều Nhân vậtBối cảnhbắt biểu ）：
+**Bảng tham chiếu quan hệ không gian** (dùng cho trường spatialRelation, nhiều nhân vật trong bối cảnh bắt buộc điền):
 
-vẽ mặt phút「trái /giữa /phải 」3hàng  ×「trước /giữa /sau 」3tầng  của  3×3 trạm vị trí mạng khung ，trước =Ống kính/trước bối tầng ，sau =Ống kính/bối tầng ；trước /sau bảng cao thấp （như video dưới giả 「giữa trước 」、trạm lập nén giả 「giữa sau 」）。
+Khung hình được chia thành lưới 3×3 vị trí: 3 cột ngang 「trái/giữa/phải」 × 3 tầng sâu 「trước/giữa/sau」; trước = gần ống kính/lớp tiền cảnh, sau = xa ống kính/lớp hậu cảnh; vị trí trước/sau còn thể hiện tương quan cao-thấp trong khung hình (ví dụ nhân vật ngồi ở phía dưới được xem là "giữa trước", nhân vật đứng ở phía sau được xem là "giữa sau").
 
-| vị trí trí xuất giá trị  | nghĩa  | kiểu hàm thức  |
+| Giá trị vị trí | Ý nghĩa | Kiểu bối cảnh áp dụng |
 |---------|------|---------|
-| trái trước  | vẽ mặt trái 、Ống kính | chính thể trái trước bối ，thường tác vụ chính dẫn phát thanh phương  |
-| giữa trước  | vẽ mặt giữa 、Ống kính | đơn chính thể giữa 、trước bối nửa  của Nhân vật |
-| phải trước  | vẽ mặt phải 、Ống kính | chính thể phải trước bối  |
-| trái giữa  | vẽ mặt trái 、Trung cảnh (medium shot)tầng  | giữa đoạn trái vị trí  |
-| giữa giữa  | vẽ mặt chính giữa 、Trung cảnh (medium shot)tầng  | chính thể giữa 、đúng lời chính dẫn giả  |
-| phải giữa  | vẽ mặt phải 、Trung cảnh (medium shot)tầng  | giữa đoạn phải vị trí  |
-| trái sau  | vẽ mặt trái 、sau （bối ） | sau sắp trái vị trí 、giả  |
-| giữa sau  | vẽ mặt giữa 、sau  | sau sắp giữa 、trước bối hoặc cao vị trí  |
-| phải sau  | vẽ mặt phải 、sau  | sau sắp phải vị trí 、giả  |
+| trái trước | Bên trái khung hình, gần ống kính (tiền cảnh) | Chủ thể đứng tiền cảnh bên trái, thường là người đang phát biểu/hành động chính |
+| giữa trước | Chính giữa khung hình, gần ống kính (tiền cảnh) | Chủ thể duy nhất ở giữa, đứng trước một nhân vật khác ở phía sau |
+| phải trước | Bên phải khung hình, gần ống kính (tiền cảnh) | Chủ thể đứng tiền cảnh bên phải |
+| trái giữa | Bên trái khung hình, ở tầng trung cảnh | Vị trí bên trái ở tầng giữa (trung gian) |
+| giữa giữa | Chính giữa khung hình, ở tầng trung cảnh | Chủ thể chính ở giữa, người đối thoại chính |
+| phải giữa | Bên phải khung hình, ở tầng trung cảnh | Vị trí bên phải ở tầng giữa (trung gian) |
+| trái sau | Bên trái khung hình, ở tầng hậu cảnh | Nhân vật phụ/nền đứng bên trái phía sau |
+| giữa sau | Chính giữa khung hình, ở tầng hậu cảnh | Nhân vật đứng giữa phía sau, làm nền cho người khác hoặc ở vị trí cao hơn |
+| phải sau | Bên phải khung hình, ở tầng hậu cảnh | Nhân vật phụ/nền đứng bên phải phía sau |
 
-**emotion**（tình xúc ）：vẽ mặt truyền  của tình xúc cơ sở gọi （2~10 chữ ），hàm cụ tượng Mô tả。như """""bức nén "。Nghiêm cấm"mở """rỗng từ 。
+**emotion** (Cảm xúc): tên gọi cảm xúc cơ bản mà khung hình truyền tải (2~10 chữ), cần mô tả cụ thể. Ví dụ: "phẫn nộ", "sợ hãi", "dồn nén". Nghiêm cấm dùng các từ chung chung, trống rỗng như "vui vẻ".
 
-**scene**：Phân cảnhnơi xử  của Bối cảnhTên，Kịch bảngiữa  của Bối cảnhđúng hồi 
+**scene**: Tên Bối cảnh nơi cảnh quay diễn ra, tương ứng với Bối cảnh đã xác định trong Kịch bản.
 
-**associateAssetsNames**：vẽ mặt giữa **thấy  của **Tài nguyênTêndanh sách（gói quát chỉ cục bộ ra  của Nhân vật/tệp ），với trực liên kết nội dung
+**associateAssetsNames**: danh sách Tên các Tài nguyên **xuất hiện (nhìn thấy)** trong khung hình (bao gồm cả trường hợp chỉ thấy một phần cục bộ của Nhân vật/vật thể), dùng để liên kết trực tiếp với nội dung khung hình.
 
-**duration**：cơ sở tham chiếu——Đặc tả (close-up)/bảng tình  2~3s · đúng lời Cận cảnh (close-up) 3~5s · toàn  3~5s · động tác vụ  2~4s · Viễn cảnh (extreme wide shot)/rỗng quay / 3~5s · lời Bối cảnh 5~8s。**đơn quay không vượt  8s**，vượt buộc phút。
+**duration**: mức tham chiếu cơ bản — Đặc tả/biểu cảm 2~3s · Cận cảnh đối thoại 3~5s · toàn cảnh 3~5s · cảnh có động tác 2~4s · Viễn cảnh/cảnh trống/nối cảnh 3~5s · lời dẫn bối cảnh (voice-over) 5~8s. **Một cảnh quay không được vượt quá 8s**, nếu vượt quá bắt buộc phải tách thành nhiều cảnh quay.
 
-**Lời thoại，Thời lượngBắt buộctoàn bộLời thoạivà khớptình xúc ngữ **：
+**Có lời thoại, thời lượng bắt buộc phải khớp toàn bộ lời thoại và phù hợp với tốc độ nói theo cảm xúc**:
 
-| tình xúc trạng thái | ngữ tham chiếu | Ví dụBối cảnh |
+| Trạng thái cảm xúc | Tốc độ nói tham chiếu | Ví dụ bối cảnh |
 |---------|---------|----------|
-| 、、 | ~4 chữ /giây | 、、 |
-| chính thường đúng lời 、tả  | ~3 chữ /giây | ngày thường tác vụ 、tả  |
-| 、tình 、 | ~2 chữ /giây | thông 、、trả  |
-| thấp ngữ 、、 | ~2 chữ /giây | 、 |
+| Gấp gáp, kích động, hoảng loạn | ~4 chữ/giây | Cãi vã, truy đuổi, tình huống cấp bách |
+| Bình thường, tường thuật, kể chuyện | ~3 chữ/giây | Hội thoại thường ngày, tường thuật |
+| Xúc động, trầm lắng, do dự | ~2 chữ/giây | Tâm sự, hồi tưởng, ngập ngừng |
+| Trầm giọng, thì thầm, nghẹn ngào | ~2 chữ/giây | Thổ lộ bí mật, nghẹn lời |
 
-tính toáncách thức：Lời thoạichữ số  ÷ đúng hồi ngữ （trên xuất chỉnh ）= cơ sở giâysố ，cộng lượng ：
-- Lời thoạigiữa mục biểu điểm （số 、câu số 、số 、số ）+0.3~0.5s
-- tình xúc chuyển /ngữ hóa xử  +0.5s
-- nhất  `duration` = cơ sở giâysố  + tính  + 1s an toàn lượng （trên xuất chỉnh ）
+Cách tính: số chữ trong lời thoại ÷ tốc độ nói tương ứng (làm tròn lên) = số giây cơ bản, cộng thêm:
+- Mỗi dấu ngắt trong lời thoại (dấu phẩy, dấu chấm câu, dấu chấm hỏi, dấu chấm than) +0.3~0.5s
+- Có chuyển biến cảm xúc/thay đổi ngữ điệu +0.5s
+- `duration` cuối cùng = số giây cơ bản + phần cộng thêm + 1s dự phòng an toàn (làm tròn lên)
 
-**lines**：Nhân vậtLời thoạiNguyên tác，**Bắt buộc1 chữ không sửa từ Kịch bảngiữa **。nhiều Nhân vậttheo  `Nhân vậttên ：Lời thoại` khung thức sắp hàng 。Không có lời thoại `Không có lời thoại`。1 câu Lời thoạiđúng hồi một Ống kính，đơn Ống kínhtrong nhiều Nhân vậtnhiều đúng 。
+**lines**: Lời thoại nguyên văn của nhân vật, **bắt buộc giữ nguyên 100%, không sửa một chữ so với Kịch bản gốc**. Nếu có nhiều nhân vật, liệt kê theo định dạng `Tên nhân vật：Lời thoại`. Không có lời thoại thì ghi `Không có lời thoại`. Mỗi câu thoại tương ứng với một cảnh quay; trong một cảnh quay có thể có nhiều nhân vật cùng nói.
 
-**sound**（Âm hiệu）：thuần Âm hiệuMô tả，theo 「âm tầng  + động tác vụ âm tầng 」phúttầng 。như "xử phong thanh  + thanh "。không Âm hiệu `không Âm hiệu`。
+**sound** (Âm hiệu): mô tả thuần âm thanh, phân theo hai tầng 「âm thanh nền + âm thanh hành động」. Ví dụ: "tiếng gió thổi xa xa + tiếng bước chân". Không có âm hiệu thì ghi `không có âm hiệu`.
 
-> **🚫 âm /nối **：sách đường nhất nguyên **toàn không bối âm **。`Âm hiệu` hàng chỉ xuống thật thanh nguồn （âm  + động tác vụ âm  + âm ），"BGM""nối """"///thanh thiết bị tác vụ Không khí"chữ kiểu **1 **，sẽ trùng hỏi đề 。như Kịch bảngiữa ra thiết bị tác vụ kịch tình động tác vụ （như Nhân vật），chỉ " của biệt động thanh  + "cụ thể lý âm nguồn 。
+> **🚫 Không dùng nhạc nền/âm thanh chuyển cảnh**: theo quy tắc thống nhất của dự án, **toàn bộ không sử dụng nhạc nền (BGM)**. Trường `Âm hiệu` chỉ mô tả các nguồn âm thanh thực tế trong cảnh (âm thanh môi trường + âm thanh hành động + âm thanh vật thể); các từ như "BGM", "nhạc nền", "âm thanh chuyển cảnh", "hiệu ứng âm thanh tạo không khí"... **tuyệt đối không được dùng dưới bất kỳ hình thức nào**, nếu dùng sẽ gây lỗi khi sản xuất. Nếu trong kịch bản có mô tả thiết bị/vật dụng phát ra âm thanh do hành động kịch tình tạo ra (ví dụ nhân vật bật đài), chỉ cần mô tả cụ thể "âm thanh cụ thể phát ra từ nguồn âm đó" là đủ.
 
-**associateAssetsIds**：vẽ mặt giữa **thấy  của **Tài nguyên của  ID（từ  assets dữ liệugiữa lấy của  `id` chữ đoạn giá trị ），không chỉnh tạo không lưu ở  của  ID。
-- **Nhân vậtra hàm **：vẽ mặt giữa ra  của tất cảNhân vật，không là chính thể còn là chỉ cục bộ thấy （như sáng 、tay bộ 、hóa sáng ），chỉ cần ở vẽ mặt trong trưng ，đều Bắt buộchàm đúng hồi  của Tài nguyên ID
-- **Bối cảnhTài nguyênbắt chọn **：mục Phân cảnhBắt buộchàm nơi xử Bối cảnhđúng hồi  của Bối cảnhTài nguyên ID（type  scene  của Tài nguyên）；Bối cảnhlưu ở khớphiện tạivẽ mặt trạng thái của sinh Bối cảnhTài nguyên，chọn hàm sinh Bối cảnhTài nguyên ID，không chọn hàm chính Bối cảnhTài nguyên ID。ít Bối cảnhTài nguyên ID video chữ đoạn không chỉnh 
-- Tài nguyênchọn lựa ：theo kịch tình vẽ mặt nơi cần trạng tháichọn lựa Tài nguyên ID——Ống kínhcần cần chính Tài nguyên của sinh trạng thái，**chỉ chọn sinh Tài nguyên ID**；chỉ khi không lưu ở khớp của sinh trạng thái，chọn lựa chính Tài nguyên ID；cùng 1 Tài nguyênở cùng 1 Phân cảnhgiữa Nghiêm cấmchính /sinh cùng ra 
+**associateAssetsIds**: danh sách ID của các Tài nguyên **xuất hiện (nhìn thấy)** trong khung hình (lấy từ giá trị của trường `id` trong dữ liệu assets), không được tự tạo ra ID không tồn tại.
+- **Bắt buộc liệt kê đầy đủ nhân vật**: tất cả nhân vật xuất hiện trong khung hình — dù là chủ thể chính hay chỉ thấy một phần cục bộ (như bóng lưng, cánh tay, bóng đổ) — chỉ cần xuất hiện trong khung hình đều bắt buộc phải có ID Tài nguyên tương ứng.
+- **Bắt buộc chọn Tài nguyên Bối cảnh**: mỗi cảnh quay bắt buộc phải có ID Tài nguyên Bối cảnh tương ứng với nơi cảnh quay diễn ra (Tài nguyên loại `scene`); nếu Bối cảnh có Tài nguyên phái sinh khớp với trạng thái hiện tại của khung hình, phải chọn ID của Tài nguyên phái sinh đó, không chọn ID của Tài nguyên Bối cảnh gốc. Mỗi cảnh quay tối thiểu phải có 1 ID Tài nguyên Bối cảnh, trường này không được để trống.
+- **Cách chọn Tài nguyên**: chọn ID Tài nguyên theo đúng trạng thái mà khung hình yêu cầu — nếu cảnh quay cần trạng thái phái sinh của Tài nguyên chính, **chỉ chọn ID của Tài nguyên phái sinh**; chỉ khi không tồn tại trạng thái phái sinh phù hợp mới chọn ID của Tài nguyên gốc; nghiêm cấm cùng một Tài nguyên xuất hiện đồng thời cả bản gốc và bản phái sinh trong cùng một cảnh quay.
 
 ---
 
-## chuyển trường 
+## Chuyển cảnh
 
-- **cùng trường trong **：Ống kínhgian Mặc định
-- **Bối cảnh**：vào  1 mục rỗng quay Phân cảnh（2~3s）tình xúc ，rỗng quay nội dungtrước sau Bối cảnhKhông khíliên 
-- **đoạn **：ở  description giữa biểu tâm "hóa "hoặc "vào ra "
-- hàm thức chuyển trường （、chuyển 、trăm ）
+- **Cắt cảnh trong cùng bối cảnh**: chuyển đổi trực tiếp giữa các cảnh quay (mặc định)
+- **Chuyển bối cảnh**: có thể thêm 1 cảnh quay trống (2~3s) mang tính chuyển tiếp cảm xúc; nội dung cảnh trống cần liên kết không khí giữa bối cảnh trước và sau
+- **Chuyển đoạn**: thể hiện trong `description` bằng cụm từ "mờ dần" hoặc "chuyển cảnh vào/ra"
+- Nghiêm cấm dùng các kiểu chuyển cảnh khác (gạt hình/wipe, lật trang, chồng mờ/dissolve)

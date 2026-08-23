@@ -190,7 +190,7 @@ export default router.post(
                 .object({
                   newAssets: z
                     .array(NewAssetSchema)
-                    .describe("Danh sách tài nguyên mới  phát hiện (không có trong danh sách tài nguyên đã có), cần  đầy đủ prompt, name, desc, type và mảng scriptIds sử dụng tài nguyên này"),
+                    .describe("Danh sách tài nguyên mới phát hiện (không có trong danh sách tài nguyên đã có), cần đầy đủ name, desc, type và mảng scriptIds sử dụng tài nguyên này"),
                   existingAssetRefs: z
                     .array(ExistingAssetRefSchema)
                     .describe("Danh sách tham chiếu tài nguyên đã có (đã tồn tại trong danh sách tài nguyên), chỉ cần  cung cấp tên tài nguyên và mảng scriptIds sử dụng tài nguyên này"),

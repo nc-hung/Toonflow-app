@@ -5,7 +5,7 @@ import type { memories as MemoryRow } from "@/types/database";
 import { tool, jsonSchema } from "ai";
 import { z } from "zod";
 
-// ── gọi Cấu hìnhMặc địnhgiá trị  ──
+// ── Giá trị cấu hình mặc định ──
 const DEFAULTS: {
   messagesPerSummary: number;
   summaryMaxLength: number;
@@ -14,15 +14,15 @@ const DEFAULTS: {
   ragLimit: number;
   deepRetrieveSummaryLimit: number;
 } = {
-  messagesPerSummary: 3, // nhiều ít mục messagephát 1 lần summarytạo
-  summaryMaxLength: 500, // summarynhất lớn chữ dài độ 
-  shortTermLimit: 5, // get()Trả về của kỳ chưa tổng kết messagemục số 
-  summaryLimit: 10, // get()Trả về của summarymục số 
-  ragLimit: 3, // get()lượng tìm kiếm Trả về của messagemục số 
-  deepRetrieveSummaryLimit: 5, // deepRetrieve()lượng trả summary của mục số 
+  messagesPerSummary: 3, // Cứ bao nhiêu tin nhắn thì tạo 1 lần tóm tắt (summary)
+  summaryMaxLength: 500, // Độ dài tối đa (số ký tự) của một đoạn tóm tắt
+  shortTermLimit: 5, // Số lượng tin nhắn chưa tổng kết mà get() trả về
+  summaryLimit: 10, // Số lượng bản tóm tắt mà get() trả về
+  ragLimit: 3, // Số lượng tin nhắn mà get() trả về từ tìm kiếm theo vector (RAG)
+  deepRetrieveSummaryLimit: 5, // Số lượng bản tóm tắt mà deepRetrieve() trả về
 };
 
-// ── lượng tìm kiếm giúp  ──
+// ── Hàm hỗ trợ tìm kiếm theo vector ──
 function vectorSearch(rows: MemoryRow[], queryEmbedding: number[], limit: number) {
   return rows
     .map((row) => {
@@ -45,7 +45,7 @@ class Memory {
   private async generateSummary(contents: string[]): Promise<string> {
     const { summaryMaxLength } = await this.getConfigData({ summaryMaxLength: DEFAULTS.summaryMaxLength });
     const { text } = await u.Ai.Text(this.agentType as any).invoke({
-      system: `bạnlà một nén nhỏ giúp tay 。vui lòng dưới nhiều mục nội dungNén thành1 đoạn  của cần  ，không vượt ${summaryMaxLength}mục chữ 。chỉ xuất ra cần  nội dung，không cần  cộng trước  tố hoặc giải 。`,
+      system: `Bạn là một trợ lý tóm tắt nội dung. Hãy nén các đoạn nội dung dưới đây thành một đoạn tóm tắt duy nhất, không vượt quá ${summaryMaxLength} ký tự. Chỉ xuất ra nội dung tóm tắt, không thêm tiền tố hay lời giải thích.`,
       messages: [{ role: "user", content: contents.map((c, i) => `${i + 1}. ${c}`).join("\n") }],
     });
     return text.slice(0, Number(summaryMaxLength));
@@ -55,8 +55,8 @@ class Memory {
     const list = summaries.map((s) => `[${s.id}] ${s.content}`).join("\n");
     const { text } = await u.Ai.Text(this.agentType as any).invoke({
       system:
-        'bạnlà một thông tinkiểm kiếm giúp tay 。Người dùngsẽ cho bạnmột liên từ  và 1 nhóm cần  ，vui lòng Kiểm tranhững cần  thể gói liên từ liên  của chi thông tin。chỉ Trả vềliên cần   của iddanh sách，hàm JSONsố nhóm định dạng，lệ như  ["id1","id2"]。không cần  giải 。',
-      messages: [{ role: "user", content: `liên từ : ${keyword}\n\ncần  danh sách:\n${list}` }],
+        'Bạn là một trợ lý truy xuất thông tin. Người dùng sẽ cung cấp cho bạn một từ khóa và một danh sách các bản tóm tắt. Hãy kiểm tra những bản tóm tắt nào chứa thông tin liên quan đến từ khóa đó. CHỈ trả về danh sách id của các bản tóm tắt liên quan, dưới dạng một mảng JSON hợp lệ (không kèm bất kỳ văn bản, markdown hay lời giải thích nào khác), ví dụ: ["id1","id2"]. Nếu không có bản tóm tắt nào liên quan, trả về mảng rỗng [].',
+      messages: [{ role: "user", content: `Từ khóa: ${keyword}\n\nDanh sách bản tóm tắt:\n${list}` }],
     });
     try {
       const ids = JSON.parse(text);
@@ -76,7 +76,7 @@ class Memory {
     const result = { ...defaults };
     for (const key of keys) {
       const raw = dbMap[key];
-      if (raw == null) continue; // null / undefined sử dụng Mặc địnhgiá trị 
+      if (raw == null) continue; // null / undefined thì dùng giá trị mặc định
       const num = Number(raw);
       (result as Record<string, string | number>)[key] = Number.isNaN(num) ? raw : num;
     }
@@ -102,7 +102,7 @@ class Memory {
       createTime: options?.createTime ?? Date.now(),
     } as any);
 
-    // kiểm tra chưa tổng kết hủy số lượng
+    // Kiểm tra số lượng tin nhắn chưa tổng kết
     const unsummarized = await u.db("memories").where({ isolationKey, type: "message", summarized: 0 }).orderBy("createTime", "asc");
 
     if (unsummarized.length >= Number(messagesPerSummary)) {
@@ -125,7 +125,7 @@ class Memory {
         createTime: Date.now(),
       } as any);
 
-      // biểu đã tổng kết 
+      // Đánh dấu các tin nhắn đã được tổng kết
       await u.db("memories").whereIn("id", batchIds).update({ summarized: 1 });
     }
   }
@@ -138,19 +138,19 @@ class Memory {
     });
 
     const isolationKey = this.isolationKey;
-    // shortTerm: nhất chưa tổng kết  của  messages
+    // shortTerm: các tin nhắn gần nhất chưa được tổng kết
     const shortTerm = await u
       .db("memories")
       .where({ isolationKey, type: "message", summarized: 0 })
       .orderBy("createTime", "desc")
       .limit(Number(shortTermLimit));
-    shortTerm.reverse(); // nhất cũ  ở trước  
+    shortTerm.reverse(); // Sắp xếp lại theo thứ tự từ cũ đến mới
 
-    // summaries: nhất  của  summary
+    // summaries: các bản tóm tắt gần đây nhất
     const summaries = await u.db("memories").where({ isolationKey, type: "summary" }).orderBy("createTime", "desc").limit(Number(summaryLimit));
     summaries.reverse();
 
-    // rag: lượng tìm kiếm tất cả messages
+    // rag: tìm kiếm theo vector trên toàn bộ tin nhắn
     const queryEmbedding = await getEmbedding(text);
     const allMessages = await u.db("memories").where({ isolationKey, type: "message" });
     const ragResults = vectorSearch(allMessages, queryEmbedding, Number(ragLimit));
@@ -171,14 +171,14 @@ class Memory {
     const { deepRetrieveSummaryLimit } = await this.getConfigData({ deepRetrieveSummaryLimit: DEFAULTS.deepRetrieveSummaryLimit });
 
     const isolationKey = this.isolationKey;
-    // bước 1: lượng tìm kiếm  summary
+    // Bước 1: tìm kiếm theo vector trong các bản tóm tắt
     const queryEmbedding = await getEmbedding(keyword);
     const allSummaries = await u.db("memories").where({ isolationKey, type: "summary" });
     const topSummaries = vectorSearch(allSummaries, queryEmbedding, Number(deepRetrieveSummaryLimit));
 
     if (topSummaries.length === 0) return [];
 
-    // bước 2: AI Kiểm traliên 
+    // Bước 2: dùng AI kiểm tra mức độ liên quan
     const relevantIds = await this.judgeSummaryRelevance(
       keyword,
       topSummaries.map((s) => ({ id: s.id!, content: s.content })),
@@ -186,7 +186,7 @@ class Memory {
 
     if (relevantIds.length === 0) return [];
 
-    // bước 3: mở Truy vấngốc ban đầu  messages
+    // Bước 3: truy vấn lại các tin nhắn gốc ban đầu
     const relevantSummaries = topSummaries.filter((s) => relevantIds.includes(s.id!));
     const messageIds = relevantSummaries.flatMap((s) => JSON.parse(s.relatedMessageIds || "[]") as string[]);
 
@@ -200,17 +200,17 @@ class Memory {
   getTools() {
     return {
       deepRetrieve: tool({
-        description: "độ kiểm kiếm ：khi bạnCần trả mục liên từ liên  của chi thông tinsử dụng cụ ",
+        description: "Truy xuất sâu: sử dụng công cụ này khi bạn cần tìm thông tin chi tiết liên quan đến một từ khóa cụ thể",
         inputSchema: jsonSchema<{ keyword: string }>(
           z
             .object({
-              keyword: z.string().describe("cần  kiểm kiếm  của liên từ "),
+              keyword: z.string().describe("Từ khóa cần tìm kiếm"),
             })
             .toJSONSchema(),
         ),
         execute: async ({ keyword }) => {
           const results = await this.deepRetrieve(keyword);
-          if (results.length === 0) return { found: false, message: "không tìm thấyliên " };
+          if (results.length === 0) return { found: false, message: "Không tìm thấy thông tin liên quan" };
           return { found: true, memories: results.map((r) => r.content) };
         },
       }),

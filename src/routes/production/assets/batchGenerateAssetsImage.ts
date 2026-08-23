@@ -51,7 +51,7 @@ export default router.post(
         prompt: scenePrompt,
       },
     };
-    // trước  lượng tất cả assets sáng tạo  image lục nhất biểu "Đang tạo"
+    // Trước tiên, tạo bản ghi image cho tất cả assets, đặt trạng thái là "Đang tạo"
     const imageIdMap: Record<number, number> = {};
     for (const item of assetsDataArr) {
       const [imageId] = await u.db("o_image").insert({
@@ -66,7 +66,7 @@ export default router.post(
     }
 
     const imageData: { id: number; state: string; src: string }[] = [];
-    res.status(200).send(success("bắt đầuTạo tài nguyênHình ảnh"));
+    res.status(200).send(success("Bắt đầu tạo hình ảnh tài nguyên"));
     const generateSingleAsset = async (item: any) => {
       const imageId = imageIdMap[item.id!];
       const typeConfig = promptRecord[item.type!] || promptRecord["role"];
@@ -77,8 +77,8 @@ export default router.post(
           {
             role: "user",
             content: `
-            cấp Mô tả tài nguyên: ${item.parentDescribe || "không chi mô tả"}
-            hiện tạiMô tả tài nguyên: ${item.describe || "không chi mô tả"}`,
+            Mô tả tài nguyên cấp trên: ${item.parentDescribe || "không có mô tả"}
+            Mô tả tài nguyên hiện tại: ${item.describe || "không có mô tả"}`,
           },
         ],
       });
@@ -98,7 +98,7 @@ export default router.post(
           },
           {
             taskClass: "Tạo hình ảnh",
-            describe: "Tài nguyênHình ảnhtạo",
+            describe: "Tạo hình ảnh tài nguyên",
             relatedObjects: JSON.stringify(repeloadObj),
             projectId: projectId,
           },
@@ -124,7 +124,7 @@ export default router.post(
       }
     };
 
-    // theo  concurrentCount phần nhất phát thực thi
+    // Thực thi theo từng đợt (batch) song song dựa theo concurrentCount
     for (let i = 0; i < assetsDataArr.length; i += concurrentCount) {
       const batch = assetsDataArr.slice(i, i + concurrentCount);
       const batchResults = await Promise.all(batch.map(generateSingleAsset));

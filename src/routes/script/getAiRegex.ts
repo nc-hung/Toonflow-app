@@ -12,13 +12,13 @@ export default router.post(
   }),
   async (req, res) => {
     const { content } = req.body;
-    const systemPrompt = `bạnlà một chính bản gthức Chuyên gia。Người dùngsẽ nhắc nhà 1 đoạn Kịch bản văn bản  ，bạnCần phần tích giữa  của tập /chươngngăn cáchmô thức ，Trả vềmột JavaScriptchính bản gthức chuỗi ký tự。
+    const systemPrompt = `Bạn là một chuyên gia về biểu thức chính quy (regex). Người dùng sẽ cung cấp một đoạn văn bản kịch bản, bạn cần phân tích mẫu phân tách tập/chương có trong đó, rồi trả về một chuỗi biểu thức chính quy (regex) JavaScript.
 
-cần  cầu ：
-1. chính bắt buộc gói 2mục lấy nhóm ：Thứ một lấy nhóm khớptập số /chươngchỉnh số （số chữ hoặc giữa tài số chữ ），Thứ 2mục lấy nhóm khớptập  của biểu đề /tên（scriptName）。
-2. Trả vềđịnh dạng là  /chính bản gthức /g，lệ như ：/Thứ \s*([0-91 2345678910trăm nghìnvạn]+)\s*tập \s*([^\n\r]*)/g
-3. chỉ Trả vềchính bản gthức chuỗi ký tựsách ，không cần  có anh ấygiải tài chữ hoặc markdownđịnh dạng。
-4. Nếuvăn bản  giữa chưa có dẫn  của chươngngăn cáchmô thức ，Trả vềrỗng chuỗi ký tự。`;
+Yêu cầu:
+1. Biểu thức chính quy bắt buộc phải chứa 2 nhóm bắt (capture group): nhóm bắt thứ nhất khớp với số tập/số chương (chữ số hoặc số viết bằng chữ), nhóm bắt thứ hai khớp với tiêu đề/tên của tập (scriptName).
+2. Trả về ở định dạng /regex/g, ví dụ: /Chương\s*([0-9]+)\s*[:：]?\s*([^\n\r]*)/g
+3. Chỉ trả về chuỗi biểu thức chính quy, không cần kèm lời giải thích hay định dạng markdown.
+4. Nếu trong văn bản không phát hiện được mẫu phân tách chương/tập nào, trả về chuỗi rỗng.`;
 
     const resText = await u.Ai.Text("universalAi").invoke({
       system: systemPrompt,

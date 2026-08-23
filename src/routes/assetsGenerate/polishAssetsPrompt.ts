@@ -8,7 +8,7 @@ const router = express.Router();
 
 type ItemType = "characters" | "props" | "scenes";
 
-//trau chuốtPrompt
+// Trau chuốt Prompt
 export default router.post(
   "/",
   validateFields({
@@ -20,46 +20,46 @@ export default router.post(
   }),
   async (req, res) => {
     const { assetsId, projectId, type, name, describe } = req.body;
-    //Lấyphong cách
+    // Lấy phong cách
     const project = await u.db("o_project").where("id", projectId).select("artStyle", "type", "intro").first();
-    //Nếuchưa có đến đúng hồi  của Dự án，Trả vềlỗi
-    if (!project) return res.status(500).send(success({ message: "Dự ánrỗng " }));
+    // Nếu không tìm thấy dự án tương ứng, trả về lỗi
+    if (!project) return res.status(500).send(success({ message: "Dự án không tồn tại" }));
 
     await u.db("o_assets").where("id", assetsId).update({ promptState: "Đang tạo" });
 
-    //Truy vấnTài nguyênlà không là Biến thể tài nguyên
+    // Truy vấn tài nguyên để kiểm tra xem có phải là tài nguyên biến thể hay không
     const assetsData = await u.db("o_assets").where("id", assetsId).select("assetsId").first();
-    if (!assetsData) return { code: 500, message: "Tài nguyênkhông tồn tại" };
+    if (!assetsData) return { code: 500, message: "Tài nguyên không tồn tại" };
     const typeConfig: Record<string, { promptKey: string; itemType: ItemType; label: string; nameLabel: string; visualManual: string }> = {
       role: {
         promptKey: "role-polish",
         itemType: "characters",
-        label: "Nhân vậtTiêu chuẩn4video ảnh ",
+        label: "Ảnh tiêu chuẩn 4 góc nhìn nhân vật",
         nameLabel: "Nhân vật",
         visualManual: assetsData.assetsId ? "art_character_derivative" : "art_character",
       },
       scene: {
         promptKey: "scene-polish",
         itemType: "scenes",
-        label: "Bối cảnhảnh ",
+        label: "Ảnh bối cảnh",
         nameLabel: "Bối cảnh",
         visualManual: assetsData.assetsId ? "art_scene_derivative" : "art_scene",
       },
       tool: {
         promptKey: "tool-polish",
         itemType: "props",
-        label: "Đạo cụảnh ",
+        label: "Ảnh đạo cụ",
         nameLabel: "Đạo cụ",
         visualManual: assetsData.assetsId ? "art_prop_derivative" : "art_prop",
       },
     };
 
     const config = typeConfig[type];
-    if (!config) return res.status(500).send(error("không hỗ trợ của loại"));
-    if (!config.visualManual) return res.status(500).send(error("trực quansổ taychưa nối nghĩa "));
-    //Lấyđến trực quansổ tay
+    if (!config) return res.status(500).send(error("Loại tài nguyên không được hỗ trợ"));
+    if (!config.visualManual) return res.status(500).send(error("Sổ tay hướng dẫn hình ảnh chưa được cấu hình"));
+    // Lấy sổ tay hướng dẫn hình ảnh
     const visualManual = await u.getArtPrompt(project.artStyle as string, "art_skills", config.visualManual);
-    if (!visualManual) return res.status(500).send(error("trực quansổ taychưa nối nghĩa "));
+    if (!visualManual) return res.status(500).send(error("Sổ tay hướng dẫn hình ảnh chưa được cấu hình"));
     const systemPrompt = visualManual;
     try {
       const { _output } = (await u.Ai.Text("universalAi").invoke({
@@ -67,10 +67,10 @@ export default router.post(
         messages: [
           {
             role: "user",
-            content: `**cơ sở tham số：**
-      **${config.nameLabel}thiết nối ：**
-      - ${config.nameLabel}tên:${name},
-      - ${config.nameLabel}mô tả:${describe},`,
+            content: `**Tham số cơ bản:**
+      **Thiết lập ${config.nameLabel}:**
+      - Tên ${config.nameLabel}: ${name}
+      - Mô tả ${config.nameLabel}: ${describe}`,
           },
         ],
       })) as any;
